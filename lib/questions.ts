@@ -1,6 +1,7 @@
 import type { Question } from "./types";
+import { generatedQuestions } from "./generatedQuestions";
 
-export const questions: Question[] = [
+const builtInQuestions: Question[] = [
   {
     id: "written-001",
     certificateId: "information-processing-engineer",
@@ -38,3 +39,5 @@ export const questions: Question[] = [
     version: 1
   }
 ];
+
+export const questions: Question[] = [...builtInQuestions, ...generatedQuestions];
