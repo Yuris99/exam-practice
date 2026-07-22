@@ -507,10 +507,8 @@ Begin with a strict CSV template. More complex document parsing can be added aft
 
 ### Phase 4: AI explanations
 
-- Add the server-side AI endpoint.
-- Add structured, short explanations.
-- Save, reuse, invalidate, limit, and report explanations.
-- Evaluate correctness, latency, and cost using real questions.
+- Add the AI button, server endpoint boundary, short Korean prompt, local persistence, reuse, limits, and reporting.
+- Keep live-provider activation, real-question quality evaluation, latency measurement, and cost validation outside the MVP.
 
 ### Phase 5: Content operations
 
@@ -521,7 +519,7 @@ Begin with a strict CSV template. More complex document parsing can be added aft
 
 - Test on representative small-screen mobile devices.
 - Test refresh, connection loss, timeout, and session recovery.
-- Verify scoring and answer secrecy.
+- Verify scoring and session recovery. Answer secrecy is not an MVP requirement because this is a self-study, browser-local product.
 - Add accessibility checks, monitoring, backups, and rate limits.
 - Deploy the MVP and collect learner feedback.
 
@@ -532,10 +530,9 @@ The MVP is ready when:
 - A learner can comfortably complete practice and tests on a phone.
 - Refreshing or temporarily losing connectivity does not destroy an attempt.
 - A learner can understand and revisit every result.
-- AI explanations are short, saved, and do not trigger duplicate API calls.
+- The AI explanation UI, server boundary, Korean prompt, local cache, and duplicate-call prevention are implemented. A live AI provider is optional after the MVP.
 - Administrators can import and publish a large question set without editing the database directly.
 - Historical scores remain stable after question edits.
-- Correct answers cannot be retrieved from the client before test submission.
 
 ## 16. Initial implementation decisions
 
@@ -554,3 +551,12 @@ The MVP is ready when:
 - The English document uses the base name, such as `plan.md`.
 - The Korean counterpart adds `.ko` before the extension, such as `plan.ko.md`.
 - Both versions must have the same section structure and represent the same decisions.
+
+## 18. MVP status
+
+The self-study MVP was declared complete on July 22, 2026.
+
+- Accounts and server-side answer secrecy are intentionally excluded.
+- The AI experience is implemented as an optional integration shell; activating and evaluating a paid provider is post-MVP work.
+- The current product baseline includes responsive practice and tests, local persistence and recovery, statistics, bookmarks, rich question content, CSV content operations, backups, PWA support, and automated regression tests.
+- Follow-up priorities are maintained in `roadmap.md` and `roadmap.ko.md`.
