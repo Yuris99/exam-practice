@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f8f4" />
+    <title>자격한입 - 자격증 문제 연습</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <button class="icon-button back-button is-hidden" type="button" aria-label="뒤로 가기" data-action="back">←</button>
+        <a class="brand" href="#home" data-route="home" aria-label="자격한입 홈">
+          <span class="brand-mark" aria-hidden="true">✓</span>
+        </a>
+        <div class="topbar-actions">
+          <button class="streak" type="button" aria-label="연속 학습 7일"><span>🔥</span> 7일</button>
+        </div>
+      </header>
+
+      <main id="app" tabindex="-1"></main>
+
+      <nav class="bottom-nav" aria-label="주요 메뉴">
+        <button class="nav-item is-active" type="button" data-route="home">
+          <span class="nav-icon">⌂</span><span>홈</span>
+        </button>
+        <button class="nav-item" type="button" data-route="practice">
+          <span class="nav-icon">✎</span><span>연습</span>
+        </button>
+        <button class="nav-item" type="button" data-route="history">
+          <span class="nav-icon">▥</span><span>학습 기록</span>
+        </button>
+        <button class="nav-item" type="button" data-route="bookmarks">
+          <span class="nav-icon">♡</span><span>북마크</span>
+        </button>
+        <button class="nav-item" type="button" data-route="more">
+          <span class="nav-icon">•••</span><span>더보기</span>
+        </button>
+      </nav>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
