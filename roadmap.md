@@ -14,6 +14,8 @@ The account-free, browser-local self-study MVP is complete. Answer secrecy is no
 
 ## 3. Content quality
 
+> Deferred: detailed validation of the Information Security Engineer and Computer System Engineer datasets, including manual image crops and excluded-question review, is recorded but postponed until after deployment.
+
 - Define a repeatable review checklist for prompt, choices, answer, explanation, source, year, images, code, and publication state.
 - Validate duplicate detection and CSV error messages against real bulk files.
 - Expand the built-in or imported Information Processing Engineer question set.
