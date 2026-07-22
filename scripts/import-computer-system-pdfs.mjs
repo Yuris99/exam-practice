@@ -5,15 +5,35 @@ import * as pdfjs from "pdfjs-dist/legacy/build/pdf.mjs";
 import sharp from "sharp";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const inputDirectory = path.join(root, "data", "컴퓨터시스템기사(필기)");
-const imageRoot = path.join(root, "public", "questions", "computer-system-engineer");
-const outputFile = path.join(root, "content", "questions", "computer-system-engineer-written.csv");
+const profileName = process.argv[2] ?? "computer-system";
+const profiles = {
+  "computer-system": {
+    dataDirectory: "컴퓨터시스템기사(필기)", filePattern: /\([AB]형\).*\.pdf$/i,
+    imageSlug: "computer-system-engineer", csvName: "computer-system-engineer-written.csv",
+    certificateId: "computer-system-engineer", titleEn: "Computer System Engineer", titleKo: "컴퓨터시스템기사",
+    lineage: (filename) => filename.includes("(A형)") ? "A" : "B",
+    sourceExam: (lineage) => lineage === "A" ? "전자계산기조직응용기사" : "전자계산기기사",
+    category: mapToCurrentCategory
+  },
+  "information-security": {
+    dataDirectory: "정보보안기사(필기)", filePattern: /^정보보안기사\d{8}\(교사용\)\.pdf$/i,
+    imageSlug: "information-security-engineer", csvName: "information-security-engineer-written.csv",
+    certificateId: "information-security-engineer", titleEn: "Information Security Engineer", titleKo: "정보보안기사",
+    lineage: () => "정보보안기사", sourceExam: () => "정보보안기사",
+    category: (legacyCategory) => legacyCategory
+  }
+};
+const profile = profiles[profileName];
+if (!profile) throw new Error(`Unknown import profile: ${profileName}`);
+const inputDirectory = path.join(root, "data", profile.dataDirectory);
+const imageRoot = path.join(root, "public", "questions", profile.imageSlug);
+const outputFile = path.join(root, "content", "questions", profile.csvName);
 const reportEn = path.join(inputDirectory, "IMAGE_CROP_REPORT.md");
 const reportKo = path.join(inputDirectory, "IMAGE_CROP_REPORT.ko.md");
 const answerSymbols = { "❶": 1, "❷": 2, "❸": 3, "❹": 4, "❺": 5, "①": 1, "②": 2, "③": 3, "④": 4, "⑤": 5 };
 const choicePattern = /[①②③④⑤❶❷❸❹❺]/g;
 
-const filenames = (await fs.readdir(inputDirectory)).filter((name) => /\([AB]형\).*\.pdf$/i.test(name)).sort();
+const filenames = (await fs.readdir(inputDirectory)).filter((name) => profile.filePattern.test(name)).sort();
 await fs.mkdir(imageRoot, { recursive: true });
 
 const questions = [];
@@ -22,7 +42,7 @@ const excludedQuestions = [];
 let extractedImageCount = 0;
 
 for (const filename of filenames) {
-  const lineage = filename.includes("(A형)") ? "A" : "B";
+  const lineage = profile.lineage(filename);
   const dateDigits = filename.match(/(20\d{6})/)?.[1] ?? "unknown";
   const date = dateDigits === "unknown" ? "" : `${dateDigits.slice(0, 4)}-${dateDigits.slice(4, 6)}-${dateDigits.slice(6, 8)}`;
   const data = new Uint8Array(await fs.readFile(path.join(inputDirectory, filename)));
@@ -74,13 +94,14 @@ for (const filename of filenames) {
       if (!record) continue;
       const image = await getPageObject(page, name);
       if (!image?.data || !image.width || !image.height) continue;
-      const questionDirectory = path.join(imageRoot, lineage.toLowerCase(), dateDigits);
+      const lineageDirectory = lineage.length <= 2 ? lineage.toLowerCase() : "exams";
+      const questionDirectory = path.join(imageRoot, lineageDirectory, dateDigits);
       await fs.mkdir(questionDirectory, { recursive: true });
       const imageNumber = record.images.length + 1;
       const imageName = `q${String(record.number).padStart(3, "0")}-${imageNumber}.png`;
       const destination = path.join(questionDirectory, imageName);
       await writeImage(image, destination);
-      record.images.push(`/questions/computer-system-engineer/${lineage.toLowerCase()}/${dateDigits}/${imageName}`);
+      record.images.push(`/questions/${profile.imageSlug}/${lineageDirectory}/${dateDigits}/${imageName}`);
       extractedImageCount += 1;
     }
   }
@@ -93,8 +114,8 @@ for (const filename of filenames) {
     }
     const subjectIndex = Math.min(subjectNames.length - 1, Math.floor((record.number - 1) / 20));
     const legacyCategory = subjectNames[subjectIndex] ?? `${subjectIndex + 1}과목`;
-    const category = mapToCurrentCategory(legacyCategory, `${parsed.prompt} ${parsed.choices.join(" ")}`);
-    const sourceExam = lineage === "A" ? "전자계산기조직응용기사" : "전자계산기기사";
+    const category = profile.category(legacyCategory, `${parsed.prompt} ${parsed.choices.join(" ")}`);
+    const sourceExam = profile.sourceExam(lineage);
     const question = {
       lineage, filename, date, dateDigits, number: record.number, category, legacyCategory,
       ...parsed, images: record.images,
@@ -115,8 +136,8 @@ const rows = deduplicatedQuestions.map((question) => [
   "WRITTEN_CBT", question.category, question.prompt,
   question.choices[0] ?? "", question.choices[1] ?? "", question.choices[2] ?? "", question.choices[3] ?? "",
   String(question.correctAnswer), "", "", "", "medium", question.images[0] ?? "",
-  `컴퓨터시스템기사|필기|기출|${question.lineage}계보|${question.legacyCategory}`, question.source, question.sourceYear,
-  "", "", "", question.images.slice(1).join("|"), "computer-system-engineer"
+  `${profile.titleKo}|필기|기출|${question.lineage}${question.lineage.length <= 2 ? "계보" : ""}|${question.legacyCategory}`, question.source, question.sourceYear,
+  "", "", "", question.images.slice(1).join("|"), profile.certificateId
 ]);
 await fs.writeFile(outputFile, `\uFEFF${[header, ...rows].map((row) => row.map(csvCell).join(",")).join("\n")}\n`, "utf8");
 await fs.writeFile(reportEn, buildReport("en", manualCandidates, excludedQuestions, filenames.length, deduplicatedQuestions.length, referencedImages.size), "utf8");
@@ -128,13 +149,19 @@ console.log(`Excluded questions requiring source review: ${excludedQuestions.len
 
 async function readSubjectNames(document) {
   const found = new Map();
+  const subjectPattern = new RegExp(`([1-5])\\s*과목\\s*:\\s*(.+?)(?=\\s*${escapeRegExp(profile.titleKo)}|\\s*[1-5]\\s*과목\\s*:|$)`, "g");
   for (let pageNumber = 1; pageNumber <= document.numPages; pageNumber += 1) {
     const content = await (await document.getPage(pageNumber)).getTextContent();
     const text = content.items.map((item) => item.str).join(" ");
-    for (const match of text.matchAll(/([1-5])\s*과목\s*:\s*([^\n]+?)(?=\s*컴퓨터시스템기사|$)/g)) found.set(Number(match[1]), match[2].replace(/\s+/g, " ").trim());
+    for (const match of text.matchAll(subjectPattern)) found.set(Number(match[1]), normalizeSubjectName(match[2]));
   }
   return [...found.entries()].sort((a, b) => a[0] - b[0]).map((entry) => entry[1]);
 }
+
+function normalizeSubjectName(value) {
+  return value.replace(/\s+/g, " ").trim().replace("어플리 케이션", "어플리케이션").replace(/^정보 보안/, "정보보안");
+}
+function escapeRegExp(value) { return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
 
 function parseQuestion(text) {
   const allMatches = [...text.matchAll(choicePattern)];
@@ -200,13 +227,13 @@ function csvCell(value) { const text = String(value ?? ""); return /[",\r\n]/.te
 
 function buildReport(language, candidates, excluded, fileCount, questionCount, imageCount) {
   const korean = language === "ko";
-  const title = korean ? "# 컴퓨터시스템기사 이미지 수동 작업 목록" : "# Computer System Engineer Manual Image Work";
+  const title = korean ? `# ${profile.titleKo} 이미지 수동 작업 목록` : `# ${profile.titleEn} Manual Image Work`;
   const summary = korean
-    ? `## 요약\n\n- 처리한 PDF: ${fileCount}개\n- 변환한 문제: ${questionCount}개\n- 자동 추출한 이미지: ${imageCount}개\n- 수동 이미지 확인 후보: ${candidates.length}개\n- 변환 제외 및 원문 확인 문제: ${excluded.length}개\n\nPDF에 래스터 이미지로 포함된 자료는 자동으로 \`public/questions/computer-system-engineer/\`에 저장했다. 아래 문제는 문장상 그림·회로·코드가 필요해 보이지만 자동 매핑된 이미지가 없어 PDF 원문을 확인해야 한다.`
-    : `## Summary\n\n- PDFs processed: ${fileCount}\n- Questions converted: ${questionCount}\n- Images extracted automatically: ${imageCount}\n- Manual image review candidates: ${candidates.length}\n- Excluded questions requiring source review: ${excluded.length}\n\nRaster images embedded in the PDFs were saved automatically below \`public/questions/computer-system-engineer/\`. The questions below appear to require a diagram, circuit, or code sample but have no automatically mapped image, so the source PDF must be checked.`;
+    ? `## 요약\n\n- 처리한 PDF: ${fileCount}개\n- 변환한 문제: ${questionCount}개\n- 자동 추출한 이미지: ${imageCount}개\n- 수동 이미지 확인 후보: ${candidates.length}개\n- 변환 제외 및 원문 확인 문제: ${excluded.length}개\n\nPDF에 래스터 이미지로 포함된 자료는 자동으로 \`public/questions/${profile.imageSlug}/\`에 저장했다. 아래 문제는 문장상 그림·회로·코드가 필요해 보이지만 자동 매핑된 이미지가 없어 PDF 원문을 확인해야 한다.`
+    : `## Summary\n\n- PDFs processed: ${fileCount}\n- Questions converted: ${questionCount}\n- Images extracted automatically: ${imageCount}\n- Manual image review candidates: ${candidates.length}\n- Excluded questions requiring source review: ${excluded.length}\n\nRaster images embedded in the PDFs were saved automatically below \`public/questions/${profile.imageSlug}/\`. The questions below appear to require a diagram, circuit, or code sample but have no automatically mapped image, so the source PDF must be checked.`;
   const instructions = korean
-    ? `## 작업 방법\n\n1. 아래 출처 PDF에서 해당 문제를 찾는다.\n2. 문제 본문과 선택지는 제외하고 필요한 그림·표·코드 영역만 자른다.\n3. 이미지가 선명하도록 PNG로 저장한다.\n4. 권장 경로 \`public/questions/computer-system-engineer/manual/<날짜>/q<문제번호>.png\`에 넣는다.\n5. CSV의 해당 행 \`image_url\`에 슬래시 시작 경로를 입력한다.\n6. 실제 시각 자료가 필요 없는 문제라면 목록에서 확인 완료로 표시한다.`
-    : `## Procedure\n\n1. Open the cited source PDF and locate the question.\n2. Crop only the required diagram, table, or code area, excluding the prompt and choices.\n3. Save a legible PNG.\n4. Use the recommended path \`public/questions/computer-system-engineer/manual/<date>/q<question-number>.png\`.\n5. Put the leading-slash path in that CSV row's \`image_url\`.\n6. If the question needs no visual material, mark it reviewed in this list.`;
+    ? `## 작업 방법\n\n1. 아래 출처 PDF에서 해당 문제를 찾는다.\n2. 문제 본문과 선택지는 제외하고 필요한 그림·표·코드 영역만 자른다.\n3. 이미지가 선명하도록 PNG로 저장한다.\n4. 권장 경로 \`public/questions/${profile.imageSlug}/manual/<날짜>/q<문제번호>.png\`에 넣는다.\n5. CSV의 해당 행 \`image_url\`에 슬래시 시작 경로를 입력한다.\n6. 실제 시각 자료가 필요 없는 문제라면 목록에서 확인 완료로 표시한다.`
+    : `## Procedure\n\n1. Open the cited source PDF and locate the question.\n2. Crop only the required diagram, table, or code area, excluding the prompt and choices.\n3. Save a legible PNG.\n4. Use the recommended path \`public/questions/${profile.imageSlug}/manual/<date>/q<question-number>.png\`.\n5. Put the leading-slash path in that CSV row's \`image_url\`.\n6. If the question needs no visual material, mark it reviewed in this list.`;
   const listTitle = korean ? "## 수동 확인 후보" : "## Manual review candidates";
   const empty = korean ? "후보 없음" : "No candidates";
   const lines = candidates.length ? candidates.map((question) => `- [ ] ${question.lineage} · ${question.date} · ${question.number}${korean ? "번" : ""} — ${question.prompt}\n  \`${question.filename}\``).join("\n") : empty;

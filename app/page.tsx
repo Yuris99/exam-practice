@@ -21,7 +21,8 @@ const CERTIFICATE_STORAGE_KEY = "certificate-practice:selected-certificate";
 const certificateLabels: Record<string, string> = {
   "information-processing-engineer": "정보처리기사",
   "embedded-engineer": "임베디드 기사",
-  "computer-system-engineer": "컴퓨터시스템기사"
+  "computer-system-engineer": "컴퓨터시스템기사",
+  "information-security-engineer": "정보보안기사"
 };
 
 const navItems: Array<{ view: View; icon: string; label: string }> = [
