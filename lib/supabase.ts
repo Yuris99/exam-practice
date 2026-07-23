@@ -1,5 +1,5 @@
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
-import type { StudyState } from "./types";
+import type { AiExplanationReport, Question, QuestionReport, StudyState } from "./types";
 import { migrateStudyState } from "./storage";
 
 let browserClient: SupabaseClient | null | undefined;
@@ -42,6 +42,129 @@ export async function saveCloudStudyState(userId: string, studyState: StudyState
       study_state: studyState,
       updated_at: new Date().toISOString()
     }, { onConflict: "user_id" });
+  if (error) throw error;
+}
+
+export async function syncCentralReports(userId: string, studyState: StudyState, questions: Question[]) {
+  const supabase = getSupabaseClient();
+  if (!supabase) return;
+  const questionMap = new Map(questions.map((question) => [question.id, question]));
+  const questionRows = studyState.questionReports.map((report) => ({
+    id: report.id,
+    user_id: userId,
+    question_id: report.questionId,
+    question_version: report.questionVersion,
+    question_snapshot: questionMap.get(report.questionId) ?? null,
+    reason: report.reason,
+    details: report.details,
+    status: report.status,
+    created_at: report.createdAt,
+    updated_at: new Date().toISOString()
+  }));
+  const aiRows = studyState.aiExplanationReports.map((report) => ({
+    id: report.id,
+    user_id: userId,
+    question_id: report.questionId,
+    question_version: report.questionVersion,
+    question_snapshot: questionMap.get(report.questionId) ?? null,
+    cache_key: report.cacheKey,
+    explanation_snapshot: report.explanationSnapshot,
+    reason: report.reason,
+    details: report.details,
+    status: report.status,
+    created_at: report.createdAt,
+    updated_at: new Date().toISOString()
+  }));
+  if (questionRows.length) {
+    const { error } = await supabase.from("question_reports").upsert(questionRows, { onConflict: "id", ignoreDuplicates: true });
+    if (error) throw error;
+  }
+  if (aiRows.length) {
+    const { error } = await supabase.from("ai_explanation_reports").upsert(aiRows, { onConflict: "id", ignoreDuplicates: true });
+    if (error) throw error;
+  }
+}
+
+export async function checkIsAdmin(userId: string) {
+  const supabase = getSupabaseClient();
+  if (!supabase) return false;
+  const { data, error } = await supabase.from("admin_users").select("user_id").eq("user_id", userId).maybeSingle();
+  if (error) throw error;
+  return Boolean(data);
+}
+
+export interface AdminQuestionReport extends QuestionReport {
+  userId: string;
+  questionSnapshot?: Question;
+}
+
+export interface AdminAiReport extends AiExplanationReport {
+  userId: string;
+  questionSnapshot?: Question;
+}
+
+export async function loadAdminReports() {
+  const supabase = getSupabaseClient();
+  if (!supabase) return { questionReports: [], aiReports: [] };
+  const [questionResult, aiResult] = await Promise.all([
+    supabase.from("question_reports").select("*").order("created_at", { ascending: false }).limit(200),
+    supabase.from("ai_explanation_reports").select("*").order("created_at", { ascending: false }).limit(200)
+  ]);
+  if (questionResult.error) throw questionResult.error;
+  if (aiResult.error) throw aiResult.error;
+  return {
+    questionReports: (questionResult.data ?? []).map((row) => ({
+      id: row.id,
+      userId: row.user_id,
+      questionId: row.question_id,
+      questionVersion: row.question_version,
+      questionSnapshot: row.question_snapshot as Question | undefined,
+      reason: row.reason,
+      details: row.details,
+      status: row.status,
+      createdAt: row.created_at
+    })) as AdminQuestionReport[],
+    aiReports: (aiResult.data ?? []).map((row) => ({
+      id: row.id,
+      userId: row.user_id,
+      questionId: row.question_id,
+      questionVersion: row.question_version,
+      questionSnapshot: row.question_snapshot as Question | undefined,
+      cacheKey: row.cache_key,
+      explanationSnapshot: row.explanation_snapshot,
+      reason: row.reason,
+      details: row.details,
+      status: row.status,
+      createdAt: row.created_at
+    })) as AdminAiReport[]
+  };
+}
+
+export async function updateCentralReportStatus(kind: "question" | "ai", id: string, status: string) {
+  const supabase = getSupabaseClient();
+  if (!supabase) throw new Error("Supabase가 설정되지 않았습니다.");
+  const table = kind === "question" ? "question_reports" : "ai_explanation_reports";
+  const { error } = await supabase.from(table).update({ status, updated_at: new Date().toISOString() }).eq("id", id);
+  if (error) throw error;
+}
+
+export async function loadQuestionOverrides(): Promise<Question[]> {
+  const supabase = getSupabaseClient();
+  if (!supabase) return [];
+  const { data, error } = await supabase.from("question_overrides").select("question_data");
+  if (error) throw error;
+  return (data ?? []).flatMap((row) => row.question_data && typeof row.question_data === "object" ? [row.question_data as Question] : []);
+}
+
+export async function saveQuestionOverride(userId: string, question: Question) {
+  const supabase = getSupabaseClient();
+  if (!supabase) throw new Error("Supabase가 설정되지 않았습니다.");
+  const { error } = await supabase.from("question_overrides").upsert({
+    question_id: question.id,
+    question_data: question,
+    updated_by: userId,
+    updated_at: new Date().toISOString()
+  }, { onConflict: "question_id" });
   if (error) throw error;
 }
 

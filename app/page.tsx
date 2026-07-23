@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { TestMode } from "@/components/TestMode";
 import { QuestionManager } from "@/components/QuestionManager";
+import { AdminDashboard } from "@/components/AdminDashboard";
 import { AiExplanation, createExplanationCacheKey } from "@/components/AiExplanation";
 import { PwaStatus } from "@/components/PwaStatus";
 import { QuestionTools } from "@/components/QuestionTools";
@@ -10,14 +11,14 @@ import { QuestionContent } from "@/components/QuestionContent";
 import { QuestionMetadata } from "@/components/QuestionMetadata";
 import { questions } from "@/lib/questions";
 import { emptyStudyState, loadStudyState, mergeStudyStates, saveStudyState } from "@/lib/storage";
-import { getSupabaseClient, loadCloudStudyState, saveCloudStudyState, signInWithGoogle, signOut } from "@/lib/supabase";
+import { checkIsAdmin, getSupabaseClient, loadCloudStudyState, loadQuestionOverrides, saveCloudStudyState, signInWithGoogle, signOut, syncCentralReports } from "@/lib/supabase";
 import { formatKoreanDateTime, koreanDateKey, koreanStudyStreak, recentKoreanDays } from "@/lib/koreanDate";
 import { matchesQuestionMetadata, questionFilterOptions } from "@/lib/questionFilters";
 import { shuffled } from "@/lib/testSelection";
 import type { User } from "@supabase/supabase-js";
 import type { AiExplanationReport, ExamType, Question, SavedAnswer, StudyState, TestResult } from "@/lib/types";
 
-type View = "home" | "practice" | "question" | "test" | "history" | "bookmarks" | "manage";
+type View = "home" | "practice" | "question" | "test" | "history" | "bookmarks" | "manage" | "admin";
 type PracticeFilter = "all" | "unsolved" | "incorrect" | "bookmarked";
 type DifficultyFilter = "all" | Question["difficulty"];
 const CERTIFICATE_STORAGE_KEY = "certificate-practice:selected-certificate";
@@ -51,6 +52,8 @@ export default function HomePage() {
   const [authReady, setAuthReady] = useState(false);
   const [cloudReady, setCloudReady] = useState(false);
   const [authError, setAuthError] = useState("");
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [questionOverrides, setQuestionOverrides] = useState<Question[]>([]);
   const [selectedCertificateId, setSelectedCertificateId] = useState("information-processing-engineer");
   const latestStudy = useRef(study);
   latestStudy.current = study;
@@ -58,6 +61,9 @@ export default function HomePage() {
   useEffect(() => {
     setStudy(loadStudyState());
     setReady(true);
+    loadQuestionOverrides().then(setQuestionOverrides).catch(() => {
+      // Bundled questions remain available if public overrides cannot be loaded.
+    });
   }, []);
 
   useEffect(() => {
@@ -71,7 +77,10 @@ export default function HomePage() {
         return;
       }
       try {
-        if (account && cloudReady) await saveCloudStudyState(account.id, study);
+        if (account && cloudReady) {
+          await saveCloudStudyState(account.id, study);
+          await syncCentralReports(account.id, study, [...questions, ...study.customQuestions]);
+        }
         setStorageStatus("saved");
         setStorageError("");
       } catch (error) {
@@ -129,6 +138,15 @@ export default function HomePage() {
   }, [account, ready]);
 
   useEffect(() => {
+    if (!account) {
+      setIsAdmin(false);
+      if (view === "admin") setView("home");
+      return;
+    }
+    checkIsAdmin(account.id).then(setIsAdmin).catch(() => setIsAdmin(false));
+  }, [account, view]);
+
+  useEffect(() => {
     function flushLatestState() {
       if (document.visibilityState === "hidden") saveStudyState(latestStudy.current);
     }
@@ -180,7 +198,12 @@ export default function HomePage() {
     }
   }
 
-  const allQuestionBank = useMemo(() => [...questions, ...study.customQuestions], [study.customQuestions]);
+  const allQuestionBank = useMemo(() => {
+    const overrides = new Map(questionOverrides.map((question) => [question.id, question]));
+    const base = [...questions, ...study.customQuestions];
+    const baseIds = new Set(base.map((question) => question.id));
+    return [...base.map((question) => overrides.get(question.id) ?? question), ...questionOverrides.filter((question) => !baseIds.has(question.id))];
+  }, [questionOverrides, study.customQuestions]);
   const certificateOptions = useMemo(() => [...new Set(allQuestionBank.map((question) => question.certificateId))].map((id) => ({ id, label: certificateLabels[id] ?? id })), [allQuestionBank]);
   const selectedQuestionBank = useMemo(() => allQuestionBank.filter((question) => question.certificateId === selectedCertificateId), [allQuestionBank, selectedCertificateId]);
   const questionBank = useMemo(() => selectedQuestionBank.filter((question) => (question.publicationStatus ?? "published") === "published"), [selectedQuestionBank]);
@@ -383,7 +406,7 @@ export default function HomePage() {
     <div className="appShell">
       <header className="topbar">
         <div className="brandControls"><button className="logo" onClick={() => setView("home")} aria-label="홈">✓</button><label className="certificatePicker"><span className="srOnly">자격증 선택</span><select value={selectedCertificateId} onChange={(event) => selectCertificate(event.target.value)}>{certificateOptions.map((option) => <option value={option.id} key={option.id}>{option.label}</option>)}</select></label></div>
-        <div className="topbarActions"><button className={view === "manage" ? "manageLink active" : "manageLink"} onClick={() => setView("manage")}>문제 관리</button><button className={account ? "accountButton signedIn" : "accountButton"} onClick={toggleAccount} disabled={!authReady} title={account ? `${account.email ?? "Google 계정"} · 눌러서 로그아웃` : authError}>{account ? (cloudReady ? "동기화됨" : "동기화 중") : "Google 로그인"}</button><StorageStatus status={storageStatus} error={storageError || authError} onRetry={retryStorage} /><PwaStatus /></div>
+        <div className="topbarActions">{isAdmin && <button className={view === "admin" ? "manageLink active" : "manageLink"} onClick={() => setView("admin")}>통합 관리자</button>}<button className={view === "manage" ? "manageLink active" : "manageLink"} onClick={() => setView("manage")}>내 문제 관리</button><button className={account ? "accountButton signedIn" : "accountButton"} onClick={toggleAccount} disabled={!authReady} title={account ? `${account.email ?? "Google 계정"} · 눌러서 로그아웃` : authError}>{account ? (cloudReady ? "동기화됨" : "동기화 중") : "Google 로그인"}</button><StorageStatus status={storageStatus} error={storageError || authError} onRetry={retryStorage} /><PwaStatus /></div>
       </header>
 
       <nav className="navigation" aria-label="주요 메뉴">
@@ -431,6 +454,7 @@ export default function HomePage() {
         {view === "history" && <HistoryView study={study} questionBank={questionBank} onOpenQuestion={startPracticeQuestions} onOpenTestResult={(result) => { setTestResultToOpen(result.id); setView("test"); }} />}
         {view === "bookmarks" && <BookmarksView study={study} questionBank={selectedQuestionBank} onRemove={toggleBookmark} onPractice={startPracticeQuestions} />}
         {view === "manage" && <QuestionManager study={study} setStudy={setStudy} questionBank={allQuestionBank} />}
+        {view === "admin" && isAdmin && account && <AdminDashboard userId={account.id} onQuestionSaved={(updated) => setQuestionOverrides((current) => [updated, ...current.filter((question) => question.id !== updated.id)])} />}
       </main>
     </div>
   );
