@@ -23,7 +23,9 @@ const seen = new Map();
 const errors = [];
 
 for (const filename of files) {
-  const source = (await fs.readFile(path.join(sourceDirectory, filename), "utf8")).replace(/^\uFEFF/, "");
+  const source = (await fs.readFile(path.join(sourceDirectory, filename), "utf8"))
+    .replace(/^\uFEFF/, "")
+    .replace(/\r\n?/g, "\n");
   const rows = parseCsv(source);
   if (rows.length === 0) continue;
   const headers = rows[0].map((value) => value.trim());

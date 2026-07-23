@@ -9,9 +9,12 @@ import { QuestionTools } from "@/components/QuestionTools";
 import { QuestionContent } from "@/components/QuestionContent";
 import { QuestionMetadata } from "@/components/QuestionMetadata";
 import { questions } from "@/lib/questions";
-import { emptyStudyState, loadStudyState, saveStudyState } from "@/lib/storage";
+import { emptyStudyState, loadStudyState, mergeStudyStates, saveStudyState } from "@/lib/storage";
+import { getSupabaseClient, loadCloudStudyState, saveCloudStudyState, signInWithGoogle, signOut } from "@/lib/supabase";
 import { formatKoreanDateTime, koreanDateKey, koreanStudyStreak, recentKoreanDays } from "@/lib/koreanDate";
 import { matchesQuestionMetadata, questionFilterOptions } from "@/lib/questionFilters";
+import { shuffled } from "@/lib/testSelection";
+import type { User } from "@supabase/supabase-js";
 import type { AiExplanationReport, ExamType, Question, SavedAnswer, StudyState, TestResult } from "@/lib/types";
 
 type View = "home" | "practice" | "question" | "test" | "history" | "bookmarks" | "manage";
@@ -20,7 +23,7 @@ type DifficultyFilter = "all" | Question["difficulty"];
 const CERTIFICATE_STORAGE_KEY = "certificate-practice:selected-certificate";
 const certificateLabels: Record<string, string> = {
   "information-processing-engineer": "정보처리기사",
-  "embedded-engineer": "임베디드 기사",
+  "embedded-engineer": "임베디드기사",
   "computer-system-engineer": "컴퓨터시스템기사",
   "information-security-engineer": "정보보안기사"
 };
@@ -44,6 +47,10 @@ export default function HomePage() {
   const [ready, setReady] = useState(false);
   const [storageStatus, setStorageStatus] = useState<"saved" | "saving" | "error">("saved");
   const [storageError, setStorageError] = useState("");
+  const [account, setAccount] = useState<User | null>(null);
+  const [authReady, setAuthReady] = useState(false);
+  const [cloudReady, setCloudReady] = useState(false);
+  const [authError, setAuthError] = useState("");
   const [selectedCertificateId, setSelectedCertificateId] = useState("information-processing-engineer");
   const latestStudy = useRef(study);
   latestStudy.current = study;
@@ -56,13 +63,66 @@ export default function HomePage() {
   useEffect(() => {
     if (!ready) return;
     setStorageStatus("saving");
-    const timeout = window.setTimeout(() => {
+    const timeout = window.setTimeout(async () => {
       const result = saveStudyState(study);
-      setStorageStatus(result.ok ? "saved" : "error");
-      setStorageError(result.error ?? "");
+      if (!result.ok) {
+        setStorageStatus("error");
+        setStorageError(result.error ?? "");
+        return;
+      }
+      try {
+        if (account && cloudReady) await saveCloudStudyState(account.id, study);
+        setStorageStatus("saved");
+        setStorageError("");
+      } catch {
+        setStorageStatus("error");
+        setStorageError("클라우드 저장에 실패했습니다. 네트워크 연결을 확인해 주세요.");
+      }
     }, 300);
     return () => window.clearTimeout(timeout);
-  }, [ready, study]);
+  }, [account, cloudReady, ready, study]);
+
+  useEffect(() => {
+    const supabase = getSupabaseClient();
+    if (!supabase) {
+      setAuthReady(true);
+      return;
+    }
+    supabase.auth.getSession().then(({ data }) => {
+      setAccount(data.session?.user ?? null);
+      setAuthReady(true);
+    });
+    const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
+      setAccount(session?.user ?? null);
+      setAuthReady(true);
+      if (!session) setCloudReady(false);
+    });
+    return () => listener.subscription.unsubscribe();
+  }, []);
+
+  useEffect(() => {
+    if (!ready || !account) return;
+    let cancelled = false;
+    setCloudReady(false);
+    loadCloudStudyState(account.id).then(async (cloudState) => {
+      if (cancelled) return;
+      const localState = loadStudyState();
+      const merged = cloudState ? mergeStudyStates(localState, cloudState) : localState;
+      setStudy(merged);
+      saveStudyState(merged);
+      await saveCloudStudyState(account.id, merged);
+      if (!cancelled) {
+        setCloudReady(true);
+        setAuthError("");
+      }
+    }).catch(() => {
+      if (!cancelled) {
+        setAuthError("클라우드 데이터를 불러오지 못했습니다.");
+        setCloudReady(false);
+      }
+    });
+    return () => { cancelled = true; };
+  }, [account, ready]);
 
   useEffect(() => {
     function flushLatestState() {
@@ -84,6 +144,24 @@ export default function HomePage() {
     const result = saveStudyState(study);
     setStorageStatus(result.ok ? "saved" : "error");
     setStorageError(result.error ?? "");
+  }
+
+  async function toggleAccount() {
+    setAuthError("");
+    try {
+      if (account) {
+        await signOut();
+        setAccount(null);
+        setCloudReady(false);
+      } else {
+        await signInWithGoogle();
+      }
+    } catch (error) {
+      const message = error instanceof Error ? error.message : "로그인 처리에 실패했습니다.";
+      setAuthError(message);
+      setStorageError(message);
+      setStorageStatus("error");
+    }
   }
 
   const allQuestionBank = useMemo(() => [...questions, ...study.customQuestions], [study.customQuestions]);
@@ -118,14 +196,14 @@ export default function HomePage() {
   }
 
   function startPractice(type: ExamType, category = "all", filter: PracticeFilter = "all", difficulty: DifficultyFilter = "all", sourceYear = "all", tag = "all") {
-    const selectedIds = questionBank.filter((item) => {
+    const selectedIds = shuffled(questionBank.filter((item) => {
       if (!matchesQuestionMetadata(item, { examType: type, category, difficulty, sourceYear, tag })) return false;
       const answer = study.answers[item.id];
       if (filter === "unsolved") return !answer;
       if (filter === "incorrect") return answer?.isCorrect === false;
       if (filter === "bookmarked") return study.bookmarks.includes(item.id);
       return true;
-    }).map((item) => item.id);
+    })).map((item) => item.id);
     setExamType(type);
     setQuestionIndex(0);
     setDraftAnswer(null);
@@ -267,7 +345,7 @@ export default function HomePage() {
     <div className="appShell">
       <header className="topbar">
         <div className="brandControls"><button className="logo" onClick={() => setView("home")} aria-label="홈">✓</button><label className="certificatePicker"><span className="srOnly">자격증 선택</span><select value={selectedCertificateId} onChange={(event) => selectCertificate(event.target.value)}>{certificateOptions.map((option) => <option value={option.id} key={option.id}>{option.label}</option>)}</select></label></div>
-        <div className="topbarActions"><button className={view === "manage" ? "manageLink active" : "manageLink"} onClick={() => setView("manage")}>문제 관리</button><StorageStatus status={storageStatus} error={storageError} onRetry={retryStorage} /><PwaStatus /></div>
+        <div className="topbarActions"><button className={view === "manage" ? "manageLink active" : "manageLink"} onClick={() => setView("manage")}>문제 관리</button><button className={account ? "accountButton signedIn" : "accountButton"} onClick={toggleAccount} disabled={!authReady} title={account ? `${account.email ?? "Google 계정"} · 눌러서 로그아웃` : authError}>{account ? (cloudReady ? "동기화됨" : "동기화 중") : "Google 로그인"}</button><StorageStatus status={storageStatus} error={storageError || authError} onRetry={retryStorage} /><PwaStatus /></div>
       </header>
 
       <nav className="navigation" aria-label="주요 메뉴">

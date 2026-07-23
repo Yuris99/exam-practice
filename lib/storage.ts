@@ -48,6 +48,32 @@ export function saveStudyState(state: StudyState): StorageSaveResult {
   }
 }
 
+export function mergeStudyStates(local: StudyState, cloud: StudyState): StudyState {
+  const byId = <T extends { id: string }>(older: T[], newer: T[]) => {
+    const merged = new Map(older.map((item) => [item.id, item]));
+    newer.forEach((item) => merged.set(item.id, item));
+    return [...merged.values()];
+  };
+  const answers = { ...cloud.answers };
+  Object.entries(local.answers).forEach(([id, answer]) => {
+    const cloudAnswer = answers[id];
+    if (!cloudAnswer || new Date(answer.answeredAt).getTime() >= new Date(cloudAnswer.answeredAt).getTime()) answers[id] = answer;
+  });
+  return {
+    answers,
+    bookmarks: [...new Set([...cloud.bookmarks, ...local.bookmarks])],
+    aiExplanations: { ...cloud.aiExplanations, ...local.aiExplanations },
+    activeTest: local.activeTest ?? cloud.activeTest,
+    testResults: byId(cloud.testResults, local.testResults),
+    customQuestions: byId(cloud.customQuestions, local.customQuestions),
+    activePractice: local.activePractice ?? cloud.activePractice,
+    activities: byId(cloud.activities, local.activities),
+    notes: { ...cloud.notes, ...local.notes },
+    questionReports: byId(cloud.questionReports, local.questionReports),
+    aiExplanationReports: byId(cloud.aiExplanationReports, local.aiExplanationReports)
+  };
+}
+
 export function migrateStudyState(value: unknown): StudyState {
   const root = isRecord(value) && value.format === STUDY_DATA_FORMAT && isRecord(value.data) ? value.data : value;
   if (!isRecord(root)) return structuredClone(emptyStudyState);

@@ -1,12 +1,12 @@
 :root { color-scheme: dark; --bg:#111613; --surface:#1b231e; --surface2:#222d26; --line:#344139; --text:#e4ebe5; --muted:#9aa69e; --green:#79b792; --deep:#315f46; --danger:#d67c76; }
 * { box-sizing:border-box; }
-html,body { min-height:100%; }
+html,body { min-width:0; min-height:100%; overflow-x:clip; }
 html { background:var(--bg); }
 body { margin:0; color:var(--text); background:var(--bg); font-family:Pretendard,"Noto Sans KR",system-ui,sans-serif; -webkit-tap-highlight-color:transparent; }
 button,textarea { font:inherit; }
 button { color:inherit; touch-action:manipulation; }
 button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible { outline:2px solid #9ac9aa; outline-offset:2px; }
-.appShell { min-height:100dvh; }
+.appShell { width:100%; min-width:0; min-height:100dvh; overflow-x:clip; }
 .topbar { position:sticky; z-index:10; top:0; display:flex; height:calc(58px + env(safe-area-inset-top)); padding:calc(9px + env(safe-area-inset-top)) max(18px,env(safe-area-inset-right)) 9px max(18px,env(safe-area-inset-left)); align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); background:rgba(17,22,19,.94); backdrop-filter:blur(14px); }
 .logo { display:grid; width:36px; height:36px; padding:0; border:0; place-items:center; border-radius:12px 12px 12px 4px; color:#fff; background:var(--deep); cursor:pointer; font-weight:900; }
 .brandControls { display:flex; min-width:0; align-items:center; gap:9px; }
@@ -14,13 +14,16 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 .topbarActions { display:flex; align-items:center; gap:10px; }
 .manageLink { min-height:34px; padding:0 10px; border:1px solid var(--line); border-radius:9px; color:var(--muted); background:transparent; cursor:pointer; font-size:10px; }
 .manageLink.active { color:var(--green); border-color:#3b5947; background:#24372d; }
+.accountButton { min-height:34px; padding:0 10px; border:1px solid #486454; border-radius:9px; color:#b8dbc5; background:#18231d; cursor:pointer; font-size:10px; white-space:nowrap; }
+.accountButton.signedIn { border-color:#596b34; color:#d4dfaa; background:#27372b; }
+.accountButton:disabled { opacity:.55; cursor:wait; }
 .storageStatus { color:var(--muted); font-size:9px; white-space:nowrap; }
 .storageStatus.saving { color:#e3c173; }
 .storageStatus.error { min-height:32px; padding:0 9px; border:1px solid #68413e; border-radius:8px; color:#df918a; background:#342321; cursor:pointer; }
 .localBadge { color:var(--muted); font-size:11px; }
 .localBadge.offline { padding:5px 8px; border-radius:8px; color:#e3c173; background:#362e20; }
-@media(max-width:560px){.localBadge:not(.offline){display:none}.topbarActions{gap:7px}.manageLink{padding:0 8px}.certificatePicker select{max-width:142px;font-size:12px}.storageStatus:not(.error){display:none}}
-main { width:min(100%,980px); margin:0 auto; padding:18px max(18px,env(safe-area-inset-right)) calc(92px + env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left)); }
+@media(max-width:560px){.topbar{padding-right:max(10px,env(safe-area-inset-right));padding-left:max(10px,env(safe-area-inset-left));gap:6px}.brandControls{flex:1}.localBadge:not(.offline){display:none}.topbarActions{flex:0 0 auto;gap:5px}.manageLink{display:none}.accountButton{padding:0 7px}.certificatePicker{min-width:0}.certificatePicker select{width:100%;max-width:142px;font-size:12px}.storageStatus:not(.error){display:none}}
+main { width:min(100%,980px); min-width:0; margin:0 auto; padding:18px max(18px,env(safe-area-inset-right)) calc(92px + env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left)); }
 .navigation { position:fixed; z-index:20; right:0; bottom:0; left:0; display:grid; height:calc(70px + env(safe-area-inset-bottom)); padding:0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); grid-template-columns:repeat(5,1fr); border-top:1px solid var(--line); background:rgba(23,30,26,.96); backdrop-filter:blur(14px); }
 .navigation button { display:flex; border:0; align-items:center; justify-content:center; flex-direction:column; gap:2px; color:var(--muted); background:transparent; cursor:pointer; font-size:10px; }
 .navigation button span { font-size:20px; }
