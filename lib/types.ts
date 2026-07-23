@@ -41,6 +41,7 @@ export interface SavedAnswer {
   questionVersion: number;
   value: AnswerValue;
   isCorrect?: boolean;
+  knowledgeStatus?: "known" | "unknown";
   selfAssessment?: "correct" | "partial" | "incorrect";
   answeredAt: string;
 }
@@ -78,6 +79,7 @@ export interface ActivityRecord {
   questionId: string;
   category: string;
   isCorrect?: boolean;
+  knowledgeStatus?: "known" | "unknown";
   selfAssessment?: "correct" | "partial" | "incorrect";
   occurredAt: string;
 }

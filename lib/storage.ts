@@ -139,7 +139,12 @@ function isQuestion(value: unknown): value is Question {
 }
 
 function isSavedAnswer(value: unknown): value is SavedAnswer {
-  return isRecord(value) && hasString(value, "questionId") && typeof value.questionVersion === "number" && (typeof value.value === "string" || typeof value.value === "number") && hasString(value, "answeredAt");
+  return isRecord(value)
+    && hasString(value, "questionId")
+    && typeof value.questionVersion === "number"
+    && (typeof value.value === "string" || typeof value.value === "number")
+    && hasString(value, "answeredAt")
+    && (value.knowledgeStatus === undefined || value.knowledgeStatus === "known" || value.knowledgeStatus === "unknown");
 }
 
 function isTestResult(value: unknown): value is TestResult {

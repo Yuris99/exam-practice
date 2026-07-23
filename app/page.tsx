@@ -337,6 +337,28 @@ export default function HomePage() {
     });
   }
 
+  function setKnowledgeStatus(knowledgeStatus: "known" | "unknown") {
+    if (!question) return;
+    setStudy((current) => {
+      const savedAnswer = current.answers[question.id];
+      if (!savedAnswer) return current;
+      let activityUpdated = false;
+      const activities = current.activities.map((activity) => {
+        if (activityUpdated || activity.source !== "practice" || activity.questionId !== question.id) return activity;
+        activityUpdated = true;
+        return { ...activity, knowledgeStatus };
+      });
+      return {
+        ...current,
+        answers: {
+          ...current.answers,
+          [question.id]: { ...savedAnswer, knowledgeStatus }
+        },
+        activities
+      };
+    });
+  }
+
   function toggleBookmark(id: string) {
     setStudy((current) => ({
       ...current,
@@ -388,6 +410,7 @@ export default function HomePage() {
             onBookmark={() => toggleBookmark(question.id)}
             onSubmit={submitAnswer}
             onSelfAssess={assessPracticalAnswer}
+            onKnowledgeChange={setKnowledgeStatus}
             onPrevious={() => movePracticeQuestion(questionIndex - 1)}
             onNext={nextQuestion}
             canGoPrevious={questionIndex > 0}
@@ -405,7 +428,7 @@ export default function HomePage() {
         {view === "test" && <TestMode study={study} setStudy={setStudy} questionBank={questionBank} resultToOpenId={testResultToOpen} onResultOpened={() => setTestResultToOpen(null)} onPracticeQuestions={(type, questionIds) => {
           startPracticeQuestions(type, questionIds);
         }} />}
-        {view === "history" && <HistoryView study={study} questionBank={questionBank} onOpenTestResult={(result) => { setTestResultToOpen(result.id); setView("test"); }} />}
+        {view === "history" && <HistoryView study={study} questionBank={questionBank} onOpenQuestion={startPracticeQuestions} onOpenTestResult={(result) => { setTestResultToOpen(result.id); setView("test"); }} />}
         {view === "bookmarks" && <BookmarksView study={study} questionBank={selectedQuestionBank} onRemove={toggleBookmark} onPractice={startPracticeQuestions} />}
         {view === "manage" && <QuestionManager study={study} setStudy={setStudy} questionBank={allQuestionBank} />}
       </main>
@@ -439,6 +462,8 @@ function HomeView({ study, onStart, onNavigate, onResume, questionBank, certific
   const answerCount = selectedAnswers.length;
   const scored = selectedAnswers.filter((answer) => answer.isCorrect !== undefined);
   const accuracy = scored.length ? Math.round(scored.filter((answer) => answer.isCorrect).length / scored.length * 100) : 0;
+  const masteredCount = selectedAnswers.filter((answer) => answer.isCorrect === true && answer.knowledgeStatus !== "unknown").length;
+  const masteryRate = percentage(masteredCount, questionBank.length);
   const activePractice = study.activePractice;
   const activeTest = study.activeTest;
   const activeQuestion = activePractice ? questionBank.find((question) => question.id === activePractice.questionIds[activePractice.currentIndex]) : undefined;
@@ -460,7 +485,7 @@ function HomeView({ study, onStart, onNavigate, onResume, questionBank, certific
       <button onClick={() => onNavigate("practice")}><i>⌘</i><strong>맞춤 연습</strong><span>시험 유형과 범위를 선택해요</span></button>
     </div>
     <div className="sectionTitle"><h2>현재 기록</h2><button onClick={() => onNavigate("history")}>자세히</button></div>
-    <div className="summary standardSummary"><div><strong>{answerCount}</strong><span>푼 문제</span></div><div><strong>{accuracy}%</strong><span>필기 정답률</span></div><div><strong>{study.bookmarks.filter((id) => questionIds.has(id)).length}</strong><span>북마크</span></div></div>
+    <div className="summary standardSummary"><div><strong>{answerCount}</strong><span>푼 문제</span></div><div><strong>{accuracy}%</strong><span>필기 정답률</span></div><div><strong>{masteryRate}%</strong><span>완전 정복 · {masteredCount}/{questionBank.length}</span></div><div><strong>{study.bookmarks.filter((id) => questionIds.has(id)).length}</strong><span>북마크</span></div></div>
   </section>;
 }
 
@@ -496,7 +521,7 @@ function BookmarksView({ study, questionBank, onRemove, onPractice }: {
     {visibleQuestions.length === 0 ? <div className="panel emptyManager">{bookmarkedQuestions.length ? "검색 조건에 맞는 북마크가 없습니다." : "아직 저장한 문제가 없습니다."}</div> : <div className="bookmarkList">{visibleQuestions.map((question) => {
       const answer = study.answers[question.id];
       const archived = (question.publicationStatus ?? "published") !== "published";
-      return <article className="panel" key={question.id}><div><small>{question.examType === "WRITTEN_CBT" ? "필기 CBT" : "실기 필답형"} · {question.category}{archived ? " · 출제 제외" : ""}</small><strong>{question.prompt}</strong><span>{!answer ? "아직 풀지 않음" : answer.isCorrect === true ? "최근 답안 정답" : answer.isCorrect === false ? "최근 답안 오답" : answer.selfAssessment === "partial" ? "최근 답안 부분 정답" : "답안 저장됨"}</span></div><button onClick={() => onRemove(question.id)} aria-label="북마크 해제">♥</button></article>;
+      return <article className="panel" key={question.id}><button className="bookmarkOpen" disabled={archived} onClick={() => onPractice(question.examType, [question.id])}><small>{question.examType === "WRITTEN_CBT" ? "필기 CBT" : "실기 필답형"} · {question.category}{archived ? " · 출제 제외" : ""}</small><strong>{question.prompt}</strong><span>{!answer ? "아직 풀지 않음" : answer.knowledgeStatus === "unknown" ? "최근 답안 · 아직 모름" : answer.isCorrect === true ? "최근 답안 정답" : answer.isCorrect === false ? "최근 답안 오답" : answer.selfAssessment === "partial" ? "최근 답안 부분 정답" : "답안 저장됨"}</span></button><button onClick={() => onRemove(question.id)} aria-label="북마크 해제">♥</button></article>;
     })}</div>}
     {pageCount > 1 && <div className="pagination"><button disabled={currentPage === 1} onClick={() => setPage(currentPage - 1)}>이전</button><span>{currentPage} / {pageCount}</span><button disabled={currentPage === pageCount} onClick={() => setPage(currentPage + 1)}>다음</button></div>}
   </section>;
@@ -554,7 +579,7 @@ function EmptyPracticeResult({ onBack }: { onBack: () => void }) {
   return <section className="emptyPractice"><div><span>0</span><h1>조건에 맞는 문제가 없어요</h1><p>다른 과목이나 문제 필터를 선택해 주세요.</p><button className="fullButton" onClick={onBack}>연습 설정으로 돌아가기</button></div></section>;
 }
 
-function QuestionView({ question, index, total, draftAnswer, setDraftAnswer, submitted, savedAnswer, bookmarked, onBookmark, onSubmit, onSelfAssess, onPrevious, onNext, canGoPrevious, isLast, cachedAiExplanation, aiReport, onSaveAiExplanation, onReportAiExplanation, note, onNoteChange, onReport }: {
+function QuestionView({ question, index, total, draftAnswer, setDraftAnswer, submitted, savedAnswer, bookmarked, onBookmark, onSubmit, onSelfAssess, onKnowledgeChange, onPrevious, onNext, canGoPrevious, isLast, cachedAiExplanation, aiReport, onSaveAiExplanation, onReportAiExplanation, note, onNoteChange, onReport }: {
   question: Question;
   index: number;
   total: number;
@@ -566,6 +591,7 @@ function QuestionView({ question, index, total, draftAnswer, setDraftAnswer, sub
   onBookmark: () => void;
   onSubmit: () => void;
   onSelfAssess: (assessment: "correct" | "partial" | "incorrect") => void;
+  onKnowledgeChange: (status: "known" | "unknown") => void;
   onPrevious: () => void;
   onNext: () => void;
   canGoPrevious: boolean;
@@ -596,6 +622,7 @@ function QuestionView({ question, index, total, draftAnswer, setDraftAnswer, sub
 
       {submitted && <div className="feedback">
         <strong>{question.examType === "WRITTEN_CBT" ? (savedAnswer?.isCorrect ? "정답입니다" : "정답을 확인하세요") : "모범답안과 비교해 보세요"}</strong>
+        {question.examType === "WRITTEN_CBT" && savedAnswer?.isCorrect && <div className="knowledgeCheck"><span>이 문제를 알고 풀었나요?</span><button className={savedAnswer.knowledgeStatus !== "unknown" ? "active" : ""} onClick={() => onKnowledgeChange("known")}>알고 풀었어요</button><button className={savedAnswer.knowledgeStatus === "unknown" ? "unknown active" : "unknown"} onClick={() => onKnowledgeChange("unknown")}>찍어서 맞음 · 아직 모름</button></div>}
         {question.examType === "PRACTICAL_WRITTEN_RESPONSE" && <><p>모범답안: {question.modelAnswer}</p><div className="selfAssessment"><span>내 답안은 어땠나요?</span>{(["correct", "partial", "incorrect"] as const).map((value) => <button key={value} className={savedAnswer?.selfAssessment === value ? "active" : ""} onClick={() => onSelfAssess(value)}>{value === "correct" ? "정답" : value === "partial" ? "부분 정답" : "오답"}</button>)}</div></>}
         <p>{question.explanation}</p>
         {savedAnswer && <AiExplanation question={question} learnerAnswer={savedAnswer.value} cachedExplanation={cachedAiExplanation} onSave={onSaveAiExplanation} reportStatus={aiReport?.status} onReport={onReportAiExplanation} />}
@@ -605,7 +632,7 @@ function QuestionView({ question, index, total, draftAnswer, setDraftAnswer, sub
   </section>;
 }
 
-function HistoryView({ study, questionBank, onOpenTestResult }: { study: StudyState; questionBank: Question[]; onOpenTestResult: (result: TestResult) => void }) {
+function HistoryView({ study, questionBank, onOpenQuestion, onOpenTestResult }: { study: StudyState; questionBank: Question[]; onOpenQuestion: (examType: ExamType, questionIds: string[]) => void; onOpenTestResult: (result: TestResult) => void }) {
   const questionIds = new Set(questionBank.map((question) => question.id));
   const activities = study.activities.filter((activity) => questionIds.has(activity.questionId));
   const testResults = study.testResults.filter((result) => result.questionIds.some((id) => questionIds.has(id)));
@@ -633,7 +660,9 @@ function HistoryView({ study, questionBank, onOpenTestResult }: { study: StudySt
       occurredAt: activity.occurredAt,
       label: activity.examType === "WRITTEN_CBT" ? "필기 연습" : "실기 연습",
       detail: activity.category,
-      result: activity.isCorrect === true ? "정답" : activity.isCorrect === false ? "오답" : activity.selfAssessment === "partial" ? "부분 정답" : "답안 저장",
+      result: activity.knowledgeStatus === "unknown" ? "아직 모름" : activity.isCorrect === true ? "정답" : activity.isCorrect === false ? "오답" : activity.selfAssessment === "partial" ? "부분 정답" : "답안 저장",
+      questionId: activity.questionId,
+      examType: activity.examType,
       testResult: undefined as TestResult | undefined
     })),
     ...testResults.map((result) => ({
@@ -642,6 +671,8 @@ function HistoryView({ study, questionBank, onOpenTestResult }: { study: StudySt
       label: result.title ?? (result.examType === "WRITTEN_CBT" ? "필기 시험" : "실기 시험"),
       detail: `${result.questionIds.length}문제`,
       result: result.scoredQuestionCount ? `${Math.round(result.correctCount / result.scoredQuestionCount * 100)}점` : "제출 완료",
+      questionId: undefined as string | undefined,
+      examType: result.examType,
       testResult: result as TestResult | undefined
     }))
   ].sort((a, b) => new Date(b.occurredAt).getTime() - new Date(a.occurredAt).getTime()).slice(0, 10);
@@ -657,7 +688,7 @@ function HistoryView({ study, questionBank, onOpenTestResult }: { study: StudySt
     <div className="sectionTitle"><h2>과목별 성과</h2><span>필기 정답률</span></div>
     {categoryRows.length ? <div className="panel categoryPerformance">{categoryRows.map((row) => <div key={row.category}><div><strong>{row.category}</strong><span>{row.count}문제 · {row.accuracy}%</span></div><p><i style={{ width: `${row.accuracy}%` }} /></p></div>)}</div> : <div className="panel emptyManager">문제를 풀면 과목별 통계가 표시됩니다.</div>}
     <div className="sectionTitle"><h2>최근 학습</h2><span>최대 10건</span></div>
-    {recentEntries.length ? <div className="panel recentActivityList">{recentEntries.map((entry) => { const content = <><span><strong>{entry.label}</strong><small>{entry.detail} · {formatKoreanDateTime(entry.occurredAt)}</small></span><b>{entry.result}</b></>; return entry.testResult ? <button key={`${entry.id}:${entry.occurredAt}`} onClick={() => onOpenTestResult(entry.testResult!)} aria-label={`${entry.label} 결과 복습`}>{content}<i>›</i></button> : <div key={`${entry.id}:${entry.occurredAt}`}>{content}</div>; })}</div> : <div className="panel emptyManager">학습을 시작하면 최근 기록이 표시됩니다.</div>}
+    {recentEntries.length ? <div className="panel recentActivityList">{recentEntries.map((entry) => { const content = <><span><strong>{entry.label}</strong><small>{entry.detail} · {formatKoreanDateTime(entry.occurredAt)}</small></span><b>{entry.result}</b><i>›</i></>; return <button key={`${entry.id}:${entry.occurredAt}`} onClick={() => entry.testResult ? onOpenTestResult(entry.testResult) : entry.questionId && onOpenQuestion(entry.examType, [entry.questionId])} aria-label={entry.testResult ? `${entry.label} 결과 복습` : `${entry.detail} 문제 다시 풀기`}>{content}</button>; })}</div> : <div className="panel emptyManager">학습을 시작하면 최근 기록이 표시됩니다.</div>}
   </section>;
 }
 

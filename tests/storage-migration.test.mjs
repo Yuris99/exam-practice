@@ -76,3 +76,17 @@ test("cloud merge preserves records from both devices and keeps the latest answe
   assert.equal(merged.answers.q1.value, 2);
   assert.equal(merged.answers.q2.value, 3);
 });
+
+test("knowledge status survives storage migration", () => {
+  const migrated = migrateStudyState({
+    answers: {
+      guessed: { ...answer, questionId: "guessed", knowledgeStatus: "unknown" },
+      known: { ...answer, questionId: "known", knowledgeStatus: "known" },
+      broken: { ...answer, questionId: "broken", knowledgeStatus: "maybe" }
+    }
+  });
+
+  assert.equal(migrated.answers.guessed.knowledgeStatus, "unknown");
+  assert.equal(migrated.answers.known.knowledgeStatus, "known");
+  assert.equal(migrated.answers.broken, undefined);
+});

@@ -47,10 +47,11 @@ main { width:min(100%,980px); min-width:0; margin:0 auto; padding:18px max(18px,
 .modeGrid strong,.modeGrid span { display:block; }
 .modeGrid span { margin-top:4px; color:var(--muted); font-size:11px; }
 .summary { display:grid; padding:13px 5px; border:1px solid var(--line); border-radius:18px; background:var(--surface); }
-.standardSummary { grid-template-columns:repeat(3,1fr); }
+.standardSummary { grid-template-columns:repeat(2,1fr); }
 .resultSummary { grid-template-columns:repeat(2,1fr); padding:5px; }
 .summary div { text-align:center; }
-.standardSummary div+div { border-left:1px solid var(--line); }
+.standardSummary div:nth-child(even) { border-left:1px solid var(--line); }
+.standardSummary div:nth-child(n+3) { padding-top:8px; border-top:1px solid var(--line); }
 .resultSummary div { padding:8px 4px; }
 .resultSummary div:nth-child(even) { border-left:1px solid var(--line); }
 .resultSummary div:nth-child(n+3) { border-top:1px solid var(--line); }
@@ -120,6 +121,11 @@ textarea:focus { border-color:var(--green); }
 .feedback { margin-top:16px; padding:16px; border-radius:14px; background:#24372d; }
 .feedback p { margin:7px 0 0; color:#bec9c1; font-size:12px; }
 .feedback p,.officialReview { white-space:pre-wrap; overflow-wrap:anywhere; }
+.knowledgeCheck { display:flex; margin:12px 0 4px; padding:10px; align-items:center; flex-wrap:wrap; gap:6px; border-radius:11px; background:#18231d; }
+.knowledgeCheck span { width:100%; margin-bottom:2px; color:var(--muted); font-size:10px; }
+.knowledgeCheck button { min-height:34px; padding:0 10px; border:1px solid var(--line); border-radius:9px; color:var(--muted); background:transparent; cursor:pointer; font-size:10px; }
+.knowledgeCheck button.active { border-color:var(--green); color:#fff; background:var(--deep); }
+.knowledgeCheck button.unknown.active { border-color:#9c7b36; color:#f0d58d; background:#362e20; }
 .aiSection { margin-top:14px; padding-top:13px; border-top:1px solid #3a4d42; }
 .aiExplainButton { width:100%; min-height:43px; border:1px solid #486454; border-radius:11px; color:#b8dbc5; background:#18231d; cursor:pointer; font-size:12px; font-weight:800; }
 .aiExplainButton:disabled { opacity:.6; cursor:wait; }
@@ -353,12 +359,14 @@ textarea:focus { border-color:var(--green); }
 .bookmarkFilters { margin:10px 0 12px; }
 .bookmarkList { display:grid; gap:8px; }
 .bookmarkList article { display:flex; padding:14px 15px; align-items:center; justify-content:space-between; gap:12px; }
-.bookmarkList article > div { min-width:0; }
+.bookmarkList article > div,.bookmarkOpen { min-width:0; }
+.bookmarkOpen { display:block; padding:0; border:0; flex:1; color:var(--text); background:transparent; text-align:left; cursor:pointer; }
+.bookmarkOpen:disabled { cursor:not-allowed; opacity:.55; }
 .bookmarkList small,.bookmarkList strong,.bookmarkList span { display:block; }
 .bookmarkList small { color:var(--green); font-size:9px; }
 .bookmarkList strong { margin:4px 0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:12px; }
 .bookmarkList span { color:var(--muted); font-size:9px; }
-.bookmarkList article > button { width:42px; height:42px; flex:0 0 auto; border:1px solid #68413e; border-radius:11px; color:#df918a; background:#342321; cursor:pointer; font-size:17px; }
+.bookmarkList article > button:not(.bookmarkOpen) { width:42px; height:42px; flex:0 0 auto; border:1px solid #68413e; border-radius:11px; color:#df918a; background:#342321; cursor:pointer; font-size:17px; }
 .reportList { display:grid; gap:8px; }
 .reportList article { display:flex; padding:14px 15px; align-items:center; justify-content:space-between; gap:15px; }
 .reportList article > div { min-width:0; }
@@ -395,6 +403,9 @@ textarea:focus { border-color:var(--green); }
 .templateMeta strong { display: block; color: var(--text); font-size: 1rem; }
 
 @media (min-width: 760px) {
+  .standardSummary { grid-template-columns:repeat(4,1fr); }
+  .standardSummary div:nth-child(n+3) { padding-top:0; border-top:0; }
+  .standardSummary div+div { border-left:1px solid var(--line); }
   .activeSessionGrid:has(.testResumeCard) { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .resultSummary { grid-template-columns:repeat(4,1fr); padding:13px 5px; }
   .resultSummary div { padding:0; }
