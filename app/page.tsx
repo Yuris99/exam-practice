@@ -74,9 +74,10 @@ export default function HomePage() {
         if (account && cloudReady) await saveCloudStudyState(account.id, study);
         setStorageStatus("saved");
         setStorageError("");
-      } catch {
+      } catch (error) {
+        const message = readableError(error, "클라우드 저장에 실패했습니다.");
         setStorageStatus("error");
-        setStorageError("클라우드 저장에 실패했습니다. 네트워크 연결을 확인해 주세요.");
+        setStorageError(message);
       }
     }, 300);
     return () => window.clearTimeout(timeout);
@@ -115,9 +116,12 @@ export default function HomePage() {
         setCloudReady(true);
         setAuthError("");
       }
-    }).catch(() => {
+    }).catch((error) => {
       if (!cancelled) {
-        setAuthError("클라우드 데이터를 불러오지 못했습니다.");
+        const message = readableError(error, "클라우드 데이터를 불러오지 못했습니다.");
+        setAuthError(message);
+        setStorageError(message);
+        setStorageStatus("error");
         setCloudReady(false);
       }
     });
@@ -139,11 +143,23 @@ export default function HomePage() {
     };
   }, []);
 
-  function retryStorage() {
+  async function retryStorage() {
     setStorageStatus("saving");
     const result = saveStudyState(study);
-    setStorageStatus(result.ok ? "saved" : "error");
-    setStorageError(result.error ?? "");
+    if (!result.ok) {
+      setStorageStatus("error");
+      setStorageError(result.error ?? "");
+      return;
+    }
+    try {
+      if (account) await saveCloudStudyState(account.id, study);
+      setCloudReady(Boolean(account));
+      setStorageStatus("saved");
+      setStorageError("");
+    } catch (error) {
+      setStorageStatus("error");
+      setStorageError(readableError(error, "클라우드 저장에 실패했습니다."));
+    }
   }
 
   async function toggleAccount() {
@@ -395,6 +411,14 @@ export default function HomePage() {
       </main>
     </div>
   );
+}
+
+function readableError(error: unknown, fallback: string) {
+  if (error instanceof Error && error.message) return `${fallback} (${error.message})`;
+  if (error && typeof error === "object" && "message" in error && typeof error.message === "string") {
+    return `${fallback} (${error.message})`;
+  }
+  return fallback;
 }
 
 function StorageStatus({ status, error, onRetry }: { status: "saved" | "saving" | "error"; error: string; onRetry: () => void }) {

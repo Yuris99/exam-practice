@@ -44,8 +44,8 @@ DSM **제어판 → 로그인 포털 → 고급 → 역방향 프록시**에서 
 실제 AI 해설을 활성화할 때만 `compose.yaml` 옆에 `.env` 파일을 만든다.
 
 ```dotenv
-OPENAI_API_KEY=replace_me
-OPENAI_MODEL=gpt-5.6-luna
+GEMINI_API_KEY=replace_me
+GEMINI_MODEL=gemini-3.5-flash
 AI_DAILY_LIMIT=20
 ```
 

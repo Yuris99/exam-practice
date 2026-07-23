@@ -44,8 +44,8 @@ After the reverse proxy works, optionally restrict port 3000 to the local networ
 Create a `.env` file beside `compose.yaml` only when live AI explanations are activated:
 
 ```dotenv
-OPENAI_API_KEY=replace_me
-OPENAI_MODEL=gpt-5.6-luna
+GEMINI_API_KEY=replace_me
+GEMINI_MODEL=gemini-3.5-flash
 AI_DAILY_LIMIT=20
 ```
 
