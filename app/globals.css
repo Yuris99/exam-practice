@@ -126,6 +126,14 @@ textarea:focus { border-color:var(--green); }
 .aiContent { margin-top:11px; padding:13px; border-radius:11px; background:#17201b; }
 .aiContent strong { color:var(--green); font-size:11px; }
 .aiContent p { white-space:pre-line; line-height:1.7; }
+.aiMarkdown { margin-top:10px; color:#c7d1ca; font-size:13px; line-height:1.7; }
+.aiMarkdown h1,.aiMarkdown h2,.aiMarkdown h3 { margin:14px 0 6px; color:var(--text); font-size:14px; }
+.aiMarkdown p { margin:7px 0; white-space:normal; }
+.aiMarkdown ul,.aiMarkdown ol { margin:7px 0; padding-left:20px; }
+.aiMarkdown li+li { margin-top:4px; }
+.aiMarkdown strong { color:#d9e9de; }
+.aiMarkdown blockquote { margin:10px 0 0; padding:8px 11px; border-left:3px solid var(--green); border-radius:0 8px 8px 0; color:#bad3c3; background:#1d2c24; }
+.aiMarkdown code { padding:2px 5px; border-radius:5px; background:#101512; font:12px ui-monospace,SFMono-Regular,Consolas,monospace; }
 .aiError { color:#e39a94 !important; }
 .aiUsage { margin:7px 0 0; color:var(--muted); font-size:9px; }
 .aiHiddenNotice { padding:10px 12px; border:1px solid #59443d; border-radius:10px; color:#ddb6a8; background:#2a211e; font-size:11px; }

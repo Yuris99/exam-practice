@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import ReactMarkdown from "react-markdown";
 import type { AiExplanationReport, AnswerValue, Question } from "@/lib/types";
 
 interface AiExplanationProps {
@@ -62,7 +63,7 @@ export function AiExplanation({ question, learnerAnswer, cachedExplanation, onSa
     {error && <p className="aiError">{error}</p>}
     {dailyUsage && <p className="aiUsage">오늘 AI 해설 {dailyUsage.remaining}회 남음 · 일일 {dailyUsage.limit}회</p>}
     {reportStatus === "hidden" && explanation && <p className="aiHiddenNotice">신고 검토 후 숨김 처리된 해설입니다. 필요하면 저장된 내용을 다시 열어볼 수 있습니다.</p>}
-    {expanded && explanation && <div className={`aiContent ${reportStatus === "hidden" ? "hiddenContent" : ""}`}><strong>AI 해설 · 저장됨</strong><p>{explanation}</p>
+    {expanded && explanation && <div className={`aiContent ${reportStatus === "hidden" ? "hiddenContent" : ""}`}><strong>AI 해설 · 저장됨</strong><div className="aiMarkdown"><ReactMarkdown>{explanation}</ReactMarkdown></div>
       {onReport && <button className="aiReportButton" disabled={Boolean(reportStatus)} onClick={() => setShowReport((value) => !value)}>{reportStatus ? (reportStatus === "open" ? "신고 검토 중" : reportStatus === "hidden" ? "숨김 처리됨" : "신고 처리됨") : "AI 해설 신고"}</button>}
       {showReport && !reportStatus && <div className="aiReportForm"><select value={reportReason} onChange={(event) => setReportReason(event.target.value as AiExplanationReport["reason"])}><option value="inaccurate">내용이 틀렸어요</option><option value="unclear">설명이 불명확해요</option><option value="too_long">해설이 너무 길어요</option><option value="other">기타</option></select><textarea value={reportDetails} onChange={(event) => setReportDetails(event.target.value)} placeholder="문제가 있는 부분을 알려 주세요 (선택)" /><button onClick={submitReport}>신고 저장</button></div>}
     </div>}
@@ -70,7 +71,7 @@ export function AiExplanation({ question, learnerAnswer, cachedExplanation, onSa
 }
 
 export function createExplanationCacheKey(question: Question, learnerAnswer: AnswerValue) {
-  return `${question.id}:v${question.version}:${JSON.stringify(learnerAnswer)}:ko-v3-gemini`;
+  return `${question.id}:v${question.version}:${JSON.stringify(learnerAnswer)}:ko-v4-gemini-markdown`;
 }
 
 function getInstallationId() {
