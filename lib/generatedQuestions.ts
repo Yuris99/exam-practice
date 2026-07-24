@@ -103199,6 +103199,34700 @@ export const generatedQuestions: Question[] = [
     "correctChoiceIndex": 0
   },
   {
+    "id": "csv-4cf06ec5692d3b5c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "관계대수에 대한 설명으로 옳은 내용 모두를 나열한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 2회 1번",
+    "sourceYear": 2011,
+    "choices": [
+      "원하는 릴레이션을 정의하는 방법을 제공하며 비절차적 언어이다.",
+      "릴레이션 릴레이션이다.",
+      "일반 집합 조작을 위한 연산의 집합으로 피연산자와 결 과가 모두 연산과 순수 관계 연산으로 구분된다.",
+      "질의에 대한 해를 구하기 위해 수행해야 할 연산의 순 서를 명시한다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-5318e7b3e949d25a",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "뷰(VIEW)에 대한 설명 중 옳지 않은 내용으로만 나열된 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 2회 14번",
+    "sourceYear": 2011,
+    "choices": [
+      "뷰 위에 또 다른 뷰를 정의할 수 있다.",
+      "DBA는 보안 측면에서 뷰를 활용할 수 있다.",
+      "뷰의 정의는 ALTER문을 이용하여 변경할 수 없다.",
+      "SQL을 사용하면 뷰에 대한 삽입, 갱신, 삭제 연산 시 제 약 사항이 따르지 않는다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-84996fd86ae60550",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "릴레이션의 특징으로 옳은 내용 모두를 나열한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 2회 19번",
+    "sourceYear": 2011,
+    "choices": [
+      "모든 튜플은 서로 다른 값을 갖는다.",
+      "각 속성은 릴레이션 내에서 유일한 이름을 가진다.",
+      "하나의 릴레이션에서 튜플의 순서는 존재한다.",
+      "모든 속성 값을 원자 값이다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-91ef4de2700ef38c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "블랙 박스 검사 기법에 해당하는 것으로만 짝지어진 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2011년 2회 65번",
+    "sourceYear": 2011,
+    "choices": [
+      "데이터 흐름 검사",
+      "루프 검사",
+      "동치 분할 검사",
+      "경계값 분석 ⑤ 원인 효과 그래픽 기법 ⑥ 비교 검사"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-0399a2a25821061e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 트리를 후위 순회한 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 1번",
+    "sourceYear": 2011,
+    "choices": [
+      "+ * A B / * C D E",
+      "A B / C * D * E +",
+      "A / B * C * D + E",
+      "+ * * / A B C D E"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-5158b136ccbb61ff",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DBMS의 필수기능 중 정의기능이 갖추어야 할 요건에 해당하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 2번",
+    "sourceYear": 2011,
+    "choices": [
+      "데이터베이스를 접근하는 갱신, 삽입, 삭제 작업이 정확하게 수행되게 해야 한다.",
+      "데이터와 데이터의 관계를 명확하게 명세할 수 있어야 하며, 원하는 데이터 연산은 무엇이든 명세할 수 있어야 한다.",
+      "정당한 사용자가 허가된 데이터만 접근할 수 있도록 보안을 유지하여야 한다.",
+      "여러 사용자가 데이터베이스를 동시에 접근하여 처리할 때 데이터베이스와 처리 결과가 항상 정확성을 유지하도록 병행 제어를 할 수 있어야 한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-3cc6f420175e4db5",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "병행제어 기법 중 로킹에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 3번",
+    "sourceYear": 2011,
+    "choices": [
+      "로킹의 대상이 되는 개체의 크기를 로킹 단위라고 한다.",
+      "파일은 로킹 단위가 될 수 있지만 레코드는 로킹 단위가 될 수 없다.",
+      "로킹의 단위가 작아지면 로킹 오버헤드가 증가한다.",
+      "로킹의 단위가 커지면 데이터베이스 공유도가 저하한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-884ad9b886ae75b0",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스의 물리적 설계 옵션 선택 시 고려사항으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 4번",
+    "sourceYear": 2011,
+    "choices": [
+      "스키마의 평가",
+      "응답시간",
+      "저장 공간의 효율화",
+      "트랜잭션 처리도(throughput)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-aa7c50886fd92fc5",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL의 명령은 사용 용도에 따라 DDL, DML, DCL로 구분할 수 있다. 다음 명령 중 그 성격이 나머지 셋과 다른 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 5번",
+    "sourceYear": 2011,
+    "choices": [
+      "CREATE",
+      "ALTER",
+      "SELECT",
+      "DROP"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-89ebf87a32433714",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "뷰(View)에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 6번",
+    "sourceYear": 2011,
+    "choices": [
+      "뷰는 CREATE VIEW 명령을 사용하여 정의한다.",
+      "뷰의 정의는 ALTER VIEW 문을 사용하여 변경할 수 있다.",
+      "하나의 뷰를 삭제하면 그 뷰를 기초로 정의된 다른 뷰도 자동 으로 삭제된다.",
+      "뷰를 제거할 때는 DROP 문을 사용한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-4cba4d2ac94f110b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스 보안에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 7번",
+    "sourceYear": 2011,
+    "choices": [
+      "보안을 위한 데이터 단위는 테이블 전체로부터 특정 테이블의 특정한 행과 열 위치에 있는 특정한 데이터에 이르기까지 다 양하다.",
+      "각 사용자들은 일반적으로 서로 다른 객체에 대하여 다른 접 근권리 또는 권한을 갖게 된다.",
+      "불법적인 데이터의 접근으로부터 데이터베이스를 보호하는 것이다.",
+      "보안을 위한 사용자들의 권한부여는 관리자의 정책결정보다 는 DBMS가 자체 결정하여 제공한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-15ee53a6c6ff552f",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "관계대수에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 8번",
+    "sourceYear": 2011,
+    "choices": [
+      "원하는 릴레이션을 정의하는 방법을 제공하며 비절차적 언어 이다.",
+      "릴레이션 조작을 위한 연산의 집합으로 피연산자와 결과가 모두 릴레이션이다.",
+      "일반 집합 연산과 순수 관계 연산으로 구분된다.",
+      "질의에 대한 해를 구하기 위해 수행해야 할 연산의 순서를 명시한다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-d7197d612ed88e82",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "릴레이션의 특징으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 9번",
+    "sourceYear": 2011,
+    "choices": [
+      "모든 튜플은 서로 다른 값을 갖는다.",
+      "속성은 더 이상 쪼갤 수 없는 원자 값을 저장해서는 안된다.",
+      "각 속성은 릴레이션 내에서 유일한 이름을 가진다.",
+      "한 릴레이션에 포함된 튜플 사이에는 순서가 없다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-63ca9171d60fc4ce",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 초기 자료에 대하여 Selection Sort를 이용하여 오름차순 정렬할 경우 2회전 후의 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 10번",
+    "sourceYear": 2011,
+    "choices": [
+      "3, 8, 4, 9, 7",
+      "3, 4, 8, 9, 7",
+      "3, 4. 7, 9, 8",
+      "3, 4, 7, 8, 9"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-b54a25a61e63c1e1",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "What is the degree of a relation?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 11번",
+    "sourceYear": 2011,
+    "choices": [
+      "the number of occurrences n of its relation schema",
+      "the number of tables n of its realtion schema",
+      "the number of attributes n of its relation schema",
+      "the number of key n of its relation schema 정보처리기사 B형 3회"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-0d1ea204772c8c5f",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "시스템 카탈로그에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 12번",
+    "sourceYear": 2011,
+    "choices": [
+      "시스템 카탈로그에 저장되는 내용을 메타 데이터라고도 한다.",
+      "시스템 자신이 필요로 하는 스키마 및 여러 가지 객체에 관한 정보를 포함하고 있는 시스템 데이터베이스이다.",
+      "기본 테이블, 뷰, 인덱스, 패키지, 접근 권한 등의 데이터베이 스 구조 및 통계 정보를 저장한다.",
+      "시스템 카탈로그는 사용자가 직접 생성하고 유지한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-00de382b64333794",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "물리적 데이터베이스 설계 수행 시 결정사항으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 13번",
+    "sourceYear": 2011,
+    "choices": [
+      "어떤 인덱스를 만들 것인지에 대한 고려",
+      "성능 향상을 위한 개념 스키마의 변경 여부 검토",
+      "빈번한 질의와 트랜잭션들의 수행속도를 높이기 위한 고려",
+      "개념 스키마와 외부 스키마 설계"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-2d328211cd508f34",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스의 특성 중 다음 설명에 해당하는 것은? 어느 한 시점에서 데이터베이스가 저장하고 있는 내용은 곧 데이터베이스의 상태를 의미한다. 데이터베이스의 상태 는 정적이 아니라 동적이다. 즉 데이터베이스는 새로운 데 이터의 삽입, 삭제, 갱신을 통해 현재의 정확한 자료를 유 지하면서 변화한다는 것이다.",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 14번",
+    "sourceYear": 2011,
+    "choices": [
+      "Real-Time Accessibility",
+      "Concurrent Sharing",
+      "Content Refrence",
+      "Continuous Evolution"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f16ff6199c3dcae0",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정규화의 필요성으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 15번",
+    "sourceYear": 2011,
+    "choices": [
+      "데이터 구조의 안정성 최대화",
+      "중복 데이터의 활성화",
+      "수정, 삭제시 이상현상의 최소화",
+      "테이블 불일치 위험의 최소화"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-1901b6897bbfe611",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정규화 과정에서 발생하는 이상(Anomaly)에 관한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 16번",
+    "sourceYear": 2011,
+    "choices": [
+      "이상은 속성들 간에 존재하는 여러 종류의 종속 관계를 하나 의 릴레이션에 표현할 때 발생한다.",
+      "정규화는 이상을 제거하기 위해서 중복성 및 종속성을 배제시 키는 방법으로 사용한다.",
+      "1NF의 이상을 해결하기 위해서는 프로젝션에 의해 릴레이션 을 분해하여 부분 함수 종속을 제거해야 한다.",
+      "속성들 간의 종속 관계를 분석하여 여러 개의 릴레이션을 하 나로 결합하여 이상을 해결한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-31ffe51a743f2688",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "스택의 자료 삭제 알고리즘이다. ( ) 안 내용으로 가장 적합한 것은?(단, Top: 스택 포인터, S : 스택의 이름) If Top = 0 Then ( ) Else { remove S(Top) Top = Top-1 }",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 17번",
+    "sourceYear": 2011,
+    "choices": [
+      "Overflow",
+      "Top = Top+",
+      "Underflow",
+      "Top = Top-2"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-fc24a5ec07bf3567",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "분산 데이터베이스에 대한 설명으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 18번",
+    "sourceYear": 2011,
+    "choices": [
+      "지역 자치성이 높다.",
+      "효용성과 융통성이 높다.",
+      "분산 제어가 가능하다.",
+      "소프트웨어 개발 비용이 저렴하다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b83f73fb846396ec",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Which of the following is not a property of the transaction to ensure integrity of the data?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2011년 3회 19번",
+    "sourceYear": 2011,
+    "choices": [
+      "isolation",
+      "autonomy",
+      "durability",
+      "consistency"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-0ee480445e0bef00",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 그림에서 트리의 차수(degree)는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2018-2/q006-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 6번",
+    "sourceYear": 2018,
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-52c487aa384bc62f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "블랙 박스 테스트 기법 중 다음 설명에 해당하는 것은? 여러 버전의 프로그램에 동일한 검사 자료를 제공하여 동 일한 결과가 출력되는지 검사하는 기법이다.",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2011년 3회 61번",
+    "sourceYear": 2011,
+    "choices": [
+      "Boundary Value Analysis",
+      "Cause Effect Graphing Testing",
+      "Equivalence Partitioning Testing",
+      "Comparison Testing"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-4c1ddba7b34ddee6",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "사용자 인터페이스 설계시 오류 메시지나 경고에 관한 지침으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2011년 3회 62번",
+    "sourceYear": 2011,
+    "choices": [
+      "메시지는 이해하기 쉬워야 한다.",
+      "오류로부터 회복을 위한 구체적인 설명이 제공되어야 한다.",
+      "오류로 인해 발생될 수 있는 부정적인 내용은 가급적 피한다.",
+      "소리나 색 등을 이용하여 듣거나 보기 쉽게 의미 전달을 하도 록 한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-44202220d9be34c6",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어의 특징에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2011년 3회 63번",
+    "sourceYear": 2011,
+    "choices": [
+      "소프트웨어 생산물의 구조가 코드 안에 숨어 있다.",
+      "논리적 절차에 따라 개발된다.",
+      "사용에 의해 마모되거나 소멸된다.",
+      "요구나 환경의 변화에 따라 적절히 변형시킬 수 있다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-887f54ee310f020a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 설계에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2011년 3회 64번",
+    "sourceYear": 2011,
+    "choices": [
+      "객체지향 설계에 있어 가장 중요한 문제는 시스템을 구성하는 객체와 속성, 연산을 인식하는 것이다.",
+      "시스템 기술서의 동사는 객체를, 명사는 연산이나 객체 서비 스를 나타낸다.",
+      "객체지향 설계를 문서화할 때 객체와 그들의 부객체(Sub- object)의 계층적 구조를 보여주는 계층차트를 그리면 유용하다.",
+      "객체는 순차적으로(Sequentially) 또는 동시적으로(Concurr ently) 구현될 수 있다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-3785b770da8fa1f6",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 공학에 대한 적절한 설명이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2011년 3회 65번",
+    "sourceYear": 2011,
+    "choices": [
+      "소프트웨어의 개발, 운영, 유지보수, 그리고 폐기에 대한 체계 적인 접근이다.",
+      "소프트웨어 제품을 체계적으로 생산하고 유지보수와 관련된 기술과 경영에 관한 학문이다.",
+      "과학적인 지식을 컴퓨터 프로그램 설계와 제작에 실제 응용하 는 것이며, 이를 개발하고 운영하고 유지보수하는데 필요한 문서화 작성 과정이다.",
+      "소프트웨어의 위기를 이미 해결한 학문으로, 소프트웨어의 개발만을 위한 체계적인 접근이다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-07ea57bc542752ec",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "자료 사전에서 기호 “( )”의 의미는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2011년 3회 66번",
+    "sourceYear": 2011,
+    "choices": [
+      "정의",
+      "생략",
+      "선택",
+      "반복"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-5646637a50867cc5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 시스템에서 자료부분과 연산(또는 함수) 부분 등 정보처리 에 필요한 기능을 한 테두리로 묶는 것을 무엇이라고 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2011년 3회 67번",
+    "sourceYear": 2011,
+    "choices": [
+      "Information hiding",
+      "Class",
+      "Encapsulation",
+      "Integration"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-4bff4095f6b1b076",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 품질 목표 중 소프트웨어를 다른 환경으로 이식할 경우에도 운용 가능하도록 쉽게 수정될 수 있는 시스템 능력을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2011년 3회 68번",
+    "sourceYear": 2011,
+    "choices": [
+      "Correctness",
+      "Integrity",
+      "Reliability",
+      "Portability"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-4cab06f9612f550c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "4명의 개발자가 5개월에 걸쳐 10000 라인의 코드를 개발하였을 때, 월별(Person-month) 생산성 측정을 위한 계산 방식으로 가장 적합한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2011년 3회 69번",
+    "sourceYear": 2011,
+    "choices": [
+      "1 / (4×5×10000)",
+      "10000 / (4×5)",
+      "10000 / 5",
+      "(4×10000) / 5"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-69844ed4e54cae62",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 역공학(SOftware Reverse Engineering)에 대한 설명으 로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2011년 3회 70번",
+    "sourceYear": 2011,
+    "choices": [
+      "역공학의 가장 간단하고 오래된 형태는 재문서화라고 할 수 있다.",
+      "기존 소프트웨어의 구성 요소와 그 관계를 파악하여 설계도를 추출한다.",
+      "원시 코드를 분석하여 소프트웨어의 관계를 파악한다.",
+      "대상 시스템 없이 새로운 시스템으로 개선하는 변경 작업이다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-bf5c358ac0c5e64b",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "럼바우의 모델링에서 상태도와 자료 흐름도는 각각 어떤 모델링과 관련 있는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2011년 3회 71번",
+    "sourceYear": 2011,
+    "choices": [
+      "상태도 → 동적 모델링, 자료 흐름도 → 기능 모델링",
+      "상태도 → 기능 모델링, 자료 흐름도 → 동적 모델링",
+      "상태도 → 객체 모델링, 자료 흐름도 → 기능 모델링",
+      "상태도 → 객체 모델링, 자료 흐름도 → 동적 모델링"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a5ebddae86b06c69",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "설계품질을 평가하기 위해서는 반드시 좋은 설계에 대한 기준을 세워야 한다. 다음 중 좋은 기준이라고 할 수 없는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2011년 3회 72번",
+    "sourceYear": 2011,
+    "choices": [
+      "설계는 모듈적이어야 한다.",
+      "설계는 자료와 프로시저에 대한 분명하고 분리된 표현을 포함 해야 한다.",
+      "소프트웨어 요소들 간의 효과적 제어를 위해 설계에서 계층적 조직이 제시되어야 한다.",
+      "설계는 서브루틴이나 프로시저가 전체적이고 통합적이 될 수 있도록 유도되어야 한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-5e8b734fb4017cb8",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 재공학 활동 중 기본 소프트웨어의 명세서를 확인하여 소프트웨어의 동작을 이해하고 재공학 대상을 선정하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2011년 3회 73번",
+    "sourceYear": 2011,
+    "choices": [
+      "Analysis",
+      "Reverse Engineering",
+      "Restructuring",
+      "Migration"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-e0a1c053462008a5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "브록스(Brocks)의 법칙에 해당되는 항목은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2011년 3회 74번",
+    "sourceYear": 2011,
+    "choices": [
+      "소프트웨어 개발 인력은 초기에 많이 투입하고 후기에 점차 감소시켜야 한다.",
+      "소프트웨어 개발 노력은 40-20-40으로 해야 한다.",
+      "소프트웨어 개발은 소수의 정예요원으로 시작한 후 점차 증원 해야 한다.",
+      "소프트웨어 개발 일정이 지연된다고 해서 말기에 새로운 인원 을 투입하면 일정은 더욱 지연된다. 정보처리기사 B형 3회"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-67bb89fb42baa3c5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "효과적인 프로젝트 관리를 위한 3P를 옳게 나열한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2011년 3회 75번",
+    "sourceYear": 2011,
+    "choices": [
+      "People, Problem, Process",
+      "Power, People, Priority",
+      "Problem, Priority, People",
+      "Priority, Problem, Possibility"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a855533fb2771700",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "유지보수의 종류 중 소프트웨어를 운용하는 환경 변화에 대응하여 소프트웨어를 변경하는 경우로서 운영체제나 컴파일러와 같은 프로그래밍 환경의 변화와 주변장치 또는 다른 시스템 요소가 향상되거나 변경될 때 대처할 수 있는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2011년 3회 76번",
+    "sourceYear": 2011,
+    "choices": [
+      "Corrective Maintenance",
+      "Perfective Maintenance",
+      "Preventive Maintenance",
+      "Adaptive Maintenance"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f2841572e7262bbc",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 소프트웨어 개발 영역을 결정하는 요소에 해당하는 항목 모두를 옳게 나열한 것은? ① 소프트웨어에 대한 기능 ② 소프트웨어에 대한 성능 ③ 소프트웨어에 대한 제약 조건 ④ 소프트웨어에 대한 인터페이스 및 신뢰도",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2011년 3회 77번",
+    "sourceYear": 2011,
+    "choices": [
+      "①, ②",
+      "①, ②, ③",
+      "①, ②, ④",
+      "①, ②, ③, ④"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-d331573443cf8647",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 재사용에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2011년 3회 78번",
+    "sourceYear": 2011,
+    "choices": [
+      "시스템 명세, 설계, 코드 등 문서를 공유하게 된다.",
+      "소프트웨어 개발의 생산성을 향상시킨다.",
+      "프로젝트 실패의 위험을 증가시킨다.",
+      "새로운 개발 방법론의 도입이 어려울 수 있다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6dafada6f8c94855",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "바람직한 설계 지침이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2011년 3회 79번",
+    "sourceYear": 2011,
+    "choices": [
+      "모듈의 기능을 예측할 수 있도록 정의한다.",
+      "이식성을 고려한다.",
+      "적당한 모듈의 크기를 유지한다.",
+      "가능한 모듈을 독립적으로 생성하고 결합도를 최대화한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-0f970ce165dbda05",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 위기 발생 요인과 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2011년 3회 80번",
+    "sourceYear": 2011,
+    "choices": [
+      "개발 일정의 지연",
+      "소프트웨어 관리의 부재",
+      "소프트웨어 품질의 미흡",
+      "소프트웨어 생산성 향상 제 5 과목 : 데이터 통신"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-6c25bcf3d01f6eeb",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "속성(attribute)에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 1번",
+    "sourceYear": 2012,
+    "choices": [
+      "속성은 개체의 특성을 기술한다.",
+      "속성은 데이터베이스를 구성하는 가장 작은 논리적 단위이다.",
+      "속성은 파일 구조상 데이터 항목 또는 데이터 필드에 해당된",
+      "라. 속성의 수를 “ c a r d i n a l i t y ” 라고 한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f3cabc208a790c0c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "시스템 카탈로그에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 2번",
+    "sourceYear": 2012,
+    "choices": [
+      "시스템 카탈로그에 저장된 정보를 슈퍼 데이터( s u p e r d a t a ) 라 고 한다.",
+      "시스템 자신이 필요로 하는 스키마 및 여러 가지 객체에 관한 정보를 포함하고 있는 시스템 데이터베이스이다.",
+      "카탈로그들이 생성되면 자료 사전에 저장되기 때문에 좁은 의미로 자료 사전이라고 한다.",
+      "시스템 카탈로그에 대한 사용자의 접근은 읽기 전용으로만 허용된다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-d031d4159c3c0e9c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정규형에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 4번",
+    "sourceYear": 2012,
+    "choices": [
+      "제 2 정규형은 반드시 제 1 정규형을 만족해야 한다.",
+      "정규화 하는 것은 테이블을 결합하여 종속성을 제거하는 것이",
+      "다. 제 1정규형은 릴레이션에 속한 모든 도메인의 원자값만으로 되어 있는 릴레이션이다.",
+      "B C N F 는 강한 제 3 정규형이라고도 한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-5d68c9f021641cec",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스의 정의로 적합하지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 5번",
+    "sourceYear": 2012,
+    "choices": [
+      "i n t e g r a t e dd a t a",
+      "i n d i v i d u a l d a t a",
+      "s t o r e dd a t a",
+      "o p e r a t i o n a l d a t a"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-629c7477e9fae4c0",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스 무결성과 보안의 차이점에 대한 설명으로 가장 적합 한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 6번",
+    "sourceYear": 2012,
+    "choices": [
+      "무결성은 권한이 있는 사용자로부터 데이터베이스를 보호하 는 것이고, 보안은 권한이 없는 사용자로부터 데이터베이스를 보호하는 것이다.",
+      "무결성은 권한이 없는 사용자로부터 데이터베이스를 보호하 는 것이고, 보안은 권한이 있는 사용자로부터 데이터베이스를 보호하는 것이다.",
+      "무결성과 보안은 모두 권한이 있는 사용자로부터 데이터베이 스를 보호하는 것이지만, 보안은 사용자 계정과 비밀번호로 관리한다.",
+      "무결성과 보안은 모두 권한이 없는 사용자로부터 데이터베이 스를 보호하는 것이지만, 무결성은 D B MS 가 자동적으로 보 장해 준다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-8989bef8c395f593",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "계층형 데이터 모델에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 7번",
+    "sourceYear": 2012,
+    "choices": [
+      "링크를 사용하여 자료와 자료사이의 관계성을 나타낸다.",
+      "C O D A S Y LD B T G 모델이라고도 한다.",
+      "각 레코드가 트리구조 형태로 구성된다.",
+      "데이터의 독립성이 보장된다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-468f8fb20201061e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Which of the following is not a component of Entity-Relationship diagram?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 8번",
+    "sourceYear": 2012,
+    "choices": [
+      "R e c t a n g l e s , w h i c hr e p r e s e n te n t i t ys e t s",
+      "E l l i p s e s , w h i c hr e p r e s e n t d a t a b a s eo p e r a t i o n s",
+      "D i a mo n d , w h i c hr e p r e s e n t r e l a t i o n s h i p sa mo n ge n t i t ys e t s",
+      "L i n e s , w h i c hl i n ka t t r i b u t e st oe n t i t ys e t sa n de n t i t ys e t s t or e l a t i o n s h i p s"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-19d457588ad3f291",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "순차 파일에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 9번",
+    "sourceYear": 2012,
+    "choices": [
+      "일괄처리에 적합한 구조이다.",
+      "기억장치에 대한 임의 접근이나 순차 접근이 모두 가능하다.",
+      "필요한 레코드의 삽입, 삭제, 수정시 파일을 재구성해야 한다.",
+      "파일 탐색시 효율이 좋다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-a6586f2405ba9e95",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "동시성 제어를 위한 직렬화 기법으로 트랜잭션간의 순서를 미리 정하는 방법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 10번",
+    "sourceYear": 2012,
+    "choices": [
+      "로킹 기법",
+      "타임 스탬프 기법",
+      "검증 기법",
+      "다중 버전 기법"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-0de27ee3fb1e8af5",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "트랜잭션들을 수행하는 도중 장애로 인해 손상된 데이터베이스를 손상되기 이전의 정상적인 상태로 복구시키는 작업은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 11번",
+    "sourceYear": 2012,
+    "choices": [
+      "R e c o v e r y",
+      "R e s t a r t",
+      "C o mmi t",
+      "A b o r t"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-f6e55e2bcd72691b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음과 같은 중위식 표현을 후위식으로 옳게 표현한 것은? A*(B+C)/D-E",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 12번",
+    "sourceYear": 2012,
+    "choices": [
+      "+ E - A B * C D /",
+      "A B C + * D / E -",
+      "+ D / * E - A B C",
+      "A B C + D / * E -"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-e76cda4d0dc46e36",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음은 관계 대수의 수학적 표현식이다. 해당되는 연산은? R×S={r·s|r∈R∧s∈S} r=<a 1 , a 2 , …, a n >, s=<b 1 , b 2 , …, b n >",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 13번",
+    "sourceYear": 2012,
+    "choices": [
+      "합집합",
+      "교집합",
+      "차집합",
+      "카티션 프로덕트 정보처리기사 B 형 1회"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-22ddf0ed5059ce87",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 큐가 요구되는 작업으로 가장 적합한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 14번",
+    "sourceYear": 2012,
+    "choices": [
+      "작업 스케줄링",
+      "중위 표기식 후위 표기 변환",
+      "함수 호출과 리턴",
+      "이진 트리의 중위 순회"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-4d99d7ef7ec8c318",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 설명에 해당하는 스키마는? 물리적 저장 장치의 입장에서 본 데이터베이스 구조로서 실 제로 데이터베이스에 저장될 레코드의 형식을 정의하고 저장 데이터 항목의 표현 방법, 내부 레코드의 물리적 순서 등을 나타낸다.",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 15번",
+    "sourceYear": 2012,
+    "choices": [
+      "i n t e r n a l s c h e ma",
+      "c o n c e p t u a l s c h e ma",
+      "e x t e r n a l s c h e ma",
+      "d e f i n i t i o ns c h e ma"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-df97f1825f4f0535",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 자료에 대하여 버블 기법을 이용하여 오름차순으로 정렬하고 자 한다. 2회전 후의 결과는? 37, 14, 17, 40, 35",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 16번",
+    "sourceYear": 2012,
+    "choices": [
+      "1 4 , 1 7 , 3 7 , 3 5 , 4 0",
+      "1 4 , 3 7 , 1 7 , 4 0 , 3 5",
+      "1 4 , 1 7 , 3 5 , 3 7 , 4 0",
+      "1 4 , 1 7 , 3 7 , 4 0 , 3 5"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-e928d5f0cf7ccb9e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스의 설계 과정을 올바르게 나열한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 17번",
+    "sourceYear": 2012,
+    "choices": [
+      "요구조건 분석 → 개념적 설계 → 물리적 설계 → 논리적 설계",
+      "요구조건 분석 → 개념적 설계 → 논리적 설계 → 물리적 설계",
+      "요구조건 분석 → 논리적 설계 → 개념적 설계 → 물리적 설계",
+      "요구조건 분석 → 물리적 설계 → 개념적 설계 → 논리적 설계"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-b281be9a47beb793",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "뷰에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 18번",
+    "sourceYear": 2012,
+    "choices": [
+      "뷰는 삽입, 삭제, 갱신 연산에 제약사항이 없다.",
+      "뷰는 데이터 접근 제어로 보안을 제공한다.",
+      "뷰는 독자적인 인덱스를 가질 수 없다.",
+      "뷰는 데이터의 논리적 독립성을 제공한다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-f06e9773b9ecfdc9",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 설명의 ⓐ와 ⓑ에 들어갈 수 있는 가장 적합한 용어들로 구성된 것은? If a(n) ( ⓐ ) exists in a relation, either the ( ⓐ ) value must, match a(n) ( ⓑ ) value of some tuple in its home relation or the ( ⓐ ) value must be wholly null.",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 19번",
+    "sourceYear": 2012,
+    "choices": [
+      "ⓐ f o r e i g nk e y ⓑ p r i ma r yk e y",
+      "ⓐ a l t e r n a t ek e y ⓑ p r i ma r yk e y",
+      "ⓐ a l t e r n a t ek e y ⓑ f o r e i g nk e y",
+      "ⓐ p r i ma r yk e y ⓑ a l t e r n a t ek e y"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-8ff8f8d544afbb38",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "이행적 함수 종속 관계를 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 1회 20번",
+    "sourceYear": 2012,
+    "choices": [
+      "A → B 이고 B → C 일 때, A → C 를 만족하는 관계",
+      "A → B 이고 B → C 일 때, C → A 를 만족하는 관계",
+      "A → B 이고 B → C 일 때, B → A 를 만족하는 관계",
+      "A → B 이고 B → C 일 때, C → B 를 만족하는 관계 제 2 과목 전자계산기 구조"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-8117c8933e4e6e3c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "공학적으로 잘된 소프트웨어 시스템의 특성이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 1회 61번",
+    "sourceYear": 2012,
+    "choices": [
+      "소프트웨어는 효율적이어야 한다.",
+      "소프트웨어는 신뢰성이 높아야 한다.",
+      "소프트웨어는 유지보수가 쉽고 비용이 증가되어야 한다.",
+      "사용자 수준에 맞는 적당한 인터페이스를 제공해야 한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6dc1ddabacf2e2b4",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "럼바우의 분석 기법 중 자료 흐름도를 이용하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2012년 1회 62번",
+    "sourceYear": 2012,
+    "choices": [
+      "기능 모델링",
+      "동적 모델링",
+      "객체 모델링",
+      "동적 모델링"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-1741773d2225c0a5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "검증(Validation) 검사 기법 중 개발자의 장소에서 사용자가 개발자 앞에서 행하며, 오류와 사용상의 문제점을 사용자와 개발자가 함께 확인하면서 검사하는 기법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 1회 63번",
+    "sourceYear": 2012,
+    "choices": [
+      "디버깅 검사",
+      "형상 검사",
+      "베타 검사",
+      "알파 검사 정보처리기사 B 형 1회"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-566c329413219a6f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어의 개발 영역을 결정하는 주요 요소 중 다음 사항과 관계되는 것은? - 소프트웨어가 간접적으로 제어하는 소프트웨어 장치를 실행시키는 하드웨어 - 기존의 소프트웨어와 새로운 소프트웨어를 연결하는 소프트웨어 - 일련의 절차적 운영상 소프트웨어를 앞서거나 뒤서게 하는 절차들",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 1회 64번",
+    "sourceYear": 2012,
+    "choices": [
+      "기능",
+      "성능",
+      "인터페이스",
+      "제약 조건"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-a7cdb07af3c1f02e",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "유지보수의 종류 중 소프트웨어 테스팅 동안 밝혀지지 않은 모든 잠재적인 오류를 수정하기 위한 보수 형태로서 오류의 수정과 진단 과정이 포함되는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 1회 65번",
+    "sourceYear": 2012,
+    "choices": [
+      "P e r f e c t i v eMa i n t e n a n c e",
+      "A d a p t i v eMa i n t e n a n c e",
+      "P r e v e n t i v eMa i n t e n a n c e",
+      "C o r r e c t i v eMa i n t e n a n c e"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-806f6226647cb58a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 품질 목표 중 하나 이상의 하드웨어 환경에서 운용되기 위해 쉽게 수정될 수 있는 시스템 능력을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 1회 66번",
+    "sourceYear": 2012,
+    "choices": [
+      "E f f i c i e n c y",
+      "R e l i a b i l i t y",
+      "U s a b i l l t y",
+      "P o r t a b i l i t y"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-a09130780dd780bf",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "한 모듈 내의 각 구성 요소들이 공통의 목적을 달성하기 위하여 서로 얼마나 관련이 있는지의 기능적 연관의 정도를 나타내는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 1회 67번",
+    "sourceYear": 2012,
+    "choices": [
+      "C o u p l i n g",
+      "C o h e s i o n",
+      "S t r u c t u r e",
+      "U n i t y"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-4b244d3213185e2c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 재사용에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 1회 68번",
+    "sourceYear": 2012,
+    "choices": [
+      "새로운 개발 방법론의 도입이 용이하다.",
+      "개발 시간과 비용이 감소한다.",
+      "프로그램 생성 지식을 공유할 수 있다.",
+      "기존 소프트웨어에 재사용 소프트웨어를 추가하기 어려운 문 제점이 발생할 수 있다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-50b40da971e52125",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "S/W Project 일정이 지연된다고 해서 Project 말기에 새로운 인원을 추가 투입하면 Project는 더욱 지연되게 된다는 내용과 관련되는 법칙은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 1회 69번",
+    "sourceYear": 2012,
+    "choices": [
+      "P u t n a m의 법칙",
+      "Ma y e r 의 법칙",
+      "B r o o k s 의 법칙",
+      "B o e h m의 법칙"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-c8012779c45bbc59",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체 지향의 기본 개념 중 객체가 메시지를 받아 실행해야 할 객체의 구체적인 연산을 정의한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2012년 1회 70번",
+    "sourceYear": 2012,
+    "choices": [
+      "메소드",
+      "클래스",
+      "메시지",
+      "실체"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-63a4b165b65409f4",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정형 기술 검토의 지침 사항으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 1회 71번",
+    "sourceYear": 2012,
+    "choices": [
+      "제품의 검토에만 집중한다.",
+      "문제 영역을 명확히 표현한다.",
+      "참가자의 수를 제한하고 사전 준비를 강요한다.",
+      "논쟁이나 반박을 제한하지 않는다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-06ad2daaf07b2c7f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "화이트 박스 검사 기법 중 프로그램 내의 변수 정의의 위치와 변수들의 사용에 따라 프로그램 검사 경로를 선택하는 구조 검사 방법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 1회 72번",
+    "sourceYear": 2012,
+    "choices": [
+      "B a s i cP a t hT e s t",
+      "D a t aF l o w T e s t",
+      "C o n d i t i o nT e s t",
+      "L o o pT e s t"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-2d5d8725b76e0dce",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 위기 발생 요인으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 1회 73번",
+    "sourceYear": 2012,
+    "choices": [
+      "개발 예산의 초과",
+      "개발 일정의 지연",
+      "소프트웨어 품질의 미흡",
+      "신기술에 대한 지속적 교육"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-737a3e81589ad593",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "바람직한 소프트웨어 설계 지침으로 볼 수 없는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2012년 1회 74번",
+    "sourceYear": 2012,
+    "choices": [
+      "특정 기능을 수행하는 논리적 요소들로 분리되는 구조를 가지 도록 한다.",
+      "적당한 모듈의 크기를 유지한다.",
+      "강한 결합도, 약한 응집도를 유지한다.",
+      "모듈 간의 접속 관계를 분석하여 복잡도와 중복을 줄인다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-096263568a79a7c4",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "형상관리(Configuration Management)의 관리 항목과 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 1회 75번",
+    "sourceYear": 2012,
+    "choices": [
+      "정의 단계의 문서",
+      "개발 단계의 문서와 프로그램",
+      "유지보수 단계의 변경 사항",
+      "소프트웨어 개발 인력"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-43810a0eaa4cf5bf",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "자료 흐름도의 구성 요소와 표시 기호의 연결이 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2012년 1회 76번",
+    "sourceYear": 2012,
+    "choices": [
+      "종착지( T e r mi n a t o r ): 오각형",
+      "자료 흐름( D a t aF l o w ): 화살표",
+      "처리고정( P r o c e s s ): 원",
+      "자료 저장소( D a t aS t o r e ): 직선( 평행선)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-0d96fb9c2b41aea6",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CASE에 대한 설명으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 1회 77번",
+    "sourceYear": 2012,
+    "choices": [
+      "개발도구와 개발 방법론이 결합된 것이다.",
+      "시스템 개발과정의 일부 또는 전체를 자동화하는 것이다.",
+      "기존 소프트웨어를 다른 운영체제나 하드웨어 환경에서 사용 할 수 있도록 변환하는 작업이다.",
+      "정형화된 구조 및 메커니즘을 소프트웨어 개발에 적용하여 소프트웨어 생산성 향상을 구현하는 공학기법이다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-bfeeb31fbd9735b7",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "프로젝트 관리의 대상으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 1회 78번",
+    "sourceYear": 2012,
+    "choices": [
+      "비용 관리",
+      "일정 관리",
+      "고객 관리",
+      "품질 관리"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-593f13a530e70cc9",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어의 위기를 해결하기 위해 개발의 생산성이 아닌 유지보 수의 생산성으로 해결하려는 방법을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 1회 79번",
+    "sourceYear": 2012,
+    "choices": [
+      "소프트웨어 재사용",
+      "소프트웨어 재공학",
+      "클라이언트/ 서버 소프트웨어 공학",
+      "전통적 소프트웨어 공학"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-eb9220d5395ef429",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 기법 중 다음 설명이 의미하는 것은? 객체의 성질을 분해하여 공통된 성질을 추출하여 슈퍼 클 래스를 선정하는 것이다. 즉, 불필요한 부분을 생략하고 객체의 속성 중 가장 중요한 것에만 중점을 두어 개략화, 모델화 하는 것이다. 예를 들면, 자동차와 말이란 클래스 에서 “타는 것”이란 클래스를 만드는 것이다.",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2012년 1회 80번",
+    "sourceYear": 2012,
+    "choices": [
+      "I n h e r i t a n c e",
+      "A b s t r a c t i o n",
+      "P o l y mo r p h i s m",
+      "E n c a p s u l a t i o n 제 5 과목 : 데이터 통신"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-713cb093f196726e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "What is the quantity of tuples in consist of the relation?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 1번",
+    "sourceYear": 2012,
+    "choices": [
+      "D e g r e e",
+      "I n s t a n c e",
+      "D o ma i n",
+      "C a r d i n a l i t y"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-81689bb6ed0fe046",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "일련의 연산 집합으로 데이터베이스의 상태를 변환시키기 위하여 논리적 기능을 수행하는 하나의 작업 단위를 무엇이라고 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 2번",
+    "sourceYear": 2012,
+    "choices": [
+      "도메인",
+      "트랜잭션",
+      "모듈",
+      "프로시저"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-9d508015bb24d5c9",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "스택(Stack)의 응용 분야로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 3번",
+    "sourceYear": 2012,
+    "choices": [
+      "인터럽트 처리",
+      "수식 계산 및 수식 표기법",
+      "운영체제의 작업 스케줄링",
+      "서브루틴의 복귀번지 저장"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-ff086c6f26e8d997",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "뷰(View)에 대한 설명 중 옳은 내용으로만 나열된 것은? ① 뷰는 저장장치 내에 물리적으로 존재한다. ② 뷰가 정의된 기본 테이블이 삭제되더라도 뷰는 자동적으 로 삭제되지 않는다. ③ DBA는 보안 측면에서 뷰를 활용할 수 있다. ④ 뷰로 구성된 내용에 대한 삽입, 삭제, 갱신 연산에는 제약 이 따른다.",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 4번",
+    "sourceYear": 2012,
+    "choices": [
+      "①, ②, ③, ④",
+      "①, ③, ④",
+      "②, ④",
+      "③, ④"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f47715935db94f88",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스 설계 시 고려 사항으로 적합하지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 5번",
+    "sourceYear": 2012,
+    "choices": [
+      "데이터 무결성 유지",
+      "데이터 일관성 유지",
+      "데이터 보안성 유지",
+      "데이터 종속성 유지"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b8b6aa8250c0e520",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 자료에 대하여 삽입(insertion) 정렬 기법을 사용하여 오름차순 으로 정렬하고자 한다. 1회전 후의 결과는? 5, 4, 3, 2, 1",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 6번",
+    "sourceYear": 2012,
+    "choices": [
+      "4 , 3 , 2 , 1 , 5",
+      "3 , 4 , 5 , 2 , 1",
+      "4 , 5 , 3 , 2 , 1",
+      "1 , 2 , 3 , 4 , 5"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-c79e7cf78f7a9787",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "병행제어 기법 중 로킹(Locking) 기법에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 7번",
+    "sourceYear": 2012,
+    "choices": [
+      "로킹의 대상이 되는 객체의 크기를 로킹 단위라고 한다.",
+      "로킹 단위가 작아지면 병행성 수준이 높아진다.",
+      "로킹 단위가 커지면 로킹 오버헤드가 증가한다.",
+      "데이터베이스도 로킹 단위가 될 수 있다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-3ce2416b8cc53fd9",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "자료 구조의 성격이 나머지 셋과 다른 하나는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 8번",
+    "sourceYear": 2012,
+    "choices": [
+      "큐( Q u e u e )",
+      "그래프( G r a p h )",
+      "데크( D e q u e )",
+      "리스트( L i s t )"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-1f36b5c3de5dd4b6",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 트리를 Preorder 운행법으로 운행할 경우 네 번째로 탐색되는 것은? A B C D E F G H",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 9번",
+    "sourceYear": 2012,
+    "choices": [
+      "B",
+      "C",
+      "E",
+      "F"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-9077dae80e43b7ac",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "제 3정규형에서 보이스코드 정규형(BCNF)으로 정규화 하기 위한 작업은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 10번",
+    "sourceYear": 2012,
+    "choices": [
+      "원자 값이 아닌 도메인을 분해",
+      "부분 함수 종속 제거",
+      "이행 함수 종속 제거",
+      "결정자가 후보 키가 아닌 함수 종속 제거"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f11fc8f32130886f",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Which is the design step of database correctly?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 11번",
+    "sourceYear": 2012,
+    "choices": [
+      "R e q u i r e me n t F o r mu l a t i o n-C o n c e p t u a l S c h e ma-P h y s i c a l S c h e ma-L o g i c a l S c h e ma",
+      "L o g i c a l S c h e ma-R e q u i r e me n t F o r mu l a t i o n-C o n c e p t u a l S c h e ma-P h y s i c a l S c h e ma",
+      "R e q u i r e me n t F o r mu l a t i o n-C o n c e p t u a l S c h e ma-L o g i c a l S c h e ma-P h y s i c a l S c h e ma",
+      "L o g i c a l S c h e ma-R e q u i r e me n tF o r mu l a t i o n-P h y s i c a l S c h e ma-C o n c e p t u a l S c h e ma"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-b3c9d2ce743b0fde",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "3계층 스키마 중 개념(Conceptual) 스키마에 대한 설명으로 옳은 내용을 모두 선택한 것은? ① 물리적 저장장치의 관점에서 본 데이터베이스의 명세를 말한다. ② 범 기관적 입장에서 본 데이터베이스의 정의를 기술한 것 이다. ③ 개체간의 관계와 유지해야 할 제약 조건을 나타낸다. ④ 접근 권한, 보안 정책, 무결성 규칙을 명세한다.",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 12번",
+    "sourceYear": 2012,
+    "choices": [
+      "②, ③",
+      "①, ②, ③",
+      "②, ③, ④",
+      "①, ②, ③, ④"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-9e0eae740605cc6f",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스 설계의 논리적 설계 단계에서 수행하는 작업이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 13번",
+    "sourceYear": 2012,
+    "choices": [
+      "논리적 데이터 모델로 변환",
+      "트랜잭션 인터페이스 설계",
+      "스키마의 평가 및 정제",
+      "트랜잭션 모델링 정보처리기사 B 형 2회"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-34192055d613b13f",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스의 특성으로 옳은 내용 모두를 선택한 것은? ① 질의에 대하여 실시간 처리 및 응답이 가능하도록 지원해 준다. ② 삽입, 삭제, 갱신으로 항상 최신의 데이터를 유지한다. ③ 다수의 사용자가 동시에 이용할 수 있다. ④ 데이터 참조시 데이터 값에 의해서는 참조될 수 없으므로 위치나 주소에 의하여 데이터를 찾는다.",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 14번",
+    "sourceYear": 2012,
+    "choices": [
+      "①, ②",
+      "①, ②, ③",
+      "②, ③, ④",
+      "①, ②, ③, ④"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-96a58007ec8c3dc6",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "“트랜잭션의 연산은 데이터베이스에 모두 반영되든지 아니면 전혀 반영되지 않아야 한다.”는 트랜잭션의 특성은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 15번",
+    "sourceYear": 2012,
+    "choices": [
+      "C o n s i s t e n c y",
+      "I s o l a t i o n",
+      "A t o mi c i t y",
+      "D u r a b i l i t y"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-e6c0b9251c87e922",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터 모델의 구성 요소 중 데이터베이스에 표현된 개체 인스턴스 를 처리하는 작업에 대한 명세로서 데이터베이스를 조작하는 기본 도구에 해당하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 16번",
+    "sourceYear": 2012,
+    "choices": [
+      "O p e r a t i o n",
+      "C o n s t r a i n t",
+      "S t r u c t u r e",
+      "R e l a t i o n s h i p"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-d2dc927b17d176dc",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "릴레이션의 특징으로 옳은 내용을 모두 선택한 것은? ① 모든 튜플은 서로 다른 값을 갖는다. ② 각 속성은 유일한 이름을 가지며, 속성의 순서는 큰 의미 가 없다. ③ 튜플 사이에는 순서가 없다. ④ 모든 속성 값은 원자 값이다.",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 17번",
+    "sourceYear": 2012,
+    "choices": [
+      "①, ②, ③, ④",
+      "①, ②, ③",
+      "②, ④",
+      "①, ③, ④"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-ca84e1cd95ba8086",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정규화의 목적으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 18번",
+    "sourceYear": 2012,
+    "choices": [
+      "어떠한 릴레이션이라도 데이터베이스 내에서 표현 가능하게 만든다.",
+      "데이터 삽입시 릴레이션을 재구성할 필요성을 줄인다.",
+      "중복을 배제하여 삽입, 삭제, 갱신, 이상의 발생을 야기한다.",
+      "효과적인 검색 알고리즘을 생성할 수 있다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-16fae3f31388b472",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "관계해석에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 2회 19번",
+    "sourceYear": 2012,
+    "choices": [
+      "수학의 프레디킷 해석에 기반을 두고 있다.",
+      "관계 데이터 모델의 제안자인 코드( C o d d ) 가 관계 데이터베이 스에 적용할 수 있도록 설계하여 제안하였다.",
+      "튜플 관계해석과 도메인 관계해석이 있다.",
+      "원하는 정보와 그 정보를 어떻게 유도하는가를 기술하는 절차 적 특성을 가진다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-bea6961cfb7abecc",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "프로젝트 일정 관리시 사용하는 간트(Gantt) 차트에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 2회 61번",
+    "sourceYear": 2012,
+    "choices": [
+      "막대로 표시하며, 수평 막대의 길이는 각 태스크의 기간을 나타낸다.",
+      "이정표, 기간, 작업, 프로젝트 일정을 나타낸다.",
+      "시간선( T i me - l i n e )차트라고도 한다.",
+      "작업들 간의 상호 관련성, 결정 경로를 표시한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-e573447e38c0e28d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "유지보수의 종류 중 소프트웨어 재공학과 가장 관계되는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 2회 62번",
+    "sourceYear": 2012,
+    "choices": [
+      "A d a p t i v eMa i n t e n a n c e",
+      "P e r f e c t i v eMa i n t e n a n c e",
+      "P r e v e n t i v eMa i n t e n a n c e",
+      "C o r r e c t i v eMa i n t e n a n c e 정보처리기사 B 형 2회"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-e0fad0eb750714eb",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체 지향 기법에서 다음 설명에 해당하는 것으로 가장 타당한 것은? - 다른 객체에게 자신의 정보를 숨기고 자신의 연산만을 통하여 접근한다. - 유지보수와 소프트웨어 확장시 오류를 최소화할 수 있",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2012년 2회 63번",
+    "sourceYear": 2012,
+    "choices": [
+      "가. A b s t r a c t i o n",
+      "I n f o r ma t i o nH i d i n g",
+      "I n h e r i t a n c e",
+      "P o l y mo r p h i s m"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-87716744d16203f3",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 소프트웨어 위기 발생 요인과 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 2회 64번",
+    "sourceYear": 2012,
+    "choices": [
+      "소프트웨어 규모의 증대와 복잡도에 따른 개발 비용 증가",
+      "소프트웨어 개발 정체 현상",
+      "소프트웨어 품질의 고급화",
+      "신기술에 대한 교육과 훈련의 부족"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-b8209572424bb71b",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "시스템에서 모듈 사이의 결합도(Coupling)에 대한 설명으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2012년 2회 65번",
+    "sourceYear": 2012,
+    "choices": [
+      "모듈간의 결합도를 약하게 하면 모듈 독립성이 향상된다.",
+      "한 모듈 내에 있는 처리요소들 사이의 기능적인 연관 정도를 나타낸다.",
+      "결합도가 높으면 시스템 구현 및 유지보수 작업이 쉽다.",
+      "자료 결합도는 내용 결합도 보다 결합도가 높다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-b857baf5584cf617",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "프로토타이핑 모형에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2012년 2회 66번",
+    "sourceYear": 2012,
+    "choices": [
+      "프로토타이핑 모형은 발주자나 개발자 모두에게 공동의 참조 모델을 제공한다.",
+      "사용자의 요구사항을 충실히 반영할 수 있다.",
+      "최종 결과물이 만들어지는 소프트웨어 개발 완료 시점에 최초 의 오류 발견이 가능하다.",
+      "프로토타이핑 모형은 소프트웨어 생명주기에서 유지보수가 없어지고 개발 단계 안에서 유지보수가 이루어지는 것으로 볼 수 있다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-eed4fae0486656c5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 설명의 ( ) 내용으로 옳은 것은? ( )는(은) 한 모듈 내부의 처리 요소들 간의 기능적 연 관도를 나타내며, 모듈 내부 요소는 명령어, 명령어의 모 임, 호출문, 특정작업수행 코드 등이다.",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 2회 67번",
+    "sourceYear": 2012,
+    "choices": [
+      "V a l i d a t i o n",
+      "C o u p l i n g",
+      "I n t e r f a c e",
+      "C o h e s i o n"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-3cc59a586de46ae4",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어의 재사용(Reusability)에 대한 효과와 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 2회 68번",
+    "sourceYear": 2012,
+    "choices": [
+      "사용자의 책임과 권한 부여",
+      "소프트웨어의 품질 향상",
+      "생상선 향상",
+      "구축 방법에 대한 지식의 공유"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-c1dd871d40af0cb8",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "FTR의 지침 사항으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 2회 69번",
+    "sourceYear": 2012,
+    "choices": [
+      "회의 동안 의제를 유지시킨다.",
+      "문제 영역을 명확히 표현한다.",
+      "논쟁과 반박의 제한을 두지 않는다.",
+      "제품의 검토에 집중한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-359f7dc1e5473f7b",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 재공학 활동 중 기존 소프트웨어의 명세서를 확인하고 소프트웨어의 동작을 이해하고 재공학 대상을 선정하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 2회 70번",
+    "sourceYear": 2012,
+    "choices": [
+      "분석( A n a l y s i s )",
+      "재구성( R e s t r u c t u r i n g )",
+      "역공학( R e v e r s eE n g i n e e r i n g )",
+      "이식( Mi g r a t i o n )"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-6eaa84cbce8a251c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 공학에 대한 설명으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 2회 71번",
+    "sourceYear": 2012,
+    "choices": [
+      "소프트웨어 공학은 신뢰성 있는 소프트웨어를 경제적인 비용 으로 획득하기 위해 공학적 원리를 정립하고 이를 이용하는 학문이다.",
+      "소프트웨어 공학은 소프트웨어 제품의 품질을 향상시키고 소 프트웨어 생산성과 작업 만족도를 증대시키는 것이 목적이다.",
+      "소프트웨어 공학이란 소프트웨어의 개발, 운용, 유지보수 및 파기에 대한 체계적인 접근 방법이다.",
+      "소프트웨어 공학의 궁극적 목표는 최대의 비용으로 계획된 일정보다 가능한 빠른 시일 내에 소프트웨어를 개발하는 것이 다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-fa85723fb5af8153",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "프로젝트 계획 수립시 소프트웨어 범위(Scope) 결정의 주요 요소로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 2회 72번",
+    "sourceYear": 2012,
+    "choices": [
+      "소프트웨어 개발 환경",
+      "소프트웨어 성능",
+      "소프트웨어 제약 조건",
+      "소프트웨어 신뢰도"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-6c12a031fb1a0211",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "화이트 박스 테스트 기법으로만 짝지어진 것은? ① Equivalence Partitioning Test ② Comparison Test ③ Basic Path Test ④ Condition Test ⑤ Data Flow Test ⑥ Cause-Effect Graphing Test ⑦ Loop Test",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2012년 2회 73번",
+    "sourceYear": 2012,
+    "choices": [
+      "①, ②, ⑦",
+      "②, ③, ④, ⑥, ⑦",
+      "①, ②, ⑥",
+      "③, ④, ⑤, ⑦"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f791cbe00997cf12",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "럼바우의 객체지향 분석에서 사용되는 분석 활동과 관계되는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2012년 2회 74번",
+    "sourceYear": 2012,
+    "choices": [
+      "객체 모델, 동적 모델, 정적 모델",
+      "객체 모델, 동적 모델, 기능 모델",
+      "동적 모델, 기능 모델, 정적 모델",
+      "정적 모델, 객체 모델, 기능 모델"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-0ebe9f3b84a120e9",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 프로젝트 관리를 효과적으로 수행하는데 필요한 3P에 해당하지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 2회 75번",
+    "sourceYear": 2012,
+    "choices": [
+      "P e o p l e",
+      "P r o b l e m",
+      "P r o c e s s",
+      "P o s s i b i l i t y"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-96224e64d1dfab97",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 기법에 대한 설명으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2012년 2회 76번",
+    "sourceYear": 2012,
+    "choices": [
+      "프로시저에 근간을 두고 프로그래밍을 구현하는 기법이다.",
+      "현실 세계를 모형화하여 사용자와 개발자가 쉽게 이해할 수 있다.",
+      "소프트웨어의 재사용율이 높아진다.",
+      "소프트웨어의 유지보수성이 향상된다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-0ff2570eb790dd50",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "자료사전(Data Dictionary)에 사용되는 기호의 의미를 옳게 나열한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 2회 78번",
+    "sourceYear": 2012,
+    "choices": [
+      "{}: 자료의 생략 가능, (): 자료의 선택",
+      "(): 자료의 설명, * *: 자료의 선택",
+      "=: 자료의 설명, * *: 자료의 정의",
+      "+: 자료의 연결, (): 자료의 생략 가능 정보처리기사 B 형 2회"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-def3dbf36ada03c9",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CASE에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2012년 2회 79번",
+    "sourceYear": 2012,
+    "choices": [
+      "소프트웨어의 유지보수를 간편하게 수행할 수 있다.",
+      "자동 검사를 통하여 소프트웨어 품질을 향상시킨다.",
+      "소프트웨어 부품의 재사용성이 향상된다.",
+      "보헴이 제안한 것으로 L O C 에 의한 비용 산정 기법이다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c86aea623a446568",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "프로젝트를 추진하기 위하여 팀 구성원들의 특성을 분석해 보니 1명이 고급 프로그래머이고 몇 명의 중급 프로그래머가 포함되어 있었다. 이와 같은 경우 가장 적합한 팀 구성 방식은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2012년 2회 80번",
+    "sourceYear": 2012,
+    "choices": [
+      "책임 프로그래머 팀( C h i e fP r o g r a mme rT e a m)",
+      "민주주의식 팀( D e mo c r a t i cT e a m)",
+      "계층형 팀( H i e r a r c h i c a l T e a m)",
+      "구조적 팀( S t r u c t u r e dT e a m) 제 5 과목 : 데이터 통신"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-5c825613ce6ad3a3",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "선형 구조에 해당하는 구조를 모두 선택한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 3회 1번",
+    "sourceYear": 2012,
+    "choices": [
+      "트리",
+      "그래프",
+      "스택",
+      "큐 ⑤ 데크"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-873b1d5b2c6d8f56",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스의 특성으로 옳은 내용 모두를 선택한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2012년 3회 17번",
+    "sourceYear": 2012,
+    "choices": [
+      "데이터베이스의 데이터는 그 주소나 위치에 의해 참조 된다.",
+      "데이터베이스는 계속적으로 변화된다.",
+      "데이터베이스는 실시간으로 접근한다.",
+      "데이터베이스는 동시 공용이다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-117146b4098a4a89",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(VIEW) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2013년 2회 1번",
+    "sourceYear": 2013,
+    "choices": [
+      "하나의 뷰를 제거하면 그 뷰를 기초로 정의된 다른 뷰",
+      "는 제거되지 않는다. 뷰는 가상 테이블이므로 물리적으로 구현되어 있지 않",
+      "다. 필요한 데이터만 뷰로 정의해서 처리할 수 있기 때문에",
+      "관리가 용이하다. 에서 뷰를 생성할 때 문을 사용한다 SQL CREATE ."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-576aa0552d309e82",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스의 3층 스키마 중 모든 응용 시스템과 사용자들이 필요로 하는 데이터를 통합한 조직 전체의 데이터 베이스 구조를 논리적으로 정의하는 스키마는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 1번",
+    "sourceYear": 2014,
+    "choices": [
+      "내부 스키마",
+      "개념 스키마",
+      "외부 스키마",
+      "동적 스키마"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-6e09c6463190814e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스 설계 순서로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 2번",
+    "sourceYear": 2014,
+    "choices": [
+      "요구 조건 분석 → 물리적 설계 → 논리적 설계 → 개념적 설계 → 데이터베이스 구현",
+      "요구 조건 분석 → 개념적 설계 → 논리적 설계 → 물리적 설계 → 데이터베이스 구현",
+      "요구 조건 분석 → 논리적 설계 → 개념적 설계 → 물리적 설계 → 데이터베이스 구현",
+      "요구 조건 분석 → 논리적 설계 → 물리적 설계 → 개념적 설계 → 데이터베이스 구현"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-1e1ae97620b9f32c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 트리에서 터미널 노드 수는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2014-3/q003-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 3번",
+    "sourceYear": 2014,
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-d6164a3ffdf1d9a1",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "제 2정규형에서 제 3정규형이 되기 위한 조건은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 4번",
+    "sourceYear": 2014,
+    "choices": [
+      "이행적 함수 종속 제거",
+      "부분적 함수 종속 제거",
+      "다치 종속 제거",
+      "결정자이면서 후보키가 아닌 것 제거"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-cbfac27f6cf6fe03",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Which of the follwing does not belong to the DML statement of SQL?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 5번",
+    "sourceYear": 2014,
+    "choices": [
+      "S E L E C T",
+      "D E L E T E",
+      "C R E A T E",
+      "I N S E R T"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-d48db83f1f1bdb8f",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "조건을 만족하는 릴레이션의 수평적 부분집합으로 구성하며, 연산 자의 기호는 그리스 문자 시그마(σ)를 사용하는 관계대수 연산은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 6번",
+    "sourceYear": 2014,
+    "choices": [
+      "S e l e c t",
+      "P r o j e c t",
+      "J o i n",
+      "D i v i s i o n"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-2eaacb4ddf5c406c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 릴레이션의 Degree와 Cardinality는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 7번",
+    "sourceYear": 2014,
+    "choices": [
+      "13001 홍길동 3학년 전기 13002 이순신 4학년 기계 13003 강감찬 2학년 컴퓨터",
+      "D e g r e e: 4 , C a r d i n a l i t y: 3",
+      "D e g r e e: 3 , C a r d i n a l i t y: 4",
+      "D e g r e e: 3 , C a r d i n a l i t y: 1 2"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-b8d6c8eb620d679e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "트랜잭션의 특징으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 8번",
+    "sourceYear": 2014,
+    "choices": [
+      "C o n s i s t e n c y",
+      "I s o l a t i o n",
+      "D u r a b i l i t y",
+      "A u t o ma t i c"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-9545dab16c0dce50",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "병행제어의 로킹(Locking) 단위에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 9번",
+    "sourceYear": 2014,
+    "choices": [
+      "데이터베이스, 파일, 레코드 등은 로킹 단위가 될 수 있다.",
+      "로킹 단위가 작아지면 로킹 오버헤드가 감소한다.",
+      "로킹 단위가 작아지면 데이터베이스 공유도가 증가 한다.",
+      "한꺼번에 로킹 할 수 있는 단위를 로킹 단위라고 한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-9afd47619d1cddde",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "순차파일에 대한 옳은 내용 모두를 나열한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 10번",
+    "sourceYear": 2014,
+    "choices": [
+      "㉠ 대화식 처리보다 일괄 처리에 적합한 구조이다. ㉡ 어떤 형태의 입출력 매체에서도 처리가 가능하다. ㉢ 연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억장치의 효율적인 이 용이 가능하다. ㉣ 새로운 레코드를 삽입하는 경우 파일 전체를 복사하 지 않아도 된다.",
+      "㉢",
+      "㉢ , ㉣",
+      "㉠ , ㉡ , ㉢"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-fab8d8948f3815ae",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스의 특징으로 볼 수 없는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 11번",
+    "sourceYear": 2014,
+    "choices": [
+      "R e a l T i meA c c e s s i b i l i t y",
+      "C o n c u r r e n tS h a r i n g",
+      "A d d r e s sR e f e r e n c e",
+      "C o n t i n u o u sE v o l u t i o n"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-053b3b55d367d48b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스의 정의 중 다음 설명과 관계되는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 12번",
+    "sourceYear": 2014,
+    "choices": [
+      "여러 사용자들이 서로 다른 목적으로 데이터베이스의 데이터를 공동으로 이용한다.",
+      "I n t e g r a t e dD a t a",
+      "S t o r e dD a t e",
+      "S h a r e dD a t a"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-e0775e80f367b1c2",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 설명이 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 13번",
+    "sourceYear": 2014,
+    "choices": [
+      "It is a collection of meta-data describing the structure and constraint of database. It defines data entities, attributes, relations, and constraints on data manipulation.",
+      "D B MS",
+      "S c h e ma",
+      "T r a n s a c t i o n"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-c0b38a5c1232feec",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터 모델의 종류 중 CODASYL DBTG 모델과 가장 밀접한 관계가 있는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 14번",
+    "sourceYear": 2014,
+    "choices": [
+      "계층형 데이터 모델",
+      "네트워크형 데이터 모델",
+      "관계형 데이터 모델",
+      "스키마형 데이터 모델"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-21f42a7e055f538b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 그림과 같은 이진 트리를 후위 순회(Postorder-Traversal)한 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2014-3/q016-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 16번",
+    "sourceYear": 2014,
+    "choices": [
+      "+**/A B C D E",
+      "A /B *C *D +E",
+      "+*A B /*C D E",
+      "A B /C *D *E +"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c392894421659af9",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스에서 하나의 논리적 기능을 수행하기 위한 작업의 단위 또는 한꺼번에 모두 수행되어야 할 일련의 연산들을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 17번",
+    "sourceYear": 2014,
+    "choices": [
+      "C O L L I S I O N",
+      "B U C K E T",
+      "S Y N O N Y M",
+      "T R A N S A C T I O N"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-4d696ba5c7254fb8",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스의 물리적 설계 단계와 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 18번",
+    "sourceYear": 2014,
+    "choices": [
+      "저장 레코드 양식 설계",
+      "레코드 집중의 분석 및 설계",
+      "트랜잭션 인터페이스 설계",
+      "접근 경로 설계"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-0f094396ea6d9d37",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "스택(stack)에 대한 옳은 내용으로만 나열된 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2014년 3회 20번",
+    "sourceYear": 2014,
+    "choices": [
+      "㉠ FIFO 방식으로 처리된다. ㉡ 순서 리스트의 뒤(Rear)에서 노드가 삽입되며, 앞 (Front)에서 노드가 제거된다. ㉢ 선형 리스트의 양쪽 끝에 삽입과 삭제가 모두 가능한 자료 구조이다. ㉣ 인터럽트 처리, 서브루틴 출력 작업 등에 응용된다.",
+      "㉠ , ㉡",
+      "㉡ , ㉢",
+      "㉣"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-f53d4bb77d2578cb",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "유지보수의 종류 중 소프트웨어 테스팅 동안 밝혀지지 않은 모든 잠재적인 오류를 수정하기 위한 보수 형태로서, 오류의 수정과 진단 과정이 포함되는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2014년 3회 61번",
+    "sourceYear": 2014,
+    "choices": [
+      "P e r f e c t i v eMa i n t e n a n c e",
+      "A d a p t i v eMa i n t e n a n c e",
+      "P r e v e n t i v eMa i n t e n a n c e",
+      "C o r r e c t i v eMa i n t e n a n c e"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-52f4b5f4a8a6dec6",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 프로젝트를 효과적으로 관리하기 위해서는 3P에 초점 을 맞추어야 한다. 3P에 직접 해당하지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2014년 3회 62번",
+    "sourceYear": 2014,
+    "choices": [
+      "P e o p l e",
+      "P r o g r a m",
+      "P r o b l e m",
+      "P r o c e s s"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-a96155a9c7613924",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어의 재사용에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2014년 3회 63번",
+    "sourceYear": 2014,
+    "choices": [
+      "표준화의 원칙을 무시할 수 있다.",
+      "프로젝트의 개발 위험을 줄여줄 수 있다.",
+      "프로젝트의 개발기간과 비용을 줄일 수 있다.",
+      "개발자의 생산성을 향상시킬 수 있다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-801ca31cb93613ea",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 위기를 가져온 원인에 해당하지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2014년 3회 65번",
+    "sourceYear": 2014,
+    "choices": [
+      "소프트웨어 규모 증대와 복잡도에 따른 개발 비용 증가",
+      "프로젝트 관리기술의 부재",
+      "소프트웨어 개발기술에 대한 훈련 부족",
+      "소프트웨어 수요의 감소"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-9d4c90b2dcb16e7e",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "자료 흐름도(DFD)의 구성 요소가 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2014년 3회 67번",
+    "sourceYear": 2014,
+    "choices": [
+      "처리( P r o c e s s )",
+      "자료 흐름( D a t aF l o w)",
+      "단말( T e r mi n a t o r )",
+      "기수( C a r d i n a l i t y )"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-79cc1609d8390709",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 공학의 발전을 위한 소프트웨어 사용자(Software User) 로서의 자세로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2014년 3회 68번",
+    "sourceYear": 2014,
+    "choices": [
+      "프로그래밍 언어와 알고리즘의 최근 동향을 주기적으로 파악 한다.",
+      "컴퓨터의 이용 효율이나 워크스테이션에 관한 정보들을 체계 적으로 데이터베이스화 한다.",
+      "타 기업의 시스템에 몰래 접속하여 새로운 소프트웨어 개발에 관한 정보를 획득한다.",
+      "바이러스에 대한 예방에 만전을 기하여 시스템의 안전을 확보 한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-9aba045f91863d2e",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "자료 사전에서 자료 반복의 의미를 갖는 기호는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2014년 3회 69번",
+    "sourceYear": 2014,
+    "choices": [
+      "+",
+      "{}",
+      "()",
+      "="
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-3d497e14ad1a2a2d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "화이트 박스 검사로 찾기 힘든 오류는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2014년 3회 70번",
+    "sourceYear": 2014,
+    "choices": [
+      "논리 흐름도",
+      "루프 구조",
+      "순환 복잡도",
+      "자료 구조"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-4ba361bf6598ac5c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "LOC 기법에 의하여 예측된 총 라인수가 50,000 라인, 개발 참여 프로그래머가 5인, 프로그래머의 월 평균 생산성이 200 라인일 때, 개발 소요 시간은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2014년 3회 71번",
+    "sourceYear": 2014,
+    "choices": [
+      "2 0 0 0 개월",
+      "2 0 0 개월",
+      "6 0 개월",
+      "5 0 개월"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-21bf536e84aa53f0",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음의 소프트웨어 검사 기법 중 성격이 나머지 셋과 다른 하나는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2014년 3회 72번",
+    "sourceYear": 2014,
+    "choices": [
+      "L o o pT e s t",
+      "E q u i v a l e n c eP a r t i t i o n i n gT e s t",
+      "B o u n d a r yV a l u eA n a l y s i s",
+      "C o mp a r i s o nT e s t"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-74308c9e78b168f2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "럼바우의 객체 지향 분석과 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2014년 3회 74번",
+    "sourceYear": 2014,
+    "choices": [
+      "기능 모델링",
+      "동적 모델링",
+      "객체 모델링",
+      "정적 모델링"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-d43a9eadf07d0d71",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체 지향 개념 중 하나 이상의 유사한 객체들을 묶어 공통된 특성을 표현한 데이터 추상화를 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2014년 3회 75번",
+    "sourceYear": 2014,
+    "choices": [
+      "메소드( Me t h o d )",
+      "클래스( C l a s s )",
+      "상속성( I n h e r i t a n c e )",
+      "메시지( Me s s a g e )"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-ebe7192dd02e0050",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "응집도의 종류 중 서로 간에 어떠한 의미 있는 연관관계도 지니지 않은 기능 요소로 구성되는 경우이며, 서로 다른 상위 모듈에 의해 호출되어 처리상의 연관성이 없는 서로 다른 기능을 수행하는 경우의 응집도는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2014년 3회 76번",
+    "sourceYear": 2014,
+    "choices": [
+      "F u n c t i o n a l C o h e s i o n",
+      "S e q u e n t i a l C o h e s i o n",
+      "L o g i c a l C o h e s i o n",
+      "C o i n c i d e n t a l C o h e s i o n"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-6ea4464dc11b06a9",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "브록스(Brooks) 법칙의 의미로 가장 적절한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2014년 3회 77번",
+    "sourceYear": 2014,
+    "choices": [
+      "프로젝트 개발에 참여하는 남성과 여성의 비율은 동일해야 한다.",
+      "새로운 개발 인력이 진행 중인 프로젝트에 투입될 경우 작업 적응 기간과 부작용으로 인해 빠른 시간 내에 프로젝트는 완 료될 수 없다.",
+      "프로젝트 수행 기간의 단축을 위해서는 많은 비용이 투입되어 야 한다.",
+      "프로젝트에 개발자가 많이 참여할수록 프로젝트의 완료기간 은 지연된다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-1b35c49ffa4f769a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체에게 어떤 행위를 하도록 지시하는 명령은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2014년 3회 78번",
+    "sourceYear": 2014,
+    "choices": [
+      "C l a s s",
+      "I n s t a n c e",
+      "Me t h o d",
+      "Me s s a g e"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-1f9cec4ed02d75bb",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정형 기술 검토(FTR)의 지침 사항으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2014년 3회 79번",
+    "sourceYear": 2014,
+    "choices": [
+      "의제를 제한한다.",
+      "논쟁과 반박을 제한한다.",
+      "문제 영역을 명확히 표현한다.",
+      "참가자의 수를 제한하지 않는다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-d57d46711a1fa640",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 품질 목표 중 사용자의 요구 기능을 충족시키는 정도를 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2014년 3회 80번",
+    "sourceYear": 2014,
+    "choices": [
+      "I n t e g r i t y",
+      "F l e x i b i l i t y",
+      "C o r r e c t n e s s",
+      "P o r t a b i l i t y 제 5 과목 : 데이터 통신"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-5e17a1ac5c0a09d2",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 관계대수 중 순수 관계연산자가 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 1회 1번",
+    "sourceYear": 2017,
+    "choices": [
+      "차집합(Difference)",
+      "프로젝트(Project)",
+      "조인(Join)",
+      "디비전(Division)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-63b5126c2ea6d814",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "뷰에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 1회 4번",
+    "sourceYear": 2017,
+    "choices": [
+      "뷰에 대한 사용자의 권한을 제한할 수 있다.",
+      "뷰 테이블에 행이나 열을 추가할 때에는 ALTER 문을 사용하 여야 한다.",
+      "뷰는 다른 뷰를 대상으로 설정될 수 있다.",
+      "뷰 테이블은 물리적으로 구현된 것은 아니다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-fbfc756c7460e077",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "깊이가 5인 이진 트리에서 가질 수 있는 최대 노드수는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 1회 5번",
+    "sourceYear": 2017,
+    "choices": [
+      "25",
+      "31",
+      "35",
+      "42"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-54b8faee9f13206c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "로킹 기법에서 2단계 로킹 규약에 대한 설명으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 1회 6번",
+    "sourceYear": 2017,
+    "choices": [
+      "트랜잭션은 Lock만 수행할 수 있고, Unlock은 수행할 수 없는 확장 단계가 있다.",
+      "트랜잭션이 Unlock과 Lock을 동시에 수행할 수 있는 단계를 병렬 전환 단계라 한다.",
+      "한 트랜잭션이 Unlock 후 다른 데이터 아이템을 Lock 할 수 있다.",
+      "교착상태를 일으키지 않는다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-151928cf45a2e40e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스에서 개념적 설계 단계에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 1회 8번",
+    "sourceYear": 2017,
+    "choices": [
+      "산출물로 ER-D가 만들어진다.",
+      "DBMS에 독립적인 개념 스키마를 설계한다.",
+      "트랜잭션 인터페이스를 설계한다.",
+      "논리적 설계 단계의 앞 단계에서 수행된다. 2017년 1회 정보처리기사 필기 A형 이 자료는 시나공 카페 회원을 대상으로 하는 자료로서 개인적인 용도로만 사용할 수 있습니다. 허락 없이 복제하거나 다른 매체에 옮겨 실을 수 없으며, 상업적 용도로 사용할 수 없습니다. A 1회"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-82e6354a0657f5e7",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음과 같이 오름차순 정렬되었을 경우 사용된 정렬 기법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 1회 9번",
+    "sourceYear": 2017,
+    "choices": [
+      "초기 상태 : 8, 3, 4, 9, 7 1 PASS : 3, 8, 4, 9, 7 2 PASS : 3, 4, 8, 9, 7 3 PASS : 3, 4, 7, 9, 8 4 PASS : 3, 4, 7, 8, 9",
+      "Bubble Sort",
+      "Selection Sort",
+      "Quick Sort"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-9bdf9af8900693f2",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Which of the following does not belong to the DML statement of SQL?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 1회 10번",
+    "sourceYear": 2017,
+    "choices": [
+      "SELECT",
+      "DELETE",
+      "CREATE",
+      "INSERT"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-f530d4cc7764468e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 그래프의 인접 행렬(Adjacency Matrix) 표현 시 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 1회 11번",
+    "sourceYear": 2017,
+    "choices": [
+      "1 3 2",
+      "        ",
+      "        ",
+      "        "
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-0a542b8b8da5439a",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "퀵 정렬에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 1회 12번",
+    "sourceYear": 2017,
+    "choices": [
+      "순환 알고리즘을 사용해야 하므로 스택 공간을 필요로 한다.",
+      "첫 번째 키 만을 분할 원소로 정할 수 있다.",
+      "키를 기준으로 작은 값은 왼쪽에, 큰 값은 오른쪽 서브파일로 분해시키는 방식이다.",
+      "최악의 시간 복잡도는  (n 2 )이다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-a1ddf10c0b2c61f6",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Commit과 Rollback 명령어에 의해 보장 받는 트랜잭션의 특성은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 1회 14번",
+    "sourceYear": 2017,
+    "choices": [
+      "병행성",
+      "보안성",
+      "원자성",
+      "로그"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-d1d880d44f19a297",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "릴레이션에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 1회 16번",
+    "sourceYear": 2017,
+    "choices": [
+      "모든 튜플은 서로 다른 값을 가지고 있다.",
+      "하나의 릴레이션에서 튜플은 순서를 가진다.",
+      "각 속성은 릴레이션 내에서 유일한 이름을 가진다.",
+      "모든 속성 값은 원자 값(Atomic Value)을 가진다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-654c7394a9576e2b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "해싱에서 충돌이 일어난 자리에서 그 다음 버킷들을 차례로 하나씩 검색하여 최초로 나오는 빈 버킷에 해당 데이터를 저장하는 방법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 1회 17번",
+    "sourceYear": 2017,
+    "choices": [
+      "선형 개방 주소법",
+      "재해싱",
+      "임의 조사법",
+      "이차 조사법"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-c0b4d9db9a3b925d",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "릴레이션에 R1에 속한 애튜리뷰트의 조합인 외래키를 변경하려면 이를 참조하고 있는 R2의 릴레이션의 기본키도 변경해야 하는데 이를 무엇이라고 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 1회 18번",
+    "sourceYear": 2017,
+    "choices": [
+      "정보 무결성",
+      "고유 무결성",
+      "키 제약성",
+      "참조 무결성"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-5e3eb586a4add0c7",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "트랜잭션(Transaction)은 보통 일련의 연산 집합이란 의미로 사용 하며 하나의 논리적 기능을 수행하는 작업의 단위이다. 트랜잭션이 가져야할 특성으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 1회 20번",
+    "sourceYear": 2017,
+    "choices": [
+      "Atomicity",
+      "Concurrency",
+      "Isolation",
+      "Durability 제 2 과목 전자계산기구조"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-f47387a4d95025d9",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 품질 보증을 위한 정형 기술 검토의 지침 사항으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 1회 61번",
+    "sourceYear": 2017,
+    "choices": [
+      "각 체크 리스트를 작성하고, 자원과 시간 일정을 할당한다.",
+      "검토의 과정과 결과를 재검토한다.",
+      "논쟁과 반박을 제한한다.",
+      "의제와 참가자의 수를 제한하지 않는다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-070523616a52845a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 공학에 대한 설명으로 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 1회 62번",
+    "sourceYear": 2017,
+    "choices": [
+      "소프트웨어의 개발, 운용, 유지보수, 폐기처분에 대한 체계적 인 접근방법이다.",
+      "정해진 비용과 기간 내에 소프트웨어를 체계적으로 생산하고 유지 ․ 보수하는데 관련된 기술적이고 관리적인 접근방법이다.",
+      "소프트웨어 공학은 안정적이며 효율적으로 작동하는 소프트 웨어를 생산하고, 유지 ․ 보수 활동을 체계적이고 경제적으로 수행하기 위해 계층화 기술을 사용한다.",
+      "소프트웨어 공학의 궁극적 목표는 가능한 빠른 시일 내에 독창 적인 소프트웨어를 개발하는 것이다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b41c496a32efff96",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어, 하드웨어, 데이터베이스, 테스트 등을 통합하여 소프 트웨어를 개발하는 환경을 조성한다는 의미를 가진 용어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 1회 63번",
+    "sourceYear": 2017,
+    "choices": [
+      "CAD",
+      "CAI",
+      "CAM",
+      "CASE"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-ca0beed89a62db38",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "User Interface 설계 시 오류 메시지나 경고에 관한 지침으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 1회 64번",
+    "sourceYear": 2017,
+    "choices": [
+      "메시지는 이해하기 쉬워야 한다.",
+      "오류로부터 회복을 위한 구체적인 설명이 제공되어야 한다.",
+      "오류로 인해 발생될 수 있는 부정적인 내용은 가급적 피한다.",
+      "소리나 색 등을 이용하여 듣거나 보기 쉽게 의미 전달을 하도 록 한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-2a0089329769ffd7",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Rumbaugh의 모델링에서 상태도와 자료 흐름도는 각각 어떤 모델 링과 가장 관련이 있는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 1회 65번",
+    "sourceYear": 2017,
+    "choices": [
+      "상태도 - 동적 모델링, 자료 흐름도 - 기능 모델링",
+      "상태도 - 기능 모델링, 자료 흐름도 - 동적 모델링",
+      "상태도 - 객체 모델링, 자료 흐름도 - 기능 모델링",
+      "상태도 - 객체 모델링, 자료 흐름도 - 동적 모델링"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-0c7134ac5f19658b",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "블랙 박스 테스트 기법에 해당하는 내용을 모두 고르면?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 1회 66번",
+    "sourceYear": 2017,
+    "choices": [
+      "Ⓐ 소프트웨어 인터페이스에서 실시되는 검사로 설계된 모든 기능들이 정상적으로 수행되는지 확인한다. Ⓑ 소프트웨어의 기능이 의도대로 작동하고 있는지, 입력 은 적절하게 받아들였는지, 출력은 정확하게 생성되는 지를 보여주는 데 사용된다. Ⓒ Equivalence Partitioning Testing, Boundary Value Analysis 등이 이 기법에 해당한다.",
+      "Ⓐ",
+      "Ⓐ , Ⓑ",
+      "Ⓑ , Ⓒ"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-8ef72654097e3399",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "COCOMO 모델에 의한 비용(Cost) 산정 과정에 해당하지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 1회 67번",
+    "sourceYear": 2017,
+    "choices": [
+      "KDSI (or KLOC)를 측정한다.",
+      "UFP(Unadhusted Function Point)를 계산한다.",
+      "개발 노력 승수(Development Effort Multipliers)를 결정한 다.",
+      "비용 산정 유형으로 단순형, 중간형, 임베디드형이 있다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-69266da73f199ef4",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다수의 사용자를 제한되지 않은 환경에서 프로그램을 사용하게 하고 오류가 발견되면 개발자에게 통보하는 방식의 검사(Test) 방법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 1회 68번",
+    "sourceYear": 2017,
+    "choices": [
+      "Alpha Test",
+      "Beta Test",
+      "Configuration Test",
+      "Unit Test"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-05d793490770a736",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "하향식 통합 테스트 수행을 위해 일시적으로 필요한 조건만을 가지고 임시로 제공되는 시험용 모듈의 명칭은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 1회 69번",
+    "sourceYear": 2017,
+    "choices": [
+      "Alpha",
+      "Builder",
+      "Cluster",
+      "Stub"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-cc1f711b68d87077",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향의 캡슐화에 대한 설명으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 1회 70번",
+    "sourceYear": 2017,
+    "choices": [
+      "결합도가 낮아진다.",
+      "재사용이 용이하다.",
+      "인터페이스를 단순화 시킬 수 있다.",
+      "변경이 발생할 때 오류의 파급효과가 크다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-9b4966039df37b57",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 설계 및 분석 단계에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 1회 71번",
+    "sourceYear": 2017,
+    "choices": [
+      "분석 단계에서는 주어진 문제 안에서 객체들을 발견하고 객체 들의 상관 관계를 분석한다.",
+      "분석 설계 및 구현 단계들 사이에 의미적 갭(Semantic Gap)이 크다.",
+      "설계 단계에서는 객체들을 클래스로 정의하고 상관 관계를 상속 단계로 정의한다.",
+      "구현 단계에서는 정의된 클래스들에 대해 특정언어를 이용하 여 1:1로 정의한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-109fad61249e3349",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "COCOMO Model 중 기관 내부에서 개발된 중소규모의 소프트웨어 로 일괄 자료 처리나 과학 기술 계산용, 비즈니스 자료 처리용으로 5만 라인 이하의 소프트웨어를 개발하는 유형은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 1회 72번",
+    "sourceYear": 2017,
+    "choices": [
+      "Embeded",
+      "Organic",
+      "Semi-Detached",
+      "Semi-Embeded A 1회"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-310088db241a86d3",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "위험 모니터링(Monitoring)의 의미로 가장 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 1회 73번",
+    "sourceYear": 2017,
+    "choices": [
+      "위험을 이해하는 것",
+      "위험 요소를 인정하지 않은 것",
+      "첫 번째 조치로 위험을 피할 수 있도록 하는 것",
+      "위험 요소 징후들을 계속적으로 인지하는 것"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-0f067b8d2e98e557",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터 흐름도(DFD)의 구성 요소에 포함되지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 1회 74번",
+    "sourceYear": 2017,
+    "choices": [
+      "Data Flow",
+      "Data Dictionary",
+      "Process",
+      "Data Store"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-2abdbcf112c6832a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 역공학(Software Reverse Engineering)에 대한 설명으 로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 1회 75번",
+    "sourceYear": 2017,
+    "choices": [
+      "기존 소프트웨어의 구성 요소와 그 관계를 파악하여 설계도를 추출한다.",
+      "역공학의 가장 간단하고 오래된 형태는 재문서화라고 할 수 있다.",
+      "일반적인 개발 단계와는 반대 방향으로 기존 코드를 복구하는 방법이다.",
+      "대상 시스템 없이 새로운 시스템으로 개선하는 변경 작업이다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-06a39270f4812f08",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "컴포넌트 재사용을 위한 컴포넌트 기반 개발 활동에 대한 설명으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 1회 76번",
+    "sourceYear": 2017,
+    "choices": [
+      "후보 컴포넌트가 요구되는 기능을 수행하는지를 조사하기 위 해 컴포넌트 검증을 수행한다.",
+      "컴포넌트 내부 처리 과정을 조사하고 코드를 수정하기 위해 블랙-박스 랩핑(Wrapping)을 적용한다.",
+      "컴포넌트 라이브러리가 컴포넌트 확장 언어를 제공하면 그레 이-박스 랩핑을 적용할 수 있다.",
+      "어플리케이션 구현을 위해 검증, 개작, 개발된 컴포넌트들을 조립하는 컴포넌트 합성을 수행한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-566124ec6c39a400",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "실시간 소프트웨어 설계 시 고려해야 할 사항이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 1회 77번",
+    "sourceYear": 2017,
+    "choices": [
+      "인터럽트와 문맥 교환의 표현",
+      "태스크들간의 통신과 동기화",
+      "동기적인 프로세싱",
+      "타이밍 제약의 표현"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-a73cb0f2e7adde12",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "프로그램 설계도의 하나인 NS(Nassi-Schneiderman) Chart에 대한 설명으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 1회 78번",
+    "sourceYear": 2017,
+    "choices": [
+      "논리의 기술에 중점을 두고 도형을 이용한 표현 방법이다.",
+      "박스, 다이아몬드, 화살표 등의 기호를 사용하므로 읽고 작성 하기가 매우 쉽다.",
+      "이해하기 쉽고 코드로 변환이 용이하다.",
+      "연속, 선택, 반복 등의 제어 논리 구조를 표현한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-9fc4953c70e347f0",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "자료 사전에서 기호 “{ }”의 의미는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 1회 79번",
+    "sourceYear": 2017,
+    "choices": [
+      "정의",
+      "생략",
+      "반복",
+      "선택"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-699ff351c957835a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 재사용과 관련하여 객체들의 모임, 대규모 재사용 단위로 정의되는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 1회 80번",
+    "sourceYear": 2017,
+    "choices": [
+      "Component",
+      "Sheet",
+      "Framework",
+      "Cell 제 5 과목 : 데이터 통신"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-36849bb99521f302",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "트랜잭션의 특성 중 둘 이상의 트랜잭션이 동시에 병행 실행되는 경우 어느 하나의 트랜잭션 실행 중에 다른 트랜잭션의 연산이 끼어들 수 없음을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 2회 1번",
+    "sourceYear": 2017,
+    "choices": [
+      "log",
+      "consistency",
+      "isolation",
+      "durability"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-f7d7e7abf7e80f9a",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "관계 해석에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 2회 5번",
+    "sourceYear": 2017,
+    "choices": [
+      "튜플 관계 해석과 도메인 관계 해석이 있다.",
+      "질의에 대한 해를 구하기 위해 수행해야 할 연산의 순서를 명시해야 하는 절차적인 언어이다.",
+      "릴레이션을 정의하는 방법을 제공한다.",
+      "수학의 predicate calculus에 기반을 두고 있다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-d528511774e5dad5",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "어떤 릴레이션 R의 모든 조인 종속성의 만족이 R의 후보키를 통해서만 만족된다. 이 릴레이션 R은 어떤 정규형의 릴레이션인 가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 2회 6번",
+    "sourceYear": 2017,
+    "choices": [
+      "제 5정규형",
+      "제 4정규형",
+      "제 3정규형",
+      "보이스-코드 정규형"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-678b3beafe5d9cc6",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터 무결성 제약조건 중 “개체 무결성 제약” 조건에 대한 설명으 로 맞는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 2회 8번",
+    "sourceYear": 2017,
+    "choices": [
+      "릴레이션 내의 튜플들이 각 속성의 도메인에 지정 값만을 가져 야 한다.",
+      "기본키에 속해 있는 애트리뷰트는 널값이나 중복값을 가질 수 없다.",
+      "릴레이션은 참조할 수 없는 외래키 값을 가질 수 없다.",
+      "키 속성의 모든 값들은 서로 같은 값이 없어야 한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-3ff32000458a7e0f",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "E-R 모델의 표현 방법으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 2회 9번",
+    "sourceYear": 2017,
+    "choices": [
+      "개체타입 : 사각형",
+      "관계타입 : 마름모",
+      "속성 : 오각형",
+      "연결 : 선"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-7a52ac485983bc1a",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "병행제어의 목적으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 2회 10번",
+    "sourceYear": 2017,
+    "choices": [
+      "시스템 활용도 최대화",
+      "데이터베이스 공유도 최소화",
+      "사용자에 대한 응답시간 최소화",
+      "데이터베이스 일관성 유지"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-bdb7cce4fc95c33c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "순서가 A, B, C, D로 정해진 입력 자료를 push, push, pop, push, push, pop, pop, pop 순서로 스택연산을 수행하는 경우 출력 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 2회 11번",
+    "sourceYear": 2017,
+    "choices": [
+      "B D C A",
+      "A B C D",
+      "B A C D",
+      "A B D C"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-103a30c89dcf2d0b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 그림에서 트리의 차수는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2018-3/q015-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 15번",
+    "sourceYear": 2018,
+    "choices": [
+      "3",
+      "4",
+      "6",
+      "8"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-bce381f62b6ec942",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "사용자 X1에게 department 테이블에 대한 검색 연산을 회수하는 명령은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 2회 14번",
+    "sourceYear": 2017,
+    "choices": [
+      "delete select on department to X1;",
+      "remove select on department from X1;",
+      "revoke select on department from X1;",
+      "grant select on department from X1; 이 자료는 시나공 카페 회원을 대상으로 하는 자료로서 개인적인 용도로만 사용할 수 있습니다. 허락 없이 복제하거나 다른 매체에 옮겨 실을 수 없으며, 상업적 용도로 사용할 수 없습니다. 2017년 2회 정보처리기사 필기 A형 A 2회"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-875e33935424ffcc",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "스키마, 도메인, 테이블을 정의할 때 사용되는 SQL문은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 2회 15번",
+    "sourceYear": 2017,
+    "choices": [
+      "SELECT",
+      "UPDATE",
+      "MAKE",
+      "CREATE"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-ef31f250c2627b17",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "릴레이션의 특징으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 2회 16번",
+    "sourceYear": 2017,
+    "choices": [
+      "모든 튜플은 서로 다른 값을 갖는다.",
+      "모든 속성 값은 원자 값이다.",
+      "튜플 사이에는 순서가 없다.",
+      "각 속성은 유일한 이름을 가지며, 속성의 순서는 큰 의미가 있다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-9adff3fe214ef825",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "해싱에서 충돌로 인해 동일한 홈 주소를 갖는 레코드들의 집합을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 2회 18번",
+    "sourceYear": 2017,
+    "choices": [
+      "Slot",
+      "Bucket",
+      "Synonym",
+      "Mapping"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-cb0fd2cbb59e7c30",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 트리를 Preorder 운행법으로 운행할 경우 가장 먼저 탐색되는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 2회 19번",
+    "sourceYear": 2017,
+    "choices": [
+      "A",
+      "B",
+      "D",
+      "G"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-4db55b1a56213140",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 자료에 대하여 선택(Selection) 정렬을 이용하여 오름차순으로 정렬하고자 한다. 1회전 수행 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 2회 20번",
+    "sourceYear": 2017,
+    "choices": [
+      "8, 3, 4, 9, 7",
+      "3, 4, 7, 8, 9",
+      "3, 4, 7, 9, 8",
+      "3, 4, 8, 9, 7"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-336c2a93e0dd8e80",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 가장 결합도가 강한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 2회 63번",
+    "sourceYear": 2017,
+    "choices": [
+      "Data Coupling",
+      "Stamp Coupling",
+      "Common Coupling",
+      "Control Coupling"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-083349966d419318",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "럼바우 분석 기법에서 정보 모델링이라고도 하며, 시스템에서 요구되는 객체를 찾아내어 속성과 연산 식별 및 객체들 간의 관계를 규정하여 객체 다이어그램으로 표시하는 모델링은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 2회 64번",
+    "sourceYear": 2017,
+    "choices": [
+      "동적 모델링",
+      "객체 모델링",
+      "기능 모델링",
+      "정적 모델링"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-898a233d42460885",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 개발의 생산성에 영향을 미치는 요소로 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 2회 65번",
+    "sourceYear": 2017,
+    "choices": [
+      "프로그래머의 능력",
+      "팀 의사 전달",
+      "제품의 복잡도",
+      "소프트웨어 사용자의 능력"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-36c3166eb5833ffc",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 상위 CASE 도구가 지원하는 중요 기능으로 볼 수 없는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 2회 66번",
+    "sourceYear": 2017,
+    "choices": [
+      "모델들 사이의 모순 검사 기능",
+      "모델의 오류 검증 기능",
+      "원시 코드 생성 기능",
+      "자료 흐름도 작성 기능"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-550b4a93b1600a7c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "프로토타이핑 모형(Prototyping Model)에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 2회 67번",
+    "sourceYear": 2017,
+    "choices": [
+      "개발 단계에서 오류 수정이 불가하므로 유지보수 비용이 많이 발생한다.",
+      "최종 결과물이 만들어지기 전에 의뢰자가 최종 결과물의 일부 또는 모형을 볼 수 있다.",
+      "프로토타입은 발주자나 개발자 모두에게 공동의 참조 모델을 제공한다.",
+      "프로토타입은 구현단계의 구현 골격이 될 수 있다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-7b59760fcb28ee30",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음은 어떤 프로그램 구조를 나타낸다. 모듈 F에서의 fan-in과 fan-out의 수는 얼마인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2022-3/q017-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 17번",
+    "sourceYear": 2022,
+    "choices": [
+      "fan-in : 2, fan-out : 3",
+      "fan-in : 3, fan-out : 2",
+      "fan-in : 1, fan-out : 2",
+      "fan-in : 2, fan-out : 1"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-71e432a805747276",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "모듈(Module)의 응집도(Cohesion)가 약한 것부터 강한 순서로 옳게 나열된 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 2회 69번",
+    "sourceYear": 2017,
+    "choices": [
+      "기능적 응집 → 시간적 응집 → 논리적 응집",
+      "시간적 응집 → 기능적 응집 → 논리적 응집",
+      "논리적 응집 → 시간적 응집 → 기능적 응집",
+      "논리적 응집 → 기능적 응집 → 시간적 응집"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-db372043c4d731e1",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 프로젝트(Project)의 특징에 대한 설명으로 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 2회 70번",
+    "sourceYear": 2017,
+    "choices": [
+      "모든 소프트웨어 프로젝트는 항상 시작과 끝이 있다.",
+      "모든 소프트웨어 프로젝트는 서로 다르다.",
+      "모든 소프트웨어 프로젝트는 대단위 사업을 의미한다.",
+      "모든 소프트웨어 프로젝트는 개략적인 범위 정의에서부터 시 작하여 점차 구체화하여 구현해 간다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-e9ade0773cb3b337",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 개발 모델 중 나선형 모델의 네 가지 주요활동이 순서대 로 나열된 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 2회 71번",
+    "sourceYear": 2017,
+    "choices": [
+      "Ⓐ 개발 수립 Ⓑ 고객 평가 Ⓒ 개발 및 검증 Ⓓ 위험 분석",
+      "Ⓐ - Ⓑ - Ⓓ - Ⓒ 순으로 반복",
+      "Ⓐ - Ⓓ - Ⓒ - Ⓑ 순으로 반복",
+      "Ⓐ - Ⓑ - Ⓒ - Ⓓ 순으로 반복"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-953c81509f99ad1e",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "블랙박스 검사 기법에 해당하는 것으로만 짝지어진 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 2회 72번",
+    "sourceYear": 2017,
+    "choices": [
+      "데이터 흐름 검사",
+      "루프 검사",
+      "동치 분할 검사",
+      "경계값 분석 마. 원인-효과 그래프 기법 바. 비교 검사 ① 가, 나 ② 가, 라, 마, 바 ③ 나, 라, 마, 바 ④ 다, 라, 마, 바 A 2회"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-0cb8c0a48c44acb3",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 공학의 전통적인 개발 방법인 선형 순차 모형의 순서를 옳게 나열한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 2회 73번",
+    "sourceYear": 2017,
+    "choices": [
+      "구현 → 분석 → 설계 → 테스트 → 유지보수",
+      "유지보수 → 테스트 → 분석 → 설계 → 구현",
+      "분석 → 설계 → 구현 → 테스트 → 유지보수",
+      "테스트 → 설계 → 유지보수 → 구현 → 분석"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-cc14fc33b9c62369",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체에 대한 특성을 설명한 것으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 2회 74번",
+    "sourceYear": 2017,
+    "choices": [
+      "객체마다 각각의 상태를 갖고 있다.",
+      "식별성을 가진다.",
+      "행위에 대하여 그 특징을 나타낼 수 있다.",
+      "일정한 기억장소를 가지고 있지 않다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-91bd493d976514a5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 품질 보증을 위한 FTR의 지침사항으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 2회 75번",
+    "sourceYear": 2017,
+    "choices": [
+      "논쟁과 반박의 제한성",
+      "의제의 무제한성",
+      "제품검토의 집중성",
+      "참가인원의 제한성"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-48a6ce5e0ceefbed",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 재공학은 어떤 유지보수 측면에서 소프트웨어 위기를 해결하려고 하는 방법인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 2회 76번",
+    "sourceYear": 2017,
+    "choices": [
+      "수정(Corrective) 유지보수",
+      "적응(Adaptive) 유지보수",
+      "완전화(Perfective) 유지보수",
+      "예방(Preventive) 유지보수"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-13e70b5fe53beb5c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "비용예측방법에서 원시 프로그램의 규모에 의한 방법(COCOMO Model) 중 초대형 규모의 트랜잭션 처리시스템이나 운영체제 등의 소프트웨어를 개발하는 유형은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 2회 78번",
+    "sourceYear": 2017,
+    "choices": [
+      "Organic",
+      "Semi-Detached",
+      "Embedded",
+      "Sequential"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-bf6fcfbcab23ff30",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 설계 시 제일 상위에 있는 main user function에서 시작하여 기능을 하위 기능들로 분할해 가면서 설계하는 방식은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 2회 79번",
+    "sourceYear": 2017,
+    "choices": [
+      "객체 지향 설계",
+      "데이터 흐름 설계",
+      "상향식 설계",
+      "하향식 설계"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-396f8cfdc8e68195",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "어떤 모듈이 다른 모듈의 내부 논리 조직을 제어하기 위한 목적으로 제어신호를 이용하여 통신하는 경우이며, 하위 모듈에서 상위 모듈 로 제어신호가 이동하여 상위 모듈에게 처리 명령을 부여하는 권리 전도현상이 발생하게 되는 결합도는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 2회 80번",
+    "sourceYear": 2017,
+    "choices": [
+      "Data Coupling",
+      "Stamp Coupling",
+      "Control Coupling",
+      "Common Coupling 제 5 과목 : 데이터 통신"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-caa58b790af8a8c3",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "색인 순차 파일에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 3회 1번",
+    "sourceYear": 2017,
+    "choices": [
+      "레코드를 참조할 때 색인을 탐색한 후 색인이 가리키는 포인터 를 사용하여 직접 참조할 수 있다.",
+      "레코드를 추가 및 삽입하는 경우, 파일 전체를 복사할 필요가 없다.",
+      "인덱스를 저장하기 위한 공간과 오버플로우 처리를 위한 별도 의 공간이 필요 없다.",
+      "색인 구역은 트랙 색인 구역, 실린더 색인 구역, 마스터 색인 구역으로 구성된다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-c1e1241e898f6651",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터 웨어하우스의 기본적인 OLAP(on-line analytical proce -ssing) 연산이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 3회 3번",
+    "sourceYear": 2017,
+    "choices": [
+      "translate",
+      "roll-up",
+      "dicing",
+      "drill-down"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-7a02a48db307556b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 자료에 대하여 선택(selection) 정렬을 이용하여 오름차순으로 정렬하고자 한다. 3회전 후의 결과로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 3회 4번",
+    "sourceYear": 2017,
+    "choices": [
+      "37, 14, 17, 40, 35",
+      "14, 17, 37, 40, 35",
+      "14, 37, 17, 40, 35",
+      "14, 17, 35, 37, 40"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f9a9bd62917f93fb",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "선형 구조만으로 나열된 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 3회 5번",
+    "sourceYear": 2017,
+    "choices": [
+      "트리, 그래프",
+      "트리, 그래프, 스택, 큐",
+      "트리, 배열, 스택, 큐",
+      "배열, 스택, 큐"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-1fbd064f7d4af6fa",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "힙 정렬에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 3회 7번",
+    "sourceYear": 2017,
+    "choices": [
+      "정렬할 입력 레코드들로 힙을 구성하고 가장 큰 키 값을 갖는 루트 노드를 제거하는 과정을 반복하여 정렬하는 기법이다.",
+      "평균 수행 시간복잡도는 O(nlog 2 n)이다.",
+      "입력 자료의 레코드를 완전 이진 트리(complete binary tree) 로 구성한다.",
+      "최악의 수행 시간복잡도는 O(2n 4 )이다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-915cacdd0fc857e7",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스 설계 단계 중 물리적 설계에 해당하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 3회 9번",
+    "sourceYear": 2017,
+    "choices": [
+      "데이터 모형화와 사용자 뷰들을 통합한다.",
+      "트랜잭션의 인터페이스를 설계한다.",
+      "파일 조직 방법과 저장 방법 그리고 파일 접근 방법 등을 선정 한다.",
+      "사용자들의 요구사항을 입력으로 하여 응용 프로그램의 골격 인 스키마를 작성한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-fe85d8e55eaf8543",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Which of the following is a linear list in that elements are accessed, created and deleted in a last-in-first-out order?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 3회 10번",
+    "sourceYear": 2017,
+    "choices": [
+      "Queue",
+      "Graph",
+      "Stack",
+      "Tree"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-bed524ae13b19316",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "순서가 A, B, C, D로 정해진 입력 자료를 스택에 입력하였다가 출력할 때, 가능한 출력 순서의 결과가 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 3회 12번",
+    "sourceYear": 2017,
+    "choices": [
+      "A, B, C, D",
+      "C, D, B, A",
+      "D, C, A, B",
+      "B, C, D, A"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-8da29d8878fb40a3",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 트리를 Preorder 운행법으로 운행할 경우 다섯 번째로 탐색되 는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 3회 13번",
+    "sourceYear": 2017,
+    "choices": [
+      "C",
+      "E",
+      "G",
+      "H 기출문제 & 정답 및 해설 2017년 3회 정보처리기사 필기 B형 이 자료는 시나공 카페 회원을 대상으로 하는 자료로서 개인적인 용도로만 사용할 수 있습니다. 허락 없이 복제하거나 다른 매체에 옮겨 실을 수 없으며, 상업적 용도로 사용할 수 없습니다. B 3회"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-6c218bfc7e6152cb",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DML에 해당하는 것으로만 나열된 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 3회 15번",
+    "sourceYear": 2017,
+    "choices": [
+      "㉠ SELECT ㉡ UPDATE ㉢ INSERT ㉣ GRANT",
+      "㉠, ㉡, ㉢",
+      "㉠, ㉡, ㉣",
+      "㉠, ㉢, ㉣"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-2c36716b5806b1dd",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "깊이가 4인 이진트리에서 가질 수 있는 노드의 최대 수는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 3회 16번",
+    "sourceYear": 2017,
+    "choices": [
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-5beb4f8a0a227edb",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "해싱함수 중 레코드 키를 여러 부분으로 나누고, 나눈 부분의 각 숫자를 더하거나 XOR한 값을 홈 주소로 삼는 방식은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 3회 18번",
+    "sourceYear": 2017,
+    "choices": [
+      "제산법",
+      "폴딩법",
+      "기수변환법",
+      "숫자분석법"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-016560fe00ef9404",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "트랜잭션의 특성으로 옳은 내용 모두를 나열한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2017년 3회 20번",
+    "sourceYear": 2017,
+    "choices": [
+      "㉠ Atomicity ㉡ Durability ㉢ Consistency ㉣ Isolation",
+      "㉠, ㉡",
+      "㉠, ㉡, ㉣",
+      "㉠, ㉢, ㉣"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f55c65723417a24f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "자료 흐름도(DFD)를 작성하는데 지침이 될 수 없는 항목은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 3회 61번",
+    "sourceYear": 2017,
+    "choices": [
+      "자료 흐름은 처리(Process)를 거쳐 변환될 때마다 새로운 이 름을 부여한다.",
+      "어떤 처리(Process)가 출력자료를 산출하기 위해서는 반드시 B 3회 입력 자료가 발생해야 한다.",
+      "자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다.",
+      "상위 단계의 처리(Process)와 하위 자료 흐름도의 자료 흐름 은 서로 일치되어야 한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-ef5a7af2dd16e902",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 품질보증에서 FTR의 지침 사항으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 3회 62번",
+    "sourceYear": 2017,
+    "choices": [
+      "논쟁과 반박을 제한하지 않는다.",
+      "자원과 시간 일정을 할당한다.",
+      "문제 영역을 명확히 표현한다.",
+      "모든 검토자들을 위해 의미 있는 훈련을 행한다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-2a0a9820a2382c94",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Putnam 모형을 기초로 해서 만든 자동화 추정 도구는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 3회 63번",
+    "sourceYear": 2017,
+    "choices": [
+      "BYL",
+      "SLIM",
+      "ESTIMACS",
+      "PERT"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-dc6a281a9f5f4748",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Softwar Engineering의 Engineering이 가지는 의미와 가장 관계없 는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 3회 64번",
+    "sourceYear": 2017,
+    "choices": [
+      "예술성",
+      "경제성",
+      "보편타당성",
+      "적시성"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a0aa5fec64ee7115",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "설계 기법 중 하향식 설계 방법과 상향식 설계 방법에 대한 비교 설명으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 3회 65번",
+    "sourceYear": 2017,
+    "choices": [
+      "하향식 설계에서는 통합 검사 시 인터페이스가 이미 정의되어 있어 통합이 간단하다.",
+      "하향식 설계에서 레벨이 낮은 데이터 구조의 세부 사항은 설계 초기 단계에서 필요하다.",
+      "상향식 설계는 최하위 수준에서 각각의 모듈들을 설계하고 이러한 모듈이 완성되면 이들을 결합하여 검사한다.",
+      "상향식 설계에서는 인터페이스가 이미 성립되어 있지 않더라 도 기능 추가가 쉽다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-a7f6cfd3ec233e16",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 분석 방법론 중 E-R 다이어그램을 사용하여 객체의 행위를 모델링하며, 객체 식별, 구조 식별, 주제 정의, 속성과 인스턴 스 연결 정의, 연산과 메시지 연결 정의 등의 과정으로 구성되는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 3회 66번",
+    "sourceYear": 2017,
+    "choices": [
+      "Coad와 Yourdon 방법",
+      "Booch 방법",
+      "Jacobson 방법",
+      "Wirfs-Brock 방법"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-6d503fe8e09147f9",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CPM 네트워크가 다음과 같을 때 임계경로의 소요기일은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 3회 67번",
+    "sourceYear": 2017,
+    "choices": [
+      "시작 완료 2일 2일 3일 3일 4일 5일 3일 3일 5일",
+      "10일",
+      "12일",
+      "14일"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-bebe71bc1abb5657",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 테스트 중 구조적 기법에서의 단위 테스트(Unit Test)와 같은 개념은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 3회 68번",
+    "sourceYear": 2017,
+    "choices": [
+      "메소드",
+      "클래스",
+      "필드",
+      "서브 시스템"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-e01adb01d19c251c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "LOC 기법에 의하여 예측된 총 라인수가 50000 라인, 프로그래머의 월 평균 생산성이 200라인, 개발에 참여할 프로그래머가 10인 일 때, 개발 소요 기간은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 3회 69번",
+    "sourceYear": 2017,
+    "choices": [
+      "25개월",
+      "50개월",
+      "200개월",
+      "2000개월"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-503d6eac3ecf7f19",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "화이트 박스 테스트에 대한 셜명으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 3회 70번",
+    "sourceYear": 2017,
+    "choices": [
+      "제품의 내부 요소들이 명세서에 따라 수행되고 충분히 실행되 는가를 보장하기 위한 검사이다.",
+      "모듈 안의 작동을 직접 관찰한다.",
+      "프로그램 원시 코드의 논리적인 구조를 커버하도록 테스트 케이스를 설계한다.",
+      "화이트 박스 테스트 기법에는 조건 검사, 루프 검사. 비교 검사 등이 있다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-aa0fca1cf5859ab3",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어의 위기현상과 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 3회 71번",
+    "sourceYear": 2017,
+    "choices": [
+      "유지보수의 어려움",
+      "개발 인력의 급증",
+      "성능 및 신뢰성의 부족",
+      "개발기간의 지연 및 개발비용의 증가"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-d802e75b488224bd",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "나선형 모형의 각 개발 단계에 대한 설명으로 가장 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 3회 72번",
+    "sourceYear": 2017,
+    "choices": [
+      "Planning 단계에서는 위험 요소와 타당성을 분석하여 프로젝 트의 추진 여부를 결정한다.",
+      "Development 단계에서는 선택된 기능을 수행하는 프로토타 입을 개발한다.",
+      "Risk Analysis 단계에서는 개발 목적과 기능 선택, 제약 조건 등을 결정하고 분석한다.",
+      "Evaluation 단계에서는 고객 평가와 검증 과정을 수행하여 개발된 결과를 평가한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f748ea809c305e50",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 기법에서 다음 설명에 해당하는 것으로 가장 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 3회 73번",
+    "sourceYear": 2017,
+    "choices": [
+      "- 다른 객체에게 자신의 정보를 숨기고 자신의 연산만을 통하여 접근한다. - 유지보수와 소프트웨어 확장 시 오류를 최소화할 수 있다.",
+      "Abstraction",
+      "Inheritance",
+      "Information Hiding"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-05e5f273a6acec76",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "모듈의 응집력(Cohesion)에 대한 설명 중 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 3회 74번",
+    "sourceYear": 2017,
+    "choices": [
+      "모듈의 응집도란 모듈 안의 요소들이 서로 관련되어 있는 정도 를 말한다.",
+      "기능적 응집도(Functional Cohesion)는 한 모듈 내부의 한 기능요소에 의한 출력 자료가 다음 기능 원소의 입력 자료로 서 제공되는 형태이다.",
+      "교환적 응집도(Communication Cohesion)는 동일한 입력과 출력을 사용하는 소작업들이 모인 모듈에서 볼 수 있다.",
+      "논리적 응집도(Logical Cohesion)는 유사한 성격을 갖거나 특정 형태로 분류되는 처리 요소들로 하나의 모듈이 형성되는 경우이다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-c1b8b2ee557ace67",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 가장 약한 결합도(Coupling)는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2017년 3회 75번",
+    "sourceYear": 2017,
+    "choices": [
+      "Common Coupling",
+      "Control Coupling",
+      "External Coupling",
+      "Stamp Coupling"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-39f69f7ded2a1e5d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "구현 단계에서의 작업 절차를 순서에 맞게 나열한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 3회 76번",
+    "sourceYear": 2017,
+    "choices": [
+      "㉠ 코딩한다. ㉡ 코딩작업을 계획한다. ㉢ 코드를 테스트한다. ㉣ 컴파일 한다.",
+      "㉠ - ㉡ - ㉢ - ㉣",
+      "㉡ - ㉠ - ㉣ - ㉢",
+      "㉢ - ㉠ - ㉡ - ㉣"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-e3fe026d157b99ab",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "공학적으로 잘 작성된 소프트웨어의 특성에 관한 설명으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 3회 77번",
+    "sourceYear": 2017,
+    "choices": [
+      "소프트웨어는 신뢰성이 높아야 하며 효율적이어야 한다.",
+      "소프트웨어는 사용자가 원하는 대로 동작해야 한다.",
+      "소프트웨어는 편리성과 유지보수성에 점차 비중을 적게 두는 경향이 있다.",
+      "소프트웨어는 잠재적인 오류가 가능한 적어야 하며 유지보수 가 용이해야 한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-63a059527c7f45e4",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 위험의 대표적인 특성으로 짝지어진 것 중 가장 적합한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 3회 78번",
+    "sourceYear": 2017,
+    "choices": [
+      "연쇄 작용, 확실성",
+      "불확실성, 손실",
+      "연쇄 작용, 예측",
+      "확실성, 예측"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-4a26b2eb760787c0",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 재공학의 주요 활동 중 다음 설명에 해당하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 3회 79번",
+    "sourceYear": 2017,
+    "choices": [
+      "기존 소프트웨어를 분석하여 소프트웨어 개발 과정과 데이터 처리 과정을 설명하는 분석 및 설계 정보를 재 발견하거나 다시 만들어 내는 작업",
+      "Analysis",
+      "Restructuring",
+      "Reverse Engineering"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-9b7ac0ce6ffa3a52",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CASE의 주요기능으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2017년 3회 80번",
+    "sourceYear": 2017,
+    "choices": [
+      "S/W 라이프 사이클 전 단계의 연결",
+      "그래픽 지원",
+      "다양한 소프트웨어 개발 모형 지원",
+      "언어 번역 제 5 과목 : 데이터 통신"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-a1888660fe3d5e77",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "그래프의 특수한 형태로 노드(Node)와 선분(Branch)으로 되어 있고, 정점 사이에 사이클(Cycle)이 형성되어 있지 않으며, 자료 사이의 관계성이 계층 형식으로 나타나는 비선형 구조는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 1회 1번",
+    "sourceYear": 2018,
+    "choices": [
+      "tree",
+      "network",
+      "stack",
+      "distributed"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a04bff8076f08511",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 BETWEEN 연산의 의미와 동일한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 1회 2번",
+    "sourceYear": 2018,
+    "choices": [
+      "SELECT * FROM 성적 WHERE (점수 BETWEEN 90 AND 95) AND 학과 = “컴퓨터공학과”",
+      "점수 >= 90 AND 점수 <= 95",
+      "점수 > 90 AND 점수 < 95",
+      "점수 > 90 AND 점수 <= 95"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a0d3a91f681fab85",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 자료에 대하여 삽입(insertion) 정렬 기법을 사용하여 오름차순 으로 정렬하고자 한다. 1회전 후의 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 1회 3번",
+    "sourceYear": 2018,
+    "choices": [
+      "5, 4, 3, 2, 1",
+      "4, 3, 2, 1, 5",
+      "3, 4, 5, 2, 1",
+      "4, 5, 3, 2, 1"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-f1f796400aeca9d3",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL View(뷰)에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 1회 4번",
+    "sourceYear": 2018,
+    "choices": [
+      "뷰(View)를 제거하고자 할 때는 DROP 문을 이용한다.",
+      "뷰(View)의 정의를 변경하고자 할 때는 ALTER 문을 이용한 다.",
+      "뷰(View)를 생성하고자 할 때는 CREATE 문을 이용한다.",
+      "뷰(View)의 내용을 검색하고자 할 때는 SELECT 문을 이용한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-146a3fb7d956953c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 설명에 해당하는 스키마는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 1회 5번",
+    "sourceYear": 2018,
+    "choices": [
+      "물리적 저장 장치의 입장에서 본 데이터베이스 구조로서 실제로 데이터베이스에 저장될 레코드의 형식을 정의하고 저장 데이터 항목의 표현 방법, 내부 레코드의 물리적 순 서 등을 나타낸다.",
+      "conceptual schema",
+      "internal schema",
+      "external schema"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-bfc38b867316dd5c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스 내에서 데이터들이 불필요하게 중복되어 릴레이션 조작 시 예기치 못한 곤란한 현상을 무엇이라고 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 1회 6번",
+    "sourceYear": 2018,
+    "choices": [
+      "Normalization",
+      "Bug",
+      "Anomaly",
+      "Error"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-bd6b9cdd428bc15b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 전위식(prefix)을 후위식(postfix)으로 옳게 표현한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 1회 7번",
+    "sourceYear": 2018,
+    "choices": [
+      "- / * A + B C D E",
+      "A B C + * D / E -",
+      "A B * C D / + E -",
+      "A B * C + D / E -"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-f7e668eaa63f2055",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "트랜잭션의 특성 중 아래 내용에 해당하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 1회 8번",
+    "sourceYear": 2018,
+    "choices": [
+      "시스템이 가지고 있는 고정요소는 트랜잭션 수행 전과 트 랜잭션 수행 완료 후에 같아야 한다.",
+      "원자성(atomicity)",
+      "일관성(consistency)",
+      "격리성(isolation)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-59e1ed16a8b9d32d",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "관계 데이터 모델의 무결성 제약 중 기본키 값의 속성 값이 널(null) 값이 아닌 원자 값을 갖는 성질은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 1회 9번",
+    "sourceYear": 2018,
+    "choices": [
+      "개체 무결성",
+      "참조 무결성",
+      "도메인 무결성",
+      "튜플의 유일성"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a072dcc23277bef1",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "양 방향에서 입 ․ 출력이 가능한 선형 자료구조로 2개의 포인터를 이용하여 리스트의 양쪽 끝 모두에서 삽입 ․ 삭제가 가능한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 1회 10번",
+    "sourceYear": 2018,
+    "choices": [
+      "데크(Deque)",
+      "스택(Stack)",
+      "큐(Queue)",
+      "트리(Tree)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-9164b60f9301cbfb",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "NoSQL의 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 1회 12번",
+    "sourceYear": 2018,
+    "choices": [
+      "Not Only SQL의 약자이다.",
+      "비정형 데이터의 저장을 위해 유연한 데이터 모델을 지원한다.",
+      "전통적인 관계형 데이터베이스 관리 시스템과는 다른 비관계 형(non-relational) DBMS이다.",
+      "정규화를 전제로 하고 있어 갱신 시에 저장 공간이 적게 든다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-61b5b828a2c65bb4",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "트랜잭션의 실행이 실패하였음을 알리는 연산자로 트랜잭션이 수행한 결과를 원래의 상태로 원상 복귀 시키는 연산은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 1회 13번",
+    "sourceYear": 2018,
+    "choices": [
+      "COMMIT 연산",
+      "BACKUP 연산",
+      "LOG 연산",
+      "ROLLBACK 연산"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b6a3de4dcd5d6e6e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "관계 대수에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 1회 14번",
+    "sourceYear": 2018,
+    "choices": [
+      "릴레이션을 처리하기 위한 연산의 집합으로 피연산자가 릴레 이션이고 결과도 릴레이션이다.",
+      "원하는 정보와 그 정보를 어떻게 유도하는가를 기술하는 절차 적 특징을 가지고 있다.",
+      "일반 집합 연산과 순수 관계 연산이 있다.",
+      "수학의 Predicate Calculus에 기반을 두고 있다. 정보처리기사 A형 1회"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-6b11ec2326535710",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스 로그(log)를 필요로 하는 회복 기법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 1회 15번",
+    "sourceYear": 2018,
+    "choices": [
+      "즉각 갱신 기법",
+      "대수적 코딩 방법",
+      "타임 스탬프 기법",
+      "폴링 기법"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-679d706a8b8b295b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "이진 검색 알고리즘에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 1회 17번",
+    "sourceYear": 2018,
+    "choices": [
+      "탐색 효율이 좋고 탐색 시간이 적게 소요된다.",
+      "검색할 데이터가 정렬되어 있어야 한다.",
+      "피보나치 수열에 따라 다음에 비교할 대상을 선정하여 검색한 다.",
+      "비교횟수를 거듭할 때마다 검색 대상이 되는 데이터의 수가 절반으로 줄어든다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-ff8e17fcb2f64680",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "개체-관계 모델의 E-R 다이어그램에서 사용되는 기호와 그 의미의 연결이 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 1회 20번",
+    "sourceYear": 2018,
+    "choices": [
+      "사각형 - 개체 타입",
+      "삼각형 - 속성",
+      "선 - 개체 타입과 속성을 연결",
+      "마름모 - 관계 타입 제 2 과목 : 전자계산기구조"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-ee973f41fc30ce67",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 비용 추정 모형(Estimation Models)이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 1회 61번",
+    "sourceYear": 2018,
+    "choices": [
+      "COCOMO",
+      "Putnam",
+      "Function-Point",
+      "PERT"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-44c252ea1889f811",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "LOC 기법에 의하여 예측된 총 라인수가 36,000 라인, 개발에 참여할 프로그래머가 6명, 프로그래머들의 평균 생산성이 월간 300 라인일 때 개발에 소요되는 기간을 계산한 결과로 가장 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 1회 62번",
+    "sourceYear": 2018,
+    "choices": [
+      "5개월",
+      "10개월",
+      "15개월",
+      "20개월"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-6d400ecbbd5c8fac",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CORBA에서 인터페이스 정의 언어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 1회 63번",
+    "sourceYear": 2018,
+    "choices": [
+      "IDL",
+      "ADL",
+      "CSL",
+      "UML"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-1f5b446bc7e8c080",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 개발 영역을 결정하는 요소 중 다음 사항과 가장 관계있 는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 1회 64번",
+    "sourceYear": 2018,
+    "choices": [
+      "ㆍ소프트웨어에 의해 간접적으로 제어되는 장치와 소프트 웨어를 실행하는 하드웨어 ㆍ기존의 소프트웨어와 새로운 소프트웨어를 연결하는 소 프트웨어 ㆍ순서적 연산에 의해 소프트웨어를 실행하는 절차",
+      "기능",
+      "성능",
+      "제약 조건"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-0f1686a64ca0f857",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "블랙 박스 테스트 기법에 관한 다음 설명과 가장 부합하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 1회 65번",
+    "sourceYear": 2018,
+    "choices": [
+      "여러 버전의 프로그램에 동일한 검사 자료를 제공하여 동 일한 결과가 출력되는지 검사하는 기법이다.",
+      "Boundary Value Analysis",
+      "Cause Effect Graphing Testing",
+      "Equivalence Partitioning Testing"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-896e12bacbb12dbf",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "브룩스(Brooks) 법칙의 의미를 가장 옳게 설명한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 1회 67번",
+    "sourceYear": 2018,
+    "choices": [
+      "프로젝트 개발에 참여하는 남성과 여성의 비율은 동일해야 한다.",
+      "새로운 개발 인력이 진행 중인 프로젝트에 투입될 경우 작업 적응 기간과 부작용으로 인해 빠른 시간 내에 프로젝트는 완 료될 수 없다.",
+      "프로젝트 수행 기간의 단축을 위해서는 많은 비용이 투입되어 야 한다.",
+      "프로젝트에 개발자가 많이 참여할수록 프로젝트의 완료 기간 은 지연된다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-7cd28cb930c1baf9",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "럼바우(Rumbaugh)의 객체지향 분석에서 사용되는 분석 활동을 가장 옳게 나열한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 1회 68번",
+    "sourceYear": 2018,
+    "choices": [
+      "객체 모델링, 동적 모델링, 정적 모델링",
+      "객체 모델링, 동적 모델링, 기능 모델링",
+      "동적 모델링, 기능 모델링, 정적 모델링",
+      "정적 모델링, 객체 모델링, 기능 모델링"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-64a585f3fe031689",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "위험 모니터링의 의미를 가장 잘 설명한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 1회 69번",
+    "sourceYear": 2018,
+    "choices": [
+      "위험을 이해하는 것",
+      "위험 요소들에 대하여 계획적으로 관리하는 것",
+      "위험 요소 징후들에 대하여 계속적으로 인지하는 것",
+      "첫 번째 조치로 위험을 피할 수 있도록 하는 것"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-8d67aff778d1f5bf",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "자료 흐름도(DFD)에서 “Process”의 표기 형태는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 1회 70번",
+    "sourceYear": 2018,
+    "choices": [
+      "원",
+      "화살표",
+      "사각형",
+      "직선(단선, 이중선)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-cf04252e1ff10901",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 재공학이 소프트웨어의 재개발에 비해 갖는 장점으로 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 1회 71번",
+    "sourceYear": 2018,
+    "choices": [
+      "위험부담 감소",
+      "비용 절감",
+      "시스템 명세의 오류억제",
+      "개발시간의 증가"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-02647d7775ce9472",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 시스템 명세서의 유지 보수에 대한 설명으로 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 1회 72번",
+    "sourceYear": 2018,
+    "choices": [
+      "명세서의 유지 보수란 명세서를 항상 최신의 상태로 만드는 것을 말한다.",
+      "소프트웨어는 계속 수정 보완되기 때문에 명세서도 따라서 보완되지 않으면 일관성을 유지하기 어렵다.",
+      "최신의 명세서는 필요한 경우 즉시 사용자에게 배포해야 한다.",
+      "시스템 개발자와 사용자는 동일한 명세서를 사용하기 때문에 시스템의 구조를 사용자도 잘 알고 있어야 한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-8e67d1bacacb7e98",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향에서 정보 은닉과 가장 밀접한 관계가 있는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 1회 74번",
+    "sourceYear": 2018,
+    "choices": [
+      "Encapsulation",
+      "Class",
+      "Method",
+      "Instance"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-81b6a7e16074ac80",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "시스템 검사의 종류 중 통합 시스템의 맥락에서 소프트웨어의 실시간 성능을 검사하며, 모든 단계에서 수행되는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 1회 75번",
+    "sourceYear": 2018,
+    "choices": [
+      "복구 검사",
+      "보안 검사",
+      "성능 검사",
+      "강도 검사"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-3b608c018b68ffe1",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음의 자동화 예측 도구들 중 Rayleigh-Norden 곡선과 Putnam의 예측모델에 기반을 둔 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 1회 76번",
+    "sourceYear": 2018,
+    "choices": [
+      "ESTIMACS",
+      "SLIM",
+      "SPQR/20",
+      "WICOMO"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-c54135d3260df9a9",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "결합도(Coupling) 단계를 약한 순서에서 강한 순서로 가장 옳게 표시한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 1회 77번",
+    "sourceYear": 2018,
+    "choices": [
+      "Stamp → Data → Control → Common → Content",
+      "Control → Data → Stamp → Common → Content",
+      "Content → Stamp → Control → Common → Data",
+      "Data → Stamp → Control → Common → Content"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-2dffb1f2f797ee2f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 설명에 해당하는 생명 주기 모형으로 가장 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 1회 78번",
+    "sourceYear": 2018,
+    "choices": [
+      "가장 오래된 모형으로 많은 적용 사례가 있지만 요구사항 의 변경이 어려우며, 각 단계의 결과가 확인되어야지만 다음 단계로 넘어간다. 선형 순차적 모형으로 고전적 생 명 주기 모형이라고도 한다.",
+      "프로토타입 모형(Prototype Model)",
+      "코코모 모형(Cocomo Model)",
+      "폭포수 모형(Waterfall Model)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-7813765a7d6439bf",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "유지보수의 활동 종류로 볼 수 없는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 1회 79번",
+    "sourceYear": 2018,
+    "choices": [
+      "Interfere Maintenance",
+      "Adaptive Maintenance",
+      "Perfective Maintenance",
+      "Preventive Maintenance"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-8fc4ed8e5145b274",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Software Project의 비용 결정 요소와 가장 관련이 적은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 1회 80번",
+    "sourceYear": 2018,
+    "choices": [
+      "개발자의 능력",
+      "요구되는 신뢰도",
+      "하드웨어의 성능",
+      "개발제품의 복잡도 제 5 과목 : 데이터 통신"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6b442aa6fb46764c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "릴레이션에 포함되어 있는 튜플의 수는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 1번",
+    "sourceYear": 2018,
+    "choices": [
+      "Cardinality",
+      "Schema",
+      "Type",
+      "Degree"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-d9b19b27a4fddf98",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "버블 정렬을 이용한 오름차순 정렬 시 다음 자료에 대한 2회전 후의 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 2번",
+    "sourceYear": 2018,
+    "choices": [
+      "9, 6, 7, 3, 5",
+      "3, 5, 6, 7, 9",
+      "6, 7, 3, 5, 9",
+      "3, 5, 9, 6, 7"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f4b8872b854f28db",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "릴레이션 R의 차수가 4이고 카디널리티가 5이며, 릴레이션 S의 차수가 6이고 카디널리티가 7일 때, 두 개의 릴레이션을 카티션 프로덕트한 결과의 새로운 릴레이션의 차수와 카디널리티는 얼마 인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 3번",
+    "sourceYear": 2018,
+    "choices": [
+      "24, 35",
+      "24, 12",
+      "10, 35",
+      "10, 12"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-cd54747112ef4dbf",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "What are general configuration of indexed sequential file?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 4번",
+    "sourceYear": 2018,
+    "choices": [
+      "Index area, Mark area, Overflow area",
+      "Index area, Prime area, Overflow area",
+      "Index area, Mark area, Excess area",
+      "Index area, Prime area, Mark area"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-347fb83eae54d931",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스 설계 시 물리적 설계 단계에서 수행하는 사항이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 5번",
+    "sourceYear": 2018,
+    "choices": [
+      "저장 레코드 양식 설계",
+      "레코드 집중의 분석 및 설계",
+      "접근 경로 설계",
+      "목표 DBMS에 맞는 스키마 설계"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-ca2f2e14909014ec",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "릴레이션에서 기본키를 구성하는 속성은 널(Null) 값이나 중복 값을 가질 수 없다는 것을 의미하는 제약조건은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 7번",
+    "sourceYear": 2018,
+    "choices": [
+      "참조 무결성",
+      "보안 무결성",
+      "개체 무결성",
+      "정보 무결성"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-d25f0e974c6145c2",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음은 관계형 데이터베이스의 키(Key)를 설명하고 있다. 해당되는 키는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 8번",
+    "sourceYear": 2018,
+    "choices": [
+      "한 릴레이션 내의 속성들의 집합으로 구성된 키로서, 릴 레이션을 구성하는 모든 튜플에 대한 유일성은 만족시키 지만 최소성은 만족시키지 못한다.",
+      "후보키",
+      "대체키",
+      "슈퍼키"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-75fd58e9705e84a0",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "“회사원”이라는 테이블에서 “사원명”을 검색할 때, “연락번호”가 Null 값이 아닌 “사원명”을 모두 찾을 경우의 SQL 질의로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 9번",
+    "sourceYear": 2018,
+    "choices": [
+      "SELECT 사원명 FROM 회사원 WHERE 연락번호 != NULL;",
+      "SELECT 사원명 FROM 회사원 WHERE 연락번호 <> NULL;",
+      "SELECT 사원명 FROM 회사원 WHERE 연락번호 IS NOT NULL;",
+      "SELECT 사원명 FROM 회사원 WHERE 연락번호 DON’T NULL;"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-25f3ce0c309fdcb9",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 SQL문의 실행결과를 가장 올바르게 설명한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 10번",
+    "sourceYear": 2018,
+    "choices": [
+      "DROP TABLE 인사 CASCADE;",
+      "인사 테이블을 제거한다.",
+      "인사 테이블을 참조하는 테이블과 인사 테이블을 제거한다.",
+      "인사 테이블이 참조중이면 제거하지 않는다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-b859237a3b69ebbf",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "로킹 단위가 큰 경우에 대한 설명으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 12번",
+    "sourceYear": 2018,
+    "choices": [
+      "로킹 오버헤드 증가, 데이터베이스 공유도 저하",
+      "로킹 오버헤드 감소, 데이터베이스 공유도 저하",
+      "로킹 오버헤드 감소, 데이터베이스 공유도 증가",
+      "로킹 오버헤드 증가, 데이터베이스 공유도 증가"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-9005d6b211a1f290",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL 구문에서 “having” 절은 반드시 어떤 구문과 사용되어야 하는 가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 13번",
+    "sourceYear": 2018,
+    "choices": [
+      "GROUP BY",
+      "ORDER BY",
+      "UPDATE",
+      "JOIN"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-38e57e28477d0e9f",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터의 중복으로 인하여 관계연산을 처리할 때 예기치 못한 곤란한 현상이 발생하는 것을 무엇이라 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 14번",
+    "sourceYear": 2018,
+    "choices": [
+      "이상(Anomaly)",
+      "제한(Restriction)",
+      "종속성(Dependency)",
+      "변환(Translation) 정보처리기사 B형 2회"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-6d3842d19c56062a",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정점이 5개인 방향 그래프가 가질 수 있는 최대 간선 수는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 15번",
+    "sourceYear": 2018,
+    "choices": [
+      "(단, 자기간선과 중복간선은 배제한다.)",
+      "7개",
+      "10개",
+      "20개"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-3d1c212bf260141b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DBA가 사용자 Park에게 테이블A의 데이터를 갱신할 수 있는 시스템 권한을 부여하고자 하는 SQL문을 작성하고자 한다. 다음에 주어진 SQL문의 빈칸에 알맞게 채운 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 16번",
+    "sourceYear": 2018,
+    "choices": [
+      "SQL> GRANT ㉠ ㉡ 테이블A To Park",
+      "㉠ INSERT, ㉡ INTO",
+      "㉠ ALTER, ㉡ TO",
+      "㉠ UPDATE, ㉡ ON"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6f5c3c8e2dbbe8ea",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 Postfix 연산식에 대한 연산결과로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 17번",
+    "sourceYear": 2018,
+    "choices": [
+      "3 4 * 5 6 * +",
+      "35",
+      "42",
+      "77"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-55a68c4f93b758c9",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정규화 과정에서 A → B이고 B → C 일 때 A → C인 관계를 제거하는 단계는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 18번",
+    "sourceYear": 2018,
+    "choices": [
+      "1NF → 2NF",
+      "2NF → 3NF",
+      "3NF → BCNF",
+      "BCNF → 4NF"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-4d4fcb94e092ce47",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 트리에 대한 INORDER 운행 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2018-2/q019-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 2회 19번",
+    "sourceYear": 2018,
+    "choices": [
+      "D B A E C F",
+      "A B D C E F",
+      "D B E C F A",
+      "A B C D E F"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-f2af2656f2b5da04",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "HIPO(Hierarchy Input Process Output)에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 2회 61번",
+    "sourceYear": 2018,
+    "choices": [
+      "상향식 소프트웨어 개발을 위한 문서화 도구이다.",
+      "구조도, 개요 도표 집합, 상세 도표 집합으로 구성된다.",
+      "기능과 자료의 의존 관계를 동시에 표현할 수 있다.",
+      "보기 쉽고 이해하기 쉽다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-c1467349fa38baac",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "하향식 통합 검사(Test)에 대한 설명으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 2회 62번",
+    "sourceYear": 2018,
+    "choices": [
+      "시스템 구조의 위층에 있는 모듈부터 아래층의 모듈로 내려오 면서 통합한다.",
+      "일반적으로 스터브(Stub)를 드라이버(Driver)보다 쉽게 작성 할 수 있다.",
+      "검사 초기에는 시스템의 구조를 사용자에게 보여줄 수 없다.",
+      "상위층에서 검사 사례(Test Case)를 쓰기가 어렵다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-26718f6ff3ad1101",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 품질 목표 중 쉽게 배우고 사용할 수 있는 정도를 의미하는 개념으로 가장 타당한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 2회 63번",
+    "sourceYear": 2018,
+    "choices": [
+      "Reliability",
+      "Usability",
+      "Efficiency",
+      "Integrity"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-e6eab67da997878f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "럼바우(Rumbaugh)의 객체지향 분석 절차를 바르게 나열한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 2회 64번",
+    "sourceYear": 2018,
+    "choices": [
+      "객체 모형 → 동적 모형 → 기능 모형",
+      "객체 모형 → 기능 모형 → 동적 모형",
+      "기능 모형 → 동적 모형 → 객체 모형",
+      "기능 모형 → 객체 모형 → 동적 모형"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-122e0e903c6d7c18",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "N-S(Nassi-Schneiderman) Chart에 대한 설명으로 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 2회 65번",
+    "sourceYear": 2018,
+    "choices": [
+      "논리의 기술에 중점을 둔 도형식 표현 방법이다.",
+      "연속, 선택 및 다중 선택, 반복 등의 제어 논리 구조로 표현한 다.",
+      "주로 화살표를 사용하여 논리적인 제어 구조로 흐름을 표현한 다.",
+      "조건이 복합되어 있는 곳의 처리를 시각적으로 명확히 식별하 는 데 적합하다. 정보처리기사 B형 2회"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-a92b3bb7a1865373",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 분석에 대한 설명으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 2회 66번",
+    "sourceYear": 2018,
+    "choices": [
+      "분석가에게 주요한 모델링 구성 요소인 클래스, 객체, 속성, 연산들을 표현해서 문제를 모형화 시킬 수 있게 해준다.",
+      "객체지향 관점은 모형화 표기법의 전후관계에서 객체의 분류, 속성들의 상속, 그리고 메시지의 통신 등을 결합한 것이다.",
+      "객체는 클래스로부터 인스턴스화 되고, 이 클래스를 식별하는 것이 객체지향분석의 주요한 목적이다.",
+      "E-R 다이어그램은 객체지향 분석의 표기법으로는 적합하지 않다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-88187b40dca5061c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "바람직한 소프트웨어 설계 지침이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 2회 67번",
+    "sourceYear": 2018,
+    "choices": [
+      "적당한 모듈의 크기를 유지한다.",
+      "모듈 간의 접속 관계를 분석하여 복잡도와 중복을 줄인다.",
+      "모듈 간의 결합도는 강할수록 바람직하다.",
+      "모듈 간의 효과적인 제어를 위해 설계에서 계층적 자료 조직이 제시되어야 한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-7f4f6a0af4310ae1",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 수명 주기 모형 중 폭포수 모형에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 2회 68번",
+    "sourceYear": 2018,
+    "choices": [
+      "적용 사례가 많다.",
+      "단계별 정의가 분명하다.",
+      "단계별 산출물이 명확하다.",
+      "요구사항의 변경이 용이하다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-df9874265b2c485d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "중앙 집중형 팀(책임 프로그래머 팀)의 특징으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 2회 69번",
+    "sourceYear": 2018,
+    "choices": [
+      "팀 리더의 개인적 능력이 가장 중요하다.",
+      "조직적으로 잘 구성된 중앙 집중식 구조이다.",
+      "프로젝트 팀의 목표 설정 및 의사결정 권한이 팀 리더에게 주어진다.",
+      "팀 구성원 간의 의사교류를 활성화 시키므로 팀원의 참여도와 만족도를 증대시킨다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-1b37457964c59c02",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 검사의 기법 중 종류가 다른 하나는 무엇인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 2회 70번",
+    "sourceYear": 2018,
+    "choices": [
+      "동치 분할 검사",
+      "원인 효과 그래프 검사",
+      "비교 검사",
+      "데이터 흐름 검사"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-1fe43999743b7dc7",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체 지향 기법에서 하나 이상의 유사한 객체들을 묶어서 하나의 공통된 특성을 표현한 것을 무엇이라고 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 2회 71번",
+    "sourceYear": 2018,
+    "choices": [
+      "클래스",
+      "함수",
+      "메소드",
+      "메시지"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-29ff0ab147a167be",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 모형에서 기능 모형(Functional Model)의 설계 순서로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 2회 72번",
+    "sourceYear": 2018,
+    "choices": [
+      "ⓐ 기능의 내용을 상세히 기술 ⓑ 자료 흐름도 작성(기능 의존 관계를 기술) ⓒ 입·출력 결정 ⓓ 제약 사항을 결정하고 최소화",
+      "ⓐ → ⓑ → ⓒ → ⓓ",
+      "ⓐ → ⓒ → ⓑ → ⓓ",
+      "ⓒ → ⓓ → ⓐ → ⓑ"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-7cf517d94357c563",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "비용 예측을 위한 기능 점수 방법에 대한 설명 중 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 2회 73번",
+    "sourceYear": 2018,
+    "choices": [
+      "입력, 출력, 질의, 파일, 인터페이스의 개수로 소프트웨어의 규모를 표현한다.",
+      "기능 점수는 원시코드의 구현에 이용되는 프로그래밍 언어에 종속적이다.",
+      "경험을 바탕으로 단순, 보통, 복잡한 정도에 따라 가중치를 부여한다.",
+      "프로젝트의 영향도와 가중치의 합을 이용하여 실질 기능 점수 를 계산한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-99db4f8d02719128",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "자료 사전에서 자료의 반복을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 2회 74번",
+    "sourceYear": 2018,
+    "choices": [
+      "=",
+      "( )",
+      "{ }",
+      "[ ]"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-ca294fb61950dda6",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CPM(Critical Path Method) 네트워크에 대한 설명으로 가장 타당하 지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 2회 75번",
+    "sourceYear": 2018,
+    "choices": [
+      "프로젝트 작업 사이의 관계를 나타내며 최장 경로를 파악할 수 있다.",
+      "프로젝트 각 작업에 필요한 시간을 정확하게 예측할 수 있다.",
+      "다른 일정 계획안을 시뮬레이션 할 수 있다.",
+      "병행 작업이 가능하도록 계획할 수 있으며, 이를 위한 자원 할당도 가능하다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-93885da3c0c7705a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 재사용을 통한 장점이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 2회 76번",
+    "sourceYear": 2018,
+    "choices": [
+      "개발 시간과 비용을 감소시킨다.",
+      "소프트웨어 품질을 향상시킨다.",
+      "생산성을 증가시킨다.",
+      "고급 프로그래머 배출이 용이하다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-526309732d8eb6e4",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "블랙 박스 검사 기법에 해당하는 것으로만 나열한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 2회 77번",
+    "sourceYear": 2018,
+    "choices": [
+      "㉠ 데이터 흐름 검사 ㉡ 루프 검사 ㉢ 동치 분할 검사 ㉣ 경계값 분석 ㉤ 원인 효과 그래픽 기법 ㉥ 비교 검사",
+      "㉠, ㉡",
+      "㉠, ㉡, ㉤, ㉥",
+      "㉢, ㉣, ㉤, ㉥"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-940c65645e9a374f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CASE 도구의 정보저장소(Repository)에 대한 설명으로 가장 거리 가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 2회 78번",
+    "sourceYear": 2018,
+    "choices": [
+      "일반적으로 정보저장소는 도구들과 생명 주기 활동, 사용자들, 응용 소프트웨어들 사이의 통신과 소프트웨어 시스템 정보의 공유를 향상시킨다.",
+      "초기의 소프트웨어 개발 환경에서는 사람이 정보저장소 역할 을 했지만 오늘날에는 응용 프로그램이 정보저장소 역할을 담당한다.",
+      "정보저장소는 도구들의 통합, 소프트웨어 시스템의 표준화, 소프트웨어 시스템 정보의 공유, 소프트웨어 재사용성의 기본 이 된다.",
+      "소프트웨어 시스템 구성 요소들과 시스템 정보가 정보저장소 에 의해 관리되므로 소프트웨어 시스템의 유지보수가 용이해 진다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-158cddf358eeb292",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정형 기술 검토(FTR)의 지침 사항으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 2회 79번",
+    "sourceYear": 2018,
+    "choices": [
+      "제품의 검토에만 집중한다.",
+      "문제 영역을 명확히 표현한다.",
+      "참가자의 수를 제한하고 사전 준비를 강요한다.",
+      "논쟁이나 반박을 제한하지 않는다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-2909bd18d8e6f59b",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체에 대한 설명으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 2회 80번",
+    "sourceYear": 2018,
+    "choices": [
+      "객체는 실세계 또는 개념적으로 존재하는 세계의 사물들이다.",
+      "객체는 공통적인 특징을 갖는 클래스들을 모아둔 것이다.",
+      "객체는 데이터를 가지며 이 데이터의 값을 변경하는 함수를 가지고 있는 경우도 있다.",
+      "객체들 사이에 통신을 할 때는 메시지를 전송한다. 제 5 과목 : 데이터 통신 정보처리기사 B형 2회"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-8227072925bd936b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Liner Search의 평균 검색 회수는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 1번",
+    "sourceYear": 2018,
+    "choices": [
+      "n-1",
+      "(n+1)/2",
+      "n",
+      "n/2"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-d529f895c5dfd773",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "관계 데이터베이스 제약조건 중 한 릴레이션의 기본키를 구성하는 어떠한 속성 값도 널(NULL) 값이나 중복 값을 가질 수 없다는 조건은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 2번",
+    "sourceYear": 2018,
+    "choices": [
+      "키 제약 조건",
+      "참조 무결성 제약 조건",
+      "참여 제약 조건",
+      "개체 무결성 제약 조건"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-a717d9e4362f1d82",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "해싱에서 동일한 홈 주소로 인하여 충돌이 일어난 레코드들의 집합을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 3번",
+    "sourceYear": 2018,
+    "choices": [
+      "Synonym",
+      "Collision",
+      "Bucket",
+      "Overflow"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-38cf7f2c0b36974d",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 정규화에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 5번",
+    "sourceYear": 2018,
+    "choices": [
+      "데이터베이스의 개념적 설계 단계에서 수행한다.",
+      "데이터 구조의 안정성을 최대화한다.",
+      "중복을 배제하여 삽입, 삭제, 갱신 이상의 발생을 방지한다.",
+      "데이터 삽입 시 릴레이션을 재구성할 필요성을 줄인다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-caed1dd22b43dcc5",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "n개의 노드로 구성된 무방향 그래프의 최대 간선 수는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 6번",
+    "sourceYear": 2018,
+    "choices": [
+      "n-1",
+      "n(n-1)/2",
+      "n/2",
+      "n(n+1)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-a74b00f91f4e51dc",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 Postfix로 표현된 연산식의 연산 결과로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 7번",
+    "sourceYear": 2018,
+    "choices": [
+      "3 4 * 5 6 * +",
+      "35",
+      "42",
+      "81"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-fffd6c6292c4e2f0",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "동시성 제어를 위한 직렬화 기법으로 트랜잭션 간의 순서를 미리 정하는 방법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 8번",
+    "sourceYear": 2018,
+    "choices": [
+      "로킹 기법",
+      "타임 스탬프 기법",
+      "검증 기법",
+      "배타 로크 기법"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-89a2597ff7e1e764",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL 문장 중 DDL문이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 9번",
+    "sourceYear": 2018,
+    "choices": [
+      "CREATE",
+      "DELETE",
+      "ALTER",
+      "DROP"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-c96dcc45ba9aefea",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 문장의 빈칸에 들어갈 단어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 10번",
+    "sourceYear": 2018,
+    "choices": [
+      "A ( ) is an ordered list in which all insertions and deletions are made at one end, called the top.",
+      "stack",
+      "queue",
+      "list"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-8af805725d429c8c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "해싱 테이블의 오버플로우 처리 기법이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 11번",
+    "sourceYear": 2018,
+    "choices": [
+      "개방 주소법",
+      "폐쇄 주소법",
+      "로그 주소법",
+      "재해싱"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-9b579c7810d23186",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스 설계 단계 중 저장 레코드 양식 설계, 레코드 집중의 분석 및 설계, 접근 경로 설계와 관계되는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 12번",
+    "sourceYear": 2018,
+    "choices": [
+      "논리적 설계",
+      "요구 조건 분석",
+      "물리적 설계",
+      "개념적 설계"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-ac43e5356e6a347c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 정의에서 말하는 기본 정규형은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 13번",
+    "sourceYear": 2018,
+    "choices": [
+      "어떤 릴레이션 R에 속한 모든 도메인이 원자값(Atomic Value)만으로 되어 있다.",
+      "제1정규형(1NF)",
+      "제2정규형(2NF)",
+      "제3정규형(3NF)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-736423a72631ce20",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "아래와 같은 결과를 만들어 내는 SQL문은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 14번",
+    "sourceYear": 2018,
+    "choices": [
+      "[공급자 Table] 공급자번호 공급자명 위치 16 27 39 62 70 대신공업사 삼진사 삼양사 진아공업사 신촌상사 수원 서울 인천 대전 서울 [결과] 공급자번호 공급자명 위치 16 70 대신공업사 신촌상사 수원 서울",
+      "SELECT * FROM 공급자 WHERE 공급자명 LIKE ‘%신%’",
+      "SELECT * FROM 공급자 WHERE 공급자명 LIKE ‘대%’",
+      "SELECT * FROM 공급자 WHERE 공급자명 LIKE ‘%사’"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-091bb586908757d2",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스에서 널(null) 값에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 17번",
+    "sourceYear": 2018,
+    "choices": [
+      "아직 모르는 값을 의미한다.",
+      "아직 알려지지 않은 값을 의미한다.",
+      "공백이나 0(zero)과 같은 의미한다.",
+      "정보 부재를 나타내기 위해 사용한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-5f84da9ea68193fe",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 SQL 문에서 ( ) 안에 들어갈 내용으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 18번",
+    "sourceYear": 2018,
+    "choices": [
+      "UPDATE 인사급여 ( ) 호봉 = 15 WHERE 성명 = ‘홍길동’;",
+      "SET",
+      "FROM",
+      "INTO"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a73cf27f217b0ec7",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 자료를 버블 정렬을 이용하여 오름차순으로 정렬할 경우 PASS 3의 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 19번",
+    "sourceYear": 2018,
+    "choices": [
+      "9, 6, 7, 3, 5",
+      "6, 3, 5, 7, 9",
+      "3, 5, 6, 7, 9",
+      "6, 7, 3, 5, 9"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-2633282d66d91cac",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "3NF에서 BCNF가 되기 위한 조건은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2018년 3회 20번",
+    "sourceYear": 2018,
+    "choices": [
+      "이행적 함수 종속 제거",
+      "부분적 함수 종속 제거",
+      "다치 종속 제거",
+      "결정자이면서 후보키가 아닌 것 제거 제 2 과목 : 전자계산기구조"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-235f13d097890ded",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어의 위기 현상과 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 3회 61번",
+    "sourceYear": 2018,
+    "choices": [
+      "개발 인력의 급증",
+      "유지보수의 어려움",
+      "개발 기간의 지연 및 개발 비용의 증가",
+      "신기술에 대한 교육과 훈련의 부족"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-37df1faaa078a2a6",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 생명 주기 모형 중 Boehm이 제시한 고전적 생명 주기 모형으로서 선형 순차적 모델이라고도 하며, 타당성 검토, 계획, 요구사항 분석, 설계, 구현, 테스트, 유지보수의 단계를 통해 소프트웨어를 개발하는 모형은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 3회 63번",
+    "sourceYear": 2018,
+    "choices": [
+      "폭포수 모형",
+      "프로토타입 모형",
+      "나선형 모형",
+      "RAD 모형"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-496bf7469d283580",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "블랙 박스 테스트를 이용하여 발견할 수 있는 오류의 경우로 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 3회 64번",
+    "sourceYear": 2018,
+    "choices": [
+      "비정상적인 자료를 입력해도 오류처리를 수행하지 않는 경우",
+      "정상적인 자료를 입력해도 요구된 기능이 제대로 수행되지 않는 경우",
+      "반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우",
+      "경계값을 입력할 경우 요구된 출력 결과가 나오지 않는 경우"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6ca65fb55824b9fd",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 공학에 대한 설명으로 가장 적합한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 3회 65번",
+    "sourceYear": 2018,
+    "choices": [
+      "소프트웨어의 제작부터 운영까지 생산성을 높이기 위해 기술 적, 인간적인 요소에 대한 방법론을 제공한다.",
+      "소프트웨어의 설계, 제작, 운영에 있어서 인간적인 요소를 배 제한 프로그래밍 자체에 대한 공학적 연구를 의미한다.",
+      "소프트웨어의 공학적이고 기술적인 영향을 사회 경제적인 시 각에서만 설명한다.",
+      "소프트웨어의 위기를 해결하기 위해서 현재 이미 해결된 문제 들에 대해서 역사적 관점을 설명한다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-e3db1cd217819527",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "시스템의 구성 요소 중 출력된 결과가 예정된 목표를 만족시키지 못할 경우 목표 달성을 위해 반복 처리하는 것을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 3회 66번",
+    "sourceYear": 2018,
+    "choices": [
+      "Process",
+      "FeedBack",
+      "Control",
+      "Output"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-68cb58e2b07b987d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 개발 과정에 대한 설명으로 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 3회 67번",
+    "sourceYear": 2018,
+    "choices": [
+      "분석 단계에서는 객체의 이름과 상태, 행위들을 개념적으로 파악한다.",
+      "설계 단계에서는 객체를 속성과 연산으로 정의하고 접근 방법 을 구체화한다.",
+      "구현 단계에서는 클래스를 절차적 프로그래밍 언어로 기술한다.",
+      "테스트 단계에서는 클래스 단위 테스트와 시스템 테스트를 진행한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-f3aa8567bd8f0540",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "럼바우의 분석 기법 중 자료 흐름도(DFD)를 이용하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 3회 68번",
+    "sourceYear": 2018,
+    "choices": [
+      "기능 모델링",
+      "동적 모델링",
+      "객체 모델링",
+      "정적 모델링"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-254df57be0c4a77a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "사용자의 요구사항 분석 작업이 어려운 이유로 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 3회 69번",
+    "sourceYear": 2018,
+    "choices": [
+      "개발자와 사용자 간의 지식이나 표현의 차이가 커서 상호 이해 가 쉽지 않다.",
+      "사용자의 요구는 예외가 거의 없어 열거와 구조화가 어렵지 않다.",
+      "사용자의 요구사항이 모호하고 부정확하며, 불완전하다.",
+      "개발하고자 하는 시스템 자체가 복잡하다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-70ef87ed268d64f6",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어의 품질 목표 중에서 옳고 일관된 결과를 얻기 위하여 요구된 기능을 수행할 수 있는 정도를 나타내는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 3회 70번",
+    "sourceYear": 2018,
+    "choices": [
+      "유지보수성(Maintainability)",
+      "신뢰성(Reliability)",
+      "효율성(Efficiency)",
+      "무결성(Integrity)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-1b499157a2596474",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 비용 산정 기법 중 개발 유형으로 Organic, Semi- Detach, Embedded로 구분되는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 3회 72번",
+    "sourceYear": 2018,
+    "choices": [
+      "PUTNAM",
+      "COCOMO",
+      "FP",
+      "SLIM"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-e3d4565af4f9eb33",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 구조와 관련된 용어로, 주어진 한 모듈(Module)을 제어하는 상위 모듈 수를 나타내는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 3회 73번",
+    "sourceYear": 2018,
+    "choices": [
+      "Modularity",
+      "Subordinate",
+      "Fan-in",
+      "Superordinate"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-d36ba2f0dfe191a2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CASE(Computer Aided Software Engineering)에 대한 설명으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 3회 74번",
+    "sourceYear": 2018,
+    "choices": [
+      "프로그램의 구현과 유지보수 작업만을 중심으로 소프트웨어 생산성 문제를 해결한다.",
+      "소프트웨어 생명 주기의 전체 단계를 연결해 주고 자동화해 주는 통합된 도구를 제공한다.",
+      "개발 과정의 속도를 향상시킨다.",
+      "소프트웨어 부품의 재사용을 가능하게 한다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-03ff0197601cd44f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 개발 중 가장 많은 비용이 요구되는 단계는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2018년 3회 75번",
+    "sourceYear": 2018,
+    "choices": [
+      "분석",
+      "설계",
+      "구현",
+      "유지보수"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-909faca0f1c34653",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 품질 측정을 위해 개발자 관점에서 고려해야 할 항목으 로 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 3회 76번",
+    "sourceYear": 2018,
+    "choices": [
+      "정확성",
+      "무결성",
+      "간결성",
+      "사용성"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-7a5f307f628a2b7d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정보시스템 개발 단계에서 프로그래밍 언어 선택 시 고려할 사항으 로 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 3회 77번",
+    "sourceYear": 2018,
+    "choices": [
+      "개발 정보시스템의 특성",
+      "사용자의 요구사항",
+      "컴파일러의 가용성",
+      "컴파일러의 독창성"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-ace9bb7dd04d8bc2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Alien Code에 대한 설명으로 가장 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 3회 78번",
+    "sourceYear": 2018,
+    "choices": [
+      "프로그램의 로직이 복잡하여 이해하기 어려운 프로그램을 의 미한다.",
+      "아주 오래되거나 참고 문서 또는 개발자가 없어 유지보수 작업 이 어려운 프로그램을 의미한다.",
+      "오류(Error)가 없어 디버깅 과정이 필요없는 프로그램을 의미 한다.",
+      "차세대 언어를 사용해 인공지능적인 API를 제공함으로써 사 용자가 직접 작성한 프로그램을 의미한다. 정보처리기사 A형 3회"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-1b16ab91ec873bb8",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 프로젝트 관리를 효율적으로 수행하기 위한 3P 중 소프트웨어 프로젝트를 수행하기 위한 Task Framework의 고려와 가장 연관되는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 3회 79번",
+    "sourceYear": 2018,
+    "choices": [
+      "People",
+      "Problem",
+      "Product",
+      "Process"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-61b3404c6efe02eb",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 공학적으로 잘 작성된 소프트웨어가 갖는 특성으로 가장 적합한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2018년 3회 80번",
+    "sourceYear": 2018,
+    "choices": [
+      "원하는 요구사항 중에 중요한 사항만 반영한다.",
+      "유지보수 비용이 많이 들어간다.",
+      "신뢰성이 떨어지더라도 효율성이 높다.",
+      "사용자가 손쉽게 사용할 수 있다. 제 5 과목 : 데이터 통신"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-3173ecf6315a1890",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL VIEW ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 1회 1번",
+    "sourceYear": 2019,
+    "choices": [
+      "ERASE",
+      "KILL",
+      "DROP",
+      "DELETE"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-05faa36a9358eb2c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Degree Cardinality ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 1회 2번",
+    "sourceYear": 2019,
+    "choices": [
+      "13001 홍길동 학년 3 전기 13002 이순신 학년 4 기계 13003 강감찬 학년 2 컴퓨터 Degree : 4, Cardinality : 3",
+      "Degree : 3, Cardinality : 4",
+      "Degree : 3, Cardinality : 12",
+      "Degree : 12, Cardinality : 3"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-5e89a933bbdc36d0",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "조직 전체의 데이터베이스 구조를 논리적으로 정의하는 스키마는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 1회 3번",
+    "sourceYear": 2019,
+    "choices": [
+      "개념 스키마",
+      "외부 스키마",
+      "내부 스키마",
+      "처리 스키마"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-3ba7f140a2eaf8ae",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Null) 중복 값을 가질 수 없다는 것을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 1회 5번",
+    "sourceYear": 2019,
+    "choices": [
+      "개체 무결성 제약 조건",
+      "참조 무결성 제약 조건",
+      "도메인 무결성 제약 조건",
+      "키 무결성 제약 조건"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-bccb7410f95b86a1",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Null 때 구문으로 옳은 것은 , SQL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 1회 6번",
+    "sourceYear": 2019,
+    "choices": [
+      "학생명 학적 전화번호 SELECT FROM WHERE DON’T",
+      "NULL 학생명 학적 전화번호 SELECT FROM WHERE != NULL;",
+      "학생명 학적 전화번호 SELECT FROM WHERE IS NOT",
+      "NULL; 학생명 학적 전화번호 SELECT FROM WHERE IS 0;"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-86a68b93c72d9bff",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Post Traversal) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 1회 10번",
+    "sourceYear": 2019,
+    "choices": [
+      "A B D C E F",
+      "D B A E C F",
+      "A B C D E F",
+      "D B E F C A"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-5c2d0dca20aad0fb",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", , 션 처리도와 가장 밀접한 관계가 있는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 1회 11번",
+    "sourceYear": 2019,
+    "choices": [
+      "물리적 설계",
+      "논리적 설계",
+      "개념적 설계",
+      "요구조건 분석"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-bc25b569d6cbb5ea",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Which of the following does not belong to the DDL statement of SQL?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 1회 12번",
+    "sourceYear": 2019,
+    "choices": [
+      "CREATE",
+      "DELETE",
+      "DROP",
+      "ALTER"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-7672864e1d3f60e1",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "A, B, C, D , push → 으로 연산 push pop push pop push pop pop → → → → → → 했을 때 출력은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 1회 13번",
+    "sourceYear": 2019,
+    "choices": [
+      "C, B, D, A",
+      "B, C, D, A",
+      "B, C, A, D",
+      "C, B, A, D"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-7be50bfc1d40e96b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 더하거나 배타적 논리합 연산을 통하여 나온 (XOR; Exclusive OR) 결과로 주소를 취하는 방법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2019-1/q014-1.png",
+    "imageUrls": [
+      "/questions/information-processing-engineer/exams/2019-1/q014-2.png"
+    ],
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 1회 14번",
+    "sourceYear": 2019,
+    "choices": [
+      "중간 제곱 방법(Mid-Square Method)",
+      "제산 방법(Division Method)",
+      "폴딩 방법(Folding Method)",
+      "기수 변환법(Radix Conversion Method)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-ef549aa2f17f2657",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "의 결과는 PASS 1 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 1회 16번",
+    "sourceYear": 2019,
+    "choices": [
+      "9, 6, 7, 3, 5 6, 9, 7, 3, 5",
+      "3, 9, 6, 7, 5",
+      "3, 6, 7, 9, 5",
+      "6, 7, 3, 5, 9"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-226e2595ab787de3",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "집합을 무엇이라고 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 1회 18번",
+    "sourceYear": 2019,
+    "choices": [
+      "Overflow",
+      "Bucket",
+      "Synonym",
+      "Collision"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-c19bb07116c81450",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "논리적 기능을 수행하는 하나의 작업 단위는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 1회 19번",
+    "sourceYear": 2019,
+    "choices": [
+      "도메인",
+      "트랜잭션",
+      "모듈",
+      "프로시저"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-a053d1a9544c893b",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 프로젝트 관리의 주요 구성 요소인 에 해당하지 3P 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 1회 61번",
+    "sourceYear": 2019,
+    "choices": [
+      "People",
+      "Problem",
+      "Process",
+      "Power"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-dcd482d8d8a9ce6c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "달성하기 위한 선택사항이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 1회 63번",
+    "sourceYear": 2019,
+    "choices": [
+      "프로젝트 비용과 노력 측정을 위해 상대적으로 복잡한 분해기",
+      "술을 이용한다. 프로젝트의 정확한 측정을 위해 충분한 시간을 갖고 측정한다.",
+      "하나 이상의 자동화 측정도구들을 이용한다.",
+      "소프트웨어 비용과 노력에 대한 실험적 모델을 형성한다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-bfa555d80a88a59c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "특성을 표현한 데이터 추상화를 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 1회 65번",
+    "sourceYear": 2019,
+    "choices": [
+      "메소드(Method)",
+      "클래스(Class)",
+      "상속성(Inheritance)",
+      "메시지(Message)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-45483b6bd4ec61b7",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "없으므로 인터페이스가 단순해지고 데이터와 데이터를 처리하는 함수를 하나로 묶는 것을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2019년 1회 66번",
+    "sourceYear": 2019,
+    "choices": [
+      "Abstraction",
+      "Class",
+      "Encapsulation",
+      "Integration"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-0a632218c12792dd",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "해결하려고 하는 방법인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 1회 67번",
+    "sourceYear": 2019,
+    "choices": [
+      "Preventive maintenance",
+      "Corrective maintenance",
+      "Perfective maintenance",
+      "Adaptive maintenance"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-05bf47aae795c5a5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(DFD) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2019년 1회 68번",
+    "sourceYear": 2019,
+    "choices": [
+      "자료는 처리를 거쳐 변환될 때마다 새로운 명칭을 부여해야",
+      "한다. 자료 흐름도의 최하위 처리 는 소단위 명세서를 갖는 (Process)",
+      "다. 배경도 에도 명칭과 번호를 부여해야 한다 (Context Diagram) .",
+      "어떤 처리 가 출력 자료를 산출하기 위해서는 필요한 (Process)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-fb367da79ed76742",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Spiral Model 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 1회 69번",
+    "sourceYear": 2019,
+    "choices": [
+      "대규모 시스템에 적합하다.",
+      "개발 순서는 계획 및 정의 위험 분석 공학적 개발 고객 평가 , , ,",
+      "순으로 진행된다. 소프트웨어를 개발하면서 발생할 수 있는 위험을 관리하고",
+      "최소화하는 것을 목적으로 한다. 개발 과정의 앞 단계가 완료되어야만 다음 단계로 넘어갈 수"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-fbb4b04877c5c34b",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Data Dictionary) 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 1회 71번",
+    "sourceYear": 2019,
+    "choices": [
+      "갱신하기 쉬워야 한다.",
+      "이름이 중복되어야 한다.",
+      "이름을 가지고 정의를 쉽게 찾을 수 있어야 한다.",
+      "정의하는 방식이 명확해야 한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-f1b79be22d079289",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Alien Code) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 1회 72번",
+    "sourceYear": 2019,
+    "choices": [
+      "프로그램의 로직이 복잡하여 이해하기 어려운 프로그램을 의",
+      "미한다. 오류가 없어 디버깅 과정이 필요 없는 프로그램을 의미한다.",
+      "사용자가 직접 작성한 프로그램을 의미한다.",
+      "아주 오래되거나 참고문서 또는 개발자가 없어 유지보수 작업"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-4359f7e49840f4c5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CASE ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2020-12/q009-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 1·2회 9번",
+    "sourceYear": 2020,
+    "choices": [
+      "그래픽 지원",
+      "소프트웨어 생명주기 전 단계의 연결",
+      "언어 번역",
+      "다양한 소프트웨어 개발 모형 지원"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-81e45bf8c9179528",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(DFD) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2019년 1회 78번",
+    "sourceYear": 2019,
+    "choices": [
+      "원 Process :",
+      "화살표 Data Flow :",
+      "삼각형 Data Store :",
+      "사각형 Terminator :"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-d5422b09a2250b2f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "각 기능의 원시 코드 라인 수의 비관치 낙관치 기대치를 S/W , , 측정하여 예측치를 구하고 이를 이용하여 비용을 산정하는 기법 은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 1회 79번",
+    "sourceYear": 2019,
+    "choices": [
+      "기법 Effort Per Task",
+      "전문가 감정 기법",
+      "델파이 기법",
+      "기법 LOC"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-a558873e26649bfd",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 1회 80번",
+    "sourceYear": 2019,
+    "choices": [
+      "Reliability",
+      "Portability",
+      "Correctness",
+      "Efficiency"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-f7a187103e9711ed",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데크 에 대한 설명으로 옳지 않은 것은 (Deque) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 2회 1번",
+    "sourceYear": 2019,
+    "choices": [
+      "입력 제한 데크는 이고 출력 제한 데크는 이다 Shelf , Scroll .",
+      "삽입과 삭제가 리스트의 양쪽 끝에서 발생할 수 있는 자료",
+      "구조이다. 스택과 큐의 장점으로 구성한 것이다.",
+      "의 약자이다 Double Ended Queue ."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-b0b7ff9b69831389",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "‘for all : ’ 논리 기호는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2019-2/q003-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 2회 3번",
+    "sourceYear": 2019,
+    "choices": [
+      "∃",
+      "∈",
+      "∀",
+      "∪ 다음 자료에 대하여 으로 오름차순 졍렬할 경우"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-b4b21a8ed430f468",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Selection Sorting 의 결과는 PASS 3 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 2회 4번",
+    "sourceYear": 2019,
+    "choices": [
+      "초기 상태 : 8, 3, 4, 9, 7 3, 4, 7, 9, 8",
+      "3, 4, 8, 9, 7",
+      "3, 8, 4, 9, 7",
+      "3, 4, 7, 8, 9"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-8d393eb22ff886ff",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL DELETE ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 2회 5번",
+    "sourceYear": 2019,
+    "choices": [
+      "테이블의 행을 삭제할 때 사용한다.",
+      "조건절이 없는 명령을 수행하면 WHERE DELETE DROP",
+      "명령을 수행했을 때와 같은 효과를 얻을 수 있다 TABLE . 을 사용 용도에 따라 분류할 경우 에 해당한다 SQL DML .",
+      "기본 사용 형식은 테이블 조건 “DELETE FROM [WHERE ];”"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-65aa4f138f8cd9bf",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "A, B, C, D (Stack) 출력한 결과로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2019-2/q006-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 2회 6번",
+    "sourceYear": 2019,
+    "choices": [
+      "B, A, D, C",
+      "A, B, C, D",
+      "D, A, B, C",
+      "C, B, A, D"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-23b1a8ecc82a35e8",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DBMS 구조를 지원하기 위해 데이터베이스에 저장될 데이터 타입과 구조 에 대한 정의 이용 방식 제약 조건 등을 명시하는 기능은 , , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2019-2/q007-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 2회 7번",
+    "sourceYear": 2019,
+    "choices": [
+      "정의 기능",
+      "조작 기능",
+      "사상 기능",
+      "제어 기능"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-ca85baf7d6c00ffd",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Preorder Traversal) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 2회 8번",
+    "sourceYear": 2019,
+    "choices": [
+      "+ * A B / * C D E",
+      "A B / C * D * E +",
+      "A / B * C * D + E",
+      "+ * * / A B C D E"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-0170be6c447e2620",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "A (DFS) 운행한 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 2회 9번",
+    "sourceYear": 2019,
+    "choices": [
+      "A B E C D F G",
+      "A B E C F D G",
+      "A B C D E F G",
+      "A B E F G C D"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-8028f4ef5be43f15",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "는 하나의 작업 단위를 무엇이라고 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 2회 10번",
+    "sourceYear": 2019,
+    "choices": [
+      "프로시저",
+      "트랜잭션",
+      "모듈",
+      "도메인"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-9e1fcfe7965203d8",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정보를 일관된 스키마로 저장한 저장소를 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2019-2/q011-1.png",
+    "imageUrls": [
+      "/questions/information-processing-engineer/exams/2019-2/q011-2.png"
+    ],
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 2회 11번",
+    "sourceYear": 2019,
+    "choices": [
+      "Data Warehouse",
+      "Data Mining",
+      "Classification",
+      "Clustering"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-af04e79857dbf771",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL 로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 2회 12번",
+    "sourceYear": 2019,
+    "choices": [
+      "성명 과목 점수 홍길동 국어 80 홍길동 영어 68 홍길동 수학 97 강감찬 국어 58 강감찬 영어 97 강감찬 수학 65 성명 점수 성적 성명 SELECT , (AVG) FROM ORDER BY ;",
+      "성명 점수 성적 성명 SELECT , AVG( ) FROM ORDER BY ;",
+      "성명 점수 성적 성명 SELECT , (AVG) FROM GROUP BY ;",
+      "성명 점수 성적 성명 SELECT , AVG( ) FROM GROUP BY ;"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-3e706ea3f3a1fd66",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "BCNF 4NF ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 2회 13번",
+    "sourceYear": 2019,
+    "choices": [
+      "조인 종속성 이용",
+      "다치 종속 제거",
+      "이행적 함수 종속 제거",
+      "결정자이면서 후보키가 아닌 함수 종속 제거"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-931ae18cffbd66b7",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "STUDENT 50 , 30 , 영어영문학과 학생 명의 정보가 저장되어 있을 때 다음 두 50 , 문의 실행 결과 튜플 수는 단 컬럼은 학과명 SQL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 2회 16번",
+    "sourceYear": 2019,
+    "choices": [
+      "( , DEPT ) SELECT DEPT FROM STUDENT; ⓐ SELECT DISTINCT DEPT FROM STUDENT; ⓑ 3,",
+      "ⓐ 3 ⓑ 50,",
+      "ⓐ 3 ⓑ 130,",
+      "ⓐ 3 ⓑ 130,"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-c5712a3284454a6c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 2회 17번",
+    "sourceYear": 2019,
+    "choices": [
+      "사용자의 요구에 대한 트랜잭션을 모델링한다.",
+      "트랜잭션 인터페이스를 설계한다.",
+      "관계형 데이터베이스에서는 테이블을 설계하는 단계이다.",
+      "에 맞는 논리적 스키마를 설계한다 DBMS ."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-db81c9f8e793401c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Which is not in the three-schema architecture?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 2회 19번",
+    "sourceYear": 2019,
+    "choices": [
+      "Internal Schema",
+      "Conceptual Schema",
+      "External Schema",
+      "Procedural Schema"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-cf775a83fc445693",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "시스템 카탈로그에 관한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2019-2/q020-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2019년 2회 20번",
+    "sourceYear": 2019,
+    "choices": [
+      "시스템 카탈로그는 가 스스로 생성하고 유지하는 데이 DBMS",
+      "터베이스 내의 특별한 테이블들의 집합체이다. 일반 사용자들도 을 이용하여 시스템 카탈로그를 직접 SQL",
+      "갱신할 수 있다. 데이터베이스 구조가 변경될 때마다 는 자동적으로 시 DBMS",
+      "스템 카탈로그 테이블들의 행을 삽입 삭제 수정한다 , , . 시스템 카탈로그는 데이터베이스 구조에 관한 메타 데이터를"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-9846b84a132a3f36",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Configuration Management) 로 가장 타당한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 2회 61번",
+    "sourceYear": 2019,
+    "choices": [
+      "개발 인력을 관리하는 것",
+      "개발 과정의 변화되는 사항을 관리하는 것",
+      "개발 일정을 관리하는 것",
+      "테스트 과정에서 소프트웨어를 통합하는 것"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-f2e37d330bcd9e69",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "S/W ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 2회 62번",
+    "sourceYear": 2019,
+    "choices": [
+      "설계수정",
+      "예방조치",
+      "환경적응",
+      "하자보수"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-80c36effd3b232ec",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(FTR; Formal Technical Review) 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 2회 63번",
+    "sourceYear": 2019,
+    "choices": [
+      "자원과 시간 일정을 할당한다.",
+      "문제 영역을 명확히 표현한다.",
+      "참가자의 수를 제한하지 않는다.",
+      "모든 검토자들을 위해 의미 있는 훈련을 행한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-0ffe6de1dc21c5b2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "일정 계획과 가장 관계가 없는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 2회 65번",
+    "sourceYear": 2019,
+    "choices": [
+      "프로그램 명세서",
+      "작업 분해",
+      "네트워크 CPM",
+      "간트 차트(Gantt Chart)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-ac501b2b4847345b",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "과정을 기술하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 2회 66번",
+    "sourceYear": 2019,
+    "choices": [
+      "객체 모델링",
+      "기능 모델링",
+      "동적 모델링",
+      "정적 모델링"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-4e509b464dc9ac95",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "“ 수행하는 시스템 능력 에 해당하는 것은 ” ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 2회 67번",
+    "sourceYear": 2019,
+    "choices": [
+      "Efficiency",
+      "Incorrectness",
+      "Integrity",
+      "Reliability"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b5f18e7dfdd1ed52",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Putnam ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 2회 69번",
+    "sourceYear": 2019,
+    "choices": [
+      "SLIM",
+      "BYL",
+      "ESTIMACS",
+      "PERT"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-9e3689688e20c048",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "프로토타입 모형의 장점으로 가장 적절한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2019년 2회 70번",
+    "sourceYear": 2019,
+    "choices": [
+      "비용과 시간의 절감",
+      "책임 한계의 명백한 구분",
+      "요구사항의 충실 반영",
+      "프로젝트 괸리의 용이"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-d19d417b235fe138",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "프로젝트 추진 과정에서 예상되는 각종 돌발 상황을 미리 예상하고 이에 대한 적절한 대책을 수립하는 일련의 활동은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 2회 71번",
+    "sourceYear": 2019,
+    "choices": [
+      "일정 관리",
+      "코드 관리",
+      "위험 관리",
+      "모형 관리"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6755193288e026dc",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "“{ }” ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 2회 72번",
+    "sourceYear": 2019,
+    "choices": [
+      "“Comment”",
+      "“Iteration Of”",
+      "“Is composed Of”",
+      "“Optional”"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-444b062c2e59af68",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "아주 어려운 프로그램을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 2회 74번",
+    "sourceYear": 2019,
+    "choices": [
+      "Alien Code",
+      "Title Code",
+      "Object Code",
+      "Source Code"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-07ee8625eda590ea",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "제어신호를 이용하여 통신하는 경우이며 하위 모듈에서 상위 모듈 , 로 제어신호가 이동하여 상위 모듈에게 처리 명령을 부여하는 권리 전도현상이 발생하게 되는 결합도는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2019년 2회 76번",
+    "sourceYear": 2019,
+    "choices": [
+      "Control Coupling",
+      "Data Coupling",
+      "Stamp Coupling",
+      "Common Coupling"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-b62344a07a458657",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Encapsulation) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 2회 77번",
+    "sourceYear": 2019,
+    "choices": [
+      "데이터와 데이터를 처리하는 함수를 하나로 묶는 것이다.",
+      "캡슐화된 객체의 세부 내용이 외부에 은폐되어 변경이 발생해",
+      "도 오류의 파급효과가 적다. 인터페이스가 단순해지고 객체 간의 결합도가 낮아진다.",
+      "캡슐화된 객체들은 재사용이 불가능하다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c96fbaefa5a2073d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CASE 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 2회 78번",
+    "sourceYear": 2019,
+    "choices": [
+      "모델들 사이의 모순 검사 기능",
+      "전체 소스코드 생성 기능",
+      "모델의 오류 검증 기능",
+      "자료 흐름도 작성 기능"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-c15f814d42397ea2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "S/W S/W 서 사용할 수 있도록 변환하는 작업은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "개편 전 현행범위 선별",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2019년 2회 79번",
+    "sourceYear": 2019,
+    "choices": [
+      "분석(Analysis)",
+      "개조(Restructuring)",
+      "이식(Migration)",
+      "역공학(Reverse Engineering)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-c81d76687d6d25d6",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "GoF(Gang of Four) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 1·2회 1번",
+    "sourceYear": 2020,
+    "choices": [
+      "Builder",
+      "Visitor",
+      "Prototype",
+      "Bridge"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-f73a5f6266a6bd64",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "‘ - (Part-Whole)’ 계 또는 부분 의 관계로 설명되는 연관성을 나타내 ‘ (is-a-part-of)’ 는 용어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 1·2회 3번",
+    "sourceYear": 2020,
+    "choices": [
+      "일반화",
+      "추상화",
+      "캡슐화",
+      "집단화"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-139eab94c936a877",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "E-R 행위를 모델링하며 객체 식별 구조식별 주체 정의 속성 및 , , , , 관계 정의 서비스 정의 등의 과정으로 구성되는 것은 , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 1·2회 4번",
+    "sourceYear": 2020,
+    "choices": [
+      "와 방법 Coad Yourdon",
+      "방법 Booch",
+      "방법 Jacobson",
+      "방법 Wirfs-Brocks"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-35a443067f6b4744",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "측정 항목이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2020-12/q006-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 1·2회 6번",
+    "sourceYear": 2020,
+    "choices": [
+      "응답시간(Response Time)",
+      "가용성(Availability)",
+      "사용률(Utilization)",
+      "서버 튜닝(Server Tuning)"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-777842377a35d19d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "후 짧은 검토 회의를 통해 오류를 조기에 검출하는데 목적을 두는 요구사항 검토 방법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 1·2회 8번",
+    "sourceYear": 2020,
+    "choices": [
+      "빌드 검증",
+      "동료 검토",
+      "워크 스루",
+      "개발자 검토"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6798c531af84af82",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "XP(eXtreme Programing) 5 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 1·2회 10번",
+    "sourceYear": 2020,
+    "choices": [
+      "용기",
+      "의사소통",
+      "정형 분석",
+      "피드백"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-28eace3e75efa4fe",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DBMS ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 1·2회 11번",
+    "sourceYear": 2020,
+    "choices": [
+      "가용성",
+      "성능",
+      "네트워크 구성도",
+      "상호 호환성"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-98aac0d1ed027222",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "HIPO(Hierarchy Input Process Output) 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2025-3/q003-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2025년 3회 3번",
+    "sourceYear": 2025,
+    "choices": [
+      "상향식 소프트웨어 개발을 위한 문서화 도구이다.",
+      "차트 종류에는 가시적 도표 총체적 도표 세부적 도표가 HIPO , ,",
+      "있다. 기능과 자료의 의존 관계를 동시에 표현할 수 있다.",
+      "보기 쉽고 이해하기 쉽다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-4bec0179f33d09bc",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UI 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 1·2회 13번",
+    "sourceYear": 2020,
+    "choices": [
+      "유효성",
+      "직관성",
+      "무결성",
+      "유연성"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-cf5d1e2b72b772d6",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Rumbaugh) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2023-2/q003-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2023년 2회 3번",
+    "sourceYear": 2023,
+    "choices": [
+      "객체 모형 동적 모형 기능 모형",
+      "→ → 객체 모형 기능 모형 동적 모형",
+      "→ → 기능 모형 동적 모형 객체 모형",
+      "→ → 기능 모형 객체 모형 동적 모형"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-40b13c874f2f022a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML 기호로 맞는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 1·2회 16번",
+    "sourceYear": 2020,
+    "choices": [
+      "<< >>",
+      "(( ))",
+      "{{ }}",
+      "[[ ]]"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-0310c415bfd33def",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "는 미들웨어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 1·2회 17번",
+    "sourceYear": 2020,
+    "choices": [
+      "RPC",
+      "ORB",
+      "TP monitor",
+      "HUB"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-52712a394ac43336",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Requirements Analysis) 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2020-12/q018-1.png",
+    "imageUrls": [
+      "/questions/information-processing-engineer/exams/2020-12/q018-2.png",
+      "/questions/information-processing-engineer/exams/2020-12/q018-3.png"
+    ],
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 1·2회 18번",
+    "sourceYear": 2020,
+    "choices": [
+      "비용과 일정에 대한 제약설정",
+      "타당성 조사",
+      "요구사항 정의 문서화",
+      "설계 명세서 작성"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-e3009d132d14e844",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "한 가지로 해석될 수 있도록 작성하는 원칙은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2020-12/q019-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 1·2회 19번",
+    "sourceYear": 2020,
+    "choices": [
+      "상호작용성",
+      "명확성",
+      "독립성",
+      "내용성"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-08a120bd9444edd1",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML Structural Diagram ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 1·2회 20번",
+    "sourceYear": 2020,
+    "choices": [
+      "Class Diagram",
+      "Object Diagram",
+      "Component Diagram",
+      "Activity Diagram"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-eea979c3fcbf529b",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": ". 어를 경계 값 분석 기법으로 테스트 하고자 할 때 다음 중 테스트 케이스의 입력 값으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 1·2회 21번",
+    "sourceYear": 2020,
+    "choices": [
+      "평가점수 성적 80~100 A 60~79 B 0~59 C 59",
+      "80",
+      "90",
+      "101"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6719a5aa36ce3fce",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(degree) (terminal node) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 1·2회 22번",
+    "sourceYear": 2020,
+    "choices": [
+      "차수 단말 노드 : 4, : 4",
+      "차수 단말 노드 : 2, : 4",
+      "차수 단말 노드 : 4, : 8",
+      "차수 단말 노드 : 2, : 8"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-eec4bd5922314d26",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "행하는 기법이며 일반적으로 통제된 환경에서 사용자와 개발자가 , 함께 확인하면서 수행되는 검사는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 1·2회 23번",
+    "sourceYear": 2020,
+    "choices": [
+      "동치 분할 검사",
+      "형상 검사",
+      "알파 검사",
+      "베타 검사"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-b508c0304174f72e",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "필요한 조건만을 가지고 임시로 제공되는 시험용 모듈을 무엇이라 고 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 1·2회 24번",
+    "sourceYear": 2020,
+    "choices": [
+      "Stub",
+      "Driver",
+      "Procedure",
+      "Function"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-66d75c6c12409aa0",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 1·2회 25번",
+    "sourceYear": 2020,
+    "choices": [
+      "정확성",
+      "무결성",
+      "사용성",
+      "간결성"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-d87e8060d8b1b6f0",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "80% 20% 발견된다는 법칙은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 1·2회 26번",
+    "sourceYear": 2020,
+    "choices": [
+      "의 법칙 Brooks",
+      "의 법칙 Boehm",
+      "의 법칙 Pareto",
+      "의 법칙 Jackson"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-c438ceedd8c47954",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(DRM) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 1·2회 27번",
+    "sourceYear": 2020,
+    "choices": [
+      "크랙 방지 기술",
+      "정책 관리 기술",
+      "암호화 기술",
+      "방화벽 기술"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-ba20172f61c36802",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2023-1/q022-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2023년 1회 22번",
+    "sourceYear": 2023,
+    "choices": [
+      "정확성",
+      "무결성",
+      "사용성",
+      "간결성"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-863c8eed3105ecc3",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "White Box Testing ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 1·2회 32번",
+    "sourceYear": 2020,
+    "choices": [
+      "가 대표적인 Base Path Testing, Boundary Value Analysis",
+      "기법이다. 의 모든 문장을 한 번 이상 수행함으로써 진행 Source Code",
+      "된다. 모듈 안의 작동을 직접 관찰할 수 있다.",
+      "산출물의 각 기능별로 적절한 프로그램의 제어구조에 따라"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-1080de6bdafc3925",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "O(1) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 1·2회 35번",
+    "sourceYear": 2020,
+    "choices": [
+      "컴퓨터 처리가 불가",
+      "알고리즘 입력 데이터 수가 한 개",
+      "알고리즘 수행시간이 입력 데이터 수와 관계없이 일정",
+      "알고리즘 길이가 입력 데이터보다 작음"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-c8ea5273e3c8f457",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "N O(Nlog N) ₂ 정렬 알고리즘은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 1·2회 36번",
+    "sourceYear": 2020,
+    "choices": [
+      "선택 정렬",
+      "삽입 정렬",
+      "버블 정렬",
+      "합병 정렬"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-78cb710727b26d9e",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "ISO/IEC 9126 (Functionality) 하위 특성으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 1·2회 37번",
+    "sourceYear": 2020,
+    "choices": [
+      "학습성",
+      "적합성",
+      "정확성",
+      "보안성"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-c8e0103eb2548d40",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "EAI(Enterprise Application Integration) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 1·2회 38번",
+    "sourceYear": 2020,
+    "choices": [
+      "Point-to-Point",
+      "Hub & Spoke",
+      "Message Bus",
+      "Tree"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-d831eb8fe3e3b1da",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Denormalization) 에 해당하지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 1·2회 40번",
+    "sourceYear": 2020,
+    "choices": [
+      "빌드 테이블의 추가",
+      "집계 테이블의 추가",
+      "진행 테이블의 추가",
+      "특정 부분만을 포함하는 테이블 추가"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-aaf1629709f5ac69",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL DDL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 1·2회 41번",
+    "sourceYear": 2020,
+    "choices": [
+      "UPDATE",
+      "ALTER",
+      "DROP",
+      "CREATE"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-f43e0d01ecbd7b93",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "1NF 2NF ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2024-2/q048-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 2회 48번",
+    "sourceYear": 2024,
+    "choices": [
+      "를 만족하고 모든 도메인이 원자 값이어야 한다 1NF .",
+      "를 만족하고 키가 아닌 모든 애트리뷰트들이 기본 키에 1NF",
+      "이행적으로 함수 종속되지 않아야 한다. 를 만족하고 다치 종속이 제거되어야 한다 1NF .",
+      "를 만족하고 키가 아닌 모든 속성이 기본키에 완전 함수적 1NF"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-66f38c4ca166bbec",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "“ ” 로 맞는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 1·2회 45번",
+    "sourceYear": 2020,
+    "choices": [
+      "릴레이션 내의 튜플들이 각 속성의 도메인에 지정된 값만을",
+      "가져야 한다. 기본키에 속해 있는 애트리뷰트는 널 값이나 중복 값을 가질",
+      "수 없다. 릴레이션은 참조할 수 없는 외래키 값을 가질 수 없다.",
+      "외래키 값은 참조 릴레이션의 기본키 값과 동일해야 한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-feadfb0453df8f27",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DML SQL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 1·2회 47번",
+    "sourceYear": 2020,
+    "choices": [
+      "DELETE, UPDATE, CREATE, ALTER",
+      "INSERT, DELETE, UPDATE, DROP",
+      "SELECT, INSERT, DELETE, UPDATE",
+      "SELECT, INSERT, DELETE, ALTER"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-937fdada66e5a415",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", , 때마다 관련 작업이 자동으로 수행되는 절차형 은 SQL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 1·2회 48번",
+    "sourceYear": 2020,
+    "choices": [
+      "트리거(Trigger)",
+      "무결성(Integrity)",
+      "잠금(Lock)",
+      "복귀(Rollback)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-909af3aeaeea9372",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Logical Design) 작업이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 1·2회 49번",
+    "sourceYear": 2020,
+    "choices": [
+      "레코드 집중의 분석 및 설계",
+      "논리적 데이터베이스 구조로 매핑(mapping)",
+      "트랜잭션 인터페이스 설계",
+      "스키마의 평가 및 정제"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-05555f37ed8ebd78",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "E-R ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 1·2회 50번",
+    "sourceYear": 2020,
+    "choices": [
+      "개체타입 사각형 :",
+      "관계타입 마름모 :",
+      "속성 오각형 :",
+      "연결 선 :"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-d79c031f8f79d725",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Locking) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 1·2회 51번",
+    "sourceYear": 2020,
+    "choices": [
+      "데이터베이스 파일 레코드 등은 로킹 단위가 될 수 있다 , , .",
+      "로킹 단위가 작아지면 로킹 오버헤드가 감소한다.",
+      "로킹 단위가 작아지면 데이터베이스 공유도가 증가한다.",
+      "한꺼번에 로킹 할 수 있는 객체의 크기를 로킹 단위라고 한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-bdec392a83d9946b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "이용하여 두 개의 릴레이션을 하나로 합쳐서 새로운 릴레이션을 만드는 연산은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 1·2회 54번",
+    "sourceYear": 2020,
+    "choices": [
+      "⋈",
+      "⊃",
+      "π",
+      "σ 분산 데이터베이스 목표 중 데이터베이스의 분산된 물리적 환경에"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-abc2b52ee274e403",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "“ 서 특정 지역의 컴퓨터 시스템이나 네트워크에 장애가 발생해도 데이터 무결성이 보장된다 는 것과 관계있는 것은 .” ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 1·2회 55번",
+    "sourceYear": 2020,
+    "choices": [
+      "장애 투명성",
+      "병행 투명성",
+      "위치 투명성",
+      "중복 투명성"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-4fa9b6f77f0d74bf",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 1·2회 57번",
+    "sourceYear": 2020,
+    "choices": [
+      "가격 도서가격 SELECT FROM 책번호 책번호 도서 WHERE (SELECT FROM WHERE ＝ 책명 자료구조 =‘ ’); 도서 [ ] 도서가격 [ ] 책번호 책명 책번호 가격 111 운영체제 111 20,000 222 자료구조 222 25,000 333 컴퓨터구조 333 10,000 444 15,000 10,000",
+      "15,000",
+      "20,000",
+      "25,000"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c1102b6507f1af9b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(DCL) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 1·2회 58번",
+    "sourceYear": 2020,
+    "choices": [
+      "데이터 보안",
+      "논리적 물리적 데이터 구조 정의 ,",
+      "무결성 유지",
+      "병행수행 제어"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-7452a591c820f42f",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DROP 값을 삭제할 경우 자동적으로 자식 테이블의 해당 레코드를 삭제하 기 위한 옵션은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 1·2회 59번",
+    "sourceYear": 2020,
+    "choices": [
+      "CLUSTER",
+      "CASCADE",
+      "SET-NULL",
+      "RESTRICTED"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-72abaa34df920d76",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UNIX (Shell) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 1·2회 61번",
+    "sourceYear": 2020,
+    "choices": [
+      "명령어 해석기이다.",
+      "시스템과 사용자 간의 인터페이스를 담당한다.",
+      "여러 종류의 쉘이 있다.",
+      "프로세스 기억장치 입출력 관리를 수행한다 , , ."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-a440ae1ae5c1714e",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "TCP/IP ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 1·2회 62번",
+    "sourceYear": 2020,
+    "choices": [
+      "HTTP",
+      "SMTP",
+      "FTP",
+      "TCP"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f853673bddb3c6a7",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Coupling) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 1·2회 64번",
+    "sourceYear": 2020,
+    "choices": [
+      "한 모듈 내에 있는 처리요소들 사이의 기능적인 연관 정도를",
+      "나타낸다. 결합도가 높으면 시스템 구현 및 유지보수 작업이 쉽다.",
+      "모듈 간의 결합도를 약하게 하면 모듈 독립성이 향상된다.",
+      "자료결합도는 내용결합도보다 결합도가 높다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-7a093cefe45ad9ba",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Thread) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 1·2회 65번",
+    "sourceYear": 2020,
+    "choices": [
+      "한 개의 프로세스는 여러 개의 스레드를 가질 수 없다.",
+      "커널 스레드의 경우 운영체제에 의해 스레드를 운용한다.",
+      "사용자 스레드의 경우 사용자가 만든 라이브러리를 사용하여",
+      "스레드를 운용한다. 스레드를 사용함으로써 하드웨어 운영체제의 성능과 응용 프 ,"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-f27940dd8fd510aa",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C b[5] ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 1·2회 66번",
+    "sourceYear": 2020,
+    "choices": [
+      "static int b[9]={1, 2, 3}; 0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-e0ee02de0f9d7283",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Banker’s Algorithm) 중 어떤 기법에 해당하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 1·2회 67번",
+    "sourceYear": 2020,
+    "choices": [
+      "Avoidance",
+      "Detection",
+      "Prevention",
+      "Recovery"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-43928de984337d10",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "IEEE 802.11 LAN QoS 위해 지원 기능을 채택한 것은 MAC ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 1·2회 68번",
+    "sourceYear": 2020,
+    "choices": [
+      "802.11a",
+      "802.11b",
+      "802.11g",
+      "802.11e"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-4cc0d1c669b8f353",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "TCP/IP IP MAC ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 1·2회 69번",
+    "sourceYear": 2020,
+    "choices": [
+      "UDP",
+      "ARP",
+      "TCP",
+      "ICMP"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-ef96f69d293c8d4d",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "HRN(Highest Response-ratio Next) 로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 1·2회 70번",
+    "sourceYear": 2020,
+    "choices": [
+      "대기 시간이 긴 프로세스일 경우 우선순위가 높아진다.",
+      "기법을 보완하기 위한 방식이다 SJF .",
+      "긴 작업과 짧은 작업 간의 지나친 불평등을 해소할 수 있다.",
+      "우선순위를 계산하여 그 수치가 가장 낮은 것부터 높은 순으로"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b8e0d3dc0f746ec2",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Page reference) 로 선입선출 알고리즘을 사용할 경우 페이지 부재(Page Fault) 횟수는 단 할당된 페이지 프레임 수는 이고 처음에는 모든 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 1·2회 72번",
+    "sourceYear": 2020,
+    "choices": [
+      "( , 3 , 프레임이 비어 있다.) 페이지 참조열 < > 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0 13",
+      "14",
+      "15",
+      "20"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-cba10f3be6e5e2e3",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "IPv6 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 1·2회 74번",
+    "sourceYear": 2020,
+    "choices": [
+      "비트의 주소 공간을 제공한다 128 .",
+      "인증 및 보안 기능을 포함하고 있다.",
+      "패킷 크기가 로 고정되어 있다 64Kbyte .",
+      "확장 헤더를 통해 네트워크 기능 확장이 용이하다 IPv6 ."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-75a95f2ba408935e",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "JAVA ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 1·2회 78번",
+    "sourceYear": 2020,
+    "choices": [
+      "public",
+      "protected",
+      "package",
+      "private"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-27e2f0770ec2c1f1",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "OSI-7 위해 오류 검출과 복구 흐름 제어를 수행하는 계층은 , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 1·2회 80번",
+    "sourceYear": 2020,
+    "choices": [
+      "전송 계층",
+      "세션 계층",
+      "표현 계층",
+      "응용 계층"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-f9f4ff4736bdc93a",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터 객체를 속성 값의 쌍 형태로 표현하는 형식으로 자바스크립 · 트 를 토대로 개발되어진 형식은 (JavaScript) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 1·2회 81번",
+    "sourceYear": 2020,
+    "choices": [
+      "Python",
+      "XML",
+      "JSON",
+      "WEB SEVER"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-0b040ac0e11102ad",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "IP ICMP 를 보내 네트워크 또는 시스템의 상태를 불능으로 만드는 공격 방법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 1·2회 83번",
+    "sourceYear": 2020,
+    "choices": [
+      "TearDrop",
+      "Smishing",
+      "Qshing",
+      "Smurfing"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-1822d43605a9d691",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CMM(Capability Maturity Model) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 1·2회 84번",
+    "sourceYear": 2020,
+    "choices": [
+      "최적단계",
+      "관리단계",
+      "정의단계",
+      "계획단계"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-bfe9de34ba1fbc46",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UWB(Ultra Wide Band) 블루투스 기술을 사용하여 통신망을 형성하는 무선 네트워크 기술 은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 1·2회 85번",
+    "sourceYear": 2020,
+    "choices": [
+      "PICONET",
+      "SCRUM",
+      "NFC",
+      "WI-SUN"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-c04342e6eb45a3cb",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "COCOMO model 로 일괄 자료 처리나 과학기술 계산용 비즈니스 자료 처리용으로 , 만 라인 이하의 소프트웨어를 개발하는 유형은 5 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 1·2회 86번",
+    "sourceYear": 2020,
+    "choices": [
+      "embeded",
+      "organic",
+      "semi-detached",
+      "semi-embeded"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-7b293453614310b3",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "ID, 중요한 정보를 몰래 빼가는 해킹 공격은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 1·2회 87번",
+    "sourceYear": 2020,
+    "choices": [
+      "Key Logger Attack",
+      "Worm",
+      "Rollback",
+      "Zombie Worm"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-0fa8a4244cacdbdf",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "LOC 50000 , 월 평균 생산성이 라인 개발에 참여할 프로그래머가 인 200 , 10 일 때 개발 소요 기간은 , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 1·2회 88번",
+    "sourceYear": 2020,
+    "choices": [
+      "개월 25",
+      "개월 50",
+      "개월 200",
+      "개월 2000"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-6213b31946990cf8",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Rayleigh-Norden 산정기법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 1·2회 89번",
+    "sourceYear": 2020,
+    "choices": [
+      "모형 Putnam",
+      "델파이 모형",
+      "모형 COCOMO",
+      "기능점수 모형"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-68f8b2e453995f14",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "암호 알고리즘 기법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 1·2회 90번",
+    "sourceYear": 2020,
+    "choices": [
+      "RSA",
+      "ECC",
+      "PKI",
+      "PRM"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-63363174ced3a6f3",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "이르는 개발방법으로 위험관리가 중심인 소프트웨어 생명주기 모형은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 1·2회 91번",
+    "sourceYear": 2020,
+    "choices": [
+      "나선형 모형",
+      "델파이 모형",
+      "폭포수 모형",
+      "기능점수 모형"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a2558f7e8f5c6a66",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "해 두었다가 그 값이 변경되었을 경우 오버플로우 상태로 가정하여 프로그램 실행을 중단하는 기술은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 1·2회 94번",
+    "sourceYear": 2020,
+    "choices": [
+      "모드체크",
+      "리커버리 통제",
+      "시스로그",
+      "스택가드"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-9740801363c78e4b",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 1·2회 95번",
+    "sourceYear": 2020,
+    "choices": [
+      "품질 보증",
+      "시스템 복잡도 증가",
+      "개발 용이성",
+      "변경 용이성"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-75dfd54cf5faeffc",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "요소는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 1·2회 96번",
+    "sourceYear": 2020,
+    "choices": [
+      "기밀성",
+      "부인방지",
+      "가용성",
+      "무결성"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-6fba88b2c09dd4df",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 때 분석하는 도구는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 1·2회 98번",
+    "sourceYear": 2020,
+    "choices": [
+      "trace",
+      "tripwire",
+      "udpdump",
+      "cron"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-fb122325cde20a2e",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Tailoring) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 1·2회 100번",
+    "sourceYear": 2020,
+    "choices": [
+      "납기 비용 /",
+      "기술환경",
+      "구성원 능력",
+      "국제표준 품질기준"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-0e9d728d614af4f5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 3회 6번",
+    "sourceYear": 2020,
+    "choices": [
+      "생명선",
+      "실행",
+      "확장",
+      "메시지"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-2efa16edc88d7254",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UI 원칙은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 3회 9번",
+    "sourceYear": 2020,
+    "choices": [
+      "희소성",
+      "유연성",
+      "직관성",
+      "멀티운용성"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-0fb2fd2bdde995a2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML , 행위 다이어그램에 해당하지 않는 것은 (Behavioral) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 3회 12번",
+    "sourceYear": 2020,
+    "choices": [
+      "유스케이스 다이어그램(Use Case Diagram)",
+      "시퀀스 다이어그램(Sequence Diagram)",
+      "활동 다이어그램(Activity Diagram)",
+      "배치 다이어그램(Deployment Diagram)"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-6b63440bfa045f03",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "묶어서 하나의 공통된 특성을 표현한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 3회 13번",
+    "sourceYear": 2020,
+    "choices": [
+      "트랜잭션",
+      "클래스",
+      "시퀀스",
+      "서브루틴"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-94b5e9134fedcdcc",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML ‘ ’ 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 3회 14번",
+    "sourceYear": 2020,
+    "choices": [
+      "추상화 관계",
+      "의존 관계",
+      "일반화 관계",
+      "그룹 관계"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-88b8a1312f3b8ce4",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2020-3/q015-1.png",
+    "imageUrls": [
+      "/questions/information-processing-engineer/exams/2020-3/q015-2.png",
+      "/questions/information-processing-engineer/exams/2020-3/q015-3.png"
+    ],
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 3회 15번",
+    "sourceYear": 2020,
+    "choices": [
+      "개발자이름",
+      "문제 및 배경",
+      "사례",
+      "샘플코드"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-b88a69ea4a45443b",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "( ) 나 자신의 기반타입 상위클래스 으로 교체할 수 있어야 함을 의미 ( ) 하는 원칙은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 3회 17번",
+    "sourceYear": 2020,
+    "choices": [
+      "ISP(Interface Segregation Principle)",
+      "DIP(Dependency Inversion Principle)",
+      "LSP(Liskov Substitution Principle)",
+      "SRP(Single Responsibility Principle)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-4feb641247e5f81f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Data Flow Diagram) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2024-3/q003-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 3회 3번",
+    "sourceYear": 2024,
+    "choices": [
+      "process, data flow, data store, comment",
+      "process, data flow, data store, terminator",
+      "data flow, data store, terminator, data dictionary",
+      "process, data store, terminator, mini-spec"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-a2b01b12fa224c11",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CASE(Computer-Aided Software Engineering) 으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 3회 19번",
+    "sourceYear": 2020,
+    "choices": [
+      "소프트웨어 개발 과정의 일부 또는 전체를 자동화하기 위한",
+      "도구이다. 표준화된 개발 환경 구축 및 문서 자동화 기능을 제공한다.",
+      "작업 과정 및 데이터 공유를 통해 작업자간 커뮤니케이션을",
+      "증대한다. 년대 이후 소개되었으며 객체지향 시스템에 한해 효과 2000 ,"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-8a5d9708c45240bc",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "위한 국제 표준은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 3회 23번",
+    "sourceYear": 2020,
+    "choices": [
+      "ISO/IEC 2196",
+      "IEEE 19554",
+      "ISO/IEC 12119",
+      "ISO/IEC 14959"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-791f91abe1b1a7ad",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "McCabe cyclomatic 얼마인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 3회 26번",
+    "sourceYear": 2020,
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-c0ec4a0c4c5184d4",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Selection) 정렬하고자 한다 회전 후의 결과로 옳은 것은 . 3 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2020-3/q027-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 3회 27번",
+    "sourceYear": 2020,
+    "choices": [
+      "37, 14, 17, 40, 35 14, 17, 37, 40, 35",
+      "14, 37, 17, 40, 35",
+      "17, 14, 37, 35, 40",
+      "14, 17, 35, 40, 37"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-e61bd96b521e8fb8",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Preorder 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2023-3/q024-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2023년 3회 24번",
+    "sourceYear": 2023,
+    "choices": [
+      "A",
+      "B",
+      "D",
+      "G"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-e119c2ca1d202dc0",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "수행하는 정도를 나타내는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 3회 30번",
+    "sourceYear": 2020,
+    "choices": [
+      "직관성",
+      "사용 용이성",
+      "신뢰성",
+      "이식성"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-ae14bb10c86f52bf",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(degree) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2025-1/q024-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2025년 1회 24번",
+    "sourceYear": 2025,
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-435b13650a35db7e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "R (Determinant) 은 어떤 정규형에 속하는가 R ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 3회 41번",
+    "sourceYear": 2020,
+    "choices": [
+      "제 정규형 1",
+      "제 정규형 2",
+      "보이스 코드 정규형 /",
+      "제 정규형 4"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-d0f5706316d95f0a",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Commit Rollback ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 3회 43번",
+    "sourceYear": 2020,
+    "choices": [
+      "병행성",
+      "보안성",
+      "원자성",
+      "로그"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-7ee43777a0990567",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "R1 SQL 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 3회 44번",
+    "sourceYear": 2020,
+    "choices": [
+      "[R1] 학번 이름 학년 학과 주소 1000 홍길동 1 컴퓨터공학 서울 2000 김철수 1 전기공학 경기 3000 강남길 2 전기공학 경기 4000 오말자 2 컴퓨터공학 경기 5000 장미화 3 전기공학 서울 문 [SQL ] 학년 SELECT DISTINCT FROM R1;",
+      "학년 1 1 2 2 3",
+      "학년 1 2 3",
+      "이름 학년 홍길동 1 김철수 1 강남길 2 오말자 2 장미화 3"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-91777f71a02eaf53",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DCL(Data Control Language) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 3회 45번",
+    "sourceYear": 2020,
+    "choices": [
+      "COMMIT",
+      "ROLLBACK",
+      "GRANT",
+      "SELECT"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-458164c7f5419e19",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Null) 값이 아닌 원자 값을 갖는 성질은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 3회 47번",
+    "sourceYear": 2020,
+    "choices": [
+      "개체 무결성",
+      "참조 무결성",
+      "도메인 무결성",
+      "튜플의 유일성"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-72d1e22ef3fc6d1a",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Transparency) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 3회 49번",
+    "sourceYear": 2020,
+    "choices": [
+      "Location Transparency",
+      "Replication Transparency",
+      "Failure Transparency",
+      "Media Access Transparency"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-726f6395f6f96f45",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "R S Division ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 3회 52번",
+    "sourceYear": 2020,
+    "choices": [
+      "D1 D2 D3 a 1 A b 1 A c 2 A d 2 B R D2 D3 1 A S",
+      "D3 A B",
+      "D2 2 2",
+      "D3 A"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c210726c94be7cfc",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "player player_name, team_id, height . 아래 문에서 문법적 오류가 있는 부분은 SQL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 3회 53번",
+    "sourceYear": 2020,
+    "choices": [
+      "(1) SELECT player_name, height (2) FROM player (3) WHERE team_id = 'korea' (4) AND height BETWEEN 170 OR 180; (1)",
+      "(2)",
+      "(3)",
+      "(4)"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-935ae5f599f5be3c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(log) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 3회 54번",
+    "sourceYear": 2020,
+    "choices": [
+      "즉각 갱신 기법",
+      "대수적 코딩 방법",
+      "타임 스탬프 기법",
+      "폴딩 기법"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-54f2b2a2521318bb",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DML(Data Manipulation Language) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 3회 55번",
+    "sourceYear": 2020,
+    "choices": [
+      "INSERT",
+      "UPDATE",
+      "ALTER",
+      "DELETE"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-4b723bebd47c28ee",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "을 때 어떤 정규화 작업을 한 것인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 3회 56번",
+    "sourceYear": 2020,
+    "choices": [
+      "국가 도시 대한민국 서울 부산 , 미국 워싱턴 뉴욕 , 중국 베이징 ↓ 국가 도시 대한민국 서울 대한민국 부산 미국 워싱턴 미국 뉴욕 중국 베이징 제 정규형 1",
+      "제 정규형 2",
+      "제 정규형 3",
+      "제 정규형 4"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-0011723e19549e02",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL (aggregation function) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 3회 58번",
+    "sourceYear": 2020,
+    "choices": [
+      "AVG",
+      "COUNT",
+      "SUM",
+      "CREATE"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-afcdc81b5b0ec4d7",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "발생하는 곤란한 현상을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 3회 59번",
+    "sourceYear": 2020,
+    "choices": [
+      "normalization",
+      "rollback",
+      "cardinality",
+      "anomaly"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-d5c4c62a00bd20b5",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "옳게 나타낸 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 3회 61번",
+    "sourceYear": 2020,
+    "choices": [
+      "int i = 7, j = 9; int k; if (i > j) k = i - j; else k = i + j; 회 3 int i = 7, j = 9;",
+      "int k; k = (i j) ? (i j) : (i + j); ＞ – int i = 7, j = 9;",
+      "int k; k = (i j) ? (i j) : (i + j); ＜ – int i = 7, j = 9;",
+      "int k; k = (i j) ? (i + j) : (i - j); ＞ int i = 7, j = 9;"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-afbcd5185d42268f",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "bash 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 3회 63번",
+    "sourceYear": 2020,
+    "choices": [
+      "if",
+      "for",
+      "repeat_do",
+      "while"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-acc41f07d4e15389",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "HRN , 때 처리되는 작업 순서로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 3회 66번",
+    "sourceYear": 2020,
+    "choices": [
+      "작업 대기 시간 서비스 실행 시간 ( ) A 5 20 B 40 20 C 15 45 D 20 2 A B C D",
+      "→ → → A C B D",
+      "→ → → D B C A",
+      "→ → → D A B C"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-340141f973ec3d63",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "TCP ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 3회 69번",
+    "sourceYear": 2020,
+    "choices": [
+      "신뢰성이 있는 연결 지향형 전달 서비스이다.",
+      "기본 헤더 크기는 이고 까지 확장 가능하다 100byte 160byte .",
+      "스크림 전송 기능을 제공한다.",
+      "순서 제어 오류 제어 흐름 제어 기능을 제공한다 , , ."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-e104c16922e989ef",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "OSI-7Layer , 오류 제어와 흐름 제어 기능을 수행하는 계층은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 3회 71번",
+    "sourceYear": 2020,
+    "choices": [
+      "데이터링크 계층",
+      "물리 계층",
+      "세션 계층",
+      "응용 계층"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-2f2583e7370e8669",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Worst fit 10K 프로그램 실행을 위해서는 어느 부분에 할당되는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 3회 73번",
+    "sourceYear": 2020,
+    "choices": [
+      "영역 번호 메모리 크기 사용 여부 NO.1 8K FREE NO.2 12K FREE NO.3 10K IN USE NO.4 20K IN USE NO.5 16K FREE NO.2",
+      "NO.3",
+      "NO.4",
+      "NO.5"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-eb119330b7bce767",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "200.1.1.0/24 FLSM 10 Subnet 로 나누고 를 적용했다 이때 서브네팅된 네트워크 , ip subnet-zero . 중 번째 네트워크의 주소는 10 broadcast IP ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 3회 74번",
+    "sourceYear": 2020,
+    "choices": [
+      "200.1.1.159",
+      "201.1.5.175",
+      "202.1.11.254",
+      "203.1.255.245"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-44acfed1c8c6b22a",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "3 추출한 후 합쳐서 출력하는 파이썬 코드이다 에 들어갈 내용은 . ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 3회 75번",
+    "sourceYear": 2020,
+    "choices": [
+      "㉠ 문자 이상 문자열을 입력하시오 String = input(\"7 :\") m = ( ) ㉠ print(m) string[1:3]+string[-3:]",
+      "string[:3]+string[-3:-1]",
+      "string[0:3]+string[-3:]",
+      "string[0:]+string[:-1]"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-dd227060875c8f05",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UNIX ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 3회 79번",
+    "sourceYear": 2020,
+    "choices": [
+      "ls",
+      "cat",
+      "fork",
+      "chmod"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-b489816ec10b6502",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 실제 물리적인 자산 대신 소프트웨어로 가상화함으로써 실제 자산 의 특성에 대한 정확한 정보를 얻을 수 있고 자산 최적화 돌발사고 , , 최소화 생산성 증가 등 설계부터 제조 서비스에 이르는 모든 , , 과정의 효율성을 향상시킬 수 있는 모델은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 3회 81번",
+    "sourceYear": 2020,
+    "choices": [
+      "최적화",
+      "실행 시간",
+      "디지털 트윈",
+      "N-Screen"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-81bcacc39208d668",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Functional Point) 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 3회 84번",
+    "sourceYear": 2020,
+    "choices": [
+      "클래스 인터페이스",
+      "명령어 사용자 질의수 ( )",
+      "데이터 파일",
+      "출력 보고서"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-76efb13d7e575ae2",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "1978 MIT 의해 제안된 공개키 암호화 알고리즘은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 3회 87번",
+    "sourceYear": 2020,
+    "choices": [
+      "DES",
+      "ARIA",
+      "SEED",
+      "RSA"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-9b4e0c8d5c4bf0b8",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "COCOMO ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 3회 88번",
+    "sourceYear": 2020,
+    "choices": [
+      "Organic",
+      "Semi-detached",
+      "Embedded",
+      "Sequential"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-fb7e594dd97687c1",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "내재되어 있는 변수 사이의 상호관계를 규명하여 일정한 패턴을 찾아내는 기법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 3회 89번",
+    "sourceYear": 2020,
+    "choices": [
+      "Data Mining",
+      "Wm-Bus",
+      "Digital Twin",
+      "Zigbee"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-052b5601ab0726ec",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 네트워크 생성에 최적화되어 차세대 이동통신 홈네트워킹 공공 , , 안전 등의 특수목적에 사용되는 새로운 방식의 네트워크 기술을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 3회 90번",
+    "sourceYear": 2020,
+    "choices": [
+      "Software Defined Perimeter",
+      "Virtual Private Network",
+      "Local Area Network",
+      "Mesh Network"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-388f84065ce9e2b9",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DDoS ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 3회 91번",
+    "sourceYear": 2020,
+    "choices": [
+      "Secure shell",
+      "Tribe Flood Network",
+      "Nimda",
+      "Deadlock"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-be349c47ce5060d6",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CPM ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 3회 92번",
+    "sourceYear": 2020,
+    "choices": [
+      "일 10",
+      "일 12",
+      "일 14",
+      "일 16"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-4c5032d7474f2f13",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "RIP(Routing Information Protocol) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 3회 93번",
+    "sourceYear": 2020,
+    "choices": [
+      "거리 벡터 라우팅 프로토콜이라고도 한다.",
+      "소규모 네트워크 환경에 적합하다.",
+      "최대 홉 카운트를 홉 이하로 한정하고 있다 115 .",
+      "최단경로탐색에는 알고리즘을 사용한다 Bellman-Ford ."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-7535d7fb44d524ef",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 순차적 모델이라고도 하며 타당 , 성 검토 계획 요구사항 분석 , , , 구현 테스트 유지보수의 단계를 통해 소프트웨어를 개발하는 , , 모형은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 3회 94번",
+    "sourceYear": 2020,
+    "choices": [
+      "폭포수 모형",
+      "애자일 모형",
+      "컴포넌트 기반 방법론",
+      "모형 6GT"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-47221d5b404dfec5",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "4 로 나열된 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 3회 95번",
+    "sourceYear": 2020,
+    "choices": [
+      "계획 수립 Ⓐ 고객 평가 Ⓑ 개발 및 검증 Ⓒ 위험 분석 Ⓓ 순으로 반복 - - -",
+      "Ⓐ Ⓑ Ⓓ Ⓒ 순으로 반복 - - -",
+      "Ⓐ Ⓓ Ⓒ Ⓑ 순으로 반복 - - -",
+      "Ⓐ Ⓑ Ⓒ Ⓓ 순으로 반복 - - -"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-7aac9cdffb051f3e",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", ( ) 맞추는 방법으로 소프트웨어를 완성시키는 재사용 방법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 3회 96번",
+    "sourceYear": 2020,
+    "choices": [
+      "합성 중심",
+      "생성 중심",
+      "분리 중심",
+      "구조 중심"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a3720f4d5901e707",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "JAVA 존재하는가 단 는 암호화 키를 저장하는 변수이다 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 3회 97번",
+    "sourceYear": 2020,
+    "choices": [
+      "( , key .) import javax.crypto,KeyGenerator; import javax.crypto.spec.ScretKeySpec; import javax.crypto.Cipher; 생략 ...... public String encripString(String usr) { String key = \"22df3023sf~2;asn!@#/>as\"; if (key != null) byte[] bToEncrypt = usr.getBytes(\"UTF-8\"); 생략 ...... 무결성 검사 없는 코드 다운로드",
+      "중요 자원에 대한 잘못된 권한 설정",
+      "하드코드된 암호화 키 사용",
+      "적절한 인증없는 중요 기능 허용"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-d403ba185ebaf1eb",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 프로세스를 평가 및 개선하는 국제 표준은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 3회 98번",
+    "sourceYear": 2020,
+    "choices": [
+      "SCRUM",
+      "ISO/IEC 12509",
+      "SPICE",
+      "CASE"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-3b5931688059d21a",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", SW 사례를 에 통합한 소프트 SDLC(Software Development Life Cycle) 웨어 개발 보안 생명주기 방법론은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 3회 99번",
+    "sourceYear": 2020,
+    "choices": [
+      "CLASP",
+      "CWE",
+      "PIMS",
+      "Seven Touchpoints"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-633b6f68e532cae2",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "LAN ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 3회 100번",
+    "sourceYear": 2020,
+    "choices": [
+      "버스형",
+      "성형",
+      "링형",
+      "그물형"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-5556dad41b1eef23",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "XP(eXtreme Programming) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2024-2/q002-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 2회 2번",
+    "sourceYear": 2024,
+    "choices": [
+      "릴리즈 기간을 짧게 반복하여 고객의 요구 변화에 빠르게 대응",
+      "한다. 코드들은 하나의 작업이 마무리될 때마다 지속적으로 통합한",
+      "다. 테스트가 지속적으로 진행될 수 있도록 테스트 자동화 도구를",
+      "사용한다. 개발 책임자가 모든 책임을 가지므로 팀원들은 책임 없이 자유"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-6b850e73a1c6c936",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Rumbaugh) 는 다이어그램은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 4회 2번",
+    "sourceYear": 2020,
+    "choices": [
+      "객체 다이어그램(Object Diagram)",
+      "패키지 다이어그램(Package Diagram)",
+      "상태 다이어그램(State Diagram)",
+      "자료 흐름도(Data Flow Diagram)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-1b4109569111971d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CASE(Computer Aided Software Engineering) 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 4회 3번",
+    "sourceYear": 2020,
+    "choices": [
+      "라이프 사이클 전 단계의 연결 S/W",
+      "그래픽 지원",
+      "다양한 소프트웨어 개발 모형 지원",
+      "언어 번역"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-35f1632ea0de9e94",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Encapsulation) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2020-4/q004-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 4회 4번",
+    "sourceYear": 2020,
+    "choices": [
+      "인터페이스가 단순화 된다.",
+      "소프트웨어 재사용성이 높아진다.",
+      "변경 발생 시 오류의 파급효과가 적다.",
+      "상위 클래스의 모든 속성과 연산을 하위 클래스가 물려받는"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-427aa8b77a5cefdd",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", , 만든 코드는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 4회 7번",
+    "sourceYear": 2020,
+    "choices": [
+      "순차 코드",
+      "진 코드 10",
+      "표의 숫자 코드",
+      "블록 코드"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-9e0185670793ac48",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "٠ 단점에 대한 설명으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 4회 8번",
+    "sourceYear": 2020,
+    "choices": [
+      "소프트웨어 구조 파악이 용이하다.",
+      "객체지향 설계 및 구현의 생산성을 높이는데 적합하다.",
+      "재사용을 위한 개발 시간이 단축된다.",
+      "절차형 언어와 함께 이용될 때 효율이 극대화된다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-e9fbe301bdf193ab",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DFD(data flow diagram) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 4회 9번",
+    "sourceYear": 2020,
+    "choices": [
+      "자료 흐름 그래프 또는 버블 차트라고도 한다 (bubble) .",
+      "구조적 분석 기법에 이용된다.",
+      "시간 흐름을 명확하게 표현할 수 있다.",
+      "의 요소는 화살표 원 사각형 직선 단선 이중선 으로 표 DFD , , , ( / )"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-1b2da8d4b4e755c7",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "럼바우 분석 기법에 포함되지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 4회 10번",
+    "sourceYear": 2020,
+    "choices": [
+      "객체 모델링",
+      "기능 모델링",
+      "동적 모델링",
+      "블랙박스 분석 모델링"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-ecef6e006a98721f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(User Interface 이 가져야 할 기능이 아닌 것은 Development System) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 4회 14번",
+    "sourceYear": 2020,
+    "choices": [
+      "사용자 입력의 검증",
+      "에러 처리와 에러 메시지 처리",
+      "도움과 프롬프트 제공 (prompt)",
+      "소스 코드 분석 및 오류 복구"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-45b5a425063d9db0",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "무엇이라고 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 4회 18번",
+    "sourceYear": 2020,
+    "choices": [
+      "웨어러블",
+      "하이웨어",
+      "미들웨어",
+      "응용 소프트웨어"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-4d6dfc2d1bf0f3d5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "GoF(Gangs of Four) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2020년 4회 19번",
+    "sourceYear": 2020,
+    "choices": [
+      "생성 패턴",
+      "구조 패턴",
+      "행위 패턴",
+      "추상 패턴"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f9539136594fbcb0",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "EAI(Enterprise Application Integration) Hybrid 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 4회 22번",
+    "sourceYear": 2020,
+    "choices": [
+      "와 의 혼합방식이다 Hub & Spoke Message Bus .",
+      "필요한 경우 한 가지 방식으로 구현이 가능하다 EAI .",
+      "데이터 병목현상을 최소화할 수 있다.",
+      "중간에 미들웨어를 두지 않고 각 애플리케이션을 point to"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-0f84bb3cbe9986f9",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Postfix ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 4회 24번",
+    "sourceYear": 2020,
+    "choices": [
+      "3 4 * 5 6 * ＋ 35",
+      "42",
+      "77",
+      "360"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-9fe232aeceb0716c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Validation) 앞에서 행해지며 오류와 사용상의 문제점을 사용자와 개발자가 , 함께 확인하면서 검사하는 기법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 4회 26번",
+    "sourceYear": 2020,
+    "choices": [
+      "디버깅 검사",
+      "형상 검사",
+      "자료구조 검사",
+      "알파 검사"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b29f1b3aaa1b86f3",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Insertion Sort) 오름차순 정렬할 경우 회전 후의 결과는 1 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 4회 27번",
+    "sourceYear": 2020,
+    "choices": [
+      "초기 자료 : 8, 3, 4, 9, 7 3, 4, 8, 7, 9",
+      "3, 4, 9, 7, 8",
+      "7, 8, 3, 4, 9",
+      "3, 8, 4, 9, 7"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f878f5509864d7d5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "INORDER ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 4회 32번",
+    "sourceYear": 2020,
+    "choices": [
+      "D B A E C F",
+      "A B D C E F",
+      "D B E C F A",
+      "A B C D E F"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-8f27d5aabcffb2a3",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 각 숫자를 더하거나 한 값을 홈 주소로 사용하는 방식은 XOR ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2020년 4회 38번",
+    "sourceYear": 2020,
+    "choices": [
+      "제산법",
+      "폴딩법",
+      "기수변환법",
+      "숫자분석법"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-8697a717c0610bde",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", , , 프로세스와 테이블 간에 매트릭스를 만들어서 트랜잭션을 분석하 는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 4회 42번",
+    "sourceYear": 2020,
+    "choices": [
+      "분석 CASE",
+      "일치 분석",
+      "분석 CRUD",
+      "연관성 분석"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-20e4d63cb2a50393",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", , 단순화를 위해 중복 통합 분리 등을 수행하는 데이터 모델링 , , 기법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 4회 43번",
+    "sourceYear": 2020,
+    "choices": [
+      "인덱스정규화",
+      "반정규화",
+      "집단화",
+      "머징"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-44bec359f78e0264",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 한다 이에 적합한 명령어는 . SQL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 4회 44번",
+    "sourceYear": 2020,
+    "choices": [
+      "INSERT",
+      "ALTER",
+      "DROP",
+      "MODIFY"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-050886a3d0559eed",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "- E-R 연결이 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 4회 46번",
+    "sourceYear": 2020,
+    "choices": [
+      "사각형 개체 타입 -",
+      "삼각형 속성 -",
+      "선 개체 타입과 속성을 연결",
+      "– 마름모 관계 타입 -"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-de25160093492b0e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "은 만족시키지 못하는 키는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 4회 48번",
+    "sourceYear": 2020,
+    "choices": [
+      "후보키",
+      "기본키",
+      "슈퍼키",
+      "외래키"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-8c7aa65ce8cccbf8",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DBA PARK [STUDENT] 수 있는 시스템 권한을 부여하고자 하는 문을 작성하고자 SQL 한다 다음에 주어진 문의 빈칸을 알맞게 채운 것은 . SQL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 4회 49번",
+    "sourceYear": 2020,
+    "choices": [
+      "SQL GRANT ＞ ㉠ ㉡ STUDENT TO PARK; INSERT, INTO",
+      "㉠ ㉡ ALTER, TO",
+      "㉠ ㉡ UPDATE, ON",
+      "㉠ ㉡ REPLACE, IN"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-869ff7681b2ad461",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "X1 department 명령은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 4회 53번",
+    "sourceYear": 2020,
+    "choices": [
+      "delete select on department to X1;",
+      "remove select on department from X1;",
+      "revoke select on department from X1;",
+      "grant select on department from X1;"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-c5b2ff53513fab5f",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "3 (BCNF) 작업은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 4회 56번",
+    "sourceYear": 2020,
+    "choices": [
+      "원자 값이 아닌 도메인을 분해",
+      "부분 함수 종속 제거",
+      "이행 함수 종속 제거",
+      "결정자가 후보키가 아닌 함수 종속 제거"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-528bca8a194d553a",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "A1, A2, A3 3 A1 개 값 의 도메인은 개 값 의 도메인은 개 값을 갖는다 3 , A2 2 , A3 4 . 이 릴레이션에 존재할 수 있는 가능한 튜플 의 최대 수는 (Tuple) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 4회 57번",
+    "sourceYear": 2020,
+    "choices": [
+      "24",
+      "12",
+      "8",
+      "9"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-736002616ad9b258",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 4회 58번",
+    "sourceYear": 2020,
+    "choices": [
+      "저장 레코드 양식 설계",
+      "레코드 집중의 분석 및 설계",
+      "접근 경로 설계",
+      "목표 에 맞는 스키마 설계 DBMS"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-9c9c0e2b5aa268dc",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "4 , 2 대응 릴레이션 인스턴스가 개 튜플을 갖는다면 그 릴레이션의 7 차수 는 (degree) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 4회 59번",
+    "sourceYear": 2020,
+    "choices": [
+      "1",
+      "2",
+      "4",
+      "7"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-5cffacdd08e9557e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터웨어하우스의 기본적인 OLAP(on-line analytical processing) 연산이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2020년 4회 60번",
+    "sourceYear": 2020,
+    "choices": [
+      "translate",
+      "roll-up",
+      "dicing",
+      "drill-down"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-e1781b4862261d19",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UNIX SHELL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 4회 61번",
+    "sourceYear": 2020,
+    "choices": [
+      "configenv",
+      "printenv",
+      "env",
+      "setenv"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-245e5375ac810170",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Java ‘long’ ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 4회 62번",
+    "sourceYear": 2020,
+    "choices": [
+      "1byte",
+      "2byte",
+      "4byte",
+      "8byte"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-031b6cdb223b43fe",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "OSI 7 신뢰성 있고 명확한 데이터를 전달하는 계층은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 4회 65번",
+    "sourceYear": 2020,
+    "choices": [
+      "전송 계층",
+      "응용 계층",
+      "세션 계층",
+      "표현 계층"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-cf8a472a63282a4b",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", SJF(Shortest 정책을 사용할 경우 가장 먼저 처리되는 작업은 Job First) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 4회 70번",
+    "sourceYear": 2020,
+    "choices": [
+      "프로세스 번호 실행시간 P1 6 P2 8 P3 4 P4 3 P1",
+      "P2",
+      "P3",
+      "P4"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-efccd7dc7f5d80c4",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "4 , 모두 비어 있다고 가정한다 다음의 순서로 페이지 참조가 발생할 . 때 페이지 교체 알고리즘을 사용할 경우 페이지 결함의 , FIFO 발생 횟수는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 4회 71번",
+    "sourceYear": 2020,
+    "choices": [
+      "페이지 참조 순서 : 1, 2, 3, 1, 2, 4, 5, 1 회 6",
+      "회 7",
+      "회 8",
+      "회 9"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-e38c70daf9cd0d30",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "TCP , 개를 전송하고 수신자의 응답을 기다리는 방식으로 한 번에 프레 1 임 개만 전송할 수 있는 기법은 1 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 4회 72번",
+    "sourceYear": 2020,
+    "choices": [
+      "Slow Start",
+      "Sliding Window",
+      "Stop and Wait",
+      "Congestion Avoidance"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-18db4c4c5c42913f",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Coupling) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 4회 73번",
+    "sourceYear": 2020,
+    "choices": [
+      "데이터 결합도 는 두 모듈이 매개변수로 자료 (Data Coupling)",
+      "를 전달할 때 자료구조 형태로 전달되어 이용될 때 데이터가 , 결합되어 있다고 한다. 내용 결합도 는 하나의 모듈이 직접적으로 (Content Coupling)",
+      "다른 모듈의 내용을 참조할 때 두 모듈은 내용적으로 결합되 어 있다고 한다. 공통 결합도 는 두 모듈이 동일한 전역 (Common Coupling)",
+      "데이터를 접근한다면 공통결합 되어 있다고 한다. 결합도 는 두 모듈간의 상호작용 또는 의존도 정도 (Coupling) ,"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-93519c6cffffeccc",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "않은 기능 요소로 구성되는 경우이며 서로 다른 상위 모듈에 , 의해 호출되어 처리상의 연관성이 없는 서로 다른 기능을 수행하는 경우의 응집도는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 4회 74번",
+    "sourceYear": 2020,
+    "choices": [
+      "Functional Cohesion",
+      "Sequential Cohesion",
+      "Logical Cohesion",
+      "Coincidental Cohesion"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-65ed4cdafd146925",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UDP ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 4회 76번",
+    "sourceYear": 2020,
+    "choices": [
+      "데이터 전송 후 를 받는다 , ACK .",
+      "송신 중에 링크를 유지 관리하므로 신뢰성이 높다.",
+      "흐름제어나 순서제어가 없어 전송속도가 빠르다.",
+      "제어를 위한 오버헤드가 크다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-2579d07e7958db63",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(2, 에 대한 물리 주소는 176) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 4회 77번",
+    "sourceYear": 2020,
+    "choices": [
+      "세그먼트번호 시작주소 길이 바이트 ( ) 0 670 248 1 1752 422 2 222 198 3 996 604 398",
+      "400",
+      "1928",
+      "1930"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-0ce34da560147265",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "TCP/IP 토콜은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2020년 4회 78번",
+    "sourceYear": 2020,
+    "choices": [
+      "TCP",
+      "ARP",
+      "FTP",
+      "IP"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-eecff98b90694b6d",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "회 4 을 사용하는 효과를 가지는 보안 솔루션은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 4회 81번",
+    "sourceYear": 2020,
+    "choices": [
+      "ZIGBEE",
+      "NDD",
+      "IDS",
+      "VPN"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b538cf1bf2dde5b5",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SoftTech 블록 다이어그램을 채택한 자동화 도구는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 4회 87번",
+    "sourceYear": 2020,
+    "choices": [
+      "SREM",
+      "PSL/PSA",
+      "HIPO",
+      "SADT"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-a818235ac34e9717",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(eXtreme Programming) 5 하지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 4회 88번",
+    "sourceYear": 2020,
+    "choices": [
+      "의사소통",
+      "단순성",
+      "피드백",
+      "고객 배제"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-8fd3f4c63e589601",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": ". ( ) 내용으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 4회 89번",
+    "sourceYear": 2020,
+    "choices": [
+      "정책 ㄱ ( ) DAC RBAC 권한 부여 시스템 데이터 소유자 중앙 관리자 접근 결정 보안등급 (Label) 신분 (Identity) 역할 (Role) 정책 변경 고정적 변경 어려움 ( ) 변경 용이 변경 용이 장점 안정적 중앙 집중적 구현 용이 유연함 관리 용이 NAC",
+      "MAC",
+      "SDAC",
+      "AAC"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-4427a50f336c7139",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(estimation models) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 4회 91번",
+    "sourceYear": 2020,
+    "choices": [
+      "COCOMO",
+      "Putnam",
+      "Function-Point",
+      "PERT"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b678cb259c461761",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "게 유도함으로써 정보유출 등의 공격을 유발할 수 있는 취약점은 , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 4회 94번",
+    "sourceYear": 2020,
+    "choices": [
+      "Ransomware",
+      "Pharming",
+      "Phishing",
+      "XSS"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-25260de450e9c501",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CBD(Component Based Development) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 4회 95번",
+    "sourceYear": 2020,
+    "choices": [
+      "개발 기간 단축으로 인한 생산성 향상",
+      "새로운 기능 추가가 쉬운 확장성",
+      "소프트웨어 재사용이 가능",
+      "년대까지 가장 많이 적용되었던 소프트웨어 개발 방법 1960"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-18ad8de71422c777",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(SDDC : Software Defined Data 에 대한 설명으로 틀린 것은 Center) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 4회 96번",
+    "sourceYear": 2020,
+    "choices": [
+      "컴퓨팅 네트워킹 스토리지 관리 등을 모두 소프트웨어로 , , ,",
+      "정의한다. 인력 개입 없이 소프트웨어 조작만으로 자동 제어 관리한다.",
+      "데이터센터 내 모든 자원을 가상화하여 서비스한다.",
+      "특정 하드웨어에 종속되어 특화된 업무를 서비스하기에 적합"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-aa537823ed44fb43",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "보안상 결함으로 인하여 발생 가능한 각종 해킹으로부터 시스템을 보호하기 위하여 사용되는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 4회 97번",
+    "sourceYear": 2020,
+    "choices": [
+      "회 4 GPIB",
+      "CentOS",
+      "XSS",
+      "Secure OS"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-7c4491baad9623c3",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "NS(Nassi-Schneiderman) chart ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 4회 98번",
+    "sourceYear": 2020,
+    "choices": [
+      "논리의 기술에 중점을 둔 도형식 표현 방법이다.",
+      "연속 선택 및 다중 선택 반복 등의 제어논리 구조로 표현한다 , , .",
+      "주로 화살표를 사용하여 논리적인 제어구조로 흐름을 표현한",
+      "다. 조건이 복합되어 있는 곳의 처리를 시각적으로 명확히 식별하"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-b8324160213a1617",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "국제 표준은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2020년 4회 100번",
+    "sourceYear": 2020,
+    "choices": [
+      "ISO 14001",
+      "IEEE 802.5",
+      "IEEE 488",
+      "SPICE"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-bf3b8175593028de",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 통신환경 등을 연결하여 응용 프로그램과 운영환경 간에 원만한 통신이 이루어질 수 있게 서비스를 제공하는 소프트웨어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 1회 1번",
+    "sourceYear": 2021,
+    "choices": [
+      "미들웨어",
+      "하드웨어",
+      "오픈허브웨어",
+      "그레이웨어"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-b58a5176bcadb8e2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML(Unified Modeling Language) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2021-1/q003-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 1회 3번",
+    "sourceYear": 2021,
+    "choices": [
+      "기능적 모델은 사용자 측면에서 본 시스템 기능이며 에서 , UML",
+      "는 을 사용한다 Use case Diagram . 정적 모델은 객체 속성 연관관계 오퍼레이션의 시스템의 구 , , ,",
+      "조를 나타내며 에서는 을 사용한다 , UML Class Diagram . 동적 모델은 시스템의 내부 동작을 말하며 에서는 , UML",
+      "을 사 Sequence Diagram, State Diagram, Activity Diagram 용한다. 은 객체들 사이의 메시지 교환을 나타내며 State Diagram ,"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-4de6567176f69316",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Rumbaugh) , 템에서 요구되는 객체를 찾아내어 속성과 연산 식별 및 객체들 간의 관계를 규정하여 다이어그램을 표시하는 모델링은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 1회 5번",
+    "sourceYear": 2021,
+    "choices": [
+      "Object",
+      "Dynamic",
+      "Function",
+      "Static"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-f84d2c3e94a84228",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML 클래스와 클래스 클래스의 속성 사이의 관계를 나타내는 것은 , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 1회 8번",
+    "sourceYear": 2021,
+    "choices": [
+      "Activity Diagram",
+      "Model Diagram",
+      "State Diagram",
+      "Class Diagram"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-ee1f3008b2be4ac3",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Coad-Yourdon ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 1회 9번",
+    "sourceYear": 2021,
+    "choices": [
+      "다이어그램을 사용하여 객체의 행위를 데이터 모델링하 E-R",
+      "는데 초점을 둔 방법이다. 객체 동적 기능 모델로 나누어 수행하는 방법이다 , , .",
+      "미시적 개발 프로세스와 거시적 개발 프로세스를 모두 사용하",
+      "는 방법이다. 를 강조하여 사용하는 방법이다 Use-Case ."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-d5ec9ab67e7ebda0",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "만들고 필요한 인터페이스만을 밖으로 드러내는 과정은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 1회 10번",
+    "sourceYear": 2021,
+    "choices": [
+      "메시지(Message)",
+      "캡슐화(Encapsulation)",
+      "다형성(Polymorphism)",
+      "상속(Inheritance)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-e785c9037e51e05d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": ". F fan-in 의 수는 얼마인가 fan-out ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 1회 12번",
+    "sourceYear": 2021,
+    "choices": [
+      "fan-in : 2, fan-out : 3",
+      "fan-in : 3, fan-out : 2",
+      "fan-in : 1, fan-out : 2",
+      "fan-in : 2, fan-out : 1"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-e5ba24587e4fc7db",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "( ) , 와 멤버 전체와 부분 등으로 나누어서 분석해 내는 기법은 , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 1회 13번",
+    "sourceYear": 2021,
+    "choices": [
+      "객체지향 분석",
+      "구조적 분석",
+      "기능적 분석",
+      "실시간 분석"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-7b1d27f1db0954aa",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "저처럼 호출하는 방식의 미들웨어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 1회 16번",
+    "sourceYear": 2021,
+    "choices": [
+      "WAS(Web Application Server)",
+      "MOM(Message Oriented Middleware)",
+      "RPC(Remote Procedure Call)",
+      "ORB(Object Request Broker)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-cd35148eb267e9f2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 통신 요청 시 클라이언트와 연결하는 내 외부 송 수신 연계기술은 · · ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 1회 18번",
+    "sourceYear": 2021,
+    "choices": [
+      "링크 기술 DB",
+      "소켓 기술",
+      "스크럼 기술",
+      "프로토타입 기술"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-308fc7acf3ebdbe9",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "main user function 시작하여 기능을 하위 기능들로 분할해 가면서 설계하는 방식은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 1회 19번",
+    "sourceYear": 2021,
+    "choices": [
+      "객체 지향 설계",
+      "데이터 흐름 설계",
+      "상향식 설계",
+      "하향식 설계"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-898c3e8d883c2930",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CASE(Computer Aided Software Engineering) 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 1회 20번",
+    "sourceYear": 2021,
+    "choices": [
+      "소프트웨어 모듈의 재사용성이 향상된다.",
+      "자동화된 기법을 통해 소프트웨어 품질이 향상된다.",
+      "소프트웨어 사용자들에게 사용 방법을 신속히 숙지시키기 위",
+      "해 사용된다. 소프트웨어 유지보수를 간편하게 수행할 수 있다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-658e48ad462d7f3d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(prefix) (postfix) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 1회 23번",
+    "sourceYear": 2021,
+    "choices": [
+      "- / * A + B C D E A B C + D / * E -",
+      "A B * C D / + E -",
+      "A B * C + D / E -",
+      "A B C + * D / E -"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-415ee33983711834",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "인터페이스 요소는 (UI) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 1회 25번",
+    "sourceYear": 2021,
+    "choices": [
+      "토글 버튼",
+      "텍스트 박스",
+      "라디오 버튼",
+      "체크 박스"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6e691ffd27b55260",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(field testing) 환경에 소프트웨어를 설치하여 검사를 수행하는 인수검사 기법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 1회 29번",
+    "sourceYear": 2021,
+    "choices": [
+      "베타 검사",
+      "알파 검사",
+      "형상 검사",
+      "복구 검사"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-8ef984401a472ef1",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Configuration management) 로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 1회 30번",
+    "sourceYear": 2021,
+    "choices": [
+      "소프트웨어에서 일어나는 수정이나 변경을 알아내고 제어하는",
+      "것을 의미한다. 소프트웨어 개발의 전체 비용을 줄이고 개발 과정의 여러 방해 ,",
+      "요인이 최소화되도록 보증하는 것을 목적으로 한다. 형상관리를 위하여 구성된 팀을 이 “chief programmer team”",
+      "라고 한다. 형상관리의 기능 중 하나는 버전 제어 기술이다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-76abd9d813eb7bfd",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Node) (Branch) , 정점 사이에 사이클 이 형성되어 있지 않으며 자료 사이의 (Cycle) , 관계성이 계층 형식으로 나타나는 비선형 구조는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 1회 31번",
+    "sourceYear": 2021,
+    "choices": [
+      "tree",
+      "network",
+      "stack",
+      "distributed"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-1673bb9fad4902e9",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "제공되는 시험용 모듈은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 1회 34번",
+    "sourceYear": 2021,
+    "choices": [
+      "Stub",
+      "Driver",
+      "Procedure",
+      "Function"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-51eba282978e946b",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Hashing Function) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 1회 35번",
+    "sourceYear": 2021,
+    "choices": [
+      "제곱법(mid-square)",
+      "숫자분석법(digit analysis)",
+      "개방주소법(open addressing)",
+      "제산법(division)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6d4c82ca57ada34b",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "“Selection Sort” 정렬한 경우 의 결과는 PASS 3 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 1회 38번",
+    "sourceYear": 2021,
+    "choices": [
+      "초기상태: 8, 3, 4, 9, 7 3, 4, 7, 9, 8",
+      "3, 4, 8, 9, 7",
+      "3, 8, 4, 9, 7",
+      "3, 4, 7, 8, 9"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-956ba8e592b567e6",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DBMS 과 클러스터에 연관되어 독립적인 저장 공간을 보유하며 데이터베 , 이스에 저장된 자료를 더욱 빠르게 조회하기 위하여 사용되는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 1회 42번",
+    "sourceYear": 2021,
+    "choices": [
+      "인덱스(Index)",
+      "트랙잭션(Transaction)",
+      "역정규화(Denormalization)",
+      "트리거(Trigger)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-ee1ce08620a0ddf5",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 분석 및 설계 접근 경로 설계와 관계되는 것은 , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 1회 43번",
+    "sourceYear": 2021,
+    "choices": [
+      "논리적 설계",
+      "요구 조건 분석",
+      "개념적 설계",
+      "물리적 설계"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-6cb92b83403932f2",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(anomaly) 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 1회 45번",
+    "sourceYear": 2021,
+    "choices": [
+      "삭제 이상이란 릴레이션에서 한 튜플을 삭제할 때 의도와는",
+      "상관없는 값들로 함께 삭제되는 연쇄 삭제 현상이다. 삽입 이상이란 릴레이션에서 데이터를 삽입할 때 의도와는 상",
+      "관없이 원하지 않는 값들로 함께 삽입되는 현상이다. 갱신 이상이란 릴레이션에서 튜플에 있는 속성값을 갱신할 때",
+      "일부 튜플의 정보만 갱신되어 정보에 모순이 생기는 현상이다. 종속 이상이란 하나의 릴레이션에 하나 이상의 함수적 종속성"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-580eb19a30292d84",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 의 기호는 그리스 문자 시그마 를 사용하는 관계대수 연산은 ( ) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 1회 49번",
+    "sourceYear": 2021,
+    "choices": [
+      "σ Select",
+      "Project",
+      "Join",
+      "Division"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-be2e24eebea10e65",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(relation) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 1회 50번",
+    "sourceYear": 2021,
+    "choices": [
+      "릴레이션의 각 행을 스키마 라 하며 예로 도서 릴레 (schema) , ① 이션을 구성하는 스키마에는 도서번호 도서명 저자 가격 등 , , , 이 있다. 릴레이션의 각 열을 튜플 이라 하며 하나의 튜플은 각 (tuple) , ② 속성에서 정의된 값을 이용하여 구성된다. 도메인 은 하나의 속성이 가질 수 있는 같은 타입의 (domain)",
+      "모든 값의 집합으로 각 속성의 도메인은 원자값을 갖는다. 속성 은 한 개의 릴레이션의 논리적인 구조를 정의한 (attribute)",
+      "것으로 릴레이션의 이름과 릴레이션에 포함된 속성들의 집합 을 의미한다. 도메인 은 하나의 속성이 가질 수 있는 같은 타입의 (domain)",
+      "모든 값의 집합으로 각 속성의 도메인은 원자값을 갖는다. 속성 은 한 개의 릴레이션의 논리적인 구조를 정의한 (attribute)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-69fd4eadbf895905",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Schema) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 1회 51번",
+    "sourceYear": 2021,
+    "choices": [
+      "데이터베이스 전체를 정의한 것으로 데이터개체 관계 , , 제약조건 접근권한 무결성 규칙 등을 명세한 것 , , 개념 스키마",
+      "내부 스키마",
+      "외부 스키마",
+      "내용 스키마"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-1084be6ef5339445",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "3NF BCNF ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 1회 52번",
+    "sourceYear": 2021,
+    "choices": [
+      "이행적 함수 종속 제거",
+      "부분적 함수 종속 제거",
+      "다치 종속 제거",
+      "결정자이면서 후보키가 아닌 것 제거"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-40899f552d5a096f",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "‘ ’ ‘ ’ ( ) 한다 이에 적합한 명령어는 . SQL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 1회 54번",
+    "sourceYear": 2021,
+    "choices": [
+      "DELETE",
+      "RESTORE",
+      "ALTER",
+      "ACCESS"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-e1a34cdeb95e58b4",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL (Shema), (Domain), (Table), 인덱스 를 정의하거나 변경 또는 삭제할 때 사용하는 (View), (Index) 언어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 1회 55번",
+    "sourceYear": 2021,
+    "choices": [
+      "DML(Data Manipulation Language)",
+      "DDL(Data Definition Language)",
+      "DCL(Data Control Language)",
+      "IDL(Interactive Data Language)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-52e76e4ae2cc63cb",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "R1 이를 참조하고 있는 릴레이션 의 기본키도 변경해야 하는데 이를 R2 무엇이라 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 1회 56번",
+    "sourceYear": 2021,
+    "choices": [
+      "정보 무결성",
+      "고유 무결성",
+      "널 제약성",
+      "참조 무결성"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-94f30562663c962f",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "손상되기 이전에 정상적인 상태로 복구시키는 작업은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 1회 57번",
+    "sourceYear": 2021,
+    "choices": [
+      "Recovery",
+      "Commit",
+      "Abort",
+      "Restart"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-10ae64d19c2b9af8",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "15K, 23K, 22K, 21K 배치 전력으로 을 사용하여 의 프로그램을 적재할 “First Fit” 17K 경우 내부 단편화의 크기는 얼마인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 1회 63번",
+    "sourceYear": 2021,
+    "choices": [
+      "5K",
+      "6K",
+      "7K",
+      "8K"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-0a7f057766fd09eb",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "WAS(Web Application Server) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 1회 67번",
+    "sourceYear": 2021,
+    "choices": [
+      "JEUS",
+      "JVM",
+      "Tomcat",
+      "WebSphere"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-c2bd5ad403bcb9b7",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "OSI 7 동기화 오류제어 흐름제어 등의 전송에러를 제어하는 계층은 , , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 1회 69번",
+    "sourceYear": 2021,
+    "choices": [
+      "데이터 링크 계층",
+      "물리 계층",
+      "응용 계층",
+      "표현 계층"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-e4987817c1e20c8e",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "IEEE 802.3 LAN (MAC) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 1회 70번",
+    "sourceYear": 2021,
+    "choices": [
+      "CSMA/CD",
+      "Token Bus",
+      "Token Ring",
+      "Slotted Ring"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-31898ca1459d4a04",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "TCP/IP TCP ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 1회 72번",
+    "sourceYear": 2021,
+    "choices": [
+      "데이터 링크 계층",
+      "네트워크 계층",
+      "트랜스포트 계층",
+      "세션 계층"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-75fe3d3430b40bed",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "참조하는 페이지들의 집합을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 1회 79번",
+    "sourceYear": 2021,
+    "choices": [
+      "Locality",
+      "Deadlock",
+      "Thrashing",
+      "Working Set"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-a202b0d3c95a25b0",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CBD(Component Based Development) 에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 1회 82번",
+    "sourceYear": 2021,
+    "choices": [
+      "생산성과 품질을 높이고 유지보수 비용을 최소화할 수 있다 , .",
+      "컴포넌트 제작 기법을 통해 재사용성을 향상시킨다.",
+      "모듈의 분할과 정복에 의한 하향식 설계방식이다.",
+      "독립적인 컴포넌트 단위의 관리로 복잡성을 최소화할 수 있다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6277228273123a92",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "LOC 36,000 , 프로그래머가 명 프로그래머들의 평균 생산성이 월간 라인일 6 , 300 때 개발에 소요되는 기간은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 1회 83번",
+    "sourceYear": 2021,
+    "choices": [
+      "개월 5",
+      "개월 10",
+      "개월 15",
+      "개월 20"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-94522972401ff56e",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "프트웨어 비용 산정 기법 중 개발 유형으로 Organic, Semi-Detach, 로 구분되는 것은 Embedded ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 1회 92번",
+    "sourceYear": 2021,
+    "choices": [
+      "PUTNAM",
+      "COCOMO",
+      "FP",
+      "SLIM"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-60caa0562a8860b3",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Spiral) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 1회 93번",
+    "sourceYear": 2021,
+    "choices": [
+      "버전 관리",
+      "위험 분석",
+      "개발",
+      "평가"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-4693f18db1d8b163",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 체계적 분석방법으로 자료흐름도 자료사전 소단위명세서의 특징 , , 을 갖는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 1회 94번",
+    "sourceYear": 2021,
+    "choices": [
+      "구조적 개발 방법론",
+      "객체지향 개발 방법론",
+      "정보공학 방법론",
+      "방법론 CBD"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-accc864970143417",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 고품질의 전력서비스를 제공하고 에너지 이용효율을 극대화하는 전력망은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 1회 95번",
+    "sourceYear": 2021,
+    "choices": [
+      "사물 인터넷",
+      "스마트 그리드",
+      "디지털 아카이빙",
+      "미디어 빅뱅"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-621b0558dcb99ab2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "애자일 개발 방법론이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2021-2/q003-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 2회 3번",
+    "sourceYear": 2021,
+    "choices": [
+      "스크럼(Scrum)",
+      "익스트림 프로그래밍(XP, eXtreme Programming)",
+      "기능 주도 개발(FDD, Feature Driven Development)",
+      "하둡(Hadoop)"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-a8b1ab4b7b451d72",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Usecase) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 2회 4번",
+    "sourceYear": 2021,
+    "choices": [
+      "유스케이스 다이어그램은 개발자의 요구를 추출하고 분석하기",
+      "위해 주로 사용한다. 액터는 대상 시스템과 상호 작용하는 사람이나 다른 시스템에",
+      "의한 역할이다. 사용자 액터는 본 시스템과 데이터를 주고받는 연동 시스템을",
+      "의미한다. 연동의 개념은 일방적으로 데이터를 파일이나 정해진 형식으"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-3da469561c502b50",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CASE(Computer-Aided Software Engineering) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 2회 5번",
+    "sourceYear": 2021,
+    "choices": [
+      "구조적 기법",
+      "프로토타이핑 기술",
+      "정보 저장소 기술",
+      "일괄처리 기술"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-99aa3fd4d3bfd773",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Rumbaugh) 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 2회 6번",
+    "sourceYear": 2021,
+    "choices": [
+      "객체 모델링 동적 모델링 정적 모델링 , ,",
+      "객체 모델링 동적 모델링 기능 모델링 , ,",
+      "동적 모델링 기능 모델링 정적 모델링 , ,",
+      "정적 모델링 객체 모델링 기능 모델링 , ,"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-410126a34f573f22",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "모델에서 한 객체가 다른 객체에게 오퍼레이션을 수행하도록 UML 지정하는 의미적 관계로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 2회 7번",
+    "sourceYear": 2021,
+    "choices": [
+      "Dependency",
+      "Realization",
+      "Generalization",
+      "Association"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-5e08619851956149",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(UI) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 2회 9번",
+    "sourceYear": 2021,
+    "choices": [
+      "구현하고자 하는 결과의 오류를 최소화한다.",
+      "사용자의 편의성을 높임으로써 작업시간을 증가시킨다.",
+      "막연한 작업 기능에 대해 구체적인 방법을 제시하여 준다.",
+      "사용자 중심의 상호 작용이 되도록 한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-98dbccb0dc9fae0e",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "보내는 작업이 반복되는 아키텍처 스타일은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 2회 13번",
+    "sourceYear": 2021,
+    "choices": [
+      "클라이언트 서버 구조",
+      "계층 구조",
+      "구조 MVC",
+      "파이프 필터 구조"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-e5341fd415ebaa1d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", , , 가상의 사용자를 생성하고 테스트를 수행함으로써 성능 목표를 달성하였는지를 확인하는 테스트 자동화 도구는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 2회 25번",
+    "sourceYear": 2021,
+    "choices": [
+      "명세 기반 테스트 설계 도구",
+      "코드 기반 테스트 설계 도구",
+      "기능 테스트 수행 도구",
+      "성능 테스트 도구"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-6ac11703d4ef950a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 자료를 버블 정렬을 이용하여 오름차순으로 정렬할 경우 Pass 의 결과는 2 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 2회 28번",
+    "sourceYear": 2021,
+    "choices": [
+      "9, 6, 7, 3, 5 3, 5, 6, 7, 9",
+      "6, 7, 3, 5, 9",
+      "3, 5, 9, 6, 7",
+      "6, 3, 5, 7, 9"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-37b8719e1cec5449",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "N O(Nlog2 의 시간이 소요되는 N) 정렬 알고리즘은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 2회 31번",
+    "sourceYear": 2021,
+    "choices": [
+      "합병 정렬",
+      "버블 정렬",
+      "선택 정렬",
+      "삽입 정렬"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-116a61d3827eea60",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Well Engineered Software) 중 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 2회 34번",
+    "sourceYear": 2021,
+    "choices": [
+      "소프트웨어는 유지보수가 용이해야 한다.",
+      "소프트웨어는 신뢰성이 높아야 한다.",
+      "소프트웨어는 사용자 수준에 무관하게 일관된 인터페이스를",
+      "제공해야 한다. 소프트웨어는 충분한 테스팅을 거쳐야 한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-1850d314643ea5bc",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Heap Sort) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 2회 36번",
+    "sourceYear": 2021,
+    "choices": [
+      "정렬할 입력 레코드들로 힙을 구성하고 가장 큰 키 값을 갖는",
+      "루트 노드를 제거하는 과정을 반복하여 정렬하는 기법이다. 평균 수행 시간은 O(nlog",
+      "2 이다 n) . 완전 이진트리 로 입력자료의 레코드 (Complete Binary Tree)",
+      "를 구성한다. 최악의 수행 시간은 O(2n"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-80d539d7ba21ce24",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "의미하는 용어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 2회 37번",
+    "sourceYear": 2021,
+    "choices": [
+      "형상 감사(Configuration Audit)",
+      "롤백 (Rollback)",
+      "단위 테스트(Unit Test)",
+      "체크인(Check-In)"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-12cbe6a49237660e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "R 4 5 , S 차수가 이고 카디널리티가 일 때 두 개의 릴레이션을 카티션 6 7 , 프로덕트한 결과의 새로운 릴레이션의 차수와 카디널리티는 얼마인 가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 2회 41번",
+    "sourceYear": 2021,
+    "choices": [
+      "24, 35",
+      "24, 12",
+      "10, 35",
+      "10, 12"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-c90e71264676a7da",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "R1 R2 SQL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 2회 45번",
+    "sourceYear": 2021,
+    "choices": [
+      "학번 이름 학년 학과 주소 1000 홍길동 1 컴퓨터공학 서울 2000 김철수 1 전기공학 경기 3000 강남길 2 전자공학 경기 4000 오말자 2 컴퓨터공학 경기 5000 장미화 3 전자공학 서울 테이블 [R1] 학번 과목번호 과목이름 성적 점수 1000 C100 컴퓨터구조 A 91 2000 C200 데이터베이스 A + 99 3000 C100 컴퓨터구조 B + 89 3000 C200 데이터베이스 B 85 4000 C200 데이터베이스 A 93 4000 C300 운영체제 B + 88 5000 C300 운영체제 B 82 테이블 [R2] 회 2 과목번호 과목이름 C100 컴퓨터구조 C200 데이터베이스 실행결과 [ ] 과목번호 과목이름 학 SELECT , FROM R1, R2 WHERE R1.",
+      "번 학번 학과 전자공학 이름 = R2. AND R1. = ‘ ’ AND R1. = 강남길 ‘ ’; 과목번호 과목이름 학번 SELECT , FROM R1, R2 WHERE R1.",
+      "학번 학과 전자공학 이름 홍길동 = R2. OR R1. = ‘ ’ OR R1. = ‘ ’; 과목번호 과목이름 학번 SELECT , FROM R1, R2 WHERE R1.",
+      "학번 학과 컴퓨터공학 이름 강남 = R2. AND R1. = ‘ ’ AND R1. = ‘ 길’; 과목번호 과목이름 학번 SELECT , FROM R1, R2 WHERE R1."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-2564f499a0131083",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL SELECT ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 2회 47번",
+    "sourceYear": 2021,
+    "choices": [
+      "절에는 질의에 의해 검색될 데이터들을 포함하는 테이 FROM",
+      "블명을 기술한다. 검색결과에 중복되는 레코드를 없애기 위해서는 절 WHERE",
+      "에 키워드를 사용한다 ‘DISTINCT’ . 절은 절과 함께 사용되며 그룹에 대한 HAVING GROUP BY ,",
+      "조건을 지정한다. 절은 특정 속성을 기준으로 정렬하여 검색할 때 ORDER BY"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-7938debfdae9f106",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "3 (3NF) BCNF(Boyce-Codd Normal Form) 위한 조건은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 2회 48번",
+    "sourceYear": 2021,
+    "choices": [
+      "결정자가 후보키가 아닌 함수 종속 제거",
+      "이행적 함수 종속 제거",
+      "부분적 함수 종속 제거",
+      "원자값이 아닌 도메인 분해"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-7ab81b002c45b30d",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 수행한 결과를 원래의 상태로 원상 복귀 시키는 연산은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 2회 50번",
+    "sourceYear": 2021,
+    "choices": [
+      "연산 COMMIT",
+      "연산 BACKUP",
+      "연산 LOG",
+      "연산 ROLLBACK"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-d1bc1a0cc104f1c8",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DDL(Data Define Language) , , 등을 정의할 때 사용하는 문은 SQL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 2회 51번",
+    "sourceYear": 2021,
+    "choices": [
+      "ALTER",
+      "SELECT",
+      "CREATE",
+      "INSERT"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-d091b7ff4916015f",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스에서는 데이터 처리 연산 수행 시 각종 이상 현상이 발생할 수 있는데 이러한 이상 현상이 아닌 것은 , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 2회 52번",
+    "sourceYear": 2021,
+    "choices": [
+      "검색이상",
+      "삽입이상",
+      "삭제이상",
+      "갱신이상"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-4e085f63b17aac37",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "R1, R2 SQL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 2회 53번",
+    "sourceYear": 2021,
+    "choices": [
+      "학번 (SELECT FROM R1) INTERSECT 학번 (SELECT FROM R2) 학번 학점 수 20201111 15 20202222 20 테이블 [R1] 학번 과목번호 20202222 CS200 20203333 CS300 테이블 [R2]",
+      "학번 학점 수 과목번호 20202222 20 CS200",
+      "학번 2020222",
+      "학번 20201111 20202222 20203333"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-e654dfca02beae90",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL ( ) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 2회 55번",
+    "sourceYear": 2021,
+    "choices": [
+      "인사급여 호봉 UPDATE ( ) = 15 성명 홍길동 WHERE = ‘ ’; SET",
+      "FROM",
+      "INTO",
+      "IN"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-f819e4cfe25df941",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Null) 가질 수 없다는 것을 의미하는 제약조건은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 2회 59번",
+    "sourceYear": 2021,
+    "choices": [
+      "참조 무결성",
+      "보안 무결성",
+      "개체 무결성",
+      "정보 무결성"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-fef8d0102be18907",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "- (E-R) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 2회 60번",
+    "sourceYear": 2021,
+    "choices": [
+      "개체타입 사각형",
+      "– 속성 원형 -",
+      "관계타입 마름모 -",
+      "연결 삼각형"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c59b9452f76a9405",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Python) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 2회 63번",
+    "sourceYear": 2021,
+    "choices": [
+      "class FourCal: def setdata(self, fir, sec): self.fir = fir self.sec = sec def add(self): result = self.fir + self.sec return result a = FourCal() a.setdata(4, 2) print(a.add()) 0",
+      "2",
+      "4",
+      "6"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c753c5d1c8fb5d00",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CIDR(Classless Inter-Domain Routing) 203.241.132.82/27 과 같이 사용되었다면 해당 주소의 서브넷 마스크 는 , (subnet mask) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 2회 64번",
+    "sourceYear": 2021,
+    "choices": [
+      "255.255.255.0",
+      "255.255.255.224",
+      "255.255.255.240",
+      "255.255.255.248"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-d72f8cf95c3131aa",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "OSI 7 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 2회 65번",
+    "sourceYear": 2021,
+    "choices": [
+      "패킷을 발신지로부터 최종 목적지까지 전달하는 책임을 진다.",
+      "한 노드로부터 다른 노드로 프레임을 전송하는 책임을 진다.",
+      "패킷에 발신지와 목적지의 논리 주소를 추가한다.",
+      "라우터 또는 교환기는 패킷 전달을 위해 경로를 지정하거나"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-bd06bb21fd058913",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Cohesion) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 2회 67번",
+    "sourceYear": 2021,
+    "choices": [
+      "Sequential Cohesion",
+      "Procedural Cohesion",
+      "Logical Cohesion",
+      "Coincidental Cohesion"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-0166989a9797dfdb",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Framework) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 2회 68번",
+    "sourceYear": 2021,
+    "choices": [
+      "소프트웨어 구성에 필요한 기본 구조를 제공함으로써 재사용",
+      "이 가능하게 해준다 소프트웨어 개발 시 구조가 잡혀 있기 때문에 확장이 불가능하",
+      "다. 소프트웨어 아키텍처 와 동일한 개념이다 (Architecture) .",
+      "모듈화 가 불가능하다 (Modularity) ."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-e074e70f48ba3241",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C stdlib.h ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 2회 71번",
+    "sourceYear": 2021,
+    "choices": [
+      "문자열을 수치 데이터로 바꾸는 문자 변환함수와 수치를 문자",
+      "열로 바꿔주는 변환함수 등이 있다. 문자열 처리 함수로 이 포함되어 있다 strlen() .",
+      "표준 입출력 라이브러리이다.",
+      "삼각 함수 제곱근 지수 등 수학적인 함수를 내장하고 있다 , , ."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-4863ac90cac27a10",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Banker's Algorithm) 해당되는 기법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 2회 73번",
+    "sourceYear": 2021,
+    "choices": [
+      "Detection",
+      "Avoidance",
+      "Recovery",
+      "Prevention"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-1e26232746766cfd",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C 나열된 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 2회 76번",
+    "sourceYear": 2021,
+    "choices": [
+      "( ) == ㉠ ㉡ < ㉢ << II / ㉣ ㉤ ㉥ , , , , ,",
+      "㉠ ㉥ ㉣ ㉢ ㉡ ㉤ , , , , ,",
+      "㉠ ㉣ ㉥ ㉢ ㉡ ㉤ , , , , ,",
+      "㉠ ㉣ ㉥ ㉢ ㉤ ㉡ , , , , ,"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-4535207498493f70",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Bash (Shell) export ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 2회 78번",
+    "sourceYear": 2021,
+    "choices": [
+      "변수를 출력하고자 할 때는 를 사용해야 한다 export .",
+      "가 매개변수 없이 쓰일 경우 현재 설정된 환경변수들이 export",
+      "출력된다. 사용자가 생성하는 변수는 명령어로 표시하지 않는 export",
+      "한 현재 쉘에 국한된다. 변수를 시키면 전역 변수처럼 되어 끝까지 기 export (Global)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-8d63b8ce6046b94e",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SSH(Secure Shell) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 2회 81번",
+    "sourceYear": 2021,
+    "choices": [
+      "의 기본 네트워크 포트는 번을 사용한다 SSH 220 .",
+      "전송되는 데이터는 암호화 된다.",
+      "키를 통한 인증은 클라이언트의 공개키를 서버에 등록해야 한",
+      "다. 서로 연결되어 있는 컴퓨터 간 원격 명령 실행이나 셀 서비스"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-b82c9c733297b3c3",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "‘12536’ ‘12936’ 으로 표기되었을 경우 어떤 코드 오류에 해당하는가 , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 2회 83번",
+    "sourceYear": 2021,
+    "choices": [
+      "Addition Error",
+      "Omission Error",
+      "Sequence Error",
+      "Transcription Error"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-02e72ecc4b86c85c",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "PC, TV, 수 있는 서비스는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 2회 84번",
+    "sourceYear": 2021,
+    "choices": [
+      "Memristor",
+      "MEMS",
+      "SNMP",
+      "N-Screen"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-02fcb1b30aa02281",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Secure OS ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 2회 85번",
+    "sourceYear": 2021,
+    "choices": [
+      "식별 및 인증",
+      "임의적 접근 통제",
+      "고가용성 지원",
+      "강제적 접근 통제"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-e74b495536424ea0",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "두었다가 그 값이 변경되었을 경우 오버플로우 상태로 가정하여 프로그램 실행을 중단하는 기술은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 2회 86번",
+    "sourceYear": 2021,
+    "choices": [
+      "Stack Guard",
+      "Bridge",
+      "ASLR",
+      "FIN"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-5b81d575cc39251a",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "ISO 12207 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 2회 88번",
+    "sourceYear": 2021,
+    "choices": [
+      "획득 프로세스",
+      "개발 프로세스",
+      "성능평가 프로세스",
+      "유지보수 프로세스"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-09a4c4040d8a683d",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "OSPF(Open Shortest Path First) 로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 2회 89번",
+    "sourceYear": 2021,
+    "choices": [
+      "네트워크 변화에 신속하게 대처할 수 있다.",
+      "거리 벡터 라우팅 프로토콜이라고 한다.",
+      "멀티캐스팅을 지원한다.",
+      "최단 경로 탐색에 알고리즘을 사용한다 Dijkstra ."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-1e681b90d088c9dc",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CBD(Component Based Development) SW 분석 단계에 해당하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 2회 91번",
+    "sourceYear": 2021,
+    "choices": [
+      "클래스 설계서",
+      "통합시험 결과서",
+      "프로그램 코드",
+      "사용자 요구사항 정의서"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-aed51c9291bfcca7",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Organic, Semi- 로 구분되는 것은 Detached, Embedded ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 2회 92번",
+    "sourceYear": 2021,
+    "choices": [
+      "PUTNAM",
+      "COCOMO",
+      "FP",
+      "SLIM"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-2027964544f73169",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SPICE 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 2회 93번",
+    "sourceYear": 2021,
+    "choices": [
+      "수준 미완성 단계 7 -",
+      "수준 최적화 단계 5 -",
+      "수준 예측 단계 4 -",
+      "수준 확립 단계 3 -"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-e616f3169119edfb",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "있도록 해주는 네트워크 장비는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 2회 94번",
+    "sourceYear": 2021,
+    "choices": [
+      "스위치 L2",
+      "HIPO",
+      "라우터",
+      "RAD"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6441c53d89b32140",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "IPSec(IP Security) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 2회 96번",
+    "sourceYear": 2021,
+    "choices": [
+      "암호화 수행시 일방향 암호화만 지원한다.",
+      "는 발신지 인증 데이터 무결성 기밀성 모두를 보장한다 ESP , , .",
+      "운영 모드는 모드와 모드로 분류된다 Tunnel Transport .",
+      "는 발신지 호스트를 인증하고 패킷의 무결성을 보장한 AH , IP"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-2bb69ec48f0be2d5",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "도구는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 2회 97번",
+    "sourceYear": 2021,
+    "choices": [
+      "type",
+      "mkdir",
+      "ftp",
+      "nmap"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-a57bfdc464a1529e",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Hadoop) 있도록 설계된 도구는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 2회 98번",
+    "sourceYear": 2021,
+    "choices": [
+      "Apnic",
+      "Topology",
+      "Sqoop",
+      "SDB"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-0190c800c0b75c7c",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Hash) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 2회 99번",
+    "sourceYear": 2021,
+    "choices": [
+      "임의의 길이의 입력 데이터를 받아 고정된 길이의 해쉬 값으로",
+      "변환한다. 주로 공개키 암호화 방식에서 키 생성을 위해 사용한다.",
+      "대표적인 해쉬 알고리즘으로 등이 있다 HAVAL, SHA-1 .",
+      "해쉬 함수는 일방향 함수 이다 (One-way function) ."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-28225ad7c2476c8c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Requirements Validation) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 3회 1번",
+    "sourceYear": 2021,
+    "choices": [
+      "요구사항이 고객이 정말 원하는 시스템을 제대로 정의하고 있",
+      "는지 점검하는 과정이다. 개발완료 이후에 문제점이 발견될 경우 막대한 재작업 비용이",
+      "들 수 있기 때문에 요구사항 검증은 매우 중요하다. 요구사항이 실제 요구를 반영하는지 문서상의 요구사항은 서 ,",
+      "로 상충되지 않는지 등을 점검한다. 요구사항 검증 과정을 통해 모든 요구사항 문제를 발견할 수"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-03b28b67b4516abd",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML , 일반적으로 한 클래스가 다른 클래스를 오퍼레이션의 매개 변수로 사용하는 경우에 나타나는 관계는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 3회 2번",
+    "sourceYear": 2021,
+    "choices": [
+      "Association",
+      "Dependency",
+      "Realization",
+      "Generalization"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-5af6063562c2c73f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(XP) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2021-3/q003-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 3회 3번",
+    "sourceYear": 2021,
+    "choices": [
+      "빠른 개발을 위해 테스트를 수행하지 않는다.",
+      "사용자의 요구사항은 언제든지 변할 수 있다.",
+      "고객과 직접 대면하며 요구사항을 이야기하기 위해 사용자 스",
+      "토리 를 활용할 수 있다 (User Story) . 기존의 방법론에 비해 실용성 을 강조한 것이라 (Pragmatism)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-b017404c5501b807",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Abstraction) 이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2025-2/q003-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2025년 2회 3번",
+    "sourceYear": 2025,
+    "choices": [
+      "자료 추상화",
+      "제어 추상화",
+      "과정 추상화",
+      "강도 추상화"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-fd5fce5af9b02c89",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Information Hiding) 로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 3회 5번",
+    "sourceYear": 2021,
+    "choices": [
+      "필요하지 않은 정보는 접근할 수 없도록 하여 한 모듈 또는",
+      "하부 시스템이 다른 모듈의 구현에 영향을 받지 않게 설계되는 것을 의미한다. 모듈들 사이의 독립성을 유지시키는 데 도움이 된다.",
+      "설계에서 은닉되어야 할 기본 정보로는 주소와 같은 물리적 IP",
+      "코드 상세 데이터 구조 등이 있다 , . 모듈 내부의 자료 구조와 접근 동작들에만 수정을 국한하기"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-d9087c6df9854087",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Modeling) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 3회 6번",
+    "sourceYear": 2021,
+    "choices": [
+      "개발팀이 응용문제를 이해하는 데 도움을 줄 수 있다.",
+      "유지보수 단계에서만 모델링 기법을 활용한다.",
+      "개발될 시스템에 대하여 여러 분야의 엔지니어들이 공통된 개",
+      "념을 공유하는 데 도움을 준다. 절차적인 프로그램을 위한 자료 흐름도는 프로세스 위주의 모"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-84578649346bbb37",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Requirement Analysis) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 3회 7번",
+    "sourceYear": 2021,
+    "choices": [
+      "요구 분석은 소프트웨어 개발의 실제적인 첫 단계로 사용자의 ,",
+      "요구에 대해 이해하는 단계라 할 수 있다. 요구 추출 은 프로젝트 계획 단계에 (Requirement Elicitation)",
+      "정의한 문제의 범위 안에 있는 사용자의 요구를 찾는 단계이다. 도메인 분석 은 요구에 대한 정보를 수집하 (Domain Analysis)",
+      "고 배경을 분석하여 이를 토대로 모델링을 하게 된다. 기능적 요구에서 시스템 구축에 대한 성능 보안 (Functional) , ,"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-5d8cf0ceb58466e8",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "- (Master-Slave) 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 3회 9번",
+    "sourceYear": 2021,
+    "choices": [
+      "일반적으로 실시간 시스템에서 사용된다.",
+      "마스터 프로세스는 일반적으로 연산 통신 조정을 책임진다 , , .",
+      "슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.",
+      "마스터 프로세스는 슬레이브 프로세스들을 제어할 수 있다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-8628675bda9670ad",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "· 과정에서 사용되는 다이어그램 이 아닌 것은 (Diagram) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 3회 10번",
+    "sourceYear": 2021,
+    "choices": [
+      "Data Flow Diagram",
+      "UML Diagram",
+      "E-R Diagram",
+      "AVL Diagram"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-86b1d90e839dc5dc",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(User Interface) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 3회 12번",
+    "sourceYear": 2021,
+    "choices": [
+      "사용자와 시스템이 정보를 주고받는 상호작용이 잘 이루어지",
+      "도록 하는 장치나 소프트웨어를 의미한다. 편리한 유지보수를 위해 개발자 중심으로 설계되어야 한다.",
+      "배우기가 용이하고 쉽게 사용할 수 있도록 만들어져야 한다.",
+      "사용자 요구사항이 에 반영될 수 있도록 구성해야 한다 UI ."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-d7af719e16f90c54",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Rumbaugh) (DFD) 주로 이용하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 3회 15번",
+    "sourceYear": 2021,
+    "choices": [
+      "기능 모델링",
+      "동적 모델링",
+      "객체 모델링",
+      "정적 모델링"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-813c1427c494cd96",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DOS Unix 것으로 정해진 명령 문자열을 입력하여 시스템을 조작하는 사용자 , 인터페이스 는 (User Interface) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 3회 18번",
+    "sourceYear": 2021,
+    "choices": [
+      "GUI(Graphical User Interface)",
+      "CLI(Command Line Interface)",
+      "CUI(Cell User Interface)",
+      "MUI(Mobile User Interface)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-6c574d897accefab",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Middleware) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2021년 3회 19번",
+    "sourceYear": 2021,
+    "choices": [
+      "분산 시스템에서 다양한 부분을 관리하고 통신하며 데이터를",
+      "교환하게 해주는 소프트웨어로 볼 수 있다. 위치 투명성 을 제공한다 (Location Transparency) .",
+      "분산 시스템의 여러 컴포넌트가 요구하는 재사용 가능한 서비",
+      "스의 구현을 제공한다. 애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-d7d65236f08ec042",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", (Stress) 설명으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 3회 21번",
+    "sourceYear": 2021,
+    "choices": [
+      "시스템에 고의로 실패를 유도하고 시스템이 정상적으로 복귀",
+      "하는지 테스트한다. 시스템에 과다 정보량을 부과하여 과부하 시에도 시스템이 정",
+      "상적으로 작동되는지를 테스트한다. 사용자의 이벤트에 시스템이 응답하는 시간 특정 시간 내에 ,",
+      "처리하는 업무량 사용자 요구에 시스템이 반응하는 속도 등을 , 테스트한다. 부당하고 불법적인 침입을 시도하여 보안시스템이 불법적인"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-b3491f838ebdfadd",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "PASS 의 결과는 3 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 3회 22번",
+    "sourceYear": 2021,
+    "choices": [
+      "9, 6, 7, 3, 5 6, 3, 5, 7, 9",
+      "3, 5, 6, 7, 9",
+      "6, 7, 3, 5, 9",
+      "3, 5, 9, 6, 7"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-0421cac5f8f85af5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Test Driver) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 3회 25번",
+    "sourceYear": 2021,
+    "choices": [
+      "시험대상 모듈을 호출하는 간이 소프트웨어이다.",
+      "필요에 따라 매개 변수를 전달하고 모듈을 수행한 후의 결과를",
+      "보여줄 수 있다. 상향식 통합 테스트에서 사용된다.",
+      "테스트 대상 모듈이 호출하는 하위 모듈의 역할을 한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-7dc787c3c103bab9",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": ". ⓐ 옳은 것은 단 스택포인터 스택의 이름 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 3회 27번",
+    "sourceYear": 2021,
+    "choices": [
+      "( , Top : , S : ) if Top = 0 Then ( ) ⓐ Else { remove S(Top) Top = Top - 1 } Overflow",
+      "Top = Top + 1",
+      "Underflow",
+      "Top = Top"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-4f450bbcad7e15f0",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "( )~( ) [ ] 기호를 바르게 연결한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 3회 28번",
+    "sourceYear": 2021,
+    "choices": [
+      "사용 설명서 검토 ㉠ 구성 요소별 내용 작성 ㉡ 사용 설명서 구성 요소 정의 ㉢ 가 나 다 ( )- , ( )- , ( )-",
+      "㉠ ㉡ ㉢ 가 나 다 ( )- , ( )- , ( )-",
+      "㉢ ㉡ ㉠ 가 나 다 ( )- , ( )- , ( )-",
+      "㉠ ㉢ ㉡ 가 나 다 ( )- , ( )- , ( )-"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-f0a9197e4fde8ba1",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "A, B, C, D 결과로 불가능한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 3회 29번",
+    "sourceYear": 2021,
+    "choices": [
+      "D, C, B, A",
+      "B, C, D, A",
+      "C, B, A, D",
+      "D, B, C, A"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-fdc2fe3344a9b73b",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Verification) (Validation) 한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 3회 30번",
+    "sourceYear": 2021,
+    "choices": [
+      "소프트웨어 테스트에서 검증과 확인을 구별하면 찾고자 하는",
+      "결함 유형을 명확하게 하는 데 도움이 된다. 검증은 소프트웨어 개발 과정을 테스트하는 것이고 확인은 ,",
+      "소프트웨어 결과를 테스트 것이다. 검증은 작업 제품이 요구 명세의 기능 비기능 요구사항을 얼마 ,",
+      "나 잘 준수하는지 측정하는 작업이다. 검증은 작업 제품이 사용자의 요구에 적합한지 측정하며 확인 ,"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b611c27daa01fe93",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", , 예정한 기능이 제대로 수행되는지를 점검하는 것이 주목적인 테스트 는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 3회 31번",
+    "sourceYear": 2021,
+    "choices": [
+      "통합 테스트(Integration Test)",
+      "단위 테스트(Unit Test)",
+      "시스템 테스트(System Test)",
+      "인수 테스트(Acceptance Test)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-1e07ba20548575e5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Static Analysis) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 3회 33번",
+    "sourceYear": 2021,
+    "choices": [
+      "소스 코드를 실행시키지 않고 분석한다.",
+      "코드에 있는 오류나 잠재적인 오류를 찾아내기 위한 활동이다.",
+      "하드웨어적인 방법으로만 코드 분석이 가능하다.",
+      "자료 흐름이나 논리 흐름을 분석하여 비정상적인 패턴을 찾을"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-d687c8a9e397aa22",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Failure) 일으키게 하며 오류 가 있는 경우 발생하는 것은 , (Error) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 3회 34번",
+    "sourceYear": 2021,
+    "choices": [
+      "Fault",
+      "Testcase",
+      "Mistake",
+      "Inspection"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-f843e8ee71225e50",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "위해 쉽게 수정될 수 있는 시스템 능력을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 3회 36번",
+    "sourceYear": 2021,
+    "choices": [
+      "Portability",
+      "Efficiency",
+      "Usability",
+      "Correctness"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a8f094f1978935fa",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "방법이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 3회 39번",
+    "sourceYear": 2021,
+    "choices": [
+      "스터브 와 드라이버 (Stub) (Driver)",
+      "입력 도메인 분석",
+      "랜덤 테스트 (Random)",
+      "자료 흐름도"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-983ca490135f73d4",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Packager) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2021년 3회 40번",
+    "sourceYear": 2021,
+    "choices": [
+      "콘텐츠를 제공하는 저작권자를 의미한다.",
+      "콘텐츠를 메타 데이터와 함께 배포 가능한 단위로 묶는다.",
+      "라이선스를 발급하고 관리한다.",
+      "배포된 콘텐츠의 이용 권한을 통제한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-e824edeb005b4972",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Integrity Rule) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 3회 41번",
+    "sourceYear": 2021,
+    "choices": [
+      "무결성 규정에는 데이터가 만족해야 될 제약 조건 규정을 참조 ,",
+      "할 때 사용하는 식별자 등의 요소가 포함될 수 있다. 무결성 규정의 대상으로는 도메인 키 종속성 등이 있다 , , .",
+      "정식으로 허가 받은 사용자가 아닌 불법적인 사용자에 의한",
+      "갱신으로부터 데이터베이스를 보호하기 위한 규정이다. 릴레이션 무결성 규정 은 릴레이션 (Relation Integrity Rules)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-a53e210578f987ce",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "단위 또는 한꺼번에 모두 수행되어야 할 일련의 연산들을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 3회 42번",
+    "sourceYear": 2021,
+    "choices": [
+      "트랜잭션",
+      "뷰",
+      "튜플",
+      "카디널리티"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-4c98e42b6cb333de",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "NULL , 오직 하나의 값만 존재해야 한다는 조건을 무엇이라 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 3회 45번",
+    "sourceYear": 2021,
+    "choices": [
+      "개체 무결성 제약조건",
+      "참조 무결성 제약조건",
+      "도메인 무결성 제약조건",
+      "속성 무결성 제약조건"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-3b214c8007aacd48",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL HAVING ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 3회 46번",
+    "sourceYear": 2021,
+    "choices": [
+      "절 LIKE",
+      "절 WHERE",
+      "절 GROUP BY",
+      "절 ORDER BY"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-0bb20345b9bc58b9",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Key) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 3회 49번",
+    "sourceYear": 2021,
+    "choices": [
+      "한 릴레이션 내의 속성들의 집합으로 구성된 키로서 릴 , 레이션을 구성하는 모든 튜플에 대한 유일성은 만족시키 지만 최소성은 만족시키지 못한다. 후보키",
+      "대체키",
+      "슈퍼키",
+      "외래키"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-f107b9c937f22a6a",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Index) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 3회 50번",
+    "sourceYear": 2021,
+    "choices": [
+      "인덱스의 기본 목적은 검색 성능을 최적화하는 것으로 볼 수",
+      "있다. 트리 인덱스는 분기를 목적으로 하는 을 가지 B- Branch Block",
+      "고 있다. 등 범위 검색에 활용될 수 있다 BETWEEN (Range) .",
+      "시스템이 자동으로 생성하여 사용자가 변경할 수 없다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-510ff9b2435a1723",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Locking Granularity) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 3회 51번",
+    "sourceYear": 2021,
+    "choices": [
+      "로킹 단위가 크면 병행성 수준이 낮아진다.",
+      "로킹 단위가 크면 병행 제어 기법이 복잡해진다.",
+      "로킹 단위가 작으면 로크 의 수가 적어진다 (lock) .",
+      "로킹은 파일 단위로 이루어지며 레코드와 필드는 로킹 단위가 ,"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a83b6ad81b57af51",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "곤란한 현상이 발생하는 것을 무엇이라 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 3회 53번",
+    "sourceYear": 2021,
+    "choices": [
+      "이상(Anomaly)",
+      "제한(Restriction)",
+      "종속성(Dependency)",
+      "변환(Translation)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-3f99307917919731",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 병행 실행되는 경우 어느 하나의 트랜잭션 실행 중에 다른 트랜잭션 의 연산이 끼어들 수 없음을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 3회 56번",
+    "sourceYear": 2021,
+    "choices": [
+      "Log",
+      "Consistency",
+      "Isolation",
+      "Durability"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-365551cbde993d58",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 미리 정하는 방법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 3회 58번",
+    "sourceYear": 2021,
+    "choices": [
+      "로킹 기법",
+      "타임 스탬프 기법",
+      "검증 기법",
+      "배타 로크 기법"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-2afe02c2e4386e59",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "을 제거해야 만족하는 정규형은 (JD : Join Dependency) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 3회 59번",
+    "sourceYear": 2021,
+    "choices": [
+      "제 정규형 3",
+      "제 정규형 4",
+      "제 정규형 5",
+      "제 정규형 6"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-79851a78c60822a3",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "R X Y R 집합이라고 할 경우 애트리뷰트 의 값 각각에 대해 시간에 관계없이 X 항상 애트리뷰트 의 값이 오직 하나만 연관되어 있을 때 는 에 Y Y X 함수 종속이라고 한다 이 함수 종속의 표기로 옳은 것은 . ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2021년 3회 60번",
+    "sourceYear": 2021,
+    "choices": [
+      "Y X",
+      "→ Y X",
+      "⊂ X Y",
+      "→ X Y"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-1f6c448f1d4ffe4e",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "는 경우의 응집도 는 (Cohesion) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 3회 61번",
+    "sourceYear": 2021,
+    "choices": [
+      "Temporal Cohesion",
+      "Logical Cohesion",
+      "Coincidental Cohesion",
+      "Sequential Cohesion"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-40dd33efc0efd51a",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(ARQ) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 3회 62번",
+    "sourceYear": 2021,
+    "choices": [
+      "Stop-and-wait ARQ",
+      "Go-back-N ARO",
+      "Selective-Repeat ARQ",
+      "Non-Acknowledge ARQ"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-d62c5a5991d8b4e5",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "JAVA (Heap) 잃거나 변수 자체가 없어짐으로써 더 이상 사용되지 않는 객체를 제거해주는 역할을 하는 모듈은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 3회 65번",
+    "sourceYear": 2021,
+    "choices": [
+      "Heap Collector",
+      "Garbage Collector",
+      "Memory Collector",
+      "Variable Collector"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-8bbdb796bd09c740",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "· 큐에 들어 있을 때 스케쥴링을 사용한 경우의 처리 순서는 SSTF ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 3회 68번",
+    "sourceYear": 2021,
+    "choices": [
+      "단 현재 헤드 위치는 이고 제일 안쪽이 번 바깥쪽이 번 ( , 53 , 1 , 200 트랙이다.) 큐의 내용 : 98 183 37 122 14 124 65 67 53-65-67-37-14-98-122-124-183",
+      "53-98-183-37-122-14-124-65-67",
+      "53-37-14-65-67-98-122-124-183",
+      "53-67-65-124-14-122-37-183-98"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-b496cbe532dc3043",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "192.168.1.0/24 FLSM 4 Subnet 로 나누고 를 적용했다 이 때 된 네트워크 IP Subnet-zero . Subnetting 중 번째 네트워크의 번째 사용 가능한 는 무엇인가 4 4 IP ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 3회 69번",
+    "sourceYear": 2021,
+    "choices": [
+      "192.168.1.192",
+      "192.168.1.195",
+      "192.168.1.196",
+      "192.168.1.198"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-62727baa46234e05",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C Class IP address ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 3회 70번",
+    "sourceYear": 2021,
+    "choices": [
+      "200.168.30.1",
+      "10.3.2.1 4",
+      "225.2.4.1",
+      "172.16.98.3"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-aa82af8ee7f7379a",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Guido van Rossum) , 방식이자 객체지향적이며 배우기 쉽고 이식성이 좋은 것이 특징인 , 스크립트 언어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 3회 72번",
+    "sourceYear": 2021,
+    "choices": [
+      "C++",
+      "JAVA",
+      "C#",
+      "Python"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-8dc34a559f2193b9",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "JAVA . public class ovr { public static void main(String[] args) { int arr[]; int i = 0; arr = new int[10]; arr[0] = 0; arr[1] = 1; while(i < 8) { arr[i + 2] = arr[i + 1] + arr[i]; i++; } System.out.println(arr[9]); } } 13",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 3회 73번",
+    "sourceYear": 2021,
+    "choices": [
+      "21",
+      "34",
+      "55",
+      "프로세스와 관련한 설명으로 틀린 것은"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-a73e6be1ffad2d1d",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Coupling) 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 3회 75번",
+    "sourceYear": 2021,
+    "choices": [
+      "오류가 발생했을 때 전파되어 다른 오류의 원인이 되는 파문",
+      "효과 를 최소화해야 한다 (Ripple Effect) . 인터페이스가 정확히 설정되어 있지 않을 경우 불필요한 인터",
+      "페이스가 나타나 모듈 사이의 의존도는 높아지고 결합도가 증 가한다. 모듈들이 변수를 공유하여 사용하게 하거나 제어 정보를 교류",
+      "하게 함으로써 결합도를 낮추어야 한다. 다른 모듈과 데이터 교류가 필요한 경우 전역변수(Global"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-00e8fbb06f6738ba",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Modularity) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 3회 77번",
+    "sourceYear": 2021,
+    "choices": [
+      "소프트웨어의 모듈은 프로그래밍 언어에서 Subroutine,",
+      "등으로 표현될 수 있다 Function . 모듈의 수가 증가하면 상대적으로 각 모듈의 크기가 커지며,",
+      "모듈 사이의 상호교류가 감소하여 과부하 현상이 (Overload) 나타난다. 모듈화는 시스템을 지능적으로 관리할 수 있도록 해주며 복잡 ,",
+      "도 문제를 해결하는 데 도움을 준다. 모듈화는 시스템의 유지보수와 수정을 용이하게 한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-0e14a276e4d7b922",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Page Replacement) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 3회 78번",
+    "sourceYear": 2021,
+    "choices": [
+      "FIFO(First-In-First-Out)",
+      "LUF(Least Used First)",
+      "Optimal",
+      "LRU(Least Recently Used)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-cecb5805b9522043",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(File Descriptor) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2021년 3회 80번",
+    "sourceYear": 2021,
+    "choices": [
+      "파일 관리를 위해 시스템이 필요로 하는 정보를 가지고 있다.",
+      "보조기억장치에 저장되어 있다가 파일이 개방 되면 주기 (open)",
+      "억장치로 이동된다. 사용자가 파일 디스크립터를 직접 참조할 수 있다.",
+      "파일 제어 블록 이라고도 한다 (File Control Block) ."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-9d5dc3ee79b591f6",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(IDS : Intrusion Detection System) 로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 3회 81번",
+    "sourceYear": 2021,
+    "choices": [
+      "이상 탐지 기법 은 나 (Anomaly Detection) Signature Base",
+      "라고도 불리며 이미 발견되고 정립된 공격 Knowledge Base 패턴을 입력해두었다가 탐지 및 차단한다. 는 운영체제에 설정 HIDS(Host-Based Intrusion Detection)",
+      "된 사용자 계정에 따라 어떤 사용자가 어떤 접근을 시도하고 어떤 작업을 했는지에 대한 기록을 남기고 추적한다. 로는 대 NIDS(Network-Based Intrusion Detection System)",
+      "표적으로 가 있다 Snort . 외부 인터넷에 서비스를 제공하는 서버가 위치하는 네트워크"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-e37e1d4a32590a4d",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "보안 레이블 에 기초하여 높은 보안 수준을 요구하는 (Security Label) 정보 객체 가 낮은 보안 수준의 주체에게 노출되지 않도록 하는 ( ) 접근 제어 방법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 3회 82번",
+    "sourceYear": 2021,
+    "choices": [
+      "Mandatory Access Control",
+      "User Access Control",
+      "Discretionary Access Control",
+      "Data-Label Access Control"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a2c10ed6b0418ef2",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Machine 을 위한 오픈소스 소프트웨어 라이브러리는 Leaming) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 3회 83번",
+    "sourceYear": 2021,
+    "choices": [
+      "타조(Tajo)",
+      "원 세그(One Seg)",
+      "포스퀘어(Foursquare)",
+      "텐서플로(TensorFlow)"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-ce074e366b6cf2c5",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "IT 및 관리 환경 실행 환경 개발 환경 서비스 환경 운영 환경으로 , , , , 구성되어 있는 개방형 클라우드 컴퓨팅 플랫폼은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 3회 84번",
+    "sourceYear": 2021,
+    "choices": [
+      "N2OS",
+      "PaaS-TA",
+      "KAWS",
+      "Metaverse"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-5187735acaaaffb6",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Access Control) 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 3회 85번",
+    "sourceYear": 2021,
+    "choices": [
+      "적절한 권한을 가진 인가자만 특정 시스템이나 정보에 접근할",
+      "수 있도록 통제하는 것이다. 시스템 및 네트워크에 대한 접근 제어의 가장 기본적인 수단은",
+      "와 서비스 포트로 볼 수 있다 IP . 에 보안 정책을 적용하는 도구인 를 통해 데이 DBMS XDMCP",
+      "터베이스에 대한 접근제어를 수행할 수 있다. 네트워크 장비에서 수행하는 에 대한 접근 제어로는 관리 IP"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-810dc6c1dfca48c6",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "LAN Broadcast 을 구분할 수 있게 해주는 기술로 접속된 장비들의 성능 Domain , 향상 및 보안성 증대 효과가 있는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 3회 87번",
+    "sourceYear": 2021,
+    "choices": [
+      "VLAN",
+      "STP",
+      "L2AN",
+      "ARP"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-d7d7e5408d6dcd69",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL Injection ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 3회 88번",
+    "sourceYear": 2021,
+    "choices": [
+      "은 임의로 작성한 구문을 애플리케이션에 SQL Injection SQL",
+      "삽입하는 공격방식이다. 취약점이 발생하는 곳은 주로 웹 애플리케이션 SQL Injection",
+      "과 데이터베이스가 연동되는 부분이다. 의 종류와 관계없이 공격 기법은 모두 DBMS SQL Injection",
+      "동일하다. 로그인과 같이 웹에서 사용자의 입력 값을 받아 데이터베이스"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-bed88a58a3432d92",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Cocomo model , 일괄 자료 처리나 과학기술계산용 비즈니스 자료 처리용으로 만 , 5 라인이하의 소프트웨어를 개발하는 유형은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 3회 91번",
+    "sourceYear": 2021,
+    "choices": [
+      "Embeded",
+      "Organic",
+      "Semi-detached",
+      "Semi-embeded"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-281701c8faaf49c3",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 요구사항의 변경이 어렵고 각 단계의 결과가 확인되어야 다음 단계 로 넘어갈 수 있는 선형 순차적 고전적 생명 주기 모형이라고도 , 하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 3회 93번",
+    "sourceYear": 2021,
+    "choices": [
+      "Waterfall Model",
+      "Prototype Model",
+      "Cocomo Model",
+      "Spiral Model"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-78847f02f1a923d8",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Spiral Model 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 3회 94번",
+    "sourceYear": 2021,
+    "choices": [
+      "비교적 대규모 시스템에 적합하다.",
+      "개발 순서는 계획 및 정의 위험 분석 공학적 개발 고객 평가 , , ,",
+      "순으로 진행된다. 소프트웨어를 개발하면서 발생할 수 있는 위험을 관리하고 최",
+      "소화하는 것을 목적으로 한다. 계획 설계 개발 평가의 개발 주기가 한 번만 수행된다 , , , ."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-4bd68e650dff321a",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "ICMP Echo , 을 하기 위해 시스템 자원을 모두 사용해버려 시스템이 (Respond) 정상적으로 동작하지 못하도록 하는 공격방법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 3회 95번",
+    "sourceYear": 2021,
+    "choices": [
+      "Role-Based Access Control",
+      "Ping Flood",
+      "Brute-Force",
+      "Trojan Horses"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-fd957bd945ab9808",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "TCP/IP - 프로토콜로 최근 환경에서 자주 사용되고 있는 프로토콜은 IoT ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 3회 96번",
+    "sourceYear": 2021,
+    "choices": [
+      "MLFQ",
+      "MQTT",
+      "Zigbee",
+      "MTSP"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-e24c7b4ca36705a2",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "시스템에 대한 접근 권한도 얻는 시스템을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 3회 97번",
+    "sourceYear": 2021,
+    "choices": [
+      "SOS",
+      "SBO",
+      "SSO",
+      "SOA"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-fbf66662effbbd78",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Hash 결과 값으로 저장된다 이때 암호 공격을 막기 위해 똑같은 패스워드 . 들이 다른 암호 값으로 저장되도록 추가되는 값을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 3회 98번",
+    "sourceYear": 2021,
+    "choices": [
+      "Pass flag",
+      "Bucket",
+      "Opcode",
+      "Salt"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c55b875e19b681e0",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "S/W , , 여 예측치를 구하고 이를 이용하여 비용을 산정하는 기법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 3회 99번",
+    "sourceYear": 2021,
+    "choices": [
+      "기법 Effort Per Task",
+      "전문가 감정 기법",
+      "델파이기법",
+      "기법 LOC"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-e8a06d4d1377973d",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정보 유출 악성 파일 및 스크립트 보안 취약점 등을 연구하는 , , 곳은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2021년 3회 100번",
+    "sourceYear": 2021,
+    "choices": [
+      "WWW",
+      "OWASP",
+      "WBSEC",
+      "ITU"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-4ca1116915100946",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "User Interface 설계 시 오류 메시지나 경고에 관한 지침으로 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 1번",
+    "sourceYear": 2022,
+    "choices": [
+      "메시지는 이해하기 쉬워야 한다.",
+      "오류로부터 회복을 위한 구체적인 설명이 제공되어야 한다.",
+      "오류로 인해 발생될 수 있는 부정적인 내용을 적극적으로 사용 자들에게 알려야 한다.",
+      "소리나 색의 사용을 줄이고 텍스트로만 전달하도록 한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-fb43e48af0236341",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 애자일(Agile) 소프트웨어 개발에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 2번",
+    "sourceYear": 2022,
+    "choices": [
+      "공정과 도구보다 개인과의 상호작용을 더 가치 있게 여긴다.",
+      "동작하는 소프트웨어보다는 포괄적인 문서를 가치 있게 여긴 다.",
+      "계약 협상보다는 고객과의 협력을 가치 있게 여긴다.",
+      "계획을 따르기보다 변화에 대응하기를 가치 있게 여긴다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-f0c4d0b9a7509201",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 설계에서 요구사항 분석에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 3번",
+    "sourceYear": 2022,
+    "choices": [
+      "소프트웨어가 무엇을 해야 하는가를 추적하여 요구사항 명세 를 작성하는 작업이다.",
+      "사용자의 요구를 추출하여 목표를 정하고 어떤 방식으로 해결 할 것인지 결정하는 단계이다.",
+      "소프트웨어 시스템이 사용되는 동안 발견되는 오류를 정리하 는 단계이다.",
+      "소프트웨어 개발의 출발점이면서 실질적인 첫 번째 단계이다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-e99967515803bf15",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 기법에서 상위 클래스의 메소드와 속성을 하위 클래스가 물려받는 것을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 4번",
+    "sourceYear": 2022,
+    "choices": [
+      "Abstraction",
+      "Polymorphism",
+      "Encapsulation",
+      "Inheritance"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-37eb055e4de9bc8c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 6번",
+    "sourceYear": 2022,
+    "choices": [
+      "Process : 원",
+      "Data Flow : 화살표",
+      "Data Store : 삼각형",
+      "Terminator : 사각형"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-cbf7facca17fe4f2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 개발에 이용되는 모델(Model)에 대한 설명 중 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 7번",
+    "sourceYear": 2022,
+    "choices": [
+      "모델은 개발 대상을 추상화하고 기호나 그림 등으로 시각적으 로 표현한다.",
+      "모델을 통해 소프트웨어에 대한 이해도를 향상시킬 수 있다.",
+      "모델을 통해 이해 당사자 간의 의사소통이 향상된다.",
+      "모델을 통해 향후 개발될 시스템의 유추는 불가능하다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-59a7406213aeda7f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음의 설명에 해당하는 언어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 8번",
+    "sourceYear": 2022,
+    "choices": [
+      "객체 지향 시스템을 개발할 때 산출물을 명세화, 시각화, 문서화하는데 사용된다. 즉, 개발하는 시스템을 이해하기 쉬운 형태로 표현하여 분석가, 의뢰인, 설계자가 효율적 인 의소소통을 할 수 있게 해 준다. 따라서, 개발 방법론 이나 개발 프로세스가 아니라 표준화된 모델링 언어이다.",
+      "JAVA",
+      "C",
+      "UML"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-8109603029e60975",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 내용이 설명하는 UI 설계 도구는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 9번",
+    "sourceYear": 2022,
+    "choices": [
+      "ㆍ디자인, 사용방법설명, 평가 등을 위해 실제 화면과 유 사하게 만든 정적인 형태의 모형 ㆍ시각적으로만 구성 요소를 배치하는 것으로 일반적으로 실제로 구현되지는 않음",
+      "스토리보드(Storyboard)",
+      "목업(Mockup)",
+      "프로토타입(Prototype)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-7ee30140b0fdf6e1",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "애자일(Agile) 기법 중 스크럼(Scrum)과 관련된 용어에 대한 설명이 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 10번",
+    "sourceYear": 2022,
+    "choices": [
+      "스크럼 마스터(Scrum Master)는 스크럼 프로세스를 따르고, 팀이 스크럼을 효과적으로 활용할 수 있도록 보장하는 역할 등을 맡는다.",
+      "제품 백로그(Product Backlog)는 스크럼 팀이 해결해야 하는 목록으로 소프트웨어 요구사항, 아키텍처 정의 등이 포함될 수 있다.",
+      "스프린트(Sprint)는 하나의 완성된 최종 결과물을 만들기 위한 주기로 3달 이상의 장기간으로 결정된다.",
+      "속도(Velocity)는 한 번의 스프린트에서 한 팀이 어느 정도의 제품 백로그를 감당할 수 있는지에 대한 추정치로 볼 수 있다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-ea014af4c17371a7",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML 다이어그램 중 정적 다이어그램이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 11번",
+    "sourceYear": 2022,
+    "choices": [
+      "컴포넌트 다이어그램",
+      "배치 다이어그램",
+      "순차 다이어그램",
+      "패키지 다이어그램 기출문제 & 정답 및 해설 2022년 1회 정보처리기사 필기 이 자료는 시나공 카페 회원을 대상으로 하는 자료로서 개인적인 용도로만 사용할 수 있습니다. 허락 없이 복제하거나 다른 매체에 옮겨 실을 수 없으며, 상업적 용도로 사용할 수 없습니다. 1회"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-c19d917e75392403",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "LOC 기법에 의하여 예측된 총 라인수가 36000라인, 개발에 참여할 프로그래머가 6명, 프로그래머들의 평균 생산성이 월간 300라인일 때 개발에 소요되는 기간을 계산한 결과로 가장 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 12번",
+    "sourceYear": 2022,
+    "choices": [
+      "5개월",
+      "10개월",
+      "15개월",
+      "20개월"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-fa6018a7be8bd60c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "클래스 설계 원칙에 대한 바른 설명은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 13번",
+    "sourceYear": 2022,
+    "choices": [
+      "단일 책임 원칙 : 하나의 클래스만 변경 가능해야 한다.",
+      "개방-폐쇄의 원칙 : 클래스는 확장에 대해 열려 있어야 하며 변경에 대해 닫혀 있어야 한다.",
+      "리스코프 교체의 원칙 : 여러 개의 책임을 가진 클래스는 하나 의 책임을 가진 클래스로 대체되어야 한다.",
+      "의존관계 역전의 원칙 : 클라이언트는 자신이 사용하는 메소드 와 의존관계를 갖지 않도록 해야 한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-f92110e3dc711390",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "GoF(Gangs of Four) 디자인 패턴에서 생성(Creational) 패턴에 해당하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 14번",
+    "sourceYear": 2022,
+    "choices": [
+      "컴포지트(Composite)",
+      "어댑터(Adapter)",
+      "추상 팩토리(Abstract Factory)",
+      "옵서버(Observer)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-368f4563c5ee2ee7",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "아키텍처 설계 과정이 올바른 순서로 나열된 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 15번",
+    "sourceYear": 2022,
+    "choices": [
+      "㉮ 설계 목표 설정 ㉯ 시스템 타입 결정 ㉰ 스타일 적용 및 커스터마이즈 ㉱ 서브시스템의 기능, 인터페이스 동작 작성 ㉲ 아키텍처 설계 검토",
+      "㉮ → ㉯ → ㉰ → ㉱ → ㉲",
+      "㉲ → ㉮ → ㉯ → ㉱ → ㉰",
+      "㉮ → ㉲ → ㉯ → ㉱ → ㉰"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a0cd3e18bc5f9c3a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "사용자 인터페이스를 설계할 경우 고려해야 할 가이드라인과 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 16번",
+    "sourceYear": 2022,
+    "choices": [
+      "심미성을 사용성보다 우선하여 설계해야 한다.",
+      "효율성을 높이게 설계해야 한다.",
+      "발생하는 오류를 쉽게 수정할 수 있어야 한다.",
+      "사용자에게 피드백을 제공해야 한다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-1c82b8aa8aa94d0e",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 설계에서 자주 발생하는 문제에 대한 일반적이고 반복적 인 해결 방법을 무엇이라고 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 17번",
+    "sourceYear": 2022,
+    "choices": [
+      "모듈 분해",
+      "디자인 패턴",
+      "연관 관계",
+      "클래스 도출"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-bac5353114654191",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 분석 기법의 하나로 객체 모형, 동적 모형, 기능 모형의 3개 모형을 생성하는 방법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 18번",
+    "sourceYear": 2022,
+    "choices": [
+      "Wirfs-Block Method",
+      "Rumbaugh Method",
+      "Booch Method",
+      "Jacobson Method"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-6467f642751c2e00",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "입력되는 데이터를 컴퓨터의 프로세서가 처리하기 전에 미리 처리하 여 프로세서가 처리하는 시간을 줄여주는 프로그램이나 하드웨어를 말하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 1회 19번",
+    "sourceYear": 2022,
+    "choices": [
+      "EAI",
+      "FEP",
+      "GPL",
+      "Duplexing"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-6934133c03f83212",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "클린 코드(Clean Code)를 작성하기 위한 원칙으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 21번",
+    "sourceYear": 2022,
+    "choices": [
+      "추상화 : 하위 클래스/메소드/함수를 통해 애플리케이션의 특 성을 간략하게 나타내고, 상세 내용은 상위 클래스/메소드/함 수에서 구현한다.",
+      "의존성 : 다른 모듈에 미치는 영향을 최소화하도록 작성한다.",
+      "가독성 : 누구든지 읽기 쉽게 코드를 작성한다.",
+      "중복성 : 중복을 최소화 할 수 있는 코드를 작성한다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-32a5e9c84e032576",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "단위 테스트에서 테스트의 대상이 되는 하위 모듈을 호출하고, 파라미터를 전달하는 가상의 모듈로 상향식 테스트에 필요한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 22번",
+    "sourceYear": 2022,
+    "choices": [
+      "테스트 스텁(Test Stub)",
+      "테스트 드라이버(Test Driver)",
+      "테스트 슈트(Test Suites)",
+      "테스트 케이스(Test Case)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-ef7a9ffc0b46b2f4",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 모듈화의 장점이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 24번",
+    "sourceYear": 2022,
+    "choices": [
+      "오류의 파급 효과를 최소화한다.",
+      "기능의 분리가 가능하여 인터페이스가 복잡하다.",
+      "모듈의 재사용 가능으로 개발과 유지보수가 용이하다.",
+      "프로그램의 효율적인 관리가 가능하다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-29b74efcbb2fc8f5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 프로젝트 관리에 대한 설명으로 가장 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 25번",
+    "sourceYear": 2022,
+    "choices": [
+      "개발에 따른 산출물 관리",
+      "소요인력은 최대화하되 정책 결정은 신속하게 처리",
+      "주어진 기간은 연장하되 최소의 비용으로 시스템을 개발",
+      "주어진 기간 내에 최소의 비용으로 사용자를 만족시키는 시스 템을 개발"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-479d51812d80a519",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정형 기술 검토(FTR)의 지침으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 26번",
+    "sourceYear": 2022,
+    "choices": [
+      "의제를 제한한다.",
+      "논쟁과 반박을 제한한다.",
+      "문제 영역을 명확히 표현한다.",
+      "참가자의 수를 제한하지 않는다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-0e458cc599a0d551",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 재공학의 주요 활동 중 기존 소프트웨어 시스템을 새로운 기술 또는 하드웨어 환경에서 사용할 수 있도록 변환하는 작업을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 27번",
+    "sourceYear": 2022,
+    "choices": [
+      "Analysis",
+      "Migration",
+      "Restructuring",
+      "Reverse Engineering"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-c30172551dcd504f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정보 시스템 개발 단계에서 프로그래밍 언어 선택 시 고려할 사항으로 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 28번",
+    "sourceYear": 2022,
+    "choices": [
+      "개발 정보 시스템의 특성",
+      "사용자의 요구사항",
+      "컴파일러의 가용성",
+      "컴파일러의 독창성 1회"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-2183c1308ada83da",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 패키징에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 29번",
+    "sourceYear": 2022,
+    "choices": [
+      "패키징은 개발자 중심으로 진행한다.",
+      "신규 및 변경 개발소스를 식별하고, 이를 모듈화하여 상용제품 으로 패키징한다.",
+      "고객의 편의성을 위해 매뉴얼 및 버전관리를 지속적으로 한다.",
+      "범용 환경에서 사용이 가능하도록 일반적인 배포 형태로 패키 징이 진행된다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-024a39e4641f220f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "자료 구조의 분류 중 선형 구조가 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 30번",
+    "sourceYear": 2022,
+    "choices": [
+      "트리",
+      "리스트",
+      "스택",
+      "데크"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-6658232a7c8f43c2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "아주 오래되거나 참고문서 또는 개발자가 없어 유지보수 작업이 아주 어려운 프로그램을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 31번",
+    "sourceYear": 2022,
+    "choices": [
+      "Title Code",
+      "Source Code",
+      "Object Code",
+      "Alien Code"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-25636c9904bbdf41",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어를 재사용함으로써 얻을 수 있는 이점으로 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 32번",
+    "sourceYear": 2022,
+    "choices": [
+      "생산성 증가",
+      "프로젝트 문서 공유",
+      "소프트웨어 품질 향상",
+      "새로운 개발 방법론 도입 용이"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-7f1d4e30b5aa402d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "인터페이스 간의 통신을 위해 이용되는 데이터 포맷이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 33번",
+    "sourceYear": 2022,
+    "choices": [
+      "AJTML",
+      "JSON",
+      "XML",
+      "YAML"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-658feecfad30cb51",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "프로그램 설계도의 하나인 NS Chart에 대한 설명으로 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 34번",
+    "sourceYear": 2022,
+    "choices": [
+      "논리의 기술에 중점을 두고 도형을 이용한 표현 방법이다.",
+      "이해하기 쉽고 코드 변환이 용이하다.",
+      "화살표나 GOTO를 사용하여 이해하기 쉽다.",
+      "연속, 선택, 반복 등의 제어 논리 구조를 표현한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-05d71d5b94b2abae",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "순서가 A, B, C, D로 정해진 입력 자료를 push, push, pop, push, push, pop, pop, pop 순서로 스택 연산을 수행하는 경우 출력 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 35번",
+    "sourceYear": 2022,
+    "choices": [
+      "B D C A",
+      "A B C D",
+      "B A C D",
+      "A B D C"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-2256d1e9573f9dea",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "분할 정복(Divide and Conquer)에 기반한 알고리즘으로 피봇(pivot) 을 사용하며 최악의 경우      회의 비교를 수행해야 하는 정렬(Sort)은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 36번",
+    "sourceYear": 2022,
+    "choices": [
+      "Selection Sort",
+      "Bubble Sort",
+      "Insert Sort",
+      "Quick Sort"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-9f6c0562ea437223",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "화이트박스 검사 기법에 해당하는 것으로만 짝지어진 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 37번",
+    "sourceYear": 2022,
+    "choices": [
+      "㉠ 데이터 흐름 검사 ㉡ 루프 검사 ㉢ 동등 분할 검사 ㉣ 경계값 분석 ㉤ 원인 결과 그래프 기법 ㉥ 오류예측 기법",
+      "㉠, ㉡",
+      "㉠, ㉣",
+      "㉡, ㉤"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-62033c2253299258",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 품질 관련 국제 표준인 ISO/IEC 25000에 관한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 38번",
+    "sourceYear": 2022,
+    "choices": [
+      "소프트웨어 품질 평가를 위한 소프트웨어 품질평가 통합모델 표준이다.",
+      "System and Software Quality Requirements and Evaluation 으로 줄여서 SQuaRE라고도 한다.",
+      "ISO/IEC 2501n에서는 소프트웨어의 내부 측정, 외부 측정, 사용 품질 측정, 품질 측정 요소 등을 다룬다.",
+      "기존 소프트웨어 품질 평가 모델과 소프트웨어 평가 절차 모델 인 ISO/IEC 9126과 ISO/IEC 14598을 통합하였다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-4d007a7fcd093fd1",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "코드 인스펙션과 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 39번",
+    "sourceYear": 2022,
+    "choices": [
+      "프로그램을 수행시켜보는 것 대신에 읽어보고 눈으로 확인하 는 방법으로 볼 수 있다.",
+      "코드 품질 향상 기법 중 하나이다.",
+      "동적 테스트 시에만 활용하는 기법이다.",
+      "결함과 함께 코딩 표준 준수 여부, 효율성 등의 다른 품질 이슈 를 검사하기도 한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-a099d87053250142",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "프로젝트에 내재된 위험 요소를 인식하고 그 영향을 분석하여 이를 관리하는 활동으로서, 프로젝트를 성공시키기 위하여 위험 요소를 사전에 예측, 대비하는 모든 기술과 활동을 포함하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 1회 40번",
+    "sourceYear": 2022,
+    "choices": [
+      "Critical Path Method",
+      "Risk Analysis",
+      "Work Breakdown Structure",
+      "Waterfall Model 제3과목 데이터베이스 구축"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-bcac6057672239b5",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스 설계 단계 중 물리적 설계 시 고려 사항으로 적절하지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 41번",
+    "sourceYear": 2022,
+    "choices": [
+      "스키마의 평가 및 정제",
+      "응답 시간",
+      "저장 공간의 효율화",
+      "트랜잭션 처리량"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-c45a4c6c75f749ce",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DELETE 명령에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 42번",
+    "sourceYear": 2022,
+    "choices": [
+      "테이블의 행을 삭제할 때 사용한다.",
+      "WHERE 조건절이 없는 DELETE 명령을 수행하면 DROP TABLE 명령을 수행했을 때와 동일한 효과를 얻을 수 있다.",
+      "SQL을 사용 용도에 따라 분류할 경우 DML에 해당한다.",
+      "기본 사용 형식은 “DELETE FROM 테이블 [WHERE 조건];” 이다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-5bdbf84a65162575",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "어떤 릴레이션 R의 모든 조인 종속성의 만족이 R의 후보키를 통해서 만 만족될 때, 이 릴레이션 R이 해당하는 정규형은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 43번",
+    "sourceYear": 2022,
+    "choices": [
+      "제5정규형",
+      "제4정규형",
+      "제3정규형",
+      "제1정규형"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-6393a26b0a7e1e4c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다른 릴레이션의 기본키를 참조하는 키를 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 45번",
+    "sourceYear": 2022,
+    "choices": [
+      "필드키",
+      "슈퍼키",
+      "외래키",
+      "후보키"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-97e422603d32babf",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "관계해석에서 ‘모든 것에 대하여’의 의미를 나타내는 논리 기호는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 46번",
+    "sourceYear": 2022,
+    "choices": [
+      "∃",
+      "∈",
+      "∀",
+      "⊂ 1회"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-aae69da0cb742b0d",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "뷰(View)에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 48번",
+    "sourceYear": 2022,
+    "choices": [
+      "뷰 위에 또 다른 뷰를 정의할 수 있다.",
+      "DBA는 보안성 측면에서 뷰를 활용할 수 있다.",
+      "사용자가 필요한 정보를 요구에 맞게 가공하여 뷰로 만들 수 있다.",
+      "SQL을 사용하면 뷰에 대한 삽입, 갱신, 삭제 연산 시 제약 사항 이 없다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-44093b36b67a5921",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "관계 대수식을 SQL 질의로 옳게 표현한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 49번",
+    "sourceYear": 2022,
+    "choices": [
+      " 이름  학과  ′ 교육 ′  학생 ",
+      "SELECT 학생 FROM 이름 WHERE 학과 = ‘교육’;",
+      "SELECT 이름 FROM 학생 WHERE 학과 = ‘교육’;",
+      "SELECT 교육 FROM 학과 WHERE 이름 = ‘학생’;"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-c9cacae711b22293",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정규화 과정에서 함수 종속이 A → B이고 B → C일 때 A → C인 관계를 제거하는 단계는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 50번",
+    "sourceYear": 2022,
+    "choices": [
+      "1NF → 2NF",
+      "2NF → 3NF",
+      "3NF → BCNF",
+      "BCNF → 4NF"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-7fedf8db1d0b3c55",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CREATE TABLE문에 포함되지 않는 기능은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 51번",
+    "sourceYear": 2022,
+    "choices": [
+      "속성 타입 변경",
+      "속성의 NOT NULL 여부 지정",
+      "기본키를 구성하는 속성 지정",
+      "CHECK 제약조건의 정의"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-28e40a586941d371",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL과 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 52번",
+    "sourceYear": 2022,
+    "choices": [
+      "REVOKE 키워드를 사용하여 열 이름을 다시 부여할 수 있다.",
+      "데이터 정의어는 기본 테이블, 뷰 테이블, 또는 인덱스 등을 생성, 변경, 제거하는데 사용되는 명령어이다.",
+      "DISTINCT를 활용하여 중복 값을 제거할 수 있다.",
+      "JOIN을 통해 여러 테이블의 레코드를 조합하여 표현할 수 있 다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-1f94d9ad89198d87",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 SQL문의 실행결과로 생성되는 튜플 수는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 53번",
+    "sourceYear": 2022,
+    "choices": [
+      "SELECT 급여 FROM 사원; <사원> 테이블 사원ID 사원명 급여 부서ID 101 박철수 30000 1 102 한나라 35000 2 103 김감동 40000 3 104 이구수 35000 2 105 최초록 40000 3",
+      "1",
+      "3",
+      "4"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-46adead3a2e52d5b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 SQL문에서 사용된 BETWEEN 연산의 의미와 동일한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 54번",
+    "sourceYear": 2022,
+    "choices": [
+      "SELECT * FROM 성적 WHERE (점수 BETWEEN 90 AND 95) AND 학과 = ‘컴퓨터공학과’;",
+      "점수 ＞= 90 AND 점수 ＜= 95",
+      "점수 ＞ 90 AND 점수 ＜ 95",
+      "점수 ＞ 90 AND 점수 ＜= 95"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-cac76822e16f390e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "트랜잭션의 상태 중 트랜잭션의 수행이 실패하여 Rollback 연산을 실행한 상태는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 55번",
+    "sourceYear": 2022,
+    "choices": [
+      "철회(Aborted)",
+      "부분 완료(Partially Committed)",
+      "완료(Commit)",
+      "실패(Fail)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-16dd0424baf56b89",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터 제어어(DCL)에 대한 설명으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 56번",
+    "sourceYear": 2022,
+    "choices": [
+      "ROLLBACK : 데이터의 보안과 무결성을 정의한다.",
+      "COMMIT : 데이터베이스 사용자의 사용 권한을 취소한다.",
+      "GRANT : 데이터베이스 사용자의 사용 권한을 부여한다.",
+      "REVOKE : 데이터베이스 조작 작업이 비정상적으로 종료되었 을 때 원래 상태로 복구한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-12df162ec7a34ae8",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "테이블 R과 S에 대한 SQL문이 실행되었을 때, 실행 결과로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 57번",
+    "sourceYear": 2022,
+    "choices": [
+      "R S A B 1 A 3 B A B 1 A 2 B SELECT A FROM R UNION ALL SELECT A FROM S;",
+      "1",
+      "3 2",
+      "1 3"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-389db8b69773e467",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "분산 데이터베이스 시스템(Distributed Database System)에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 58번",
+    "sourceYear": 2022,
+    "choices": [
+      "분산 데이터베이스는 논리적으로는 하나의 시스템에 속하지만 물리적으로는 여러 개의 컴퓨터 사이트에 분산되어 있다.",
+      "위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성을 목표로 한다.",
+      "데이터베이스의 설계가 비교적 어렵고, 개발 비용과 처리 비용 이 증가한다는 단점이 있다.",
+      "분산 데이터베이스 시스템의 주요 구성 요소는 분산 처리기, P2P 시스템, 단일 데이터베이스 등이 있다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-fa0d4950fbbdf6d6",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "테이블 두 개를 조인하여 뷰 V_1을 정의하고, V_1을 이용하여 뷰 V_2를 정의하였다. 다음 명령 수행 후 결과로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 59번",
+    "sourceYear": 2022,
+    "choices": [
+      "DROP VIEW V_1 CASCADE;",
+      "V_1만 삭제된다.",
+      "V_2만 삭제된다.",
+      "V_1과 V_2 모두 삭제된다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-e172fbd1803d2acc",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스에서 병행제어의 목적으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 1회 60번",
+    "sourceYear": 2022,
+    "choices": [
+      "시스템 활용도 최대화",
+      "사용자에 대한 응답시간 최소화",
+      "데이터베이스 공유 최소화",
+      "데이터베이스 일관성 유지 1회 제4과목 프로그래밍 언어 활용"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-dd6cc06f13df3995",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "IP 주소체계와 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 61번",
+    "sourceYear": 2022,
+    "choices": [
+      "IPv6의 패킷 헤더는 32 octet의 고정된 길이를 가진다.",
+      "IPv6는 주소 자동설정(Auto Configuration) 기능을 통해 손쉽 게 이용자의 단말을 네트워크에 접속시킬 수 있다.",
+      "IPv4는 호스트 주소를 자동으로 설정하며 유니캐스트 (Unicast)를 지원한다.",
+      "IPv4는 클래스별로 네트워크와 호스트 주소의 길이가 다르다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-1a24726531498f0f",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 C언어 프로그램이 실행되었을 때, 실행 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 62번",
+    "sourceYear": 2022,
+    "choices": [
+      "#include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[]) { int arr[2][3] = { 1,2,3,4,5,6 }; int (*p)[3] = NULL; p = arr; printf(\"%d, \", *(p[0] + 1) + *(p[1] + 2)); printf(\"%d\", *(*(p + 1) + 0) + *(*(p + 1) + 1)); return 0; }",
+      "7, 5",
+      "8, 5",
+      "8, 9"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-73eb12b0b7aa7aa3",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "OSI 7계층 중 데이터링크 계층에 해당되는 프로토콜이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 63번",
+    "sourceYear": 2022,
+    "choices": [
+      "HTTP",
+      "HDLC",
+      "PPP",
+      "LLC"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-e841762d66c55e40",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C언어에서 두 개의 논리 값 중 하나라도 참이면 1을, 모두 거짓이면 0을 반환하는 연산자는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 64번",
+    "sourceYear": 2022,
+    "choices": [
+      "∥",
+      "&&",
+      "**",
+      "!="
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-ad5993e45dc1ac00",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "IPv6에 대한 특성으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 65번",
+    "sourceYear": 2022,
+    "choices": [
+      "표시방법은 8비트씩 4부분의 10진수로 표시한다.",
+      "2 128 개의 주소를 표현할 수 있다.",
+      "등급별, 서비스별로 패킷을 구분할 수 있어 품질보장이 용이하다.",
+      "확장기능을 통해 보안기능을 제공한다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-d8816000325b79a3",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "JAVA의 예외(exception)와 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 66번",
+    "sourceYear": 2022,
+    "choices": [
+      "문법 오류로 인해 발생한 것",
+      "오동작이나 결과에 악영향을 미칠 수 있는 실행 시간 동안에 발생한 오류",
+      "배열의 인덱스가 그 범위를 넘어서는 경우 발생하는 오류",
+      "존재하지 않는 파일을 읽으려고 하는 경우에 발생하는 오류"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a8b4519ac8c5047d",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "TCP/IP 계층 구조에서 IP의 동작 과정에서의 전송 오류가 발생하는 경우에 대비해 오류 정보를 전송하는 목적으로 사용하는 프로토콜 은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 67번",
+    "sourceYear": 2022,
+    "choices": [
+      "ECP(Error Checking Protocol)",
+      "ARP(Address Resolution Protocol)",
+      "ICMP(Internet Control Message Protocol)",
+      "PPP(Point-to-Point Protocol)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-e4a670faa47428a8",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "좋은 소프트웨어 설계를 위한 소프트웨어의 모듈간의 결합도 (Coupling)와 모듈 내 요소 간 응집도(Cohesion)에 대한 설명으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 68번",
+    "sourceYear": 2022,
+    "choices": [
+      "응집도는 낮게 결합도는 높게 설계한다.",
+      "응집도는 높게 결합도는 낮게 설계한다.",
+      "양쪽 모두 낮게 설계한다.",
+      "양쪽 모두 높게 설계한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-bc214facae4dc9e4",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음과 같은 형태로 임계 구역의 접근을 제어하는 상호배제 기법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 69번",
+    "sourceYear": 2022,
+    "choices": [
+      "P(S) : while S < = 0 do skip; S := S – 1; V(S) : S := S + 1;",
+      "Dekker Algorithm",
+      "Lamport Algorithm",
+      "Peterson Algorithm"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-99649d2f5f5f01a3",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 개발에서 모듈(Module)이 되기 위한 주요 특징에 해당하 지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 70번",
+    "sourceYear": 2022,
+    "choices": [
+      "다른 것들과 구별될 수 있는 독립적인 기능을 가진 단위(Unit) 이다.",
+      "독립적인 컴파일이 가능하다.",
+      "유일한 이름을 가져야 한다.",
+      "다른 모듈에서의 접근이 불가능해야 한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-ffab94fe57ffbe27",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "빈 기억공간의 크기가 20KB, 16KB, 8KB, 40KB 일 때 기억장치 배치 전략으로 “Best Fit\"을 사용하여 17KB의 프로그램을 적재할 경우 내부 단편화의 크기는 얼마인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 71번",
+    "sourceYear": 2022,
+    "choices": [
+      "3KB",
+      "23KB",
+      "64KB",
+      "67KB"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-7c3a618cdd326e6a",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 JAVA 프로그램이 실행되었을 때, 실행 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 73번",
+    "sourceYear": 2022,
+    "choices": [
+      "BCDABCA",
+      "BCDABCC",
+      "CDDACCC",
+      "CDDACCA public class Ape { static void rs(char a[]) { for(int i = 0; i < a.length; i++) if(a[i] == 'B') a[i] = 'C'; else if(i == a.length - 1) a[i] = a[i-1]; else a[i] = a[i+1]; } static void pca(char a[]) { for(int i = 0; i < a.length; i ++) System.out.print(a[i]); System.out.println(); } public static void main(String[] args) { char c[] = {'A','B','D','D','A','B','C'}; rs(c); pca(c); } } 1회"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-6c22eb26ad620c8a",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "개발 환경 구성을 위한 빌드(Build) 도구에 해당하지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 74번",
+    "sourceYear": 2022,
+    "choices": [
+      "Ant",
+      "Kerberos",
+      "Maven",
+      "Gradle"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-014a316fb6396377",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "3개의 페이지 프레임을 갖는 시스템에서 페이지 참조 순서가 1, 2, 1, 0, 4, 1, 3 일 경우 FIFO 알고리즘에 의한 페이지 교체의 경우 프레임의 최종 상태는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 75번",
+    "sourceYear": 2022,
+    "choices": [
+      "1, 2, 0",
+      "2, 4, 3",
+      "1, 4, 2",
+      "4, 1, 3"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-895833afad89b426",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 Python 프로그램이 실행되었을 때, 실행 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 77번",
+    "sourceYear": 2022,
+    "choices": [
+      "a = 100 list_data = ['a','b','c'] dict_data = {'a':90, 'b':95} print(list_data[0]) print(dict_data['a'])",
+      "a 90",
+      "100 90",
+      "100 100"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-bc14951ae4375c78",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C언어에서 정수 변수 a, b에 각각 1, 2가 저장되어 있을 때 다음 식의 연산 결과로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 78번",
+    "sourceYear": 2022,
+    "choices": [
+      "a < b + 2 && a << 1 <= b",
+      "0",
+      "1",
+      "3"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-076d5effa4442e9a",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UNIX 시스템의 쉘(shell)의 주요 기능에 대한 설명이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 1회 80번",
+    "sourceYear": 2022,
+    "choices": [
+      "사용자 명령을 해석하고 커널로 전달하는 기능을 제공한다.",
+      "반복적인 명령 프로그램을 만드는 프로그래밍 기능을 제공한다.",
+      "쉘 프로그램 실행을 위해 프로세스와 메모리를 관리한다.",
+      "초기화 파일을 이용해 사용자 환경을 설정하는 기능을 제공한다. 제 5 과목 : 정보시스템 구축 관리"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-c60f4679a9294dfe",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 생명주기 모델 중 나선형 모델(Spiral Model)과 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 81번",
+    "sourceYear": 2022,
+    "choices": [
+      "소프트웨어 개발 프로세스를 위험 관리(Risk Management) 측면에서 본 모델이다.",
+      "위험 분석(Risk Analysis)은 반복적인 개발 진행 후 주기의 마지막 단계에서 최종적으로 한 번 수행해야 한다.",
+      "시스템을 여러 부분으로 나누어 여러 번의 개발 주기를 거치면 서 시스템이 완성된다.",
+      "요구사항이나 아키텍처를 이해하기 어렵다거나 중심이 되는 기술에 문제가 있는 경우 적합한 모델이다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-20a0cb6d53c44f14",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정보시스템과 관련한 다음 설명에 해당하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 82번",
+    "sourceYear": 2022,
+    "choices": [
+      "ㆍ각 시스템 간에 공유 디스크를 중심으로 클러스터링으 로 엮어 다수의 시스템을 동시에 연결할 수 있다. ㆍ조직, 기업의 기간 업무 서버 안정성을 높이기 위해 사용될 수 있다. ㆍ여러 가지 방식으로 구현되며 2개의 서버를 연결하는 것으로 2개의 시스템이 각각 업무를 수행하도록 구현 하는 방식이 널리 사용된다.",
+      "고가용성 솔루션(HACMP)",
+      "점대점 연결 방식(Point-to-Point Mode)",
+      "스턱스넷(Stuxnet)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-53adb4b3a8ed575a",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "위조된 매체 접근 제어(MAC) 주소를 지속적으로 네트워크로 흘려보 내, 스위치 MAC 주소 테이블의 저장 기능을 혼란시켜 더미 허브 (Dummy Hub)처럼 작동하게 하는 공격은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 83번",
+    "sourceYear": 2022,
+    "choices": [
+      "Parsing",
+      "LAN Tapping",
+      "Switch Jamming",
+      "FTP Flooding"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-f73edf4367bcd345",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 내용이 설명하는 스토리지 시스템은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 84번",
+    "sourceYear": 2022,
+    "choices": [
+      "ㆍ하드디스크와 같은 데이터 저장장치를 호스트버스 어 댑터에 직접 연결하는 방식 ㆍ저장장치와 호스트 기기 사이에 네트워크 디바이스 없 이 직접 연결하는 방식으로 구성",
+      "DAS",
+      "NAS",
+      "BSA"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-57e51f59f76d8715",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "취약점 관리를 위해 일반적으로 수행하는 작업이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 85번",
+    "sourceYear": 2022,
+    "choices": [
+      "무결성 검사",
+      "응용 프로그램의 보안 설정 및 패치(Patch) 적용",
+      "중단 프로세스 및 닫힌 포트 위주로 확인",
+      "불필요한 서비스 및 악성 프로그램의 확인과 제거 1회"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-8e8bb331f0c39ef6",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 생명주기 모델 중 V 모델과 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 86번",
+    "sourceYear": 2022,
+    "choices": [
+      "요구 분석 및 설계단계를 거치지 않으며 항상 통합 테스트를 중심으로 V 형태를 이룬다.",
+      "Perry에 의해 제안되었으며 세부적인 테스트 과정으로 구성되 어 신뢰도 높은 시스템을 개발하는데 효과적이다.",
+      "개발 작업과 검증 작업 사이의 관계를 명확히 들어내 놓은 폭포 수 모델의 변형이라고 볼 수 있다.",
+      "폭포수 모델이 산출물 중심이라면 V 모델은 작업과 결과의 검증에 초점을 둔다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-6ff824a6ad811b48",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "블루투스(Bluetooth) 공격과 해당 공격에 대한 설명이 올바르게 연결된 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 87번",
+    "sourceYear": 2022,
+    "choices": [
+      "블루버그(BlueBug) - 블루투스의 취약점을 활용하여 장비의 파일에 접근하는 공격으로 OPP를 사용하여 정보를 열람",
+      "블루스나프(BlueSnarf) - 블루투스를 이용해 스팸처럼 명함을 익명으로 퍼뜨리는 것",
+      "블루프린팅(BluePrinting) - 블루투스 공격 장치의 검색 활동 을 의미",
+      "블루재킹(BlueJacking) - 블루투스 장비사이의 취약한 연결 관리를 악용한 공격"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-ec0a692d7efe8113",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DoS(Denial of Service) 공격과 관련한 내용으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 88번",
+    "sourceYear": 2022,
+    "choices": [
+      "Ping of Death 공격은 정상 크기보다 큰 ICMP 패킷을 작은 조각(Fragment)으로 쪼개어 공격 대상이 조각화 된 패킷을 처리하게 만드는 공격 방법이다.",
+      "Smurf 공격은 멀티캐스트(Multicast)를 활용하여 공격 대상이 네트워크의 임의의 시스템에 패킷을 보내게 만드는 공격이다.",
+      "SYN Flooding은 존재하지 않는 클라이언트가 서버별로 한정 된 접속 가능 공간에 접속한 것처럼 속여 다른 사용자가 서비 스를 이용하지 못하게 하는 것이다.",
+      "Land 공격은 패킷 전송 시 출발지 IP주소와 목적지 IP주소 값을 똑같이 만들어서 공격 대상에게 보내는 공격 방법이다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-c84c61c74e932408",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 설명에 해당하는 시스템은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 89번",
+    "sourceYear": 2022,
+    "choices": [
+      "ㆍ1990년대 David Clock이 처음 제안하였다. ㆍ비정상적인 접근의 탐지를 위해 의도적으로 설치해 둔 시스템이다. ㆍ침입자를 속여 실제 공격당하는 것처럼 보여줌으로써 크래 커를 추적 및 공격기법의 정보를 수집하는 역할을 한다. ㆍ쉽게 공격자에게 노출되어야 하며 쉽게 공격이 가능한 것처럼 취약해 보여야 한다.",
+      "Apache",
+      "Hadoop",
+      "Honeypot"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-476f1c693129b27d",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음이 설명하는 IT 기술은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 90번",
+    "sourceYear": 2022,
+    "choices": [
+      "ㆍ컨테이너 응용프로그램의 배포를 자동화하는 오픈소스 엔진이다. ㆍ소프트웨어 컨테이너 안에 응용 프로그램들을 배치시키 는 일을 자동화해 주는 오픈 소스 프로젝트이자 소프트 웨어로 볼 수 있다.",
+      "Stack Guard",
+      "Docker",
+      "Cipher Container"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-36449350025d0753",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "간트 차트(Gantt Chart)에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 91번",
+    "sourceYear": 2022,
+    "choices": [
+      "프로젝트를 이루는 소작업 별로 언제 시작되고 언제 끝나야 하는지를 한 눈에 볼 수 있도록 도와준다.",
+      "자원 배치 계획에 유용하게 사용된다.",
+      "CPM 네트워크로부터 만드는 것이 가능하다.",
+      "수평 막대의 길이는 각 작업(Task)에 필요한 인원수를 나타낸다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-5ec07d440977dc9e",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Python 기반의 웹 크롤링(Web Crawling) 프레임워크로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 92번",
+    "sourceYear": 2022,
+    "choices": [
+      "Li-fi",
+      "Scrapy",
+      "CrawlCat",
+      "SBAS"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-23e11021363de128",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Secure 코딩에서 입력 데이터의 보안 약점과 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 93번",
+    "sourceYear": 2022,
+    "choices": [
+      "SQL 삽입 : 사용자의 입력 값 등 외부 입력 값이 SQL 쿼리에 삽입되어 공격",
+      "크로스사이트 스크립트 : 검증되지 않은 외부 입력 값에 의해 브라우저에서 악의적인 코드가 실행",
+      "운영체제 명령어 삽입 : 운영체제 명령어 파라미터 입력 값이 적절한 사전검증을 거치지 않고 사용되어 공격자가 운영체제 명령어를 조작",
+      "자원 삽입 : 사용자가 내부 입력 값을 통해 시스템 내에 사용이 불가능한 자원을 지속적으로 입력함으로써 시스템에 과부하 발생"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-4a4d81d3488eb982",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Windows 파일 시스템인 FAT와 비교했을 때의 NTFS의 특징이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 94번",
+    "sourceYear": 2022,
+    "choices": [
+      "보안에 취약",
+      "대용량 볼륨에 효율적",
+      "자동 압축 및 안정성",
+      "저용량 볼륨에서의 속도 저하"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-aeef1b2310439197",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DES는 몇 비트의 암호화 알고리즘인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 95번",
+    "sourceYear": 2022,
+    "choices": [
+      "8",
+      "24",
+      "64",
+      "132"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-3f5a2bd75924473e",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "리눅스에서 생성된 파일 권한이 644일 경우 umask 값은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 96번",
+    "sourceYear": 2022,
+    "choices": [
+      "022",
+      "666",
+      "777",
+      "755"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-94ef022fa0e43931",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 내용이 설명하는 로그 파일은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 97번",
+    "sourceYear": 2022,
+    "choices": [
+      "ㆍ리눅스 시스템에서 사용자의 성공한 로그인/로그아웃 정보기록 ㆍ시스템의 종료/시작 시간 기록",
+      "tapping",
+      "xtslog",
+      "linuxer"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-562182eaab25a8c4",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "상향식 비용 산정 기법 중 LOC(원시 코드 라인 수) 기법에서 예측치를 구하기 위해 사용하는 항목이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 98번",
+    "sourceYear": 2022,
+    "choices": [
+      "낙관치",
+      "기대치",
+      "비관치",
+      "모형치"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-1867f0acfe283972",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고 트래픽을 조정하기 위한 패킷 분석 기술은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 99번",
+    "sourceYear": 2022,
+    "choices": [
+      "PLCP(Packet Level Control Processor)",
+      "Traffic Distributor",
+      "Packet Tree",
+      "DPI(Deep Packet Inspection)"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-451dfb5a3298bd05",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 개발 방법론의 테일러링(Tailoring)과 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 1회 100번",
+    "sourceYear": 2022,
+    "choices": [
+      "프로젝트 수행 시 예상되는 변화를 배제하고 신속히 진행하여 야 한다.",
+      "프로젝트에 최적화된 개발 방법론을 적용하기 위해 절차, 산출 물 등을 적절히 변경하는 활동이다.",
+      "관리 측면에서의 목적 중 하나는 최단기간에 안정적인 프로젝 트 진행을 위한 사전 위험을 식별하고 제거하는 것이다.",
+      "기술적 측면에서의 목적 중 하나는 프로젝트에 최적화된 기술 요소를 도입하여 프로젝트 특성에 맞는 최적의 기법과 도구를 사용하는 것이다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-09795eb629ad766c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML 다이어그램 중 순차 다이어그램에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 1번",
+    "sourceYear": 2022,
+    "choices": [
+      "객체 간의 동적 상호작용을 시간 개념을 중심으로 모델링 하는 것이다.",
+      "주로 시스템의 정적 측면을 모델링하기 위해 사용한다.",
+      "일반적으로 다이어그램의 수직 방향이 시간의 흐름을 나타낸다.",
+      "회귀 메시지(Self-Message), 제어블록(Statement Block) 등 으로 구성된다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-2e03ab336040ae86",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "메시지 지향 미들웨어(Message-Oriented Middleware, MOM)에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 2번",
+    "sourceYear": 2022,
+    "choices": [
+      "느리고 안정적인 응답보다는 즉각적인 응답이 필요한 온라인 업무에 적합하다.",
+      "독립적인 애플리케이션을 하나의 통합된 시스템으로 묶기 위 한 역할을 한다.",
+      "송신측과 수신측의 연결 시 메시지 큐를 활용하는 방법이 있다.",
+      "상이한 애플리케이션 간 통신을 비동기 방식으로 지원한다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-74313ff6cc93750f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "익스트림 프로그래밍에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 3번",
+    "sourceYear": 2022,
+    "choices": [
+      "대표적인 구조적 방법론 중 하나이다.",
+      "소규모 개발 조직이 불확실하고 변경이 많은 요구를 접하였을 때 적절한 방법이다.",
+      "익스트림 프로그래밍을 구동시키는 원리는 상식적인 원리와 경험을 최대한 끌어 올리는 것이다.",
+      "구체적인 실천 방법을 정의하고 있으며, 개발 문서 보다는 소스 코드에 중점을 둔다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-e7485441c9e80767",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "유스케이스(Use Case)의 구성 요소 간의 관계에 포함되지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 4번",
+    "sourceYear": 2022,
+    "choices": [
+      "연관",
+      "확장",
+      "구체화",
+      "일반화"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-186106387058b41f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정보공학 방법론에서 데이터베이스 설계의 표현으로 사용하는 모델 링 언어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 6번",
+    "sourceYear": 2022,
+    "choices": [
+      "Package Diagram",
+      "State Transition Diagram",
+      "Deployment Diagram",
+      "Entity-Relationship Diagram"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-86b297927ed75ea4",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "미들웨어(Middleware)에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 7번",
+    "sourceYear": 2022,
+    "choices": [
+      "여러 운영체제에서 응용 프로그램들 사이에 위치한 소프트웨 어이다.",
+      "미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.",
+      "소프트웨어 컴포넌트를 연결하기 위한 준비된 인프라 구조를 제공한다.",
+      "여러 컴포넌트를 1대 1, 1대 다, 다대 다 등 여러 가지 형태로 연결이 가능하다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-f0eff321cecf11aa",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UI의 설계 지침으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 8번",
+    "sourceYear": 2022,
+    "choices": [
+      "이해하기 편하고 쉽게 사용할 수 있는 환경을 제공해야 한다.",
+      "주요 기능을 메인 화면에 노출하여 조작이 쉽도록 하여야 한다.",
+      "치명적인 오류에 대한 부정적인 사항은 사용자가 인지할 수 없도록 한다.",
+      "사용자의 직무, 연령, 성별 등 다양한 계층을 수용하여야 한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-b1a1a7c77fa386d7",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 개념에서 다형성(Polymorphism)과 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 9번",
+    "sourceYear": 2022,
+    "choices": [
+      "다형성은 현재 코드를 변경하지 않고 새로운 클래스를 쉽게 추가할 수 있게 한다.",
+      "다형성이란 여러 가지 형태를 가지고 있다는 의미로, 여러 형태 를 받아들일 수 있는 특징을 말한다.",
+      "메소드 오버라이딩(Overriding)은 상위 클래스에서 정의한 일 반 메소드의 구현을 하위 클래스에서 무시하고 재정의할 수 있다.",
+      "메소드 오버로딩(Overloading)의 경우 매개 변수 타입은 동일 하지만 메소드명을 다르게 함으로써 구현, 구분할 수 있다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-3f184e8df9740fb4",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 개발 영역을 결정하는 요소 중 다음 사항과 관계있는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 10번",
+    "sourceYear": 2022,
+    "choices": [
+      "ㆍ소프트웨어에 의해 간접적으로 제어되는 장치와 소프트웨 어를 실행하는 하드웨어 ㆍ기존의 소프트웨어와 새로운 소프트웨어를 연결하는 소프 트웨어 ㆍ순서적 연산에 의해 소프트웨어를 실행하는 절차",
+      "기능(Function)",
+      "성능(Performance)",
+      "제약조건(Constraint)"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-4a306005ecf0c688",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 11번",
+    "sourceYear": 2022,
+    "choices": [
+      "객체는 상태, 동작, 고유 식별자를 가진 모든 것이라 할 수 있다.",
+      "객체는 공통 속성을 공유하는 클래스들의 집합이다.",
+      "객체는 필요한 자료 구조와 이에 수행되는 함수들을 가진 하나 의 독립된 존재이다.",
+      "객체의 상태는 속성값에 의해 정의된다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-042eebbf73f8599f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "속성과 관련된 연산(Operation)을 클래스 안에 묶어서 하나로 취급하 는 것을 의미하는 객체지향 개념은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 12번",
+    "sourceYear": 2022,
+    "choices": [
+      "Inheritance",
+      "Class",
+      "Encapsulation",
+      "Association"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-94c36b0f275bf25e",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "애자일(Agile) 프로세스 모델에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 13번",
+    "sourceYear": 2022,
+    "choices": [
+      "변화에 대한 대응보다는 자세한 계획을 중심으로 소프트웨어 를 개발한다.",
+      "프로세스와 도구 중심이 아닌 개개인과의 상호소통을 통해 의 견을 수렴한다.",
+      "협상과 계약보다는 고객과의 협력을 중시한다.",
+      "문서 중심이 아닌, 실행 가능한 소프트웨어를 중시한다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-85ffd497de43b113",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "명백한 역할을 가지고 독립적으로 존재할 수 있는 시스템의 부분으로 넓은 의미에서는 재사용되는 모든 단위라고 볼 수 있으며, 인터페이 스를 통해서만 접근할 수 있는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 14번",
+    "sourceYear": 2022,
+    "choices": [
+      "Model",
+      "Sheet",
+      "Component",
+      "Cell"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-9e63f4cb2c16d57f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "GoF(Gang of Four) 디자인 패턴을 생성, 구조, 행동 패턴의 세 그룹으로 분류할 때, 구조 패턴이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 15번",
+    "sourceYear": 2022,
+    "choices": [
+      "Adapter 패턴",
+      "Bridge 패턴",
+      "Builder 패턴",
+      "Proxy 패턴"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-ec815bbbecb6d8d3",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UI와 관련된 기본 개념 중 하나로, 시스템의 상태와 사용자의 지시에 대한 효과를 보여주어 사용자가 명령에 대한 진행 상황과 표시된 내용을 해석할 수 있도록 도와주는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 16번",
+    "sourceYear": 2022,
+    "choices": [
+      "Feedback",
+      "Posture",
+      "Module",
+      "Hash"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-c4719784f587134f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UI의 종류로 멀티 터치(Multi-touch), 동작 인식(Gesture Recognition) 등 사용자의 자연스러운 움직임을 인식하여 서로 주고받는 정보를 제공하는 사용자 인터페이스를 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 17번",
+    "sourceYear": 2022,
+    "choices": [
+      "GUKGraphical User Interface)",
+      "OUI(Organic User Interface)",
+      "NUI(Natural User Interface)",
+      "CLKCommand Line Interface)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-72635daa23d3f223",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 모델링과 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 18번",
+    "sourceYear": 2022,
+    "choices": [
+      "모델링 작업의 결과물은 다른 모델링 작업에 영향을 줄 수 없다.",
+      "구조적 방법론에서는 DFD(Data Flow Diagram), DD(Data Dictionary) 등을 사용하여 요구 사항의 결과를 표현한다.",
+      "객체지향 방법론에서는 UML 표기법을 사용한다.",
+      "소프트웨어 모델을 사용할 경우 개발될 소프트웨어에 대한 이 해도 및 이해 당사자 간의 의사소통 향상에 도움이 된다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-0d969b3d813422e6",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "유스케이스 다이어그램(Use Case Diagram)에 관련된 내용으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 19번",
+    "sourceYear": 2022,
+    "choices": [
+      "시스템과 상호 작용하는 외부 시스템은 액터로 파악해서는 안 된다.",
+      "유스케이스는 사용자 측면에서의 요구사항으로, 사용자가 원 하는 목표를 달성하기 위해 수행할 내용을 기술한다.",
+      "시스템 액터는 다른 프로젝트에서 이미 개발되어 사용되고 있 으며, 본 시스템과 데이터를 주고받는 등 서로 연동되는 시스 템을 말한다.",
+      "액터가 인식할 수 없는 시스템 내부의 기능을 하나의 유스케이 스로 파악해서는 안된다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-eaaba794fc572675",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 아키텍처 모델 중 MVC(Model-View-Controller)와 관련 한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 2회 20번",
+    "sourceYear": 2022,
+    "choices": [
+      "MVC 모델은 사용자 인터페이스를 담당하는 계층의 응집도를 높일 수 있고, 여러 개의 다른 UI를 만들어 그 사이에 결합도를 낮출 수 있다.",
+      "모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달 자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결 된다.",
+      "뷰(View)는 모델(Model)에 있는 데이터를 사용자 인터페이스 에 보이는 역할을 담당한다.",
+      "제어(Controller)는 모델(Model)에 명령을 보냄으로써 모델의 상태를 변경할 수 있다. 제2과목 소프트웨어 개발"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-a3dcca5a1abc95cd",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "통합 테스트(Integration Test)와 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 21번",
+    "sourceYear": 2022,
+    "choices": [
+      "시스템을 구성하는 모듈의 인터페이스와 결합을 테스트하는 것이다.",
+      "하향식 통합 테스트의 경우 넓이 우선(Breadth First) 방식으 로 테스트를 할 모듈을 선택할 수 있다.",
+      "상향식 통합 테스트의 경우 시스템 구조도의 최상위에 있는 모듈을 먼저 구현하고 테스트한다.",
+      "모듈 간의 인터페이스와 시스템의 동작이 정상적으로 잘되고 있는지를 빨리 파악하고자 할 때 상향식 보다는 하향식 통합 테스트를 사용하는 것이 좋다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-76cbd1c8a4d1c333",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음과 같이 레코드가 구성되어 있을 때, 이진 검색 방법으로 14를 찾을 경우 비교되는 횟수는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 22번",
+    "sourceYear": 2022,
+    "choices": [
+      "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-a1a8666cc08a6bd8",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 공학에서 워크스루(Walkthrough)에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 23번",
+    "sourceYear": 2022,
+    "choices": [
+      "사용사례를 확장하여 명세하거나 설계 다이어그램, 원시코드, 테스트 케이스 등에 적용할 수 있다.",
+      "복잡한 알고리즘 또는 반복, 실시간 동작, 병행 처리와 같은 기능이나 동작을 이해하려고 할 때 유용하다.",
+      "인스펙션(Inspection)과 동일한 의미를 가진다.",
+      "단순한 테스트 케이스를 이용하여 프로덕트를 수작업으로 수 행해 보는 것이다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-bb35e5be63a7b70a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어의 개발 과정에서 소프트웨어의 변경 사항을 관리하기 위해 개발된 일련의 활동을 뜻하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 24번",
+    "sourceYear": 2022,
+    "choices": [
+      "복호화",
+      "형상 관리",
+      "저작권",
+      "크랙 2회"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-7ca0c432bef7b153",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "테스트 케이스와 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 25번",
+    "sourceYear": 2022,
+    "choices": [
+      "테스트의 목표 및 테스트 방법을 결정하기 전에 테스트 케이스 를 작성해야 한다.",
+      "프로그램에 결함이 있더라도 입력에 대해 정상적인 결과를 낼 수 있기 때문에 결함을 검사할 수 있는 테스트 케이스를 찾는 것이 중요하다.",
+      "개발된 서비스가 정의된 요구 사항을 준수하는지 확인하기 위 한 입력 값과 실행 조건, 예상 결과의 집합으로 볼 수 있다.",
+      "테스트 케이스 실행이 통과되었는지 실패하였는지 판단하기 위한 기준을 테스트 오라클(Test Oracle)이라고 한다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-1a9d886731d2744f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 개념을 활용한 소프트웨어 구현과 관련한 설명 중 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 26번",
+    "sourceYear": 2022,
+    "choices": [
+      "객체(Object)란 필요한 자료 구조와 수행되는 함수들을 가진 하나의 독립된 존재이다.",
+      "JAVA에서 정보은닉(Information Hiding)을 표기할 때 private 의 의미는 ‘공개’이다.",
+      "상속(Inheritance)은 개별 클래스를 상속 관계로 묶음으로써 클래스 간의 체계화된 전체 구조를 파악하기 쉽다는 장점이 있다.",
+      "같은 클래스에 속하는 개개의 객체이자 하나의 클래스에서 생 성된 객체를 인스턴스(Instance)라고 한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-0dea37b133b5c566",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DRM(Digital Rights Management)과 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 27번",
+    "sourceYear": 2022,
+    "choices": [
+      "디지털 콘텐츠와 디바이스의 사용을 제한하기 위해 하드웨어 제조업자, 저작권자, 출판업자 등이 사용할 수 있는 접근 제어 기술을 의미한다.",
+      "디지털 미디어의 생명 주기 동안 발생하는 사용 권한 관리, 과금, 유통 단계를 관리하는 기술로도 볼 수 있다.",
+      "클리어링 하우스(Clearing House)는 사용자에게 콘텐츠 라이 센스를 발급하고 권한을 부여해주는 시스템을 말한다.",
+      "원본을 안전하게 유통하기 위한 전자적 보안은 고려하지 않기 때문에 불법 유통과 복제의 방지는 불가능하다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-d260ff4370a981b2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "위험 모니터링의 의미로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 28번",
+    "sourceYear": 2022,
+    "choices": [
+      "위험을 이해하는 것",
+      "첫 번째 조치로 위험을 피할 수 있도록 하는 것",
+      "위험 발생 후 즉시 조치하는 것",
+      "위험 요소 징후들에 대하여 계속적으로 인지하는 것"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-2283c0da2249f848",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "동시에 소스를 수정하는 것을 방지하며 다른 방향으로 진행된 개발 결과를 합치거나 변경 내용을 추적할 수 있는 소프트웨어 버전 관리 도구는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 29번",
+    "sourceYear": 2022,
+    "choices": [
+      "RCS(Revision Control System)",
+      "RTS(Reliable Transfer Service)",
+      "RPC(Remote Procedure Call)",
+      "RVS(Relative Version System)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-dddd34d9534a05a2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "화이트박스 테스트와 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 30번",
+    "sourceYear": 2022,
+    "choices": [
+      "화이트박스 테스트의 이해를 위해 논리 흐름도(Logic-Flow Diagram)를 이용할 수 있다.",
+      "테스트 데이터를 이용해 실제 프로그램을 실행함으로써 오류 를 찾는 동적 테스트(Dynamic Test)에 해당한다.",
+      "프로그램의 구조를 고려하지 않기 때문에 테스트 케이스는 프 로그램 또는 모듈의 요구나 명세를 기초로 결정한다.",
+      "테스트 데이터를 선택하기 위하여 검증 기준(Test Coverage) 을 정한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-2ce26472be12fc21",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "알고리즘과 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 31번",
+    "sourceYear": 2022,
+    "choices": [
+      "주어진 작업을 수행하는 컴퓨터 명령어를 순서대로 나열한 것 으로 볼 수 있다.",
+      "검색(Searching)은 정렬이 되지 않은 데이터 혹은 정렬이 된 데이터 중에서 키값에 해당되는 데이터를 찾는 알고리즘이다.",
+      "정렬(Sorting)은 흩어져있는 데이터를 키값을 이용하여 순서 대로 열거하는 알고리즘이다.",
+      "선형 검색은 검색을 수행하기 전에 반드시 데이터의 집합이 정렬되어 있어야 한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-2f3043284aea3955",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "버블 정렬을 이용하여 다음 자료를 오름차순으로 정렬할 경우 PASS 1의 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 32번",
+    "sourceYear": 2022,
+    "choices": [
+      "9, 6, 7, 3, 5",
+      "6, 9, 7, 3, 5",
+      "3, 9, 6, 7, 5",
+      "3, 6, 7, 9, 5"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-713dbb73286e7b41",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음은 인스펙션(Inspection) 과정을 표현한 것이다. (가)~(마)에 들어갈 말을 [보기]에서 찾아 바르게 연결한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2022-2/q033-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 33번",
+    "sourceYear": 2022,
+    "choices": [
+      "[보기] ㉠ 준비 ㉡ 사전 교육 ㉢ 인스펙션 회의 ㉣ 수정 ㉤ 후속 조치",
+      "(가) - ㉡, (나) - ㉢",
+      "(나) - ㉠, (다) - ㉢",
+      "(다) - ㉢, (라) - ㉤"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-5c710a6c98b272d4",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어를 보다 쉽게 이해할 수 있고 적은 비용으로 수정할 수 있도록 겉으로 보이는 동작의 변화 없이 내부 구조를 변경하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 34번",
+    "sourceYear": 2022,
+    "choices": [
+      "Refactoring",
+      "Architecting",
+      "Specification",
+      "Renewal"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-84e187ce6812419f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "단위 테스트(Unit Test)와 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 35번",
+    "sourceYear": 2022,
+    "choices": [
+      "구현 단계에서 각 모듈의 개발을 완료한 후 개발자가 명세서의 내용대로 정확히 구현되었는지 테스트한다.",
+      "모듈 내부의 구조를 구체적으로 볼 수 있는 구조적 테스트를 주로 시행한다.",
+      "필요 데이터를 인자를 통해 넘겨주고, 테스트 완료 후 그 결과 값을 받는 역할을 하는 가상의 모듈을 테스트 스텁(Stub)이라 고 한다.",
+      "테스트할 모듈을 호출하는 모듈도 있고, 테스트할 모듈이 호출 하는 모듈도 있다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-83593e9eacf86774",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "IDE(Integrated Development Environment) 도구의 각 기능에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 36번",
+    "sourceYear": 2022,
+    "choices": [
+      "Coding - 프로그래밍 언어를 가지고 컴퓨터 프로그램을 작성 할 수 있는 환경을 제공",
+      "Compile – 저급 언어의 프로그램을 고급 언어 프로그램으로 변환하는 기능",
+      "Debugging - 프로그램에서 발견되는 버그를 찾아 수정할 수 있는 기능",
+      "Deployment - 소프트웨어를 최종 사용자에게 전달하기 위한 기능 2회"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-5f24f079371f92b3",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "아래 Tree 구조에 대하여 후위 순회(Postorder)한 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2022-2/q037-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 37번",
+    "sourceYear": 2022,
+    "choices": [
+      "a → b → d → c → e → g → h → f",
+      "d → b → g → h → e → f → c → a",
+      "d → b → a → g → e → h → c → f",
+      "a → b → d → g → e → h → c → f"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-3c747bf2af6622ae",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "인터페이스 구현 시 사용하는 기술로 속성-값 쌍(Attribute-Value Pairs)으로 이루어진 데이터 오브젝트를 전달하기 위해 사용하는 개방형 표준 포맷은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 38번",
+    "sourceYear": 2022,
+    "choices": [
+      "JSON",
+      "HTML",
+      "AVPN",
+      "DOF"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-6a7c8d1d7c8446fd",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "순서가 있는 리스트에서 데이터의 삽입(Push), 삭제(Pop)가 한 쪽 끝에서 일어나며 LIFO(Last_In-First-Out)의 특징을 가지는 자료 구조는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 39번",
+    "sourceYear": 2022,
+    "choices": [
+      "Tree",
+      "Graph",
+      "Stack",
+      "Queue"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-58e0870bea4934f9",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 단위 테스트 도구로 사용될 수 없는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 2회 40번",
+    "sourceYear": 2022,
+    "choices": [
+      "CppUnit",
+      "JUnit",
+      "HttpUnit",
+      "IgpUnit 제3과목 데이터베이스 구축"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b06614806a812bf8",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 조건을 모두 만족하는 정규형은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 41번",
+    "sourceYear": 2022,
+    "choices": [
+      "ㆍ테이블 R에 속한 모든 도메인이 원자값만으로 구성되어 있다. ㆍ테이블 R에서 키가 아닌 모든 필드가 키에 대해 함수적 으로 종속되며, 키의 부분집합이 결정자가 되는 부분 종 속이 존재하지 않는다. ㆍ테이블 R에 존재하는 모든 함수적 종속에서 결정자가 후보키이다.",
+      "BCNF",
+      "제1정규형",
+      "제2정규형"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-034ff172a76a5ab3",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스의 트랜잭션 성질들 중에서 다음 설명에 해당하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 42번",
+    "sourceYear": 2022,
+    "choices": [
+      "트랜잭션의 모든 연산들이 정상적으로 수행 완료되거나 아 니면 전혀 어떠한 연산도 수행되지 않은 원래 상태가 되도 록 해야 한다.",
+      "Atomicity",
+      "Consistency",
+      "Isolation"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-88c1c03a0a522aaf",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "분산 데이터베이스 시스템과 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 43번",
+    "sourceYear": 2022,
+    "choices": [
+      "물리적으로 분산된 데이터베이스 시스템을 논리적으로 하나의 데이터베이스 시스템처럼 사용할 수 있도록 한 것이다.",
+      "물리적으로 분산되어 지역별로 필요한 데이터를 처리할 수 있 는 지역 컴퓨터(Local Computer)를 분산 처리기(Distributed Processor)라고 한다.",
+      "분산 데이터베이스 시스템을 위한 통신 네트워크 구조가 데이 터 통신에 영향을 주므로 효율적으로 설계해야 한다.",
+      "데이터베이스가 분산되어 있음을 사용자가 인식할 수 있도록 분산 투명성(Distribution Transparency)을 배제해야 한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f4ea977ae6d976e9",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 테이블을 보고 강남지점의 판매량이 많은 제품부터 출력되도록 할 때 다음 중 가장 적절한 SQL 구문은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 44번",
+    "sourceYear": 2022,
+    "choices": [
+      "(단, 출력은 제품명과 판매량이 출력되도록 한다.) <푸드> 테이블 지점명 제품명 판매량 강남지점 비빔밥 500 강북지점 도시락 300 강남지점 도시락 200 강남지점 미역국 550 수원지점 비빔밥 600 인천지점 비빔밥 800 강남지점 잡채밥 250",
+      "SELECT 제품명, 판매량 FROM 푸드 ORDER BY 판매량 ASC;",
+      "SELECT 제품명, 판매량 FROM 푸드 ORDER BY 판매량 DESC;",
+      "SELECT 제품명, 판매량 FROM 푸드 WHERE 지점명＝‘강남 지점’ ORDER BY 판매량 ASC;"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-1efa85228d1c1cc0",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스의 인덱스와 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 45번",
+    "sourceYear": 2022,
+    "choices": [
+      "문헌의 색인, 사전과 같이 데이터를 쉽고 빠르게 찾을 수 있도 록 만든 데이터 구조이다.",
+      "테이블에 붙여진 색인으로 데이터 검색 시 처리속도 향상에 도움이 된다.",
+      "인덱스의 추가, 삭제 명령어는 각각 ADD, DELETE이다.",
+      "대부분의 데이터베이스에서 테이블을 삭제하면 인덱스도 같이 삭제된다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6038e7ffcf43c4ab",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "물리적 데이터베이스 구조의 기본 데이터 단위인 저장 레코드의 양식을 설계할 때 고려 사항이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 46번",
+    "sourceYear": 2022,
+    "choices": [
+      "데이터 타입",
+      "데이터 값의 분포",
+      "트랜잭션 모델링",
+      "접근 빈도"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-7d5bd4dc8f68dde1",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL의 기능에 따른 분류 중에서 REVOKE문과 같이 데이터의 사용 권한을 관리하는데 사용하는 언어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 47번",
+    "sourceYear": 2022,
+    "choices": [
+      "DDL(Data Definition Language)",
+      "DML(Data Manipulation Language)",
+      "DCL(Data Control Language)",
+      "DUL(Data User Language)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-9cfd76906d38eb79",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터 사전에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 48번",
+    "sourceYear": 2022,
+    "choices": [
+      "시스템 카탈로그 또는 시스템 데이터베이스라고도 한다.",
+      "데이터 사전 역시 데이터베이스의 일종이므로 일반 사용자가 생성, 유지 및 수정할 수 있다.",
+      "데이터베이스에 대한 데이터인 메타데이터(Metadata)를 저장 하고 있다.",
+      "데이터 사전에 있는 데이터에 실제로 접근하는 데 필요한 위치 정보는 데이터 디렉토리(Data Directory)라는 곳에서 관리한다. 2회"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-d6a61d2e5825eb4d",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스에서 릴레이션에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 49번",
+    "sourceYear": 2022,
+    "choices": [
+      "모든 튜플은 서로 다른 값을 가지고 있다.",
+      "하나의 릴레이션에서 튜플은 특정한 순서를 가진다.",
+      "각 속성은 릴레이션 내에서 유일한 이름을 가진다.",
+      "모든 속성 값은 원자값(Atomic Value)을 가진다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-d72ab584c02290fc",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스에서의 뷰(View)에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 50번",
+    "sourceYear": 2022,
+    "choices": [
+      "뷰는 다른 뷰를 기반으로 새로운 뷰를 만들 수 있다.",
+      "뷰는 일종의 가상 테이블이며, update에는 제약이 따른다.",
+      "뷰는 기본 테이블을 만드는 것처럼 create view를 사용하여 만들 수 있다.",
+      "뷰는 논리적으로 존재하는 기본 테이블과 다르게 물리적으로 만 존재하며 카탈로그에 저장된다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-57672509da1a78dc",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "트랜잭션의 상태 중 트랜잭션의 마지막 연산이 실행된 직후의 상태 로, 모든 연산의 처리는 끝났지만 트랜잭션이 수행한 최종 결과를 데이터베이스에 반영하지 않은 상태는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 51번",
+    "sourceYear": 2022,
+    "choices": [
+      "Active",
+      "Partially Committed",
+      "Committed",
+      "Aborted"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-9931393efdf37149",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL의 명령을 사용 용도에 따라 DDL, DML, DCL로 구분할 경우, 그 성격이 나머지 셋과 다른 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 52번",
+    "sourceYear": 2022,
+    "choices": [
+      "SELECT",
+      "UPDATE",
+      "INSERT",
+      "GRANT"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-5dbcfa90ed1edbdb",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "키의 종류 중 유일성과 최소성을 만족하는 속성 또는 속성들의 집합은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 53번",
+    "sourceYear": 2022,
+    "choices": [
+      "Atomic Key",
+      "Super Key",
+      "Candidate Key",
+      "Test Key"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-51964b6997db881c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "테이블의 기본키(Primary Key)로 지정된 속성에 관한 설명으로 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 55번",
+    "sourceYear": 2022,
+    "choices": [
+      "NOT NULL로 널 값을 가지지 않는다.",
+      "릴레이션에서 튜플을 구별할 수 있다.",
+      "외래키로 참조될 수 있다.",
+      "검색할 때 반드시 필요하다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-3e0b58465f98397d",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터 모델의 구성 요소 중 데이터 구조에 따라 개념 세계나 컴퓨터 세계에서 실제로 표현된 값들을 처리하는 작업을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 56번",
+    "sourceYear": 2022,
+    "choices": [
+      "Relation",
+      "Data Structure",
+      "Constraint",
+      "Operation"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-e299234cbce0d8e0",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 [조건]에 부합하는 SQL문을 작성하고자 할 때, [SQL문]의 빈칸에 들어갈 내용으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 57번",
+    "sourceYear": 2022,
+    "choices": [
+      "(단, ‘팀코드’ 및 ‘이름’은 속성이 며, ‘직원’은 테이블이다.) [조건] 이름이 ‘정도일’인 팀원이 소속된 팀코드를 이용하여 해 당 팀에 소속된 팀원들의 이름을 출력하는 SQL문 작성 [SQL문] SELECT 이름 FROM 직원 WHERE 팀코드＝( )；",
+      "WHERE 이름＝‘정도일’",
+      "SELECT 팀코드 FROM 이름 WHERE 직원＝‘정도일’",
+      "WHERE 직원＝‘정도일’"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-a9b9ecd1932cf051",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "무결성 제약 조건 중 개체 무결성 제약 조건에 대한 설명으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 58번",
+    "sourceYear": 2022,
+    "choices": [
+      "릴레이션 내의 튜플들이 각 속성의 도메인에 정해진 값만을 가져야 한다.",
+      "기본키는 NULL 값을 가져서는 안되며 릴레이션 내에 오직 하나의 값만 존재해야 한다.",
+      "자식 릴레이션의 외래키는 부모 릴레이션의 기본키와 도메인 이 동일해야 한다.",
+      "자식 릴레이션의 값이 변경될 때 부모 릴레이션의 제약을 받는다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-616dfdaa97750e97",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "관계 데이터 모델에서 릴레이션(Relation)에 포함되어 있는 튜플 (Tuple)의 수를 무엇이라고 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 59번",
+    "sourceYear": 2022,
+    "choices": [
+      "Degree",
+      "Cardinality",
+      "Attribute",
+      "Cartesian product"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-38d9c3c14b5d7cd7",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "사용자 ‘PARK’에게 테이블을 생성할 수 있는 권한을 부여하기 위한 SQL문의 구성으로 빈칸에 적합한 내용은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 2회 60번",
+    "sourceYear": 2022,
+    "choices": [
+      "[SQL문] GRANT [ ] PARK;",
+      "CREATE TABLE TO",
+      "CREATE TO",
+      "CREATE FROM"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-2fa9859a17108fac",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C언어에서 문자열 처리 함수의 서식과 그 기능의 연결로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 61번",
+    "sourceYear": 2022,
+    "choices": [
+      "strlen(s) - s의 길이를 구한다.",
+      "strcpy(s1, s2) - s2를 s1으로 복사한다.",
+      "strcmp(s1, s2) - s1과 s2를 연결한다.",
+      "strrev(s)－s를 거꾸로 변환한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6df3d439b249c361",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "IP 프로토콜에서 사용하는 필드와 해당 필드에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 64번",
+    "sourceYear": 2022,
+    "choices": [
+      "Header Length는 IP 프로토콜의 헤더 길이를 32비트 워드 단위로 표시한다.",
+      "Packet Length는 IP 헤더를 제외한 패킷 전체의 길이를 나타 내며 최대 크기는 2 32 －1비트이다.",
+      "Time To Live는 송신 호스트가 패킷을 전송하기 전 네트워크 에서 생존할 수 있는 시간을 지정한 것이다.",
+      "Version Number는 IP 프로토콜의 버전번호를 나타낸다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-9e5e9f9afef79292",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 Python 프로그램의 실행 결과가 [실행결과]와 같을 때, 빈칸에 적합한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 65번",
+    "sourceYear": 2022,
+    "choices": [
+      "x = 20 if x == 10: print('10') ( ) x == 20: print('20') else: print('other') [실행결과] 20",
+      "either",
+      "elif",
+      "else if"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-1755e1c0c210df41",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "RIP 라우팅 프로토콜에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 66번",
+    "sourceYear": 2022,
+    "choices": [
+      "경로 선택 메트릭은 홉 카운트(hop count)이다.",
+      "라우팅 프로토콜을 IGP와 EGP로 분류했을 때 EGP에 해당한다.",
+      "최단 경로 탐색에 Bellman-Ford 알고리즘을 사용한다.",
+      "각 라우터는 이웃 라우터들로부터 수신한 정보를 이용하여 라 우팅 표를 갱신한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-6aa24db7099da453",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음에서 설명하는 프로세스 스케줄링은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 67번",
+    "sourceYear": 2022,
+    "choices": [
+      "최소 작업 우선(SJF) 기법의 약점을 보완한 비선점 스케줄 링 기법으로 다음과 같은 식을 이용해 우선순위를 판별한다. 우선순위 = 대기한 시간 + 서비스를 받을 시간 서비스를 받을 시간",
+      "FIFO 스케줄링",
+      "RR 스케줄링",
+      "HRN 스케줄링"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-de59540c2208fc77",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UNIX 운영체제에 관한 특징으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 68번",
+    "sourceYear": 2022,
+    "choices": [
+      "하나 이상의 작업에 대하여 백그라운드에서 수행이 가능하다.",
+      "Multi-User는 지원하지만 Multi-Tasking은 지원하지 않는다.",
+      "트리 구조의 파일 시스템을 갖는다.",
+      "이식성이 높으며 장치 간의 호환성이 높다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-f32dc7f71f29ffdf",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UDP 프로토콜의 특징이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 69번",
+    "sourceYear": 2022,
+    "choices": [
+      "비연결형 서비스를 제공한다.",
+      "단순한 헤더 구조로 오버헤드가 적다.",
+      "주로 주소를 지정하고, 경로를 설정하는 기능을 한다.",
+      "TCP와 같이 트랜스포트 계층에 존재한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-1bff35e3a9b3c3e0",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Python 데이터 타입 중 시퀀스(Sequence) 데이터 타입에 해당하며 다양한 데이터 타입들을 주어진 순서에 따라 저장할 수 있으나 저장된 내용을 변경할 수 없는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 70번",
+    "sourceYear": 2022,
+    "choices": [
+      "복소수(complex) 타입",
+      "리스트(list) 타입",
+      "사전(dict) 타입",
+      "튜플(tuple) 타입"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-db62c682272503ea",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 JAVA 프로그램이 실행되었을 때, 실행결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 71번",
+    "sourceYear": 2022,
+    "choices": [
+      "public class Rarr { static int[] marr() { int temp[] = new int[4]; for (int i = 0; i < temp.length; i++) temp[i] = i; return temp; } public static void main(String[] args) { int iarr[]; iarr = marr(); for (int i = 0; i < iarr.length; i++) System.out.print(iarr[i] + \" \"); } }",
+      "1 2 3 4",
+      "0 1 2 3",
+      "1 2 3"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-48aa65d59366800d",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 JAVA 프로그램이 실행되었을 때의 결과는? public class ovr { public static void main(String[] args) { int a = 1, b = 2, c = 3, d = 4; int mx, mn; mx = a < b ? b : a; if (mx == 1) { mn = a > mx ? b : a; } else { mn = b < mx ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 72번",
+    "sourceYear": 2022,
+    "choices": [
+      "d : c; } System.out.println(mn); } }",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-ebe8b2d585f33861",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 Myers가 구분한 응집도(Cohesion)의 정도에서 가장 낮은 응집도를 갖는 단계는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 73번",
+    "sourceYear": 2022,
+    "choices": [
+      "순차적 응집도(Sequential Cohesion)",
+      "기능적 응집도(Functional Cohesion)",
+      "시간적 응집도(Temporal Cohesion)",
+      "우연적 응집도(Coincidental Cohesion) 2회"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-e2aa722fdb3281c7",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "IP 프로토콜의 주요 특징에 해당하지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 75번",
+    "sourceYear": 2022,
+    "choices": [
+      "체크섬(Checksum) 기능으로 데이터 체크섬(Data Checksum) 만 제공한다.",
+      "패킷을 분할, 병합하는 기능을 수행하기도 한다.",
+      "비연결형 서비스를 제공한다.",
+      "Best Effort 원칙에 따른 전송 기능을 제공한다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-c9f9d57c847ded91",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "4개의 페이지를 수용할 수 있는 주기억장치가 있으며, 초기에는 모두 비어 있다고 가정한다. 다음의 순서로 페이지 참조가 발생할 때, LRU 페이지 교체 알고리즘을 사용할 경우 몇 번의 페이지 결함이 발생하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 76번",
+    "sourceYear": 2022,
+    "choices": [
+      "페이지 참조 순서 1, 2, 3, 1, 2, 4, 1, 2, 5",
+      "5회",
+      "6회",
+      "7회"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-d8311186e8fd8c1c",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "사용자 수준에서 지원되는 스레드(thread)가 커널에서 지원되는 스레드에 비해 가지는 장점으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 77번",
+    "sourceYear": 2022,
+    "choices": [
+      "한 프로세스가 운영체제를 호출할 때 전체 프로세스가 대기할 필요가 없으므로 시스템 성능을 높일 수 있다.",
+      "동시에 여러 스레드가 커널에 접근할 수 있으므로 여러 스레드 가 시스템 호출을 동시에 사용할 수 있다.",
+      "각 스레드를 개별적으로 관리할 수 있으므로 스레드의 독립적 인 스케줄링이 가능하다.",
+      "커널 모드로의 전환 없이 스레드 교환이 가능하므로 오버헤드 가 줄어든다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-9d868ee5662e9659",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "한 모듈이 다른 모듈의 내부 기능 및 그 내부 자료를 참조하는 경우의 결합도는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 78번",
+    "sourceYear": 2022,
+    "choices": [
+      "내용 결합도(Content Coupling)",
+      "제어 결합도(Control Coupling)",
+      "공통 결합도(Common Coupling)",
+      "스탬프 결합도(Stamp Coupling)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-79d5e864428d6d7f",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "a[0]의 주소값이 10일 경우 다음 C언어 프로그램이 실행되었을 때의 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 79번",
+    "sourceYear": 2022,
+    "choices": [
+      "(단, int 형의 크기는 4Byte로 가정한다.) #include <stdio.h> int main(int argc, char* argv[]) { int a[] = { 14,22,30,38 }; printf(\"%u, \", &a[2]); printf(\"%u\", a); return 0; }",
+      "14, 10",
+      "14, M",
+      "18, 10"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-9262b28577337acd",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "모듈화(Modularity)와 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 2회 80번",
+    "sourceYear": 2022,
+    "choices": [
+      "시스템을 모듈로 분할하면 각각의 모듈을 별개로 만들고 수정 할 수 있기 때문에 좋은 구조가 된다.",
+      "응집도는 모듈과 모듈 사이의 상호의존 또는 연관 정도를 의미 한다.",
+      "모듈 간의 결합도가 약해야 독립적인 모듈이 될 수 있다.",
+      "모듈 내 구성 요소들 간의 응집도가 강해야 좋은 모듈 설계이다. 제 5 과목 : 정보시스템 구축 관리"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-fade782f280638a9",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 개발에서 정보보안 3요소에 해당 하지 않는 설명은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 81번",
+    "sourceYear": 2022,
+    "choices": [
+      "기밀성 : 인가된 사용자에 대해서만 자원 접근이 가능하다.",
+      "무결성 : 인가된 사용자에 대해서만 자원 수정이 가능하며 전송 중인 정보는 수정되지 않는다.",
+      "가용성 : 인가된 사용자는 가지고 있는 권한 범위 내에서 언제 든 자원 접근이 가능하다.",
+      "휘발성 : 인가된 사용자가 수행한 데이터는 처리 완료 즉시 폐기 되어야 한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c7257fa0249a5da6",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "어떤 외부 컴퓨터가 접속되면 접속 인가 여부를 점검해서 인가된 경우에는 접속이 허용되고, 그 반대의 경우에는 거부할 수 있는 접근제어 유틸리티는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 82번",
+    "sourceYear": 2022,
+    "choices": [
+      "tcp wrapper",
+      "trace checker",
+      "token finder",
+      "change detector"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-b21523bc78de541d",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "기기를 키오스크에 갖다 대면 원하는 데이터를 바로 가져올 수 있는 기술로 10㎝ 이내 근접 거리에서 기가급 속도로 데이터 전송이 가능한 초고속 근접무선통신(NFC; Near Field Communication) 기술은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 83번",
+    "sourceYear": 2022,
+    "choices": [
+      "BcN(Broadband Convergence Network)",
+      "Zing",
+      "Marine Navi",
+      "C-V2X(Cellular Vehicle To Everything)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-4b83bcdc3edee6a1",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "취약점 관리를 위한 응용 프로그램의 보안 설정과 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 84번",
+    "sourceYear": 2022,
+    "choices": [
+      "서버 관리실 출입 통제",
+      "실행 프로세스 권한 설정",
+      "운영체제의 접근 제한",
+      "운영체제의 정보 수집 제한"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-5cc24c3313908a47",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 개발 프레임워크와 관련한 설명으로 가장 적절하지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 85번",
+    "sourceYear": 2022,
+    "choices": [
+      "반제품 상태의 제품을 토대로 도메인별로 필요한 서비스 컴포 넌트를 사용하여 재사용성 확대와 성능을 보장 받을 수 있게 하는 개발 소프트웨어이다.",
+      "라이브러리와는 달리 사용자 코드에서 프레임워크를 호출해서 사용하고, 그에 대한 제어도 사용자 코드가 가지는 방식이다.",
+      "설계 관점에 개발 방식을 패턴화시키기 위한 노력의 결과물인 소프트웨어 디자인 패턴을 반제품 소프트웨어 상태로 집적화 시킨 것으로 볼 수 있다.",
+      "프레임워크의 동작 원리를 그 제어 흐름의 일반적인 프로그램 흐름과 반대로 동작한다고 해서 IoC(Inversion of Control)이 라고 설명하기도 한다. 2회"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-7282f27221a9bfe5",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "클라우드 기반 HSM(Cloud-based Hardware Security Module)에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 86번",
+    "sourceYear": 2022,
+    "choices": [
+      "클라우드(데이터센터) 기반 암호화 키 생성, 처리, 저장 등을 하는 보안 기기이다.",
+      "국내에서는 공인인증제의 폐지와 전자서명법 개정을 추진하면 서 클라우드 HSM 용어가 자주 등장하였다.",
+      "클라우드에 인증서를 저장하므로 기존 HSM 기기나 휴대폰에 인증서를 저장해 다닐 필요가 없다.",
+      "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트 웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c190b4f2cd026900",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 내용이 설명하는 기술로 가장 적절한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 87번",
+    "sourceYear": 2022,
+    "choices": [
+      "ㆍ다른 국을 향하는 호출이 중계에 의하지 않고 직접 접속 되는 그물 모양의 네트워크이다. ㆍ통신량이 많은 비교적 소수의 국 사이에 구성될 경우 경 제적이며 간편하지만, 다수의 국 사이에는 회선이 세분 화 되어 비경제적일 수도 있다. ㆍ해당 형태의 무선 네트워크의 경우 대용량을 빠르고 안 전하게 전달할 수 있어 행사장이나 군 등에서 많이 활용 된다.",
+      "Virtual Local Area Network",
+      "Simple Station Network",
+      "Mesh Network"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-1147be9e9dc186b3",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "물리적 위협으로 인한 문제에 해당하지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 88번",
+    "sourceYear": 2022,
+    "choices": [
+      "화재, 홍수 등 천재지변으로 인한 위협",
+      "하드웨어 파손, 고장으로 인한 장애",
+      "방화, 테러로 인한 하드웨어와 기록장치를 물리적으로 파괴하 는 행위",
+      "방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b2cfdf0074a701f2",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "악성코드의 유형 중 다른 컴퓨터의 취약점을 이용하여 스스로 전파하 거나 메일로 전파되며 스스로를 증식하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 89번",
+    "sourceYear": 2022,
+    "choices": [
+      "Worm",
+      "Rogue Ware",
+      "Adware",
+      "Reflection Attack"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a21daff9abc022c9",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 설명에 해당하는 공격 기법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 90번",
+    "sourceYear": 2022,
+    "choices": [
+      "시스템 공격 기법 중 하나로 허용 범위 이상의 ICMP 패킷 을 전송하여 대상 시스템의 네트워크를 마비시킨다.",
+      "Ping of Death",
+      "Session Hijacking",
+      "Piggyback Attack"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-467dbc89efeeacad",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 설명에 해당하는 소프트웨어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 91번",
+    "sourceYear": 2022,
+    "choices": [
+      "ㆍ개발해야 할 애플리케이션의 일부분이 이미 내장된 클래 스 라이브러리로 구현이 되어 있다. ㆍ따라서, 그 기반이 되는 이미 존재하는 부분을 확장 및 이용하는 것으로 볼 수 있다. ㆍJAVA 기반의 대표적인 소프트웨어로는 스프링(Spring) 이 있다.",
+      "전역 함수 라이브러리",
+      "소프트웨어 개발 프레임워크",
+      "컨테이너 아키텍처"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-d141411c9dd13b45",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 개발 방법론 중 애자일(Agile) 방법론의 특징과 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 92번",
+    "sourceYear": 2022,
+    "choices": [
+      "각 단계의 결과가 완전히 확인된 후 다음 단계 진행",
+      "소프트웨어 개발에 참여하는 구성원들 간의 의사소통 중시",
+      "환경 변화에 대한 즉시 대응",
+      "프로젝트 상황에 따른 주기적 조정"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-59900512c46cf8c9",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "대칭 암호 알고리즘과 비대칭 암호 알고리즘에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 93번",
+    "sourceYear": 2022,
+    "choices": [
+      "대칭 암호 알고리즘은 비교적 실행 속도가 빠르기 때문에 다양 한 암호의 핵심 함수로 사용될 수 있다.",
+      "대칭 암호 알고리즘은 비밀키 전달을 위한 키 교환이 필요하지 않아 암호화 및 복호화의 속도가 빠르다.",
+      "비대칭 암호 알고리즘은 자신만이 보관하는 비밀키를 이용하 여 인증, 전자서명 등에 적용이 가능하다.",
+      "대표적인 대칭키 암호 알고리즘으로는 AES, IDEA 등이 있다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-f7e3a65c173081da",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "두 명의 개발자가 5개월에 걸쳐 10000 라인의 코드를 개발하였을 때, 월별(man-month) 생산성 측정을 위한 계산 방식으로 가장 적합한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 94번",
+    "sourceYear": 2022,
+    "choices": [
+      "10000／2",
+      "10000／(5×2)",
+      "10000／5",
+      "(2×10000)／5"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-539bf178d86bf879",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "접근 통제 방법 중 조직 내에서 직무, 직책 등 개인의 역할에 따라 결정하여 부여하는 접근 정책은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 95번",
+    "sourceYear": 2022,
+    "choices": [
+      "RBAC",
+      "DAC",
+      "MAC",
+      "QAC"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-867dcbb265776292",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "COCOMO(Constructive Cost Model) 모형의 특징이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 96번",
+    "sourceYear": 2022,
+    "choices": [
+      "프로젝트를 완성하는데 필요한 man-month로 산정 결과를 나 타낼 수 있다.",
+      "보헴(Boehm)이 제안한 것으로 원시코드 라인 수에 의한 비용 산정 기법이다.",
+      "비교적 작은 규모의 프로젝트 기록을 통계 분석하여 얻은 결과 를 반영한 모델이며 중소 규모 소프트웨어 프로젝트 비용 추정 에 적합하다.",
+      "프로젝트 개발 유형에 따라 object, dynamic, function의 3가 지 모드로 구분한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c8cdc9c67e9803dd",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "각 사용자 인증의 유형에 대한 설명으로 가장 적절하지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 97번",
+    "sourceYear": 2022,
+    "choices": [
+      "지식 : 주체는 ‘그가 알고 있는 것’을 보여주며 예시로는 패스워 드, PIN 등이 있다.",
+      "소유 : 주체는 ‘그가 가지고 있는 것’을 보여주며 예시로는 토 큰, 스마트카드 등이 있다.",
+      "존재 : 주체는 ‘그를 대체하는 것’을 보여주며 예시로는 패턴, QR 등이 있다.",
+      "행위 : 주체는 ‘그가 하는 것’을 보여주며 예시로는 서명, 움직 임, 음성 등이 있다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-02083b7ecc350b60",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "시스템의 사용자가 로그인하여 명령을 내리는 과정에 대한 시스템의 동작 중 다음 설명에 해당하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 98번",
+    "sourceYear": 2022,
+    "choices": [
+      "ㆍ자신의 신원(Identity)을 시스템에 증명하는 과정이다. ㆍ아이디와 패스워드를 입력하는 과정이 가장 일반적인 예 시라고 볼 수 있다.",
+      "Aging",
+      "Accounting",
+      "Authorization"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-4f6619902cf995e9",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음에서 설명하는 IT 기술은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 99번",
+    "sourceYear": 2022,
+    "choices": [
+      "ㆍ네트워크를 제어부, 데이터 전달부로 분리하여 네트워크 관리자가 보다 효율적으로 네트워크를 제어, 관리할 수 있는 기술 ㆍ기존의 라우터, 스위치 등과 같이 하드웨어에 의존하는 네트워크 체계에서 안정성, 속도, 보안 등을 소프트웨어 로 제어, 관리하기 위해 개발됨 ㆍ네트워크 장비의 펌웨어 업그레이드를 통해 사용자의 직 접적인 데이터 전송 경로 관리가 가능하고, 기존 네트워 크에는 영향을 주지 않으면서 특정 서비스의 전송 경로 수정을 통하여 인터넷상에서 발생하는 문제를 처리할 수 있음",
+      "SDN(Software Defined Networking)",
+      "NFS(Network File System)",
+      "Network Mapper"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-c6abb45ee2333704",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "프로젝트 일정 관리 시 사용하는 PERT 차트에 대한 설명에 해당하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 2회 100번",
+    "sourceYear": 2022,
+    "choices": [
+      "각 작업들이 언제 시작하고 언제 종료되는지에 대한 일정을 막대 도표를 이용하여 표시한다.",
+      "시간선(Time-Line) 차트라고도 한다.",
+      "수평 막대의 길이는 각 작업의 기간을 나타낸다.",
+      "작업들 간의 상호 관련성, 결정경로, 경계시간, 자원할당 등을 제시한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-7a09a08961763602",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 결합도의 종류에 대한 설명 중 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 2번",
+    "sourceYear": 2022,
+    "choices": [
+      "자료 결합도 : 모듈 간의 인터페이스가 자료 요소로만 구성될 때의 결합도",
+      "내용 결합도 : 한 모듈이 다른 모듈과 제어 신호를 이용하여 통신하고, 공유되는 공통 데이터 영역을 사용할 때의 결합도",
+      "스탬프 결합도 : 모듈 간의 인터페이스로, 배열의 자료 구조가 전달될 때의 결합도",
+      "외부 결합도 : 어떤 모듈에서 선언한 데이터를 다른 모듈에서 참조할 때의 결합도"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-aa66257c9db0d988",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "익스트림 프로그래밍(eXtreme Programming)의 5가지 가치에 속하 지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 3번",
+    "sourceYear": 2022,
+    "choices": [
+      "의사소통",
+      "단순성",
+      "피드백",
+      "고객 배제"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-d6ff17fff98dc834",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "HIPO(Hierarchy Input Process Output)에 대한 설명으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 4번",
+    "sourceYear": 2022,
+    "choices": [
+      "상향식 소프트웨어 개발을 위한 문서화 도구이다.",
+      "HIPO 차트 종류에는 가시적 도표, 총체적 도표, 세부적 도표가 있다.",
+      "기능과 자료의 의존 관계를 동시에 표현할 수 있다.",
+      "보기 쉽고 이해하기 쉽다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-13416dc9093a2991",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "모바일 기기에서 사용하는 NUI 인터페이스에 속하지 않는 것은 무엇인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 5번",
+    "sourceYear": 2022,
+    "choices": [
+      "Pinch",
+      "Press",
+      "Flow",
+      "Flick"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-032851bfac34c90c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호로 맞는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 6번",
+    "sourceYear": 2022,
+    "choices": [
+      "<< >>",
+      "(( ))",
+      "{{ }}",
+      "[[ ]]"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-9129637815e61828",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "보헴이 제안한 것으로, 위험 분석 기능이 있으며, 여러 번의 개발 과정을 거쳐 점진적으로 개발하는 모형은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 7번",
+    "sourceYear": 2022,
+    "choices": [
+      "나선형 모형",
+      "애자일 모형",
+      "프로토타입 모형",
+      "폭포수 모형"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-e20111f1912763db",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UI 설계 원칙 중 누구나 쉽게 이해하고 사용할 수 있어야 한다는 원칙은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 8번",
+    "sourceYear": 2022,
+    "choices": [
+      "희소성",
+      "유연성",
+      "직관성",
+      "멀티운용성"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-ea76d9ee4ad0c7d7",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "자료 흐름도(Data Flow Diagram)의 구성 요소로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 9번",
+    "sourceYear": 2022,
+    "choices": [
+      "process, data flow, data store, comment",
+      "process, data flow, data store, terminator",
+      "data flow, data store, terminator, data dictionary",
+      "process, data store, terminator, mini-spec"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-a5de00482a9722b9",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 SOLID 원칙이라고 불리는 객체지향 설계 원칙에 속하지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 10번",
+    "sourceYear": 2022,
+    "choices": [
+      "ISP(Interface Segregation Principle)",
+      "DIP(Dependency Inversion Principle)",
+      "LSP(Liskov Substitution Principle)",
+      "SSO(Single Sign On)"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-80369ca5fbade7f4",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML 모델에서 한 사물의 명세가 바뀌면 다른 사물에 영향을 주며, 일반적으로 한 클래스가 다른 클래스를 오퍼레이션의 매개 변수로 사용하는 경우에 나타나는 관계는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 11번",
+    "sourceYear": 2022,
+    "choices": [
+      "Association",
+      "Dependency",
+      "Realization",
+      "Generalization"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-cfa043c55e03b875",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 내용이 설명하는 디자인 패턴은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 13번",
+    "sourceYear": 2022,
+    "choices": [
+      "ㆍ하나의 객체를 생성하면 생성된 객체를 어디서든 참 조할 수 있지만, 여러 프로세스가 동시에 참조할 수는 없다. ㆍ클래스 내에서 인스턴스가 하나뿐임을 보장하며, 불필 요한 메모리 낭비를 최소화 할 수 있다.",
+      "Singleton",
+      "Adapter",
+      "Prototype"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-fd505c71d844ef3f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "파이프 필터 형태의 소프트웨어 아키텍처에 대한 설명으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 14번",
+    "sourceYear": 2022,
+    "choices": [
+      "노드와 간선으로 구성된다.",
+      "서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브 시스템으로 넘겨주는 과정을 반복한다.",
+      "계층 모델이라고도 한다.",
+      "3개의 서브시스템(모델, 뷰, 제어)으로 구성되어 있다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-0da5379c53c2d1d5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "대표적으로 DOS 및 Unix 등의 운영체제에서 조작을 위해 사용하던 것으로, 정해진 명령 문자열을 입력하여 시스템을 조작하는 사용자 인터페이스(User Interface)는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 15번",
+    "sourceYear": 2022,
+    "choices": [
+      "GUI(Graphical User Interface)",
+      "CLI(Command Line Interface)",
+      "CUI(Cell User Interface)",
+      "MUI(Mobile User Interface)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-c36f170bdd73d3c0",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML에서 시퀀스 다이어그램의 구성 항목에 해당하지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 16번",
+    "sourceYear": 2022,
+    "choices": [
+      "생명선",
+      "실행",
+      "확장",
+      "메시지"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-822ce2f2879e7662",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 개념에서 연관된 데이터와 함수를 함께 묶어 외부와 경계를 만들고 필요한 인터페이스만을 밖으로 드러내는 과정은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 18번",
+    "sourceYear": 2022,
+    "choices": [
+      "메시지(Message)",
+      "캡슐화(Encapsulation)",
+      "다형성(Polymorphism)",
+      "상속(Inheritance)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-b62338333a75e723",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "그래픽 표기법을 이용하여 소프트웨어 구성 요소를 모델링하는 럼바우 분석 기법에 포함되지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 19번",
+    "sourceYear": 2022,
+    "choices": [
+      "객체 모델링",
+      "기능 모델링",
+      "동적 모델링",
+      "블랙박스 분석 모델링"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-7bb8565b8592d893",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "분산 컴퓨팅 환경에서 서로 다른 기종 간의 하드웨어나 프로토콜, 통신환경 등을 연결하여 응용 프로그램과 운영환경 간에 원만한 통신이 이루어질 수 있게 서비스를 제공하는 소프트웨어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2022년 3회 20번",
+    "sourceYear": 2022,
+    "choices": [
+      "미들웨어",
+      "하드웨어",
+      "오픈허브웨어",
+      "그레이웨어 제2과목 소프트웨어 개발"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-b83e56f6070d7ea2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 테스트와 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 3회 21번",
+    "sourceYear": 2022,
+    "choices": [
+      "화이트박스 테스트는 모듈의 논리적인 구조를 체계적으로 점 검할 수 있다.",
+      "블랙박스 테스트는 프로그램의 구조를 고려하지 않는다.",
+      "테스트 케이스에는 일반적으로 시험 조건, 테스트 데이터, 예상 결과가 포함되어야 한다.",
+      "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프 의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클 을 허용하지 않는 경로를 말한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-2c5b1856682a151c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "디지털 저작권 관리(DRM)의 기술 요소가 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 3회 22번",
+    "sourceYear": 2022,
+    "choices": [
+      "크랙 방지 기술",
+      "정책 관리 기술",
+      "암호화 기술",
+      "방화벽 기술"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-6c1dbcbcbbc302e8",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 형상관리(Configuration management)에 관한 설명으 로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 3회 23번",
+    "sourceYear": 2022,
+    "choices": [
+      "소프트웨어에서 일어나는 수정이나 변경을 알아내고 제어하는 것을 의미한다.",
+      "소프트웨어 개발의 전체 비용을 줄이고, 개발 과정의 여러 방해 요인이 최소화되도록 보증하는 것을 목적으로 한다.",
+      "형상관리를 위하여 구성된 팀을 “chief programmer team”이 라고 한다.",
+      "형상관리의 기능 중 하나는 버전 제어 기술이다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-53cd0d264d6d0e36",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 트리를 후위 순회(Post Traversal)한 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2022-3/q024-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 3회 24번",
+    "sourceYear": 2022,
+    "choices": [
+      "A B D C E F",
+      "D B A E C F",
+      "A B C D E F",
+      "D B E F C A"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-3dbc5ce72aa535a4",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "EAI(Enterprise Application Integration)의 구축 유형으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 3회 25번",
+    "sourceYear": 2022,
+    "choices": [
+      "Tree",
+      "Hub & Spoke",
+      "Message Bus",
+      "Point-to-Point"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-52cde20cfbeacf7d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 3회 26번",
+    "sourceYear": 2022,
+    "choices": [
+      "Brooks의 법칙",
+      "Boehm의 법칙",
+      "Pareto의 법칙",
+      "Jackson의 법칙"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-b61ebe3dc3d3d6a3",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 테스트 오라클에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 3회 27번",
+    "sourceYear": 2022,
+    "choices": [
+      "샘플링 오라클 : 특정한 몇몇 테스트 케이스의 입력 값들에 대해서만 기대하는 결과를 제공하는 오라클이다.",
+      "토탈 오라클 : 모든 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하는 오라클이다.",
+      "휴리스틱 오라클 : 특정 테스트 케이스의 입력 값에 대해 기대 하는 결과를 제공하고, 나머지 입력 값들에 대해서는 추정으로 처리하는 오라클이다.",
+      "일관성 검사 오라클 : 애플리케이션의 변경이 있을 경우 테스트 케이스의 수행 전과 후의 결과 값이 동일한지를 확인하는 오라 클이다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-28e99172b934b684",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "IPSec(IP Security)에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 3회 28번",
+    "sourceYear": 2022,
+    "choices": [
+      "암호화 수행시 일방향 암호화만 지원한다.",
+      "ESP는 발신지 인증, 데이터 무결성, 기밀성 모두를 보장한다.",
+      "운영 모드는 Tunnel 모드와 Transport 모드로 분류된다.",
+      "AH는 발신지 호스트를 인증하고, IP 패킷의 무결성을 보장한 다. 3회"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-26bfb2e4a9b5eb6f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "해싱 함수(Hashing Function)의 종류가 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 3회 31번",
+    "sourceYear": 2022,
+    "choices": [
+      "제곱법(Mid-Square)",
+      "숫자 분석법(Digit Analysis)",
+      "개방 주소법(Open Addressing)",
+      "제산법(Division)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-0a27b50bfb87a1cf",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "인터페이스 구현 검증 도구가 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 3회 32번",
+    "sourceYear": 2022,
+    "choices": [
+      "ESB",
+      "xUnit",
+      "STAF",
+      "NTAF"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-f1df12d8780a8686",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 클린 코드 작성원칙으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 3회 34번",
+    "sourceYear": 2022,
+    "choices": [
+      "누구든지 쉽게 이해하는 코드 작성",
+      "중복이 최대화된 코드 작성",
+      "다른 모듈에 미치는 영향 최소화",
+      "단순, 명료한 코드 작성"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-96fcc15abdd4a0d0",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소스 코드 품질 분석 도구 중 정적 분석 도구가 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 3회 35번",
+    "sourceYear": 2022,
+    "choices": [
+      "pmd",
+      "checkstyle",
+      "valance",
+      "cppcheck"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-91272068a66ec457",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "알파, 베타 테스트와 가장 밀접한 연관이 있는 테스트 단계는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 3회 36번",
+    "sourceYear": 2022,
+    "choices": [
+      "단위 테스트",
+      "인수 테스트",
+      "통합 테스트",
+      "시스템 테스트"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-1e3d7e91912549b5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "테스트 드라이버(Test Driver)에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 3회 37번",
+    "sourceYear": 2022,
+    "choices": [
+      "시험 대상 모듈을 호출하는 간이 소프트웨어이다.",
+      "필요에 따라 매개 변수를 전달하고 모듈을 수행한 후의 결과를 보여줄 수 있다.",
+      "상향식 통합 테스트에서 사용된다.",
+      "테스트 대상 모듈이 호출하는 하위 모듈의 역할을 한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-79052808a4dfd302",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "연결 리스트(Linked List)에 대한 설명으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 3회 39번",
+    "sourceYear": 2022,
+    "choices": [
+      "노드의 삽입이나 삭제가 쉽다.",
+      "노드들이 포인터로 연결되어 검색이 빠르다.",
+      "연결을 해주는 포인터(Pointer)를 위한 추가 공간이 필요하다.",
+      "연결 리스트 중에서 중간 노드 연결이 끊어지면 그 다음 노드를 찾기 힘들다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-80ef285e0bedb5ed",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "알고리즘 시간 복잡도 O(1)이 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2022년 3회 40번",
+    "sourceYear": 2022,
+    "choices": [
+      "컴퓨터 처리가 불가",
+      "알고리즘 입력 데이터 수가 한 개",
+      "알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정",
+      "알고리즘 길이가 입력 데이터보다 작음 제3과목 데이터베이스 구축"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-4ce9a7fa1e2a2c2b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스 무결성에 관한 설명으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 41번",
+    "sourceYear": 2022,
+    "choices": [
+      "개체 무결성 규정은 한 릴레이션의 기본키를 구성하는 어떠한 속성값도 널(NULL) 값이나 중복값을 가질 수 없음을 규정하 는 것이다.",
+      "참조 무결성 규정은 속성 값들이 사용자가 정의한 제약 조건에 만족해야 한다는 규정이다.",
+      "도메인 무결성 규정은 외래키 값은 Null이거나 참조 릴레이션 의 기본키 값과 동일해야 한다는 규정이다.",
+      "사용자 정의 무결성 규정은 주어진 튜플의 값이 그 튜플이 정의 된 도메인에 속한 값이어야 한다는 것을 규정하는 것이다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-ca01c587e65c5842",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "트랜잭션의 상태를 보여주는 다음 그림을 보고 각 상태에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2022-3/q042-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 42번",
+    "sourceYear": 2022,
+    "choices": [
+      "활동 상태는 트랜잭션이 수행되기 시작하여 현재 실행 중인 상태를 의미한다.",
+      "완료는 트랜잭션이 성공적으로 종료되어 Commit 연산까지 수행한 상태를 의미한다.",
+      "부분 완료는 트랜잭션의 일부 연산만이 완료되어 Commit된 상태를 의미한다.",
+      "철회는 트랜잭션이 수행하는 데 실패하여 Rollback 연산까지 수행한 상태를 의미한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-222bc260aea78994",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "무결성을 보장하기 위해 트랜잭션이 가져야 할 특성에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 43번",
+    "sourceYear": 2022,
+    "choices": [
+      "트랜잭션 내의 모든 명령은 반드시 완벽히 수행되어야 하며, 모두가 완벽히 수행되지 않고 어느 하나라도 오류가 발생하면 트랜잭션 전부가 취소되어야 한다.",
+      "트랜잭션의 수행과 관계 없이 데이터베이스가 가지고 있는 고 정 요소는 일관되어야 한다.",
+      "둘 이상의 트랜잭션이 동시에 병행 실행되는 경우 어느 하나의 트랜잭션 실행 중에 다른 트랜잭션의 연산이 끼어들 수 없다.",
+      "Commit과 Rollback 명령어에 의해 보장받는 트랜잭션의 특성 은 일관성이다. 3회"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-87514d10637161c2",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "분산 데이터베이스의 특징에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 44번",
+    "sourceYear": 2022,
+    "choices": [
+      "지역 서버의 고유 데이터에 대한 작업은 중앙 서버의 통제 없이 자유롭게 수행할 수 있다.",
+      "새로운 지역 서버를 추가하거나 장비를 추가하는 등의 작업이 용이하다.",
+      "위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성을 목표로 한다.",
+      "데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스 템의 성능이 향상된다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-74c129fb733786c9",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "파티셔닝 방식 중 ‘월별, 분기별’과 같이 지정한 열의 값을 기준으로 범위를 지정하여 분할하는 방식은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 45번",
+    "sourceYear": 2022,
+    "choices": [
+      "Range Partitioning",
+      "Hash Partitioning",
+      "Composite Partitioning",
+      "List Partitioning"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-c6a6b4169a84f755",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스에는 관계형, 계층형, 네트워크형 등 다양한 종류가 있는데 이들을 구분하는 기준은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 46번",
+    "sourceYear": 2022,
+    "choices": [
+      "개체(Object)",
+      "관계(Relationship)",
+      "속성(Attribute)",
+      "제약 조건(Constraint)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-fe7f721dde38d1be",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 SQL문의 실행 결과를 가장 올바르게 설명한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 47번",
+    "sourceYear": 2022,
+    "choices": [
+      "ALTER TABLE 학생 DROP 학년 CASCADE;",
+      "학년 테이블에서 학생 속성을 제거하되 학생 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.",
+      "학년 테이블에서 학생 속성을 제거하되 학생 속성을 참조하는 다른 테이블의 속성이 있는 경우 제거를 중단한다.",
+      "학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-af73d36d0cee5130",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "물리적 데이터베이스를 설계하는 전 단계로서, 데이터 모델링이라 불리는 데이터베이스 설계 단계는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 48번",
+    "sourceYear": 2022,
+    "choices": [
+      "개념적 데이터베이스 설계",
+      "논리적 데이터베이스 설계",
+      "정보 모델링",
+      "데이터베이스 구현"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-db98a02f7007fb83",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정규화에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 49번",
+    "sourceYear": 2022,
+    "choices": [
+      "정규형에는 제1정규형, 제2정규형, 제3정규형, BCNF형, 제4 정규형 등이 있다.",
+      "릴레이션에 속한 모든 도메인이 원자값만으로 되어 있는 정규 형은 제1정규형이다.",
+      "제1정규형이 제2정규형이 되기 위해서는 기본키가 아닌 모든 속성이 기본키에 대하여 완전 함수적 종속을 만족해야 한다.",
+      "결정자가 모두 후보키인 정규형은 제3정규형이다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c357a7806899bd9f",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "개체-관계(E-R) 모델에 대한 설명으로 잘못된 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 50번",
+    "sourceYear": 2022,
+    "choices": [
+      "특정 DBMS를 고려하여 제작하지 않는다.",
+      "개체는 마름모, 속성은 사각형을 이용하여 표현한다.",
+      "개념적 데이터베이스 단계에서 제작된다.",
+      "E-R 모델의 기본적인 아이디어를 시각적으로 가장 잘 나타낸 것이 E-R 다이어그램이다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-82c75a39c84d3db1",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "관계형 데이터베이스의 구성 요소에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 51번",
+    "sourceYear": 2022,
+    "choices": [
+      "속성을 구성하는 값에는 동일한 값이 있을 수 있다.",
+      "한 릴레이션에 포함된 튜플은 모두 상이하다.",
+      "한 릴레이션에는 동일한 이름의 속성이 있을 수 있다.",
+      "한 릴레이션을 구성하는 속성 사이에는 순서가 없다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-7314ea2372086f93",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL의 명령어를 DCL, DML, DDL로 구분할 경우, 다음 중 성격이 다른 하나는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 52번",
+    "sourceYear": 2022,
+    "choices": [
+      "CREATE",
+      "SELECT",
+      "ALTER",
+      "DROP"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-ee395ff8528f320e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "키는 개체 집합에서 고유하게 개체를 식별할 수 있는 속성이다. 데이터베이스에서 사용되는 키의 종류에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 53번",
+    "sourceYear": 2022,
+    "choices": [
+      "후보키는 개체들을 고유하게 식별할 수 있는 속성이다.",
+      "슈퍼키는 한 개 이상의 속성들의 집합으로 구성된 키이다.",
+      "외래키는 다른 테이블의 기본키로 사용되는 속성이다.",
+      "대체키는 슈퍼키 중에서 기본키를 제외한 나머지 키를 의미한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-9c1fecc3763137d7",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL의 TRUNCATE 명령어에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 54번",
+    "sourceYear": 2022,
+    "choices": [
+      "DELETE와 같이 테이블의 모든 데이터를 삭제한다.",
+      "DROP과 달리 테이블 스키마는 제거되지 않고 유지된다.",
+      "DELETE에 비해 빠르게 데이터를 제거하는 것이 가능하다.",
+      "DELETE와 동일하게 ROLLBACK 명령어로 삭제된 데이터를 되살릴 수 있다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-ec283911d2bd0757",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스의 병행 제어(Concurrency Control)에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 55번",
+    "sourceYear": 2022,
+    "choices": [
+      "여러 사용자가 데이터베이스를 동시에 접근하여 데이터를 처 리하기 위함이다.",
+      "처리 결과의 정확성 유지를 위해 데이터를 잠그거나 여는 등의 제어가 필요하다.",
+      "로킹 단위가 크면 병행 제어 기법이 복잡해진다.",
+      "로킹 단위가 크면 병행성 수준이 낮아진다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-57d21573382b76e1",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "트리거(Trigger)에 대한 설명으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 57번",
+    "sourceYear": 2022,
+    "choices": [
+      "시스템에 어떤 일이 발생한 것을 말한다.",
+      "이벤트가 발생할 때마다 관련 작업이 자동으로 수행되는 절차 형 SQL이다.",
+      "특정 기능을 수행하는 일종의 트랜잭션 언어로, 호출을 통해 실행되어 미리 저장해 놓은 SQL 작업을 수행한다.",
+      "DBMS에 내장되어 작성된 SQL이 효율적으로 수행되도록 최 적의 경로를 찾아 주는 모듈이다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-d4abbf71f5b1ef09",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "관계 대수와 관계 해석에 대한 설명으로 옳지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 58번",
+    "sourceYear": 2022,
+    "choices": [
+      "관계 대수는 원래 수학의 프레디킷 해석에 기반을 두고 있다.",
+      "관계 대수로 표현한 식은 관계 해석으로 표현할 수 있다.",
+      "관계 해석은 관계 데이터의 연산을 표현하는 방법이다.",
+      "관계 해석은 원하는 정보가 무엇이라는 것만 정의하는 비절차 적인 특징을 가지고 있다. 3회"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-21f8234ca4f77d25",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터베이스에 영향을 주는 생성, 읽기, 갱신, 삭제 연산으로 프로세 스와 테이블 간에 매트릭스를 만들어서 트랜잭션을 분석하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2022년 3회 60번",
+    "sourceYear": 2022,
+    "choices": [
+      "CASE 분석",
+      "일치 분석",
+      "CRUD 분석",
+      "연관성 분석 제4과목 프로그래밍 언어 활용"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-a6f56f43a3ee5d35",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "OSI 7계층 중 다음 설명에 해당하는 계층은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 61번",
+    "sourceYear": 2022,
+    "choices": [
+      "ㆍ두 응용 프로세스 간의 통신에 대한 제어 구조를 제공 한다. ㆍ연결의 생성, 관리, 종료를 위해 토큰을 사용한다.",
+      "데이터링크 계층",
+      "네트워크 계층",
+      "세션 계층"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-bdac6a3949105515",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 C언어 프로그램의 결과로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 62번",
+    "sourceYear": 2022,
+    "choices": [
+      "#include <stdio.h> main() { int a = 3, b = 4, c = 5; int r1, r2, r3; r1 = a < 4 && b <= 4; r2 = a > 3 || b <= 5; r3 = !c; printf(\"%d\", r1 - r2 + r3); }",
+      "0",
+      "1",
+      "2"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-4e0f43d4a6d72251",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 C언어 프로그램 실행 후, ‘c’를 입력하였을 때 출력 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 63번",
+    "sourceYear": 2022,
+    "choices": [
+      "#include <stdio.h> main() { char ch; scanf(\"%c\", &ch); switch (ch) { case 'a': printf(\"one \"); case 'b': printf(\"two \"); case 'c': printf(\"three \"); break; case 'd': printf(\"four \"); break; } }",
+      "one",
+      "one two",
+      "three"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-625a352cd43a8f1e",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 C언어 프로그램에서 밑줄 친 부분과 동일한 의미를 가지는 것은 어떤것인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 64번",
+    "sourceYear": 2022,
+    "choices": [
+      "#include <stdio.h> main() { int a, b; for (a = 0; a < 2; a++) for (b = 0; b < 2; b++) printf(\"%d\", !a && !b); }",
+      "!a || !b",
+      "!(a || b)",
+      "a && b"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-3ec3b716d3525cd0",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 파이썬 코드에서 ‘53t44’를 입력했을 때 출력 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 65번",
+    "sourceYear": 2022,
+    "choices": [
+      "a, b = map(int, input().split(\"t\")); print(a, b)",
+      "53 t 44",
+      "53t44",
+      "53 44"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-4bcebfbb567b3ddf",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 HRN에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 66번",
+    "sourceYear": 2022,
+    "choices": [
+      "대기시간과 서비스시간을 이용하는 방법이다.",
+      "대기 시간이 긴 프로세스일 경우 우선순위가 높다.",
+      "우선순위 계산식 값이 낮을수록 우선순위가 높다.",
+      "SJF 기법을 보완하기 위한 스케쥴링 방법이다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-adf3ce43bd55759b",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C언어에서 malloc() 함수에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 67번",
+    "sourceYear": 2022,
+    "choices": [
+      "원하는 시점에 원하는 만큼 메모리를 동적으로 할당한다.",
+      "사용자가 입력한 bit만큼 메모리를 할당한다.",
+      "free 명령어로 할당된 메모리를 해제한다.",
+      "메모리 할당이 불가능할 경우 NULL이 반환된다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-6f7d115b75d172f1",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 프로세스에 대한 설명 중 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 68번",
+    "sourceYear": 2022,
+    "choices": [
+      "프로세서가 할당되는 실체로, 디스패치가 가능한 단위이다.",
+      "프로세스는 비동기적 행위를 일으키는 주체이다.",
+      "프로세스는 스레드 내의 작업단위를 의미하며, 경량 스레드라 고도 불린다.",
+      "PCB를 가지며 PCB에는 프로세스의 현재상태, 고유식별자를 가지고 있다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-364485c6023a52ac",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "3개의 보관구조를 가지는 주기억장치가 있으며, 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 마지막 페이지 값으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 69번",
+    "sourceYear": 2022,
+    "choices": [
+      "페이지 순서 : 1, 2, 3, 2, 4, 2, 3, 1, 3",
+      "4, 2, 3",
+      "4, 1, 3",
+      "1, 2, 3"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-2c4f346674fe8fae",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 설명에 해당하는 내용은 무엇인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 70번",
+    "sourceYear": 2022,
+    "choices": [
+      "프로세스 처리 도중, 참조할 페이지가 주기억장치에 없어 프로세스 처리시간보다 페이지 교체에 소요되는 시간이 더 많아지는 현상",
+      "스레드(Thread)",
+      "스래싱(Thrasing)",
+      "페이지부재(Page Fault)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-24c966caef359a65",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 IP 버전에 대한 설명 중 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 71번",
+    "sourceYear": 2022,
+    "choices": [
+      "IPv4는 각 부분을 옥텟으로 구성, 총 32비트로 구성된다.",
+      "IPv6는 각 부분을 콜론으로 구분한다.",
+      "IPv4는 네트워크 부분의 길이에 따라 A 클래스에서 E 클래스 까지 총 5단계로 구성되어 있다.",
+      "IPv6는 IPv4에 비해 자료 전송 속도가 느리다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-933e9c96006b236b",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "JAVA에서 힙(Heap)에 남아있으나 변수가 가지고 있던 참조값을 잃거나 변수 자체가 없어짐으로써 더 이상 사용되지 않는 객체를 제거해주는 역할을 하는 모듈은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 72번",
+    "sourceYear": 2022,
+    "choices": [
+      "Heap Collector",
+      "Garbage Collector",
+      "Memory Collector",
+      "Variable Collector"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-5e548a7111d09e1c",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UNIX에서 새로운 프로세스를 생성하는 명령어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 73번",
+    "sourceYear": 2022,
+    "choices": [
+      "ls",
+      "cat",
+      "fork",
+      "chmod"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-896c7f61b94a71f4",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "교착상태가 발생할 수 있는 조건이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 74번",
+    "sourceYear": 2022,
+    "choices": [
+      "Mutual exclusion",
+      "Hold and wait",
+      "Non-preemption",
+      "Linear wait"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b49ceb5d3ff0441d",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "IEEE 802.3 LAN에서 사용되는 전송 매체 접속 제어(MAC) 방식은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 75번",
+    "sourceYear": 2022,
+    "choices": [
+      "CSMA/CD",
+      "Token Bus",
+      "Token Ring",
+      "Slotted Ring"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-81b0628521d303be",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "프로세스 상태의 종류가 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 76번",
+    "sourceYear": 2022,
+    "choices": [
+      "Ready",
+      "Running",
+      "Request",
+      "Exit"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-0852ba93d0e5a6e1",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "TCP/IP에서 사용되는 논리주소를 물리주소로 변환시켜 주는 프로토 콜은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 77번",
+    "sourceYear": 2022,
+    "choices": [
+      "TCP",
+      "ARP",
+      "FTP",
+      "IP"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-3b31ea56cd73d932",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "OSI 7계층 중 네트워크 계층에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 78번",
+    "sourceYear": 2022,
+    "choices": [
+      "패킷을 발신지로부터 최종 목적지까지 전달하는 책임을 진다.",
+      "한 노드로부터 다른 노드로 프레임을 전송하는 책임을 진다.",
+      "패킷에 발신지와 목적지의 논리 주소를 추가한다.",
+      "라우터 또는 교환기는 패킷 전달을 위해 경로를 지정하거나 교환 기능을 제공한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-433898a2404047f9",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "프레임워크(Framework)에 대한 설명으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 79번",
+    "sourceYear": 2022,
+    "choices": [
+      "소프트웨어 구성에 필요한 기본 구조를 제공함으로써 재사용 이 가능하게 해준다",
+      "소프트웨어 개발 시 구조가 잡혀 있기 때문에 확장이 불가능하다.",
+      "소프트웨어 아키텍처(Architecture)와 동일한 개념이다.",
+      "모듈화(Modularity)가 불가능하다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-f1c421db52a542db",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C언어 라이브러리 중 stdlib.h에 대한 설명으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2022년 3회 80번",
+    "sourceYear": 2022,
+    "choices": [
+      "문자열을 수치 데이터로 바꾸는 문자 변환함수와 수치를 문자 열로 바꿔주는 변환함수 등이 있다.",
+      "문자열 처리 함수로 strlen()이 포함되어 있다.",
+      "표준 입출력 라이브러리이다.",
+      "삼각 함수, 제곱근, 지수 등 수학적인 함수를 내장하고 있다. 제 5 과목 : 정보시스템 구축 관리"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-73880697e5a75f98",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "입력 데이터 검증 및 표현과 관련된 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 81번",
+    "sourceYear": 2022,
+    "choices": [
+      "SQL 삽입 : 웹 응용 프로그램에 SQL을 삽입하여 내부 데이터 베이스(DB) 서버의 데이터를 유출 및 변조하고, 관리자 인증을 우회한다.",
+      "크로스사이트 스크립트 : 웹페이지에 악의적인 스크립트를 삽 입하여 방문자들의 정보를 탈취한다.",
+      "자원 삽입 : 악의적인 명령어가 포함된 스크립트 파일을 업로드 함으로써 시스템에 손상을 준다.",
+      "운영체제 명령어 삽입 : 외부 입력값을 통해 시스템 명령어의 실행을 유도함으로써 권한을 탈취하거나 시스템 장애를 유발 한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-71a0fa8ad2f7dab8",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정보 보안 요소 중 무결성(Integrity)에 대한 설명으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 83번",
+    "sourceYear": 2022,
+    "choices": [
+      "시스템 내의 정보와 자원은 인가된 사용자에게만 접근이 허용 된다는 것을 의미한다.",
+      "시스템 내의 정보와 자원을 사용하려는 사용자가 합법적인 사 용자인지를 확인하는 모든 행위를 말한다.",
+      "인가받은 사용자는 언제라도 사용할 수 있다는 것을 의미한다.",
+      "시스템 내의 정보는 오직 인가된 사용자만 수정할 수 있다는 것을 의미한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-31b52e989a685c28",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "세션 하이재킹을 탐지하는 방법으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 84번",
+    "sourceYear": 2022,
+    "choices": [
+      "FTP SYN SEGMENT 탐지",
+      "비동기화 상태 탐지",
+      "ACK STORM 탐지",
+      "패킷의 유실 및 재전송 증가 탐지"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-49dc3ed3620a9045",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정보 보안의 3요소에 해당하지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 85번",
+    "sourceYear": 2022,
+    "choices": [
+      "기밀성",
+      "무결성",
+      "가용성",
+      "휘발성"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-743d80beaca41886",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "LOC 기법에 의하여 예측된 총 라인수가 36,000라인, 개발에 참여할 프로그래머가 6명, 프로그래머들의 평균 생산성이 월간 300라인일 때 개발에 소요되는 기간은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 86번",
+    "sourceYear": 2022,
+    "choices": [
+      "5개월",
+      "10개월",
+      "15개월",
+      "20개월"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-9e7000f550510bc5",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "COCOMO 모델에 의한 비용 산정에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 87번",
+    "sourceYear": 2022,
+    "choices": [
+      "보헴이 제안한 원시 프로그램의 규모에 의한 비용예측 모형이 다.",
+      "같은 규모의 소프트웨어라도 그 유형에 따라 비용이 다르게 산정된다.",
+      "비용 산정 유형으로 Organic Mode, Embedded Mode, Semi-Detached Mode가 있다.",
+      "UFP(Unadjusted Function Point)를 계산한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-d4be4d9a83ffba25",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 88번",
+    "sourceYear": 2022,
+    "choices": [
+      "WCDMA",
+      "WPA",
+      "SSL",
+      "SHA 3회"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-79f025b6d42f726e",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 설명에 해당하는 암호화 알고리즘은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 89번",
+    "sourceYear": 2022,
+    "choices": [
+      "ㆍDES의 보안 문제를 해결하기 위해 개발되었다. ㆍNIST에서 개발한 개인키 암호화 알고리즘이다.",
+      "ARIA",
+      "AES",
+      "DSA"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-414ae4d267d3404b",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "침입탐지 시스템(IDS : Intrusion Detection System)과 관련한 설명으 로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 90번",
+    "sourceYear": 2022,
+    "choices": [
+      "이상 탐지 기법(Anomaly Detection)은 Signature Base나 Knowledge Base라고도 불리며 이미 발견되고 정립된 공격 패턴을 입력해두었다가 탐지 및 차단한다.",
+      "HIDS(Host-Based Intrusion Detection)는 운영체제에 설정 된 사용자 계정에 따라 어떤 사용자가 어떤 접근을 시도하고 어떤 작업을 했는지에 대한 기록을 남기고 추적한다.",
+      "NIDS(Network-Based Intrusion Detection System)로는 대 표적으로 Snort가 있다.",
+      "외부 인터넷에 서비스를 제공하는 서버가 위치하는 네트워크 인 DMZ(Demilitarized Zone)에는 IDS가 설치될 수 있다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-5d99c157d27ee1bb",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "네트워크 장비에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 91번",
+    "sourceYear": 2022,
+    "choices": [
+      "브라우터는 전송되는 신호가 전송 선로의 특성 및 외부 충격 등의 요인으로 인해 원래의 형태와 다르게 왜곡되거나 약해질 경우 원래의 신호 형태로 재생하여 다시 전송하는 역할을 수행 한다.",
+      "브리지는 LAN과 LAN을 연결하거나 LAN 안에서의 컴퓨터 그룹을 연결하는 기능을 수행하며, 데이터 링크 계층 중 MAC 계층에서 사용된다.",
+      "스위치는 LAN과 LAN을 연결하여 훨씬 더 큰 LAN을 만드는 장치로, OSI 7계층의 2계층에서 사용된다.",
+      "라우터는 LAN과 LAN의 연결 기능에 데이터 전송의 최적 경로 를 선택할 수 있는 기능이 추가된 것으로, 서로 다른 LAN이나 LAN과 WAN의 연결도 수행하고, OSI 7계층의 네트워크 계층 에서 동작한다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-5a3103f7f40ddf7d",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL Injection 공격과 관련한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 92번",
+    "sourceYear": 2022,
+    "choices": [
+      "SQL Injection은 임의로 작성한 SQL 구문을 애플리케이션에 삽입하는 공격 방식이다.",
+      "SQL Injection 취약점이 발생하는 곳은 주로 웹 애플리케이션 과 데이터베이스가 연동되는 부분이다.",
+      "DBMS의 종류와 관계없이 SQL Injection 공격 기법은 모두 동일하다.",
+      "로그인과 같이 웹에서 사용자의 입력 값을 받아 데이터베이스 SQL문으로 데이터를 요청하는 경우 SQL Injection을 수행할 수 있다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-a9273430d840a2a4",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "브리지와 구내 정보 통신망(LAN)으로 구성된 통신망에서 루프(폐회 로)를 형성하지 않으면서 연결을 설정하는 알고리즘은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 93번",
+    "sourceYear": 2022,
+    "choices": [
+      "Spanning Tree Algorithm",
+      "Diffie-Hellman Algorithm",
+      "Hash Algorithm",
+      "Digital Signature Algorithm"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-5a8ea45dc2670449",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 내용이 설명하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 94번",
+    "sourceYear": 2022,
+    "choices": [
+      "ㆍ블록체인(Blockchain) 개발환경을 클라우드로 서비스하 는 개념 ㆍ블록체인 네트워크에 노드의 추가 및 제거가 용이 ㆍ블록체인의 기본 인프라를 추상화하여 블록체인 응용프 로그램을 만들 수 있는 클라우드 컴퓨팅 플랫폼",
+      "OTT",
+      "BaaS",
+      "SDDC"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-f0d3eefacdb736fd",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 재공학의 주요 활동 중 기존 소프트웨어를 다른 운영체제 나 하드웨어 환경에서 사용할 수 있도록 변환하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 95번",
+    "sourceYear": 2022,
+    "choices": [
+      "역공학",
+      "분석",
+      "재구성",
+      "이식"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-d0f6acb70f6de724",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 암호 알고리즘 중 성격 다른 하나는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 96번",
+    "sourceYear": 2022,
+    "choices": [
+      "MD4",
+      "MD5",
+      "SHA-1",
+      "AES"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-2e38760a781077bd",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "기존 무선 랜의 한계 극복을 위해 등장하였으며, 대규모 디바이스의 네트워크 생성에 최적화되어 차세대 이동통신, 홈네트워킹, 공공 안전 등의 특수목적에 사용되는 새로운 방식의 네트워크 기술을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 98번",
+    "sourceYear": 2022,
+    "choices": [
+      "Software Defined Perimeter",
+      "Virtual Private Network",
+      "Local Area Network",
+      "Mesh Network"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-39075447f534064b",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CPM(Critical Path Method)에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2022년 3회 99번",
+    "sourceYear": 2022,
+    "choices": [
+      "프로젝트 내에서 각 작업이 수행되는 시간과 각 작업 사이의 관계를 파악할 수 있다.",
+      "작업 일정을 한눈에 볼 수 있도록 해주며 막대 그래프의 형태로 표현한다.",
+      "효과적인 프로젝트의 통제를 가능하게 해 준다.",
+      "경영층의 과학적인 의사 결정을 지원한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-cdc0999fb2394ef3",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Walkthrough) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2023년 1회 1번",
+    "sourceYear": 2023,
+    "choices": [
+      "사용사례를 확장하여 명세하거나 설계 다이어그램 원시 코드 , ,",
+      "테스트 케이스 등에 적용할 수 있다. 복잡한 알고리즘 또는 반복 실시간 동작 병행 처리와 같은 , ,",
+      "기능이나 동작을 이해하려고 할 때 유용하다. 인스펙션 과 동일한 의미를 가진다 (Inspection) .",
+      "단순한 테스트 케이스를 이용하여 프로덕트를 수작업으로 수"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-d74d6ece3d769e01",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Message-Oriented Middleware, MOM) 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2023-1/q003-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2023년 1회 3번",
+    "sourceYear": 2023,
+    "choices": [
+      "느리고 안정적인 응답보다는 즉각적인 응답이 필요한 온라인",
+      "업무에 적합하다. 독립적인 애플리케이션을 하나의 통합된 시스템으로 묶기 위",
+      "한 역할을 한다. 송신측과 수신측의 연결 시 메시지 큐를 활용하는 방법이 있다.",
+      "상이한 애플리케이션 간 통신을 비동기 방식으로 지원한다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-16ecd73f5d36d646",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "설명으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2023년 1회 5번",
+    "sourceYear": 2023,
+    "choices": [
+      "하향식 설계에서는 통합 검사 시 인터페이스가 이미 정의되어",
+      "있어 통합이 간단하다. 하향식 설계에서 레벨이 낮은 데이터 구조의 세부 사항은 설계",
+      "초기 단계에서 필요하다. 상향식 설계는 최하위 수준에서 각각의 모듈들을 설계하고 이",
+      "러한 모듈이 완성되면 이들을 결합하여 검사한다. 상향식 설계에서는 인터페이스가 이미 성립되어 있지 않더라"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b5080a1a02ab63ec",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML 지정하는 의미적 관계로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2023년 1회 7번",
+    "sourceYear": 2023,
+    "choices": [
+      "Dependency",
+      "Realization",
+      "Generalization",
+      "Association"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-47ef2ac09a0f5483",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "서로 얼마나 관련이 있는지의 기능적 연관의 정도를 나타내는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2023년 1회 12번",
+    "sourceYear": 2023,
+    "choices": [
+      "Cohesion",
+      "Coupling",
+      "Structure",
+      "Unity"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-07c02395210a0f5f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "하나의 공통된 특성을 표현한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2023년 1회 13번",
+    "sourceYear": 2023,
+    "choices": [
+      "트랜잭션",
+      "클래스",
+      "시퀀스",
+      "서브루틴"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-fd846cbae3ac3afc",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "GoF(Gang of Four) , , 그룹으로 분류할 때 구조 패턴이 아닌 것은 , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2023년 1회 17번",
+    "sourceYear": 2023,
+    "choices": [
+      "패턴 Adapter",
+      "패턴 Bridge",
+      "패턴 Builder",
+      "패턴 Proxy"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-c6f54118a055dce2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "여 프로세서가 처리하는 시간을 줄여주는 프로그램이나 하드웨어를 말하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2023년 1회 19번",
+    "sourceYear": 2023,
+    "choices": [
+      "EAI",
+      "FEP",
+      "GPL",
+      "Duplexing"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-1b980560d267ca42",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "A, B, C, D 출력할 때 가능한 출력 순서의 결과가 아닌 것은 , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2023년 1회 24번",
+    "sourceYear": 2023,
+    "choices": [
+      "A, B, C, D",
+      "D, A, B, C",
+      "A, B, D, C",
+      "B, C, D, A"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-cb948b244096aee9",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DRM(Digital Rights Management) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2023년 1회 28번",
+    "sourceYear": 2023,
+    "choices": [
+      "디지털 콘텐츠와 디바이스의 사용을 제한하기 위해 하드웨어",
+      "제조업자 저작권자 출판업자 등이 사용할 수 있는 접근 제어 , , 기술을 의미한다. 디지털 미디어의 생명 주기 동안 발생하는 사용 권한 관리,",
+      "과금 유통 단계를 관리하는 기술로도 볼 수 있다 , . 클리어링 하우스 는 사용자에게 콘텐츠 라이 (Clearing House)",
+      "센스를 발급하고 권한을 부여해주는 시스템을 말한다. 원본을 안전하게 유통하기 위한 전자적 보안은 고려하지 않기"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-45a7c10774cbc3f6",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 14 찾을 경우 비교되는 횟수는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2023년 1회 30번",
+    "sourceYear": 2023,
+    "choices": [
+      "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-6dbe6f4fa9f84e5c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CREATE TABLE ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 1회 41번",
+    "sourceYear": 2023,
+    "choices": [
+      "속성 타입 변경",
+      "속성의 여부 지정 NOT NULL",
+      "기본키를 구성하는 속성 지정",
+      "제약조건의 정의 CHECK"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-7f97e082878ec78d",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "V_1 , V_1 를 정의하였다 다음 명령 수행 후 결과로 옳은 것은 V_2 . ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 1회 42번",
+    "sourceYear": 2023,
+    "choices": [
+      "DROP VIEW V_1 CASCADE; 만 삭제된다 V_1 .",
+      "만 삭제된다 V_2 .",
+      "과 모두 삭제된다 V_1 V_2 .",
+      "과 모두 삭제되지 않는다 V_1 V_2 ."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-f37d36d925a53b5c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "관계해석에서 모든 것에 대하여 의 의미를 나타내는 논리 기호는 ‘ ’ ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 1회 43번",
+    "sourceYear": 2023,
+    "choices": [
+      "∃",
+      "∈",
+      "∀",
+      "⊂ 다음 문의 실행결과로 생성되는 튜플 수는"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-a2901f8a5e0b1814",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "R S SQL SQL , 로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 1회 46번",
+    "sourceYear": 2023,
+    "choices": [
+      "R S A B 1 A 3 B A B 1 A 2 B SELECT A FROM R UNION ALL SELECT A FROM S;",
+      "1",
+      "3 2",
+      "1 3"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-5ba9efb21d5b8c2c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "로 모든 연산의 처리는 끝났지만 트랜잭션이 수행한 최종 결과를 , 데이터베이스에 반영하지 않은 상태는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 1회 50번",
+    "sourceYear": 2023,
+    "choices": [
+      "Active",
+      "Partially Committed",
+      "Committed",
+      "Aborted"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-95ff1da0049aaf95",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Primary Key) 가장 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 1회 51번",
+    "sourceYear": 2023,
+    "choices": [
+      "로 널 값을 가지지 않는다 NOT NULL .",
+      "릴레이션에서 튜플을 구별할 수 있다.",
+      "외래키로 참조될 수 있다.",
+      "검색할 때 반드시 필요하다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-785e31c98c130196",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DELETE ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 1회 52번",
+    "sourceYear": 2023,
+    "choices": [
+      "테이블의 행을 삭제할 때 사용한다.",
+      "조건절이 없는 명령을 수행하면 WHERE DELETE DROP",
+      "명령을 수행했을 때와 동일한 효과를 얻을 수 있다 TABLE . 을 사용 용도에 따라 분류할 경우 에 해당한다 SQL DML .",
+      "기본 사용 형식은 테이블 조건 “DELETE FROM [WHERE ];”"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-f3a50a7f8f74e1ad",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "의 분류 중 에 해당하지 않는 것은 SQL DDL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 1회 56번",
+    "sourceYear": 2023,
+    "choices": [
+      "UPDATE",
+      "ALTER",
+      "DROP",
+      "CREATE"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-2c8bc19e9a3f5774",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "가진 네트워크 토폴로지는 어떤 형인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 1회 61번",
+    "sourceYear": 2023,
+    "choices": [
+      "그물형",
+      "십자형",
+      "버스형",
+      "링형"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6cc06deed7ac12cf",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Banker’s Algorithm) 어떤 기법에 해당하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 1회 68번",
+    "sourceYear": 2023,
+    "choices": [
+      "Avoidance",
+      "Detection",
+      "Prevention",
+      "Recovery"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-c255229d0bb73f8f",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "3 1, 일 경우 알고리즘에 의한 페이지 교체의 2, 1, 0, 4, 1, 3 FIFO 경우 프레임의 최종 상태는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 1회 69번",
+    "sourceYear": 2023,
+    "choices": [
+      "1, 2, 0",
+      "2, 4, 3",
+      "1, 4, 2",
+      "4, 1, 3"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-8a971875e2d72e66",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "20KB, 16KB, 8KB, 40KB 배치 전략으로 을 사용하여 의 프로그램을 적재할 “Best Fit” 17KB 경우 내부 단편화의 크기는 얼마인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 1회 74번",
+    "sourceYear": 2023,
+    "choices": [
+      "3KB",
+      "23KB",
+      "64KB",
+      "67KB"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-c5b15fed11c64fef",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C 것은 어떤것인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 1회 76번",
+    "sourceYear": 2023,
+    "choices": [
+      "#include <stdio.h> main( ) { int a, b; for (a = 0; a < 2; a++) for (b = 0; b < 2; b++) printf(“%d”, !a && !b); } !a || !b",
+      "!(a || b)",
+      "a && b",
+      "a || b"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-7958783cb4a999dc",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Build) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 1회 79번",
+    "sourceYear": 2023,
+    "choices": [
+      "Ant",
+      "Kerberos",
+      "Maven",
+      "Gradle"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-792a588bfb67c993",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Python , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 1회 80번",
+    "sourceYear": 2023,
+    "choices": [
+      "a = 100 list_data = [‘a’,‘b’,‘c’] dict_data = {‘a’:90, ‘b’:95} print(list_data[0]) print(dict_data['a'])",
+      "a 90",
+      "100 90",
+      "100 100"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-cfce4aea16731e2b",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "거나 메일로 전파되며 스스로를 증식하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 1회 82번",
+    "sourceYear": 2023,
+    "choices": [
+      "Worm",
+      "Rogue Ware",
+      "Adware",
+      "Reflection Attack"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-6f3f8fc154ecfd29",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "COCOMO model 로 일괄 자료 처리나 과학기술 계산용 비즈니스 자료 처리용으로 , , 만 라인 이하의 소프트웨어를 개발하는 유형은 5 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 1회 85번",
+    "sourceYear": 2023,
+    "choices": [
+      "Embeded",
+      "Organic",
+      "Semi-detached",
+      "Semi-embeded"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-5ee21f544925e70e",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "V 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 1회 86번",
+    "sourceYear": 2023,
+    "choices": [
+      "요구 분석 및 설계 단계를 거치지 않으며 항상 통합 테스트를",
+      "중심으로 형태를 이룬다 V . 에 의해 제안되었으며 세부적인 테스트 과정으로 구성되 Perry",
+      "어 신뢰도 높은 시스템을 개발하는데 효과적이다. 개발 작업과 검증 작업 사이의 관계를 명확히 들어내 놓은 폭포",
+      "수 모델의 변형이라고 볼 수 있다. 폭포수 모델이 산출물 중심이라면 모델은 작업과 결과의 V"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-750c9343eb62c774",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Organic, Semi- 로 구분되는 것은 Detach, Embedded ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 1회 92번",
+    "sourceYear": 2023,
+    "choices": [
+      "PUTNAM",
+      "COCOMO",
+      "FP",
+      "SLIM"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-73911c792d793886",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "유도함으로써 정보 유출 등의 공격을 유발할 수 있는 취약점은 , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 1회 94번",
+    "sourceYear": 2023,
+    "choices": [
+      "Ransomware",
+      "Pharming",
+      "Phishing",
+      "XSS"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-9d15c0c7903648e9",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "LOC( ) 구하기 위해 사용하는 항목이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 1회 95번",
+    "sourceYear": 2023,
+    "choices": [
+      "낙관치",
+      "기대치",
+      "비관치",
+      "모형치"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-7e3e66e0e2db7630",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Tailoring) 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 1회 97번",
+    "sourceYear": 2023,
+    "choices": [
+      "프로젝트 수행 시 예상되는 변화를 배제하고 신속히 진행하여",
+      "야 한다. 프로젝트에 최적화된 개발 방법론을 적용하기 위해 절차 산출 ,",
+      "물 등을 적절히 변경하는 활동이다. 관리 측면에서의 목적 중 하나는 최단 기간에 안정적인 프로젝",
+      "트 진행을 위한 사전 위험을 식별하고 제거하는 것이다. 기술적 측면에서의 목적 중 하나는 프로젝트에 최적화된 기술"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-db594e2d3befc27f",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "HSM(Cloud-based Ha rdwa re Security Module) 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 1회 100번",
+    "sourceYear": 2023,
+    "choices": [
+      "클라우드 데이터센터 기반 암호화 키 생성 처리 저장 등을 ( ) , ,",
+      "하는 보안 기기이다. 국내에서는 공인인증제의 폐지와 전자서명법 개정을 추진하면",
+      "서 클라우드 용어가 자주 등장하였다 HSM . 클라우드에 인증서를 저장하므로 기존 기기나 휴대폰에 HSM",
+      "인증서를 저장해 다닐 필요가 없다. 하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-3d627108bc2a2434",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "HIPO(Hierarchy Input Process Output) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2023년 2회 11번",
+    "sourceYear": 2023,
+    "choices": [
+      "상향식 소프트웨어 개발을 위한 문서화 도구이다.",
+      "구조도 개요 도표 집합 상세 도표 집합으로 구성된다 , , .",
+      "기능과 자료의 의존 관계를 통해서 표현할 수 있다.",
+      "보기 쉽고 이해하기 쉽다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-86c56c54366ab39a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2023년 2회 22번",
+    "sourceYear": 2023,
+    "choices": [
+      "Correctness",
+      "Reliability",
+      "Usability",
+      "Integrity"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-fa32f80e6a7fe1ed",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "PASS 의 결과는 1 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2023년 2회 27번",
+    "sourceYear": 2023,
+    "choices": [
+      "9, 6, 7, 3, 5 6, 9, 7, 3, 5",
+      "3, 9, 6, 7, 5",
+      "3, 6, 7, 9, 5",
+      "6, 7, 3, 5, 9"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-469e81243b90ac1c",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "결과를 합치거나 변경 내용을 추적할 수 있는 소프트웨어 버전 관리 도구는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2023년 2회 32번",
+    "sourceYear": 2023,
+    "choices": [
+      "RCS(Revision Control System)",
+      "RTS(Reliable Transfer Service)",
+      "RPC(Remote Procedure Call)",
+      "RVS(Relative Version System)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-453808186f6b5e46",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DML ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 2회 43번",
+    "sourceYear": 2023,
+    "choices": [
+      "SELECT ㉠ UPDATE ㉡ INSERT ㉢ GRANT ㉣ , ,",
+      "㉠ ㉡ ㉢ , ,",
+      "㉠ ㉡ ㉣ , ,",
+      "㉠ ㉢ ㉣ , , ,"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a318797173ad26fa",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "의 전체적인 논리적 구조로서 모든 응용 프로그램이나 사용자들이 , 필요로 하는 데이터를 종합한 조직 전체의 데이터베이스 구조를 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 2회 47번",
+    "sourceYear": 2023,
+    "choices": [
+      "관계 스키마",
+      "외부 스키마",
+      "내부 스키마",
+      "개념 스키마"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f1061603f83926e1",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "R (Degree) 3, (Cardinality) 3, 이션 의 차수가 카디널리티가 일 때 두 릴레이션을 카티션 S 4, 4 , 프로덕트 한 결과 릴레이션의 차수와 카디널리 (Cartesian Product) 티는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 2회 51번",
+    "sourceYear": 2023,
+    "choices": [
+      "4, 4",
+      "7, 7",
+      "7, 12",
+      "12, 12"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6566aa32eb2a170e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "내림차순으로 지점명과 판매액을 출력하고자 한다 가장 적절한 . 구문은 SQL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 2회 52번",
+    "sourceYear": 2023,
+    "choices": [
+      "테이블명 판매실적 [ : ] 도시 지점명 판매액 서울 강남 지점 330 서울 강북 지점 168 광주 광주 지점 197 서울 강서 지점 158 서울 강동 지점 197 대전 대전 지점 165 지점명 판매액 판매실적 SELECT , FROM",
+      "도시 서울 WHERE = “ ” 판매액 ORDER BY DESC; 지점명 판매액 판매실적 SELECT , FROM",
+      "판매액 ORDER BY DESC; 지점명 판매액 판매실적 SELECT , FROM",
+      "도시 서울 WHERE = “ ” ASC; 판매실적 SELECT * FROM"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-df8d7f549e008603",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "손상되기 이전의 정상적인 상태로 복구시키는 작업은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 2회 53번",
+    "sourceYear": 2023,
+    "choices": [
+      "Recovery",
+      "Restart",
+      "Commit",
+      "Abort"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-c53f470c3157cc78",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Transparency) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 2회 56번",
+    "sourceYear": 2023,
+    "choices": [
+      "Location Transparency",
+      "Replication Transparency",
+      "Failure Transparency",
+      "Media Access Transparency"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-64434a50c5457c8b",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "공통된 특성을 표현한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 2회 60번",
+    "sourceYear": 2023,
+    "choices": [
+      "메시지",
+      "클래스",
+      "추상화",
+      "메소드"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-dcd56dffdf5a4d2d",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "HRN , 처리되는 작업 순서로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 2회 67번",
+    "sourceYear": 2023,
+    "choices": [
+      "작업 대기 시간 서비스 실행 시간 ( ) A 5 20 B 40 20 C 15 45 D 20 2 A B C D",
+      "→ → → A C B D",
+      "→ → → D B C A",
+      "→ → → D A B C"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-50ed69e9586cfcf6",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Temporal Locality) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 2회 69번",
+    "sourceYear": 2023,
+    "choices": [
+      "루프",
+      "서브루틴",
+      "배열 순회",
+      "스택"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-7e3d2482faf95bfc",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "OSI 7 등 기계적 전기적 기능적 절차적 특성을 정의한 계층은 , , , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 2회 71번",
+    "sourceYear": 2023,
+    "choices": [
+      "물리 계층",
+      "데이터 링크 계층",
+      "네트워크 계층",
+      "전송 계층"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-4269c954b7339855",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "20KB, 16KB, 8KB, 40KB 배치 전략으로 을 사용하여 의 프로그램을 적재할 “Best Fit\" 17KB 경우 내부 단편화의 크기는 얼마인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 2회 74번",
+    "sourceYear": 2023,
+    "choices": [
+      "3KB",
+      "23KB",
+      "64KB",
+      "67KB"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-8f333ff42f721aff",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C 1 , 을 반환하는 연산자는 0 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 2회 75번",
+    "sourceYear": 2023,
+    "choices": [
+      "∥",
+      "&&",
+      "**",
+      "!= 결합도 단계를 약한 순서에서 강한 순서로 가장 옳게"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-b034e5c4b65169b5",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Coupling) 표시한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 2회 76번",
+    "sourceYear": 2023,
+    "choices": [
+      "Stamp Data Control Common Content",
+      "→ → → → Control Data Stamp Common Content",
+      "→ → → → Content Stamp Control Common Data",
+      "→ → → → Data Stamp Control Common Content"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-1a06ad2f6e743960",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "COCOMO Model · 로 일괄 자료 처리나 과학기술 계산용 비즈니스 자료 처리용으로 , 만 라인 이하의 소프트웨어를 개발하는 유형은 5 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 2회 82번",
+    "sourceYear": 2023,
+    "choices": [
+      "Embeded",
+      "Organic",
+      "Semi-Detached",
+      "Semi-Embeded"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-20b3446643ebf636",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CMMI ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 2회 83번",
+    "sourceYear": 2023,
+    "choices": [
+      "초기",
+      "관리",
+      "정의",
+      "반복"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-60cc42bd3f725396",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "관리하는 활동으로서 프로젝트를 성공시키기 위하여 위험 요소를 , 사전에 예측 대비하는 모든 기술과 활동을 포함하는 것은 , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 2회 84번",
+    "sourceYear": 2023,
+    "choices": [
+      "Critical Path Method",
+      "Risk Analysis",
+      "Work Breakdown Structure",
+      "Waterfall Model"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-0ccccdecc2582915",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "COCOMO(Constructive Cost Model) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 2회 92번",
+    "sourceYear": 2023,
+    "choices": [
+      "프로젝트를 완성하는데 필요한 로 산정 결과를 Man-Month",
+      "나타낼 수 있다. 보헴 이 제안한 것으로 원시 코드 라인 수에 의한 비용 (Boehm)",
+      "산정 기법이다. 비교적 작은 규모의 프로젝트 기록을 통계 분석하여 얻은 결과",
+      "를 반영한 모델이며 중소 규모 소프트웨어 프로젝트 비용 추정 에 적합하다. 프로젝트 개발 유형에 따라 의 가 object, dynamic, function 3"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b9dc21cc6668875a",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "동작 중 다음 설명에 해당하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 2회 98번",
+    "sourceYear": 2023,
+    "choices": [
+      "ㆍ자신의 신원 을 시스템에 증명하는 과정이다 (Identity) . ㆍ아이디와 패스워드를 입력하는 과정이 가장 일반적인 예 시라고 볼 수 있다. Aging",
+      "Accounting",
+      "Authorization",
+      "Authentication"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-6691b59ff684d6a2",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "OSI 7 Layer 침입 시도 해킹 등을 탐지하고 트래픽을 조정하기 위한 패킷 분석 , 기술은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 2회 99번",
+    "sourceYear": 2023,
+    "choices": [
+      "PLCP(Packet Level Control Processor)",
+      "Traffic Distributor",
+      "Packet Tree",
+      "DPI(Deep Packet Inspection)"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-62c1cd590ebfbdb9",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML , 다이어그램에 해당하지 않는 것은 (Behavioral) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2023-3/q004-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2023년 3회 4번",
+    "sourceYear": 2023,
+    "choices": [
+      "유스케이스 다이어그램(Use Case Diagram)",
+      "시퀀스 다이어그램(Sequence Diagram)",
+      "활동 다이어그램(Activity Diagram)",
+      "배치 다이어그램(Deployment Diagram)"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-6b9488095a03e82d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "User Interface 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2023년 3회 13번",
+    "sourceYear": 2023,
+    "choices": [
+      "메시지는 이해하기 쉬워야 한다.",
+      "오류로부터 회복을 위한 구체적인 설명이 제공되어야 한다.",
+      "오류로 인해 발생될 수 있는 부정적인 내용을 적극적으로 사용",
+      "자들에게 알려야 한다. 소리나 색의 사용을 줄이고 텍스트로만 전달하도록 한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-547f58fc05f470a0",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "링 언어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2023년 3회 15번",
+    "sourceYear": 2023,
+    "choices": [
+      "Package Diagram",
+      "State Transition Diagram",
+      "Deployment Diagram",
+      "Entity-Relationship Diagram"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-ec7b19a04f1d3e9f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "NUI 무엇인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2023년 3회 17번",
+    "sourceYear": 2023,
+    "choices": [
+      "Pinch",
+      "Press",
+      "Flow",
+      "Flick"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-b956c70298da4b29",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Denormalization) 해당하지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2024-3/q021-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 3회 21번",
+    "sourceYear": 2024,
+    "choices": [
+      "빌드 테이블의 추가",
+      "집계 테이블의 추가",
+      "진행 테이블의 추가",
+      "특정 부분만을 포함하는 테이블 추가"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-73674f0de7bf6e2b",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "( 의 기술 요소가 아닌 것은 ) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2023년 3회 23번",
+    "sourceYear": 2023,
+    "choices": [
+      "크랙 방지 기술",
+      "정책 관리 기술",
+      "암호화 기술",
+      "방화벽 기술"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-989cb24e8e8f41bd",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Pass 의 결과는 2 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2023년 3회 31번",
+    "sourceYear": 2023,
+    "choices": [
+      "9, 6, 7, 3, 5 3, 5, 6, 7, 9",
+      "6, 7, 3, 5, 9",
+      "3, 5, 9, 6, 7",
+      "6, 3, 5, 7, 9"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-acaeec606847d618",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Divide and Conquer) (pivot) 을 사용하며 최악의 경우      회의 비교를 수행해야 하는 정렬 은 (Sort) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2023년 3회 35번",
+    "sourceYear": 2023,
+    "choices": [
+      "Selection Sort",
+      "Bubble Sort",
+      "Insert Sort",
+      "Quick Sort"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-5517498f886cea2e",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Clean Code) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2023년 3회 36번",
+    "sourceYear": 2023,
+    "choices": [
+      "추상화 하위 클래스 메소드 함수를 통해 애플리케이션의 특성 : / /",
+      "을 간략하게 나타내고 상세 내용은 상위 클래스 메소드 함수 , / / 에서 구현한다. 의존성 다른 모듈에 미치는 영향을 최소화하도록 작성한다 : .",
+      "가독성 누구든지 읽기 쉽게 코드를 작성한다 : .",
+      "중복성 중복을 최소화 할 수 있는 코드를 작성한다 : ."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-b26daecae3f53e6a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Push), (Pop) 쪽 끝에서 일어나며 의 특징을 가지는 자료 LIFO(Last_In-First-Out) 구조는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2023년 3회 37번",
+    "sourceYear": 2023,
+    "choices": [
+      "Tree",
+      "Graph",
+      "Stack",
+      "Queue"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-5e171d58dbc35407",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DBMS 구조를 지원하기 위해 데이터베이스에 저장될 데이터 타입과 구조에 대한 정의 이용 방식 제약 조건 등을 명시하는 기능은 , , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2023년 3회 40번",
+    "sourceYear": 2023,
+    "choices": [
+      "정의 기능",
+      "조작 기능",
+      "제어 기능",
+      "절차 기능"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-6aaa0a01f53b2276",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "STUDENT 50 , 30 , 영어영문학과 학생 명의 정보가 저장되어 있을 때 다음 두 문 50 , SQL 의 실행 결과 튜플 수는 단 컬럼은 학과명 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 3회 43번",
+    "sourceYear": 2023,
+    "choices": [
+      "( , DEPT ) SELECT DEPT FROM STUDENT; ⓐ SELECT DISTINCT DEPT FROM STUDENT; ⓑ 3, 3",
+      "ⓐ ⓑ 50, 3",
+      "ⓐ ⓑ 130, 3",
+      "ⓐ ⓑ 130, 130"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-a55e27bf9f9cce43",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DBA PARK [STUDENT] 수 있는 시스템 권한을 부여하고자 하는 문을 작성하고자 한다 SQL . 다음에 주어진 문의 빈칸을 알맞게 채운 것은 SQL ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 3회 48번",
+    "sourceYear": 2023,
+    "choices": [
+      "SQL GRANT ＞ ㉠ ㉡ STUDENT TO PARK; INSERT, INTO",
+      "㉠ ㉡ ALTER, TO",
+      "㉠ ㉡ UPDATE, ON",
+      "㉠ ㉡ REPLACE, IN"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-0952adf920dc41a0",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", , 단순화를 위해 중복 통합 분리 등을 수행하는 데이터 모델링 기법 , , 은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 3회 49번",
+    "sourceYear": 2023,
+    "choices": [
+      "정규화",
+      "반정규화",
+      "집단화",
+      "머징"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-bc33c1a53452b469",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Null) 값을 가질 수 없다는 것을 의미하는 제약 조건은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 3회 53번",
+    "sourceYear": 2023,
+    "choices": [
+      "참조 무결성",
+      "보안 무결성",
+      "개체 무결성",
+      "정보 무결성"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-3812afb1421944e8",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Distributed Database System) 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 3회 56번",
+    "sourceYear": 2023,
+    "choices": [
+      "분산 데이터베이스는 논리적으로는 하나의 시스템에 속하지만",
+      "물리적으로는 여러 개의 컴퓨터 사이트에 분산되어 있다. 위치 투명성 중복 투명성 병행 투명성 장애 투명성을 목표로 , , ,",
+      "한다. 데이터베이스의 설계가 비교적 어렵고 개발 비용과 처리 비용 ,",
+      "이 증가한다는 단점이 있다. 분산 데이터베이스 시스템의 주요 구성 요소는 분산 처리기,"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-5dc9f9f9e7f5b16d",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "세계에서 실제로 표현된 값들을 처리하는 작업을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2023년 3회 57번",
+    "sourceYear": 2023,
+    "choices": [
+      "Relation",
+      "Data Structure",
+      "Constraint",
+      "Operation"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c210d165abc90f1c",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "TCP/IP IP 경우에 대비해 오류 정보를 전송하는 목적으로 사용하는 프로토콜 은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 3회 67번",
+    "sourceYear": 2023,
+    "choices": [
+      "ECP(Error Checking Protocol)",
+      "ARP(Address Resolution Protocol)",
+      "ICMP(Internet Control Message Protocol)",
+      "PPP(Point-to-Point Protocol)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-4c10cdff42ee6538",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "3 , 페이지 참조가 발생할 때 페이지 교체 알고리즘을 사용할 , FIFO 경우 마지막 페이지 값으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 3회 69번",
+    "sourceYear": 2023,
+    "choices": [
+      "페이지 순서 : 1, 2, 3, 2, 4, 2, 3, 1, 3 4, 2, 3",
+      "4, 1, 3",
+      "1, 2, 3",
+      "1, 4, 2"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-9c34c03fee67f08d",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "JAVA ? public class ovr { public static void main(String[] args) { int a = 1, b = 2, c = 3, d = 4; int mx, mn; mx = a < b ? b : a; if (mx == 1) { mn = a > mx ? b : a; } else { mn = b < mx ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 3회 72번",
+    "sourceYear": 2023,
+    "choices": [
+      "d : c; } System.out.println(mn); } } 1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-ade4e8897f0d021c",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "않은 기능 요소로 구성되는 경우이며 서로 다른 상위 모듈에 의해 , 호출되어 처리 상의 연관성이 없는 서로 다른 기능을 수행하는 경우의 응집도는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 3회 74번",
+    "sourceYear": 2023,
+    "choices": [
+      "Functional Cohesion",
+      "Sequential Cohesion",
+      "Logical Cohesion",
+      "Coincidental Cohesion"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-80429a8aa4c9c766",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C a, b 1, 2 식의 연산 결과로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 3회 78번",
+    "sourceYear": 2023,
+    "choices": [
+      "a < b + 2 && a << 1 <= b 0",
+      "1",
+      "3",
+      "5"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-dc19de294865d384",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "a[0] 10 C 때의 결과는 단 형의 크기는 로 가정한다 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2023년 3회 79번",
+    "sourceYear": 2023,
+    "choices": [
+      "( , int 4Byte .) #include <stdio.h> int main(int argc, char* argv[]) { int a[] = { 14,22,30,38 }; printf(\"%u, \", &a[2]); printf(\"%u\", a); return 0; } 14, 10",
+      "14, M",
+      "18, 10",
+      "18, M"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-0bdae12e3046b0a7",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "저장해 두었다가 그 값이 변경되었을 경우 오버플로우 상태로 가정 하여 프로그램 실행을 중단하는 기술은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 3회 94번",
+    "sourceYear": 2023,
+    "choices": [
+      "모드체크",
+      "리커버리 통제",
+      "시스로그",
+      "스택가드"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-cfbdbcd5a1ead742",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "4 나열된 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 3회 95번",
+    "sourceYear": 2023,
+    "choices": [
+      "계획 수립 Ⓐ 고객 평가 Ⓑ 개발 및 검증 Ⓒ 위험 분석 Ⓓ 순으로 반복 - - -",
+      "Ⓐ Ⓑ Ⓓ Ⓒ 순으로 반복 - - -",
+      "Ⓐ Ⓓ Ⓒ Ⓑ 순으로 반복 - - -",
+      "Ⓐ Ⓑ Ⓒ Ⓓ 순으로 반복 - - -"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-b43f5be31efd3659",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(SDDC : Software Defined Data Center) 에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2023년 3회 96번",
+    "sourceYear": 2023,
+    "choices": [
+      "컴퓨팅 네트워킹 스토리지 관리 등을 모두 소프트웨어로 정의 , , ,",
+      "한다. 인력 개입 없이 소프트웨어 조작만으로 자동 제어 관리한다.",
+      "데이터센터 내 모든 자원을 가상화하여 서비스한다.",
+      "특정 하드웨어에 종속되어 특화된 업무를 서비스하기에 적합하"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-5d28b9ad34b83ef2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "객체지향 분석 방법론 중 E-R 다이어그램을 사용하여 객체의 행위를 모델링하며, 객체 식별, 구조식별, 주체 정의, 속성 및 관계 정의, 서비스 정의 등의 과정으로 구성되는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 1회 1번",
+    "sourceYear": 2024,
+    "choices": [
+      "Coad와 Yourdon 방법",
+      "Booch 방법",
+      "Jacobson 방법",
+      "Wirfs-Brocks 방법"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-21083805bf9ac786",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "트랜잭션이 올바르게 처리되고 있는지 데이터를 감시하고 제어하는 미들웨어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 1회 2번",
+    "sourceYear": 2024,
+    "choices": [
+      "RPC",
+      "ORB",
+      "TP monitor",
+      "HUB"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-9f02289ae4445647",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 자료 사전(Data Dictionary)에서 선택의 의미를 나타내는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 1회 5번",
+    "sourceYear": 2024,
+    "choices": [
+      "[ ]",
+      "{ }",
+      "＋",
+      "＝"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-de83b6a68151348f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 개발 단계에서 요구 분석 과정에 대한 설명으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 1회 6번",
+    "sourceYear": 2024,
+    "choices": [
+      "분석 결과의 문서화를 통해 향후 유지보수에 유용하게 활용 할 수 있다.",
+      "개발 비용이 가장 많이 소요되는 단계이다.",
+      "자료흐름도, 자료 사전 등이 효과적으로 이용될 수 있다.",
+      "보다 구체적인 명세를 위해 소단위 명세서(Mini-Spec)가 활용 될 수 있다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-63059128cd5a09ed",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "럼바우(Rumbaugh) 분석 기법에서 정보 모델링이라고도 하며, 시스 템에서 요구되는 객체를 찾아내어 속성과 연산 식별 및 객체들 간의 관계를 규정하여 다이어그램을 표시하는 모델링은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 1회 7번",
+    "sourceYear": 2024,
+    "choices": [
+      "Object",
+      "Dynamic",
+      "Function",
+      "Static"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-ffee126950174b4d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML(Unified Modeling Language)에 대한 설명 중 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 1회 8번",
+    "sourceYear": 2024,
+    "choices": [
+      "기능적 모델은 사용자 측면에서 본 시스템 기능이며, UML에서 는 Use case Diagram을 사용한다.",
+      "정적 모델은 객체, 속성, 연관관계, 오퍼레이션의 시스템의 구조 를 나타내며, UML에서는 Class Diagram을 사용한다.",
+      "동적 모델은 시스템의 내부 동작을 말하며, UML에서는 Sequence Diagram, State Diagram, Activity Diagram을 사용한다.",
+      "State Diagram은 객체들 사이의 메시지 교환을 나타내며, Sequence Diagram은 하나의 객체가 가진 상태와 그 상태의 변화에 의한 동작순서를 나타낸다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-1fa33282301d11b8",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "사용자 인터페이스(UI)의 특징으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 1회 9번",
+    "sourceYear": 2024,
+    "choices": [
+      "구현하고자 하는 결과의 오류를 최소화한다.",
+      "사용자의 편의성을 높임으로써 작업시간을 증가시킨다.",
+      "막연한 작업 기능에 대해 구체적인 방법을 제시하여 준다.",
+      "사용자 중심의 상호 작용이 되도록 한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-3f844c05d88b5d30",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "GoF(Gangs of Four) 디자인 패턴에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 1회 10번",
+    "sourceYear": 2024,
+    "choices": [
+      "Factory Method Pattern은 상위클래스에서 객체를 생성하는 인터페이스를 정의하고, 하위클래스에서 인스턴스를 생성하도 록 하는 방식이다.",
+      "Prototype Pattern은 Prototype을 먼저 생성하고 인스턴스를 복제하여 사용하는 구조이다.",
+      "Bridge Pattern은 기존에 구현되어 있는 클래스에 기능 발생 시 기존 클래스를 재사용할 수 있도록 중간에서 맞춰주는 역할 을 한다.",
+      "Mediator Pattern은 객체간의 통제와 지시의 역할을 하는 중재 자를 두어 객체지향의 목표를 달성하게 해준다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-51d3906278d05a7d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "익스트림 프로그래밍(XP)에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 1회 11번",
+    "sourceYear": 2024,
+    "choices": [
+      "빠른 개발을 위해 테스트를 수행하지 않는다.",
+      "사용자의 요구사항은 언제든지 변할 수 있다.",
+      "고객과 직접 대면하며 요구사항을 이야기하기 위해 사용자 스 토리(User Story)를 활용할 수 있다.",
+      "기존의 방법론에 비해 실용성(Pragmatism)을 강조한 것이라고 볼 수 있다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-cfeb390eda64fcb6",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "요구사항 분석에서 비기능적(Nonfunctional) 요구에 대한 설명으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 1회 15번",
+    "sourceYear": 2024,
+    "choices": [
+      "시스템의 처리량(Throughput), 반응 시간 등의 성능 요구나 품질 요구는 비기능적 요구에 해당하지 않는다.",
+      "‘차량 대여 시스템이 제공하는 모든 화면이 3초 이내에 사용자 에게 보여야 한다’는 비기능적 요구이다.",
+      "시스템 구축과 관련된 안전, 보안에 대한 요구사항들은 비기능 적 요구에 해당하지 않는다.",
+      "‘금융 시스템은 조회, 인출, 입금, 송금의 기능이 있어야 한다’는 비기능적 요구이다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-7d3e9d4f234c84eb",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CASE(Computer-Aided Software Engineering)의 원천 기술이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 1회 19번",
+    "sourceYear": 2024,
+    "choices": [
+      "구조적 기법",
+      "프로토타이핑 기술",
+      "정보 저장소 기술",
+      "일괄처리 기술"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-923d82617379b92a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 상태 다이어그램에서 객체 전이의 요인이 되는 요소는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 1회 20번",
+    "sourceYear": 2024,
+    "choices": [
+      "event",
+      "state",
+      "message",
+      "transition 제2과목 소프트웨어 개발"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-cc5c16b7c8710b02",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "검증 검사 기법 중 개발자의 장소에서 사용자가 개발자 앞에서 행하는 기법이며, 일반적으로 통제된 환경에서 사용자와 개발자가 함께 확인하면서 수행되는 검사는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 1회 22번",
+    "sourceYear": 2024,
+    "choices": [
+      "동치 분할 검사",
+      "형상 검사",
+      "알파 검사",
+      "베타 검사"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-501d3cccc3cfed24",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 트리의 차수(degree)는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 1회 23번",
+    "sourceYear": 2024,
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-056b22a241723ae6",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "인터페이스 구현 시 사용하는 기술 중 다음 내용이 설명하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 1회 24번",
+    "sourceYear": 2024,
+    "choices": [
+      "JavaScript를 사용한 비동기 통신기술로, 클라이언트와 서 버 간에 XML 데이터를 주고받는 기술",
+      "Procedure",
+      "Trigger",
+      "Greedy"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-97c88c7d34730182",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "해싱 함수 중 레코드 키를 여러 부분으로 나누고, 나눈 부분의 각 숫자를 더하거나 XOR한 값을 홈 주소로 사용하는 방식은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 1회 25번",
+    "sourceYear": 2024,
+    "choices": [
+      "제산법",
+      "폴딩법",
+      "기수 변환법",
+      "숫자 분석법"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-5b8aef8ebbcf2e83",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 트리에 대한 중위 순회 운행 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 1회 28번",
+    "sourceYear": 2024,
+    "choices": [
+      "ABDCEF",
+      "ABCDEF",
+      "DBECFA",
+      "DBAECF"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-6ff3c7177bd277f0",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 형상 관리에 대한 설명으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 1회 30번",
+    "sourceYear": 2024,
+    "choices": [
+      "소프트웨어에 가해지는 변경을 제어하고 관리한다.",
+      "프로젝트 계획, 분석서, 설계서, 프로그램, 테스트 케이스 모두 관리 대상이다.",
+      "대표적인 형상 관리 도구로 Ant, Maven, Gradle 등이 있다.",
+      "유지 보수 단계뿐만 아니라 개발 단계에도 적용할 수 있다. 1회"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-cbe39cb0f87a95fa",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 최악의 경우 검색 효율이 가장 나쁜 트리 구조는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 1회 31번",
+    "sourceYear": 2024,
+    "choices": [
+      "이진 탐색 트리",
+      "AVL 트리",
+      "2-3 트리",
+      "레드-블랙 트리"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-165d55d52c146c43",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 중 선형 구조로만 묶인 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 1회 32번",
+    "sourceYear": 2024,
+    "choices": [
+      "스택, 트리",
+      "큐, 데크",
+      "큐, 그래프",
+      "리스트, 그래프"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-9d2dc97ad73db96a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "물리데이터 저장소의 파티션 설계에서 파티션 유형으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 1회 40번",
+    "sourceYear": 2024,
+    "choices": [
+      "범위 분할(Range Partitioning)",
+      "해시 분할(Hash Partitioning)",
+      "조합 분할(Composite Partitioning)",
+      "유닛 분할(Unit Partitioning) 제3과목 데이터베이스 구축"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-208524d9307775c9",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "참조 무결성을 유지하기 위하여 DROP문에서 부모 테이블의 항목 값을 삭제할 경우 자동적으로 자식 테이블의 해당 레코드를 삭제하 기 위한 옵션은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 1회 41번",
+    "sourceYear": 2024,
+    "choices": [
+      "CLUSTER",
+      "CASCADE",
+      "SET-NULL",
+      "RESTRICTED"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-18cd8789b545a548",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DML에 해당하는 SQL 명령으로만 나열된 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 1회 43번",
+    "sourceYear": 2024,
+    "choices": [
+      "DELETE, UPDATE, CREATE, ALTER",
+      "INSERT, DELETE, UPDATE, DROP",
+      "SELECT, INSERT, DELETE, UPDATE",
+      "SELECT, INSERT, DELETE, ALTER"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-8c1e52ae6ba44649",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "관계대수의 순수 관계 연산자가 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 1회 44번",
+    "sourceYear": 2024,
+    "choices": [
+      "Select",
+      "Cartesian Product",
+      "Division",
+      "Project"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-db17c0ff722f360c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "제 3정규형에서 보이스코드 정규형(BCNF)으로 정규화하기 위한 작업은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 1회 46번",
+    "sourceYear": 2024,
+    "choices": [
+      "원자 값이 아닌 도메인을 분해",
+      "부분 함수 종속 제거",
+      "이행 함수 종속 제거",
+      "결정자가 후보키가 아닌 함수 종속 제거"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f176a367ef4de68c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "로킹(Locking) 기법에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 1회 47번",
+    "sourceYear": 2024,
+    "choices": [
+      "로킹의 대상이 되는 객체의 크기를 로킹 단위라고 한다.",
+      "로킹 단위가 작아지면 병행성 수준이 낮아진다.",
+      "데이터베이스도 로킹 단위가 될 수 있다.",
+      "로킹 단위가 커지면 로크 수가 작아 로킹 오버헤드가 감소한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-61fc71c19250cdf3",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 SQL문에서 빈칸에 들어갈 내용으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 1회 48번",
+    "sourceYear": 2024,
+    "choices": [
+      "UPDATE 회원 ( ) 전화번호＝‘010-14’ WHERE 회원번호＝‘N4’;",
+      "FROM",
+      "SET",
+      "INTO"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-3297f256fded45d4",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음에서 설명하는 스키마(Schema)는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 1회 49번",
+    "sourceYear": 2024,
+    "choices": [
+      "데이터베이스 전체를 정의한 것으로 데이터개체, 관계, 제약조건, 접근권한, 무결성 규칙 등을 명세한 것",
+      "개념 스키마",
+      "내부 스키마",
+      "외부 스키마"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-584addc5b91e9ec0",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 릴레이션의 카디널리티와 차수가 옳게 나타낸 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 1회 51번",
+    "sourceYear": 2024,
+    "choices": [
+      "아이디 성명 나이 등급 적립금 가입년도 yuyu01 원유철 36 3 2000 2008 sykim10 김성일 29 2 3300 2014 kshan4 한경선 45 3 2800 2009 namsu52 이남수 33 5 1000 2016",
+      "카디널리티 : 4, 차수 : 4",
+      "카디널리티 : 4, 차수 : 6",
+      "카디널리티 : 6, 차수 : 4"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-22cc73818213499a",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "병행제어 기법의 종류가 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 1회 52번",
+    "sourceYear": 2024,
+    "choices": [
+      "로킹 기법",
+      "시분할 기법",
+      "타임 스탬프 기법",
+      "다중 버전 기법"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-f23c7d067f5bd197",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "데이터 속성 간의 종속성에 대한 엄밀한 고려없이 잘못 설계된 데이터베이스에서는 데이터 처리 연산 수행 시 각종 이상 현상이 발생할 수 있는데, 이러한 이상 현상이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 1회 53번",
+    "sourceYear": 2024,
+    "choices": [
+      "검색 이상",
+      "삽입 이상",
+      "삭제 이상",
+      "갱신 이상"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-52d24873f9e29bb5",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "트랜잭션의 주요 특성 중 하나로, 둘 이상의 트랜잭션이 동시에 병행 실행되는 경우 어느 하나의 트랜잭션 실행 중에 다른 트랜잭션 의 연산이 끼어들 수 없음을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 1회 54번",
+    "sourceYear": 2024,
+    "choices": [
+      "Log",
+      "Consistency",
+      "Isolation",
+      "Durability"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-ba49133e15655084",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "관계형 데이터베이스에서 다음 설명에 해당하는 키(Key)는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 1회 55번",
+    "sourceYear": 2024,
+    "choices": [
+      "한 릴레이션 내의 속성들의 집합으로 구성된 키로서, 릴 레이션을 구성하는 모든 튜플에 대한 유일성은 만족시키 지만 최소성은 만족시키지 못한다.",
+      "후보키",
+      "대체키",
+      "슈퍼키"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-6234835ad681d5bb",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "물리적 데이터베이스 설계에 대한 설명으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 1회 56번",
+    "sourceYear": 2024,
+    "choices": [
+      "물리적 설계의 목적은 효율적인 방법으로 데이터를 저장하는 것이다.",
+      "트랜잭션 처리량과 응답시간, 디스크 용량 등을 고려해야 한다.",
+      "저장 레코드의 형식, 순서, 접근 경로와 같은 정보를 사용하여 설계한다.",
+      "트랜잭션의 인터페이스를 설계하며, 데이터 타입 및 데이터 타 입들 간의 관계로 표현한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c9501593e97b9bc5",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "IPv6에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 1회 63번",
+    "sourceYear": 2024,
+    "choices": [
+      "128비트의 주소 공간을 제공한다.",
+      "인증 및 보안 기능을 포함하고 있다.",
+      "패킷 크기가 64Kbyte로 고정되어 있다.",
+      "IPv6 확장 헤더를 통해 네트워크 기능 확장이 용이하다. 1회"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-223f843b02e5b927",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "파이썬의 변수 작성 규칙 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 1회 64번",
+    "sourceYear": 2024,
+    "choices": [
+      "첫 자리에 숫자를 사용할 수 없다.",
+      "영문 대문자/소문자, 숫자, 밑줄(_)의 사용이 가능하다.",
+      "변수 이름의 중간에 공백을 사용할 수 있다.",
+      "이미 사용되고 있는 예약어는 사용할 수 없다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-1ab49db9ff82beb4",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "스레드(Thread)에 대한 설명으로 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 1회 65번",
+    "sourceYear": 2024,
+    "choices": [
+      "한 개의 프로세스는 여러 개의 스레드를 가질 수 없다.",
+      "커널 스레드의 경우 운영체제에 의해 스레드를 운용한다.",
+      "사용자 스레드의 경우 사용자가 만든 라이브러리를 사용하여 스레드를 운용한다.",
+      "스레드를 사용함으로써 하드웨어, 운영체제의 성능과 응용 프 로그램의 처리율을 향상시킬 수 있다."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-b6ad4f76a68cab30",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 처리되는 작업 순서로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 1회 66번",
+    "sourceYear": 2024,
+    "choices": [
+      "작업 대기 시간 서비스(실행)시간 A 5 20 B 40 20 C 15 45 D 20 2",
+      "A → B → C → D",
+      "A → C → B → D",
+      "D → B → C → A"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-3d64c34f714c1128",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 자바 코드를 실행한 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 1회 67번",
+    "sourceYear": 2024,
+    "choices": [
+      "int x=1, y=6; while (y--) { x++; } System.out.println(\"x=\" x+\"y=\" y);",
+      "x＝7 y＝0",
+      "x＝6 y＝-1",
+      "x＝7 y＝-1"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-021951e81ce5095a",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C언어에서 산술 연산자가 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 1회 68번",
+    "sourceYear": 2024,
+    "choices": [
+      "%",
+      "*",
+      "/",
+      "="
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-8c65ed5b47dc7377",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 JAVA 프로그램이 실행되었을 때의 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 1회 69번",
+    "sourceYear": 2024,
+    "choices": [
+      "public class Operator { public static void main(String[] args) { int x=5, y=0, z=0; y = x++; z = --x; System.out.print(x + \", \" + y +\", \" +z); } }",
+      "5, 5, 5",
+      "5, 6, 5",
+      "6, 5, 5"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-fa45879441096e6c",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C Class에 속하는 IP address는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 1회 70번",
+    "sourceYear": 2024,
+    "choices": [
+      "200.168.30.1",
+      "10.3.2.1 4",
+      "225.2.4.1",
+      "172.16.98.3"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-b9bdca860ec55f0c",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "빈 기억공간의 크기가 20KB, 16KB, 8KB, 40KB 일 때 기억장치 배치 전략으로 “Best Fit”을 사용하여 17KB의 프로그램을 적재할 경우 내부 단편화의 크기는 얼마인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 1회 71번",
+    "sourceYear": 2024,
+    "choices": [
+      "3KB",
+      "23KB",
+      "64KB",
+      "67KB"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-07f3023279c18164",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음의 페이지 참조 열(Page reference)에 대해 페이지 교체 기법으 로 선입선출 알고리즘을 사용할 경우 페이지 부재(Page Fault) 횟수 는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 1회 72번",
+    "sourceYear": 2024,
+    "choices": [
+      "(단, 할당된 페이지 프레임 수는 3 이고, 처음에는 모든 프레임이 비어 있다.) <페이지 참조열> 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0",
+      "13",
+      "14",
+      "15"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-4615c48d5209922a",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "페이징 기법에서 페이지 크기가 작아질수록 발생하는 현상이 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 1회 74번",
+    "sourceYear": 2024,
+    "choices": [
+      "기억장소 이용 효율이 증가한다.",
+      "입·출력 시간이 늘어난다.",
+      "내부 단편화가 감소한다.",
+      "페이지 맵 테이블의 크기가 감소한다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-75d6eec095586856",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "IPv6의 주소체계로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 1회 76번",
+    "sourceYear": 2024,
+    "choices": [
+      "Unicast",
+      "Anycast",
+      "Broadcast",
+      "Multicast"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-d4ef944bef78a253",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "TCP/IP에서 사용되는 논리 주소를 물리 주소로 변환시켜 주는 프로토 콜은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 1회 78번",
+    "sourceYear": 2024,
+    "choices": [
+      "TCP",
+      "ARP",
+      "FTP",
+      "IP"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-49b3641b2630db1c",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "운영체제의 가상기억장치 관리에서 프로세스가 일정 시간동안 자주 참조하는 페이지들의 집합을 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 1회 79번",
+    "sourceYear": 2024,
+    "choices": [
+      "Locality",
+      "Deadlock",
+      "Thrashing",
+      "Working Set"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-7bfdea8b13dccb39",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음 설명에 해당하는 방식은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 1회 80번",
+    "sourceYear": 2024,
+    "choices": [
+      "ㆍ무선 랜에서 데이터 전송 시, 매체가 비어있음을 확인 한 뒤 충돌을 회피하기 위해 임의 시간을 기다린 후 데 이터를 전송하는 방법이다. ㆍ네트워크에 데이터의 전송이 없는 경우라도 동시 전송 에 의한 충돌에 대비하여 확인 신호를 전송한다.",
+      "STA",
+      "Collision Domain",
+      "CSMA/CA"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-1409eb22ac26b89b",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 생명 주기 모형 중 Spiral Model에 대한 설명으로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 1회 85번",
+    "sourceYear": 2024,
+    "choices": [
+      "비교적 대규모 시스템에 적합하다.",
+      "개발 순서는 계획 및 정의, 위험 분석, 공학적 개발, 고객 평가 순으로 진행된다.",
+      "소프트웨어를 개발하면서 발생할 수 있는 위험을 관리하고 최 소화하는 것을 목적으로 한다.",
+      "계획, 설계, 개발, 평가의 개발 주기가 한 번만 수행된다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-80add26cb956f265",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음이 설명하는 용어로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 1회 86번",
+    "sourceYear": 2024,
+    "choices": [
+      "ㆍ오픈 소스를 기반으로 한 분산 컴퓨팅 플랫폼이다. ㆍ일반 PC급 컴퓨터들로 가상화된 대형 스토리지를 형성 한다. ㆍ다양한 소스를 통해 생성된 빅데이터를 효율적으로 저장 하고 처리한다.",
+      "하둡(Hadoop)",
+      "비컨(Beacon)",
+      "포스퀘어(Foursquare)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-2fecfa385db52230",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "컴퓨터 사용자의 키보드 움직임을 탐지해 ID, 패스워드 등 개인의 중요한 정보를 몰래 빼가는 해킹 공격은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 1회 87번",
+    "sourceYear": 2024,
+    "choices": [
+      "Key Logger Attack",
+      "Worm",
+      "Rollback",
+      "Zombie Worm"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-902c0fb385808797",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "COCOMO 모델의 프로젝트 유형으로 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 1회 88번",
+    "sourceYear": 2024,
+    "choices": [
+      "Organic",
+      "Semi-detached",
+      "Embedded",
+      "Sequential"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-f5ce9c2596503613",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "다음은 정보의 접근통제 정책에 대한 설명이다. (ㄱ)에 들어갈 내용으 로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 1회 89번",
+    "sourceYear": 2024,
+    "choices": [
+      "정책 ( ㄱ ) DAC RBAC 권한 부여 시스템 데이터 소유자 중앙 관리자 접근 결정 보안등급 (Label) 신분 (Identity) 역할 (Role) 정책 변경 고정적 (변경 어려움) 변경 용이 변경 용이 장점 안정적 중앙 집중적 구현 용이 유연함 관리 용이",
+      "NAC",
+      "MAC",
+      "SDAC"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-178397ce4ef7e754",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "정보 보안의 3 요소에 해당하지 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 1회 90번",
+    "sourceYear": 2024,
+    "choices": [
+      "기밀성",
+      "무결성",
+      "가용성",
+      "휘발성"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-2b4c3409b54f8a88",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "CBD(Component Based Development) SW 개발 표준 산출물 중 분석 단계에 해당하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 1회 91번",
+    "sourceYear": 2024,
+    "choices": [
+      "클래스 설계서",
+      "통합시험 결과서",
+      "프로그램 코드",
+      "사용자 요구사항 정의서"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-6abda5ea38e3bbf9",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "구글의 구글 브레인 팀이 제작하여 공개한 기계 학습(Machine Leaming)을 위한 오픈 소스 소프트웨어 라이브러리는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 1회 92번",
+    "sourceYear": 2024,
+    "choices": [
+      "타조(Tajo)",
+      "원 세그(One Seg)",
+      "포스퀘어(Foursquare)",
+      "텐서플로(TensorFlow)"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-42b90c58f0737291",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "전자 칩과 같은 소프트웨어 부품, 즉 블록(모듈)을 만들어서 끼워 맞추는 방법으로 소프트웨어를 완성시키는 재사용 방법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 1회 96번",
+    "sourceYear": 2024,
+    "choices": [
+      "합성 중심",
+      "생성 중심",
+      "분리 중심",
+      "구조 중심"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-c374638cf92cfc14",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "크래커가 침입하여 백도어를 만들어 놓거나, 설정 파일을 변경했을 때 분석하는 도구는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 1회 98번",
+    "sourceYear": 2024,
+    "choices": [
+      "trace",
+      "tripwire",
+      "udpdump",
+      "cron"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-0c72f0f29c31f2d3",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "실무적으로 검증된 개발보안 방법론 중 하나로, SW보안의 모범 사례를 SDLC(Software Development Life Cycle)에 통합한 소프트 웨어 개발 보안 생명주기 방법론은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 1회 99번",
+    "sourceYear": 2024,
+    "choices": [
+      "CLASP",
+      "CWE",
+      "PIMS",
+      "Seven Touchpoints"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-00cc9ef5699fa023",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "소프트웨어 프로세스에 대한 개선 및 능력 측정 기준에 대한 국제 표준은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 1회 100번",
+    "sourceYear": 2024,
+    "choices": [
+      "ISO 14001",
+      "IEEE 802.5",
+      "IEEE 488",
+      "SPICE"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-8c52baecb06644da",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Requirements Engineering) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 2회 1번",
+    "sourceYear": 2024,
+    "choices": [
+      "무엇을 개발해야 하는지 요구사항을 정의하고 분석 및 관리하 ,",
+      "는 프로세스를 연구하는 학문이다. 사용자 요구사항이 더욱 복잡해지고 잦은 변경이 발생하자 이",
+      "를 적절하게 관리하기 위해 등장하였다. 요구사항 개발의 한 요소이다.",
+      "품질 개선과 프로젝트 실패의 최소화를 목적으로 한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-f153bc07323772cc",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UML 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 2회 3번",
+    "sourceYear": 2024,
+    "choices": [
+      "클래스 다이어그램 시퀀스 다이어그램과 같이 동작에 참여하 :",
+      "는 객체들이 주고받는 메시지를 표현하는데 메시지뿐만 아니 , 라 객체들 간의 연관까지 표현한다. 배치 다이어그램 결과물 프로세스 컴포넌트 등 물리적 요소 : , ,",
+      "들의 위치를 표현한다. 유스케이스 다이어그램 사용자의 요구를 분석하는 것으로 : ,",
+      "기능 모델링 작업에 사용한다. 활동 다이어그램 시스템이 어떤 기능을 수행하는지 객체의 :"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-b3f102e7edcbecec",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "참조할 수는 없지만 어디서든 참조할 수 있는 객체를 생성하는 디자인 패턴은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 2회 5번",
+    "sourceYear": 2024,
+    "choices": [
+      "싱글톤 패턴 (Singleton)",
+      "옵서버 패턴 (Observer)",
+      "프로토타입 패턴 (Prototype)",
+      "상태 패턴 (State)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-9e118a72f6acf8ed",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "인 연산을 정의한 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 2회 6번",
+    "sourceYear": 2024,
+    "choices": [
+      "Entity",
+      "Method",
+      "Instance",
+      "Class"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-540b75f0bad8840a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Micro) 개발 프로세스를 모두 사용하는 분석 방법으로 클래스와 (Macro) , 객체들을 분석 및 식별하고 클래스의 속성과 연산을 정의하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 2회 9번",
+    "sourceYear": 2024,
+    "choices": [
+      "와 방법 Coad Yourdon",
+      "방법 Booch",
+      "방법 Jacobson",
+      "방법 Wirfs-Brocks"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-7bdf6634b99e76fb",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "HIPO Chart ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 2회 10번",
+    "sourceYear": 2024,
+    "choices": [
+      "차트 종류에는 가시적 도표 총체적 도표 세부적 도표가 HIPO , ,",
+      "있다. 충분한 사전 지식과 학습이 없으면 이해하기 어렵다.",
+      "기능과 자료의 의존 관계를 동시에 표현할 수 있다.",
+      "하향식 소프트웨어 개발을 위한 문서화 도구이다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-6c2d360a2d0dfdf2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", , , , 지름 높이 등의 물리적 수치를 그대로 코드에 적용시키는 방식의 , 코드는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 2회 11번",
+    "sourceYear": 2024,
+    "choices": [
+      "연상 코드",
+      "블록 코드",
+      "순차 코드",
+      "표의 숫자 코드"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c41ab5b5a8d157cd",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Rayleigh-Norden 기법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 2회 13번",
+    "sourceYear": 2024,
+    "choices": [
+      "모형 Putnam",
+      "델파이 모형",
+      "모형 COCOMO",
+      "기능점수 모형"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-f85c03b36cea6d10",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(WAS; Web Application Server) 로 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 2회 15번",
+    "sourceYear": 2024,
+    "choices": [
+      "정적인 콘텐츠를 처리하기 위해 사용되는 미들웨어이다.",
+      "클라이언트 서버 환경보다는 웹 환경을 구현하기 위한 미들웨 /",
+      "어이다. 미션 크리티컬한 기업 업무도 컴포넌트 기반으로 - JAVA, EJB",
+      "구현이 가능하다. 대표적인 의 종류에는 오라클의 의 WAS WebLogic, IBM"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-899c4be3e4056e18",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Use Case Diagram) 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 2회 16번",
+    "sourceYear": 2024,
+    "choices": [
+      "System",
+      "Actor",
+      "Operation",
+      "UseCase"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-bd31b151602f042b",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "· 방식은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 2회 18번",
+    "sourceYear": 2024,
+    "choices": [
+      "실시간 방식",
+      "분산 처리 방식",
+      "배치 방식",
+      "지연 처리 방식"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-7927e38c75930377",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Test Harness) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 2회 21번",
+    "sourceYear": 2024,
+    "choices": [
+      "테스트 드라이버",
+      "테스트 스텁",
+      "테스트 케이스",
+      "테스트 시나리오"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-9dfd5519afa919fb",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(IDE) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 2회 22번",
+    "sourceYear": 2024,
+    "choices": [
+      "개발을 위한 편집기 컴파일러 디버거 등이 포함되어 있다 , , .",
+      "코드의 자동 생성이 가능하다.",
+      "다양한 기능들을 다운로드하여 추가할 수 있다.",
+      "단일 플랫폼만을 지원하는 한계가 있다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b28ccd795865f669",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "A, B, C, D , push push → 으로 연산 했을 pop push pop push pop pop → → → → → → 때 출력은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 2회 24번",
+    "sourceYear": 2024,
+    "choices": [
+      "C, B, D, A",
+      "B, C, D, A",
+      "B, C, A, D",
+      "C, B, A, D"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-516f3f2fb1b672b1",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "EAI(Enterprise Application Integration) 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 2회 25번",
+    "sourceYear": 2024,
+    "choices": [
+      "는 가장 기본적인 애플리케이션 통합 방식으 Point-to-Point",
+      "로 애플리케이션을 로 연결한다 , 1 : 1 . 는 단일 접점인 허브 시스템을 통해 데이터를 전 Hub&Spoke",
+      "송하는 중앙 집중형 방식이다. 애플리케이션 사이에 미들웨어를 두어 처리하는 방식은 ESB",
+      "이다. 는 와 의 혼합 방식이다 Hybrid Point-to-Point Hub&Spoke ."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-371404e8d8384e83",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Test Oracle) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 2회 27번",
+    "sourceYear": 2024,
+    "choices": [
+      "테스트 오라클을 모든 테스트 케이스에 적용할 수 있다.",
+      "애플리케이션의 변경이 있을 때는 일관 검사 오라클을 이용하",
+      "는 것이 효과적이다. 테스트 오라클의 값을 수학적 기법을 이용하여 구할 수 있다.",
+      "테스트 대상 프로그램의 실행 결과 비교 커버리지 측정 등을 , ,"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-eb3aca51f7e5aa0f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "2 후의 결과는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 2회 28번",
+    "sourceYear": 2024,
+    "choices": [
+      "9, 6, 7, 3, 5 3, 5, 6, 7, 9",
+      "6, 7, 3, 5, 9",
+      "3, 5, 9, 6, 7",
+      "6, 3, 5, 7, 9"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b667a3d4829a9879",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "등을 부과하여 과부하 시에도 소프트웨어가 정상적으로 실행되는지 를 확인하는 테스트는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 2회 30번",
+    "sourceYear": 2024,
+    "choices": [
+      "회복 테스트 (Recovery)",
+      "강도 테스트 (Stress)",
+      "성능 테스트 (Performance)",
+      "회귀 테스트 (Regression)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-2bc8f312413368a7",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Walkthrough) (Inspection) 명으로 가장 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 2회 35번",
+    "sourceYear": 2024,
+    "choices": [
+      "워크스루는 전문가들에 의해 개발자의 작업 내역이 검토된다.",
+      "워크스루는 제품 개발자가 주최가 된다.",
+      "워크스루는 오류 발견과 발견된 오류의 문제 해결에 중점을",
+      "둔다. 인스펙션은 워크스루를 발전시킨 형태이다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-f892581dfdcf0a45",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Infix) ( A + B ) * C + ( D + E ) 으로 옳게 표기한 것은 (Postfix) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 2회 36번",
+    "sourceYear": 2024,
+    "choices": [
+      "AB + CDE * + +",
+      "AB + C*DE + +",
+      "+ AB*C + DE +",
+      "+ * + ABC + DE"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-b8e0f3c6b099ac0f",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(System Catalog) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 2회 42번",
+    "sourceYear": 2024,
+    "choices": [
+      "사용자 객체에 대한 정의나 명세에 관한 정보를 유지 관리하는 ,",
+      "시스템 테이블이다. 일반 이용자도 을 이용하여 내용을 검색하거나 수정할 수 SQL",
+      "있다. 가 스스로 생성하고 유지한다 DBMS .",
+      "데이터 디렉터리 번역기 질의 최적화기 등으로 구성된다 , , ."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-0bca655d73bbec9c",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "R1 이를 참조하고 있는 의 릴레이션의 기본키도 변경해야 하는데 R2 이를 무엇이라고 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 2회 46번",
+    "sourceYear": 2024,
+    "choices": [
+      "정보 무결성",
+      "고유 무결성",
+      "키 제약성",
+      "참조 무결성"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-15a94460e12fe79a",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "잘못된 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 2회 53번",
+    "sourceYear": 2024,
+    "choices": [
+      "요구 조건 분석 트랜잭션 모델링 -",
+      "물리적 설계 단계 목표 에 맞는 물리적 구조 설계 - DBMS",
+      "논리적 설계 단계 목표 에 종속적인 논리 스키마 설계 - DBMS",
+      "구현 단계 목표 로 스키마 작성 - DBMS DDL"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a59b37a0055109f1",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "( ) 내용은 무엇인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 2회 56번",
+    "sourceYear": 2024,
+    "choices": [
+      "관계형 데이터 모델에서 한 릴레이션의 는 참조되 “ ( ) 는 릴레이션의 기본 키와 대응되어 릴레이션간에 참조 관 계를 표현하는데 사용되는 중요한 도구이다. 를 포함하는 릴레이션이 참조하는 릴레이션이 되고 ( ) , 대응되는 기본 키를 포함하는 릴레이션이 참조 릴레이션이 된다.” 후보키(Candidate Key)",
+      "대체키(Alternate Key)",
+      "외래키(Foreign Key)",
+      "수퍼키(Super Key)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-99cc5abbf4b43818",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Trigger) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 2회 57번",
+    "sourceYear": 2024,
+    "choices": [
+      "데이터 변경 및 무결성 유지 로그 메시지 출력 등의 목적으로 ,",
+      "사용된다. 트리거의 생성문에는 반드시 값을 반환하는 명령어 RETURN",
+      "가 사용되어야 한다. 데이터의 삽입 갱신 삭제 등의 이벤트가 발생할 때마다 관련 , ,",
+      "작업이 자동으로 수행되는 절차형 이다 SQL . 명령어를 통해 생성된다 CREATE TRIGGER ."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-7b3f4918e296cefa",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DBMS 수단을 제공하는 기능은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 2회 59번",
+    "sourceYear": 2024,
+    "choices": [
+      "기능 Definition",
+      "기능 Control",
+      "기능 Manipulation",
+      "기능 Strategy"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-f91e98b8745747a5",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C Java printf [Tab] 일정 간격 띄어주는데 사용하는 제어문자는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 2회 63번",
+    "sourceYear": 2024,
+    "choices": [
+      "r",
+      "＼ t",
+      "＼ b",
+      "＼ n"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-a0c63007905d99b3",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "OSI (PDU) 틀린 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 2회 65번",
+    "sourceYear": 2024,
+    "choices": [
+      "Physical Layer - Byte",
+      "Data Link Layer - Frame",
+      "Network Layer - Packet",
+      "Application Layer - Message"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-aa47f39b4f3a7f2e",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 보조기억장치에 저장된 하나의 프로그램을 여러 개의 조각으로 분할한 후 필요한 조각을 차례로 주기억장치에 적재하여 프로그램을 실행하는 할당 기법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 2회 72번",
+    "sourceYear": 2024,
+    "choices": [
+      "오버레이",
+      "스와핑",
+      "페이징",
+      "세그먼테이션"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-e3d9308655d2aa91",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "두고 해당 조건이 충족될 때만 수행되도록 하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 2회 73번",
+    "sourceYear": 2024,
+    "choices": [
+      "정기 배치",
+      "이벤트성 배치",
+      "배치 On-Demand",
+      "사용자 배치"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-2d4a30f7b9c8d28f",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Java . ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 2회 75번",
+    "sourceYear": 2024,
+    "choices": [
+      "생략 .. .. int a = 0, sum = 0; do { a++; sum += a; } while(a > 10); 생략 .. .. a = 0, sum = 0",
+      "a = 1, sum = 1",
+      "a = 9, sum = 45",
+      "a = 10, sum = 55"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-397449804a62d918",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Script) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 2회 77번",
+    "sourceYear": 2024,
+    "choices": [
+      "PHP",
+      "Fortran",
+      "Basic",
+      "Python"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-2a98d29219f224c6",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Java , ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 2회 79번",
+    "sourceYear": 2024,
+    "choices": [
+      "public class Test { public static void main(String args[]) { String str = \"Message Queueing\"; char s[] = str.toCharArray(); int r = 0; for (char c:s) if (c == 'e') r++; System.out.print(r); } } 2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-b70577fe2b97e7df",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "위해 프로토콜 변환 기능을 수행하는 네트워크 장비는 무엇인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 2회 80번",
+    "sourceYear": 2024,
+    "choices": [
+      "리피터(Repeater)",
+      "브리지(Bridge)",
+      "라우터(Router)",
+      "게이트웨이(Gateway)"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b87b03ea5574ec11",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Java 존재하는가? public static void main(String[] args) { int a = 5; a = func(a); } static int func(int a) { return a <= 5 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 2회 84번",
+    "sourceYear": 2024,
+    "choices": [
+      "func(a) : 3; } 종료되지 않는 반복문 또는 재귀함수",
+      "널 포인터 역참조",
+      "하드코드된 암호화 키 사용",
+      "초기화되지 않은 변수 사용"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-3212a528de2136dd",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SAN(Storage Area Network) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 2회 85번",
+    "sourceYear": 2024,
+    "choices": [
+      "서버와 저장 장치를 연결하는 전용 네트워크를 별도로 구성하",
+      "는 방식이다. 파이버 채널 스위치를 이용하여 네트워크를 구성한다 (FC) .",
+      "서버들이 저장장치 및 파일을 공유할 수 있다.",
+      "초기 설치 시 소요되는 비용을 절약할 수 있다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-cf5e26ff8617a708",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Something you have) 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 2회 87번",
+    "sourceYear": 2024,
+    "choices": [
+      "i-PIN",
+      "OTP",
+      "스마트 카드",
+      "신분증"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-ea08a394f3821800",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 패킷 정보를 도청하는 해킹 유형은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 2회 90번",
+    "sourceYear": 2024,
+    "choices": [
+      "스니핑(Sniffing)",
+      "스미싱(Smishing)",
+      "피싱(Phishing)",
+      "백도어(Back Door)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a70888561f509bbe",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Reengineering) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 2회 96번",
+    "sourceYear": 2024,
+    "choices": [
+      "기존 시스템을 이용하여 보다 나은 시스템을 구축하는 것이다.",
+      "유지보수 비용의 최소화를 위해 유지보수성과 품질을 향상시",
+      "키는 것을 목적으로 한다. 소프트웨어 위기를 해결하는 방법 중 하나로 꼽힌다.",
+      "소프트웨어의 수명이 연장되지만 개발 비용이 증가한다 , ."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-291fb2a06279537a",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Data Diet) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 2회 98번",
+    "sourceYear": 2024,
+    "choices": [
+      "대용량 데이터를 분산 처리하기 위한 목적으로 개발된 프로그",
+      "래밍 모델이다. 데이터를 압축하고 중복된 정보는 중복을 배제하고 새로운 , ,",
+      "기준에 따라 나누어 저장하는 작업이다. 데이터 집합에서 사용자의 요구에 따라 유용하고 가능성 있는",
+      "정보를 발견하기 위한 기법이다. 기존의 관리 방법이나 분석 체계로는 처리하기 어려운 막대한"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-07d9d091fe0ff612",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Tailoring) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 2회 99번",
+    "sourceYear": 2024,
+    "choices": [
+      "납기 비용 /",
+      "기술 환경",
+      "구성원 능력",
+      "국제 표준 품질 기준"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-a4825e502ee745d1",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "OWASP(the Open Web Application Security Project) 로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 2회 100번",
+    "sourceYear": 2024,
+    "choices": [
+      "네트워크를 이용하여 온라인 금융 거래 정보를 온라인 P2P",
+      "네트워크 참여자 의 디지털 장비에 분산 저장하는 기술 (Peer) 이다. 대표적인 사례로 블록체인 이 있다 (Blockchain) .",
+      "양자 통신을 위해 비밀키를 분배하여 관리하는 기술이다.",
+      "웹 정보 노출이나 악성 코드 스크립트 보안이 취약한 부분을 , ,"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-177eb3cd9fdda1b5",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(UI) 는 인터페이스를 무엇이라 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 3회 1번",
+    "sourceYear": 2024,
+    "choices": [
+      "NUI",
+      "GUI",
+      "CLI",
+      "OUI"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-e44e58b0ab5bec89",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "에 대한 견본품을 만들어 최종 결과물을 예측하는 모형은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 3회 8번",
+    "sourceYear": 2024,
+    "choices": [
+      "나선형 모형",
+      "애자일 모형",
+      "프로토타입 모형",
+      "폭포수 모형"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-4d9f87ee6476da69",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "것으로 클래스들 사이의 관계로 설명되는 연관성을 , ‘is instance of’ 나타내는 용어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 3회 10번",
+    "sourceYear": 2024,
+    "choices": [
+      "일반화",
+      "분류화",
+      "연관화",
+      "집단화"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-ebffa03d38a9de4f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Agile) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 3회 13번",
+    "sourceYear": 2024,
+    "choices": [
+      "변화에 대한 대응보다는 자세한 계획을 중심으로 소프트웨어",
+      "를 개발한다. 프로세스와 도구 중심이 아닌 개개인과의 상호소통을 통해 의",
+      "견을 수렴한다. 협상과 계약보다는 고객과의 협력을 중시한다.",
+      "문서 중심이 아닌 실행 가능한 소프트웨어를 중시한다 , ."
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-7c3b8bf21daa6af8",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Class) ( , ) ㉠ ㉡ 용어는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2024년 3회 16번",
+    "sourceYear": 2024,
+    "choices": [
+      "ㆍ클래스는 각각의 객체들이 갖는 과 을 ( ) ( ) ㉠ ㉡ 표현함 ㆍ 클래스의 상태나 정보를 표현함 ( ) : ㉠ ㆍ 클래스가 수행할 수 있는 동작으로 함수 ( ) : , ㉡ 메소드 라고도 함 ( , Method) 제약조건 속성 - , -",
+      "㉠ ㉡ 속성 오퍼레이션 - , -",
+      "㉠ ㉡ 오퍼레이션 제약조건 - , -",
+      "㉠ ㉡ 속성 관계 - , -"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-23ede77ebdfeed18",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Divide and Conquer) (pivot) 을 사용하며 최악의 경우 회의 비교를 수행해야 하는 정렬 n(n-1)/2 은 (Sort) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "imageUrl": "/questions/information-processing-engineer/exams/2024-3/q040-1.png",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2024년 3회 40번",
+    "sourceYear": 2024,
+    "choices": [
+      "Selection Sort",
+      "Bubble Sort",
+      "Insert Sort",
+      "Quick Sort"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-4f4ecba6f14db7ef",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "때 어떤 정규화 작업을 한 것인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 3회 44번",
+    "sourceYear": 2024,
+    "choices": [
+      "국가 도시 대한민국 서울 부산 , 미국 워싱턴 뉴욕 , 중국 베이징 ↓ 국가 도시 대한민국 서울 대한민국 부산 미국 워싱턴 미국 뉴욕 중국 베이징 회 3 제 정규형 1",
+      "제 정규형 2",
+      "제 정규형 3",
+      "제 정규형 4"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-532eccb2d74a1180",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", , , 스와 테이블 간에 매트릭스를 만들어서 트랜잭션을 분석하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2024년 3회 48번",
+    "sourceYear": 2024,
+    "choices": [
+      "분석 CASE",
+      "일치 분석",
+      "분석 CRUD",
+      "연관성 분석"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-282d19c2f62fef5f",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C, Java , 문장을 실행하지 않고 제어를 반복문의 처음으로 옮기는 명령어는 무엇인가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 3회 68번",
+    "sourceYear": 2024,
+    "choices": [
+      "break",
+      "continue",
+      "next",
+      "release"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-e047b7991935360f",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Myers (Cohesion) 응집도를 갖는 단계는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 3회 73번",
+    "sourceYear": 2024,
+    "choices": [
+      "순차적 응집도(Sequential Cohesion)",
+      "기능적 응집도(Functional Cohesion)",
+      "시간적 응집도(Temporal Cohesion)",
+      "우연적 응집도(Coincidental Cohesion)"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-5b391f4947a88e9e",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Python ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 3회 74번",
+    "sourceYear": 2024,
+    "choices": [
+      "String = ‘Conceptual Schema’ r = String[-4:6:-2] print(r) hSlu",
+      "ShmCnep",
+      "ulSh",
+      "penCmhS"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-3973a654ea72bdfa",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Non-Preemptive) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 3회 76번",
+    "sourceYear": 2024,
+    "choices": [
+      "SJF",
+      "HRN",
+      "FCFS",
+      "SRT"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-bb4b3a3fe061e62f",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "TCP/IP 콜은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2024년 3회 78번",
+    "sourceYear": 2024,
+    "choices": [
+      "TCP",
+      "ARP",
+      "FTP",
+      "IP"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-8d195424c2864345",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Python 신속한 개발이 가능하도록 지원하는 프레임워크는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 3회 85번",
+    "sourceYear": 2024,
+    "choices": [
+      "Spring",
+      "Node.js",
+      "Django",
+      "Codeigniter"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-d12e8f331fd510ad",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "피하기 위해 일정한 시간을 기다린 후 데이터를 전송하는 방법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 3회 87번",
+    "sourceYear": 2024,
+    "choices": [
+      "VLAN",
+      "STP",
+      "L2AN",
+      "CSMA/CA"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-85471bb1903f0b21",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Secure 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 3회 93번",
+    "sourceYear": 2024,
+    "choices": [
+      "삽입 사용자의 입력 값 등 외부 입력 값이 쿼리에 SQL : SQL",
+      "삽입되어 공격 크로스사이트 스크립트 검증되지 않은 외부 입력 값에 의해 :",
+      "브라우저에서 악의적인 코드가 실행 운영체제 명령어 삽입 운영체제 명령어 파라미터 입력 값이 :",
+      "적절한 사전검증을 거치지 않고 사용되어 공격자가 운영체제 명령어를 조작 자원 삽입 사용자가 내부 입력 값을 통해 시스템 내에 사용이 :"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-ee38760f2a47420a",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Public Private 로 가장 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 3회 98번",
+    "sourceYear": 2024,
+    "choices": [
+      "메소드로의 접근이 불가능해진다.",
+      "배열의 주소가 외부로 공개되어 외부에서 접근할 수 있게 된다.",
+      "시스템의 내부 정보가 노출된다.",
+      "동기화 오류가 발생한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-4d6683470981d11f",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "작업 일정을 막대 도표를 이용하여 표시하는 프로젝트 일정표는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2024년 3회 100번",
+    "sourceYear": 2024,
+    "choices": [
+      "간트 차트",
+      "임계 경로 기법",
+      "PERT",
+      "WBS"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-0e4fa65230bccbd2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "인터페이스와 같은 코드를 작성하는 수준의 세부적인 구현 방안을 설계할 때 참조할 수 있는 전형적인 해결 방식 또는 예제를 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2025년 1회 17번",
+    "sourceYear": 2025,
+    "choices": [
+      "모듈 분해",
+      "클래스 도출",
+      "연관 관계",
+      "디자인 패턴"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-9eeb9e220fbf7599",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "표현한 데이터 추상화를 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2025년 1회 20번",
+    "sourceYear": 2025,
+    "choices": [
+      "Method",
+      "Class",
+      "Field",
+      "Message"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-3e550a2f85d4df86",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "NS Chart 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2025년 1회 40번",
+    "sourceYear": 2025,
+    "choices": [
+      "논리의 기술에 중점을 두고 도형을 이용한 표현 방법이다.",
+      "이해하기 쉽고 코드 변환이 용이하다.",
+      "화살표나 를 사용하여 이해하기 쉽다 GOTO .",
+      "연속 선택 반복 등의 제어 논리 구조를 표현한다 , , ."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-55113ddb920242f4",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "‘53t44’ ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 1회 65번",
+    "sourceYear": 2025,
+    "choices": [
+      "a, b = map(int, input().split(\"t\")); print(a, b) 53 t 44",
+      "53t44",
+      "53 44",
+      "53, 44"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-0690c79f1a4da5c9",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Flow Control) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 1회 66번",
+    "sourceYear": 2025,
+    "choices": [
+      "정지 대기는 수신 측의 확인 신호 를 받은 후에 다음 패 - (ACK)",
+      "킷을 전송하는 방식이다. 확인 신호를 이용하여 송신 데이터의 양을 조절하는 방식은",
+      "슬라이딩 윈도우이다.",
+      "확인 신호 없이 보낼 수 있는 패킷의 최대치가 윈도우 크기이다. 이전에 송신한 패킷에 대한 부정 수신 응답 이 전달된 (NAK)"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-2ce9d0cb7ec18a13",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "128.107.176.0/22 서브넷 마스크는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 1회 74번",
+    "sourceYear": 2025,
+    "choices": [
+      "255.0.0.0",
+      "255.248.0.0",
+      "255.255.252.0",
+      "255.255.255.255"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-beabdb9745ead3c3",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "경우의 결합도는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 1회 78번",
+    "sourceYear": 2025,
+    "choices": [
+      "내용 결합도(Content Coupling)",
+      "제어 결합도(Control Coupling)",
+      "공통 결합도(Common Coupling)",
+      "스탬프 결합도(Stamp Coupling)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-80e5cad0f38cd2bc",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "· · 한다는 보안 요소는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2025년 1회 81번",
+    "sourceYear": 2025,
+    "choices": [
+      "기밀성",
+      "무결성",
+      "가용성",
+      "부인 방지"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-11a094981b325b79",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(SDx) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2025년 1회 92번",
+    "sourceYear": 2025,
+    "choices": [
+      "ㆍ가상화를 적용하여 필요한 공간만큼 나눠 사용할 수 있 도록 하며 서버 가상화와 유사함 ㆍ컴퓨팅 소프트웨어로 규정하는 데이터 스토리지 체계이 며 일정 조직 내 여러 스토리지를 하나처럼 관리하고 , 운용하는 컴퓨터 이용 환경 ㆍ스토리지 자원을 효율적으로 나누어 쓰는 방법으로 이해 할 수 있음 Software Defined Storage",
+      "Distribution Oriented Storage",
+      "Network Architected Storage",
+      "Systematic Network Storage"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-4d2b511ee1c113ba",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "나 하드웨어 환경에서 사용할 수 있도록 변환하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2025년 1회 95번",
+    "sourceYear": 2025,
+    "choices": [
+      "역공학",
+      "분석",
+      "재구성",
+      "이식"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b926f4b255aee0ee",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(MAC) 객체 간의 정보 접근을 통제하는 모델은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2025년 1회 96번",
+    "sourceYear": 2025,
+    "choices": [
+      "벨 라파듈라 모델(Bell-LaPadula Model)",
+      "만리장성 모델(Chinese Wall Model)",
+      "비바 무결성 모델(Biba Integrity Model)",
+      "클락 윌슨 무결성 모델 - (Clark-Wilson Integrity Model)"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-07baef6d2f2ed631",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "DoS(Denial of Service) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2025년 1회 100번",
+    "sourceYear": 2025,
+    "choices": [
+      "공격은 정상 크기보다 큰 패킷을 작은 Ping of Death ICMP",
+      "조각 으로 쪼개어 공격 대상이 조각화 된 패킷을 (Fragment) 처리하게 만드는 공격 방법이다.",
+      "공격은 멀티캐스트 를 활용하여 공격 대상이 Smurf (Multicast) 네트워크의 임의의 시스템에 패킷을 보내게 만드는 공격이다. 은 존재하지 않는 클라이언트가 서버별로 한정 SYN Flooding",
+      "된 접속 가능 공간에 접속한 것처럼 속여 다른 사용자가 서비 스를 이용하지 못하게 하는 것이다. 공격은 패킷 전송 시 출발지 주소와 목적지 주소 Land IP IP"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-45187a73b212166d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UI (Multi-touch), 동작 인식(Gesture Recognition) 등 사용자의 자연스러운 움직임을 인식하여 서로 주고받는 정보를 제공하는 사용자 인터페이스를 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2025년 2회 2번",
+    "sourceYear": 2025,
+    "choices": [
+      "GUKGraphical User Interface)",
+      "OUI(Organic User Interface)",
+      "NUI(Natural User Interface)",
+      "CLK(Command Line Interface)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-0e11b8449aec62dd",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(XP) 5 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2025년 2회 7번",
+    "sourceYear": 2025,
+    "choices": [
+      "용기",
+      "의사소통",
+      "정형 분석",
+      "피드백"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-8f0cdf1b58c1e45d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UI , 목표를 달성하기 위해 수행할 내용을 기술하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2025년 2회 9번",
+    "sourceYear": 2025,
+    "choices": [
+      "프로토타입",
+      "레이아웃",
+      "유스케이스",
+      "스토리보드"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-f8bcf90441872579",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SOLID 않는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2025년 2회 10번",
+    "sourceYear": 2025,
+    "choices": [
+      "ISP(Interface Segregation Principle)",
+      "DIP(Dependency Inversion Principle)",
+      "LSP(Liskov Substitution Principle)",
+      "SSO(Single Sign On)"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-51391e83cf788d73",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "Jacobson ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2025년 2회 11번",
+    "sourceYear": 2025,
+    "choices": [
+      "다이어그램을 사용하여 객체의 행위를 데이터 모델링하 E-R",
+      "는데 초점을 둔 방법이다. 객체 동적 기능 모델로 나누어 수행하는 방법이다 , , .",
+      "미시적 개발 프로세스와 거시적 개발 프로세스를 모두 사용하",
+      "는 방법이다. 를 강조하여 사용하는 방법이다 Use-Case ."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c807f5985c78eaf2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(FTR) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2025년 2회 40번",
+    "sourceYear": 2025,
+    "choices": [
+      "의제를 제한한다.",
+      "논쟁과 반박을 제한한다.",
+      "문제 영역을 명확히 표현한다.",
+      "참가자의 수를 제한하지 않는다."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-02fc5938f1776aa2",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "만족시키지 못하는 키는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2025년 2회 49번",
+    "sourceYear": 2025,
+    "choices": [
+      "후보키",
+      "기본키",
+      "슈퍼키",
+      "외래키"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-81564a60e2c20118",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "R S SQL , 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2025년 2회 56번",
+    "sourceYear": 2025,
+    "choices": [
+      "R A B 1 A 3 B S A B 1 A 2 B SELECT A FROM R UNION ALL SELECT A FROM S;",
+      "1",
+      "3 2",
+      "1 3"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b11de0595658ad4e",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Relation) 의 수를 무엇이라고 하는가 (Tuple) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2025년 2회 59번",
+    "sourceYear": 2025,
+    "choices": [
+      "Degree",
+      "Cardinality",
+      "Attribute",
+      "Cartesian product"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-e9bc7473173a96d4",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "SQL DDL, DML, DCL , 그 성격이 나머지 셋과 다른 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2025년 2회 60번",
+    "sourceYear": 2025,
+    "choices": [
+      "SELECT",
+      "UPDATE",
+      "INSERT",
+      "GRANT"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-ef5af45b9c90a82d",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "OSI 7 (PDU) (Message) 아닌 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 2회 64번",
+    "sourceYear": 2025,
+    "choices": [
+      "전송 계층",
+      "세션 계층",
+      "표현 계층",
+      "응용 계층"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-f73a6a66e14dfa22",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "a 0 9 Java 코드이다 괄호에 들어갈 알맞은 코드는 무엇인가 . ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 2회 67번",
+    "sourceYear": 2025,
+    "choices": [
+      "import ( ).*; public class Test { public static void main(String[] args) { Random rand = new Random( ); int a[] = new int[6]; for(int i = 0; i < 6; i ++) a[ i ] = rand.nextInt(10); } } java.lang",
+      "java.util",
+      "java.io",
+      "java.net"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-2a2778018a1a221d",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Page reference) 로 선입선출 알고리즘을 사용할 경우 페이지 부재 횟수 (Page Fault) 는 단 할당된 페이지 프레임 수는 이고 처음에는 모든 프레임이 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 2회 72번",
+    "sourceYear": 2025,
+    "choices": [
+      "( , 3 , 비어 있다.) 페이지 참조열 < > 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0 13",
+      "14",
+      "15",
+      "20"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-2476c49be35c3418",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "JAVA (exception) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 2회 75번",
+    "sourceYear": 2025,
+    "choices": [
+      "문법 오류로 인해 발생한 것",
+      "오동작이나 결과에 악영향을 미칠 수 있는 실행 시간 동안에",
+      "발생한 오류 배열의 인덱스가 그 범위를 넘어서는 경우 발생하는 오류",
+      "존재하지 않는 파일을 읽으려고 하는 경우에 발생하는 오류"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-04803c4771d8b5d9",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(thread) 스레드에 비해 가지는 장점으로 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 2회 77번",
+    "sourceYear": 2025,
+    "choices": [
+      "한 프로세스가 운영체제를 호출할 때 전체 프로세스가 대기할",
+      "필요가 없으므로 시스템 성능을 높일 수 있다. 동시에 여러 스레드가 커널에 접근할 수 있으므로 여러 스레드",
+      "가 시스템 호출을 동시에 사용할 수 있다. 각 스레드를 개별적으로 관리할 수 있으므로 스레드의 독립적",
+      "인 스케줄링이 가능하다. 커널 모드로의 전환 없이 스레드 교환이 가능하므로 오버헤드"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-c0c0fba8476f6b03",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Fragmentation) (Reassembly) 옳지 않은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 2회 80번",
+    "sourceYear": 2025,
+    "choices": [
+      "단편화는 송신 측에서 전송할 데이터를 전송에 알맞은 일정",
+      "크기의 작은 블록으로 자르는 작업을 의미한다. 재결합은 수신 측에서 단편화된 블록을 원래의 데이터로 모으",
+      "는 것이다. 단편화를 통해 세분화된 데이터 블록을 프레임이라고 한다.",
+      "단편화를 하면 전송 시간이 단축되고 효과적인 오류 제어가 ,"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-adbfb0bcb9a4d2fa",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "내재되어 있는 변수 사이의 상호 관계를 규명하여 일정한 패턴을 찾아내는 기법은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2025년 2회 84번",
+    "sourceYear": 2025,
+    "choices": [
+      "Data Mining",
+      "Wm-Bus",
+      "Digital Twin",
+      "Zigbee"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-e9597894b9975178",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", 물리적인 자산 대신 소프트웨어로 가상화함으로써 실제 자산의 특성에 대한 정확한 정보를 얻을 수 있고 자산 최적화 돌발사고 , , 최소화 생산성 증가 등 설계부터 제조 서비스에 이르는 모든 과정의 , , 효율성을 향상시킬 수 있는 모델은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2025년 2회 86번",
+    "sourceYear": 2025,
+    "choices": [
+      "최적화",
+      "실행 시간",
+      "디지털 트윈",
+      "N-Screen"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-05e4ec8c988a6669",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Agile) 거리가 먼 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2025년 2회 92번",
+    "sourceYear": 2025,
+    "choices": [
+      "각 단계의 결과가 완전히 확인된 후 다음 단계 진행",
+      "소프트웨어 개발에 참여하는 구성원들 간의 의사소통 중시",
+      "환경 변화에 대한 즉시 대응",
+      "프로젝트 상황에 따른 주기적 조정"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-fdd2cc6cf7483eb4",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Null Pointer) 역참조가 발생하지 않도록 프로그래머가 수행해야 하는 일로 가장 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2025년 2회 97번",
+    "sourceYear": 2025,
+    "choices": [
+      "반환된 메모리에 접근할 수 없도록 주소를 저장하고 있는 포인",
+      "터를 초기화한다. 변수 선언 시 할당된 메모리를 초기화한다.",
+      "포인터를 이용하기 전에 널 값을 갖고 있는지 검사한다.",
+      "자원 반환 코드가 누락되었는지 확인한다."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-2c68effc0fbf216e",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "PERT 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2025년 2회 99번",
+    "sourceYear": 2025,
+    "choices": [
+      "각 작업들이 언제 시작하고 언제 종료되는지에 대한 일정을",
+      "막대 도표를 이용하여 표시한다. 시간선 차트라고도 한다 (Time-Line) .",
+      "수평 막대의 길이는 각 작업의 기간을 나타낸다.",
+      "작업들 간의 상호 관련성 결정 경로 경계 시간 자원 할당 , , ,"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-7c3f7b416fe8a47a",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Prototyping Model) 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2025년 3회 1번",
+    "sourceYear": 2025,
+    "choices": [
+      "최종 결과물이 만들어지기 전에 의뢰자가 최종 결과물의 일부",
+      "또는 모형을 볼 수 있다. 프로토타이핑을 수행하는 과정에서 새로운 요구사항의 반영은",
+      "불가능하다. 프로토타입은 발주자나 개발자 모두에게 공동의 참조 모델을",
+      "제공한다. 프로토타입은 구현 단계의 구현 골격이 될 수 있다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-7dc1508f9257ac7b",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "N-S(Nassi-Schneiderman) Chart ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2025년 3회 6번",
+    "sourceYear": 2025,
+    "choices": [
+      "논리의 기술에 중점을 둔 도형식 표현 방법이다.",
+      "연속 선택 및 다중 선택 반복 등의 제어 논리 구조로 표현한다 , , .",
+      "주",
+      "로 화살표를 사용하여 논리적인 제어 구조로 흐름을 표현한다. 조건이 복합되어 있는 곳의 처리를 시각적으로 명확히 식별하"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-4f25ea939ec865d2",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "UI (Multi-touch), (Gesture Recog 등 사용자의 자연스러운 움직임을 인식하여 서로 주고받는 nition) 정보를 제공하는 사용자 인터페이스를 의미하는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2025년 3회 11번",
+    "sourceYear": 2025,
+    "choices": [
+      "GUKGraphical User Interface)",
+      "OUI(Organic User Interface)",
+      "NUI(Natural User Interface)",
+      "CLK(Command Line Interface)"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-44c73564268714c7",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "LOC 36000 , 프로그래머가 명 프로그래머들의 평균 생산성이 월간 라인일 6 , 300 때 개발에 소요되는 기간을 계산한 결과로 가장 옳은 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2025년 3회 12번",
+    "sourceYear": 2025,
+    "choices": [
+      "개월 5",
+      "개월 10",
+      "개월 15",
+      "개월 20"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-3d464d0b83d70b9f",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(Middleware) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2025년 3회 18번",
+    "sourceYear": 2025,
+    "choices": [
+      "여러 운영체제에서 응용 프로그램들 사이에 위치한 소프트웨",
+      "어이다. 미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의",
+      "내부 동작을 쉽게 확인할 수 있어야 한다. 소프트웨어 컴포넌트를 연결하기 위한 준비된 인프라 구조를",
+      "제공한다. 여러 컴포넌트를 대 대 다 다 대 다 등 여러 가지 형태로 1 1, 1 ,"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-467e0150e622449d",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 설계",
+    "examType": "WRITTEN_CBT",
+    "prompt": ", , , 소프트웨어 내의 프로그램 작업 단위 등과 같은 의미로 사용되는 , 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 설계"
+    ],
+    "source": "정보처리기사 2025년 3회 20번",
+    "sourceYear": 2025,
+    "choices": [
+      "Module",
+      "Component",
+      "Things",
+      "Prototype"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-a70688c432aed9ef",
+    "certificateId": "information-processing-engineer",
+    "category": "소프트웨어 개발",
+    "examType": "WRITTEN_CBT",
+    "prompt": "필요한 조건만을 가지고 임시로 제공되는 시험용 모듈을 무엇이라고 하는가?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "소프트웨어 개발"
+    ],
+    "source": "정보처리기사 2025년 3회 23번",
+    "sourceYear": 2025,
+    "choices": [
+      "Stub",
+      "Driver",
+      "Procedure",
+      "Function"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-9a6871276f5c4683",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "“ ” 맞는 것은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2025년 3회 43번",
+    "sourceYear": 2025,
+    "choices": [
+      "릴레이션 내의 튜플들이 각 속성의 도메인에 지정된 값만을",
+      "가져야 한다. 기본키에 속해 있는 애트리뷰트는 널 값이나 중복 값을 가질",
+      "수 없다. 릴레이션은 참조할 수 없는 외래키 값을 가질 수 없다.",
+      "외래키 값은 참조 릴레이션의 기본키 값과 동일해야 한다."
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-d756ebcfa380f5cf",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "A1, A2, A3 3 A1 3 값 의 도메인은 개 값 의 도메인은 개 값을 갖는다 이 , A2 2 , A3 4 . 릴레이션에 존재할 수 있는 가능한 튜플 의 최대 수는 (Tuple) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2025년 3회 48번",
+    "sourceYear": 2025,
+    "choices": [
+      "24",
+      "12",
+      "8",
+      "9"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-c3da2c7b3e32abbb",
+    "certificateId": "information-processing-engineer",
+    "category": "데이터베이스 구축",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(attribute) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "데이터베이스 구축"
+    ],
+    "source": "정보처리기사 2025년 3회 53번",
+    "sourceYear": 2025,
+    "choices": [
+      "속성은 개체의 특성을 기술한다.",
+      "속성은 데이터베이스를 구성하는 가장 작은 논리적 단위이다.",
+      "속성은 파일 구조상 데이터 항목 또는 데이터 필드에 해당된다.",
+      "속성의 수를 라고 한다 “cardinality” ."
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-9620245aafb7c6e8",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "C 알맞은 코드는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 3회 64번",
+    "sourceYear": 2025,
+    "choices": [
+      "#include <stdio.h> int main(void) { int n, sum = 3; ( ) sum = sum + n; printf(“%d”, sum); } scanf(“%d”, n);",
+      "scanf(“%d”, &n);",
+      "scanf(“%f”, n);",
+      "scanf(“%f”, &n);"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-80155f3f33db584a",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "n Python 다 괄호 에 들어갈 알맞은 코드는 . ( ~ ) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 3회 65번",
+    "sourceYear": 2025,
+    "choices": [
+      "㉠ ㉢ import turtle ( ) shape(distance, n): ㉠ t = turtle.Turtle( ) for i in range(n): t.( ) ㉡ t.( ) ㉢ shape(100, 5) def, forward(distance), left(360//n)",
+      "def, forward(distance), left(360///n)",
+      "class, forward(distance), left(360//n)",
+      "class, forward(distance), left(360///n)"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-c713bd9ecd5f9b1c",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "JAVA ? public class ovr { public static void main(String[ ] args) { int a = 1, b = 2, c = 3, d = 4; int mx, mn; mx = a < b ? b : a; if (mx == 1) { mn = a > mx ? b : a; } else { mn = b < mx ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 3회 66번",
+    "sourceYear": 2025,
+    "choices": [
+      "d : c; } System.out.println(mn); } } 1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-8d4d556423b41262",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "HTTP (Well Known) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 3회 75번",
+    "sourceYear": 2025,
+    "choices": [
+      "23",
+      "80",
+      "53",
+      "443"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-287e9b288af252b6",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "20K, 16K, 8K, 40K 전략으로 을 사용하여 의 프로그램을 적재할 경우 “Worst Fit” 17K 내부 단편화의 크기는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 3회 77번",
+    "sourceYear": 2025,
+    "choices": [
+      "3K",
+      "23K",
+      "44K",
+      "67K"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "id": "csv-a5736977403755a8",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "IPv4 IPv6 ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 3회 78번",
+    "sourceYear": 2025,
+    "choices": [
+      "듀얼 스택",
+      "터널링",
+      "헤더 변환",
+      "라우팅"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "id": "csv-b96a3a22c4beaa3e",
+    "certificateId": "information-processing-engineer",
+    "category": "프로그래밍 언어 활용",
+    "examType": "WRITTEN_CBT",
+    "prompt": "HRN ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "프로그래밍 언어 활용"
+    ],
+    "source": "정보처리기사 2025년 3회 80번",
+    "sourceYear": 2025,
+    "choices": [
+      "대기 시간과 서비스 시간을 이용하는 방법이다.",
+      "대기 시간이 긴 프로세스일 경우 우선순위가 높다.",
+      "우선순위 계산식 값이 낮을수록 우선순위가 높다.",
+      "기법을 보완하기 위한 스케쥴링 방법이다 SJF ."
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-8845721a33218678",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "유형은?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2025년 3회 91번",
+    "sourceYear": 2025,
+    "choices": [
+      "Something You Have",
+      "Something You Are",
+      "Something You Know",
+      "Somewhere You Are"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "id": "csv-c4e279251b0fdedd",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "경우에는 접속이 허용되고 그 반대의 경우에는 거부할 수 있는 , 접근제어 유틸리티는?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2025년 3회 96번",
+    "sourceYear": 2025,
+    "choices": [
+      "tcp wrapper",
+      "trace checker",
+      "token finder",
+      "change detector"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "id": "csv-af9acb897a1bd905",
+    "certificateId": "information-processing-engineer",
+    "category": "정보시스템 구축 관리",
+    "examType": "WRITTEN_CBT",
+    "prompt": "(MAC) 내 스위치 주소 테이블의 저장 기능을 혼란시켜 더미 허브 , MAC 처럼 작동하게 하는 공격은 (Dummy Hub) ?",
+    "explanation": "",
+    "difficulty": "medium",
+    "version": 1,
+    "publicationStatus": "published",
+    "tags": [
+      "정보처리기사",
+      "필기",
+      "기출",
+      "2020년 이후",
+      "정보시스템 구축 관리"
+    ],
+    "source": "정보처리기사 2025년 3회 97번",
+    "sourceYear": 2025,
+    "choices": [
+      "Parsing",
+      "LAN Tapping",
+      "Switch Jamming",
+      "FTP Flooding"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
     "id": "csv-fe5b35c7035f5645",
     "certificateId": "information-security-engineer",
     "category": "시스템 보안",

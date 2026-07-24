@@ -3,7 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const inputDirectory = path.join(root, "data", "임베디드 기사(필기)");
+const inputDirectory = path.join(root, "data", "임베디드기사(필기)");
 const outputFile = path.join(root, "content", "questions", "embedded-engineer-written.csv");
 const filenames = (await fs.readdir(inputDirectory))
   .filter((name) => name.toLowerCase().endsWith(".html"))
