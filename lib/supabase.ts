@@ -168,6 +168,70 @@ export async function saveQuestionOverride(userId: string, question: Question) {
   if (error) throw error;
 }
 
+export interface AiProviderSettings {
+  geminiEnabled: boolean;
+  openaiEnabled: boolean;
+}
+
+export const defaultAiProviderSettings: AiProviderSettings = { geminiEnabled: true, openaiEnabled: false };
+
+export async function loadAiProviderSettings(): Promise<AiProviderSettings> {
+  const supabase = getSupabaseClient();
+  if (!supabase) return defaultAiProviderSettings;
+  const { data, error } = await supabase.from("app_settings").select("value").eq("key", "ai_providers").maybeSingle();
+  if (error) throw error;
+  const value = data?.value as Partial<AiProviderSettings> | undefined;
+  return {
+    geminiEnabled: value?.geminiEnabled !== false,
+    openaiEnabled: value?.openaiEnabled === true
+  };
+}
+
+export async function saveAiProviderSettings(userId: string, value: AiProviderSettings) {
+  const supabase = getSupabaseClient();
+  if (!supabase) throw new Error("Supabase가 설정되지 않았습니다.");
+  const { error } = await supabase.from("app_settings").upsert({
+    key: "ai_providers",
+    value,
+    updated_by: userId,
+    updated_at: new Date().toISOString()
+  }, { onConflict: "key" });
+  if (error) throw error;
+}
+
+export async function loadAiExplanationOverride(cacheKey: string): Promise<string | null> {
+  const supabase = getSupabaseClient();
+  if (!supabase) return null;
+  const { data, error } = await supabase.from("ai_explanation_overrides").select("explanation").eq("cache_key", cacheKey).maybeSingle();
+  if (error) throw error;
+  return typeof data?.explanation === "string" ? data.explanation : null;
+}
+
+export async function saveAiExplanationOverride(userId: string, cacheKey: string, questionId: string, explanation: string) {
+  const supabase = getSupabaseClient();
+  if (!supabase) throw new Error("Supabase가 설정되지 않았습니다.");
+  const { error } = await supabase.from("ai_explanation_overrides").upsert({ cache_key: cacheKey, question_id: questionId, explanation, updated_by: userId, updated_at: new Date().toISOString() }, { onConflict: "cache_key" });
+  if (error) throw error;
+}
+
+export interface AiUsageLog {
+  id: number;
+  provider: string;
+  model: string;
+  promptTokens: number;
+  completionTokens: number;
+  totalTokens: number;
+  createdAt: string;
+}
+
+export async function loadAiUsageLogs(): Promise<AiUsageLog[]> {
+  const supabase = getSupabaseClient();
+  if (!supabase) return [];
+  const { data, error } = await supabase.from("ai_usage_logs").select("*").order("created_at", { ascending: false }).limit(5000);
+  if (error) throw error;
+  return (data ?? []).map((row) => ({ id: row.id, provider: row.provider, model: row.model, promptTokens: row.prompt_tokens, completionTokens: row.completion_tokens, totalTokens: row.total_tokens, createdAt: row.created_at }));
+}
+
 export async function signInWithGoogle() {
   const supabase = getSupabaseClient();
   if (!supabase) throw new Error("Supabase 환경변수가 설정되지 않았습니다.");

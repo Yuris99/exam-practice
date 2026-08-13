@@ -64,6 +64,9 @@ jobs:
           context: .
           platforms: linux/amd64
           push: true
+          build-args: |
+            NEXT_PUBLIC_SUPABASE_URL=${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+            NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=${{ secrets.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY }}
           tags: |
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:dev
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}

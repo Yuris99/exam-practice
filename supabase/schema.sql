@@ -119,3 +119,71 @@ using (exists (select 1 from public.admin_users where user_id = (select auth.uid
 with check (exists (select 1 from public.admin_users where user_id = (select auth.uid())));
 
 grant select on public.question_overrides to anon, authenticated;
+
+create table if not exists public.app_settings (
+  key text primary key,
+  value jsonb not null default '{}'::jsonb,
+  updated_by uuid references auth.users(id),
+  updated_at timestamptz not null default now()
+);
+
+insert into public.app_settings (key, value)
+values ('ai_providers', '{"geminiEnabled": true, "openaiEnabled": false}'::jsonb)
+on conflict (key) do nothing;
+
+alter table public.app_settings enable row level security;
+
+drop policy if exists "Everyone can read app settings" on public.app_settings;
+create policy "Everyone can read app settings"
+on public.app_settings for select to anon, authenticated
+using (true);
+
+drop policy if exists "Admins manage app settings" on public.app_settings;
+create policy "Admins manage app settings"
+on public.app_settings for all to authenticated
+using (exists (select 1 from public.admin_users where user_id = (select auth.uid())))
+with check (exists (select 1 from public.admin_users where user_id = (select auth.uid())));
+
+grant select on public.app_settings to anon, authenticated;
+
+create table if not exists public.ai_explanation_overrides (
+  cache_key text primary key,
+  question_id text not null,
+  explanation text not null,
+  updated_by uuid not null references auth.users(id),
+  updated_at timestamptz not null default now()
+);
+
+alter table public.ai_explanation_overrides enable row level security;
+
+drop policy if exists "Everyone can read AI explanation overrides" on public.ai_explanation_overrides;
+create policy "Everyone can read AI explanation overrides"
+on public.ai_explanation_overrides for select to anon, authenticated
+using (true);
+
+drop policy if exists "Admins manage AI explanation overrides" on public.ai_explanation_overrides;
+create policy "Admins manage AI explanation overrides"
+on public.ai_explanation_overrides for all to authenticated
+using (exists (select 1 from public.admin_users where user_id = (select auth.uid())))
+with check (exists (select 1 from public.admin_users where user_id = (select auth.uid())));
+
+grant select on public.ai_explanation_overrides to anon, authenticated;
+
+create table if not exists public.ai_usage_logs (
+  id bigint generated always as identity primary key,
+  provider text not null,
+  model text not null,
+  prompt_tokens bigint not null default 0,
+  completion_tokens bigint not null default 0,
+  total_tokens bigint not null default 0,
+  created_at timestamptz not null default now()
+);
+
+alter table public.ai_usage_logs enable row level security;
+
+drop policy if exists "Admins read AI usage logs" on public.ai_usage_logs;
+create policy "Admins read AI usage logs"
+on public.ai_usage_logs for select to authenticated
+using (exists (select 1 from public.admin_users where user_id = (select auth.uid())));
+
+create index if not exists ai_usage_logs_created_idx on public.ai_usage_logs(created_at desc);
