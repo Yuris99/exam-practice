@@ -4,10 +4,11 @@ import { useEffect, useMemo, useState } from "react";
 import { AiExplanation, createExplanationCacheKey } from "@/components/AiExplanation";
 import { QuestionContent } from "@/components/QuestionContent";
 import { QuestionMetadata } from "@/components/QuestionMetadata";
-import { examTemplates } from "@/lib/examTemplates";
+import { createExamTemplates } from "@/lib/examTemplates";
 import { createTestSnapshot, selectBalancedByCategory, shuffled } from "@/lib/testSelection";
 import { formatKoreanDate } from "@/lib/koreanDate";
 import { matchesQuestionMetadata, questionFilterOptions } from "@/lib/questionFilters";
+import { examTypeLabel } from "@/lib/certificates";
 import type { AnswerValue, ExamType, Question, StudyState, TestResult, TestSession } from "@/lib/types";
 
 interface TestModeProps {
@@ -39,6 +40,14 @@ export function TestMode({ study, setStudy, questionBank, onPracticeQuestions, r
   const [expandedReviewIds, setExpandedReviewIds] = useState<string[]>([]);
   const [now, setNow] = useState(() => Date.now());
   const session = study.activeTest;
+  const certificateId = questionBank[0]?.certificateId ?? "unknown";
+  const examTemplates = useMemo(() => createExamTemplates(certificateId), [certificateId]);
+  const visibleTestResults = useMemo(() => {
+    const questionIds = new Set(questionBank.map((question) => question.id));
+    return study.testResults.filter((result) => result.certificateId
+      ? result.certificateId === certificateId
+      : result.questionSnapshots?.some((question) => question.certificateId === certificateId) || result.questionIds.some((id) => questionIds.has(id)));
+  }, [certificateId, questionBank, study.testResults]);
 
   useEffect(() => {
     if (!resultToOpenId) return;
@@ -171,7 +180,7 @@ export function TestMode({ study, setStudy, questionBank, onPracticeQuestions, r
             const count = questionBank.filter((question) => question.examType === template.examType).length;
             const actualCount = Math.min(template.questionCount, count);
             return <article className="templateCard" key={template.id}>
-              <div><small>{template.examType === "WRITTEN_CBT" ? "필기 CBT" : "실기 필답형"}</small><h2>{template.title}</h2><p>{template.description}</p></div>
+              <div><small>{examTypeLabel(certificateId, template.examType)}</small><h2>{template.title}</h2><p>{template.description}</p></div>
               <div className="templateMeta"><span><strong>{actualCount}</strong>문제</span><span><strong>{Math.floor(template.durationSeconds / 60)}</strong>분</span><span><strong>{template.passingScore}</strong>점 합격</span><span><strong>균형</strong>과목 배분</span></div>
               {actualCount < template.questionCount && <p className="availability">현재 문제은행에 등록된 {actualCount}문제만 출제됩니다.</p>}
               <button className="fullButton" disabled={actualCount === 0} onClick={() => startTest({ examType: template.examType, requestedCount: template.questionCount, durationSeconds: template.durationSeconds, mode: "mock", title: template.title, passingScore: template.passingScore, categoryStrategy: template.categoryStrategy, shuffleQuestions: template.shuffleQuestions, shuffleChoices: template.shuffleChoices }, questionBank, setStudy)}>모의시험 시작</button>
@@ -180,8 +189,8 @@ export function TestMode({ study, setStudy, questionBank, onPracticeQuestions, r
         </div> : <>
         <label>시험 유형</label>
         <div className="segments">
-          <button className={examType === "WRITTEN_CBT" ? "active" : ""} onClick={() => { setExamType("WRITTEN_CBT"); setCategory("all"); setSourceYear("all"); setTag("all"); }}>필기 CBT</button>
-          <button className={examType === "PRACTICAL_WRITTEN_RESPONSE" ? "active" : ""} onClick={() => { setExamType("PRACTICAL_WRITTEN_RESPONSE"); setCategory("all"); setSourceYear("all"); setTag("all"); }}>실기 필답형</button>
+          <button className={examType === "WRITTEN_CBT" ? "active" : ""} onClick={() => { setExamType("WRITTEN_CBT"); setCategory("all"); setSourceYear("all"); setTag("all"); }}>{examTypeLabel(certificateId, "WRITTEN_CBT")}</button>
+          <button className={examType === "PRACTICAL_WRITTEN_RESPONSE" ? "active" : ""} onClick={() => { setExamType("PRACTICAL_WRITTEN_RESPONSE"); setCategory("all"); setSourceYear("all"); setTag("all"); }}>{examTypeLabel(certificateId, "PRACTICAL_WRITTEN_RESPONSE")}</button>
         </div>
         <div className="randomFilters">
           <label><span>과목</span><select value={category} onChange={(event) => setCategory(event.target.value)}><option value="all">전체 과목</option>{categories.map((item) => <option value={item} key={item}>{item}</option>)}</select></label>
@@ -198,10 +207,10 @@ export function TestMode({ study, setStudy, questionBank, onPracticeQuestions, r
         <div className="toggleRow"><span><strong>이미 푼 문제 포함</strong><small>끄면 아직 풀지 않은 문제만 출제</small></span><button className={includeSolved ? "toggle active" : "toggle"} onClick={() => setIncludeSolved((value) => !value)} aria-label="이미 푼 문제 포함 전환"><i /></button></div>
         {examType === "WRITTEN_CBT" && <div className="toggleRow"><span><strong>선택지 순서 섞기</strong><small>시험 시작 시 정답 위치도 함께 보정</small></span><button className={shuffleChoices ? "toggle active" : "toggle"} onClick={() => setShuffleChoices((value) => !value)} aria-label="선택지 순서 섞기 전환"><i /></button></div>}
         <p className="availability">선택한 조건에 맞는 문제는 {availableCount}개입니다.</p>
-        <button className="fullButton" disabled={availableCount === 0} onClick={() => startTest({ examType, requestedCount: questionCount, durationSeconds: useTimer ? timeLimitMinutes * 60 : null, mode: "random", title: examType === "WRITTEN_CBT" ? "필기 CBT 랜덤 시험" : "실기 필답형 랜덤 시험", passingScore: null, eligibleQuestionIds: eligibleQuestions.map((question) => question.id), categoryStrategy: "random", shuffleQuestions: true, shuffleChoices: examType === "WRITTEN_CBT" && shuffleChoices }, questionBank, setStudy)}>랜덤 시험 시작</button>
+        <button className="fullButton" disabled={availableCount === 0} onClick={() => startTest({ examType, requestedCount: questionCount, durationSeconds: useTimer ? timeLimitMinutes * 60 : null, mode: "random", title: `${examTypeLabel(certificateId, examType)} 랜덤 시험`, passingScore: null, eligibleQuestionIds: eligibleQuestions.map((question) => question.id), categoryStrategy: "random", shuffleQuestions: true, shuffleChoices: examType === "WRITTEN_CBT" && shuffleChoices }, questionBank, setStudy)}>랜덤 시험 시작</button>
         </>}
       </div>
-      {study.testResults.length > 0 && <><div className="sectionTitle"><h2>최근 시험</h2></div><div className="recentTests">{study.testResults.slice(0, 5).map((result) => {
+      {visibleTestResults.length > 0 && <><div className="sectionTitle"><h2>최근 시험</h2></div><div className="recentTests">{visibleTestResults.slice(0, 5).map((result) => {
         const resultScore = result.scoredQuestionCount ? Math.round(result.correctCount / result.scoredQuestionCount * 100) : null;
         return <button className="panel" key={result.id} onClick={() => setLatestResult(result)}><span><strong>{result.title ?? (result.examType === "WRITTEN_CBT" ? "필기 CBT" : "실기 필답형")}</strong><small>{formatKoreanDate(result.completedAt)} · {result.questionIds.length}문제</small></span><b>{resultScore === null ? "복습" : `${resultScore}점`}</b></button>;
       })}</div></>}
@@ -265,6 +274,7 @@ function startTest(options: StartTestOptions, questionBank: Question[], setStudy
   const snapshots = selected.map((question) => createTestSnapshot(question, options.shuffleChoices));
   const session: TestSession = {
     id: crypto.randomUUID(),
+    certificateId: snapshots[0]?.certificateId ?? questionBank[0]?.certificateId,
     examType: options.examType,
     questionIds: snapshots.map((question) => question.id),
     currentIndex: 0,
@@ -310,6 +320,7 @@ function finishTest(session: TestSession, questionBank: Question[], setStudy: Te
   const completedAt = new Date().toISOString();
   const result: TestResult = {
     id: session.id,
+    certificateId: session.certificateId ?? frozenQuestions[0]?.certificateId,
     examType: session.examType,
     questionIds: session.questionIds,
     answers: session.answers,

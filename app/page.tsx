@@ -15,6 +15,7 @@ import { checkIsAdmin, getSupabaseClient, loadCloudStudyState, loadQuestionOverr
 import { formatKoreanDateTime, koreanDateKey, koreanStudyStreak, recentKoreanDays } from "@/lib/koreanDate";
 import { matchesQuestionMetadata, questionFilterOptions } from "@/lib/questionFilters";
 import { shuffled } from "@/lib/testSelection";
+import { certificateLabels, examTypeLabel } from "@/lib/certificates";
 import type { User } from "@supabase/supabase-js";
 import type { AiExplanationReport, ExamType, Question, SavedAnswer, StudyState, TestResult } from "@/lib/types";
 
@@ -22,13 +23,6 @@ type View = "home" | "practice" | "question" | "test" | "history" | "bookmarks" 
 type PracticeFilter = "all" | "unsolved" | "incorrect" | "bookmarked";
 type DifficultyFilter = "all" | Question["difficulty"];
 const CERTIFICATE_STORAGE_KEY = "certificate-practice:selected-certificate";
-const certificateLabels: Record<string, string> = {
-  "information-processing-engineer": "정보처리기사",
-  "embedded-engineer": "임베디드기사",
-  "computer-system-engineer": "컴퓨터시스템기사",
-  "information-security-engineer": "정보보안기사"
-};
-
 const navItems: Array<{ view: View; icon: string; label: string }> = [
   { view: "home", icon: "⌂", label: "홈" },
   { view: "practice", icon: "✎", label: "연습" },
@@ -491,25 +485,26 @@ function HomeView({ study, onStart, onNavigate, onResume, questionBank, certific
   const activePractice = study.activePractice;
   const activeTest = study.activeTest;
   const activeQuestion = activePractice ? questionBank.find((question) => question.id === activePractice.questionIds[activePractice.currentIndex]) : undefined;
+  const certificateId = questionBank[0]?.certificateId ?? "unknown";
 
   return <section>
-    <div className="hero"><p>오늘도 한 문제씩</p><h1>합격에 가까워지는 시간</h1><span>필기와 실기를 원하는 방식으로 연습하세요.</span></div>
+    <div className="hero"><p>오늘도 한 문제씩</p><h1>합격에 가까워지는 시간</h1><span>{examTypeLabel(certificateId, "WRITTEN_CBT")}과 {examTypeLabel(certificateId, "PRACTICAL_WRITTEN_RESPONSE")}을 원하는 방식으로 연습하세요.</span></div>
     <div className="activeSessionGrid">
       {activeTest && <div className="primaryCard testResumeCard"><small>진행 중 시험 · {Object.keys(activeTest.answers).length}/{activeTest.questionIds.length}문제 답변</small><h2>{activeTest.title ?? (activeTest.examType === "WRITTEN_CBT" ? "필기 CBT 시험" : "실기 필답형 시험")}</h2><button onClick={() => onNavigate("test")}>{activeTest.currentIndex + 1}번부터 이어서 →</button></div>}
       <div className="primaryCard">
-        <small>{activePractice ? `진행 중 · ${activePractice.examType === "WRITTEN_CBT" ? "필기 CBT" : "실기 필답형"}` : certificateLabel}</small><h2>{activePractice ? `${activeQuestion?.category ?? "연습"} ${activePractice.currentIndex + 1}번부터 이어서` : "부담 없이 한 문제부터 시작해요."}</h2>
-        <button onClick={activePractice ? onResume : () => onStart("WRITTEN_CBT")}>{activePractice ? "이어서 풀기 →" : "필기 문제 풀기 →"}</button>
+        <small>{activePractice ? `진행 중 · ${examTypeLabel(certificateId, activePractice.examType)}` : certificateLabel}</small><h2>{activePractice ? `${activeQuestion?.category ?? "연습"} ${activePractice.currentIndex + 1}번부터 이어서` : "부담 없이 한 문제부터 시작해요."}</h2>
+        <button onClick={activePractice ? onResume : () => onStart("WRITTEN_CBT")}>{activePractice ? "이어서 풀기 →" : `${examTypeLabel(certificateId, "WRITTEN_CBT")} 문제 풀기 →`}</button>
       </div>
     </div>
     <div className="sectionTitle"><h2>학습 방식</h2></div>
     <div className="modeGrid">
-      <button onClick={() => onStart("WRITTEN_CBT")}><i>CBT</i><strong>필기시험</strong><span>4지선다 문제를 바로 채점해요</span></button>
-      <button onClick={() => onStart("PRACTICAL_WRITTEN_RESPONSE")}><i>答</i><strong>실기시험</strong><span>필답형 답안을 직접 작성해요</span></button>
+      <button onClick={() => onStart("WRITTEN_CBT")}><i>CBT</i><strong>{examTypeLabel(certificateId, "WRITTEN_CBT")}</strong><span>4지선다 문제를 바로 채점해요</span></button>
+      <button onClick={() => onStart("PRACTICAL_WRITTEN_RESPONSE")}><i>答</i><strong>{examTypeLabel(certificateId, "PRACTICAL_WRITTEN_RESPONSE")}</strong><span>답안을 직접 작성해요</span></button>
       <button onClick={() => onNavigate("test")}><i>TEST</i><strong>시험 모드</strong><span>모의시험 또는 랜덤 시험을 풀어요</span></button>
       <button onClick={() => onNavigate("practice")}><i>⌘</i><strong>맞춤 연습</strong><span>시험 유형과 범위를 선택해요</span></button>
     </div>
     <div className="sectionTitle"><h2>현재 기록</h2><button onClick={() => onNavigate("history")}>자세히</button></div>
-    <div className="summary standardSummary"><div><strong>{answerCount}</strong><span>푼 문제</span></div><div><strong>{accuracy}%</strong><span>필기 정답률</span></div><div><strong>{masteryRate}%</strong><span>완전 정복 · {masteredCount}/{questionBank.length}</span></div><div><strong>{study.bookmarks.filter((id) => questionIds.has(id)).length}</strong><span>북마크</span></div></div>
+    <div className="summary standardSummary"><div><strong>{answerCount}</strong><span>푼 문제</span></div><div><strong>{accuracy}%</strong><span>{examTypeLabel(certificateId, "WRITTEN_CBT")} 정답률</span></div><div><strong>{masteryRate}%</strong><span>완전 정복 · {masteredCount}/{questionBank.length}</span></div><div><strong>{study.bookmarks.filter((id) => questionIds.has(id)).length}</strong><span>북마크</span></div></div>
   </section>;
 }
 
@@ -536,16 +531,17 @@ function BookmarksView({ study, questionBank, onRemove, onPractice }: {
   const publishedBookmarks = bookmarkedQuestions.filter((question) => (question.publicationStatus ?? "published") === "published");
   const writtenIds = publishedBookmarks.filter((question) => question.examType === "WRITTEN_CBT").map((question) => question.id);
   const practicalIds = publishedBookmarks.filter((question) => question.examType === "PRACTICAL_WRITTEN_RESPONSE").map((question) => question.id);
+  const certificateId = questionBank[0]?.certificateId ?? "unknown";
 
   return <section>
     <div className="hero"><p>다시 볼 문제</p><h1>북마크</h1><span>저장한 문제를 유형별로 모아 연습할 수 있습니다.</span></div>
-    <div className="bookmarkPracticeActions">{writtenIds.length > 0 && <button onClick={() => onPractice("WRITTEN_CBT", writtenIds)}>필기 {writtenIds.length}문제 연습</button>}{practicalIds.length > 0 && <button onClick={() => onPractice("PRACTICAL_WRITTEN_RESPONSE", practicalIds)}>실기 {practicalIds.length}문제 연습</button>}</div>
+    <div className="bookmarkPracticeActions">{writtenIds.length > 0 && <button onClick={() => onPractice("WRITTEN_CBT", writtenIds)}>{examTypeLabel(certificateId, "WRITTEN_CBT")} {writtenIds.length}문제 연습</button>}{practicalIds.length > 0 && <button onClick={() => onPractice("PRACTICAL_WRITTEN_RESPONSE", practicalIds)}>{examTypeLabel(certificateId, "PRACTICAL_WRITTEN_RESPONSE")} {practicalIds.length}문제 연습</button>}</div>
     <div className="bookmarkToolbar"><input type="search" value={query} onChange={(event) => { setQuery(event.target.value); setPage(1); }} placeholder="문제 내용 또는 과목 검색" /><span>{filteredQuestions.length}개</span></div>
-    <div className="chips bookmarkFilters">{(["all", "WRITTEN_CBT", "PRACTICAL_WRITTEN_RESPONSE"] as const).map((type) => <button key={type} className={examFilter === type ? "active" : ""} onClick={() => { setExamFilter(type); setPage(1); }}>{type === "all" ? "전체" : type === "WRITTEN_CBT" ? "필기 CBT" : "실기 필답형"}</button>)}</div>
+    <div className="chips bookmarkFilters">{(["all", "WRITTEN_CBT", "PRACTICAL_WRITTEN_RESPONSE"] as const).map((type) => <button key={type} className={examFilter === type ? "active" : ""} onClick={() => { setExamFilter(type); setPage(1); }}>{type === "all" ? "전체" : examTypeLabel(certificateId, type)}</button>)}</div>
     {visibleQuestions.length === 0 ? <div className="panel emptyManager">{bookmarkedQuestions.length ? "검색 조건에 맞는 북마크가 없습니다." : "아직 저장한 문제가 없습니다."}</div> : <div className="bookmarkList">{visibleQuestions.map((question) => {
       const answer = study.answers[question.id];
       const archived = (question.publicationStatus ?? "published") !== "published";
-      return <article className="panel" key={question.id}><button className="bookmarkOpen" disabled={archived} onClick={() => onPractice(question.examType, [question.id])}><small>{question.examType === "WRITTEN_CBT" ? "필기 CBT" : "실기 필답형"} · {question.category}{archived ? " · 출제 제외" : ""}</small><strong>{question.prompt}</strong><span>{!answer ? "아직 풀지 않음" : answer.knowledgeStatus === "unknown" ? "최근 답안 · 아직 모름" : answer.isCorrect === true ? "최근 답안 정답" : answer.isCorrect === false ? "최근 답안 오답" : answer.selfAssessment === "partial" ? "최근 답안 부분 정답" : "답안 저장됨"}</span></button><button onClick={() => onRemove(question.id)} aria-label="북마크 해제">♥</button></article>;
+      return <article className="panel" key={question.id}><button className="bookmarkOpen" disabled={archived} onClick={() => onPractice(question.examType, [question.id])}><small>{examTypeLabel(question.certificateId, question.examType)} · {question.category}{archived ? " · 출제 제외" : ""}</small><strong>{question.prompt}</strong><span>{!answer ? "아직 풀지 않음" : answer.knowledgeStatus === "unknown" ? "최근 답안 · 아직 모름" : answer.isCorrect === true ? "최근 답안 정답" : answer.isCorrect === false ? "최근 답안 오답" : answer.selfAssessment === "partial" ? "최근 답안 부분 정답" : "답안 저장됨"}</span></button><button onClick={() => onRemove(question.id)} aria-label="북마크 해제">♥</button></article>;
     })}</div>}
     {pageCount > 1 && <div className="pagination"><button disabled={currentPage === 1} onClick={() => setPage(currentPage - 1)}>이전</button><span>{currentPage} / {pageCount}</span><button disabled={currentPage === pageCount} onClick={() => setPage(currentPage + 1)}>다음</button></div>}
   </section>;
@@ -564,6 +560,7 @@ function PracticeSetup({ examType, setExamType, onStart, questionBank, study }: 
   const [sourceYear, setSourceYear] = useState("all");
   const [tag, setTag] = useState("all");
   const { categories, sourceYears, tags } = questionFilterOptions(questionBank, examType);
+  const certificateId = questionBank[0]?.certificateId ?? "unknown";
   const matchingCount = questionBank.filter((question) => {
     if (!matchesQuestionMetadata(question, { examType, category, difficulty, sourceYear, tag })) return false;
     const answer = study.answers[question.id];
@@ -585,8 +582,8 @@ function PracticeSetup({ examType, setExamType, onStart, questionBank, study }: 
     <div className="panel setup">
       <label>시험 유형</label>
       <div className="segments">
-        <button className={examType === "WRITTEN_CBT" ? "active" : ""} onClick={() => chooseExamType("WRITTEN_CBT")}>필기 CBT</button>
-        <button className={examType === "PRACTICAL_WRITTEN_RESPONSE" ? "active" : ""} onClick={() => chooseExamType("PRACTICAL_WRITTEN_RESPONSE")}>실기 필답형</button>
+        <button className={examType === "WRITTEN_CBT" ? "active" : ""} onClick={() => chooseExamType("WRITTEN_CBT")}>{examTypeLabel(certificateId, "WRITTEN_CBT")}</button>
+        <button className={examType === "PRACTICAL_WRITTEN_RESPONSE" ? "active" : ""} onClick={() => chooseExamType("PRACTICAL_WRITTEN_RESPONSE")}>{examTypeLabel(certificateId, "PRACTICAL_WRITTEN_RESPONSE")}</button>
       </div>
       <label>자격증</label><div className="selectBox">{certificateLabels[questionBank[0]?.certificateId ?? ""] ?? "선택한 자격증"}</div>
       <label>학습 범위</label><div className="chips"><button className={category === "all" ? "active" : ""} onClick={() => setCategory("all")}>전체</button>{categories.map((item) => <button key={item} className={category === item ? "active" : ""} onClick={() => setCategory(item)}>{item}</button>)}</div>
@@ -629,7 +626,7 @@ function QuestionView({ question, index, total, draftAnswer, setDraftAnswer, sub
   onReport: (reason: import("@/lib/types").QuestionReport["reason"], details: string) => void;
 }) {
   return <section className="questionPage">
-    <div className="questionMeta"><span>{index + 1} / {total}</span><b>{question.examType === "WRITTEN_CBT" ? "필기 CBT" : "실기 필답형"}</b></div>
+    <div className="questionMeta"><span>{index + 1} / {total}</span><b>{examTypeLabel(question.certificateId, question.examType)}</b></div>
     <article className="panel questionCard">
       <QuestionMetadata question={question} /><h1>{question.prompt}</h1><QuestionContent question={question} />
       {question.examType === "WRITTEN_CBT" ? <div className="choiceList">

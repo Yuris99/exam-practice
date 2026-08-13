@@ -539,7 +539,7 @@ The MVP is ready when:
 - The first certificate is Information Processing Engineer. The current provisional mock-exam rules are 100 written questions or 20 practical questions, 150 minutes, and a passing score of 60.
 - Learner-facing Korean uses concise, plain language while preserving official technical terms.
 - AI explanations are answer-specific and saved for the anonymous local installation.
-- The daily AI explanation allowance defaults to 20 and can be changed with `AI_DAILY_LIMIT`.
+- The daily AI explanation allowance defaults to 100 and can be changed with `AI_DAILY_LIMIT`.
 - The strict CSV template supports four CBT choices by default and includes difficulty, images, reference material, code, tags, source, and source year. Practice and random tests can filter by source year and tag. The single-question editor supports a variable number of choices with at least two, multiline prompts and choices, a separate reference box, syntax-preserving code, and up to six local or remote images with each upload limited to 1 MB. AI explanations receive the reference material, code, and supported images.
 - Versioned local-data export/import, older-data migration, partial-corruption recovery, and local reset are included for device safety and migration. The initial implementation remains account-free and browser-local.
 

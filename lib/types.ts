@@ -48,6 +48,7 @@ export interface SavedAnswer {
 
 export interface TestSession {
   id: string;
+  certificateId?: string;
   examType: ExamType;
   questionIds: string[];
   currentIndex: number;
@@ -108,6 +109,7 @@ export interface AiExplanationReport {
 
 export interface TestResult {
   id: string;
+  certificateId?: string;
   examType: ExamType;
   questionIds: string[];
   answers: Record<string, AnswerValue>;

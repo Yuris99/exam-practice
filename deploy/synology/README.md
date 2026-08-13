@@ -46,7 +46,7 @@ Create a `.env` file beside `compose.yaml` only when live AI explanations are ac
 ```dotenv
 GEMINI_API_KEY=replace_me
 GEMINI_MODEL=gemini-3.5-flash
-AI_DAILY_LIMIT=20
+AI_DAILY_LIMIT=100
 ```
 
 Rebuild the Container Manager project after changing environment variables. Do not commit this `.env` file.

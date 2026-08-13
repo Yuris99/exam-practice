@@ -46,7 +46,7 @@ DSM **제어판 → 로그인 포털 → 고급 → 역방향 프록시**에서 
 ```dotenv
 GEMINI_API_KEY=replace_me
 GEMINI_MODEL=gemini-3.5-flash
-AI_DAILY_LIMIT=20
+AI_DAILY_LIMIT=100
 ```
 
 환경 변수를 변경한 뒤 Container Manager 프로젝트를 다시 빌드한다. 이 `.env` 파일은 커밋하지 않는다.

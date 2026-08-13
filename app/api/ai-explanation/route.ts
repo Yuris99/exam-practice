@@ -191,8 +191,8 @@ function allowRequest(identifier: string) {
 }
 
 function getDailyLimit() {
-  const configured = Number(process.env.AI_DAILY_LIMIT ?? "20");
-  return Number.isInteger(configured) && configured > 0 ? configured : 20;
+  const configured = Number(process.env.AI_DAILY_LIMIT ?? "100");
+  return Number.isInteger(configured) && configured > 0 ? configured : 100;
 }
 
 function consumeDailyAllowance(identifier: string, limit: number) {
