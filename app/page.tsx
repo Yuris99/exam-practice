@@ -478,7 +478,7 @@ export default function HomePage() {
         {view === "history" && <HistoryView study={study} questionBank={questionBank} onOpenQuestion={startPracticeQuestions} onOpenTestResult={(result) => { setTestResultToOpen(result.id); setView("test"); }} />}
         {view === "bookmarks" && <BookmarksView study={study} questionBank={selectedQuestionBank} onRemove={toggleBookmark} onPractice={startPracticeQuestions} />}
         {view === "manage" && <QuestionManager study={study} setStudy={setStudy} questionBank={allQuestionBank} />}
-        {view === "admin" && isAdmin && account && <AdminDashboard userId={account.id} onQuestionSaved={(updated) => setQuestionOverrides((current) => [updated, ...current.filter((question) => question.id !== updated.id)])} />}
+        {view === "admin" && isAdmin && account && <AdminDashboard userId={account.id} questions={allQuestionBank} onQuestionSaved={(updated) => setQuestionOverrides((current) => [updated, ...current.filter((question) => question.id !== updated.id)])} />}
       </main>
     </div>
   );
