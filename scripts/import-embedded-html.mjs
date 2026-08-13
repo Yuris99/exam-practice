@@ -24,7 +24,12 @@ const complete = [];
 const skipped = [];
 const seen = new Set();
 for (const item of parsed) {
-  if (!item.prompt || item.choices.length < 2 || !item.correctAnswer || item.correctAnswer > item.choices.length) {
+  const missingImages = [];
+  for (const imagePath of item.imagePaths) {
+    try { await fs.access(path.join(root, "public", imagePath.replace(/^\/+/, ""))); }
+    catch { missingImages.push(imagePath); }
+  }
+  if (!item.prompt || item.choices.length < 2 || !item.correctAnswer || item.correctAnswer > item.choices.length || hasDuplicateChoices(item.choices) || missingImages.length || /문제\s*(?:복원\s*)?오류/.test(item.prompt) || /실제\s*시험장에서는\s*모두\s*정답/.test(item.prompt)) {
     skipped.push(`${item.filename} 문제 ${item.number}: 선택지 또는 정답 없음`);
     continue;
   }
@@ -103,4 +108,5 @@ function inferCategory(text) {
 
 function count(text, expression) { return [...text.matchAll(expression)].length; }
 function normalize(value) { return value.normalize("NFKC").replace(/\s+/g, " ").trim().toLocaleLowerCase("ko-KR"); }
+function hasDuplicateChoices(choices) { return new Set(choices.map(normalize)).size !== choices.length; }
 function csvCell(value) { const text = String(value ?? ""); return /[",\r\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text; }

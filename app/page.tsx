@@ -92,8 +92,20 @@ export default function HomePage() {
       setAuthReady(true);
       return;
     }
-    supabase.auth.getSession().then(({ data }) => {
-      setAccount(data.session?.user ?? null);
+    let active = true;
+    supabase.auth.getSession().then(({ data, error }) => {
+      if (!active) return;
+      if (error) {
+        setAuthError(readableError(error, "저장된 로그인 정보를 불러오지 못했습니다."));
+        setAccount(null);
+      } else {
+        setAccount(data.session?.user ?? null);
+      }
+      setAuthReady(true);
+    }).catch((error) => {
+      if (!active) return;
+      setAuthError(readableError(error, "저장된 로그인 정보를 불러오지 못했습니다."));
+      setAccount(null);
       setAuthReady(true);
     });
     const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
@@ -101,7 +113,10 @@ export default function HomePage() {
       setAuthReady(true);
       if (!session) setCloudReady(false);
     });
-    return () => listener.subscription.unsubscribe();
+    return () => {
+      active = false;
+      listener.subscription.unsubscribe();
+    };
   }, []);
 
   useEffect(() => {
@@ -400,7 +415,22 @@ export default function HomePage() {
     <div className="appShell">
       <header className="topbar">
         <div className="brandControls"><button className="logo" onClick={() => setView("home")} aria-label="홈">✓</button><label className="certificatePicker"><span className="srOnly">자격증 선택</span><select value={selectedCertificateId} onChange={(event) => selectCertificate(event.target.value)}>{certificateOptions.map((option) => <option value={option.id} key={option.id}>{option.label}</option>)}</select></label></div>
-        <div className="topbarActions">{isAdmin && <button className={view === "admin" ? "manageLink active" : "manageLink"} onClick={() => setView("admin")}>통합 관리자</button>}<button className={view === "manage" ? "manageLink active" : "manageLink"} onClick={() => setView("manage")}>내 문제 관리</button><button className={account ? "accountButton signedIn" : "accountButton"} onClick={toggleAccount} disabled={!authReady} title={account ? `${account.email ?? "Google 계정"} · 눌러서 로그아웃` : authError}>{account ? (cloudReady ? "동기화됨" : "동기화 중") : "Google 로그인"}</button><StorageStatus status={storageStatus} error={storageError || authError} onRetry={retryStorage} /><PwaStatus /></div>
+        <div className="topbarActions">
+          <button className={view === "manage" ? "manageLink active" : "manageLink"} onClick={() => setView("manage")}>내 문제 관리</button>
+          {account ? (
+            <details className="accountMenu">
+              <summary className="accountButton signedIn" title={`${account.email ?? "Google 계정"} · 다음 방문에도 자동 로그인`}>계정</summary>
+              <div className="accountMenuPanel">
+                <strong>{account.email ?? "Google 계정"}</strong>
+                <span>{cloudReady ? "자동 로그인 · 동기화됨" : "자동 로그인 · 동기화 중"}</span>
+                {isAdmin && <button onClick={() => setView("admin")}>통합 관리자</button>}
+                <button onClick={() => setView("manage")}>내 문제 관리</button>
+                <button className="accountSignOut" onClick={toggleAccount}>로그아웃</button>
+              </div>
+            </details>
+          ) : <button className="accountButton" onClick={toggleAccount} disabled={!authReady} title={authError || "한 번 로그인하면 다음 방문부터 자동 로그인됩니다."}>Google 로그인</button>}
+          <StorageStatus status={storageStatus} error={storageError || authError} onRetry={retryStorage} /><PwaStatus />
+        </div>
       </header>
 
       <nav className="navigation" aria-label="주요 메뉴">

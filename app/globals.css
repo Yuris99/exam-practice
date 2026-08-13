@@ -17,6 +17,15 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 .accountButton { min-height:34px; padding:0 10px; border:1px solid #486454; border-radius:9px; color:#b8dbc5; background:#18231d; cursor:pointer; font-size:10px; white-space:nowrap; }
 .accountButton.signedIn { border-color:#596b34; color:#d4dfaa; background:#27372b; }
 .accountButton:disabled { opacity:.55; cursor:wait; }
+.accountMenu { position:relative; }
+.accountMenu > summary { display:flex; min-width:54px; align-items:center; justify-content:center; list-style:none; }
+.accountMenu > summary::-webkit-details-marker { display:none; }
+.accountMenuPanel { position:absolute; z-index:30; top:42px; right:0; display:grid; width:220px; padding:12px; gap:7px; border:1px solid var(--line); border-radius:13px; background:var(--surface2); box-shadow:0 12px 32px rgba(0,0,0,.35); }
+.accountMenuPanel strong,.accountMenuPanel span { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.accountMenuPanel strong { font-size:12px; }
+.accountMenuPanel span { margin-bottom:3px; color:var(--muted); font-size:10px; }
+.accountMenuPanel button { min-height:35px; padding:0 10px; border:1px solid var(--line); border-radius:9px; color:var(--text); background:var(--surface); cursor:pointer; text-align:left; font-size:11px; }
+.accountMenuPanel .accountSignOut { color:#e3a09a; }
 .storageStatus { color:var(--muted); font-size:9px; white-space:nowrap; }
 .storageStatus.saving { color:#e3c173; }
 .storageStatus.error { min-height:32px; padding:0 9px; border:1px solid #68413e; border-radius:8px; color:#df918a; background:#342321; cursor:pointer; }

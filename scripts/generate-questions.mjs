@@ -20,6 +20,7 @@ const files = (await fs.readdir(sourceDirectory))
 
 const questions = [];
 const seen = new Map();
+const seenIds = new Map();
 const errors = [];
 
 for (const filename of files) {
@@ -43,6 +44,13 @@ for (const filename of files) {
       const duplicateKey = `${question.certificateId}:${question.examType}:${question.prompt.normalize("NFKC").replace(/\s+/g, " ").toLocaleLowerCase("ko-KR")}:${question.referenceText ?? ""}:${question.imageUrl ?? ""}`;
       if (seen.has(duplicateKey)) throw new Error(`duplicate question (first seen at ${seen.get(duplicateKey)})`);
       seen.set(duplicateKey, `${filename}:${rowIndex + 2}`);
+      const idOwner = seenIds.get(question.id);
+      if (idOwner) {
+        const disambiguator = JSON.stringify([filename, question.examType, question.prompt, question.referenceText, question.imageUrl, question.source, "choices" in question ? question.choices : question.modelAnswer]);
+        question.id = `csv-${createHash("sha256").update(disambiguator).digest("hex").slice(0, 16)}`;
+        if (seenIds.has(question.id)) throw new Error(`question id collision (first seen at ${seenIds.get(question.id)})`);
+      }
+      seenIds.set(question.id, `${filename}:${rowIndex + 2}`);
       questions.push(question);
     } catch (error) {
       errors.push(`${filename}:${rowIndex + 2}: ${error.message}`);
@@ -67,6 +75,7 @@ function createQuestion(value, filename, rowNumber) {
   if (!['WRITTEN_CBT', 'PRACTICAL_WRITTEN_RESPONSE'].includes(examType)) throw new Error("invalid exam_type");
   if (!value("category")) throw new Error("category is required");
   if (!value("prompt")) throw new Error("prompt is required");
+  if (/문제\s*(?:복원\s*)?오류/.test(value("prompt")) || /실제\s*시험장에서는\s*모두\s*정답/.test(value("prompt"))) throw new Error("unrestored source question is not publishable");
   const difficulty = value("difficulty") || "medium";
   if (!["easy", "medium", "hard"].includes(difficulty)) throw new Error("difficulty must be easy, medium, or hard");
   const sourceYearText = value("source_year");
@@ -95,6 +104,8 @@ function createQuestion(value, filename, rowNumber) {
   if (examType === "WRITTEN_CBT") {
     const choices = [1, 2, 3, 4].map((number) => value(`choice${number}`)).filter(Boolean);
     if (choices.length < 2) throw new Error("WRITTEN_CBT requires at least 2 consecutive choices");
+    const normalizedChoices = choices.map((choice) => choice.normalize("NFKC").replace(/\s+/g, " ").trim().toLocaleLowerCase("ko-KR"));
+    if (new Set(normalizedChoices).size !== normalizedChoices.length) throw new Error("WRITTEN_CBT choices must be unique");
     const answer = Number(value("correct_answer"));
     if (!Number.isInteger(answer) || answer < 1 || answer > choices.length) throw new Error("correct_answer is outside the choice range");
     return { ...base, choices, correctChoiceIndex: answer - 1 };

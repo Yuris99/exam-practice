@@ -108,7 +108,7 @@ for (const filename of filenames) {
 
   for (const record of records) {
     const parsed = parseQuestion(record.parts.join(" "));
-    if (!parsed || parsed.choices.length < 2 || parsed.correctAnswer > parsed.choices.length) {
+    if (!parsed || parsed.choices.length < 2 || parsed.correctAnswer > parsed.choices.length || hasDuplicateChoices(parsed.choices) || /문제\s*(?:복원\s*)?오류/.test(parsed.prompt) || /실제\s*시험장에서는\s*모두\s*정답/.test(parsed.prompt)) {
       excludedQuestions.push({ lineage, filename, date, number: record.number, prompt: record.parts.join(" ").slice(0, 180).trim() });
       continue;
     }
@@ -126,6 +126,11 @@ for (const filename of filenames) {
     if (!record.images.length && needsManualVisual(parsed.prompt)) manualCandidates.push(question);
   }
   console.log(`${filename}: ${records.length} sections, ${records.filter((record) => record.images.length).length} question(s) with extracted images`);
+}
+
+function hasDuplicateChoices(choices) {
+  const normalized = choices.map((choice) => choice.normalize("NFKC").replace(/\s+/g, " ").trim().toLocaleLowerCase("ko-KR"));
+  return new Set(normalized).size !== normalized.length;
 }
 
 const deduplicatedQuestions = deduplicateQuestions(questions);

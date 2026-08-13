@@ -41,7 +41,7 @@ for (const filename of filenames) {
     if (exam.year < 2020 && !isCurrentLegacyRange(record.number)) continue;
     const parsed = parseQuestion(record.parts.join(" "));
     const correctAnswer = answers.get(record.number) ?? parsed?.markedAnswer;
-    if (!parsed || parsed.prompt.replace(/[?\s]/g, "").length < 3 || parsed.choices.length !== 4 || !correctAnswer) {
+    if (!parsed || parsed.prompt.replace(/[?\s]/g, "").length < 3 || parsed.choices.length !== 4 || !correctAnswer || hasDuplicateChoices(parsed.choices) || /문제\s*(?:복원\s*)?오류/.test(parsed.prompt) || /실제\s*시험장에서는\s*모두\s*정답/.test(parsed.prompt)) {
       failures.push(`${filename} · ${record.number}번 · ${clean(record.parts.join(" ")).slice(0, 100)}`);
       continue;
     }
@@ -57,6 +57,11 @@ for (const filename of filenames) {
     });
   }
   console.log(`${filename}: 문항 ${records.length}개, 정답 ${answers.size}개`);
+}
+
+function hasDuplicateChoices(choices) {
+  const normalized = choices.map((choice) => choice.normalize("NFKC").replace(/\s+/g, " ").trim().toLocaleLowerCase("ko-KR"));
+  return new Set(normalized).size !== normalized.length;
 }
 
 const finalQuestions = deduplicateQuestions(questions);
