@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 import { defaultAiProviderSettings, loadAdminReports, loadAiProviderSettings, loadAiUsageLogs, saveAiExplanationOverride, saveAiProviderSettings, saveQuestionOverride, updateCentralReportStatus, type AdminAiReport, type AdminQuestionReport, type AiProviderSettings, type AiUsageLog } from "@/lib/supabase";
 import { formatKoreanDateTime } from "@/lib/koreanDate";
-import type { Question } from "@/lib/types";
+import { certificateLabels, examTypeLabel } from "@/lib/certificates";
+import type { ExamType, Question } from "@/lib/types";
 
 export function AdminDashboard({ userId, questions, onQuestionSaved }: { userId: string; questions: Question[]; onQuestionSaved: (question: Question) => void }) {
   const [questionReports, setQuestionReports] = useState<AdminQuestionReport[]>([]);
@@ -17,6 +18,8 @@ export function AdminDashboard({ userId, questions, onQuestionSaved }: { userId:
   const [aiSettings, setAiSettings] = useState<AiProviderSettings>(defaultAiProviderSettings);
   const [aiEditing, setAiEditing] = useState<{ reportId: string; cacheKey: string; questionId: string; explanation: string } | null>(null);
   const [usageLogs, setUsageLogs] = useState<AiUsageLog[]>([]);
+  const [certificateFilter, setCertificateFilter] = useState("all");
+  const [examTypeFilter, setExamTypeFilter] = useState<"all" | ExamType>("all");
 
   useEffect(() => {
     refresh();
@@ -118,18 +121,28 @@ export function AdminDashboard({ userId, questions, onQuestionSaved }: { userId:
     setEditing((current) => current ? { ...current, imageUrls: [...current.imageUrls, ...urls] } : current);
   }
 
-  const visibleQuestions = questionReports.filter((report) => showResolved || report.status === "open");
-  const visibleAi = aiReports.filter((report) => showResolved || report.status === "open");
+  const questionMap = new Map(questions.map((question) => [question.id, question]));
+  const matchesExam = (report: AdminQuestionReport | AdminAiReport) => {
+    const question = report.questionSnapshot ?? questionMap.get(report.questionId);
+    if (!question) return certificateFilter === "all" && examTypeFilter === "all";
+    return (certificateFilter === "all" || question.certificateId === certificateFilter) && (examTypeFilter === "all" || question.examType === examTypeFilter);
+  };
+  const filteredQuestions = questionReports.filter(matchesExam);
+  const filteredAi = aiReports.filter(matchesExam);
+  const visibleQuestions = filteredQuestions.filter((report) => showResolved || report.status === "open");
+  const visibleAi = filteredAi.filter((report) => showResolved || report.status === "open");
+  const certificateIds = [...new Set(questions.map((question) => question.certificateId))].sort((a, b) => (certificateLabels[a] ?? a).localeCompare(certificateLabels[b] ?? b, "ko"));
   const usage = summarizeUsage(usageLogs);
 
   return <section>
     <div className="hero"><p>관리자 전용</p><h1>통합 관리자</h1><span>전체 사용자의 문제 신고와 AI 해설 신고를 처리합니다.</span></div>
     <div className="adminSummary summary resultSummary">
-      <div><strong>{questionReports.filter((report) => report.status === "open").length}</strong><span>미처리 문제 신고</span></div>
-      <div><strong>{aiReports.filter((report) => report.status === "open").length}</strong><span>미처리 AI 신고</span></div>
-      <div><strong>{questionReports.length}</strong><span>전체 문제 신고</span></div>
-      <div><strong>{aiReports.length}</strong><span>전체 AI 신고</span></div>
+      <div><strong>{filteredQuestions.filter((report) => report.status === "open").length}</strong><span>미처리 문제 신고</span></div>
+      <div><strong>{filteredAi.filter((report) => report.status === "open").length}</strong><span>미처리 AI 신고</span></div>
+      <div><strong>{filteredQuestions.length}</strong><span>선택 시험 문제 신고</span></div>
+      <div><strong>{filteredAi.length}</strong><span>선택 시험 AI 신고</span></div>
     </div>
+    <div className="panel adminExamFilters"><label>자격증<select value={certificateFilter} onChange={(event) => setCertificateFilter(event.target.value)}><option value="all">전체 자격증</option>{certificateIds.map((id) => <option value={id} key={id}>{certificateLabels[id] ?? id}</option>)}</select></label><label>시험 유형<select value={examTypeFilter} onChange={(event) => setExamTypeFilter(event.target.value as "all" | ExamType)}><option value="all">전체 유형</option><option value="WRITTEN_CBT">객관식 / 필기 CBT</option><option value="PRACTICAL_WRITTEN_RESPONSE">단답형 / 실기 필답형</option></select></label></div>
     <div className="managerTabs adminTabs">
       <button className={section === "question" ? "active" : ""} onClick={() => setSection("question")}>문제 신고 <small>{visibleQuestions.length}</small></button>
       <button className={section === "ai" ? "active" : ""} onClick={() => setSection("ai")}>AI 해설 신고 <small>{visibleAi.length}</small></button>
@@ -142,14 +155,14 @@ export function AdminDashboard({ userId, questions, onQuestionSaved }: { userId:
       : section === "question"
       ? <ReportList empty="표시할 문제 신고가 없습니다.">{visibleQuestions.map((report) => <article className={`panel adminReport ${report.status}`} key={report.id}>
           <ReportHeader status={report.status} createdAt={report.createdAt} userId={report.userId} />
-          <strong>{report.questionSnapshot?.prompt ?? report.questionId}</strong>
+          <QuestionReportTitle report={report} question={report.questionSnapshot ?? questionMap.get(report.questionId)} />
           <p>{questionReason(report.reason)} · 문제 v{report.questionVersion}</p>
           <p>{report.details || "추가 설명 없음"}</p>
           {editing?.reportId === report.id ? <div className="adminQuestionEditor"><label>문제 내용<textarea value={editing.prompt} onChange={(event) => setEditing((current) => current ? { ...current, prompt: event.target.value } : current)} /></label>{editing.question.examType === "WRITTEN_CBT" && <fieldset><legend>보기 및 정답</legend>{editing.choices.map((choice, index) => <label className="adminChoiceEditor" key={index}><input type="radio" name={`correct-${report.id}`} checked={editing.correctChoiceIndex === index} onChange={() => setEditing((current) => current ? { ...current, correctChoiceIndex: index } : current)} /><input value={choice} onChange={(event) => setEditing((current) => current ? { ...current, choices: current.choices.map((item, choiceIndex) => choiceIndex === index ? event.target.value : item) } : current)} /><button type="button" className="delete" disabled={editing.choices.length <= 2} onClick={() => setEditing((current) => current ? { ...current, choices: current.choices.filter((_, choiceIndex) => choiceIndex !== index), correctChoiceIndex: Math.min(current.correctChoiceIndex, current.choices.length - 2) } : current)}>삭제</button></label>)}<button type="button" onClick={() => setEditing((current) => current ? { ...current, choices: [...current.choices, ""] } : current)}>보기 추가</button></fieldset>}<label>공식 해설<textarea value={editing.explanation} onChange={(event) => setEditing((current) => current ? { ...current, explanation: event.target.value } : current)} /></label><fieldset><legend>문제 이미지</legend>{editing.imageUrls.map((url, index) => <div className="adminImageEditor" key={index}>{url && <img src={url} alt={`문제 이미지 ${index + 1}`} />}<input value={url.startsWith("data:") ? `업로드 이미지 ${index + 1}` : url} readOnly={url.startsWith("data:")} onChange={(event) => setEditing((current) => current ? { ...current, imageUrls: current.imageUrls.map((item, imageIndex) => imageIndex === index ? event.target.value : item) } : current)} /><button type="button" className="delete" onClick={() => setEditing((current) => current ? { ...current, imageUrls: current.imageUrls.filter((_, imageIndex) => imageIndex !== index) } : current)}>삭제</button></div>)}<button type="button" onClick={() => setEditing((current) => current ? { ...current, imageUrls: [...current.imageUrls, ""] } : current)}>URL 추가</button><label className="imageUploadButton">파일 추가<input type="file" accept="image/*" multiple onChange={(event) => addImageFiles(event.target.files)} /></label></fieldset><div className="managedActions"><button onClick={saveReportedQuestion}>전체 반영 후 처리</button><button onClick={() => setEditing(null)}>취소</button></div></div> : <div className="managedActions"><button onClick={() => beginEditing(report)}>문제 수정</button><button disabled={report.status === "resolved"} onClick={() => updateQuestion(report.id, "resolved")}>처리 완료</button>{report.status === "resolved" && <button onClick={() => updateQuestion(report.id, "open")}>다시 열기</button>}</div>}
         </article>)}</ReportList>
       : <ReportList empty="표시할 AI 해설 신고가 없습니다.">{visibleAi.map((report) => <article className={`panel adminReport ${report.status}`} key={report.id}>
           <ReportHeader status={report.status} createdAt={report.createdAt} userId={report.userId} />
-          <strong>{report.questionSnapshot?.prompt ?? report.questionId}</strong>
+          <QuestionReportTitle report={report} question={report.questionSnapshot ?? questionMap.get(report.questionId)} />
           <p>{aiReason(report.reason)} · 문제 v{report.questionVersion}</p>
           {aiEditing?.reportId === report.id ? <div className="adminQuestionEditor"><label>AI 해설 수정<textarea value={aiEditing.explanation} onChange={(event) => setAiEditing((current) => current ? { ...current, explanation: event.target.value } : current)} /></label><div className="managedActions"><button onClick={saveReportedAiExplanation}>수정본 반영 후 처리</button><button onClick={() => setAiEditing(null)}>취소</button></div></div> : <blockquote>{report.explanationSnapshot}</blockquote>}
           {report.details && <p>신고 내용: {report.details}</p>}
@@ -164,6 +177,10 @@ function ReportList({ children, empty }: { children: ReactNode[]; empty: string 
 
 function ReportHeader({ status, createdAt, userId }: { status: string; createdAt: string; userId: string }) {
   return <div className="adminReportMeta"><span className={`statusBadge ${status === "open" ? "draft" : status === "hidden" ? "archived" : "published"}`}>{status === "open" ? "미처리" : status === "hidden" ? "숨김" : "처리됨"}</span><span>{formatKoreanDateTime(createdAt)}</span><span title={userId}>사용자 {userId.slice(0, 8)}</span></div>;
+}
+
+function QuestionReportTitle({ report, question }: { report: AdminQuestionReport | AdminAiReport; question?: Question }) {
+  return <div className="adminReportTitle"><small>{question ? `${certificateLabels[question.certificateId] ?? question.certificateId} · ${examTypeLabel(question.certificateId, question.examType)}` : "시험 정보 없음"}</small><strong>{question?.prompt ?? report.questionId}</strong></div>;
 }
 
 function questionReason(reason: AdminQuestionReport["reason"]) {

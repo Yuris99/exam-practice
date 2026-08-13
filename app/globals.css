@@ -404,7 +404,13 @@ textarea:focus { border-color:var(--green); }
 .reportList article.resolved { opacity:.55; }
 .reportList button:disabled { cursor:default; }
 .adminSummary { margin-bottom:14px; }
-.adminTabs { position:static; grid-template-columns:repeat(3,1fr); }
+.adminTabs { position:static; grid-template-columns:repeat(4,1fr); }
+.adminExamFilters { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-bottom:14px; }
+.adminExamFilters label { display:grid; gap:6px; color:var(--muted); font-size:11px; font-weight:700; }
+.adminExamFilters select { width:100%; min-height:42px; padding:0 11px; border:1px solid var(--line); border-radius:9px; color:var(--text); background:var(--surface2); }
+.adminReportTitle { display:grid; gap:4px; }
+.adminReportTitle small { color:var(--green); font-size:10px; }
+@media(max-width:560px){.adminExamFilters{grid-template-columns:1fr}}
 .adminReportList { display:grid; gap:10px; }
 .adminReport { padding:16px; }
 .adminReport.resolved,.adminReport.hidden { opacity:.72; }
