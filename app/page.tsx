@@ -14,7 +14,7 @@ import { emptyStudyState, loadStudyState, mergeStudyStates, saveStudyState } fro
 import { checkIsAdmin, getSupabaseClient, loadCloudStudyState, loadQuestionOverrides, saveCloudStudyState, signInWithGoogle, signOut, syncCentralReports } from "@/lib/supabase";
 import { formatKoreanDateTime, koreanDateKey, koreanStudyStreak, recentKoreanDays } from "@/lib/koreanDate";
 import { matchesQuestionMetadata, questionFilterOptions } from "@/lib/questionFilters";
-import { shuffled } from "@/lib/testSelection";
+import { orderByExamStandard } from "@/lib/testSelection";
 import { certificateLabels, examTypeLabel } from "@/lib/certificates";
 import type { User } from "@supabase/supabase-js";
 import type { AiExplanationReport, ExamType, Question, SavedAnswer, StudyState, TestResult } from "@/lib/types";
@@ -244,7 +244,7 @@ export default function HomePage() {
   }
 
   function startPractice(type: ExamType, category = "all", filter: PracticeFilter = "all", difficulty: DifficultyFilter = "all", sourceYear = "all", tag = "all") {
-    const selectedIds = shuffled(questionBank.filter((item) => {
+    const selectedIds = orderByExamStandard(questionBank.filter((item) => {
       if (!matchesQuestionMetadata(item, { examType: type, category, difficulty, sourceYear, tag })) return false;
       const answer = study.answers[item.id];
       if (filter === "unsolved") return !answer;
