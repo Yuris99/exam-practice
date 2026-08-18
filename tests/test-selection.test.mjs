@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { createTestSnapshot, selectBalancedByCategory } from "../lib/testSelection.ts";
+import { createTestSnapshot, selectBalancedByCategory, selectMockExamByCategory } from "../lib/testSelection.ts";
 
 function cbt(id, category, correctChoiceIndex = 1) {
   return {
@@ -36,6 +36,12 @@ test("balanced selection fills from remaining categories when one category is sh
   assert.equal(selected.length, 5);
   assert.equal(selected.filter((question) => question.category === "A").length, 1);
   assert.equal(selected.filter((question) => question.category === "B").length, 4);
+});
+
+test("mock selection preserves subject order and keeps subjects contiguous", () => {
+  const candidates = [cbt("a1", "A"), cbt("a2", "A"), cbt("b1", "B"), cbt("b2", "B"), cbt("c1", "C"), cbt("c2", "C")];
+  const selected = selectMockExamByCategory(candidates, 6);
+  assert.deepEqual(selected.map((question) => question.category), ["A", "A", "B", "B", "C", "C"]);
 });
 
 test("choice shuffling keeps the correct answer, rich content, and source immutability", () => {

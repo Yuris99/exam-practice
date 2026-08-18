@@ -467,7 +467,7 @@ export default function HomePage() {
             onSaveAiExplanation={(cacheKey, explanation) => setStudy((current) => ({ ...current, aiExplanations: { ...current.aiExplanations, [cacheKey]: explanation } }))}
             onReportAiExplanation={(cacheKey, explanation, reason, details) => setStudy((current) => ({ ...current, aiExplanationReports: [{ id: crypto.randomUUID(), cacheKey, questionId: question.id, questionVersion: question.version, explanationSnapshot: explanation, reason, details, createdAt: new Date().toISOString(), status: "open" }, ...current.aiExplanationReports] }))}
             note={study.notes[question.id] ?? ""}
-            onNoteChange={(note) => setStudy((current) => ({ ...current, notes: { ...current.notes, [question.id]: note } }))}
+            onNoteChange={(note) => setStudy((current) => ({ ...current, notes: { ...current.notes, [question.id]: note }, noteUpdatedAt: { ...current.noteUpdatedAt, [question.id]: new Date().toISOString() } }))}
             onReport={(reason, details) => setStudy((current) => ({ ...current, questionReports: [{ id: crypto.randomUUID(), questionId: question.id, questionVersion: question.version, reason, details, createdAt: new Date().toISOString(), status: "open" }, ...current.questionReports] }))}
           />
         )}

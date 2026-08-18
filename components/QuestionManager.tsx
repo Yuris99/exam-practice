@@ -544,7 +544,7 @@ function validateBackup(value: unknown): StudyState {
   if (backup.format !== BACKUP_FORMAT || typeof backup.version !== "number" || backup.version < 1 || backup.version > BACKUP_VERSION) throw new Error("지원하지 않는 백업 형식입니다.");
   if (!backup.data || typeof backup.data !== "object") throw new Error("백업 데이터가 없습니다.");
   const data = backup.data as Record<string, unknown>;
-  const knownKeys = ["answers", "bookmarks", "aiExplanations", "activeTest", "testResults", "customQuestions", "activePractice", "activities", "notes", "questionReports", "aiExplanationReports"];
+  const knownKeys = ["answers", "bookmarks", "aiExplanations", "activeTest", "testResults", "customQuestions", "activePractice", "activities", "notes", "noteUpdatedAt", "questionReports", "aiExplanationReports"];
   if (!knownKeys.some((key) => key in data)) throw new Error("인식할 수 있는 학습 데이터가 없습니다.");
   return migrateStudyState(data);
 }

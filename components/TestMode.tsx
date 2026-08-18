@@ -5,7 +5,8 @@ import { AiExplanation, createExplanationCacheKey } from "@/components/AiExplana
 import { QuestionContent } from "@/components/QuestionContent";
 import { QuestionMetadata } from "@/components/QuestionMetadata";
 import { createExamTemplates } from "@/lib/examTemplates";
-import { createTestSnapshot, selectBalancedByCategory, shuffled } from "@/lib/testSelection";
+import { createTestSnapshot, selectMockExamByCategory, shuffled } from "@/lib/testSelection";
+import { calculateCategoryScores, gradeTest } from "@/lib/testGrading";
 import { formatKoreanDate } from "@/lib/koreanDate";
 import { matchesQuestionMetadata, questionFilterOptions } from "@/lib/questionFilters";
 import { examTypeLabel } from "@/lib/certificates";
@@ -90,9 +91,6 @@ export function TestMode({ study, setStudy, questionBank, onPracticeQuestions, r
       const question = questionBank.find((item) => item.id === id);
       return question ? [question] : [];
     });
-    const passed = score !== null && latestResult.passingScore !== null && latestResult.passingScore !== undefined
-      ? score >= latestResult.passingScore
-      : null;
     const unansweredCount = latestResult.questionIds.filter((id) => {
       const value = latestResult.answers[id];
       return value === undefined || value === "";
@@ -110,7 +108,20 @@ export function TestMode({ study, setStudy, questionBank, onPracticeQuestions, r
       return [];
     });
     const elapsedSeconds = Math.max(0, Math.floor((new Date(latestResult.completedAt).getTime() - new Date(latestResult.startedAt).getTime()) / 1000));
-    const categoryScores = getCategoryScores(resultQuestions, latestResult.answers);
+    const categoryScores = calculateCategoryScores(resultQuestions, latestResult.answers);
+    const grade = gradeTest(score, latestResult.passingScore, categoryScores, latestResult.categoryMinimumScore);
+    const previousResult = visibleTestResults.find((item) => item.id !== latestResult.id && item.examType === latestResult.examType && item.mode === latestResult.mode);
+    const previousQuestions = previousResult?.questionSnapshots ?? [];
+    const previousCategoryScores = previousResult ? calculateCategoryScores(previousQuestions, previousResult.answers) : [];
+    const previousScore = previousResult?.scoredQuestionCount ? Math.round(previousResult.correctCount / previousResult.scoredQuestionCount * 100) : null;
+    const scoreChange = score !== null && previousScore !== null ? score - previousScore : null;
+    const weakestCategory = categoryScores.length ? categoryScores.reduce((weakest, item) => item.accuracy < weakest.accuracy ? item : weakest) : null;
+    const difficultyScores = (["easy", "medium", "hard"] as const).map((difficulty) => {
+      const questions = resultQuestions.filter((question): question is Extract<Question, { examType: "WRITTEN_CBT" }> => question.examType === "WRITTEN_CBT" && question.difficulty === difficulty);
+      const correct = questions.filter((question) => latestResult.answers[question.id] === question.correctChoiceIndex).length;
+      return { difficulty, total: questions.length, accuracy: questions.length ? Math.round(correct / questions.length * 100) : 0 };
+    }).filter((item) => item.total > 0);
+    const averageSeconds = latestResult.questionIds.length ? Math.round(elapsedSeconds / latestResult.questionIds.length) : 0;
     const visibleResultQuestions = resultQuestions.filter((question) => {
       const answer = latestResult.answers[question.id];
       const answered = answer !== undefined && answer !== "";
@@ -126,14 +137,17 @@ export function TestMode({ study, setStudy, questionBank, onPracticeQuestions, r
     return <section>
       <div className="hero"><p>{latestResult.mode === "mock" ? "모의시험 완료" : "시험 완료"}</p><h1>{score === null ? "제출했어요" : `${score}점`}</h1><span>{latestResult.title ?? (latestResult.examType === "WRITTEN_CBT" ? "필기 CBT" : "실기 필답형")}</span></div>
       <div className="summary resultSummary"><div><strong>{latestResult.correctCount}</strong><span>정답</span></div><div><strong>{incorrectCount}</strong><span>오답</span></div><div><strong>{unansweredCount}</strong><span>미답변</span></div><div><strong>{formatDuration(elapsedSeconds)}</strong><span>소요 시간</span></div></div>
+      {scoreChange !== null && <div className="panel"><h2>이전 시험 대비 {scoreChange > 0 ? `+${scoreChange}` : scoreChange}점</h2><p>같은 시험 방식의 직전 결과와 비교했습니다.</p></div>}
+      <div className="panel"><h2>시험 분석</h2><p>문제당 평균 {formatDuration(averageSeconds)}{weakestCategory ? ` · 취약 과목 ${weakestCategory.category}(${weakestCategory.accuracy}%)` : ""}</p><p>{difficultyScores.map((item) => `${difficultyLabel(item.difficulty)} ${item.accuracy}%`).join(" · ")}</p></div>
       <div className="panel resultPanel">
-        <h2>{passed === true ? "합격 기준을 넘었어요" : passed === false ? `합격 기준 ${latestResult.passingScore}점에 도전해 보세요` : "결과를 복습해 보세요"}</h2>
+        <h2>{grade.passed === true ? "합격했습니다" : grade.reason === "category" ? `과락: ${grade.failedCategories.map((item) => item.category).join(", ")}` : grade.passed === false ? `총점 ${latestResult.passingScore}점 미달입니다` : "결과를 복습해 보세요"}</h2>
+        {grade.reason === "category" && <p>전체 점수와 별개로 과목별 {latestResult.categoryMinimumScore}점 이상이어야 합니다.</p>}
         <p>시험 결과는 이 기기의 학습 기록에 저장되었습니다.</p>
         {incorrectQuestionIds.length > 0 && <button className="fullButton" onClick={() => onPracticeQuestions(latestResult.examType, incorrectQuestionIds)}>틀린 문제 {incorrectQuestionIds.length}개 연습하기</button>}
         <button className="fullButton" onClick={() => setLatestResult(null)}>새 시험 만들기</button>
         <button className="resultDelete" onClick={() => { if (!window.confirm("이 시험 결과와 관련 통계 기록을 삭제할까요? 삭제한 기록은 복구할 수 없습니다.")) return; const questionIds = new Set(latestResult.questionIds); setStudy((current) => ({ ...current, testResults: current.testResults.filter((result) => result.id !== latestResult.id), activities: current.activities.filter((activity) => !(activity.source === "test" && activity.occurredAt === latestResult.completedAt && questionIds.has(activity.questionId))) })); setLatestResult(null); }}>시험 기록 삭제</button>
       </div>
-      {categoryScores.length > 0 && <><div className="sectionTitle"><h2>과목별 정확도</h2></div><div className="panel categoryPerformance">{categoryScores.map((item) => <div key={item.category}><div><strong>{item.category}</strong><span>{item.correct} / {item.total} · {item.accuracy}%</span></div><p><i style={{ width: `${item.accuracy}%` }} /></p></div>)}</div></>}
+      {categoryScores.length > 0 && <><div className="sectionTitle"><h2>과목별 정확도</h2></div><div className="panel categoryPerformance">{categoryScores.map((item) => { const previous = previousCategoryScores.find((score) => score.category === item.category); const delta = previous ? item.accuracy - previous.accuracy : null; return <div key={item.category}><div><strong>{item.category}{latestResult.categoryMinimumScore != null && item.accuracy < latestResult.categoryMinimumScore ? " · 과락" : ""}</strong><span>{item.correct} / {item.total} · {item.accuracy}%{delta !== null ? ` · 이전 대비 ${delta > 0 ? "+" : ""}${delta}%p` : ""}</span></div><p><i style={{ width: `${item.accuracy}%` }} /></p></div>; })}</div></>}
       <div className="sectionTitle"><h2>문제별 복습</h2><span>{visibleResultQuestions.length}문제</span></div>
       <div className="chips reviewFilters">
         {(["all", "incorrect", "unanswered", "flagged"] as const).map((filter) => <button key={filter} className={reviewFilter === filter ? "active" : ""} onClick={() => setReviewFilter(filter)}>{filter === "all" ? "전체" : filter === "incorrect" ? "오답" : filter === "unanswered" ? "미답변" : "검토 표시"}</button>)}
@@ -175,15 +189,16 @@ export function TestMode({ study, setStudy, questionBank, onPracticeQuestions, r
           <button className={testKind === "mock" ? "active" : ""} onClick={() => setTestKind("mock")}>모의시험</button>
           <button className={testKind === "random" ? "active" : ""} onClick={() => setTestKind("random")}>랜덤 시험</button>
         </div>
+        <div className="availability">{testKind === "mock" ? "공식 시험형 · 과목 순서와 배분 고정 · 총점 및 과락 판정" : "맞춤 훈련형 · 범위, 난이도, 문제 수와 시간을 직접 설정"}</div>
         {testKind === "mock" ? <div className="templateList">
           {examTemplates.map((template) => {
             const count = questionBank.filter((question) => question.examType === template.examType).length;
             const actualCount = Math.min(template.questionCount, count);
             return <article className="templateCard" key={template.id}>
               <div><small>{examTypeLabel(certificateId, template.examType)}</small><h2>{template.title}</h2><p>{template.description}</p></div>
-              <div className="templateMeta"><span><strong>{actualCount}</strong>문제</span><span><strong>{Math.floor(template.durationSeconds / 60)}</strong>분</span><span><strong>{template.passingScore}</strong>점 합격</span><span><strong>균형</strong>과목 배분</span></div>
+              <div className="templateMeta"><span><strong>{actualCount}</strong>문제</span><span><strong>{Math.floor(template.durationSeconds / 60)}</strong>분</span><span><strong>{template.passingScore}</strong>점 합격</span><span><strong>{template.categoryMinimumScore ?? "-"}</strong>점 과락</span></div>
               {actualCount < template.questionCount && <p className="availability">현재 문제은행에 등록된 {actualCount}문제만 출제됩니다.</p>}
-              <button className="fullButton" disabled={actualCount === 0} onClick={() => startTest({ examType: template.examType, requestedCount: template.questionCount, durationSeconds: template.durationSeconds, mode: "mock", title: template.title, passingScore: template.passingScore, categoryStrategy: template.categoryStrategy, shuffleQuestions: template.shuffleQuestions, shuffleChoices: template.shuffleChoices }, questionBank, setStudy)}>모의시험 시작</button>
+              <button className="fullButton" disabled={actualCount === 0} onClick={() => startTest({ examType: template.examType, requestedCount: template.questionCount, durationSeconds: template.durationSeconds, mode: "mock", title: template.title, passingScore: template.passingScore, categoryMinimumScore: template.categoryMinimumScore, categoryStrategy: template.categoryStrategy, shuffleQuestions: template.shuffleQuestions, shuffleChoices: template.shuffleChoices }, questionBank, setStudy)}>모의시험 시작</button>
             </article>;
           })}
         </div> : <>
@@ -207,7 +222,7 @@ export function TestMode({ study, setStudy, questionBank, onPracticeQuestions, r
         <div className="toggleRow"><span><strong>이미 푼 문제 포함</strong><small>끄면 아직 풀지 않은 문제만 출제</small></span><button className={includeSolved ? "toggle active" : "toggle"} onClick={() => setIncludeSolved((value) => !value)} aria-label="이미 푼 문제 포함 전환"><i /></button></div>
         {examType === "WRITTEN_CBT" && <div className="toggleRow"><span><strong>선택지 순서 섞기</strong><small>시험 시작 시 정답 위치도 함께 보정</small></span><button className={shuffleChoices ? "toggle active" : "toggle"} onClick={() => setShuffleChoices((value) => !value)} aria-label="선택지 순서 섞기 전환"><i /></button></div>}
         <p className="availability">선택한 조건에 맞는 문제는 {availableCount}개입니다.</p>
-        <button className="fullButton" disabled={availableCount === 0} onClick={() => startTest({ examType, requestedCount: questionCount, durationSeconds: useTimer ? timeLimitMinutes * 60 : null, mode: "random", title: `${examTypeLabel(certificateId, examType)} 랜덤 시험`, passingScore: null, eligibleQuestionIds: eligibleQuestions.map((question) => question.id), categoryStrategy: "random", shuffleQuestions: true, shuffleChoices: examType === "WRITTEN_CBT" && shuffleChoices }, questionBank, setStudy)}>랜덤 시험 시작</button>
+        <button className="fullButton" disabled={availableCount === 0} onClick={() => startTest({ examType, requestedCount: questionCount, durationSeconds: useTimer ? timeLimitMinutes * 60 : null, mode: "random", title: `${examTypeLabel(certificateId, examType)} 랜덤 시험`, passingScore: null, categoryMinimumScore: null, eligibleQuestionIds: eligibleQuestions.map((question) => question.id), categoryStrategy: "random", shuffleQuestions: true, shuffleChoices: examType === "WRITTEN_CBT" && shuffleChoices }, questionBank, setStudy)}>랜덤 시험 시작</button>
         </>}
       </div>
       {visibleTestResults.length > 0 && <><div className="sectionTitle"><h2>최근 시험</h2></div><div className="recentTests">{visibleTestResults.slice(0, 5).map((result) => {
@@ -258,6 +273,7 @@ interface StartTestOptions {
   mode: "mock" | "random";
   title: string;
   passingScore: number | null;
+  categoryMinimumScore: number | null;
   eligibleQuestionIds?: string[];
   categoryStrategy: "balanced" | "random";
   shuffleQuestions: boolean;
@@ -268,7 +284,7 @@ function startTest(options: StartTestOptions, questionBank: Question[], setStudy
   const eligibleQuestionIds = options.eligibleQuestionIds ? new Set(options.eligibleQuestionIds) : null;
   const candidates = questionBank.filter((question) => question.examType === options.examType && (!eligibleQuestionIds || eligibleQuestionIds.has(question.id)));
   const orderedCandidates = options.categoryStrategy === "balanced"
-    ? selectBalancedByCategory(candidates, options.requestedCount)
+    ? selectMockExamByCategory(candidates, options.requestedCount)
     : options.shuffleQuestions ? shuffled(candidates) : [...candidates];
   const selected = orderedCandidates.slice(0, Math.min(options.requestedCount, orderedCandidates.length));
   const snapshots = selected.map((question) => createTestSnapshot(question, options.shuffleChoices));
@@ -285,7 +301,8 @@ function startTest(options: StartTestOptions, questionBank: Question[], setStudy
     questionSnapshots: snapshots,
     mode: options.mode,
     title: options.title,
-    passingScore: options.passingScore
+    passingScore: options.passingScore,
+    categoryMinimumScore: options.categoryMinimumScore
   };
   setStudy((current) => ({ ...current, activeTest: session }));
 }
@@ -333,6 +350,7 @@ function finishTest(session: TestSession, questionBank: Question[], setStudy: Te
     mode: session.mode,
     title: session.title,
     passingScore: session.passingScore,
+    categoryMinimumScore: session.categoryMinimumScore,
     flaggedQuestionIds: session.flaggedQuestionIds
   };
   const activities = frozenQuestions.flatMap((question) => {
@@ -380,14 +398,6 @@ function formatDuration(seconds: number) {
   return hours > 0 ? `${hours}시간 ${minutes}분` : minutes > 0 ? `${minutes}분 ${remainder}초` : `${remainder}초`;
 }
 
-function getCategoryScores(questions: Question[], answers: Record<string, AnswerValue>) {
-  const scores = new Map<string, { correct: number; total: number }>();
-  questions.forEach((question) => {
-    if (question.examType !== "WRITTEN_CBT") return;
-    const current = scores.get(question.category) ?? { correct: 0, total: 0 };
-    current.total += 1;
-    if (answers[question.id] === question.correctChoiceIndex) current.correct += 1;
-    scores.set(question.category, current);
-  });
-  return [...scores.entries()].map(([category, value]) => ({ category, ...value, accuracy: Math.round(value.correct / value.total * 100) }));
+function difficultyLabel(difficulty: Question["difficulty"]) {
+  return difficulty === "easy" ? "쉬움" : difficulty === "medium" ? "보통" : "어려움";
 }

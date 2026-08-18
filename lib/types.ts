@@ -60,6 +60,7 @@ export interface TestSession {
   mode?: "mock" | "random";
   title?: string;
   passingScore?: number | null;
+  categoryMinimumScore?: number | null;
 }
 
 export interface PracticeSession {
@@ -122,6 +123,7 @@ export interface TestResult {
   mode?: "mock" | "random";
   title?: string;
   passingScore?: number | null;
+  categoryMinimumScore?: number | null;
   flaggedQuestionIds?: string[];
 }
 
@@ -133,6 +135,7 @@ export interface ExamTemplate {
   questionCount: number;
   durationSeconds: number;
   passingScore: number;
+  categoryMinimumScore: number | null;
   description: string;
   categoryStrategy: "balanced" | "random";
   shuffleQuestions: boolean;
@@ -149,6 +152,7 @@ export interface StudyState {
   activePractice: PracticeSession | null;
   activities: ActivityRecord[];
   notes: Record<string, string>;
+  noteUpdatedAt: Record<string, string>;
   questionReports: QuestionReport[];
   aiExplanationReports: AiExplanationReport[];
 }

@@ -28,6 +28,39 @@ to authenticated
 using ((select auth.uid()) = user_id)
 with check ((select auth.uid()) = user_id);
 
+-- Conflict-safe, item-level study data. The legacy JSON row above remains for
+-- backwards compatibility while clients migrate to this table.
+create table if not exists public.user_study_items (
+  user_id uuid not null references auth.users(id) on delete cascade,
+  item_type text not null,
+  item_key text not null,
+  value jsonb not null,
+  updated_at timestamptz not null,
+  primary key (user_id, item_type, item_key)
+);
+
+alter table public.user_study_items enable row level security;
+drop policy if exists "Users manage their own study items" on public.user_study_items;
+create policy "Users manage their own study items" on public.user_study_items
+for all to authenticated
+using ((select auth.uid()) = user_id)
+with check ((select auth.uid()) = user_id);
+
+create or replace function public.sync_study_items(items jsonb)
+returns void language plpgsql security invoker set search_path = public as $$
+begin
+  insert into public.user_study_items (user_id, item_type, item_key, value, updated_at)
+  select auth.uid(), x.item_type, x.item_key, x.value, x.updated_at
+  from jsonb_to_recordset(items) as x(item_type text, item_key text, value jsonb, updated_at timestamptz)
+  on conflict (user_id, item_type, item_key) do update
+  set value = excluded.value, updated_at = excluded.updated_at
+  where user_study_items.updated_at <= excluded.updated_at;
+end;
+$$;
+
+grant select, insert, update on public.user_study_items to authenticated;
+grant execute on function public.sync_study_items(jsonb) to authenticated;
+
 create table if not exists public.admin_users (
   user_id uuid primary key references auth.users(id) on delete cascade,
   created_at timestamptz not null default now()

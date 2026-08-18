@@ -1,6 +1,6 @@
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import type { AiExplanationReport, Question, QuestionReport, StudyState } from "./types";
-import { migrateStudyState } from "./storage";
+import { emptyStudyState, migrateStudyState } from "./storage";
 
 let browserClient: SupabaseClient | null | undefined;
 
@@ -29,7 +29,23 @@ export async function loadCloudStudyState(userId: string): Promise<StudyState | 
     .eq("user_id", userId)
     .maybeSingle();
   if (error) throw error;
-  return data ? migrateStudyState(data.study_state) : null;
+  const legacy = data ? migrateStudyState(data.study_state) : null;
+  const { data: items, error: itemError } = await supabase
+    .from("user_study_items")
+    .select("item_type,item_key,value,updated_at")
+    .eq("user_id", userId);
+  if (itemError) return legacy;
+  if (!items?.length) return legacy;
+  const state = legacy ?? structuredClone(emptyStudyState);
+  items.forEach((item) => {
+    if (item.item_type === "answer") state.answers[item.item_key] = item.value as StudyState["answers"][string];
+    if (item.item_type === "note") { state.notes[item.item_key] = String(item.value ?? ""); state.noteUpdatedAt[item.item_key] = item.updated_at; }
+    if (item.item_type === "test_result") state.testResults = replaceById(state.testResults, item.value as StudyState["testResults"][number]);
+    if (item.item_type === "activity") state.activities = replaceById(state.activities, item.value as StudyState["activities"][number]);
+    if (item.item_type === "question_report") state.questionReports = replaceById(state.questionReports, item.value as StudyState["questionReports"][number]);
+    if (item.item_type === "ai_report") state.aiExplanationReports = replaceById(state.aiExplanationReports, item.value as StudyState["aiExplanationReports"][number]);
+  });
+  return state;
 }
 
 export async function saveCloudStudyState(userId: string, studyState: StudyState) {
@@ -43,6 +59,23 @@ export async function saveCloudStudyState(userId: string, studyState: StudyState
       updated_at: new Date().toISOString()
     }, { onConflict: "user_id" });
   if (error) throw error;
+  const epoch = "1970-01-01T00:00:00.000Z";
+  const items = [
+    ...Object.entries(studyState.answers).map(([item_key, value]) => ({ item_type: "answer", item_key, value, updated_at: value.answeredAt })),
+    ...Object.entries(studyState.notes).map(([item_key, value]) => ({ item_type: "note", item_key, value, updated_at: studyState.noteUpdatedAt[item_key] ?? epoch })),
+    ...studyState.testResults.map((value) => ({ item_type: "test_result", item_key: value.id, value, updated_at: value.completedAt })),
+    ...studyState.activities.map((value) => ({ item_type: "activity", item_key: value.id, value, updated_at: value.occurredAt })),
+    ...studyState.questionReports.map((value) => ({ item_type: "question_report", item_key: value.id, value, updated_at: value.createdAt })),
+    ...studyState.aiExplanationReports.map((value) => ({ item_type: "ai_report", item_key: value.id, value, updated_at: value.createdAt }))
+  ];
+  if (items.length) {
+    const { error: itemError } = await supabase.rpc("sync_study_items", { items });
+    if (itemError && itemError.code !== "PGRST202" && itemError.code !== "42P01") throw itemError;
+  }
+}
+
+function replaceById<T extends { id: string }>(items: T[], value: T) {
+  return [value, ...items.filter((item) => item.id !== value.id)];
 }
 
 export async function syncCentralReports(userId: string, studyState: StudyState, questions: Question[]) {

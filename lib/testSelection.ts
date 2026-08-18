@@ -18,6 +18,33 @@ export function selectBalancedByCategory(candidates: Question[], requestedCount:
   return selected;
 }
 
+/** Selects evenly from subjects while preserving the subject order in the bank. */
+export function selectMockExamByCategory(candidates: Question[], requestedCount: number) {
+  const groups = new Map<string, Question[]>();
+  candidates.forEach((question) => groups.set(question.category, [...(groups.get(question.category) ?? []), question]));
+  const categories = [...groups.keys()];
+  categories.forEach((category) => groups.set(category, shuffled(groups.get(category) ?? [])));
+  const base = categories.length ? Math.floor(requestedCount / categories.length) : 0;
+  let remainder = categories.length ? requestedCount % categories.length : 0;
+  const selected: Question[] = [];
+  categories.forEach((category) => {
+    const requested = base + (remainder-- > 0 ? 1 : 0);
+    selected.push(...(groups.get(category) ?? []).slice(0, requested));
+  });
+  if (selected.length < requestedCount) {
+    const used = new Set(selected.map((question) => question.id));
+    categories.forEach((category) => {
+      (groups.get(category) ?? []).forEach((question) => {
+        if (selected.length < requestedCount && !used.has(question.id)) {
+          selected.push(question);
+          used.add(question.id);
+        }
+      });
+    });
+  }
+  return selected;
+}
+
 export function createTestSnapshot(question: Question, shouldShuffleChoices: boolean): Question {
   const snapshot = structuredClone(question);
   if (!shouldShuffleChoices || snapshot.examType !== "WRITTEN_CBT") return snapshot;

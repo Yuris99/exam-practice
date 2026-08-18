@@ -27,6 +27,7 @@ function createTemplate(certificateId: string, certificateLabel: string, examTyp
     questionCount,
     durationSeconds: 150 * 60,
     passingScore: 60,
+    categoryMinimumScore: isMultipleChoice ? 40 : null,
     description: `${typeLabel} 문제은행에서 최대 ${questionCount}문제를 출제하고 150분 동안 응시합니다.`,
     categoryStrategy: "balanced",
     shuffleQuestions: true,

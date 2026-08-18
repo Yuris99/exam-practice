@@ -16,6 +16,7 @@ export const emptyStudyState: StudyState = {
   activePractice: null,
   activities: [],
   notes: {},
+  noteUpdatedAt: {},
   questionReports: [],
   aiExplanationReports: []
 };
@@ -59,6 +60,16 @@ export function mergeStudyStates(local: StudyState, cloud: StudyState): StudySta
     const cloudAnswer = answers[id];
     if (!cloudAnswer || new Date(answer.answeredAt).getTime() >= new Date(cloudAnswer.answeredAt).getTime()) answers[id] = answer;
   });
+  const notes = { ...cloud.notes };
+  const noteUpdatedAt = { ...cloud.noteUpdatedAt };
+  Object.entries(local.notes).forEach(([id, note]) => {
+    const localTime = local.noteUpdatedAt[id] ?? "1970-01-01T00:00:00.000Z";
+    const cloudTime = cloud.noteUpdatedAt[id] ?? "1970-01-01T00:00:00.000Z";
+    if (!(id in notes) || localTime >= cloudTime) {
+      notes[id] = note;
+      noteUpdatedAt[id] = localTime;
+    }
+  });
   return {
     answers,
     bookmarks: [...new Set([...cloud.bookmarks, ...local.bookmarks])],
@@ -68,7 +79,8 @@ export function mergeStudyStates(local: StudyState, cloud: StudyState): StudySta
     customQuestions: byId(cloud.customQuestions, local.customQuestions),
     activePractice: local.activePractice ?? cloud.activePractice,
     activities: byId(cloud.activities, local.activities),
-    notes: { ...cloud.notes, ...local.notes },
+    notes,
+    noteUpdatedAt,
     questionReports: byId(cloud.questionReports, local.questionReports),
     aiExplanationReports: byId(cloud.aiExplanationReports, local.aiExplanationReports)
   };
@@ -81,6 +93,7 @@ export function migrateStudyState(value: unknown): StudyState {
   const answers = recordEntries(root.answers, isSavedAnswer);
   const aiExplanations = stringRecord(root.aiExplanations);
   const notes = stringRecord(root.notes);
+  const noteUpdatedAt = stringRecord(root.noteUpdatedAt);
   const testResults = arrayOf(root.testResults, isTestResult).map((result) => ({ ...result, selfAssessments: isRecord(result.selfAssessments) ? result.selfAssessments : {} })) as TestResult[];
 
   return {
@@ -93,6 +106,7 @@ export function migrateStudyState(value: unknown): StudyState {
     activePractice: isPracticeSession(root.activePractice) ? root.activePractice : null,
     activities: arrayOf(root.activities, isActivityRecord),
     notes,
+    noteUpdatedAt,
     questionReports: arrayOf(root.questionReports, isQuestionReport),
     aiExplanationReports: arrayOf(root.aiExplanationReports, isAiExplanationReport)
   };
