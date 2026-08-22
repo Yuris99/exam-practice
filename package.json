@@ -10,6 +10,7 @@
     "dev": "next dev",
     "prebuild": "npm run questions:generate",
     "build": "next build",
+    "postbuild": "node scripts/copy-standalone-assets.mjs",
     "start": "next start",
     "lint": "tsc --noEmit",
     "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/*.test.mjs"

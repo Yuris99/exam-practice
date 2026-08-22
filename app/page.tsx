@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
 import { TestMode } from "@/components/TestMode";
 import { QuestionManager } from "@/components/QuestionManager";
 import { AdminDashboard } from "@/components/AdminDashboard";
@@ -531,7 +532,7 @@ function HomeView({ study, onStart, onNavigate, onResume, questionBank, certific
       <button onClick={() => onStart("WRITTEN_CBT")}><i>CBT</i><strong>{examTypeLabel(certificateId, "WRITTEN_CBT")}</strong><span>4지선다 문제를 바로 채점해요</span></button>
       <button onClick={() => onStart("PRACTICAL_WRITTEN_RESPONSE")}><i>答</i><strong>{examTypeLabel(certificateId, "PRACTICAL_WRITTEN_RESPONSE")}</strong><span>답안을 직접 작성해요</span></button>
       <button onClick={() => onNavigate("test")}><i>TEST</i><strong>시험 모드</strong><span>모의시험 또는 랜덤 시험을 풀어요</span></button>
-      <button onClick={() => onNavigate("practice")}><i>⌘</i><strong>맞춤 연습</strong><span>시험 유형과 범위를 선택해요</span></button>
+      <Link href="/summary"><i>NOTE</i><strong>개념 정리</strong><span>컴시기와 임베기를 따로 훑어요</span></Link>
     </div>
     <div className="sectionTitle"><h2>현재 기록</h2><button onClick={() => onNavigate("history")}>자세히</button></div>
     <div className="summary standardSummary"><div><strong>{answerCount}</strong><span>푼 문제</span></div><div><strong>{accuracy}%</strong><span>{examTypeLabel(certificateId, "WRITTEN_CBT")} 정답률</span></div><div><strong>{masteryRate}%</strong><span>완전 정복 · {masteredCount}/{questionBank.length}</span></div><div><strong>{study.bookmarks.filter((id) => questionIds.has(id)).length}</strong><span>북마크</span></div></div>
