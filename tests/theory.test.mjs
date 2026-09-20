@@ -41,5 +41,5 @@ test("other certificates and subjects are not linked", () => {
   const courses = [informationSecurityTheoryCourse];
   assert.equal(matchTheoryConcept(courses, question("커널 모드", { certificateId: "information-processing-engineer" })), undefined);
   assert.equal(matchTheoryConcept(courses, question("SSH", { category: "네트워크 보안" })), undefined);
-  assert.equal(matchTheoryConcept(courses, question("리눅스 커널 모듈을 올리거나 내리는 Capability는?")), undefined);
+  assert.equal(matchTheoryConcept(courses, question("리눅스 커널 모듈을 올리거나 내리는 Capability는?"))?.concept.id, "unix-linux-access-control");
 });
