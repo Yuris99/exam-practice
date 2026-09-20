@@ -1,0 +1,22 @@
+{
+  "format": "visual-answer-key-verification-v1",
+  "source_pdf_sha256": "332f9ce3f1aaaebe2b4d728796c9cfb6415126a2d95257fccc90bace02647623",
+  "verification_method": "Manually read from contact sheets cropped from the read-only 300 DPI OCR page images rendered from the source PDF. No answer was inferred from external knowledge.",
+  "sessions": {
+    "2025-1": {
+      "first_pdf_page": 1100,
+      "first_question": 1,
+      "page_answer_strings": ["221", "34413", "31123", "23", "343", "41", "423", "132", "122", "33", "3324", "2141", "4223", "1241", "1334", "1432", "234", "423", "1332", "3112", "333", "224", "324", "44", "31", "312", "411", "433", "143", "32", "31", "22"]
+    },
+    "2025-2": {
+      "first_pdf_page": 1132,
+      "first_question": 1,
+      "page_answer_strings": ["234", "23314", "12", "3421", "2133", "11", "224", "1124", "342", "4224", "1222", "223", "2441", "311", "221", "441", "242", "4241", "2134", "243134", "434", "1343", "333", "31", "212", "44", "11", "43", "12", "32", "224", "4"]
+    },
+    "2025-4": {
+      "first_pdf_page": 1164,
+      "first_question": 1,
+      "page_answer_strings": ["234", "3441", "41", "2424", "2413", "321", "221", "2243", "212", "2423", "4112", "224", "2233", "144", "22224", "413", "4124", "44", "323", "214", "231", "243", "4312", "124", "33", "44", "21", "11", "142", "242", "243", "32"]
+    }
+  }
+}

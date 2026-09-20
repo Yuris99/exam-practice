@@ -1,0 +1,15 @@
+{
+  "format": "information-security-textbook-extraction-progress",
+  "version": 1,
+  "source_pdf": "C:\\Users\\mose1\\Documents\\project\\ocr\\정보기필기ocred.pdf",
+  "source_pdf_sha256": "332f9ce3f1aaaebe2b4d728796c9cfb6415126a2d95257fccc90bace02647623",
+  "total_pdf_pages": 1204,
+  "lastCompletedPdfPage": 1204,
+  "activeSection": {
+    "section": "지피지기 기출문제",
+    "type": "past"
+  },
+  "activeCategory": "정보보안 관리 및 법규",
+  "extractedQuestionCount": 1846,
+  "updatedAt": "2026-09-20T12:09:55.306Z"
+}

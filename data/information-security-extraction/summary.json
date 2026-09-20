@@ -1,0 +1,58 @@
+{
+  "source_pdf_pages": 1204,
+  "extraction_candidate_count": 1846,
+  "ready_count": 747,
+  "manual_review_count": 1099,
+  "section_counts": {
+    "백전백승 기출문제": 277,
+    "지피지기 기출문제": 937,
+    "천기누설 예상문제": 632
+  },
+  "subject_counts": {
+    "네트워크 보안": 138,
+    "시스템 보안": 157,
+    "어플리케이션 보안": 153,
+    "정보보안 관리 및 법규": 134,
+    "정보보안 일반": 165
+  },
+  "year_session_counts": {
+    "2022-1": 34,
+    "2022-2": 39,
+    "2022-4": 33,
+    "2023-1": 43,
+    "2023-2": 35,
+    "2023-4": 20,
+    "2024-1": 19,
+    "2024-2": 26,
+    "2024-4": 23,
+    "2025-1": 54,
+    "2025-2": 69,
+    "2025-4": 70,
+    "예상-": 282
+  },
+  "review_reason_counts": {
+    "choice_count_3": 153,
+    "choice_count_9": 8,
+    "choice_number_sequence": 119,
+    "choice_text_missing": 21,
+    "duplicate_choices": 19,
+    "numeric_code_or_special_visual_review": 645,
+    "low_confidence_question_region": 279,
+    "duplicate_prompt_content_conflict": 60,
+    "choice_count_1": 38,
+    "answer_key_not_recognized": 232,
+    "choice_count_0": 97,
+    "question_text_short": 16,
+    "past_exam_year_not_recognized": 206,
+    "choice_count_2": 46,
+    "choice_count_6": 8,
+    "visual_or_table_review": 21,
+    "choice_count_5": 7,
+    "choice_count_7": 2,
+    "choice_count_10": 6,
+    "choice_count_8": 1,
+    "question_text_missing": 3,
+    "duplicate_prompt_same_content": 8
+  },
+  "generated_at": "2026-09-20T12:09:55.402Z"
+}

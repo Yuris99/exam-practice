@@ -1,0 +1,27 @@
+{
+  "format": "visual-question-corrections-v1",
+  "source_pdf_sha256": "332f9ce3f1aaaebe2b4d728796c9cfb6415126a2d95257fccc90bace02647623",
+  "verification_method": "Read directly from the source-page images rendered from the read-only OCR project. No question number or text was inferred from exam knowledge.",
+  "corrections": [
+    {
+      "pdf_page": 1151,
+      "parsed_question_number": 7,
+      "verified_question_number": 71,
+      "exam_year": 2025,
+      "exam_session": 2,
+      "choice_corrections": [
+        { "choice_number": 2, "from": "OIP", "to": "OTP" }
+      ],
+      "note": "The source image visibly prints question 71 and choice 2 as OTP; the parsed 7 and OIP are OCR truncation/substitution."
+    },
+    {
+      "pdf_page": 1183,
+      "parsed_question_number": 3,
+      "verified_question_number": 68,
+      "exam_year": 2025,
+      "exam_session": 4,
+      "choice_corrections": [],
+      "note": "The source image visibly prints question 68; the leading 6 was dropped by OCR."
+    }
+  ]
+}
