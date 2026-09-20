@@ -10,6 +10,7 @@ import { PwaStatus } from "@/components/PwaStatus";
 import { QuestionTools } from "@/components/QuestionTools";
 import { QuestionContent } from "@/components/QuestionContent";
 import { QuestionMetadata } from "@/components/QuestionMetadata";
+import { TheoryReviewLink } from "@/components/TheoryReviewLink";
 import { questions } from "@/lib/questions";
 import { emptyStudyState, loadStudyState, mergeStudyStates, saveStudyState } from "@/lib/storage";
 import { checkIsAdmin, getSupabaseClient, loadCloudStudyState, loadQuestionOverrides, saveCloudStudyState, signInWithGoogle, signOut, syncCentralReports } from "@/lib/supabase";
@@ -51,6 +52,7 @@ export default function HomePage() {
   const [questionOverrides, setQuestionOverrides] = useState<Question[]>([]);
   const [selectedCertificateId, setSelectedCertificateId] = useState("information-processing-engineer");
   const latestStudy = useRef(study);
+  const practiceDeepLink = useRef<string | null>(null);
   latestStudy.current = study;
 
   useEffect(() => {
@@ -230,6 +232,32 @@ export default function HomePage() {
     const saved = window.localStorage.getItem(CERTIFICATE_STORAGE_KEY);
     if (saved && allQuestionBank.some((item) => item.certificateId === saved)) setSelectedCertificateId(saved);
   }, [allQuestionBank]);
+
+  useEffect(() => {
+    if (!ready) return;
+    const url = new URL(window.location.href);
+    const rawIds = url.searchParams.get("practiceQuestions");
+    if (!rawIds || practiceDeepLink.current === rawIds) return;
+    const requestedIds = rawIds.split(",").filter(Boolean);
+    const linkedQuestions = requestedIds.flatMap((id) => {
+      const linked = allQuestionBank.find((item) => item.id === id && (item.publicationStatus ?? "published") === "published");
+      return linked ? [linked] : [];
+    });
+    const first = linkedQuestions[0];
+    if (!first) return;
+    const compatible = linkedQuestions.filter((item) => item.certificateId === first.certificateId && item.examType === first.examType);
+    practiceDeepLink.current = rawIds;
+    setSelectedCertificateId(first.certificateId);
+    window.localStorage.setItem(CERTIFICATE_STORAGE_KEY, first.certificateId);
+    setExamType(first.examType);
+    setQuestionIndex(0);
+    setDraftAnswer(null);
+    setSubmitted(false);
+    setStudy((current) => ({ ...current, activePractice: { examType: first.examType, questionIds: compatible.map((item) => item.id), currentIndex: 0, draftAnswer: null, submitted: false, startedAt: new Date().toISOString(), drafts: {}, submittedQuestionIds: [] } }));
+    setView("question");
+    url.searchParams.delete("practiceQuestions");
+    window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+  }, [allQuestionBank, ready]);
 
   function selectCertificate(certificateId: string) {
     if (certificateId === selectedCertificateId) return;
@@ -532,6 +560,7 @@ function HomeView({ study, onStart, onNavigate, onResume, questionBank, certific
       <button onClick={() => onStart("WRITTEN_CBT")}><i>CBT</i><strong>{examTypeLabel(certificateId, "WRITTEN_CBT")}</strong><span>4지선다 문제를 바로 채점해요</span></button>
       <button onClick={() => onStart("PRACTICAL_WRITTEN_RESPONSE")}><i>答</i><strong>{examTypeLabel(certificateId, "PRACTICAL_WRITTEN_RESPONSE")}</strong><span>답안을 직접 작성해요</span></button>
       <button onClick={() => onNavigate("test")}><i>TEST</i><strong>시험 모드</strong><span>모의시험 또는 랜덤 시험을 풀어요</span></button>
+      {certificateId === "information-security-engineer" && <Link href={`/learn/${certificateId}`}><i>TRAIL</i><strong>이론 학습</strong><span>개념을 익히고 관련 기출을 풀어요</span></Link>}
       <Link href="/summary"><i>NOTE</i><strong>개념 정리</strong><span>컴시기와 임베기를 따로 훑어요</span></Link>
     </div>
     <div className="sectionTitle"><h2>현재 기록</h2><button onClick={() => onNavigate("history")}>자세히</button></div>
@@ -659,7 +688,7 @@ function QuestionView({ question, index, total, draftAnswer, setDraftAnswer, sub
   return <section className="questionPage">
     <div className="questionMeta"><span>{index + 1} / {total}</span><b>{examTypeLabel(question.certificateId, question.examType)}</b></div>
     <article className="panel questionCard">
-      <QuestionMetadata question={question} /><h1>{question.prompt}</h1><QuestionContent question={question} />
+      <QuestionMetadata question={question} /><h1>{question.prompt}</h1><QuestionContent question={question} /><TheoryReviewLink question={question} incorrect={submitted && savedAnswer?.isCorrect === false} />
       {question.examType === "WRITTEN_CBT" ? <div className="choiceList">
         {question.choices.map((choice, choiceIndex) => {
           const selected = draftAnswer === choiceIndex;

@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { AiExplanation, createExplanationCacheKey } from "@/components/AiExplanation";
 import { QuestionContent } from "@/components/QuestionContent";
 import { QuestionMetadata } from "@/components/QuestionMetadata";
+import { TheoryReviewLink } from "@/components/TheoryReviewLink";
 import { createExamTemplates } from "@/lib/examTemplates";
 import { createTestSnapshot, selectMockExamByCategory, shuffled } from "@/lib/testSelection";
 import { calculateCategoryScores, gradeTest } from "@/lib/testGrading";
@@ -167,6 +168,7 @@ export function TestMode({ study, setStudy, questionBank, onPracticeQuestions, r
             <QuestionContent question={question} />
             {question.examType === "WRITTEN_CBT" ? <div className="answerComparison"><p>내 답: {typeof answer === "number" ? `${answer + 1}번 ${question.choices[answer]}` : "미답변"}</p><p>정답: {question.correctChoiceIndex + 1}번 {question.choices[question.correctChoiceIndex]}</p></div> : <div className="answerComparison"><p>내 답: {typeof answer === "string" && answer ? answer : "미답변"}</p><p>모범답안: {question.modelAnswer}</p></div>}
             <p className="officialReview"><strong>공식 해설</strong><br />{question.explanation || "등록된 공식 해설이 없습니다."}</p>
+            <TheoryReviewLink question={question} incorrect={answered && !correct} />
             {question.examType === "PRACTICAL_WRITTEN_RESPONSE" && answered && <div className="selfAssessment"><span>내 답안 평가</span>{(["correct", "partial", "incorrect"] as const).map((value) => <button key={value} className={(latestResult.selfAssessments ?? {})[question.id] === value ? "active" : ""} onClick={() => saveSelfAssessment(latestResult, question.id, value, setStudy, setLatestResult)}>{value === "correct" ? "정답" : value === "partial" ? "부분 정답" : "오답"}</button>)}</div>}
             {answered && <AiExplanation question={question} learnerAnswer={answer} cachedExplanation={study.aiExplanations[cacheKey]} onSave={(key, explanation) => setStudy((current) => ({ ...current, aiExplanations: { ...current.aiExplanations, [key]: explanation } }))} reportStatus={aiReport?.status} onReport={(key, explanation, reason, details) => setStudy((current) => ({ ...current, aiExplanationReports: [{ id: crypto.randomUUID(), cacheKey: key, questionId: question.id, questionVersion: question.version, explanationSnapshot: explanation, reason, details, createdAt: new Date().toISOString(), status: "open" }, ...current.aiExplanationReports] }))} />}
             </div>}
@@ -252,6 +254,7 @@ export function TestMode({ study, setStudy, questionBank, onPracticeQuestions, r
       <div className="testQuestionLabel"><QuestionMetadata question={question} /><button className={session.flaggedQuestionIds.includes(question.id) ? "flag active" : "flag"} onClick={() => toggleFlag(question.id, session, setStudy)}>⚑ 검토</button></div>
       <h1>{question.prompt}</h1>
       <QuestionContent question={question} />
+      <TheoryReviewLink question={question} />
       {question.examType === "WRITTEN_CBT" ? <div className="choiceList">
         {question.choices.map((choice, index) => <button key={choice} className={answer === index ? "selected" : ""} onClick={() => saveTestAnswer(question.id, index, setStudy)}><span>{index + 1}</span>{choice}</button>)}
       </div> : <textarea value={typeof answer === "string" ? answer : ""} onChange={(event) => saveTestAnswer(question.id, event.target.value, setStudy)} placeholder="답안을 입력하세요" />}

@@ -108,6 +108,10 @@ export interface AiExplanationReport {
   status: "open" | "resolved" | "hidden";
 }
 
+export interface TheoryProgressEntry {
+  completedAt: string;
+}
+
 export interface TestResult {
   id: string;
   certificateId?: string;
@@ -155,4 +159,5 @@ export interface StudyState {
   noteUpdatedAt: Record<string, string>;
   questionReports: QuestionReport[];
   aiExplanationReports: AiExplanationReport[];
+  theoryProgress: Record<string, TheoryProgressEntry>;
 }

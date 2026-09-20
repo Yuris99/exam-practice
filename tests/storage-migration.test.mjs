@@ -90,3 +90,17 @@ test("knowledge status survives storage migration", () => {
   assert.equal(migrated.answers.known.knowledgeStatus, "known");
   assert.equal(migrated.answers.broken, undefined);
 });
+
+test("theory progress survives migration and cloud merge", () => {
+  const migrated = migrateStudyState({ theoryProgress: { "course:subject:unit:concept": { completedAt: "2026-09-20T00:00:00.000Z" }, broken: { completedAt: 3 } } });
+  assert.deepEqual(Object.keys(migrated.theoryProgress), ["course:subject:unit:concept"]);
+
+  const local = structuredClone(emptyStudyState);
+  const cloud = structuredClone(emptyStudyState);
+  local.theoryProgress.shared = { completedAt: "2026-09-20T02:00:00.000Z" };
+  cloud.theoryProgress.shared = { completedAt: "2026-09-20T01:00:00.000Z" };
+  cloud.theoryProgress.cloud = { completedAt: "2026-09-20T03:00:00.000Z" };
+  const merged = mergeStudyStates(local, cloud);
+  assert.equal(merged.theoryProgress.shared.completedAt, "2026-09-20T02:00:00.000Z");
+  assert.ok(merged.theoryProgress.cloud);
+});

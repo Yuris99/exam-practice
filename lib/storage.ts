@@ -1,4 +1,4 @@
-import type { ActivityRecord, AiExplanationReport, Question, QuestionReport, SavedAnswer, StudyState, TestResult } from "./types";
+import type { ActivityRecord, AiExplanationReport, Question, QuestionReport, SavedAnswer, StudyState, TestResult, TheoryProgressEntry } from "./types";
 
 const STORAGE_KEY = "certificate-practice:v1";
 export const STUDY_DATA_FORMAT = "certificate-practice-data";
@@ -18,7 +18,8 @@ export const emptyStudyState: StudyState = {
   notes: {},
   noteUpdatedAt: {},
   questionReports: [],
-  aiExplanationReports: []
+  aiExplanationReports: [],
+  theoryProgress: {}
 };
 
 export function loadStudyState(): StudyState {
@@ -82,7 +83,8 @@ export function mergeStudyStates(local: StudyState, cloud: StudyState): StudySta
     notes,
     noteUpdatedAt,
     questionReports: byId(cloud.questionReports, local.questionReports),
-    aiExplanationReports: byId(cloud.aiExplanationReports, local.aiExplanationReports)
+    aiExplanationReports: byId(cloud.aiExplanationReports, local.aiExplanationReports),
+    theoryProgress: mergeTheoryProgress(cloud.theoryProgress, local.theoryProgress)
   };
 }
 
@@ -108,7 +110,8 @@ export function migrateStudyState(value: unknown): StudyState {
     notes,
     noteUpdatedAt,
     questionReports: arrayOf(root.questionReports, isQuestionReport),
-    aiExplanationReports: arrayOf(root.aiExplanationReports, isAiExplanationReport)
+    aiExplanationReports: arrayOf(root.aiExplanationReports, isAiExplanationReport),
+    theoryProgress: recordEntries(root.theoryProgress, isTheoryProgressEntry)
   };
 }
 
@@ -183,4 +186,17 @@ function isQuestionReport(value: unknown): value is QuestionReport {
 
 function isAiExplanationReport(value: unknown): value is AiExplanationReport {
   return isRecord(value) && hasString(value, "id") && hasString(value, "cacheKey") && hasString(value, "questionId") && hasString(value, "explanationSnapshot") && hasString(value, "createdAt") && (value.status === "open" || value.status === "resolved" || value.status === "hidden");
+}
+
+function isTheoryProgressEntry(value: unknown): value is TheoryProgressEntry {
+  return isRecord(value) && hasString(value, "completedAt") && !Number.isNaN(Date.parse(value.completedAt as string));
+}
+
+function mergeTheoryProgress(cloud: Record<string, TheoryProgressEntry>, local: Record<string, TheoryProgressEntry>) {
+  const merged = { ...cloud };
+  Object.entries(local).forEach(([key, value]) => {
+    const cloudValue = merged[key];
+    if (!cloudValue || value.completedAt >= cloudValue.completedAt) merged[key] = value;
+  });
+  return merged;
 }
