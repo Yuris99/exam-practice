@@ -597,7 +597,7 @@ export const informationSecurityTheoryCourse: TheoryCourse = {
               summary: "기준 상태와 현재 파일 상태를 비교해 무단 변경을 찾고 로그 패턴을 감시하는 도구를 구분합니다.",
               sourcePdfPages: [219],
               keywords: ["무결성", "Tripwire", "Fcheck", "Samhain", "AIDE", "SWATCH", "Chklastlog", "wtmp", "lastlog", "aide --init"],
-              questionKeywords: ["시스템 무결성", "Tripwire", "Fcheck", "Samhain", "AIDE", "SWATCH", "Simple WATCHer", "Chklastlog", "wtmp", "/var/log/lastlog", "aide --init", "파일 소유자", "파일 해시"],
+              questionKeywords: ["시스템 무결성", "Tripwire", "Fcheck", "Samhain", "AIDE", "SWATCH", "Simple WATCHer", "Chklastlog", "wtmp", "/var/log/lastlog", "aide --init", "파일 소유자", "파일 해시", "Syslog", "시스템 로그", "로그 감시", "시스템 로깅"],
               blocks: [
                 { type: "text", title: "무결성 검사 원리", paragraphs: ["무결성 점검 도구는 주요 디렉터리·파일의 기준 정보를 저장하고 이후 상태와 비교해 허가되지 않은 변경을 찾습니다. 파일시스템 상태 추적은 침해를 조기에 탐지하고 포렌식 근거를 확보하는 데 도움이 됩니다.", "교재가 제시한 점검 항목은 파일 소유자·소유 그룹, 파일 크기, 최근 접근 시간, 주요 파일의 해시값 변경입니다. 운영체제별로 레지스트리 설정 등 파일 외의 중요 상태도 점검 대상이 될 수 있습니다."] },
                 { type: "table", title: "점검·감시 도구", columns: ["도구", "기능"], rows: [["Tripwire", "중요 디렉터리와 파일의 상태를 데이터베이스로 만들고 현재 상태와 비교해 변경을 감지"], ["Fcheck", "파일 무결성 검사 프로그램. 사용·설정이 비교적 쉬워 소규모 환경에도 활용"], ["Samhain", "시스템 무결성을 점검하며 여러 시스템을 중앙에서 관리하는 기능 제공"], ["AIDE", "변조 파일 탐지 도구. 기준 데이터베이스를 초기화하는 명령은 `aide --init`"], ["SWATCH", "로그를 주기적으로 검색해 특정 패턴·키워드를 찾고 알림을 보내는 로그 감시 도구"], ["Chklastlog", "wtmp 로그인·로그아웃 항목과 `/var/log/lastlog` 사용자 정보를 대조해 운영체제별 로그 변조 단서를 확인"]] },
@@ -611,7 +611,7 @@ export const informationSecurityTheoryCourse: TheoryCourse = {
               summary: "패치·악성코드 대응에서 EDR의 탐지·통제·분석·치료, 모바일 기기 관리까지 살펴봅니다.",
               sourcePdfPages: [220],
               keywords: ["PMS", "Anti-Virus", "EDR", "Endpoint Detection and Response", "MDM", "Mobile Device Management"],
-              questionKeywords: ["단말 보안", "PMS", "Patch Management System", "Anti-Virus", "EDR", "탐지 통제 분석 치료", "MDM", "Mobile Device Management", "루팅 탐지"],
+              questionKeywords: ["단말 보안", "PMS", "Patch Management System", "Anti-Virus", "EDR", "탐지 통제 분석 치료", "보안사고 탐지", "보안사고 통제", "보안사고 분석", "보안사고 치료", "MDM", "Mobile Device Management", "루팅 탐지"],
               blocks: [
                 { type: "table", title: "단말 보안 기능", columns: ["솔루션", "기능"], rows: [["PMS", "기업 PC의 패치 설치 현황을 확인하고 패치를 배포·관리하는 패치 관리 시스템"], ["Anti-Virus", "컴퓨터 바이러스를 탐지·제거하고 감염을 방지하는 보안 솔루션"], ["EDR", "Endpoint Detection and Response. 단말 행위를 바탕으로 파일 기반 악성코드 외의 보안 사고도 탐지하고 사고를 억제·조사·복구"], ["MDM", "Mobile Device Management. 스마트폰·태블릿 등 모바일 기기의 보안·도난 방지, 앱·네트워크 설정, 자산과 관리 대상 기기 통제"]] },
                 { type: "text", title: "EDR 대응 순서", paragraphs: ["교재는 EDR의 핵심 기능을 탐지·통제·분석·치료로 묶습니다. 탐지는 단말 행위에서 사고를 찾고, 통제는 확산이나 추가 행위를 억제하며, 분석은 사고 원인과 영향을 조사하고, 치료는 단말을 감염 이전 상태로 복구하는 대응을 뜻합니다."] },
@@ -4306,7 +4306,7 @@ export const informationSecurityTheoryCourse: TheoryCourse = {
               summary: "128비트 상태 행렬에 SubBytes·ShiftRows·MixColumns·AddRoundKey를 적용하는 SPN 암호입니다.",
               sourcePdfPages: [721, 722],
               keywords: ["AES", "Advanced Encryption Standard", "Rijndael", "SubBytes", "ShiftRows", "MixColumns", "AddRoundKey"],
-              questionKeywords: ["AES", "고급 암호화 표준", "AES 라운드", "SubBytes"],
+              questionKeywords: ["AES", "고급 암호화 표준", "AES 라운드", "SPN", "SPN 구조", "SubBytes"],
               blocks: [
                 { type: "table", title: "키 길이별 AES 규격", columns: ["키 길이", "블록 크기", "라운드 수"], rows: [
                   ["128비트", "128비트", "10회"],
