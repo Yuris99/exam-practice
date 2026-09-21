@@ -819,7 +819,7 @@ export const informationSecurityTheoryCourse: TheoryCourse = {
               memoryPoints: ["DRM은 권한·라이선스를 관리합니다.", "워터마크는 ‘누구의 콘텐츠인가’를 표시하고, 핑거프린트는 ‘누가 유출했는가’를 추적합니다.", "스테가노그래피는 정보 내용이 아니라 정보의 존재를 숨깁니다. 교재의 JPEG 예시는 FF D9 뒤에 50 4B 03 04를 덧붙입니다."]
             }
           ]
-        }
+        },
       ]
     },
     {
@@ -4633,6 +4633,1370 @@ export const informationSecurityTheoryCourse: TheoryCourse = {
                 { type: "text", title: "핵심 관계", paragraphs: ["점 연산의 결합 관계에 따라 kₐ(kᵦG)=kᵦ(kₐG)이므로 양쪽이 같은 공유점을 얻습니다. ECDH는 ECC를 이용한 Diffie–Hellman 키 교환입니다."] }
               ],
               memoryPoints: ["ECDH는 ECC 기반 키 교환입니다.", "각자 자신의 개인 스칼라와 상대방 공개점을 사용해 같은 공유점을 계산합니다."]
+            }
+          ]
+        },
+        {
+          id: "general-hybrid-key-distribution",
+          chapter: "암호학",
+          status: "published",
+          title: "하이브리드 암호와 키 분배",
+          summary: "대칭키의 효율과 공개키의 키 교환 이점을 결합하고, 사전 공유·KDC·키 교환 방식으로 키 배송 문제를 해결합니다.",
+          sourcePdfPages: [744, 749],
+          concepts: [
+            {
+              id: "hybrid-cryptosystem",
+              title: "하이브리드 암호 시스템",
+              summary: "데이터는 빠른 대칭키로 처리하고 대칭키 자체는 공개키 암호로 보호합니다.",
+              sourcePdfPages: [744],
+              keywords: ["하이브리드 암호", "Hybrid Cryptosystem", "세션키", "대칭키", "공개키"],
+              questionKeywords: ["하이브리드 암호 시스템", "대칭키 공개키 암호 방식 비교", "대칭키 암호", "공개키 암호", "세션키를 공개키로 암호화"],
+              blocks: [
+                { type: "text", title: "두 방식의 결합", paragraphs: ["하이브리드 암호 시스템은 대칭키 암호와 공개키 암호를 결합합니다. 데이터를 대칭키로 빠르게 암호화하고, 그 대칭키를 메시지로 간주해 공개키 암호로 보호하여 상대방에게 전달합니다.", "공개키 암호는 대칭키 암호보다 계산이 느리므로 전체 데이터를 공개키로 처리하지 않고 키 교환에 사용합니다."] },
+                { type: "table", title: "교재의 대칭키·공개키 비교", columns: ["항목", "대칭키", "공개키"], rows: [["키 관계", "암호화 키와 복호화 키가 같음", "암호화 키와 복호화 키가 다름"], ["키 개수", "n명이 서로 통신하면 n(n−1)/2개", "사용자별 공개키·개인키로 2n개"], ["키 길이", "상대적으로 짧음", "상대적으로 김"], ["속도", "빠른 계산", "느린 계산"], ["대표", "DES, AES 등", "RSA, Rabin, Diffie–Hellman, ElGamal, ECC 등"], ["주요 부담", "키 분배와 관리", "공개키 변조 시 인증 체계 위험"]] },
+                { type: "table", title: "하이브리드 처리 역할", columns: ["단계", "암호 방식", "목적"], rows: [["데이터 보호", "대칭키 암호", "데이터를 빠르고 효율적으로 암호화"], ["키 교환", "공개키 암호", "대칭키를 안전하게 교환"]] }
+              ],
+              memoryPoints: ["데이터는 대칭키로, 대칭키 교환은 공개키로 처리합니다.", "공개키 암호의 느린 속도 때문에 하이브리드 방식이 효율적입니다.", "전자서명 검증에는 공개키를 사용하지만 대칭키 암호에는 사용하지 않습니다."]
+            },
+            {
+              id: "key-distribution-problem",
+              title: "키 배송 문제와 해결 방식",
+              summary: "암호화 통신을 시작하기 전에 통신 당사자들이 비밀키를 안전하게 공유해야 하는 문제와 네 가지 해결법을 정리합니다.",
+              sourcePdfPages: [745, 749],
+              keywords: ["키 배송 문제", "Key Distribution Problem", "KDC", "키 분배", "세션키"],
+              questionKeywords: ["키 배송 문제", "키분배", "사전에 키를 공유", "KDC", "Diffie-Hellman 키 교환", "키 분배 방법"],
+              blocks: [
+                { type: "text", title: "왜 키를 먼저 나눠야 할까", paragraphs: ["키 배송 문제는 암호화 통신에서 당사자들이 사용할 비밀키를 안전하게 공유하는 문제입니다. 암호키를 평문으로 보내면 노출될 수 있고, 암호화해 보내려 해도 수신자가 복호화에 쓸 키를 먼저 가져야 합니다."] },
+                { type: "table", title: "교재에 제시된 네 가지 해결 방법", columns: ["방법", "핵심 방식", "특징"], rows: [["사전 키 공유", "통신할 사용자 조합마다 공유 비밀키를 미리 전달", "안전한 별도 경로가 필요하며 사용자 수가 커질수록 키가 많아짐"], ["KDC 이용", "신뢰된 중앙 키 분배 센터가 세션키를 만들어 당사자에게 전달", "사용자는 KDC와 마스터키를 공유하고 KDC를 신뢰해야 함"], ["Diffie–Hellman 키 교환", "공개 통신망에서 공개값을 교환해 양측이 공통 비밀을 계산", "키를 직접 보내지 않고 공통 키를 수립"], ["공개키 암호", "공개키로 암호화하고 대응 개인키로 복호화", "개인키를 전송하지 않아도 됨"]] },
+                { type: "text", title: "사전 공유의 키 개수", paragraphs: ["n명의 사용자가 모든 사용자 쌍마다 별도 키를 공유한다면 필요한 키 수는 n(n−1)/2입니다. 사용자 쌍이 늘어날수록 키 보관·배포 부담이 빠르게 커집니다."] }
+              ],
+              memoryPoints: ["키 배송 문제는 통신에 쓸 비밀키를 안전하게 공유하는 문제입니다.", "사전 공유·KDC·Diffie–Hellman·공개키 암호가 교재의 네 해결 방법입니다.", "모든 쌍이 사전 공유하면 키 수는 n(n−1)/2입니다."]
+            },
+            {
+              id: "kdc-session-key-distribution",
+              title: "KDC와 세션키 분배",
+              summary: "각 사용자가 KDC와 마스터키를 공유하고, KDC가 통신 쌍마다 일회용 세션키를 중계합니다.",
+              sourcePdfPages: [745, 747],
+              keywords: ["KDC", "Key Distribution Center", "마스터키", "세션키", "Nonce", "Kerberos"],
+              questionKeywords: ["KDC 키 분배 절차", "키 분배 센터", "마스터키", "세션키", "일회용 세션키", "KDC를 이용한 방식의 특징"],
+              blocks: [
+                { type: "text", title: "신뢰된 제3자", paragraphs: ["KDC(Key Distribution Center)는 중앙의 신뢰된 제3자로서 대칭키 통신을 원하는 사용자에게 세션키를 배포합니다. 각 사용자는 KDC와 마스터키를 미리 공유하고, 사용자는 KDC를 신뢰해야 합니다.", "KDC는 사용자 조합별 키를 모두 장기간 보관하는 대신, 통신 세션마다 임시 세션키를 만들고 각 사용자의 마스터키로 보호해 전달합니다. 교재는 Blom 방식과 Kerberos 방식을 KDC 이용 방식의 예로 듭니다."] },
+                { type: "table", title: "KDC 키 분배 절차의 큰 흐름", columns: ["순서", "동작"], rows: [["사전", "A와 KDC는 Kₐ, B와 KDC는 Kᵦ를 공유"], ["요청", "A가 상대 B와 통신하려고 자신의 ID와 B의 ID를 KDC에 요청"], ["키 생성", "KDC가 세션키 Kₐᵦ와 임의값(Nonce)을 생성"], ["전달", "KDC가 A의 마스터키로 A 몫을 보호해 A에게, B의 마스터키로 B 몫을 보호해 B에게 전달"], ["상호 확인", "A와 B가 세션키를 사용해 Nonce에 응답하여 세션키 보유를 확인"]] },
+                { type: "text", title: "장점과 신뢰 가정", paragraphs: ["사용자끼리 미리 별도 비밀키를 공유할 필요가 없고 중앙에서 세션키 배포를 관리할 수 있습니다. 반면 모든 사용자가 KDC를 신뢰해야 하며, KDC는 세션마다 키를 생성·관리하므로 이용 규모가 커지면 관리 부담이 증가합니다."] }
+              ],
+              memoryPoints: ["KDC는 마스터키로 보호한 일회용 세션키를 배포합니다.", "사용자는 KDC를 신뢰해야 하고, 사용자는 KDC와 마스터키를 사전 공유합니다.", "Nonce는 임의로 생성해 재사용·재전송을 구별하는 데 쓰입니다."]
+            },
+            {
+              id: "kdc-key-distribution-protocols",
+              title: "Needham–Schroeder와 Otway–Rees",
+              summary: "KDC 기반 키 배포에서 티켓과 Nonce를 사용해 세션키 전달 및 상대 확인을 수행하는 두 프로토콜을 구분합니다.",
+              sourcePdfPages: [747, 749],
+              keywords: ["Needham–Schroeder", "Otway–Rees", "Kerberos", "티켓", "Nonce", "재전송 공격"],
+              questionKeywords: ["Needham-Schroeder 프로토콜", "Otway-Rees 프로토콜", "Kerberos 키 분배", "KDC 프로토콜", "Nonce 재전송 공격"],
+              blocks: [
+                { type: "table", title: "프로토콜 구분", columns: ["프로토콜", "교재의 설명", "학습 포인트"], rows: [["Needham–Schroeder", "네트워크에서 안전한 통신과 키 배포를 위해 KDC·티켓·세션키·Nonce를 사용", "Kerberos 키 분배 프로토콜의 기반 기술"], ["Otway–Rees", "컴퓨터 네트워크에서 인증과 키 교환을 위해 KDC와 양측 Nonce를 사용", "A와 B가 각각 만든 Nonce가 KDC를 거쳐 검증됨"]] },
+                { type: "text", title: "Nonce를 쓰는 이유", paragraphs: ["당사자가 새 임의값을 보내고 상대가 그 값을 올바르게 복호화했다는 응답을 돌려주면, 상대가 같은 세션키를 보유했는지 확인할 수 있습니다. 교재는 Needham–Schroeder 설명에서 이전 세션키가 노출된 상태로 관련 전송값까지 수집되면 재전송 공격에 취약할 수 있다고 경고합니다."] }
+              ],
+              memoryPoints: ["Needham–Schroeder는 Kerberos 키 분배 프로토콜의 기반입니다.", "두 프로토콜 모두 KDC 기반 키 분배이며 Nonce를 사용합니다.", "이전 세션키 노출과 수집된 값의 조합은 재전송 위험을 높일 수 있습니다."]
+            },
+            {
+              id: "key-agreement-and-public-key-distribution",
+              title: "Diffie–Hellman과 공개키를 이용한 키 수립",
+              summary: "Diffie–Hellman은 공개 통신망에서도 공통 비밀을 계산하고, 공개키 암호는 공개키·개인키 쌍으로 키 배송 부담을 해결합니다.",
+              sourcePdfPages: [749],
+              keywords: ["Diffie–Hellman", "키 교환", "키 합의", "공개키 암호", "키 배송"],
+              questionKeywords: ["디피-헬만 키 교환", "Diffie-Hellman 키 배송", "공개키 암호를 이용한 키 분배", "키 분배 방법"],
+              blocks: [
+                { type: "table", title: "두 방식의 핵심", columns: ["방식", "핵심", "주의점"], rows: [["Diffie–Hellman", "암호화되지 않은 통신망에서 공개값을 교환해 공통 비밀키를 계산", "상대 인증이 별도로 없으면 중간자 공격에 노출될 수 있음"], ["공개키 암호", "수신자의 공개키로 키를 암호화하고 수신자는 개인키로 복호화", "공개키의 진위와 무결성을 확인해야 함"]] },
+                { type: "text", title: "키 수립과 데이터 암호화", paragraphs: ["키 교환·키 합의는 사용할 공통 키를 마련하는 절차이고, 실제 데이터는 마련된 대칭 세션키로 암호화할 수 있습니다. 공개키 암호의 공개키를 인증 없이 신뢰하면 공격자가 자신의 공개키로 바꿔치기할 위험이 있으므로 공개키 신뢰 체계가 필요합니다."] }
+              ],
+              memoryPoints: ["Diffie–Hellman은 비밀키를 통신망으로 직접 전송하지 않고 공통 비밀을 만듭니다.", "키 합의 자체가 상대방 신원을 인증해 주는 것은 아닙니다.", "공개키 방식은 키 배송 부담을 줄이지만 공개키 진위 확인이 필요합니다."]
+            }
+          ]
+        },
+        {
+          id: "general-hash-properties-collisions",
+          chapter: "해시 함수",
+          status: "published",
+          title: "해시 함수의 성질과 충돌",
+          summary: "고정 길이 출력과 역상·제2역상·충돌 저항성, 생일 공격의 계산량을 이해합니다.",
+          sourcePdfPages: [785, 788],
+          concepts: [
+            {
+              id: "hash-function-properties",
+              title: "해시 함수와 암호학적 성질",
+              summary: "임의 길이 입력을 고정 길이 해시값으로 바꾸는 단방향 함수의 주요 보안 성질을 구분합니다.",
+              sourcePdfPages: [785, 786],
+              keywords: ["해시 함수", "Hash Function", "해시값", "역상 저항성", "충돌 저항성", "Avalanche Effect"],
+              questionKeywords: ["해시 함수 특징", "해시 함수 조건", "해시 함수의 특징", "역상 저항성", "제2역상 저항성", "충돌 저항성", "쇄도 효과"],
+              blocks: [
+                { type: "text", title: "임의 길이를 고정 길이로", paragraphs: ["해시 함수는 임의의 길이 데이터를 고정 길이 데이터로 매핑하는 단방향 함수입니다. 입력을 해시값으로 바꾸기는 쉽지만 해시값만으로 원래 입력을 복원할 수 없어야 합니다."] },
+                { type: "table", title: "암호학적 해시의 핵심 성질", columns: ["성질", "뜻"], rows: [["압축성", "입력 길이와 무관하게 고정 크기의 해시값을 출력"], ["역상 저항성", "해시값이 주어졌을 때 그 값을 만든 입력을 찾기 어려움"], ["제2역상 저항성", "입력 X가 주어졌을 때 H(X)=H(X′)인 다른 입력 X′를 찾기 어려움"], ["충돌 저항성", "같은 해시값을 내는 서로 다른 두 입력을 찾기 어려움"], ["계산 용이성", "주어진 입력의 해시를 효율적으로 계산"], ["쇄도 효과", "입력의 작은 변화가 출력의 큰 변화를 일으킴"]] },
+                { type: "text", title: "해시 함수와 암호화는 다르다", paragraphs: ["해시는 복호화 키를 이용해 원래 메시지로 되돌리는 암호화가 아닙니다. 해시 알고리즘은 공개되어도 되며, 입력과 해시값의 관계에서 역상·제2역상·충돌을 찾기 어려운지가 보안의 핵심입니다."] }
+              ],
+              memoryPoints: ["제1역상은 해시값에서 입력 찾기, 제2역상은 주어진 입력과 같은 해시를 내는 다른 입력 찾기입니다.", "충돌 저항성은 같은 해시를 내는 임의의 두 입력을 찾기 어렵다는 성질입니다.", "암호화와 달리 해시값은 복호화해 원문을 얻는 값이 아닙니다."]
+            },
+            {
+              id: "hash-collision-birthday-attack",
+              title: "해시 충돌과 생일 공격",
+              summary: "비둘기집 원리와 생일 역설을 이용해 충돌 탐색 비용이 해시 출력 길이의 절반 규모로 증가함을 계산합니다.",
+              sourcePdfPages: [787],
+              keywords: ["해시 충돌", "비둘기집 원리", "생일 공격", "Birthday Attack", "충돌 계산량"],
+              questionKeywords: ["해시 충돌 원리", "생일 공격", "Birthday Attack", "충돌 저항성 계산", "최소 비트 해시값"],
+              blocks: [
+                { type: "table", title: "충돌이 생기는 원리", columns: ["원리", "해시와의 관계"], rows: [["비둘기집 원리", "가능한 출력값 수보다 입력이 많으면 적어도 두 입력은 같은 출력값을 가짐"], ["생일 공격", "입력 표본이 늘수록 같은 해시값을 갖는 두 입력을 발견할 확률이 빠르게 증가"]] },
+                { type: "text", title: "출력 n비트의 충돌 탐색", paragraphs: ["n비트 해시의 가능한 출력은 2ⁿ개입니다. 생일 공격에서는 충돌을 찾는 데 대략 2ⁿᐟ² 규모의 시도가 필요하므로, 충돌 저항성은 출력 길이 n의 절반 수준으로 평가합니다."] },
+                { type: "code", title: "교재의 계산 예", language: "text", code: "초당 계산량: 2^32 해시\n시간: 1,024초 = 2^10초\n총 시도량: 2^32 × 2^10 = 2^42\n충돌 방어 조건: 2^(n/2) ≥ 2^42\nn/2 ≥ 42\nn ≥ 84", caption: "교재 예의 조건에서는 최소 84비트 출력이 필요합니다." }
+              ],
+              memoryPoints: ["출력 n비트의 충돌 저항성 수준은 대략 2ⁿᐟ² 연산입니다.", "교재 계산 예: 초당 2³²회 × 2¹⁰초 = 2⁴²회, 따라서 n≥84입니다.", "생일 공격은 역상 탐색과 달리 충돌 쌍을 찾는 공격입니다."]
+            },
+            {
+              id: "hash-applications-and-attacks",
+              title: "해시 활용, 비밀번호 보호와 공격",
+              summary: "무결성 확인과 비밀번호 검증에 쓰이는 해시의 운용법 및 사전 계산 공격 방어 기법을 학습합니다.",
+              sourcePdfPages: [788, 789],
+              keywords: ["해시 활용", "비밀번호 해시", "Rainbow Table", "Salt", "Key Stretching", "Bloom Filter"],
+              questionKeywords: ["해시 함수 활용 분야", "레인보우 테이블 공격", "솔트 키", "키 스트레칭", "블룸 필터", "해시 함수 공격"],
+              blocks: [
+                { type: "table", title: "대표 활용", columns: ["활용", "방법"], rows: [["무결성 검증", "원본과 수신 데이터의 해시값을 비교해 변조 여부를 확인"], ["비밀번호 확인", "입력 비밀번호를 해시해 저장값과 비교"], ["중복 탐지", "같은 해시값을 갖는 데이터를 중복 후보로 식별"]] },
+                { type: "table", title: "레인보우 테이블 방어", columns: ["기법", "역할"], rows: [["Salt", "비밀번호마다 임의값을 더해 같은 비밀번호도 서로 다른 해시를 내게 함"], ["Key Stretching", "해시를 반복 계산해 대량 후보 검증을 느리게 함"], ["Bloom Filter", "집합 포함 여부를 효율적으로 검사해 알려진 취약 비밀번호 차단에 활용"]] },
+                { type: "text", title: "공격 관점", paragraphs: ["레인보우 테이블 공격은 미리 계산해 둔 후보 대응표를 이용해 해시 입력을 찾으려는 공격입니다. 그 밖에 무차별 대입, 충돌을 이용한 공격, 해시 중간 상태나 블록 처리의 성질을 이용한 공격이 소개됩니다. 공격 유형의 공통 목표는 원하는 입력·충돌을 찾거나 메시지를 바꾸고도 검증을 통과하는 것입니다."] }
+              ],
+              memoryPoints: ["파일 무결성은 해시 비교로 검사할 수 있지만, 일반 해시만으로 송신자 인증을 제공하지 않습니다.", "Salt는 비밀번호별 해시를 다르게 하고, Key Stretching은 추측 검증 비용을 높입니다.", "해시 결과를 신뢰 가능한 경로로 비교해야 합니다."]
+            }
+          ]
+        },
+        {
+          id: "general-hash-mdc-sha",
+          chapter: "해시 함수",
+          status: "published",
+          title: "MDC와 해시 알고리즘",
+          summary: "키 없는 변경 감지 코드와 MD·SHA 계열 해시의 용도·출력 구조를 비교합니다.",
+          sourcePdfPages: [789, 791],
+          concepts: [
+            {
+              id: "mdc-and-hash-families",
+              title: "MDC와 대표 해시 계열",
+              summary: "MDC는 송수신 데이터의 변경 여부를 해시값 비교로 확인하지만 송신자 인증까지 제공하지 않습니다.",
+              sourcePdfPages: [789, 790],
+              keywords: ["MDC", "Modification Detection Code", "MD5", "SHA", "LSH", "RIPEMD", "HAS", "HAVAL"],
+              questionKeywords: ["MDC", "변경 감지 코드", "MD5", "SHA 종류", "LSH", "RIPEMD", "HAVAL"],
+              blocks: [
+                { type: "text", title: "MDC의 검증 흐름", paragraphs: ["MDC(Modification Detection Code)는 비밀키를 사용하지 않는 변경 감지 코드입니다. 송신자는 데이터에서 코드를 만들고 수신자는 받은 데이터로 다시 계산해 전달받은 코드와 비교합니다. 값이 같으면 전송 중 변경되지 않았음을 확인하는 데 쓸 수 있습니다.", "MDC는 무결성 검사용이며, 키 기반의 메시지 인증이나 송신자 신원 확인과는 구별해야 합니다. 코드 자체를 공격자가 바꾸지 못하도록 안전하게 전달하는 조건도 중요합니다."] },
+                { type: "table", title: "교재에 소개된 MDC 계열", columns: ["계열", "교재의 요점"], rows: [["MD5", "512비트 메시지 블록을 처리해 128비트 해시값을 출력"], ["SHA", "SHA-0·SHA-1·SHA-2·SHA-3 및 SHAKE 계열"], ["LSH", "국내 표준으로 제정된 경량 해시 함수"], ["RIPEMD-160", "임의 길이 입력을 160비트로 압축"], ["HAS", "국내 KCDSA를 위해 개발된 해시 함수"], ["HAVAL", "MD5와 SHA-1의 장점을 취해 개발된 해시 함수"]] },
+                { type: "text", title: "용어 구분", paragraphs: ["디지털 서명 알고리즘(DSA)은 서명을 생성·검증하는 공개키 알고리즘이고, 해시 함수와 같은 개념이 아닙니다. 서명·인증 응용에서 해시값이 함께 사용될 수 있다는 점과 알고리즘 역할을 나누어 기억합니다."] }
+              ],
+              memoryPoints: ["MDC는 비밀키 없는 변경 감지 코드이며 목적은 무결성 확인입니다.", "MD5는 512비트 블록 처리와 128비트 출력을 갖습니다.", "해시 함수와 DSA(전자서명 알고리즘)는 역할이 다릅니다."]
+            },
+            {
+              id: "sha-family-specifications",
+              title: "SHA 계열의 출력과 구조",
+              summary: "SHA-0/1, SHA-2, SHA-3와 SHAKE의 해시값 크기·블록 구조·운용상 차이를 비교합니다.",
+              sourcePdfPages: [790, 791],
+              keywords: ["SHA-1", "SHA-2", "SHA-3", "SHA-224", "SHA-256", "SHA-384", "SHA-512", "SHAKE"],
+              questionKeywords: ["SHA 함수 특징", "SHA 함수 스펙", "SHA-1 해시값", "SHA-2", "SHA-3", "SHAKE128", "SHA-512/256"],
+              blocks: [
+                { type: "table", title: "교재에 제시된 SHA 출력 사양", columns: ["계열·종류", "해시값 크기", "블록 크기", "연산수"], rows: [["SHA-0", "160비트", "512비트", "80"], ["SHA-1", "160비트", "512비트", "80(20×4)"], ["SHA-224", "224비트", "512비트", "64"], ["SHA-256", "256비트", "512비트", "64"], ["SHA-384", "384비트", "1,024비트", "80"], ["SHA-512", "512비트", "1,024비트", "80"], ["SHA-512/224", "224비트", "1,024비트", "80"], ["SHA-512/256", "256비트", "1,024비트", "80"]] },
+                { type: "table", title: "SHA-3 및 SHAKE", columns: ["종류", "교재에서 강조하는 점"], rows: [["SHA3-224/256/384/512", "각 이름에 해당하는 길이의 해시값을 출력하는 SHA-3 계열"], ["SHAKE128·SHAKE256", "출력 길이를 선택할 수 있는 확장 출력 함수"]] },
+                { type: "text", title: "구형 계열에 관한 교재 설명", paragraphs: ["교재는 SHA-0과 SHA-1에서 충돌 공격이 발견되었다고 설명합니다. SHA-2와 SHA-1은 구조가 유사하므로 SHA-1 계열의 공격 가능성이 SHA-2 평가에도 고려되어야 한다고 덧붙입니다. 이 내용은 교재의 설명 범위로 읽고 실제 운영 정책은 별도의 최신 기준을 확인해야 합니다."] }
+              ],
+              memoryPoints: ["SHA-1: 최대 2⁶⁴비트 미만 입력, 160비트 해시, 512비트 블록, 80단계(20×4).", "SHA-2에는 224·256비트(512비트 블록)와 384·512비트(1,024비트 블록) 변형이 있습니다.", "SHAKE는 출력 길이를 선택하는 확장 출력 계열입니다."]
+            }
+          ]
+        },
+        {
+          id: "general-mac-authentication",
+          chapter: "해시 함수",
+          status: "published",
+          title: "MAC과 메시지 인증",
+          summary: "비밀키 기반 MAC이 메시지 무결성과 출처 인증을 함께 제공하는 원리 및 해시·블록암호 기반 종류를 정리합니다.",
+          sourcePdfPages: [791, 792],
+          concepts: [
+            {
+              id: "mac-properties-and-keyed-hash",
+              title: "MAC의 목적과 성질",
+              summary: "송수신자가 공유한 비밀키와 메시지로 인증 코드를 만들어 메시지 변조 및 출처를 검증합니다.",
+              sourcePdfPages: [791, 792],
+              keywords: ["MAC", "Message Authentication Code", "메시지 인증 코드", "메시지 출처 인증", "무결성"],
+              questionKeywords: ["MAC 특징", "메시지 인증 코드", "MAC 무결성", "메시지 출처 인증", "키드 해시"],
+              blocks: [
+                { type: "text", title: "공유 비밀키를 이용한 검증", paragraphs: ["MAC(Message Authentication Code)은 메시지 M과 송수신자가 공유한 비밀키 K를 이용해 고정 길이 인증 코드를 생성하는 방식입니다. 수신자는 같은 키로 계산한 MAC과 전달받은 MAC을 비교해 메시지의 변조 여부와 공유키 보유자의 출처를 확인합니다.", "생성·검증 시 송수신자가 안전한 방법으로 공유한 비밀키가 필요합니다. MAC은 해시값만 전달하는 MDC와 달리 키를 사용하므로 무결성과 메시지 출처 인증을 제공합니다."] },
+                { type: "table", title: "MAC이 제공하는 보장", columns: ["보장", "의미"], rows: [["무결성", "전송 중 메시지가 변조되지 않았는지 확인"], ["메시지 출처 인증", "공유 비밀키를 가진 상대가 생성한 코드인지 확인"], ["비밀성", "MAC 자체는 메시지를 암호화하지 않으므로 별도 암호화가 필요"]] },
+                { type: "text", title: "재전송 위험", paragraphs: ["MAC이 메시지의 변조를 검출하더라도 오래된 메시지와 그 MAC을 그대로 다시 보내는 재전송을 자동으로 막지는 않습니다. 교재는 중간자가 메시지와 MAC을 가로채 재전송하면 수신자가 정상 송신으로 오인할 수 있는 취약점을 보여 줍니다. 새로움·순서를 별도로 확인하는 프로토콜 설계가 필요합니다."] }
+              ],
+              memoryPoints: ["MAC은 공유 비밀키를 사용하여 무결성과 메시지 출처 인증을 제공합니다.", "MAC은 메시지 암호화나 비밀성 자체를 제공하지 않습니다.", "기존 메시지와 MAC의 재전송은 별도 대응이 필요합니다."]
+            },
+            {
+              id: "mac-constructions-and-families",
+              title: "MAC 생성 기법과 종류",
+              summary: "해시 함수·블록암호와 비밀키를 결합하는 메시지 인증 기법을 분류합니다.",
+              sourcePdfPages: [792],
+              keywords: ["HMAC", "CMAC", "CBC-MAC", "CCM", "GCM", "Keyed Hash"],
+              questionKeywords: ["MAC 종류", "H-MAC", "HMAC", "CMAC", "CBC-MAC", "CCM", "GCM", "메시지 인증 방식 해시 함수 사용 기법"],
+              blocks: [
+                { type: "table", title: "교재의 MAC 종류", columns: ["종류", "기반"], rows: [["HMAC", "해시 함수 기반 MAC"], ["CMAC", "블록 암호 기반 MAC"], ["CBC-MAC", "CBC 블록 암호 모드 기반 MAC"], ["CCM", "Counter with CBC-MAC"], ["GCM", "Galois/Counter Mode"]] },
+                { type: "table", title: "메시지 인증에 해시를 쓰는 방식", columns: ["기법", "동작"], rows: [["키 공유 + 해시", "송신자와 수신자가 공유한 키와 메시지로 인증 해시를 생성"], ["암호화된 해시", "해시값을 만든 뒤 대칭키로 보호해 전송"], ["송신자 개인키 + 해시", "송신자가 해시값에 전자서명하고 수신자가 공개키로 검증"]] },
+                { type: "text", title: "키 없는 해시와 구분", paragraphs: ["일반 해시 함수는 비밀키를 입력으로 사용하지 않습니다. MAC에서는 메시지와 비밀키를 결합해 인증용 값을 만들므로 같은 해시 함수 계열을 사용하더라도 보안 목적과 입력 구성이 다릅니다."] }
+              ],
+              memoryPoints: ["HMAC은 해시 기반, CMAC은 블록 암호 기반 MAC입니다.", "CBC-MAC은 CBC 기반이며 CCM은 Counter와 CBC-MAC을 결합합니다.", "MAC 입력에는 공유 비밀키가 관여하지만 단순 해시 입력에는 비밀키가 없습니다."]
+            }
+          ]
+        },
+        {
+          id: "general-authentication",
+          chapter: "보안 요소 기술",
+          status: "published",
+          title: "사용자·시스템·디바이스 인증",
+          summary: "인증 요소와 OTP·스마트카드·생체인식부터 Kerberos, 통합 계정 관리, 기기 인증까지 연결합니다.",
+          sourcePdfPages: [806, 818],
+          concepts: [
+            {
+              id: "authentication-factors-and-otp",
+              title: "인증 요소와 일회용 비밀번호",
+              summary: "지식·소유·생체·행위 요소를 구분하고 OTP 생성·검증 방식을 비교합니다.",
+              sourcePdfPages: [806, 809],
+              keywords: ["Authentication", "인증", "MFA", "OTP", "Challenge-Response", "S/KEY"],
+              questionKeywords: ["인증 방식", "인증 요소", "2단계 인증", "OTP 방식", "시간 동기화", "이벤트 동기화", "S/KEY", "해시 체인"],
+              blocks: [
+                { type: "table", title: "인증 요소와 예시", columns: ["요소", "확인 대상", "예시"], rows: [["지식", "당신이 알고 있는 것", "비밀번호, PIN"], ["소유", "당신이 가진 것", "인증서, OTP, 스마트카드, USB 토큰"], ["생체·존재", "당신 자체의 고유 특성", "홍채, 정맥, 얼굴, 지문"], ["행위", "당신이 하는 것", "음성, 서명, 발걸음, 몸짓"]] },
+                { type: "text", title: "단일·이중·다중 요소", paragraphs: ["단일 요소 인증은 한 종류, 2FA는 서로 다른 두 인증 요소 유형, MFA는 여러 요소 유형을 사용합니다. 같은 유형의 인증 방식을 두 개 쓰는 것만으로 서로 다른 요소를 결합한 다중 요소 인증이 되지는 않습니다."] },
+                { type: "table", title: "OTP 방식", columns: ["방식", "생성 기준", "검증"], rows: [["질의-응답", "서버가 만든 난수 질의를 클라이언트가 사전 공유키로 처리", "서버가 응답값의 정상 여부 확인"], ["시간 동기화", "클라이언트와 서버가 동기화된 시간값 사용", "같은 시간 구간의 OTP를 비교"], ["이벤트 동기화", "인증 횟수·카운터 사용", "양측 카운터 기반 OTP 비교"], ["시간-이벤트 동기화", "시간값과 카운터를 함께 사용", "양쪽 시간·횟수 상태를 함께 검증"], ["S/KEY", "비밀 초기값에 반복 해시해 체인 생성", "서버가 저장한 다음 체인값과 해시 결과 비교"]] },
+                { type: "text", title: "OTP 운용과 변형", paragraphs: ["OTP는 매 사용마다 바뀌어 비밀번호 재사용 공격을 줄입니다. 의미 있는 숫자나 추측 가능한 값으로 만들지 않고, 한 번 사용한 값을 재사용하지 않도록 관리합니다. 교재는 거래 정보와 연결한 거래 연동 OTP, USIM·스마트카드·MicroSD에 주요 모듈을 둔 OTP를 소개합니다."] }
+              ],
+              memoryPoints: ["인증 요소: 지식·소유·생체(존재)·행위.", "2FA/MFA는 요소의 개수가 아니라 서로 다른 요소 유형을 조합하는지가 중요합니다.", "S/KEY는 해시 함수의 일방향성과 해시 체인을 이용합니다."]
+            },
+            {
+              id: "smartcards-and-biometrics",
+              title: "스마트카드와 생체인증",
+              summary: "접촉식·비접촉식 카드와 정적·동적 인증, 생체인식 오류율 및 설계 지표를 비교합니다.",
+              sourcePdfPages: [810, 812],
+              keywords: ["Smart Card", "SDA", "DDA", "Biometrics", "FAR", "FRR", "CER", "생체인증"],
+              questionKeywords: ["스마트카드 종류", "정적 데이터 인증", "동적 데이터 인증", "FAR", "FRR", "CER", "생체인식 특성", "생체인증 지표"],
+              blocks: [
+                { type: "table", title: "스마트카드 분류와 인증", columns: ["구분", "특징"], rows: [["접촉식", "카드 칩과 단말 접촉부의 물리적 접촉으로 동작"], ["비접촉식", "카드 내 코일 안테나와 전자기 유도로 단말과 통신"], ["SIM 카드", "가입자 인증·과금·보안 정보를 저장"], ["SDA", "인증 때마다 같은 정적 데이터를 사용"], ["DDA", "인증 때마다 다른 동적 데이터를 사용하고 카드 안에서 암호 계산"]] },
+                { type: "table", title: "생체인증 오류율", columns: ["지표", "뜻", "보안·편의 영향"], rows: [["FRR", "권한 있는 사용자를 거부하는 비율", "낮을수록 편의성이 높지만 보안성을 높이면 증가할 수 있음"], ["FAR", "권한 없는 사용자를 허용하는 비율", "낮을수록 보안성이 높으며 편의성을 지나치게 높이면 증가할 수 있음"], ["CER/EER", "FRR과 FAR이 만나는 교차 오류율", "낮을수록 균형이 좋은 시스템"]] },
+                { type: "table", title: "생체인식 시스템의 고려 특성", columns: ["일반적으로 필요한 특성", "설계에서 함께 볼 특성"], rows: [["보편성: 모든 사람이 보유", "정확성·성능: 올바른 인증과 처리량"], ["유일성: 사람마다 구별 가능", "저항성: 모방·해킹 등 공격 방어"], ["영구성: 쉽게 변하지 않음", "수용성: 사용자가 거부감 없이 사용"], ["획득성: 센서로 측정 가능", "지속성: 손실·변화 없이 관리"]] },
+                { type: "text", title: "생체 방식 예시", paragraphs: ["지문 센서는 광학식·정전용량식·초음파식이 소개됩니다. 홍채·얼굴·정맥 인식도 사용되며, 정확도뿐 아니라 기만 용이도와 사용자 수용성도 함께 평가합니다."] }
+              ],
+              memoryPoints: ["CA 개인키와 같은 발급자 비밀키를 스마트카드 단말에 저장하지 않습니다.", "SDA는 정적 데이터, DDA는 인증마다 달라지는 데이터를 사용합니다.", "FAR은 무권한 허용, FRR은 권한 있는 사용자 거부이며 CER/EER은 두 오류율의 교차점입니다."]
+            },
+            {
+              id: "kerberos-authentication-protocol",
+              title: "Kerberos 중앙 집중형 인증",
+              summary: "KDC 안의 AS와 TGS가 TGT·서비스 티켓을 발급하고 세션 키와 인증자로 서비스 접속을 허가합니다.",
+              sourcePdfPages: [813, 815],
+              keywords: ["Kerberos", "KDC", "AS", "TGS", "TGT", "SGT", "Authenticator", "Timestamp"],
+              questionKeywords: ["Kerberos 구성요소", "Kerberos 절차", "TGT", "SGT", "티켓 유효기간", "Kerberos V4", "Kerberos V5"],
+              blocks: [
+                { type: "table", title: "Kerberos 구성요소", columns: ["구성요소", "역할"], rows: [["Client", "Kerberos 영역의 서비스를 이용하는 사용자"], ["KDC", "신뢰되는 제3자 기관으로 AS와 TGS를 포함"], ["AS", "사용자 신원을 확인하고 TGT와 TGS 세션 키를 발급"], ["TGS", "서비스 티켓을 발급"], ["SS", "클라이언트가 요청한 실제 서비스를 제공"]] },
+                { type: "table", title: "인증·서비스 접근 순서", columns: ["순서", "메시지", "처리"], rows: [["1", "Client → AS", "사용자 ID를 전송"], ["2", "AS → Client", "TGT와 암호화된 TGS 세션키를 전달"], ["3", "Client → TGS", "복호화한 TGS 세션키로 만든 Authenticator와 받은 TGT를 전달"], ["4", "TGS → Client", "ID가 일치하면 SGT와 암호화된 SS 세션키를 전달"], ["5", "Client → SS", "Authenticator와 SGT를 전달"], ["6", "SS → Client", "사용자 정보가 일치하면 서비스를 제공"]] },
+                { type: "table", title: "Kerberos V4와 V5 비교(교재 표)", columns: ["항목", "V4", "V5"], rows: [["암호화", "DES만 지원", "다양한 알고리즘 지원"], ["네트워크 주소", "IPv4만", "IPv4와 IPv6"], ["티켓 유효기간", "고정·갱신 불가", "갱신 가능"], ["데이터 형식", "자체 정의 단순 형식", "ASN.1 사용"], ["비밀번호 공격", "취약으로 표시", "교재 표에 별도 비교 설명 없음"]] },
+                { type: "text", title: "티켓과 재전송 방지", paragraphs: ["TGT와 SGT에는 대상 서버, 클라이언트 정보, 주소 및 티켓 유효기간 등이 담깁니다. 인증자는 세션키로 보호된 사용자 정보와 타임스탬프를 사용하며, 티켓 유효기간과 시간 정보를 이용해 재전송 공격 위험을 줄입니다.", "Kerberos는 대칭키 기반의 중앙 집중형 클라이언트-서버 인증이며 Single Sign-On(SSO)에도 활용됩니다. 교재는 비밀번호 추측 및 비밀키 유출 가능성을 주의점으로 듭니다."] }
+              ],
+              memoryPoints: ["KDC의 AS가 TGT를, TGS가 서비스용 SGT를 발급합니다.", "TGT/SGT 티켓과 Authenticator는 서로 다른 역할입니다.", "타임스탬프와 티켓 유효기간은 재전송 위험을 줄이는 요소입니다."]
+            },
+            {
+              id: "sso-fim-eam-iam",
+              title: "SSO와 통합 ID·접근 관리",
+              summary: "SSO 로그인 통합, FIM 연합 ID, EAM 권한관리, IAM 계정 프로비저닝의 범위를 구분합니다.",
+              sourcePdfPages: [815, 817],
+              keywords: ["SSO", "FIM", "Federated Identity Management", "EAM", "IAM", "SAML", "OAuth", "LDAP"],
+              questionKeywords: ["SSO 구현 모델", "Single Sign On", "FIM", "EAM", "IAM", "프로비저닝", "SAML", "OAuth"],
+              blocks: [
+                { type: "text", title: "한 번의 인증에서 연합 ID까지", paragraphs: ["SSO(Single Sign-On)는 한 번의 인증으로 여러 정보 시스템에 다시 로그인하지 않고 접근하게 하는 통합 로그인 솔루션입니다. 로그인 편의와 인증 관리 비용을 줄이지만 통합 인증의 보호가 중요합니다.", "FIM(Federated Identity Management)은 서로 독립적으로 관리되는 조직·서비스의 사용자 신원을 연합해 기존 ID를 유지하면서 다른 서비스와 연결합니다."] },
+                { type: "table", title: "SSO 구현 모델", columns: ["모델", "동작"], rows: [["위임", "로그인 에이전트가 자격증명을 관리하고 사용자를 대신해 대상 서비스에 로그인"], ["전파", "통합 인증 지점이 발급한 토큰을 서비스에 전달하고 서비스가 이를 검증"], ["위임+전파", "애플리케이션 특성에 따라 두 모델을 혼용"], ["웹 쿠키 도메인", "같은 도메인은 공유 쿠키로 상태 유지; 여러 도메인은 각 도메인별 인증·토큰 에이전트를 둠"]] },
+                { type: "table", title: "관련 표준·관리 솔루션", columns: ["기술", "교재가 설명하는 범위"], rows: [["SAML", "서비스 간 사용자 신원 정보를 전달하는 XML 기반 표준"], ["OAuth", "비밀번호를 공유하지 않고 다른 웹사이트·앱에 접근 권한을 부여하는 개방형 표준"], ["EAM", "SSO에 사용자·서비스·역할별 권한 관리와 정책 제어를 더함"], ["IAM", "Identity Management와 Access Management를 통합하고 계정·권한 수명주기를 자동 관리"], ["Provisioning", "사용자에게 시스템 로그인 ID를 발급하는 계정 관리 절차"]] }
+              ],
+              memoryPoints: ["SSO는 여러 시스템에 대한 인증 재사용, FIM은 조직 간 ID 연계입니다.", "EAM은 권한관리·정책을 포함하고 IAM은 계정 프로비저닝까지 관리합니다.", "SAML은 신원 정보 전달, OAuth는 비밀번호를 넘기지 않고 접근 권한을 부여합니다."]
+            },
+            {
+              id: "device-authentication-and-hsm",
+              title: "디바이스 인증과 HSM",
+              summary: "네트워크 기기 식별·인증 방식과 하드웨어 보안 모듈의 암호키 보호 역할을 정리합니다.",
+              sourcePdfPages: [817, 818],
+              keywords: ["Device Authentication", "MAC address", "SSID", "WPA", "RFID", "Challenge-Response", "HSM", "FIPS 140-2"],
+              questionKeywords: ["디바이스 인증", "MAC 주소 인증", "SSID 인증", "RFID 인증", "HSM", "Hardware Security Module"],
+              blocks: [
+                { type: "table", title: "디바이스 인증 방식", columns: ["방식", "동작·용도"], rows: [["아이디·비밀번호", "기기 또는 접속 계정의 지식 요소로 확인"], ["MAC 주소", "등록된 단말 주소를 AP나 인증 서버와 비교해 접속 허용"], ["무선 보안 프로토콜", "AP와 단말 사이 WEP·802.1X·EAP·WPA 계열을 이용해 무선 접속을 확인"], ["시도-응답", "새 난수에 대한 일회성 응답을 확인해 재전송·추측 공격을 줄임"], ["SSID", "AP와 단말이 무선 네트워크 식별자를 공유해 네트워크를 구분"], ["RFID", "태그 ID 또는 태그별 고유 키를 리더와 확인"]] },
+                { type: "text", title: "HSM", paragraphs: ["HSM(Hardware Security Module)은 암호화·복호화·전자서명 연산을 빠르게 수행하고 암호키를 생성·안전하게 보관하는 하드웨어 장치입니다. 교재는 FIPS 140-2를 보안성 인증 적용 표준으로 제시합니다."] },
+                { type: "text", title: "적용 시 유의", paragraphs: ["디바이스 인증은 네트워크에 참여하는 기기를 식별하고 진위를 판단해 일관된 보안 정책과 상호운용성을 지원합니다. 교재의 MAC·SSID 같은 식별정보 기반 방식은 접속 정책의 한 요소이며, 암호 프로토콜 기반 상호 인증과 구분해 이해합니다."] }
+              ],
+              memoryPoints: ["MAC 주소는 지정 단말 식별에, 시도-응답은 새 난수 기반 상호 확인에 쓰입니다.", "HSM은 키를 생성·보관하고 암호 연산을 수행하는 하드웨어 장치입니다.", "SSID는 무선 네트워크 식별자이며 단독으로 강한 사용자 인증을 뜻하지는 않습니다."]
+            }
+          ]
+        },
+        {
+          id: "general-access-control-foundations",
+          chapter: "보안 요소 기술",
+          status: "published",
+          title: "접근통제의 기본 구조와 원칙",
+          summary: "주체·객체·권한과 식별·인증·인가 흐름, 접근통제 정책·모델·메커니즘을 학습합니다.",
+          sourcePdfPages: [838, 840],
+          concepts: [
+            {
+              id: "access-control-actors-and-process",
+              title: "접근통제의 주체·객체와 과정",
+              summary: "능동적으로 자원 접근을 요청하는 주체와 보호 대상 객체, 허용 작업을 연결합니다.",
+              sourcePdfPages: [838, 839],
+              keywords: ["Access Control", "Subject", "Object", "Access", "식별", "인증", "인가"],
+              questionKeywords: ["접근통제 개념", "주체 객체 접근", "식별 인증 인가", "접근통제 과정", "책임추적성"],
+              blocks: [
+                { type: "table", title: "접근통제의 기본 요소", columns: ["요소", "역할", "예"], rows: [["주체(Subject)", "객체·데이터 접근을 요청하는 능동적 개체", "사람, 프로그램, 프로세스"], ["객체(Object)", "접근 대상인 수동적 자원", "파일, 데이터, 프로그램, 프로세스"], ["접근(Access)", "주체가 객체에 수행하려는 작업", "읽기, 생성, 수정, 삭제, 실행"]] },
+                { type: "table", title: "접근통제 판단 순서", columns: ["단계", "질문", "예"], rows: [["식별", "누구라고 주장하는가?", "사용자명, ID, 계정 번호"], ["인증", "그 주장이 사실인가?", "비밀번호, 스마트카드, 생체요소"], ["인가", "인증된 주체가 이 작업을 해도 되는가?", "파일 읽기·쓰기·실행 권한"]] },
+                { type: "text", title: "책임추적성", paragraphs: ["접근통제는 식별·인증·인가로 구성되며, 시스템에서 주체가 어떤 행위를 했는지 기록하는 책임추적성까지 포함할 수 있습니다. 계정을 여러 사람이 공유하면 행위의 실제 주체를 특정하기 어려워 책임추적성이 약해집니다."] }
+              ],
+              memoryPoints: ["주체는 요청자, 객체는 보호 대상, 접근은 주체가 수행하려는 작업입니다.", "순서: 식별(누구인가) → 인증(정말 그 사람인가) → 인가(무엇을 할 수 있나).", "책임추적성은 주체의 행위를 기록해 사후에 추적합니다."]
+            },
+            {
+              id: "access-control-principles-and-controls",
+              title: "최소권한·직무분리와 통제 유형",
+              summary: "필요한 자원만 부여하는 원칙과 상호 견제, 억제부터 회복까지 통제 기능을 구분합니다.",
+              sourcePdfPages: [839, 840],
+              keywords: ["Least Privilege", "Separation of Duty", "최소권한", "직무분리", "Deterrent", "Preventive", "Detective", "Corrective", "Recovery"],
+              questionKeywords: ["최소 권한의 원칙", "직무 분리의 원칙", "접근통제 요구사항", "억제 통제", "예방 통제", "탐지 통제", "회복 통제"],
+              blocks: [
+                { type: "table", title: "두 가지 접근통제 원칙", columns: ["원칙", "적용"], rows: [["최소권한(Least Privilege)", "업무에 필요한 최소 자원과 권한만 부여해 의도적·실수로 생길 피해를 줄임"], ["직무분리(Separation of Duty)", "한 사람이 전체 업무를 단독 수행하지 못하도록 서로 견제되는 단계를 나눔"]] },
+                { type: "text", title: "직무분리 예시", paragraphs: ["교재는 개발과 운영, 보안과 감사, 암호키 변경과 암호키 운영을 분리하는 예를 듭니다. 업무 사이의 상호 견제 기능이 약해지지 않도록 역할을 나눕니다."] },
+                { type: "table", title: "통제 기능의 구분", columns: ["유형", "목적", "예"], rows: [["억제(Deterrent)", "사고·침해를 심리적으로 억제", "경고 배너, CCTV, 출입금지 표시"], ["예방(Preventive)", "위해를 사전에 막음", "비밀번호 정책"], ["탐지(Detective)", "침해 시도를 발견", "로그, 키 입력 모니터링"], ["교정(Corrective)", "발생한 피해를 시정", "교정 절차, 연속성 계획"], ["회복(Recovery)", "사고 시스템을 원상태로 복구", "복구 도구, 백업 시스템"]] }
+              ],
+              memoryPoints: ["최소권한은 권한을 줄여 위험을 제한하고, 직무분리는 한 사람의 독단을 막습니다.", "억제·예방·탐지·교정·회복은 통제 목적이 서로 다릅니다.", "기록은 탐지와 책임추적에, 백업은 회복에 해당합니다."]
+            }
+          ]
+        },
+        {
+          id: "general-access-control-policies",
+          chapter: "보안 요소 기술",
+          status: "published",
+          title: "접근통제 정책과 구현 방식",
+          summary: "MAC·DAC·RBAC 정책과 보안 라벨, 소유자·중앙 관리자 역할, 접근행렬·CL·ACL을 비교합니다.",
+          sourcePdfPages: [841, 846],
+          concepts: [
+            {
+              id: "mac-dac-rbac-policy-models",
+              title: "MAC·DAC·RBAC 정책 비교",
+              summary: "등급, 신원, 역할 가운데 무엇을 기준으로 권한을 부여하는지 구분합니다.",
+              sourcePdfPages: [841, 846],
+              keywords: ["MAC", "Mandatory Access Control", "DAC", "Discretionary Access Control", "RBAC", "Security Label"],
+              questionKeywords: ["MAC DAC RBAC 비교", "강제적 접근통제", "임의적 접근통제", "역할기반 접근통제", "보안 라벨", "접근통제 정책"],
+              blocks: [
+                { type: "table", title: "세 접근통제 방식", columns: ["방식", "권한 기준·관리자", "핵심"], rows: [["MAC", "주체·객체의 보안 등급·라벨; 시스템이 통제", "중앙 관리자가 정한 엄격한 규칙"], ["DAC", "주체의 신원·ID; 객체 소유자", "소유자가 객체 권한을 분산 설정"], ["RBAC", "조직 내 직무 역할; 중앙 관리자", "권한을 역할에 부여하고 사용자에게 역할을 배정"]] },
+                { type: "text", title: "강제적 접근통제(MAC)", paragraphs: ["MAC은 주체의 보안 취급 등급과 객체 보안 라벨을 비교해 접근을 자동으로 결정합니다. 보안 라벨은 민감도 레벨과 카테고리를 포함할 수 있고, 다중 단계 보안(MLS) 환경처럼 강한 중앙 집중 관리가 필요한 경우에 적합합니다.", "장점은 중앙집중 관리와 일관된 강한 보안입니다. 단점은 사용자 기능이 제한되고 운영 관리 부담과 비용이 크며 상업 환경에 맞지 않을 수 있다는 점입니다."] },
+                { type: "text", title: "임의적 접근통제(DAC)", paragraphs: ["DAC은 주체 또는 그룹의 신원과 객체 접근 권한에 따라 통제하며 객체 소유자가 권한을 설정·변경할 수 있습니다. Windows·Linux·Unix 등 일반 운영체제에서 널리 쓰이고 세분화와 유연성이 장점입니다.", "사용자가 다른 사용자에게 권한을 넘길 수 있어 시스템 전체의 일관된 통제가 부족해지거나, 권한이 큰 사용자가 자료를 임의 공유할 수 있습니다."] },
+                { type: "text", title: "역할기반 접근통제(RBAC)", paragraphs: ["RBAC은 권한을 개인 계정에 직접 주는 대신 직무 역할에 부여하고 사용자에게 역할을 배정합니다. 중앙 관리자가 정책을 정하므로 인사 이동이 잦은 조직에서 관리 효율을 높이며, 최소권한·직무분리·데이터 추상화 정책을 적용하기 쉽습니다.", "DAC보다 관리자 중심의 일관된 통제가 가능하지만, 사용자의 구체적 상황을 세밀하게 반영하기 어렵고 역할 설계가 복잡해질 수 있습니다."] }
+              ],
+              memoryPoints: ["MAC 기준은 보안 라벨, DAC 기준은 신원, RBAC 기준은 역할입니다.", "MAC 권한은 시스템, DAC는 객체 소유자, RBAC는 중앙 관리자가 정합니다.", "RBAC는 사람에게 권한을 직접 주지 않고 역할에 권한을 주어 사용자에게 연결합니다."]
+            },
+            {
+              id: "access-control-matrix-acl-capability-list",
+              title: "접근통제 행렬·ACL·Capability List",
+              summary: "주체와 객체 및 권한을 행렬로 표현하고 주체 중심 목록과 객체 중심 목록으로 구현합니다.",
+              sourcePdfPages: [844],
+              keywords: ["Access Control Matrix", "ACL", "Access Control List", "Capability List", "CL"],
+              questionKeywords: ["접근통제 행렬", "ACL", "CL", "접근 가능 자격 목록", "Capability List", "행은 CL"],
+              blocks: [
+                { type: "table", title: "행렬과 두 목록", columns: ["구조", "관점", "내용"], rows: [["접근통제 행렬", "주체와 객체 관계 전체", "주체를 행, 객체를 열로 두고 교차 셀에 읽기·쓰기 등 권한 기록"], ["CL(Capability List)", "주체 중심", "한 주체가 접근할 수 있는 객체와 각 권한을 나열; 행렬의 행에 해당"], ["ACL(Access Control List)", "객체 중심", "한 객체에 접근할 수 있는 주체와 권한을 나열; 행렬의 열에 해당"]] },
+                { type: "text", title: "표현과 관리", paragraphs: ["접근통제 행렬은 이론적인 전체 구조입니다. 실제 구현에서 CL은 사용자에게 어떤 객체를 허용할지를 기록하고 ACL은 각 객체의 권한 목록을 기록합니다. 행렬은 관계를 직접 표현하기 쉽지만 주체와 객체 수가 많으면 관리가 어려워집니다."] }
+              ],
+              memoryPoints: ["행렬의 행은 주체, 열은 객체입니다.", "CL은 주체 중심의 행, ACL은 객체 중심의 열을 표현합니다.", "'이 사용자가 어디에 접근할 수 있나'는 CL, '이 파일에 누가 접근할 수 있나'는 ACL입니다."]
+            }
+          ]
+        },
+        {
+          id: "general-access-control-security-models",
+          chapter: "보안 요소 기술",
+          status: "published",
+          title: "접근통제 보안 모델",
+          summary: "기밀성 중심 BLP와 무결성 중심 Biba, 상업용 무결성 모델, 이해충돌 차단과 정보 흐름을 비교합니다.",
+          sourcePdfPages: [847, 849],
+          concepts: [
+            {
+              id: "blp-biba-security-models",
+              title: "Bell–LaPadula와 Biba",
+              summary: "BLP는 기밀성, Biba는 무결성을 보호하며 읽기·쓰기 방향 규칙이 서로 반대입니다.",
+              sourcePdfPages: [847, 848],
+              keywords: ["Bell-LaPadula", "BLP", "Biba", "No Read Up", "No Write Down", "No Read Down", "No Write Up"],
+              questionKeywords: ["벨-라파둘라 모델", "Bell-LaPadula", "비바 모델", "Biba", "No Read Up", "No Write Down", "No Read Down", "No Write Up"],
+              blocks: [
+                { type: "table", title: "보호 목표와 기본 규칙", columns: ["모델", "목표", "읽기 규칙", "쓰기 규칙"], rows: [["Bell–LaPadula (BLP)", "기밀성", "No Read Up: 낮은 등급 주체는 높은 등급 객체를 읽지 못함", "No Write Down: 높은 등급 주체는 낮은 등급 객체에 쓰지 못함"], ["Biba", "무결성", "No Read Down: 높은 무결성 주체는 낮은 무결성 객체를 읽지 못함", "No Write Up: 낮은 무결성 주체는 높은 무결성 객체를 수정하지 못함"]] },
+                { type: "text", title: "강한 스타 규칙과 호출 규칙", paragraphs: ["BLP의 특수 스타 속성은 같은 레벨에서 읽기와 쓰기만 허용합니다. 교재는 BLP에서 낮은 등급 주체가 상위 객체를 보지 않고 수정할 수 있는 Blind Write가 가능해 무결성이 보장되지 않을 수 있다고 설명합니다.", "Biba는 무결성 수준을 보호하는 상태 머신 모델입니다. 교재는 No Read Down·No Write Up 외에 높은 무결성 주체에 서비스를 요청할 수 없는 호출 속성을 제시합니다."] },
+                { type: "text", title: "방향을 빠르게 구분", paragraphs: ["기밀성 BLP는 정보가 높은 등급에서 낮은 등급으로 새지 않도록 '위로 읽지 않고 아래로 쓰지 않음'을 기억합니다. 무결성 Biba는 낮은 신뢰 정보가 높은 무결성 영역을 오염시키지 않도록 '아래로 읽지 않고 위로 쓰지 않음'을 적용합니다."] }
+              ],
+              memoryPoints: ["BLP는 기밀성: No Read Up, No Write Down; 강한 스타는 동일 등급 읽기·쓰기입니다.", "Biba는 무결성: No Read Down, No Write Up입니다.", "BLP는 기밀성은 다루지만 무결성까지 보장하지 않습니다."]
+            },
+            {
+              id: "commercial-integrity-and-chinese-wall",
+              title: "Clark–Wilson과 Chinese Wall 모델",
+              summary: "상업 환경의 데이터 무결성·일관성 보호와 사용자의 과거 접근에 따른 이해충돌 차단을 설명합니다.",
+              sourcePdfPages: [848, 849],
+              keywords: ["Clark-Wilson", "Chinese Wall Model", "무결성", "이해충돌", "직무분리"],
+              questionKeywords: ["클락-월슨 무결성 모델", "Clark-Wilson", "만리장성 모델", "Chinese Wall", "이해충돌 방지"],
+              blocks: [
+                { type: "table", title: "두 모델의 목표", columns: ["모델", "환경·목표", "핵심"], rows: [["Clark–Wilson", "상업용 애플리케이션의 데이터 무결성과 일관성", "비인가자의 부적절한 변경, 내부·외부 객체 일관성 훼손, 합법적 사용자의 불법 수정 방지; 사용자는 프로그램을 통해서만 객체에 접근"], ["Chinese Wall", "직무분리와 이해충돌 방지", "사용자의 이전 동작에 따라 접근 허용을 바꾸어 충돌 관계가 있는 자원 간 정보 흐름을 차단"]] },
+                { type: "text", title: "Chinese Wall의 동적 권한", paragraphs: ["Chinese Wall 모델은 사용자별 과거 접근 이력을 바탕으로 충돌을 일으킬 수 있는 다른 자원의 접근을 제한합니다. 이전 접근에 따라 접근 가능 범위가 달라집니다."] }
+              ],
+              memoryPoints: ["Clark–Wilson은 상업 환경의 데이터 무결성·일관성을 다룹니다.", "Clark–Wilson에서는 사용자가 프로그램을 통해서만 객체에 접근합니다.", "Chinese Wall은 이전 접근 이력에 따라 이해충돌이 생기는 자원 접근을 막습니다."]
+            },
+            {
+              id: "information-flow-and-covert-channels",
+              title: "정보 흐름 모델과 은닉 채널",
+              summary: "보안 수준 사이 정보 이동을 통제하는 모델과 보안 메커니즘을 우회해 정보를 몰래 전달하는 경로를 알아봅니다.",
+              sourcePdfPages: [849],
+              keywords: ["Information Flow Model", "정보 흐름", "Covert Channel", "은닉 채널", "비밀 채널"],
+              questionKeywords: ["정보 흐름 모델", "은닉 채널", "비밀 채널", "BLP Biba 정보 흐름"],
+              blocks: [
+                { type: "text", title: "정보 수준 간 흐름", paragraphs: ["정보 흐름 모델은 기밀성 또는 무결성 수준이 다른 영역 사이의 이동을 포함해 시스템 내 정보 흐름을 다룹니다. BLP와 Biba 같은 모델이 정보 흐름 정책의 사례입니다.", "정책이 정상적으로 적용되더라도 메커니즘을 우회하는 은닉 채널(Covert Channel)을 통해 정보가 비밀리에 전달될 수 있습니다. 보호 정책은 은닉 채널이 생기는 경로와 이를 제한하는 규칙도 고려해야 합니다."] },
+                { type: "table", title: "은닉 채널 관점", columns: ["정상 경로", "은닉 채널"], rows: [["정책이 정한 주체·객체·권한으로 데이터 전달", "정상 보안 메커니즘을 우회해 보호 정보를 몰래 송수신"], ["접근통제 규칙이 흐름을 검사", "정책을 지켜 보이면서 별도의 신호 경로를 숨길 수 있음"]] }
+              ],
+              memoryPoints: ["정보 흐름은 서로 다른 보안 수준 사이의 데이터 이동을 통제합니다.", "은닉 채널은 보안 메커니즘을 우회해 보호 정보를 비밀리에 전달하는 경로입니다.", "BLP는 기밀성, Biba는 무결성을 중심으로 정보 흐름을 제한합니다."]
+            }
+          ]
+        },
+        {
+          id: "general-digital-signatures-certificates",
+          chapter: "보안 요소 기술",
+          status: "published",
+          title: "전자서명과 인증서",
+          summary: "전자서명이 제공하는 보안 속성, 서명 생성·검증 흐름, X.509 인증서와 서명 방식의 차이를 학습합니다.",
+          sourcePdfPages: [866, 873],
+          concepts: [
+            {
+              id: "x509-certificate-structure",
+              title: "X.509 공개키 인증서",
+              summary: "인증기관이 서명한 인증서는 공개키와 주체의 신원을 결합하고 유효기간과 용도를 확인할 근거를 제공합니다.",
+              sourcePdfPages: [866, 868],
+              keywords: ["X.509", "인증서", "Certificate", "공개키", "Issuer", "Subject", "Extensions", "Device Certificate"],
+              questionKeywords: ["X.509 인증서 구조", "X.509 인증서", "인증서 구성 요소", "인증서 특징", "디바이스 인증서"],
+              blocks: [
+                { type: "text", title: "공개키와 신원의 연결", paragraphs: ["공개키 인증서는 공개키가 특정 사용자·서버·기관의 것임을 확인할 수 있도록 신원 정보와 공개키를 결합하고 발급자의 전자서명을 붙인 데이터입니다. 상대방은 신뢰하는 발급자의 공개키로 인증서 서명을 검증해 내용의 무결성과 발급자를 확인합니다.", "인증서는 공개키의 소유자를 확인하는 수단이지 통신 내용을 암호화하는 기능 그 자체는 아닙니다. 전자서명만으로 기밀성이 생기지 않으므로 기밀성이 필요하면 별도 암호화가 필요합니다."] },
+                { type: "table", title: "X.509 인증서의 주요 필드", columns: ["필드", "역할"], rows: [["Version", "인증서 형식의 버전; v3는 확장(Extensions) 필드를 지원"], ["Serial Number", "발급기관이 인증서를 구분하기 위해 부여하는 번호"], ["Signature Algorithm Identifier", "발급기관 서명에 사용한 알고리즘 식별"], ["Issuer Name / Validity Period", "발급자 이름 / 시작·종료 유효기간"], ["Subject Name / Public Key Information", "인증서 대상 주체 / 주체의 공개키와 알고리즘"], ["Issuer·Subject Unique ID", "발급자 또는 주체를 구별하는 선택 필드"], ["Extensions", "키 용도, 정책, CRL 정보, 제약조건 등 추가 정보; v3에서 사용"], ["Signature", "발급자가 인증서 내용에 대해 생성한 서명"]] },
+                { type: "text", title: "인증서의 범위", paragraphs: ["인증서는 유효기간, 키 용도와 정책, 폐지 여부를 함께 확인해야 합니다. 교재는 RSA·ECC 공개키를 사용하는 IoT 기기·서버·모바일 단말용 디바이스 인증서도 다룹니다. 기기 폐기 시 인증서 폐지와 유효기간 도래 시 갱신이 관리 항목입니다."] }
+              ],
+              memoryPoints: ["인증서는 공개키와 주체의 신원을 발급기관 서명으로 묶습니다.", "X.509 v3의 Extensions에는 키 용도·정책·폐지 정보 등이 들어갈 수 있습니다.", "인증서나 전자서명만으로 기밀성이 보장되지는 않습니다."]
+            },
+            {
+              id: "digital-signature-properties-and-process",
+              title: "전자서명의 보안 속성과 생성·검증",
+              summary: "서명은 메시지 다이제스트를 서명자 개인키로 서명하고 공개키로 확인해 출처와 무결성을 검증합니다.",
+              sourcePdfPages: [868, 872],
+              keywords: ["Digital Signature", "전자서명", "무결성", "부인방지", "전자봉투", "개인키", "공개키"],
+              questionKeywords: ["전자서명의 특징", "전자서명 생성 절차", "전자서명 검증", "전자봉투", "전자서명 기밀성"],
+              blocks: [
+                { type: "table", title: "전자서명이 제공하는 속성", columns: ["속성", "의미"], rows: [["위조 불가", "서명 생성키를 가진 서명자만 유효한 서명을 생성"], ["서명자 인증", "검증자가 서명자의 공개키로 서명자를 확인"], ["부인방지", "서명자가 유효하게 서명한 사실을 부인하기 어렵게 함"], ["무결성", "서명 이후 문서가 변경되면 검증 결과로 변경을 탐지"], ["재사용 방지", "서명은 해당 문서와 결합되어 다른 문서에 그대로 재사용할 수 없음"]] },
+                { type: "diagram", title: "메시지 서명과 검증", nodes: [{ label: "송신자", detail: "메시지 해시 → 다이제스트를 개인키로 서명" }, { label: "전송", detail: "메시지와 전자서명을 전달" }, { label: "수신자", detail: "메시지 해시 후 서명을 공개키로 검증" }], caption: "수신자는 직접 계산한 다이제스트와 서명에서 검증한 다이제스트를 비교합니다. 이 서명 절차만으로 메시지가 암호화되지는 않습니다." },
+                { type: "text", title: "전자봉투와 결합", paragraphs: ["전자봉투는 메시지와 전자서명을 대칭키로 암호화하고, 그 대칭키를 수신자의 공개키로 암호화해 수신자만 복호화할 수 있게 합니다. 서명은 송신자 인증·무결성·부인방지를, 전자봉투는 전송 데이터의 기밀성을 보완합니다."] }
+              ],
+              memoryPoints: ["송신자는 메시지 다이제스트를 자신의 개인키로 서명하고, 수신자는 송신자 공개키로 검증합니다.", "서명은 기밀성을 제공하지 않으므로 필요하면 전자봉투 등 별도 암호화를 사용합니다.", "전자봉투는 데이터용 대칭키를 수신자 공개키로 보호합니다."]
+            },
+            {
+              id: "digital-signature-scheme-types",
+              title: "메시지 복원형과 부가형 서명",
+              summary: "서명 검증 결과에서 원문을 복원하는 방식과 원문에 서명을 덧붙이는 방식을 구별합니다.",
+              sourcePdfPages: [872, 873],
+              keywords: ["Message Recovery", "Signature with Appendix", "RSA", "ElGamal", "DSS", "DSA", "KCDSA", "Schnorr"],
+              questionKeywords: ["메시지 복원형 전자서명", "메시지 부가형 전자서명", "RSA 전자서명", "ElGamal", "DSS", "KCDSA"],
+              blocks: [
+                { type: "table", title: "두 서명 방식", columns: ["구분", "메시지 복원형", "메시지 부가형"], rows: [["검증", "서명 검증 과정에서 원문 메시지를 복원", "원문 메시지와 별도로 전달된 서명을 검증"], ["프로토콜", "별도의 서명 프로토콜이 필요하지 않을 수 있음", "원문과 서명을 함께 다루는 서명 프로토콜 사용"], ["교재의 대표 예", "RSA", "ElGamal, DSS/DSA, KCDSA, Schnorr 등"]] },
+                { type: "text", title: "선택 시 주의", paragraphs: ["교재는 메시지 복원형이 메시지 전체를 다뤄 서명 생성·검증 시간이 커질 수 있다고 비교합니다. 실제 선택에서는 메시지 크기, 전송 형식과 표준 프로토콜 요구를 함께 고려해야 합니다."] }
+              ],
+              memoryPoints: ["메시지 복원형은 검증 과정에서 원문을 복원하고, 부가형은 원문과 서명을 분리해 전달합니다.", "교재 비교표의 메시지 복원형 대표는 RSA입니다."]
+            }
+          ]
+        },
+        {
+          id: "general-pki-and-certificate-status",
+          chapter: "보안 요소 기술",
+          status: "published",
+          title: "PKI와 인증서 상태 관리",
+          summary: "공개키 기반 구조의 기관 역할과 신뢰 구조, 인증서 폐지 목록·온라인 상태 확인, 무선 PKI를 정리합니다.",
+          sourcePdfPages: [873, 880],
+          concepts: [
+            {
+              id: "pki-components-and-roles",
+              title: "PKI 구성요소와 기관 역할",
+              summary: "정책·발급·등록·검증·저장과 폐지 확인을 여러 PKI 구성요소가 분담합니다.",
+              sourcePdfPages: [873, 875],
+              keywords: ["PKI", "PAA", "PCA", "CA", "RA", "VA", "CRL", "Repository", "OCSP", "Root CA"],
+              questionKeywords: ["PKI 구성요소", "PAA PCA CA RA VA", "인증기관", "등록기관", "검증기관", "PKI 특징"],
+              blocks: [
+                { type: "table", title: "PKI 구성요소", columns: ["구성요소", "주요 역할"], rows: [["PAA (Policy Approving Authority)", "PKI 정책과 절차를 승인"], ["PCA (Policy Certification Authority)", "정책 도메인에서 인증기관 정책을 정하거나 관리"], ["CA (Certification Authority)", "인증서를 발급·서명하고 관리"], ["RA (Registration Authority)", "신청자 신원 확인과 인증서 발급 요청을 중계"], ["VA (Validation Authority)", "인증서의 유효성 검증 서비스 제공"], ["CRL·OCSP", "폐지된 인증서 목록 또는 온라인 상태 응답 제공"], ["Repository", "인증서와 관련 정보를 저장·배포"]] },
+                { type: "text", title: "신뢰와 상호운용", paragraphs: ["PKI는 공개키와 인증서를 이용해 통신 당사자를 인증하고 무결성·기밀성·부인방지와 같은 서비스를 지원하는 기반 구조입니다. 인증서를 신뢰하려면 인증서 서명뿐 아니라 신뢰할 수 있는 CA까지 이어지는 발급 경로와 유효기간·폐지 상태를 확인해야 합니다.", "최상위 신뢰점인 Root CA는 자신의 인증서를 자체 서명하는 방식으로 신뢰 체계의 시작점이 됩니다. 교재는 PAA가 최상위 정책 승인 역할을 수행하는 경우도 설명합니다."] },
+                { type: "table", title: "PKI 신뢰 구조", columns: ["구조", "구성", "장점과 고려점"], rows: [["계층형", "Root CA 아래에 하위 CA를 두고 상위가 하위 인증서를 발급", "경로 검증이 비교적 쉽고 계층 조직에 적합; 루트 키와 최상위 기관에 신뢰가 집중"], ["네트워크형", "독립 CA들이 상호 인증으로 신뢰 연결", "분산된 도메인 간 연결에 적합; 상호 인증 관계와 경로 관리가 복잡"], ["혼합형", "계층형과 네트워크형 구조를 함께 사용", "조직별 운영과 도메인 간 신뢰를 절충"]] }
+              ],
+              memoryPoints: ["CA는 인증서 발급·서명, RA는 신청자 확인·중계, VA는 유효성 검증을 담당합니다.", "Root CA는 PKI 계층 구조에서 최상위 신뢰점입니다.", "계층형은 경로가 명료하고 네트워크형은 독립 CA 간 상호 인증을 사용합니다."]
+            },
+            {
+              id: "crl-ocsp-certificate-revocation",
+              title: "CRL과 OCSP 인증서 폐지 확인",
+              summary: "CRL의 배치형 폐지목록과 OCSP의 온라인 상태 응답을 비교하고 폐지 상태를 판독합니다.",
+              sourcePdfPages: [877, 879],
+              keywords: ["CRL", "Certificate Revocation List", "OCSP", "Good", "Revoked", "Unknown", "Hold", "RFC 2560", "RFC 3280"],
+              questionKeywords: ["CRL과 OCSP 비교", "인증서 폐지 목록", "OCSP 응답", "인증서 효력 중지", "인증서 해지"],
+              blocks: [
+                { type: "table", title: "폐지 상태", columns: ["상태", "의미"], rows: [["Revoked", "인증서가 영구적으로 해지됨. 키 유출이나 잘못된 발급 등이 원인일 수 있음"], ["Hold", "인증서 효력이 임시 중지되어 이후 복구 여부를 판단할 수 있음"], ["유효기간 만료", "인증서의 종료 시각이 지남; 폐지와는 별개의 상태"]] },
+                { type: "table", title: "CRL과 OCSP 비교", columns: ["항목", "CRL", "OCSP"], rows: [["확인 방식", "CA가 발행한 폐지목록을 클라이언트가 내려받아 조회", "클라이언트가 서버에 특정 인증서 상태를 온라인 질의"], ["정보와 시점", "목록 갱신 주기 사이 정보가 늦을 수 있음; 목록에 없는 인증서는 목록 관점에서 판단", "질의 시점의 Good·Revoked·Unknown 상태 응답"], ["운영 특성", "배치형이며 목록 크기와 배포 주기를 고려", "실시간성이 높지만 질의량에 따른 서버 부하·비용 고려"], ["교재 표의 RFC", "RFC 3280", "RFC 2560"]] },
+                { type: "text", title: "OCSP 응답", paragraphs: ["OCSP의 Good은 조회 시점에 서버가 폐지 사실을 확인하지 못한 유효 상태, Revoked는 영구 폐지 또는 일시 정지, Unknown은 서버가 해당 인증서에 관한 정보를 알지 못하는 상태입니다. OCSP 응답이 있다는 사실만으로 인증서 경로 전체가 자동으로 신뢰되는 것은 아니므로 인증서 체인과 정책 검증은 별도로 고려합니다.", "교재의 표에는 OCSP RFC 2560, CRL RFC 3280로 제시되어 있습니다. 이는 교재에 인쇄된 표준 번호를 기록한 것으로, 현재 표준 상태를 갱신해 설명하는 항목은 아닙니다."] }
+              ],
+              memoryPoints: ["CRL은 폐지 목록을 배포하는 방식, OCSP는 개별 인증서 상태를 온라인으로 묻는 방식입니다.", "OCSP 응답은 Good·Revoked·Unknown으로 구분합니다.", "Hold는 영구 해지가 아니라 임시 효력 중지입니다."]
+            },
+            {
+              id: "wpki-wireless-pki",
+              title: "무선 공개키 기반 구조 WPKI",
+              summary: "WAP 기반 무선 환경에 맞춰 인증서를 발급·운영·관리하는 공개키 기반 구조입니다.",
+              sourcePdfPages: [880],
+              keywords: ["WPKI", "Wireless PKI", "WAP", "CA", "RA", "OCSP", "무선 인증서"],
+              questionKeywords: ["WPKI", "무선 PKI", "WAP 기반 공개키 기반 구조"],
+              blocks: [
+                { type: "text", title: "무선 환경의 인증 기반", paragraphs: ["WPKI는 WAP 기반 서버와 클라이언트의 인증을 위해 무선 환경에 적합한 인증서를 발급하고 운영·관리하는 무선망 공개키 기반 구조입니다. 구성에는 CA·RA 서버, 클라이언트, 디렉터리 서버, OCSP 서버와 전자서명 응용이 포함됩니다.", "RA는 신청자의 신원을 확인해 CA로 요청을 전달하고, CA는 인증서를 발급·관리합니다. 디렉터리는 인증서 정보를 저장하며 OCSP는 인증서 상태 확인에 쓰입니다."] }
+              ],
+              memoryPoints: ["WPKI는 WAP 기반 무선 환경에 적합하도록 인증서를 발급·관리하는 PKI입니다.", "주요 구성은 CA, RA, 클라이언트, 디렉터리, OCSP와 전자서명 응용입니다."]
+            }
+          ]
+        },
+        {
+          id: "general-digital-signature-applications",
+          chapter: "보안 요소 기술",
+          status: "published",
+          title: "전자서명 응용과 특수 서명",
+          summary: "전자입찰·투표, XML 전자서명, 은닉서명과 SET 이중서명, 특수 전자서명 유형을 정리합니다.",
+          sourcePdfPages: [880, 886],
+          concepts: [
+            {
+              id: "electronic-tender-voting-signature",
+              title: "전자입찰과 전자투표",
+              summary: "전자서명과 해시를 사용해 입찰의 무결성·비밀성을 지키고 투표의 정당성과 익명성을 확보합니다.",
+              sourcePdfPages: [880, 882],
+              keywords: ["전자입찰", "LKR", "PL", "전자투표", "PSEV", "Kiosk", "REV", "익명성", "완전성"],
+              questionKeywords: ["전자입찰 요구사항", "전자투표 방식", "PSEV Kiosk REV", "전자투표시스템 요구조건"],
+              blocks: [
+                { type: "table", title: "전자입찰과 전자투표의 고려사항", columns: ["응용", "핵심 처리·요구"], rows: [["전자입찰", "입찰 내용의 해시와 전자서명으로 무결성과 부인방지를 확인하고 입찰 정보의 기밀성과 공정성 유지"], ["전자투표", "검증가능성, 정당성, 완전성, 자격 제한, 이중투표 방지, 익명성, 건전성을 갖추도록 설계"]] },
+                { type: "table", title: "전자투표 방식", columns: ["방식", "투표 환경"], rows: [["PSEV (Poll Site E-Voting)", "지정된 투표소의 전자투표 장치 사용"], ["Kiosk", "유동 인구가 있는 곳 등에 키오스크 설치"], ["REV (Remote Internet E-Voting)", "원격 인터넷을 통해 투표"]] },
+                { type: "text", title: "요구조건의 균형", paragraphs: ["전자투표는 투표 자격이 있는 사람만 참여하고 한 사람이 중복 투표하지 못하게 하면서, 투표 내용이 누구에게도 식별되지 않도록 해야 합니다. 동시에 투표가 빠짐없이 반영되고 결과를 검증할 수 있어야 합니다. 익명성만 강화해 정당성 검증을 잃거나, 검증을 위해 신원을 투표 내용과 연결하지 않도록 설계해야 합니다."] }
+              ],
+              memoryPoints: ["PSEV는 지정 투표소 장치, Kiosk는 키오스크, REV는 원격 인터넷 투표입니다.", "전자투표 요구조건에는 검증가능성·정당성·완전성·자격제한·중복방지·익명성·건전성이 포함됩니다.", "전자입찰은 입찰 내용의 기밀성과 서명을 통한 무결성·부인방지를 함께 고려합니다."]
+            },
+            {
+              id: "xml-signature-and-blind-signature",
+              title: "XML 전자서명과 은닉서명",
+              summary: "XML 문서 내 서명 배치 형태와 서명자가 메시지를 보지 않고 서명하는 은닉서명의 목적·한계를 구별합니다.",
+              sourcePdfPages: [882, 884],
+              keywords: ["XML Signature", "SignedInfo", "SignatureValue", "KeyInfo", "Object", "Enveloped", "Enveloping", "Detached", "Blind Signature", "Chaum"],
+              questionKeywords: ["XML 전자서명", "Enveloped Enveloping Detached", "은닉서명", "블라인드 서명"],
+              blocks: [
+                { type: "table", title: "XML Signature 주요 요소", columns: ["요소", "역할"], rows: [["Signature", "XML 전자서명 전체 구조"], ["SignedInfo", "서명 대상 참조와 정규화·다이제스트·서명 알고리즘 정보"], ["SignatureValue", "SignedInfo에 대한 서명값"], ["KeyInfo", "검증에 사용할 키 또는 인증서 정보"], ["Object", "서명과 함께 전달할 임의의 데이터"]] },
+                { type: "table", title: "서명과 데이터의 배치", columns: ["형태", "배치"], rows: [["Enveloped", "서명 요소가 서명 대상 XML 문서 안에 들어감"], ["Enveloping", "서명 대상 데이터가 Signature 요소 안에 들어감"], ["Detached", "서명과 대상 데이터가 분리되어 별도로 참조됨"]] },
+                { type: "text", title: "은닉서명", paragraphs: ["은닉서명(Blind Signature)은 이용자가 메시지를 가린 형태로 서명을 요청해 서명자가 원문을 알지 못한 채 서명하게 하는 기법입니다. 전자현금 등에서 서명자와 이용 내역을 분리해 프라이버시를 높이는 데 활용됩니다.", "익명성은 자금세탁 등 악용 추적을 어렵게 할 수 있습니다. 교재는 필요할 때 추적 가능한 공정 은닉서명(Fair Blind Signature)을 역기능 대응 방안으로 설명합니다."] }
+              ],
+              memoryPoints: ["Enveloped는 서명이 문서 안에, Enveloping은 데이터가 Signature 안에, Detached는 서로 분리됩니다.", "은닉서명은 서명자가 메시지 원문을 보지 않고 서명하게 합니다.", "은닉서명의 익명성과 악용 추적 가능성 사이 균형을 고려합니다."]
+            },
+            {
+              id: "set-dual-signature-and-special-signatures",
+              title: "SET 이중서명과 특수 전자서명",
+              summary: "구매자 정보와 지불 정보를 분리해 각 당사자의 정보 노출을 제한하는 이중서명과 기타 특수 서명 유형을 살펴봅니다.",
+              sourcePdfPages: [884, 886],
+              keywords: ["Dual Signature", "SET", "구매정보", "지불정보", "Payment Gateway", "확인 서명", "지정 검증자", "위임 서명", "다중 서명"],
+              questionKeywords: ["이중서명 생성 절차", "SET 이중서명", "구매정보 지불정보", "특수 전자서명", "위임서명", "다중서명"],
+              blocks: [
+                { type: "diagram", title: "SET 이중서명의 분리 검증", nodes: [{ label: "구매자", detail: "구매정보 M1·지불정보 M2를 각각 해시하고 결합 다이제스트에 서명" }, { label: "판매자", detail: "구매정보 M1과 결합값으로 서명을 검증; 지불정보는 보지 않음" }, { label: "PG", detail: "복호화한 지불정보 M2와 결합값으로 검증; 구매정보는 보지 않음" }], caption: "SET 이중서명은 판매자와 결제 게이트웨이가 각자 필요한 정보만 확인하면서 동일 주문의 연결성을 검증하게 합니다." },
+                { type: "text", title: "생성과 검증의 핵심", paragraphs: ["구매자는 구매정보 M1과 지불정보 M2를 각각 해시하고 두 다이제스트를 결합해 다시 해시한 값에 개인키로 서명합니다. 지불정보는 대칭키로 암호화하고 대칭키는 PG의 공개키로 암호화해 전자봉투로 전달합니다.", "판매자는 평문 구매정보로 M1을 다시 계산하고 전달된 결합 정보와 서명을 검증하지만 지불정보를 볼 수 없습니다. PG는 전자봉투를 열어 지불정보에서 M2를 계산하고 서명을 검증하지만 구매정보를 알 수 없습니다. 두 검증은 같은 거래의 구매·지불 정보가 함께 서명되었음을 확인합니다."] },
+                { type: "table", title: "그 밖의 특수 서명", columns: ["유형", "구별점"], rows: [["확인 서명(undeniable/confirmation)", "서명 검증을 위해 서명자의 확인 절차가 필요"], ["지정 검증자 서명", "지정된 검증자만 서명을 확인할 수 있도록 제한"], ["위임 서명", "서명 권한을 위임받은 사람이 위임자를 대신해 서명"], ["다중 서명", "한 문서에 여러 서명자의 서명을 결합"]] }
+              ],
+              memoryPoints: ["SET 이중서명은 구매정보와 지불정보를 각각 해시한 뒤 결합값에 서명합니다.", "판매자는 구매정보만, PG는 지불정보만 확인할 수 있도록 정보 공개를 분리합니다.", "이중서명은 SET 결제 거래의 연결성·무결성을 확인하면서 각 당사자의 정보 노출을 제한합니다."]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "information-security-management-law",
+      title: "정보보안 관리 및 법규",
+      description: "정보보호 거버넌스와 위험관리부터 보안 운영, 인증제도, 정보보호 법규까지 교재 순서로 학습합니다.",
+      units: [
+        {
+          id: "management-security-governance",
+          chapter: "정보보호 관리",
+          status: "published",
+          title: "정보보호 관리와 거버넌스",
+          summary: "정보보호의 목표와 통제, 거버넌스 프레임워크, 조직별 책임과 상위 보안 문서를 연결합니다.",
+          sourcePdfPages: [914, 920],
+          concepts: [
+            {
+              id: "management-information-security-goals",
+              title: "정보보호의 목적과 보안 속성",
+              summary: "정보의 생애주기 전반에서 CIA를 보호하고 책임추적성과 인증으로 보완합니다.",
+              sourcePdfPages: [914, 915],
+              keywords: ["Information Security", "기밀성", "무결성", "가용성", "책임추적성", "인증", "CIA"],
+              questionKeywords: ["정보보호의 목적", "기밀성 무결성 가용성", "정보보안 속성", "책임추적성", "가용성 특징"],
+              blocks: [
+                { type: "text", title: "보호 범위와 균형", paragraphs: ["정보보호는 정보의 수집·저장·송수신 등 처리 전 과정에서 발생할 수 있는 위조·변조·훼손·유출·사용 방해를 막고 정보자산을 안전하게 관리하는 활동입니다. 조직은 정보의 흐름 전체를 대상으로 보호 목표와 통제를 정합니다.", "정보보호의 기본 목표는 기밀성·무결성·가용성입니다. 어느 하나를 무조건 높이는 대신 업무와 위험에 맞는 균형을 잡아야 합니다. 예를 들어 암호화와 접근 제한을 과도하게 적용하면 이용성이 낮아져 가용성이 떨어질 수 있습니다."] },
+                { type: "table", title: "정보보호의 기본 속성", columns: ["속성", "의미", "교재 예시"], rows: [["기밀성 (Confidentiality)", "정보가 비인가자에게 노출되지 않게 보호", "암호화, 접근제어, 비밀번호"], ["무결성 (Integrity)", "비인가 변경·삭제를 막아 정보의 정확성과 완전성을 보장", "체크섬, 해시, 전자서명"], ["가용성 (Availability)", "권한 있는 사용자가 필요할 때 정보와 서비스를 지속 이용", "백업, RAID, 재해복구"], ["책임추적성 (Accountability)", "사용자·프로세스 행위를 추적하고 책임을 연결", "로그 관리와 감사"], ["인증 (Authentication)", "요청 주체가 주장한 신원과 권한을 확인", "사용자·시스템 인증"]] },
+                { type: "text", title: "속성 간 trade-off", paragraphs: ["기밀성을 위해 암호화를 강화하거나 접근을 엄격히 제한하면 정보 이용이 불편해질 수 있습니다. 가용성을 높이려 접근 제한을 완화하면 기밀성이 훼손될 수 있습니다. 정책은 업무 요구와 위험을 함께 고려해 통제 강도를 정해야 합니다."] }
+              ],
+              memoryPoints: ["기본 목표 CIA는 기밀성·무결성·가용성입니다.", "로그는 행위 추적과 책임추적성(Accountability)에 연결됩니다.", "정보보호 정책은 CIA 간 균형과 업무상 가용성을 함께 고려합니다."]
+            },
+            {
+              id: "security-controls-and-constraints",
+              title: "정보보호 대책과 제약조건",
+              summary: "관리적·물리적·기술적 대책을 조합하고 실행 제약을 고려합니다.",
+              sourcePdfPages: [915, 917],
+              keywords: ["관리적 대책", "물리적 대책", "기술적 대책", "Temporal Constraints", "Financial Constraints", "Legal Constraints"],
+              questionKeywords: ["정보보호 대책 유형", "관리적 물리적 기술적 대책", "정보보호 제약", "예방대책"],
+              blocks: [
+                { type: "table", title: "예방 대책의 유형", columns: ["유형", "목적과 예시"], rows: [["관리적", "정책·법제·교육·절차·위험분석·감사로 보안 운영을 통제; 문서 처리 순서 표준화"], ["물리적", "시설과 장비에 대한 무단 접근·침입을 제한; 출입통제와 잠금장치"], ["환경적", "화재·수해·지진·태풍 등 환경 사고에 대비해 처리시설을 보호"], ["기술적", "접근통제·암호·백업·보안 소프트웨어·침입차단 등 정보시스템과 데이터를 보호"]] },
+                { type: "table", title: "대책 수립 시 제약", columns: ["제약", "고려 사항"], rows: [["시간적", "보호 대책을 정해진 일정과 기간 안에 구축·운영할 수 있는지"], ["재정적", "제한된 예산 안에서 필요한 위험수용 수준과 보안 효과를 달성할 수 있는지"], ["기술적", "필요한 기술 역량·인력·자원이 확보되어 있는지"], ["사회적", "사용자와 조직 구성원의 문화·행동 요인이 구현과 준수에 미치는 영향"], ["환경적", "자연환경·도시구조·기후 등 물리적 조건이 시설과 운영에 미치는 영향"], ["법적", "관할 국가·지역의 법률과 규제가 정보 처리와 보호에 미치는 영향"]] },
+                { type: "text", title: "비용과 운영 가능성", paragraphs: ["대책은 위험분석 결과에 맞추되 초기 구축비용뿐 아니라 지속적인 운영비용, 조직의 환경과 문화, 구현 가능성도 고려합니다. 한 가지 대책에만 의존하기보다 관리적·물리적·기술적 통제를 함께 적용할 수 있습니다."] }
+              ],
+              memoryPoints: ["기본 예방 대책은 관리적·물리적·기술적이며 환경 보호도 별도로 고려합니다.", "대책 선택에는 구축비용뿐 아니라 운영 비용, 조직 문화, 시간·기술·법적 제약이 영향을 줍니다.", "위험분석 결과와 업무 운영 가능성을 함께 보고 통제를 조합합니다."]
+            },
+            {
+              id: "security-governance-and-frameworks",
+              title: "정보보호 거버넌스와 프레임워크",
+              summary: "경영 목표와 보안 책임을 연결하는 거버넌스의 구성요소와 대표 프레임워크를 구분합니다.",
+              sourcePdfPages: [917, 919],
+              keywords: ["ISO/IEC 27014", "정보보호 거버넌스", "COBIT", "ISO/IEC 27001", "NIST CSF", "ITIL", "KPI", "KRI"],
+              questionKeywords: ["정보보호 거버넌스", "ISO 27014", "COBIT", "ISO 27001", "NIST 사이버보안 프레임워크", "ITIL"],
+              blocks: [
+                { type: "text", title: "거버넌스의 목적", paragraphs: ["정보보호 거버넌스는 조직의 정보보호 방향과 책임을 정하고 보안 활동이 경영 목표를 효과적으로 지원하도록 보장하는 체계입니다. 경영 목표와 보안 목표를 일치시키고, 위험관리와 법적 요구사항 준수를 통해 조직의 보안을 관리합니다. 교재는 ISO/IEC 27014를 정보보호 거버넌스 국제 표준으로 제시합니다."] },
+                { type: "table", title: "거버넌스 구성요소", columns: ["요소", "역할"], rows: [["리더십", "최고경영진과 이사회가 목표를 정하고 정보보호 정책·예산·책임 할당을 지원"], ["전략", "보안 활동이 사업 목표와 위험 허용 범위에 맞도록 방향 설정"], ["정책·절차", "정책 원칙을 실제 절차와 가이드라인으로 구체화"], ["위험관리", "위협·취약점을 식별하고 평가·대응 계획을 수립하며 보안 통제를 적용"], ["성과관리", "활동 효과를 측정하고 지속 개선; KPI·KRI 등 지표 활용"], ["컴플라이언스", "법적 요구·규제를 준수하고 감사·보고 수행"]] },
+                { type: "table", title: "대표 프레임워크", columns: ["프레임워크", "초점"], rows: [["COBIT", "IT 관리·거버넌스 지침과 조직 목표에 대한 IT·보안 연계"], ["ISO/IEC 27001", "정보보안경영시스템(ISMS)의 수립·운영·감사·검토·개선을 위한 요구사항; PDCA 적용"], ["NIST Cybersecurity Framework", "위험관리·보안통제 가이드; Identify, Protect, Detect, Respond, Recover"], ["ITIL", "IT 서비스 관리의 모범 실무 지침과 서비스 운영 프레임워크"]] },
+                { type: "text", title: "성과 지표", paragraphs: ["KPI(Key Performance Indicator)는 목표 달성 정도를 측정하는 핵심 성과지표입니다. KRI(Key Risk Indicator)는 잠재 위험이 커지기 전에 위험 수준이나 변화를 관찰하는 지표입니다. 지표는 보안 활동이 조직 목표를 지원하는지 검토하고 개선에 활용합니다."] }
+              ],
+              memoryPoints: ["교재에서 ISO/IEC 27014는 정보보호 거버넌스, ISO/IEC 27001은 ISMS 국제 표준입니다.", "NIST CSF의 다섯 기능은 Identify → Protect → Detect → Respond → Recover입니다.", "KPI는 성과 달성, KRI는 잠재 위험 신호를 관찰합니다."]
+            },
+            {
+              id: "security-organization-roles-documents",
+              title: "정보보호 조직과 문서",
+              summary: "경영진·CISO·자산 및 프로세스 책임자·사용자·감사자의 역할과 정책 문서의 위계를 파악합니다.",
+              sourcePdfPages: [920],
+              keywords: ["CEO", "CISO", "Data Owner", "Process Owner", "User", "IT Support Staff", "IS Auditor", "Security Policy"],
+              questionKeywords: ["정보보호 조직 구성원 역할", "CISO 역할", "Data Owner", "Process Owner", "정보보호정책", "정보보호 표준"],
+              blocks: [
+                { type: "table", title: "조직 구성원의 책임", columns: ["구성원", "주요 책임"], rows: [["최고경영자 (CEO)", "조직의 경영활동 최종 책임자이며 정보보호 총괄 책임을 지원"], ["정보보호 관리자 (CISO)", "정보보호 정책을 수립·관리하고 기술적·관리적 보안 대책을 총괄"], ["데이터 관리자 (Data Owner)", "정보시스템에 저장된 데이터 관리와 보호의 최종 책임"], ["프로세스 관리자 (Process Owner)", "담당 정보시스템에서 조직 정책에 따른 적절한 보안을 보증"], ["사용자 (User)", "보안정책·절차를 준수하며 정보시스템과 데이터를 직접 사용"], ["기술 지원 인력", "기술 문제를 해결하고 시스템 운영·유지보수 담당"], ["정보시스템 감사자", "보안관리 체계의 효과적 운영을 점검하고 개선사항을 도출"]] },
+                { type: "text", title: "정책과 하위 문서", paragraphs: ["정보보호 전략은 정보자산을 보호하고 보안 목표를 달성하기 위한 장기적이고 체계적인 계획이며, 조직의 사업 목표와 위험에 대응하도록 설계합니다. 정보보호 정책은 조직의 정보보호에 관한 최상위 방향과 목표를 정하고 일관된 원칙을 제공합니다.", "교재는 정책(Policy)을 조직의 미션·비전과 상위 보안 방향을 제시하는 문서로 설명하고, 표준(Standard)은 정책 목적을 달성하기 위한 구체적 사항이나 특별 요구사항으로 구분합니다. 정책은 세부 기술 구성보다 ‘무엇을 보호하고 어떤 원칙을 따를지’를 정합니다."] }
+              ],
+              memoryPoints: ["CEO는 조직 최종 책임, CISO는 보안 정책·대책 총괄, Data Owner는 데이터 보호 책임자입니다.", "Process Owner는 담당 시스템의 정책상 보안을 보증하고 사용자는 정책과 절차를 준수합니다.", "정책은 상위 방향·원칙, 표준은 이를 구현하는 구체적 요구사항입니다."]
+            }
+          ]
+        },
+        {
+          id: "management-risk-assessment",
+          chapter: "정보보호 위험 평가",
+          status: "published",
+          title: "정보보호 위험 분석과 처리",
+          summary: "자산·위협·취약점·대책을 식별하고 정량·정성 분석으로 위험을 평가한 뒤 네 가지 대응을 선택합니다.",
+          sourcePdfPages: [927, 937],
+          concepts: [
+            {
+              id: "risk-components-and-formulas",
+              title: "위험 구성요소와 기본 공식",
+              summary: "위험은 발생 가능성과 손실 크기를 고려하며, 보호대책 적용 후에도 잔여 위험이 남습니다.",
+              sourcePdfPages: [927, 929],
+              keywords: ["Risk", "Assets", "Threat", "Vulnerability", "Safeguard", "Total Risk", "Residual Risk"],
+              questionKeywords: ["위험 구성요소", "자산 위협 취약점 보호대책", "전체 위험 공식", "잔여 위험 공식"],
+              blocks: [
+                { type: "table", title: "위험 구성요소", columns: ["요소", "의미"], rows: [["자산 (Asset)", "조직이 보호할 정보·하드웨어·소프트웨어·시설뿐 아니라 인력·이미지 등 유형·무형의 대상"], ["위협 (Threat)", "취약점을 이용해 자산 손실을 일으킬 수 있는 잠재 원인이나 행위자"], ["취약점 (Vulnerability)", "위협에 노출될 수 있게 하는 시스템의 약점 또는 대책의 미비"], ["정보보호 대책 (Safeguard)", "위험을 줄이는 정책·교육·기술·물리적 통제"]] },
+                { type: "text", title: "위험 공식", paragraphs: ["위험은 원치 않는 사건의 발생 가능성과 그때의 손실 정도를 함께 고려합니다. 교재 공식은 전체 위험을 자산·취약점·위협의 곱으로, 대책을 적용한 뒤 남는 잔여 위험을 그 곱에서 정보보호 대책을 반영한 값으로 표현합니다."] },
+                { type: "code", title: "교재의 위험 산식", language: "text", code: "전체 위험 = 자산 × 취약점 × 위협\n잔여 위험 = (자산 × 취약점 × 위협) − 정보보호 대책" },
+                { type: "text", title: "자산 식별에서 대책까지", paragraphs: ["자산 식별은 보호할 가치가 있는 항목과 형태·소유자·관리자·특성을 찾아 목록화하는 과정입니다. 자산 가치는 금전 기준 또는 업무 중요도·영향 같은 정성적 기준으로 평가할 수 있습니다.", "위협은 취약점을 이용해 자산을 노출시키고 위험을 높입니다. 조직은 위험 분석으로 보안 요구사항을 정하고 이에 맞는 대책을 선택·구현해 위험을 낮춥니다. 대책을 적용해도 완전히 안전해지지는 않으므로 잔여 위험을 관리해야 합니다."] }
+              ],
+              memoryPoints: ["전체 위험 = 자산 × 취약점 × 위협; 잔여 위험은 여기에 대책을 반영한 뒤 남은 값입니다.", "위협은 취약점을 이용하고 자산의 가치·위협·취약점은 위험 수준에 영향을 줍니다.", "대책을 적용해도 위험이 0이 되지 않으므로 잔여 위험을 관리합니다."]
+            },
+            {
+              id: "risk-management-approaches",
+              title: "위험관리 절차와 분석 접근법",
+              summary: "전략 수립부터 위험분석·평가·대책 선정까지 진행하고 네 가지 접근법을 선택합니다.",
+              sourcePdfPages: [929, 932],
+              keywords: ["Risk Management", "Baseline Approach", "Informal Approach", "Detailed Risk Analysis", "Combined Approach"],
+              questionKeywords: ["위험관리 절차", "기준선 접근법", "비정형 접근법", "상세 위험분석", "통합 접근법"],
+              blocks: [
+                { type: "diagram", title: "위험관리의 흐름", nodes: [{ label: "전략·계획", detail: "사업 목표와 보안 목표 연결" }, { label: "위험분석", detail: "자산가치·위협·취약점 파악" }, { label: "위험평가", detail: "수준과 허용 범위 비교" }, { label: "대책 선정", detail: "비용효과와 적절성 검토" }, { label: "보호 계획", detail: "대책 실행·관리 계획 수립" }], caption: "위험관리 계획은 일회성이 아니라 자산·위협·업무 변화에 맞춰 반복 갱신합니다." },
+                { type: "table", title: "위험분석 접근법", columns: ["접근법", "방법과 적합성", "장단점"], rows: [["기준선 (Baseline)", "체크리스트의 기본 보호수준을 정하고 각 시스템의 구현 여부를 확인", "빠르고 저비용으로 다수 시스템에 적용하기 쉽지만 개별 환경 차이를 반영하기 어려움"], ["비정형 (Informal)", "구조화된 모델 대신 전문가 경험과 판단으로 중요 위험을 분석", "신속하고 소규모 조직에 적합하지만 주관성과 분석자 의존성이 큼"], ["상세 (Detailed)", "중요 자산별 자산·위협·취약점을 체계적으로 분석", "정밀한 투자·규제 대응에 근거를 주지만 시간·비용·분석 노력이 큼"], ["통합 (Combined)", "초기에 기준선·비정형 분석을 적용하고 고위험 영역은 상세 분석", "위험 수준과 비용에 맞게 분석 깊이를 조절"]] },
+                { type: "text", title: "분석과 평가", paragraphs: ["위험분석은 자산의 취약점과 위협을 살펴 발생 가능성·영향을 판단해 위험의 내용과 정도를 파악합니다. 위험평가는 분석 결과를 조직의 기준·목표 위험수준과 비교해 우선순위와 수용 여부를 정하는 과정입니다.", "접근법은 조직 규모, 자산 중요도, 규제 요구, 시간과 전문성에 맞게 선택합니다. 통합 접근은 전체 시스템에 기본 보호수준을 적용하고 고위험 영역에 분석 자원을 집중합니다."] }
+              ],
+              memoryPoints: ["위험관리 흐름은 전략·계획 → 위험분석 → 위험평가 → 대책 선정 → 보호 계획입니다.", "기준선은 공통 수준, 비정형은 전문가 경험, 상세는 자산별 정밀분석입니다.", "통합 접근은 위험에 맞춰 분석 깊이와 비용을 배분합니다."]
+            },
+            {
+              id: "quantitative-risk-analysis",
+              title: "정량적 위험분석과 손실 계산",
+              summary: "자산가치와 노출계수로 단일 손실·연간 발생률·연간 예상 손실을 계산합니다.",
+              sourcePdfPages: [933, 935],
+              keywords: ["Quantitative Risk Analysis", "AV", "EF", "SLE", "ARO", "ALE", "Historical Data", "Probability Distribution"],
+              questionKeywords: ["정량적 위험분석", "SLE 공식", "ARO 공식", "ALE 공식", "연간 예상 손실액", "수학공식 접근법", "확률분포법"],
+              blocks: [
+                { type: "text", title: "금액과 빈도로 위험 표현", paragraphs: ["정량적 위험분석은 분석 요소에 금전적 가치와 숫자를 부여해 손실과 발생빈도로 위험을 표현합니다. 비용·편익 비교와 성능 측정에 유용하지만 자료 수집과 계산에 시간·노력이 들 수 있습니다."] },
+                { type: "table", title: "정량 분석 계산식", columns: ["지표", "정의·공식"], rows: [["AV (Asset Value)", "분석 대상 자산의 금전적 가치"], ["EF (Exposure Factor)", "위협 한 번으로 자산가치 중 손실되는 비율"], ["SLE (Single Loss Expectancy)", "한 번의 위협으로 예상되는 손실; SLE = AV × EF"], ["ARO (Annual Rate of Occurrence)", "연간 발생률; ARO = 발생 횟수 ÷ 기간(년)"], ["ALE (Annual Loss Expectancy)", "위협으로 인한 연간 예상 손실; ALE = SLE × ARO"]] },
+                { type: "code", title: "교재 예제 계산", language: "text", code: "AV = 432,000원, EF = 20%\nSLE = AV × EF = 432,000 × 0.2 = 86,400원\n5년에 1회 발생 → ARO = 1 ÷ 5 = 0.2\nALE = SLE × ARO = 86,400 × 0.2 = 17,280원/년" },
+                { type: "table", title: "정량적 기법", columns: ["기법", "핵심"], rows: [["과거 자료 분석", "기존 발생 자료로 미래 발생 가능성을 추정"], ["수학공식 접근", "발생 빈도를 계산하는 식으로 위험을 계량"], ["확률분포법", "확률분포와 통계적 편차를 이용해 결과 범위를 추정"], ["점수법", "요소별 가중치·점수를 부여; 간단하지만 정확도가 낮을 수 있음"]] }
+              ],
+              memoryPoints: ["SLE = AV × EF; ARO = 발생 횟수 ÷ 기간; ALE = SLE × ARO입니다.", "교재 예제는 SLE 86,400원, ARO 0.2, ALE 17,280원/년입니다.", "과거자료·수학공식·확률분포·점수법은 정량 분석 기법입니다."]
+            },
+            {
+              id: "qualitative-risk-analysis",
+              title: "정성적 위험분석과 정량 분석 비교",
+              summary: "금액 대신 서열·척도·전문가 판단으로 위험을 비교하고 대표 정성 분석 기법을 구분합니다.",
+              sourcePdfPages: [935, 936],
+              keywords: ["Qualitative Risk Analysis", "Delphi", "Scenario Analysis", "Ranking", "Fuzzy Matrix"],
+              questionKeywords: ["정성적 위험분석", "델파이법", "시나리오법", "순위결정법", "퍼지행렬법", "정량적 정성적 비교"],
+              blocks: [
+                { type: "text", title: "정성적 분석의 특징", paragraphs: ["정성적 분석은 손실에 금액이나 숫자를 직접 부여하기보다 위험 가능성과 영향의 서열·척도, 전문가 판단과 경험을 이용해 위험 우선순위를 정합니다. 계산과 자산 금액 자료가 덜 필요하지만 평가자에 따라 결과가 달라질 수 있고 비용 대비 편익을 수치로 설명하기 어렵습니다."] },
+                { type: "table", title: "정성 분석 기법", columns: ["기법", "판별 기준"], rows: [["델파이법", "전문가 집단이 위협·취약점을 검토하고 의견을 모아 분석"], ["시나리오법", "예상과 다르게 사건이 전개될 수 있다는 전제에서 조건별 결과를 추정"], ["순위결정법", "중요도·발생 가능성·영향을 비교해 상대적 위험 순위를 도출"], ["퍼지행렬법", "위험 요소를 언어적 척도로 표현해 기대 손실을 평가"]] },
+                { type: "table", title: "정량과 정성의 비교", columns: ["정량 분석", "정성 분석"], rows: [["금전·수치·확률로 표현하고 비용편익 비교에 유리", "서열·언어 척도와 전문가 판단으로 우선순위 설정"], ["객관적 비교와 성과 측정에 도움", "자산 가치 산정과 복잡한 수치 계산 부담이 적음"], ["자료·계산·도구가 필요해 시간·비용이 큼", "평가자 주관과 결과 재현성의 한계가 있음"]] }
+              ],
+              memoryPoints: ["델파이는 전문가 집단, 시나리오는 조건별 결과, 순위결정은 상대 우선순위입니다.", "퍼지행렬은 위험 요소를 정성 언어 척도로 표현합니다.", "정량은 금액·수치와 비용편익, 정성은 상대평가와 전문가 판단에 강점이 있습니다."]
+            },
+            {
+              id: "risk-treatment-options",
+              title: "위험처리와 대응 선택",
+              summary: "목표 위험수준과 대책 비용효과·보험 가능성을 검토해 네 가지 대응을 선택합니다.",
+              sourcePdfPages: [936, 937],
+              keywords: ["Risk Acceptance", "Risk Reduction", "Risk Transfer", "Risk Avoidance", "위험수용", "위험완화", "위험전가", "위험회피"],
+              questionKeywords: ["위험처리 방식", "위험 수용 완화 전가 회피", "위험회피", "위험전가", "위험완화"],
+              blocks: [
+                { type: "diagram", title: "위험처리 의사결정", nodes: [{ label: "위험 식별", detail: "현재 위험수준과 목표수준 비교" }, { label: "수용", detail: "위험이 목표 이하이면 승인·감시" }, { label: "완화", detail: "비용효과적 통제를 적용해 위험 감소" }, { label: "전가", detail: "보험·외주 등으로 잠재 손실 배분" }, { label: "회피", detail: "위험 원인이 되는 업무를 중단" }], caption: "대응 선택 후에도 잔여 위험을 확인하고 관리합니다." },
+                { type: "table", title: "네 가지 위험처리 방식", columns: ["방식", "대응", "예·유의점"], rows: [["위험수용 (Acceptance)", "현재 위험을 받아들이고 잠재 손실을 감수", "목표 이하의 잔여 위험을 승인"], ["위험완화 (Reduction/Mitigation)", "통제를 적용해 발생 가능성 또는 손실 영향을 줄임", "비용효과 분석으로 통제 비용과 위험 감소량 비교"], ["위험전가 (Transfer/Transition)", "보험·외주 등으로 잠재 비용을 제3자에게 배분", "비용이 발생하며 모든 의무·책임이 자동 소멸하지는 않음"], ["위험회피 (Avoidance)", "위험이 있는 프로세스나 사업을 수행하지 않음", "위험의 근원이 되는 업무·자산을 중단하거나 변경"]] },
+                { type: "text", title: "처리 후 재평가", paragraphs: ["정보보호 대책은 위험을 완전히 제거하지 못하므로 대응을 실행한 후 남은 위험이 조직의 목표수준 안에 들어오는지 재평가하고 계획을 갱신합니다."] }
+              ],
+              memoryPoints: ["수용은 감수, 완화는 통제 적용, 전가는 비용 배분, 회피는 위험 업무를 하지 않는 것입니다.", "완화는 비용효과를 비교하고 전가는 비용을 옮기되 책임 전부가 없어지는 것은 아닙니다.", "처리 후에도 잔여 위험을 평가·승인·모니터링합니다."]
+            }
+          ]
+        },
+        {
+          id: "management-safeguards-implementation",
+          chapter: "정보보호 대책 구현 및 운영",
+          status: "published",
+          title: "관리적·인적·물리적 보안대책",
+          summary: "보안정책과 인력·외부자·계정 통제, 재택근무 및 시설 보호를 운영 절차로 연결합니다.",
+          sourcePdfPages: [950, 958],
+          concepts: [
+            {
+              id: "security-policy-assets-and-responsibilities",
+              title: "정책·자산관리와 개인정보 책임자",
+              summary: "정책 이력을 관리하고 정보보호 책임자와 개인정보보호 책임자의 역할을 구분합니다.",
+              sourcePdfPages: [950, 951],
+              keywords: ["CISO", "CPO", "Chief Privacy Officer", "정보보호정책", "정보자산관리", "개인정보"],
+              questionKeywords: ["정보보호 관리자", "개인정보보호책임자", "CISO CPO 업무", "정책 유지관리", "정보자산관리"],
+              blocks: [
+                { type: "table", title: "보안·개인정보 책임자", columns: ["역할", "주요 책임"], rows: [["정보보호 관리자 / CISO", "보안정책·표준·대책·절차의 설계·구현·관리, 보안계획과 위험관리, 사고 대응·복구"], ["개인정보보호 책임자 / CPO", "개인정보 보호계획과 처리방침, 처리 실태 점검, 개인정보 파일·자료 관리, 내부통제·보안, 교육, 불만·피해구제와 파기 감독"]] },
+                { type: "text", title: "정책과 자산의 운영", paragraphs: ["정보보호 정책과 시행 문서를 제정·개정·폐기할 때 변경 이력을 관리하고 승인·배포·검토 절차를 둡니다. 정보자산은 소유자·관리자와 보호 필요성을 식별해 목록을 최신 상태로 유지하고 위험평가와 접근통제의 근거로 사용합니다.", "CISO는 조직의 정보보호 활동과 기술적·관리적 통제를 총괄합니다. CPO는 개인정보 처리방침·처리 관행, 정보주체 관련 민원과 피해구제, 개인정보의 안전한 파기 등 개인정보 보호 의무를 담당합니다. 두 역할을 문제에서 혼동하지 않도록 책임 범위를 구분합니다."] }
+              ],
+              memoryPoints: ["CISO는 조직의 정보보호 정책과 대책을 총괄합니다.", "CPO는 개인정보 처리방침·처리 실태·정보주체 권리·파기 등을 관리합니다.", "보안 정책 문서의 제정·개정·폐기 이력을 관리하고 자산 목록을 최신화합니다."]
+            },
+            {
+              id: "personnel-security-training-and-exit",
+              title: "인적 보안·직무분리·교육",
+              summary: "주요 직무자와 개인정보 취급자를 지정하고 직무분리, 교육, 보안서약, 퇴직·직무변경 절차를 적용합니다.",
+              sourcePdfPages: [952, 954],
+              keywords: ["직무분리", "주요 직무자", "개인정보 취급자", "보안서약", "Security Awareness", "Accountability"],
+              questionKeywords: ["인적 보안 보호대책", "직무분리", "보완통제", "정보보호 교육", "퇴직 및 직무 변경", "책임추적성"],
+              blocks: [
+                { type: "table", title: "인적 보안 절차", columns: ["통제", "실행 내용"], rows: [["주요 직무자 지정", "중요 정보·시스템 접근 등 핵심 직무를 정의하고 담당 임직원·외부자와 개인정보 취급자 목록을 최신화"], ["직무분리", "개발과 운영, 승인과 집행, 접근과 감사 등 이해충돌·권한 오남용 가능 업무를 분리"], ["보안서약", "임직원·임시직·외부자가 내부정책, 법규와 비밀유지 의무를 지키도록 서약"], ["교육·인식제고", "직무별 연간 교육계획을 운영하고 효과를 평가; 관리체계 범위의 임직원과 외부자를 정기적으로 교육"], ["퇴직·직무변경", "부서 간 인사변경을 공유하고 자산반납, 계정 비활성화·삭제, 권한 회수·조정과 이행 확인"], ["위반조치", "법령·규제·내부정책 위반 시 적용할 조치 절차를 수립·이행"]] },
+                { type: "text", title: "직무분리와 보완통제", paragraphs: ["직무분리는 한 사람이 민감한 업무 전 과정을 단독 수행해 부정·오류를 숨길 수 없도록 역할과 권한을 나누는 통제입니다. 조직 규모나 인력 부족으로 분리가 불가피하게 어렵다면 상호검토, 상위관리자 승인, 개인 계정 사용, 로그 기록과 감사 모니터링 등 보완통제로 책임추적성을 확보합니다.", "교육은 연간 계획에 따라 정기적으로 실시하고, 정책·법규의 중대한 변경이나 보안사고 발생 시 추가 교육을 시행합니다. 퇴직·이동 시에는 출입증과 자산을 회수하고 공유 계정과 관련 권한도 검토해 남은 접근을 차단합니다."] },
+                { type: "text", title: "교육 내용과 대상", paragraphs: ["교육은 일반 임직원·관리자·IT 및 정보보호 담당자 등 직무별로 수준을 나누고 보안정책·절차, 관리체계, 관련 법률, 사고사례·대응, 위반 시 책임을 포함합니다. 외부 수탁자와 파견 인력의 교육도 관리·감독하고 결과와 개선점을 다음 계획에 반영합니다."] }
+              ],
+              memoryPoints: ["주요 직무와 개인정보 취급자는 최소화해 지정하고 목록을 최신 상태로 유지합니다.", "직무분리가 어렵다면 상호검토·승인·개별계정·로그·감사 등 보완통제를 적용합니다.", "정기교육 외에도 정책·법규 변경이나 사고 발생 시 추가 교육이 필요합니다.", "퇴직·이동 시 계정·권한·자산 회수와 결과 확인까지 수행합니다."]
+            },
+            {
+              id: "external-party-and-access-security",
+              title: "외부자·계정·접근권한 관리",
+              summary: "위탁·외부서비스 위험을 계약에 반영하고 최소권한·고유 계정·인증·정기 권한 검토를 수행합니다.",
+              sourcePdfPages: [955, 957],
+              keywords: ["외부자 보안", "Vendor Security", "User Account", "Least Privilege", "인증실패 횟수", "재택근무", "원격접속"],
+              questionKeywords: ["외부자 보안 보호대책", "사용자 계정 관리", "특수 계정 권한 관리", "접근권한 검토", "원격근무 정보보호"],
+              blocks: [
+                { type: "table", title: "외부자 관리 생애주기", columns: ["시점", "통제"], rows: [["선정·위탁", "외부자와 서비스 현황 및 법적 요구를 식별하고 위험에 맞는 요구사항을 정함"], ["계약", "비밀유지, 개인정보 보호, 접근·권한 승인, 기술·물리 보호, 사고 통지, 점검·감사와 책임을 계약·협정에 명시"], ["수행 중", "보호대책 이행을 주기적으로 점검하고 필요 계정·정보에만 접근을 허용"], ["변경·종료", "계정·접근권한 회수, 정보자산 반납·파기, 자료 유출 방지와 비밀유지 확약을 확인"]] },
+                { type: "table", title: "계정과 접근권한", columns: ["통제", "운영 원칙"], rows: [["사용자 식별", "사용자별 고유 식별자를 부여하고 계정 공유를 제한; 예외는 사유·승인·추적 보완책을 기록"], ["인증", "안전한 인증 절차를 적용하고 필요에 따라 강화 인증, 실패횟수 제한과 불법 로그인 경고를 운영"], ["권한", "업무 목적에 필요한 최소권한만 부여하고 특수 계정·권한은 별도로 식별해 통제"], ["정기 검토", "계정 생성·이용·삭제와 권한 변경 이력을 남기고 주기적으로 적정성을 확인"], ["세션 보호", "유휴 시간 종료, 동시접속 제한, 로그인 시도 감시 등 위험에 맞는 통제를 적용"]] },
+                { type: "text", title: "재택·원격근무", paragraphs: ["원격근무자는 운영체제·백신을 최신화하고 가정용 공유기 비밀번호와 펌웨어를 관리하며 공용 PC·공용 무선망을 피하고 회사가 승인한 VPN과 업무용 메일을 사용합니다. 조직은 원격근무 지침, 계정·접근권한 관리, 원격접속 모니터링과 부재 시 접속 통제, 개인정보·기업정보 보호를 마련합니다.", "외부 용역자 권한은 외부 업체의 요청만으로 부여하지 않고 조직 내부 시스템 책임자의 승인을 받습니다. 위탁업체에 계정 생성·삭제 권한을 넓게 주기보다 필요한 최소 범위로 분리하고 점검합니다."] }
+              ],
+              memoryPoints: ["외부자 보안은 계약 전 위험 식별부터 수행 중 점검, 계약 종료 후 계정·자료 회수까지 이어집니다.", "개인별 고유 계정과 최소권한을 사용하고 특수 계정은 별도 식별·통제합니다.", "계정과 권한의 생성·변경·삭제 기록을 남기고 정기적으로 검토합니다.", "원격접속은 승인된 VPN, 최신 단말, 권한관리와 모니터링으로 통제합니다."]
+            },
+            {
+              id: "physical-security-and-public-servers",
+              title: "물리적 보호와 공개 서버",
+              summary: "보호구역과 시설·장비의 물리 접근을 통제하고 공개 서버의 중요정보 게시·노출을 점검합니다.",
+              sourcePdfPages: [958, 959],
+              keywords: ["물리적 보안", "보호구역", "출입통제", "공개 서버", "중요정보 노출"],
+              questionKeywords: ["물리적 보호대책", "보호구역 지정", "공개 서버 보안 확인", "중요정보 노출 대응"],
+              blocks: [
+                { type: "table", title: "물리적 보호대책", columns: ["영역", "운영 예"], rows: [["보호구역 지정", "정보처리시설·중요 장비와 기록 매체에 등급별 구역과 출입 권한 설정"], ["출입 통제", "신원 확인, 방문자 승인·동행, 출입기록 검토"], ["시설·설비", "전원·화재·환경 위험과 장비 반출입을 통제하고 보호 설비를 운영"], ["보호구역 내 작업", "작업 승인과 감독, 장비·매체 반입·반출 확인"], ["업무환경", "화면·문서·단말의 노출을 줄이고 안전한 작업환경 유지"]] },
+                { type: "text", title: "공개 서버의 정보 노출", paragraphs: ["웹사이트나 공개 서버에 개인정보·중요정보를 게시하거나 저장할 때는 책임자의 승인과 게시 절차를 적용합니다. 공개된 정보가 업무상 필요한지 확인하고, 웹사이트·웹서버를 주기적으로 점검해 중요정보 노출이 발견되면 즉시 차단·삭제와 후속 조사를 수행합니다."] }
+              ],
+              memoryPoints: ["물리적 보안은 기술·관리 통제가 작동할 기반이며 보호구역·출입·설비·장비 반출입을 함께 다룹니다.", "공개 서버의 중요정보는 승인된 게시 절차와 정기 노출 점검으로 보호합니다."]
+            }
+          ]
+        },
+        {
+          id: "management-continuity-incident-forensics-privacy",
+          chapter: "정보보호 대책 구현 및 운영",
+          status: "published",
+          title: "업무연속성·사고대응·디지털 포렌식",
+          summary: "BCM·BCP·BIA·DRP로 복구를 준비하고 침해사고에 대응하며 증거를 보전하고 개인정보를 설계 단계부터 보호합니다.",
+          sourcePdfPages: [959, 970],
+          concepts: [
+            {
+              id: "business-continuity-and-disaster-recovery",
+              title: "BCM·BCP·BIA·DRP와 복구사이트",
+              summary: "업무 중단의 영향과 허용시간을 분석하고 업무연속성 계획과 IT 재해복구를 구분합니다.",
+              sourcePdfPages: [959, 963],
+              keywords: ["BCM", "BCP", "BIA", "DRP", "DRS", "RTO", "RPO", "MTD", "WRT", "Mirror Site", "Hot Site", "Warm Site", "Cold Site"],
+              questionKeywords: ["BCM BCP 차이", "업무영향분석 BIA", "RTO RPO MTD WRT", "DRP DRS", "재해복구 사이트", "미러 핫 웜 콜드 사이트"],
+              blocks: [
+                { type: "table", title: "연속성·복구 용어", columns: ["용어", "범위와 역할"], rows: [["BCM (Business Continuity Management)", "BCP 수립·시험·보수와 연속성 관리를 포함하는 지속적 관리 체계"], ["BCP (Business Continuity Plan)", "IT뿐 아니라 인력·시설·자금 등 자원을 포함해 재해·장애 중 조직 업무를 지속·복구하는 광범위한 계획"], ["BIA (Business Impact Analysis)", "업무 중단이 시간에 따라 조직에 미치는 영향과 허용 한계를 분석"], ["DRP (Disaster Recovery Plan)", "재해로 중단된 정보기술 서비스를 재개해 업무 영향을 최소화하는 계획"], ["DRS (Disaster Recovery System)", "DRP 실행을 위해 평상시 확보하고 지속 관리하는 인적·물적 자원과 체계"]] },
+                { type: "table", title: "BIA와 복구시간 지표", columns: ["지표·활동", "의미"], rows: [["RTO", "서비스·업무를 복구해야 하는 목표 시간"], ["RPO", "복구 시 허용할 수 있는 데이터 손실 시점·범위"], ["MTD", "업무 중단을 견딜 수 있는 최대 허용 시간"], ["WRT", "시스템 복구 이후 업무를 실제 재개하기까지 필요한 작업 복구 시간"], ["BIA 활동", "프로세스 식별·상호연관성 분석, 자원과 요구사항 식별, MTD 산정, 중단 손실 평가, 복구 우선순위·범위 설정"]] },
+                { type: "table", title: "재해복구 사이트 비교", columns: ["유형", "운영 상태와 복구", "비용·복구 수준"], rows: [["미러 (Mirror)", "주센터와 원격 사이트가 실시간 데이터를 복제하며 Active–Active로 동시 운영", "가장 빠른 복구(이론상 RTO 0에 가까움); 구축·운영비가 매우 큼"], ["핫 (Hot)", "원격지에 최신 데이터와 시스템을 준비; 주센터 장애 때 예비 시스템으로 빠르게 전환", "교재 표의 목표는 수시간(약 4시간 이내); 비용과 상시 보안운영 부담이 큼"], ["웜 (Warm)", "주요 인프라와 일부 자원을 보유하지만 실시간 미러링은 하지 않음", "복구는 수일~수주 수준; 비용과 복구 속도가 중간"], ["콜드 (Cold)", "장소와 최소 시설만 확보하고 재해 후 장비·자원을 조달해 복구", "수주~수개월이 걸릴 수 있지만 구축·유지비가 가장 낮음"]] },
+                { type: "text", title: "업무연속성 계획 순서", paragraphs: ["업무에 큰 영향을 미치는 핵심 프로세스를 식별하고 자원 중요도와 중단 영향을 평가한 뒤 재해 시나리오와 대응전략을 정합니다. 이후 복구계획을 수립·실행하고 시험·검토·유지보수를 반복합니다. BCM은 정책·맥락·리더십·기획·지원·운영·성과평가·개선을 계속 관리합니다."] }
+              ],
+              memoryPoints: ["BCP는 조직 전체의 업무 지속, DRP는 정보기술 서비스 복구에 초점을 둡니다.", "BIA는 프로세스·자원·중단 영향·MTD·복구 우선순위를 분석합니다.", "RTO는 복구 목표 시간, RPO는 허용 데이터 손실 시점, MTD는 최대 허용 중단, WRT는 복구 뒤 업무 재개에 필요한 시간입니다.", "사이트 복구 속도·비용은 대체로 미러 → 핫 → 웜 → 콜드 순으로 빠르고 비싸집니다."]
+            },
+            {
+              id: "incident-response-process",
+              title: "침해사고 조직과 대응 절차",
+              summary: "CERT·ISAC의 협력 역할을 이해하고 사고 전 준비부터 탐지·조사·해결까지 순서대로 대응합니다.",
+              sourcePdfPages: [964, 966],
+              keywords: ["Incident Response", "CERT", "ISAC", "침해사고", "초기대응", "사고조사"],
+              questionKeywords: ["침해사고 대응 절차", "CERT", "ISAC", "침해사고 유형", "사고 탐지 초기대응"],
+              blocks: [
+                { type: "table", title: "사고 유형과 지원 조직", columns: ["항목", "역할·예"], rows: [["기밀성 침해", "비인가 접근·도청·사회공학·정보유출"], ["무결성 침해", "정보나 시스템을 승인 없이 변경·조작"], ["가용성 침해", "DDoS·재해·사고 등으로 서비스 제공을 방해"], ["CERT", "전산망 침해사고 대응을 지원하고 운영기관 간 협조와 국제 대응 창구를 제공"], ["ISAC", "분야별 기반시설이 취약점·위협 정보를 공유하고 경보·분석·대응을 협력"]] },
+                { type: "diagram", title: "침해사고 대응 순서", nodes: [{ label: "사전 준비", detail: "역할·연락망·대응계획·도구 준비" }, { label: "사고 탐지", detail: "장비·사용자 신고·로그에서 이상징후 확인" }, { label: "초기 대응", detail: "영향 확인, 기록, 보고·확산 방지" }, { label: "대응전략 수립", detail: "조사 범위와 보존·격리·복구 결정" }, { label: "사고 조사", detail: "무슨 일이 언제 어디서 어떻게 발생했는지 분석" }, { label: "보고서 작성", detail: "사실·영향·대응을 객관적으로 기록" }, { label: "해결·개선", detail: "복구, 재발방지 정책·절차·기술 개선" }], caption: "증거 보존과 업무 안전을 고려해 초기부터 기록과 보고를 병행합니다." },
+                { type: "text", title: "사고의 범위와 조사", paragraphs: ["침해사고는 취약점, 사람의 실수와 관리통제 미비 등 여러 원인으로 발생할 수 있습니다. 탐지 후에는 사고 정황·시간·영향과 조치를 기록하고, 필요하면 관리자 승인과 관계기관 협조를 거쳐 조사·복구·재발방지 계획을 수립합니다."] }
+              ],
+              memoryPoints: ["순서는 사전 준비 → 탐지 → 초기 대응 → 대응전략 수립 → 조사 → 보고서 → 해결입니다.", "CERT는 사고대응 협력, ISAC은 분야별 위협정보 공유·분석과 경보를 지원합니다.", "초기 대응부터 사실·조치 기록과 영향 확산 방지를 함께 수행합니다."]
+            },
+            {
+              id: "digital-forensics-principles-and-process",
+              title: "디지털 포렌식 원칙과 증거 절차",
+              summary: "정당성·재현성·신속성·연계보관성·무결성을 지키며 증거를 획득·보관·분석·보고합니다.",
+              sourcePdfPages: [966, 969],
+              keywords: ["Digital Forensics", "정당성", "재현성", "신속성", "연계보관성", "무결성", "Imaging", "Hash"],
+              questionKeywords: ["디지털 포렌식 5원칙", "연계보관성", "디지털 포렌식 절차", "해시값 증거", "안티 포렌식"],
+              blocks: [
+                { type: "table", title: "디지털 포렌식 5원칙", columns: ["원칙", "의미"], rows: [["정당성", "증거 획득·분석이 적법하고 정당한 절차를 따름"], ["재현성", "동일한 조건과 방법에서 같은 분석 결과를 재현할 수 있음"], ["신속성", "증거가 사라지거나 변경되기 전에 신속히 확보·처리"], ["연계보관성", "수집·이송·보관·분석·제출의 인수인계와 처리 과정을 기록·추적"], ["무결성", "전 과정에서 증거의 변조·손상이 없었음을 입증"]] },
+                { type: "diagram", title: "포렌식 증거 처리", nodes: [{ label: "준비", detail: "인력·영장·도구·협조 준비" }, { label: "획득", detail: "원본 보존, 복제 이미징, 해시로 동일성 확인" }, { label: "보관·이송", detail: "봉인·접근기록·인수인계로 연계성 유지" }, { label: "검증·분석", detail: "절차를 재현하고 사건 관련 사실을 분석" }, { label: "보고서", detail: "객관적 근거와 방법·결과 문서화" }], caption: "증거 획득부터 법정 제출까지 도구·시간·담당자·해시·인수인계를 일관되게 기록합니다." },
+                { type: "table", title: "포렌식 도구와 안티 포렌식", columns: ["구분", "내용"], rows: [["분석 도구", "교재 예: FTK, ProDiscover Forensic, EnCase"], ["와이핑·덮어쓰기", "저장 데이터를 덮어써 복구를 어렵게 함"], ["디가우징·물리 파괴", "매체 데이터를 파괴하거나 저장매체를 파손"], ["로그 삭제", "기록을 지우거나 생성 직후 자동 삭제해 흔적을 감춤"]] },
+                { type: "text", title: "증거의 연속성과 무결성", paragraphs: ["원본 매체를 직접 분석해 변경시키지 않도록 쓰기방지를 적용하고 디지털 이미지를 만들어 해시값으로 복제본 동일성을 확인합니다. 증거 목록, 봉인, 입수·이송 담당자, 시간, 도구와 분석 절차를 기록하면 적법성·연계보관성·재현성을 설명할 수 있습니다."] }
+              ],
+              memoryPoints: ["5원칙은 정당성·재현성·신속성·연계보관성·무결성입니다.", "절차는 준비 → 증거 획득 → 보관·이송 → 검증·분석 → 보고서 제출입니다.", "복제 이미지는 해시로 동일성을 확인하고 인수인계 기록·봉인으로 연계보관성을 유지합니다."]
+            },
+            {
+              id: "privacy-by-design-principles",
+              title: "Privacy by Design 7대 원칙",
+              summary: "개인정보 보호를 사후 대응이 아닌 서비스·시스템 설계와 전 생애주기에 내재화합니다.",
+              sourcePdfPages: [969, 970],
+              keywords: ["Privacy by Design", "PbD", "Positive-Sum", "Privacy Lifecycle", "프라이버시"],
+              questionKeywords: ["Privacy by Design 7대 원칙", "프라이버시 사전 예방", "초기 설정", "포지티브섬"],
+              blocks: [
+                { type: "table", title: "7대 기본 원칙", columns: ["원칙", "설명"], rows: [["사후조치가 아닌 사전 예방", "사고가 난 뒤 대응하기보다 침해를 예상하고 미리 예방"], ["초기 설정부터 프라이버시 보호", "기본 설정에서 개인정보 보호가 최대한 적용되도록 함"], ["프라이버시 보호를 내재한 설계", "서비스·시스템·처리 절차에 보호를 기본 설계로 통합"], ["포지티브섬(제로섬이 아님)", "사업 기능·편의성과 개인정보 보호를 함께 달성하도록 설계"], ["개인정보 생애주기 전체 보호", "수집·이용·저장·제공·파기 전 과정에서 보호"], ["가시성과 투명성", "정보주체가 처리 과정과 보호 방식을 명확히 이해할 수 있게 함"], ["이용자 프라이버시 존중", "명시적 보호체계가 없는 상황에서도 이용자 프라이버시를 고려"]] },
+                { type: "text", title: "설계 원칙의 적용", paragraphs: ["Privacy by Design은 개인정보 침해가 발생한 뒤 보완하는 방식에서 벗어나 초기 요구사항과 기본 설정부터 보호를 반영합니다. 보안과 편의성을 서로 상쇄하는 제로섬으로 보지 않고 기능과 프라이버시 보호를 함께 높이는 포지티브섬을 지향합니다."] }
+              ],
+              memoryPoints: ["PbD는 사전 예방·기본값 보호·설계 내재화를 강조합니다.", "프라이버시와 사업 기능을 함께 높이는 포지티브섬을 목표로 합니다.", "개인정보 수집부터 파기까지 전 생애주기에서 보호하고 투명성과 이용자 존중을 유지합니다."]
+            }
+          ]
+        },
+        {
+          id: "management-security-certifications",
+          chapter: "정보보호 인증제도",
+          status: "published",
+          title: "ISMS·ISMS-P와 보안제품 인증",
+          summary: "조직의 관리체계 인증과 정보보호제품 평가를 구분하고 국내 ISMS-P 및 CC 평가 기준을 익힙니다.",
+          sourcePdfPages: [990, 1001],
+          concepts: [
+            {
+              id: "isms-isms-p-management-system",
+              title: "ISMS·ISMS-P 관리체계 인증",
+              summary: "조직·인력·예산과 정책·위험관리·보호대책을 지속 운영하고 개인정보 처리 요구사항까지 관리합니다.",
+              sourcePdfPages: [990, 996],
+              keywords: ["ISMS", "ISMS-P", "정보보호 관리체계", "개인정보보호 관리체계", "DoA", "인증 범위", "ISO 27701"],
+              questionKeywords: ["ISMS-P 인증", "ISMS-P 의무 대상", "ISMS-P 인증범위", "12개 분야 64개 인증기준", "개인정보 처리단계별 21개 인증기준", "ISO 27701"],
+              blocks: [
+                { type: "table", title: "관리체계 인증의 범위", columns: ["인증", "보호 대상과 평가"], rows: [["ISMS", "조직의 정보보호 관리체계와 정보자산의 기밀성·무결성·가용성을 위한 관리적·기술적·물리적 보호조치 평가"], ["ISMS-P", "ISMS에 개인정보 보호 요구사항을 통합해 개인정보의 수집·이용부터 파기까지 보호 관리체계를 함께 평가"]] },
+                { type: "text", title: "관리체계의 기반", paragraphs: ["교재는 정보보호 관리체계의 기반 요소로 조직과 인력, 사업 추진과 예산 배정, 규정에 기반한 전사적 정보보호 활동을 제시합니다. 인증은 문서 보유 여부만이 아니라 경영진 참여, 정책 승인, 자산 식별, 위험평가, 통제의 운영과 점검이 지속되는지 확인합니다.", "책에 정리된 ISMS-P 요구사항은 관리체계 수립·운영 분야 12개 영역 64개 인증기준과 개인정보 처리단계별 5개 영역 21개 기준으로 구성됩니다. 처리 생애주기의 각 단계에 맞춰 위험을 식별하고 보호대책을 이행합니다."] },
+                { type: "table", title: "ISMS-P 인증 범위", columns: ["범위", "포함·제외 예"], rows: [["서비스·응용프로그램", "이용자와 직접 접점인 서비스 및 제공·운영에 직접 필요한 응용·관리 시스템 포함"], ["데이터베이스", "인증 서비스 데이터가 저장·관리되는 회원·운영·백업 DB 포함"], ["서버·네트워크", "운영·연계·개발·시험·로그·백업·보안관리 서버와 서비스 운영에 직접 관련된 네트워크 장비 포함"], ["운영 지배", "임대 장비라도 조직이 데이터·서비스를 실질 운영하거나 지배하면 범위에 포함될 수 있음"], ["책의 제외 예", "서비스 DB를 직접 쓰지 않는 별도 DW·CRM, 이용자 상담 콜센터 시스템, 서비스와 무관한 내부 ERP·그룹웨어 등은 조건에 따라 제외"]] },
+                { type: "table", title: "교재에 제시된 의무대상 요약", columns: ["범주", "교재의 기준"], rows: [["정보통신망 서비스", "ISP 제공자와 IDC 사업자"], ["대규모 기관", "전년도 매출·세입 등이 1,500억 원 이상인 대상 중 상급종합병원 및 재학생 1만 명 이상 학교 등 교재에 열거된 기관"], ["정보통신서비스 사업자", "전년도 정보통신서비스 부문 매출액 100억 원 이상 또는 전년도 일일 평균 이용자 100만 명 이상으로 교재가 제시한 범주"]] },
+                { type: "text", title: "인증 운영과 위험수용", paragraphs: ["조직은 서비스·자산의 위험을 정기적으로 평가하고, 목표 위험수준을 넘는 위험에 대응계획을 세웁니다. 수용 가능한 위험수준(교재 표기 DoA)은 경영진 의사결정으로 정하고, 그 범위 안에서 수용할 위험도 승인·관리합니다.", "ISMS-P 인증범위는 응용시스템·DB·서버·네트워크·보호시스템과 개인정보 처리 위치·운영 책임을 함께 살펴 정합니다. 인증 여부 자체가 사고가 일어나지 않는다는 보장은 아니며, 관리체계의 지속적인 이행과 개선이 핵심입니다."] },
+                { type: "text", title: "ISO/IEC 27701", paragraphs: ["ISO/IEC 27701은 ISO/IEC 27001 계열의 정보보안 관리체계를 개인정보 보호 관리체계로 확장하는 국제 개인정보보호 경영시스템 표준입니다. 개인정보를 처리하는 조직의 역할과 통제를 다루며, 교재는 2019년 발표된 표준으로 소개합니다."] }
+              ],
+              memoryPoints: ["ISMS는 조직의 정보보호, ISMS-P는 정보보호와 개인정보 보호 관리체계를 통합해 인증합니다.", "교재 표기 기준은 관리체계 12개 영역·64개 인증기준, 개인정보 처리단계 5개 영역·21개 기준입니다.", "ISMS-P 범위는 서비스 접점뿐 아니라 연계 DB·서버·네트워크·운영·위탁 관계까지 검토합니다.", "책의 의무대상 문턱값은 교재 판본 기준으로 확인하고 법령 개정 시 별도 재검토해야 합니다."]
+            },
+            {
+              id: "information-security-product-evaluation",
+              title: "정보보호제품 평가기관과 인증제도",
+              summary: "제품 인증의 정책·인증·인정·평가기관 역할을 구분하고 TCSEC·ITSEC·CTCPEC의 기준을 비교합니다.",
+              sourcePdfPages: [997, 999],
+              keywords: ["정보보호제품 평가", "TCSEC", "Orange Book", "ITSEC", "CTCPEC", "CCRA", "ITSCC", "평가기관"],
+              questionKeywords: ["정보보호제품 평가 인증기관", "TCSEC 등급", "ITSEC 특징", "CTCPEC", "인증기관 평가기관"],
+              blocks: [
+                { type: "table", title: "제품 평가·인증 기관의 역할", columns: ["기관", "교재의 역할"], rows: [["정책기관", "평가·인증 관련 법령·제도·정책과 예산을 마련"], ["인증기관", "평가 결과 승인, 인증서 발급·효력 연장, 인증제품 목록 관리"], ["인정기관", "평가기관의 역량·품질체계를 승인하고 인정"], ["평가기관", "제품 제출물을 조사하고 기능 시험·취약점 분석·평가 수행"], ["신청기관", "제품과 평가 자료를 준비하고 개발환경 보안 요구를 충족"]] },
+                { type: "table", title: "제품 보안평가 기준 비교", columns: ["기준", "범위·평가 관점"], rows: [["TCSEC (Orange Book)", "미국 국방부가 제시한 컴퓨터 시스템 평가기준; 기밀성 중심의 보안정책과 등급을 평가"], ["ITSEC", "유럽 기준; 보안 기능과 보증 수준을 분리해 평가하며 기밀성 외 무결성·가용성도 다룸"], ["CTCPEC", "캐나다 기준으로 기능성과 보증성을 다루며 공통평가기준(CC)의 전신 가운데 하나"], ["CC / Common Criteria", "서로 다른 국가 기준을 조화한 국제 IT 제품·시스템 보안 평가 표준 ISO/IEC 15408"]] },
+                { type: "table", title: "TCSEC 등급", columns: ["등급", "교재의 핵심 설명"], rows: [["A", "검증된 보호(Verified Protection); A1이 제시 등급에서 더 높은 신뢰 수준"], ["B", "강제적 보호(Mandatory Protection)"], ["C", "임의적 보호(Discretionary Protection)"], ["D", "최소 보호(Minimal Protection)"]] },
+                { type: "text", title: "평가기준의 발전", paragraphs: ["TCSEC는 기밀성·군사 시스템 중심의 미국 평가기준입니다. ITSEC는 기능적 요구와 보증 수준을 분리해 군사·상업 요구를 유연하게 다루려 했고, CTCPEC는 캐나다 제품 기준입니다. CC는 여러 기준을 통합한 공통 국제 평가체계이며 CCRA 상호인정 협정으로 회원국 간 인증 결과 상호 신뢰를 지원합니다."] }
+              ],
+              memoryPoints: ["정책기관은 제도·정책, 인증기관은 결과 승인·인증서, 평가기관은 시험·취약점 분석을 담당합니다.", "TCSEC는 미국·기밀성 중심, ITSEC는 유럽·기능과 보증 분리, CC는 국제 공통평가기준입니다.", "TCSEC 등급은 A 검증, B 강제적, C 임의적, D 최소 보호 순으로 구분합니다."]
+            },
+            {
+              id: "common-criteria-and-eal",
+              title: "CC 구성요소와 EAL 평가 보증등급",
+              summary: "평가대상 TOE의 보안목표를 PP·ST로 정하고 PP→ST→TOE 순으로 평가한 뒤 EAL 1–7 보증수준을 확인합니다.",
+              sourcePdfPages: [999, 1001],
+              keywords: ["Common Criteria", "ISO/IEC 15408", "TOE", "PP", "ST", "Package", "EAL", "CCRA"],
+              questionKeywords: ["CC 인증 구성요소", "Protection Profile", "Security Target", "Target of Evaluation", "EAL 등급", "CC 인증 절차"],
+              blocks: [
+                { type: "table", title: "CC 주요 구성요소", columns: ["요소", "의미"], rows: [["TOE (Target of Evaluation)", "평가 대상이 되는 제품 또는 시스템"], ["PP (Protection Profile)", "제품 유형이 공통으로 만족해야 할 제품 독립적 보안 요구사항과 목표"], ["ST (Security Target)", "특정 TOE의 보안목표·기능·보증 요구를 제품 단위로 기술한 문서"], ["Package", "재사용할 수 있도록 미리 정의하고 논리적으로 묶은 보안 요구사항 집합"], ["EAL (Evaluation Assurance Level)", "평가 보증 요구 컴포넌트를 조합한 1~7단계 보증수준"]] },
+                { type: "table", title: "EAL 1–7", columns: ["등급", "교재 표의 보증 단계"], rows: [["EAL1", "Functionally Tested — 기능적 시험"], ["EAL2", "Structurally Tested — 구조적 시험"], ["EAL3", "Methodically Tested and Checked — 방법론적 시험·검사"], ["EAL4", "Methodically Designed, Tested and Reviewed — 방법론적 설계·시험·검토"], ["EAL5", "Semi-Formally Designed and Tested — 준정형 설계·시험"], ["EAL6", "Semi-Formally Verified Design and Tested — 준정형 검증 설계·시험"], ["EAL7", "Formally Verified Design and Tested — 정형 검증 설계·시험"]] },
+                { type: "diagram", title: "CC 문서·제품 평가 순서", nodes: [{ label: "PP 평가", detail: "보호 프로파일 요구의 완전성·일치성 검토" }, { label: "ST 평가", detail: "특정 제품의 보안목표·요구가 PP를 충족하는지 평가" }, { label: "TOE 평가", detail: "제품이 ST에 적힌 요구사항을 구현하는지 시험" }], caption: "PP는 제품 유형의 공통 요구, ST는 개별 TOE가 충족할 구체 요구, TOE는 실제 평가 대상 제품입니다." },
+                { type: "text", title: "보증 수준 해석", paragraphs: ["EAL은 제품의 보안 기능 자체가 더 많은지 단순히 세는 점수가 아니라, 보안 요구가 구현되고 제대로 동작한다는 신뢰를 뒷받침하는 평가 보증의 깊이를 나타냅니다. 등급이 높아질수록 교재 표에서 더 엄격하고 포괄적인 설계 검증·시험·검토가 요구됩니다."] }
+              ],
+              memoryPoints: ["PP는 제품군의 공통 요구, ST는 특정 제품의 구체 보안목표, TOE는 실제 평가 대상입니다.", "CC의 평가 순서는 PP → ST → TOE입니다.", "EAL은 1~7단계 평가 보증수준이며 높은 등급일수록 설계 검증과 시험이 엄격해집니다."]
+            }
+          ]
+        },
+        {
+          id: "management-cyber-ethics",
+          chapter: "정보보호 윤리 및 법규",
+          status: "published",
+          title: "사이버 윤리와 사이버 폭력",
+          summary: "사이버 윤리의 범위와 컴퓨터 윤리와의 관계를 이해하고 사이버 공간에서 발생하는 폭력 유형을 구분합니다.",
+          sourcePdfPages: [1009, 1009],
+          concepts: [
+            {
+              id: "cyber-ethics-and-cyber-violence",
+              title: "사이버 윤리의 개념과 사이버 폭력 유형",
+              summary: "사이버 세계의 책임·의무와 온라인 공간에서 타인에게 가하는 괴롭힘·추적·명예훼손·성적 침해를 정리합니다.",
+              sourcePdfPages: [1009, 1009],
+              keywords: ["사이버 윤리", "컴퓨터 윤리", "사이버 폭력", "Cyberbullying", "Cyberstalking", "Cyber Defamation", "Cyber Sexual Assault"],
+              questionKeywords: ["사이버 윤리 개념", "사이버 폭력 종류", "사이버 괴롭힘", "사이버 스토킹", "사이버 명예 훼손"],
+              blocks: [
+                { type: "text", title: "사이버 윤리", paragraphs: ["교재는 사이버 윤리를 사이버 세계에 거주하는 모든 사람의 책임과 의무를 규정하는 것으로 설명합니다. 사이버 공간에서 인간 사이의 도덕적 관계를 다루고, 온라인 일탈 상황에서 필요한 구체적 행동 지침을 연구합니다.", "컴퓨터 윤리는 컴퓨터 기술과 관련된 도덕 문제를 다루며, 사이버 윤리는 그 범위를 사이버 공간으로 확장해 포함합니다."] },
+                { type: "table", title: "사이버 폭력 유형", columns: ["유형", "교재의 설명"], rows: [["사이버 괴롭힘 (Cyberbullying)", "인터넷을 통해 다른 사람을 괴롭히거나 공격하는 행위"], ["사이버 스토킹 (Cyberstalking)", "온라인에서 타인을 지속적으로 추적하거나 몰래 정보·위치를 수집하고 위협하는 행위"], ["사이버 명예훼손 (Cyber Defamation)", "사이버 공간에서 상대방의 명예를 훼손하는 행위"], ["사이버 성폭력 (Cyber Sexual Assault)", "피해자의 성적 자기결정권을 침해하는 행위"]] }
+              ],
+              memoryPoints: ["사이버 윤리는 컴퓨터 윤리를 포함하며, 온라인 공간의 도덕적 관계와 책임·의무를 다룹니다.", "사이버 폭력은 괴롭힘·지속적 추적·명예훼손·성적 자기결정권 침해 유형을 구분합니다."]
+            }
+          ]
+        },
+        {
+          id: "management-critical-infrastructure-law",
+          chapter: "정보보호 윤리 및 법규",
+          status: "published",
+          title: "정보통신기반 보호법과 주요정보통신기반시설",
+          summary: "주요정보통신기반시설의 지정 기준, 보호계획, 취약점 분석·평가와 정보공유·분석센터의 역할을 연결합니다.",
+          sourcePdfPages: [1011, 1015],
+          concepts: [
+            {
+              id: "critical-infrastructure-protection-framework",
+              title: "기반시설 보호체계와 지정 기준",
+              summary: "전자적 침해로부터 중요 기반시설을 보호하는 법의 목적과 지정·계획·심의 체계를 정리합니다.",
+              sourcePdfPages: [1011, 1014],
+              keywords: ["정보통신기반 보호법", "주요정보통신기반시설", "전자적 침해행위", "정보통신기반보호위원회", "보호계획"],
+              questionKeywords: ["정보통신기반 보호법 목적", "정보통신기반보호위원회 구성", "주요정보통신기반시설 보호계획", "기반시설 지정 기준"],
+              blocks: [
+                { type: "text", title: "법의 목적과 용어", paragraphs: ["정보통신기반 보호법은 전자적 침해행위에 대비해 주요정보통신기반시설 보호대책을 수립·시행하고 시설을 안정적으로 운용해 국가 안전과 국민 생활의 안정을 보장하는 것을 목적으로 합니다.", "교재는 정보통신기반시설을 국가안전보장·행정·국방·치안·금융·통신·운송·에너지 등 업무와 관련된 전자적 제어·관리 시스템으로 설명합니다. 전자적 침해행위에는 해킹, 악성코드, 논리폭탄·메일폭탄, 서비스 거부, 고출력 전자기파 등이 포함되고, 침해사고는 그 결과 발생한 사태입니다."] },
+                { type: "table", title: "주요정보통신기반시설 지정 고려사항", columns: ["기준", "검토 내용"], rows: [["업무 중요성", "관리기관이 수행하는 업무의 국가·사회적 중요성"], ["의존도", "해당 업무가 정보통신기반시설에 의존하는 정도"], ["상호연계성", "다른 정보통신기반시설과의 연결 관계"], ["피해 규모·범위", "침해사고가 국가안전보장과 경제·사회에 미칠 영향"], ["발생·복구 가능성", "침해사고 발생 가능성과 복구의 용이성"]] },
+                { type: "text", title: "보호계획과 심의", paragraphs: ["교재에 따르면 주요정보통신기반보호위원회는 국무총리 소속으로 두며, 관계 중앙행정기관은 전년도 추진 실적과 다음 연도 보호계획을 제출해 심의를 받습니다. 보호계획에는 취약점 분석·평가, 침해사고 예방·백업·복구 등 보호 사항이 포함됩니다.", "관계 중앙행정기관의 장은 지정 여부를 심의·결정하고 지정 또는 취소를 고시합니다. 지방자치단체가 관리·감독하는 시설은 행정안전부장관이 해당 지방자치단체장과 협의하는 절차가 교재에 제시되어 있습니다."] }
+              ],
+              memoryPoints: ["지정 판단은 업무 중요성, 기반시설 의존도, 상호연계성, 예상 피해 규모·범위, 발생 가능성과 복구 용이성을 함께 봅니다.", "보호계획은 취약점 평가뿐 아니라 침해사고 예방·백업·복구 대책을 포함합니다."]
+            },
+            {
+              id: "critical-infrastructure-assessment-and-isac",
+              title: "취약점 분석·평가와 ISAC",
+              summary: "관리기관의 취약점 분석·평가와 전문기관 지원, 분야별 정보공유·분석센터의 두 가지 핵심 기능을 학습합니다.",
+              sourcePdfPages: [1014, 1015],
+              keywords: ["취약점 분석·평가", "한국인터넷진흥원", "정보보호 전문서비스 기업", "ETRI", "ISAC", "정보공유·분석센터"],
+              questionKeywords: ["주요정보통신기반시설 취약점 분석 평가 기관", "정보공유 분석센터 업무", "ISAC 기능", "취약점 분석·평가"],
+              blocks: [
+                { type: "text", title: "취약점 분석·평가", paragraphs: ["주요정보통신기반시설 관리기관은 취약점을 분석·평가하고, 교재는 한국인터넷진흥원, 정보보호 전문서비스 기업, 한국전자통신연구원 등 분석·평가를 수행할 수 있는 기관을 열거합니다. 구체적인 대상·방법은 법령과 시행령의 지정 요건에 따릅니다.", "관계 중앙행정기관은 평가 기준을 정해 관계 기관에 통보하고, 세부 방법과 절차는 대통령령으로 정하도록 교재가 정리합니다."] },
+                { type: "table", title: "정보공유·분석센터 (ISAC)", columns: ["기능", "설명"], rows: [["취약점·위협 정보 공유", "취약점, 침해요인과 대응방안에 관한 정보를 제공"], ["실시간 경보·분석", "침해사고 발생 시 실시간 경보·분석 체계를 운영"]] },
+                { type: "text", title: "기관 간 지원", paragraphs: ["정보공유·분석센터는 금융·통신 등 분야별 기반시설을 보호하기 위해 구축·운영할 수 있습니다. 정부는 센터 구축을 장려하고 필요한 재정적·기술적 지원을 할 수 있습니다."] }
+              ],
+              memoryPoints: ["취약점 평가 수행기관은 한국인터넷진흥원·정보보호 전문서비스 기업·한국전자통신연구원 등 교재에 제시된 전문기관과 지정 요건을 확인합니다.", "ISAC의 중심 기능은 위협·취약점 정보 제공과 침해 발생 시 실시간 경보·분석입니다."]
+            }
+          ]
+        },
+        {
+          id: "management-network-act-security",
+          chapter: "정보보호 윤리 및 법규",
+          status: "published",
+          title: "정보통신망법의 목적·용어와 안전성 확보",
+          summary: "정보통신망법의 적용 용어와 안전한 이용환경 조성 체계, 침해사고 신고 및 광고성 정보 관련 학습 범위를 정리합니다.",
+          sourcePdfPages: [1015, 1018],
+          concepts: [
+            {
+              id: "network-act-scope-and-incident-reporting",
+              title: "정보통신망법의 기본 용어와 침해사고 대응",
+              summary: "법의 목적과 정보통신망·서비스·침해사고 등 용어를 구분하고 사업자의 신고·대응 흐름을 이해합니다.",
+              sourcePdfPages: [1015, 1017],
+              keywords: ["정보통신망 이용촉진 및 정보보호 등에 관한 법률", "정보통신망법", "정보통신서비스 제공자", "이용자", "침해사고 신고", "KISA"],
+              questionKeywords: ["정보통신망법 목적", "정보통신망법 용어", "침해사고 신고 정보통신서비스 제공자", "한국인터넷진흥원 신고"],
+              blocks: [
+                { type: "text", title: "법의 목적과 구성", paragraphs: ["정보통신망법은 정보통신망 이용을 촉진하고 정보통신서비스 이용자를 보호하며, 망을 건전하고 안전하게 이용할 환경을 조성해 국민 생활의 향상과 공공복리 증진에 이바지하는 것을 목적으로 합니다.", "교재의 구성표는 총칙, 이용촉진, 정보통신서비스의 안전한 이용환경, 이용자 보호, 안전성 확보, 통신과금서비스, 국제협력, 보칙·벌칙 등으로 구분합니다. 개인정보 보호 관련 규정이 개인정보 보호법으로 이관된 점도 교재의 판본 설명으로 제시합니다."] },
+                { type: "table", title: "핵심 용어", columns: ["용어", "교재의 의미"], rows: [["정보통신망", "정보를 수집·가공·저장·검색·송신·수신하는 전기통신 기반의 정보통신체제"], ["정보통신서비스", "전기통신역무를 이용해 정보를 제공하거나 정보 제공을 매개하는 것"], ["정보통신서비스 제공자", "전기통신사업자의 역무를 이용해 영리 목적으로 정보를 제공하거나 매개하는 자"], ["이용자", "정보통신서비스 제공자가 제공하는 서비스를 이용하는 자"], ["침해사고", "정보통신망 또는 관련 정보시스템에 대한 공격으로 발생한 사태"]] },
+                { type: "text", title: "침해사고 신고 흐름", paragraphs: ["교재 수록 조문은 정보통신서비스 제공자가 침해사고 발생 사실을 알게 되면 과학기술정보통신부장관 또는 한국인터넷진흥원에 즉시 신고하도록 정리합니다. 이미 다른 법률에 따라 해당 사고를 신고·통지한 경우의 처리와 신고를 받은 기관의 후속 조치도 함께 확인합니다.", "실무 학습에서는 신고 대상·시점·수신 기관을 구분하고, 법률 간 신고 중복 처리 조항을 교재의 조문 및 최신 법령과 함께 확인합니다."] }
+              ],
+              memoryPoints: ["정보통신망법의 목적은 망 이용 촉진, 이용자 보호, 안전한 이용환경 조성입니다.", "침해사고 신고는 교재 기준으로 정보통신서비스 제공자가 과학기술정보통신부장관 또는 KISA에 즉시 합니다."]
+            },
+            {
+              id: "network-act-advertising-and-user-protection",
+              title: "정보통신망의 이용자 보호와 광고성 정보",
+              summary: "교재에 수록된 이용자 보호·영리목적 광고성 정보 규정을 절차와 통제 목적 중심으로 읽습니다.",
+              sourcePdfPages: [1017, 1018],
+              keywords: ["이용자 보호", "영리목적 광고성 정보", "정보통신망법 제50조", "광고성 정보 전송", "수신자 동의"],
+              questionKeywords: ["정보통신망법 광고성 정보", "영리목적 광고성 정보 전송", "광고 수신동의", "정보통신망 이용자 보호"],
+              blocks: [
+                { type: "text", title: "광고성 정보 통제의 핵심", paragraphs: ["교재는 영리목적 광고성 정보의 전송과 이용자 보호 조항을 다루며, 수신자의 의사와 정보통신서비스 제공자의 조치가 핵심임을 강조합니다. 광고 전송·수신동의·거부와 관련된 세부 요건은 교재에 실린 법 조문을 기준으로 학습하고, 조문 개정 여부가 중요한 내용은 최신 법령을 별도로 확인해야 합니다.", "정보통신망법은 정보통신서비스의 안전한 이용환경 조성을 독립된 장으로 두며, 침해사고 신고와 보호조치 규정을 포함합니다."] },
+                { type: "table", title: "시험에서 구분할 관점", columns: ["확인 항목", "학습 포인트"], rows: [["전송 주체", "광고성 정보를 보내는 자와 정보통신서비스 제공자의 역할을 구분"], ["수신자 권리", "수신 의사·동의와 거부 의사에 관한 절차를 조문에서 확인"], ["기술·운영 조치", "차단·신고 소프트웨어 등 이용자 보호 지원 조항과 전송 의무를 구분"], ["법령 판본", "책의 요약을 시험 범위로 학습하되 실제 적용에는 현행 조문을 확인"]] }
+              ],
+              memoryPoints: ["광고성 정보 규정은 전송 주체, 수신자의 의사, 제공자의 조치·지원 항목을 나누어 읽습니다.", "세부 동의·거부 절차와 제재 내용은 교재 판본에 고정하지 말고 현행 조문을 확인합니다."]
+            }
+          ]
+        },
+        {
+          id: "management-personal-information-principles-rights",
+          chapter: "정보보호 윤리 및 법규",
+          status: "published",
+          title: "개인정보의 개념·처리 원칙과 정보주체 권리",
+          summary: "개인정보·가명정보와 처리자의 개념을 구분하고 처리 원칙 및 정보주체의 권리를 정리합니다.",
+          sourcePdfPages: [1018, 1023],
+          concepts: [
+            {
+              id: "personal-information-and-processing-principles",
+              title: "개인정보의 범위와 처리 원칙",
+              summary: "개인을 알아볼 수 있는 정보, 다른 정보와 쉽게 결합해 식별되는 정보, 가명정보와 처리 행위를 구분합니다.",
+              sourcePdfPages: [1019, 1022],
+              keywords: ["개인정보 보호법", "개인정보", "가명정보", "익명정보", "개인정보처리자", "정보주체", "개인정보 처리 원칙"],
+              questionKeywords: ["개인정보 보호법 정의", "개인정보와 가명정보", "개인정보처리자", "개인정보 처리 원칙", "익명 가명 처리"],
+              blocks: [
+                { type: "table", title: "기본 용어", columns: ["용어", "핵심 의미"], rows: [["개인정보", "살아 있는 개인에 관한 정보로, 단독 또는 다른 정보와 쉽게 결합해 개인을 알아볼 수 있는 정보"], ["가명정보", "추가정보를 사용·결합하지 않으면 특정 개인을 알아볼 수 없게 처리한 개인정보"], ["처리", "수집·생성·연계·기록·저장·보유·가공·검색·이용·제공·공개·파기 등 개인정보에 하는 행위"], ["정보주체", "처리되는 정보로 알아볼 수 있는 사람으로 해당 정보의 주체"], ["개인정보처리자", "업무 목적으로 개인정보파일을 운용하며 개인정보를 처리하는 공공기관·법인·단체·개인"]] },
+                { type: "text", title: "개인정보 처리 원칙", paragraphs: ["교재가 정리한 원칙은 처리 목적을 명확히 하고 필요한 최소한만 적법·정당하게 수집하는 것, 목적에 맞게 처리하고 목적 외 이용을 제한하는 것, 정확성·완전성·최신성을 유지하는 것입니다.", "처리 위험을 고려해 안전하게 관리하고 처리 관련 사항을 공개하며 정보주체 권리를 보장합니다. 사생활 침해를 최소화하고 익명·가명 처리로 목적을 달성할 수 있으면 식별성을 낮추며, 법적 책임과 의무를 실천합니다."] },
+                { type: "text", title: "비식별 처리", paragraphs: ["교재는 가명화·암호화·교환, 표본추출, 테이블 분리, 합성데이터, 집계, 범주화·라운딩 등 여러 기법을 소개합니다. 각 기법은 분석 유용성과 재식별 위험을 함께 고려해야 하며, 가명정보는 익명정보와 달리 개인정보 보호 규율의 대상입니다."] }
+              ],
+              memoryPoints: ["가명정보는 추가정보와 결합하지 않으면 식별되지 않는 개인정보이며 익명정보와 다릅니다.", "수집 최소성·목적 제한·정확성·안전성·투명성과 정보주체 권리를 함께 봅니다."]
+            },
+            {
+              id: "data-subject-rights",
+              title: "정보주체의 권리",
+              summary: "정보 제공·동의 결정·열람 및 전송·정지·정정·삭제·파기·피해구제와 자동화 결정 관련 권리를 정리합니다.",
+              sourcePdfPages: [1023, 1023],
+              keywords: ["정보주체 권리", "열람", "전송 요구", "처리정지", "정정·삭제·파기", "자동화된 결정"],
+              questionKeywords: ["개인정보 정보주체 권리", "개인정보 처리 정지", "자동화된 개인정보 결정", "개인정보 열람 전송"],
+              blocks: [
+                { type: "bullets", title: "교재에 정리된 권리", items: ["개인정보 처리에 관한 정보를 제공받을 권리", "처리에 대한 동의 여부와 범위 등을 선택·결정할 권리", "처리 여부 확인, 열람·사본 발급 및 전송을 요구할 권리", "처리 정지, 정정·삭제 및 파기를 요구할 권리", "처리로 인한 피해를 신속하고 공정한 절차로 구제받을 권리", "완전히 자동화된 처리에 따른 결정을 거부하거나 설명 등을 요구할 권리"] },
+                { type: "text", title: "권리 보장", paragraphs: ["개인정보처리자는 정보주체가 권리를 행사할 수 있도록 처리방침과 연락 창구를 알리고, 법령상 제한 사유가 없는 범위에서 요구를 처리해야 합니다. 열람 제한·거절은 법적 요건과 절차에 따르며 임의로 권리를 축소할 수 없습니다."] }
+              ],
+              memoryPoints: ["권리 묶음은 정보 제공, 동의 결정, 열람·전송, 정지·정정·삭제·파기, 피해구제, 자동화 결정 거부·설명입니다."]
+            }
+          ]
+        },
+        {
+          id: "management-personal-information-collection-use",
+          chapter: "정보보호 윤리 및 법규",
+          status: "published",
+          title: "개인정보 수집·이용·제공과 목적 제한",
+          summary: "수집·이용 근거와 고지·동의, 최소수집, 제3자 제공 및 목적 외 이용 제한을 절차별로 살펴봅니다.",
+          sourcePdfPages: [1023, 1028],
+          concepts: [
+            {
+              id: "personal-information-collection-and-use",
+              title: "수집·이용 근거와 최소수집",
+              summary: "동의 외 법적 수집 근거를 구분하고 목적에 필요한 최소 정보만 처리한다는 원칙을 확인합니다.",
+              sourcePdfPages: [1023, 1024],
+              keywords: ["개인정보 수집·이용", "동의", "최소수집", "법령상 의무", "공공기관", "정당한 이익"],
+              questionKeywords: ["개인정보 수집 이용 근거", "개인정보 최소수집 원칙", "개인정보 동의 고지사항", "동의 없는 개인정보 수집"],
+              blocks: [
+                { type: "table", title: "교재에 정리된 수집·이용 근거", columns: ["근거", "요건의 요지"], rows: [["정보주체 동의", "처리 목적과 법정 고지사항을 알리고 동의를 받음"], ["법률상 근거·의무", "법률의 특별한 규정 또는 법령상 의무 준수에 불가피함"], ["공공기관 업무", "법령 등에서 정한 공공기관 소관 업무 수행에 불가피함"], ["계약 이행·요청 조치", "계약 이행 또는 정보주체 요청에 따른 조치에 필요함"], ["급박한 이익", "정보주체나 제3자의 급박한 생명·신체·재산상 이익을 위해 필요함"], ["정당한 이익", "처리자의 이익이 정보주체 권리보다 명백히 우선하고 합리적 범위 안에 있음"], ["공공의 안전·안녕", "공중위생 등 공공의 안전과 안녕을 위해 긴급히 필요함"]] },
+                { type: "text", title: "동의 고지와 최소수집", paragraphs: ["동의를 받을 때에는 수집·이용 목적, 수집 항목, 보유·이용 기간, 동의 거부권과 거부에 따른 불이익을 알립니다. 중요한 사항을 변경하는 경우에도 알리고 동의를 받습니다.", "목적에 필요한 최소한의 개인정보만 수집해야 하며, 최소 수집이라는 점의 입증 책임은 처리자에게 있습니다. 최소 정보 외 수집에 동의하지 않았다는 이유만으로 재화·서비스 제공을 거부할 수 없다는 점도 확인합니다."] }
+              ],
+              memoryPoints: ["동의 외 수집 근거도 법정 요건에 맞아야 합니다.", "목적에 필요한 최소 정보만 수집하고, 최소성 입증 책임은 처리자에게 있습니다."]
+            },
+            {
+              id: "personal-information-third-party-and-purpose-limitation",
+              title: "제3자 제공과 목적 외 이용 제한",
+              summary: "제3자 제공의 동의 고지 항목과 목적 외 이용·제공 제한 및 예외를 구분합니다.",
+              sourcePdfPages: [1024, 1026],
+              keywords: ["개인정보 제3자 제공", "목적 외 이용", "제공받는 자", "제공 목적", "보유·이용 기간"],
+              questionKeywords: ["개인정보 제3자 제공 동의사항", "개인정보 목적 외 이용 제공", "정보주체 동의 제공"],
+              blocks: [
+                { type: "text", title: "제3자 제공과 고지", paragraphs: ["교재가 제시하는 제공 근거에는 정보주체 동의, 법률의 특별한 규정, 급박한 생명·신체·재산상 이익 등 법정 사유가 있습니다. 동의를 받는 경우 제공받는 자, 이용 목적, 제공 항목, 보유·이용 기간, 동의 거부권 및 불이익을 알립니다.", "제공 동의와 수집·이용 동의는 목적·수신자·범위가 다를 수 있으므로 필요한 동의를 구분하여 확인합니다."] },
+                { type: "text", title: "목적 외 이용·제공", paragraphs: ["개인정보는 수집 당시 목적과 법정 범위를 넘어서 이용하거나 제공하지 않는 것이 원칙입니다. 교재에는 별도 동의, 법률의 특별한 규정, 급박한 이익, 공공기관의 법정 업무 등 예외 사유가 제시되며 일부 사유는 공공기관에 한정됩니다.", "공공기관의 목적 외 이용·제공은 법적 근거·목적·범위를 공개하고, 제3자 제공 시 이용 목적·방법 제한이나 안전조치를 요청하는 규정도 함께 확인합니다."] },
+                { type: "table", title: "동의 시 구분해 알릴 항목", columns: ["수집·이용", "제3자 제공"], rows: [["수집·이용 목적", "제공받는 자"], ["수집 항목", "제공받는 자의 이용 목적"], ["보유·이용 기간", "제공 항목과 보유·이용 기간"], ["동의 거부권 및 불이익", "동의 거부권 및 불이익"]] }
+              ],
+              memoryPoints: ["제3자 제공 동의에는 수신자와 수신 목적이 별도로 포함됩니다.", "목적 외 이용·제공은 금지가 원칙이며 법정 예외와 적용 주체 범위를 확인합니다."]
+            }
+          ]
+        },
+        {
+          id: "management-personal-information-restricted-processing",
+          chapter: "정보보호 윤리 및 법규",
+          status: "published",
+          title: "민감·고유식별정보, 영상정보와 처리위탁",
+          summary: "강화된 제한이 적용되는 정보와 영상정보처리기기 규칙, 수탁자 공개·감독 책임을 정리합니다.",
+          sourcePdfPages: [1029, 1032],
+          concepts: [
+            {
+              id: "sensitive-unique-identifiers-and-cctv",
+              title: "민감정보·고유식별정보와 영상정보처리기기",
+              summary: "민감정보·고유식별정보의 별도 제한과 CCTV 설치·안내·촬영·녹음 규칙을 구분합니다.",
+              sourcePdfPages: [1029, 1031],
+              keywords: ["민감정보", "고유식별정보", "주민등록번호", "고정형 영상정보처리기기", "CCTV", "녹음 금지"],
+              questionKeywords: ["민감정보 처리 제한", "고유식별정보 처리", "주민등록번호 처리 제한", "CCTV 설치 안내판", "영상정보처리기기 녹음"],
+              blocks: [
+                { type: "table", title: "강화된 처리 제한", columns: ["대상", "교재의 처리 원칙"], rows: [["민감정보", "사상·신념, 정치적 견해, 건강·성생활 등 사생활을 현저히 침해할 우려가 있는 정보; 별도 동의 또는 법령상 근거 등 예외를 확인"], ["고유식별정보", "개인을 고유하게 구별하기 위해 부여된 식별정보; 별도 동의나 법령상 구체적 근거 등 예외를 확인"], ["주민등록번호", "일반 고유식별정보 조항과 별도로 처리 제한 조항이 있음을 구분"]] },
+                { type: "text", title: "영상정보처리기기 운영", paragraphs: ["교재는 법령상 허용, 범죄 예방·수사, 시설 안전·관리와 화재 예방, 교통단속·정보 수집 등 정해진 경우에 설치·운영할 수 있는 체계를 설명합니다. 사생활을 현저히 침해할 장소 내부를 촬영하는 설치는 제한되며 설치 목적·장소·촬영 범위·시간·관리책임자 연락처 등을 안내해야 합니다.", "설치 목적과 다른 임의 조작·촬영을 하지 않고 녹음 기능을 사용하지 않으며 영상정보의 안전성을 확보합니다. 공공기관 설치의 의견 수렴 절차도 확인합니다."] }
+              ],
+              memoryPoints: ["민감정보·고유식별정보는 일반 개인정보보다 강화된 별도 요건을 확인합니다.", "영상기기는 허용 목적·안내판·안전조치를 갖추고 녹음 기능을 사용하지 않습니다."]
+            },
+            {
+              id: "personal-information-outsourcing",
+              title: "개인정보 처리업무 위탁과 수탁자 감독",
+              summary: "위탁 계약·공개·통지, 수탁자의 목적 외 처리 금지와 위탁자의 교육·점검 의무를 정리합니다.",
+              sourcePdfPages: [1032, 1032],
+              keywords: ["개인정보 처리 위탁", "위탁자", "수탁자", "재위탁", "수탁자 감독", "처리업무 계약"],
+              questionKeywords: ["개인정보 처리위탁 의무", "위탁자 수탁자 개인정보", "수탁자 공개 감독", "개인정보 재위탁"],
+              blocks: [
+                { type: "text", title: "위탁자의 관리 의무", paragraphs: ["개인정보 처리업무를 위탁할 때에는 위탁업무 목적 외 처리 금지와 안전한 관리에 필요한 사항을 문서에 포함합니다. 위탁업무 내용과 수탁자를 공개하고, 홍보·판매 권유 업무의 위탁은 정해진 방법으로 정보주체에게 알립니다.", "위탁자는 수탁자를 교육하고 처리 현황을 점검하는 등 안전한 처리를 감독합니다. 재위탁 요건과 수탁자의 위반에 따른 책임 관계도 계약과 법령에 따라 관리합니다."] },
+                { type: "table", title: "위탁 관계의 역할", columns: ["주체", "핵심 사항"], rows: [["위탁자", "처리 목적·범위를 정하고 계약·공개·교육·점검 등 관리·감독 수행"], ["수탁자", "위탁받은 업무 범위 안에서 처리하고 안전조치·재위탁 제한 준수"], ["정보주체", "위탁업무 내용과 수탁자를 확인할 수 있도록 공개·통지받음"]] }
+              ],
+              memoryPoints: ["위탁자는 계약·공개·교육·점검으로 수탁자를 관리하고, 수탁자는 위탁 목적과 범위를 넘지 않습니다."]
+            }
+          ]
+        },
+        {
+          id: "management-personal-information-overseas-transfer",
+          chapter: "정보보호 윤리 및 법규",
+          status: "published",
+          title: "가명정보 처리와 개인정보 국외 이전",
+          summary: "통계·연구 목적의 가명정보 처리 조건과 국외 이전의 허용 근거·고지 항목을 정리합니다.",
+          sourcePdfPages: [1033, 1033],
+          concepts: [
+            {
+              id: "pseudonymous-data-and-overseas-transfer",
+              title: "가명정보 활용과 국외 이전 조건",
+              summary: "동의 없이 가명정보를 활용할 수 있는 목적, 재식별 방지, 국외 이전 허용 조건을 구분합니다.",
+              sourcePdfPages: [1033, 1033],
+              keywords: ["가명정보", "통계작성", "과학적 연구", "공익적 기록보존", "개인정보 국외 이전", "개인정보 보호 인증"],
+              questionKeywords: ["가명정보 처리 목적", "가명정보 제3자 제공", "개인정보 국외 이전", "국외 이전 동의"],
+              blocks: [
+                { type: "text", title: "가명정보 처리", paragraphs: ["교재에 수록된 개인정보 보호법은 통계작성, 과학적 연구, 공익적 기록보존 등을 위해 정보주체 동의 없이 가명정보를 처리할 수 있도록 정리합니다. 제3자 제공 시에는 특정 개인을 알아보기 위해 사용될 수 있는 정보를 포함하지 않습니다.", "가명정보 처리도 목적·범위·안전조치를 관리해야 하며, 다른 정보와 결합해 개인을 알아보려는 시도는 금지되는 것으로 교재가 설명합니다."] },
+                { type: "table", title: "교재에 정리된 국외 이전 근거", columns: ["근거", "핵심 조건"], rows: [["별도 동의", "정보주체로부터 국외 이전에 관한 별도 동의를 받음"], ["법률·조약", "법률 또는 대한민국이 당사자인 조약·국제협정에 특별 규정이 있음"], ["계약 이행상 위탁·보관", "계약 체결·이행에 필요하고 처리방침 공개 또는 정해진 방법으로 정보주체에게 알림"], ["보호 인증", "이전받는 자가 보호 인증을 받고 필요한 안전조치와 현지 이행조치를 수행"], ["동등한 보호수준", "보호위원회가 해당 국가·국제기구의 보호체계와 권리구제 등이 실질적으로 동등하다고 인정"]] },
+                { type: "text", title: "이전 전 확인", paragraphs: ["교재는 이전되는 개인정보 항목, 이전 국가·시기·방법, 이전받는 자의 명칭과 연락처, 이용 목적과 보유·이용 기간, 이전 거부 방법과 절차·효과 등을 정보주체에게 알리는 항목으로 제시합니다. 실제 적용 전에는 교재 판본이 아닌 현행 법령과 하위 규정을 확인해야 합니다."] }
+              ],
+              memoryPoints: ["가명정보의 교재상 주요 목적은 통계작성·과학적 연구·공익적 기록보존입니다.", "국외 이전은 별도 동의만 있는 것이 아니라 법률·계약·인증·동등성 인정 등 교재에 나온 근거와 고지 요건을 구분합니다."]
+            }
+          ]
+        },
+        {
+          id: "management-personal-information-security-and-breach",
+          chapter: "정보보호 윤리 및 법규",
+          status: "published",
+          title: "개인정보의 안전한 관리와 유출 대응",
+          summary: "처리방침·개인정보파일 관리와 영향평가, 유출 통지·신고의 정보 항목과 교재에 제시된 조건을 학습합니다.",
+          sourcePdfPages: [1034, 1038],
+          concepts: [
+            {
+              id: "privacy-policy-and-impact-assessment",
+              title: "처리방침·개인정보파일·영향평가",
+              summary: "처리 투명성을 위한 처리방침·파일 등록 항목과 공공기관 개인정보 영향평가 의무대상을 파악합니다.",
+              sourcePdfPages: [1034, 1037],
+              keywords: ["개인정보 처리방침", "개인정보파일", "개인정보 보호위원회 등록", "개인정보 영향평가", "PIA"],
+              questionKeywords: ["개인정보 처리방침 포함사항", "개인정보파일 등록 항목", "개인정보 영향평가 의무대상", "개인정보 영향평가 5만 50만 100만"],
+              blocks: [
+                { type: "text", title: "처리방침과 개인정보파일", paragraphs: ["개인정보 처리방침은 처리 목적과 보유 기간, 제3자 제공, 파기 절차, 처리 위탁, 가명정보 처리, 정보주체 권리 행사, 보호책임자 연락처 등 처리 현황을 알리는 문서입니다.", "공공기관이 개인정보파일을 운용하는 경우 교재는 파일 명칭, 운영 근거·목적, 기록 항목, 처리 방법, 보유 기간, 제공받는 자 등을 등록·공개할 사항으로 제시합니다. 보호위원회는 필요하면 등록 내용을 검토하고 개선을 권고할 수 있습니다."] },
+                { type: "table", title: "교재에 제시된 개인정보 영향평가 대상 기준", columns: ["유형", "기준 요약"], rows: [["민감·고유식별정보 파일", "해당 개인정보가 포함된 파일에 정보주체 5만 명 이상"], ["다른 파일과 연계", "연계 결과 정보주체 50만 명 이상"], ["일반 개인정보파일", "정보주체 100만 명 이상"], ["운용 체계 변경", "영향평가 후 검색체계 등 운용체계를 변경하는 경우 변경된 부분을 평가"]] },
+                { type: "text", title: "영향평가", paragraphs: ["개인정보 영향평가는 공공기관 개인정보파일 운용으로 정보주체 개인정보 침해 우려가 있을 때 위험을 분석하고 개선사항을 도출하는 평가입니다. 개인정보 항목·제3자 제공·정보주체 권리 침해 가능성·위험 정도 등을 검토하고 결과를 보호위원회에 제출하는 흐름을 교재에서 확인합니다.", "위 기준과 수치는 교재의 시행령 요약이므로 실제 업무에는 현행 시행령을 확인해야 합니다."] }
+              ],
+              memoryPoints: ["교재 표의 영향평가 인원 기준은 민감·고유식별 5만, 연계 50만, 일반 파일 100만 명입니다.", "처리방침 공개는 처리 투명성과 정보주체 권리 보장을 위한 것이고, 영향평가는 공공기관 개인정보파일의 위험을 사전 분석합니다."]
+            },
+            {
+              id: "personal-information-breach-notice-and-reporting",
+              title: "개인정보 유출 통지와 신고",
+              summary: "유출 통지에 포함할 다섯 항목, 피해 최소화 조치와 교재에 수록된 72시간 신고 조건을 구분합니다.",
+              sourcePdfPages: [1037, 1038],
+              keywords: ["개인정보 유출", "유출 통지", "72시간", "1천 명", "민감정보", "고유식별정보", "KISA"],
+              questionKeywords: ["개인정보 유출 통지 사항", "개인정보 유출 신고 72시간", "개인정보 유출 1천 명", "민감정보 유출 신고"],
+              blocks: [
+                { type: "bullets", title: "정보주체에게 알릴 사항", items: ["유출된 개인정보 항목", "유출 시점과 경위", "피해를 줄이기 위해 정보주체가 할 수 있는 방법", "처리자의 대응조치와 피해구제 절차", "피해 신고를 접수할 담당부서와 연락처"] },
+                { type: "text", title: "신고·대응 흐름", paragraphs: ["개인정보처리자는 유출을 알게 되면 정보주체에게 지체 없이 통지하고 피해 최소화 대책과 필요한 조치를 합니다. 교재에 수록된 시행령 요약은 정보주체 1천 명 이상 유출, 민감정보·고유식별정보 유출, 또는 처리시스템·기기에 대한 외부의 불법 접근으로 인한 유출 등의 경우를 신고 대상으로 제시합니다.", "교재 판본 기준 요약은 원칙적으로 72시간 이내 보호위원회 또는 전문기관에 신고하며, 본문 이미지에서 수치와 적용 사유를 확인했습니다. 실제 사고 대응에는 현행 법령의 신고 대상·기한·예외를 재확인해야 합니다."] }
+              ],
+              memoryPoints: ["통지에는 유출 항목·시점과 경위·피해 최소화 방법·대응 및 구제절차·담당부서 연락처를 포함합니다.", "교재의 신고 요약은 1천 명 이상, 민감·고유식별정보, 외부의 불법 접근 유출 조건과 72시간을 연결합니다."]
+            }
+          ]
+        },
+        {
+          id: "management-personal-information-remedies",
+          chapter: "정보보호 윤리 및 법규",
+          status: "published",
+          title: "개인정보 열람과 단체소송·금지행위",
+          summary: "정보주체의 열람 요구 및 제한 사유, 개인정보 집단 권리구제와 금지행위를 정리합니다.",
+          sourcePdfPages: [1038, 1040],
+          concepts: [
+            {
+              id: "personal-information-access-and-collective-action",
+              title: "열람권·단체소송과 위법 처리 금지",
+              summary: "열람 요청·예외, 소비자단체·비영리단체의 단체소송 요건, 개인정보 취득·누설·훼손 금지행위를 구분합니다.",
+              sourcePdfPages: [1038, 1040],
+              keywords: ["개인정보 열람", "열람 제한", "개인정보 단체소송", "소비자단체", "비영리민간단체", "금지행위"],
+              questionKeywords: ["개인정보 열람 요구", "개인정보 단체소송 자격", "소비자단체 단체소송", "개인정보 금지행위"],
+              blocks: [
+                { type: "text", title: "열람 요구와 제한", paragraphs: ["정보주체는 자신의 개인정보 열람을 요구할 수 있으며, 교재는 법령에 따른 열람 금지·제한, 타인의 생명·신체나 재산상 이익 침해 우려, 공공기관의 일부 업무에 중대한 지장을 주는 경우 등 제한 사유를 정리합니다. 제한·거절 시에는 사유와 법정 절차를 확인합니다."] },
+                { type: "table", title: "교재에 정리된 단체소송 제기 자격", columns: ["단체 유형", "교재의 요건 요약"], rows: [["등록 소비자단체", "정보주체 권익 증진을 주된 목적으로 하고 정회원 1천 명 이상, 등록 후 3년 경과 등 요건"], ["비영리민간단체", "동일한 침해를 입은 정보주체 100명 이상의 요청, 최근 3년 활동, 상시 구성원 5천 명 이상, 중앙행정기관 등록 등 요건"]] },
+                { type: "text", title: "금지행위", paragraphs: ["교재는 거짓·부정한 수단으로 개인정보를 취득하거나 동의를 받는 행위, 업무상 알게 된 개인정보를 누설하거나 권한 없이 이용하게 하는 행위, 정당한 권한 없이 개인정보를 훼손·멸실·변경·위조·유출하는 행위 등을 금지행위로 정리합니다.", "단체소송은 개인정보처리자의 권리 침해 행위를 금지·중지하도록 청구하는 집단적 구제 수단으로, 손해배상 청구와 목적을 구분합니다."] }
+              ],
+              memoryPoints: ["열람 제한은 법령·타인의 권리·공공기관 업무 등 정해진 사유와 절차에 따릅니다.", "단체소송의 소비자단체와 비영리민간단체 요건은 서로 다르므로 인원·활동기간·등록 조건을 구분합니다."]
+            }
+          ]
+        },
+        {
+          id: "management-electronic-signature-law",
+          chapter: "정보보호 윤리 및 법규",
+          status: "published",
+          title: "전자서명법의 기본 용어와 인증",
+          summary: "전자문서·전자서명·생성정보와 인증서의 관계를 구분하고 현행 법 체계에서 용어를 읽는 기준을 익힙니다.",
+          sourcePdfPages: [1041, 1041],
+          concepts: [
+            {
+              id: "electronic-signature-law-terms",
+              title: "전자서명·생성정보·인증서",
+              summary: "전자서명이 제공하는 서명자 신원·서명 사실의 확인과 인증서·전자서명인증의 의미를 연결합니다.",
+              sourcePdfPages: [1041, 1041],
+              keywords: ["전자서명법", "전자문서", "전자서명", "전자서명생성정보", "전자서명수단", "전자서명인증", "인증서"],
+              questionKeywords: ["전자서명법 용어", "전자서명생성정보", "전자서명 인증서", "전자문서 전자서명"],
+              blocks: [
+                { type: "text", title: "법의 목적", paragraphs: ["전자서명법은 전자문서의 안전성과 신뢰성을 확보하고 이용을 활성화하기 위해 전자서명에 관한 기본 사항을 정하며, 국가·사회의 정보화와 국민 생활의 편익을 촉진하는 것을 목적으로 합니다."] },
+                { type: "table", title: "전자서명법 용어", columns: ["용어", "교재의 정의 요지"], rows: [["전자문서", "정보처리시스템을 통해 전자적 형태로 작성·송신·수신·저장된 정보"], ["전자서명", "전자문서에 첨부·논리적으로 결합된 정보로 서명자의 신원과 해당 문서에 서명한 사실을 확인하는 기능"], ["전자서명생성정보", "전자서명을 생성하기 위해 이용하는 전자적 정보"], ["전자서명수단", "전자서명을 하기 위해 이용하는 전자적 수단"], ["전자서명인증", "생성정보가 가입자에게 유일하게 속한다는 사실 등을 확인·증명하는 행위"], ["인증서", "생성정보가 가입자에게 유일하게 속한다는 사실 등을 확인·증명하는 전자적 정보"]] },
+                { type: "text", title: "용어 학습의 기준", paragraphs: ["교재는 과거 공인인증서 중심 조항이 개정으로 정리된 배경을 설명합니다. 시험에서는 특정 과거 인증서 명칭을 현재의 유일한 수단처럼 일반화하지 말고, 전자서명·인증 관련 법률 용어와 소관 체계를 구분합니다. 교재 판본의 제도 설명은 현행 조문과 혼동하지 않도록 합니다."] }
+              ],
+              memoryPoints: ["전자서명은 서명자 신원과 해당 전자문서에 서명했다는 사실을 확인하는 전자적 정보입니다.", "전자서명생성정보·전자서명수단·전자서명인증·인증서는 서로 다른 개념입니다."]
+            }
+          ]
+        },
+        {
+          id: "management-personal-information-security-standard",
+          chapter: "정보보호 윤리 및 법규",
+          status: "published",
+          title: "개인정보 안전성 확보조치 기준",
+          summary: "내부관리계획부터 권한·접근통제·암호화·접속기록·파기까지 개인정보처리자의 최소 보호조치를 익힙니다.",
+          sourcePdfPages: [1042, 1047],
+          concepts: [
+            {
+              id: "privacy-security-management-and-access-control",
+              title: "내부관리계획·접근권한·접근통제",
+              summary: "보호조직과 책임·교육·위험관리 계획을 수립하고 최소 권한, 개별 계정, 접속제어를 적용합니다.",
+              sourcePdfPages: [1042, 1045],
+              keywords: ["개인정보 안전성 확보조치 기준", "내부관리계획", "최소 권한", "개인별 계정", "접근통제", "인터넷망 차단", "1만 명", "100만 명"],
+              questionKeywords: ["개인정보 내부관리계획 항목", "개인정보 접근권한 관리", "개인정보 접근통제", "개인정보취급자 계정", "개인정보 인터넷망 차단"],
+              blocks: [
+                { type: "text", title: "기준의 성격과 내부관리계획", paragraphs: ["개인정보 안전성 확보조치 기준은 개인정보의 분실·도난·유출·위조·변조·훼손을 막기 위한 기술적·관리적·물리적 최소 기준입니다. 교재는 개인정보 보호법의 위임에 따른 행정규칙으로 소개합니다.", "내부관리계획에는 보호조직과 책임자, 취급자 역할·교육, 권한·접근통제, 암호화, 접속기록, 악성프로그램 방지, 취약점 점검, 물리적 조치, 유출 대응, 위험관리, 위탁자 관리·감독과 계획 승인·변경 등을 포함합니다. 교재 판본은 1만 명 미만 개인정보를 처리하는 소상공인·개인·단체의 예외를 함께 제시하므로 실제 적용 전 현행 기준을 확인합니다."] },
+                { type: "bullets", title: "접근권한과 접속 통제", items: ["업무 수행에 필요한 최소 범위의 권한만 개인별로 차등 부여합니다.", "전보·퇴직 등 담당자 변경 시 권한을 지체 없이 변경·말소하고, 조치 이력을 보관합니다.", "개인정보취급자별 계정을 발급하고 계정을 공유하지 않습니다.", "일정 시간 미사용 시 자동 접속 차단, 비인가 접근 탐지·차단, 모바일 기기 분실·도난 대비를 적용합니다.", "교재 수록 기준은 직전 3개월 일평균 이용자가 100만 명 이상인 처리자에 대해 관리용 컴퓨터 등의 인터넷망 차단 조치를 제시합니다. 클라우드 사용 시 예외·대체조치 조건은 현행 기준을 확인합니다."] }
+              ],
+              memoryPoints: ["내부관리계획은 조직·책임·교육·권한·접근통제·암호화·기록·사고대응·위탁감독을 포함하는 관리 기반입니다.", "권한은 최소·개별 부여하고 인사변동 시 지체 없이 회수·변경하며 공유계정을 금지합니다."]
+            },
+            {
+              id: "privacy-encryption-logs-and-destruction",
+              title: "개인정보 암호화·접속기록·파기",
+              summary: "인증정보와 주요 식별자의 암호화, 로그 보관·점검, 복구 불가능한 개인정보 파기 방법을 구분합니다.",
+              sourcePdfPages: [1045, 1047],
+              keywords: ["개인정보 암호화", "비밀번호 일방향", "고유식별정보", "접속기록", "로그 보관", "개인정보 파기", "완전파괴", "덮어쓰기"],
+              questionKeywords: ["개인정보 암호화 대상", "비밀번호 일방향 암호화", "접속기록 보관기간", "개인정보 파기 방법", "고유식별정보 저장"],
+              blocks: [
+                { type: "table", title: "암호화와 접속기록", columns: ["보호 대상·상황", "교재 기준의 조치"], rows: [["비밀번호", "안전한 알고리즘으로 일방향 암호화해 저장"], ["인증정보·고유식별정보 등", "교재에 열거된 주민등록번호·여권번호·운전면허번호·외국인등록번호·신용카드번호·계좌번호·생체인식정보 등을 안전한 알고리즘으로 보호"], ["전송·저장 위치", "인터넷망 전송과 DMZ 구간, 취급자 단말·모바일·보조저장매체 저장 등 교재 기준에 따른 암호화 적용"], ["접속기록", "기본 1년 이상 보관·관리; 교재에 든 일정 규모·정보유형 등 해당 조건에서는 2년 이상 보관"]] },
+                { type: "text", title: "키·로그 관리", paragraphs: ["암호화된 개인정보를 보호하기 위한 암호키 생성·이용·보관·배포·파기 절차를 수립합니다. 접속기록에는 식별자, 접속 일시, 접속지, 처리한 정보주체와 수행업무 등이 남으며 위·변조나 도난·분실되지 않도록 안전하게 보관하고 정기적으로 점검합니다.", "교재 표에는 접속기록 보관기간의 일반 기준과 2년 이상 보관이 필요한 특정 기준이 별도로 제시됩니다. 정보주체 규모·민감정보·고유식별정보 처리 여부 등 세부 적용대상과 점검 주기는 해당 페이지와 현행 고시를 확인합니다."] },
+                { type: "table", title: "개인정보 파기 방법", columns: ["매체·상황", "교재에 제시된 방법"], rows: [["전자적 저장매체 전체", "소각·파쇄 등 완전 파괴, 전용 소자장비를 이용한 삭제, 복원되지 않도록 초기화·덮어쓰기"], ["일부 전자파일", "해당 개인정보를 삭제하고 복구·재생되지 않도록 관리·감독"], ["종이·인쇄물·기타 기록매체 일부", "마스킹·구멍 뚫기 등 해당 부분을 알아볼 수 없도록 삭제"], ["기술상 즉시 파기가 곤란한 경우", "복원이 불가능한 형태로 처리하는 대체 조치"]] }
+              ],
+              memoryPoints: ["비밀번호는 복호화할 수 없는 일방향 암호화로 저장합니다.", "접속기록은 기본 1년 이상이며 교재가 든 예외 기준에서는 2년 이상 보관합니다.", "파기는 복원 불가능성이 핵심이며 저장매체·전자파일·종이기록에 맞는 방법을 선택합니다."]
+            }
+          ]
+        },
+        {
+          id: "management-domestic-representative-and-electronic-finance",
+          chapter: "정보보호 윤리 및 법규",
+          status: "published",
+          title: "국내대리인 지정과 전자금융 정보보호 거버넌스",
+          summary: "일정 요건의 국외 사업자 국내대리인 제도와 금융회사 정보보호위원회의 역할·구성을 구분합니다.",
+          sourcePdfPages: [1047, 1048],
+          concepts: [
+            {
+              id: "domestic-representative-designation",
+              title: "국내대리인 지정 요건과 자격",
+              summary: "국내 주소·영업소가 없는 정보통신서비스 제공자의 교재상 규모 기준, 국내대리인 자격 및 지정 절차를 확인합니다.",
+              sourcePdfPages: [1047, 1048],
+              keywords: ["국내대리인", "국외 사업자", "1조 원", "100억 원", "100만 명", "개인정보 보호책임자"],
+              questionKeywords: ["국내대리인 지정 대상", "국내대리인 자격", "국내대리인 지정 절차", "국외 사업자 개인정보"],
+              blocks: [
+                { type: "table", title: "교재에 정리된 지정 적용 기준", columns: ["대상 조건", "교재의 문턱값 요약"], rows: [["사업자 위치", "국내에 주소 또는 영업소가 없는 정보통신서비스 제공자 등"], ["전체 매출액", "전년도 매출액 1조 원 이상"], ["정보통신서비스 부문 매출", "전년도 부문 매출액 100억 원 이상"], ["이용자 규모", "직전 3개월 개인정보 저장·관리 이용자의 일일 평균 100만 명 이상"], ["사고 관련 요구", "개인정보 침해사건·사고와 관련해 방송통신위원회가 자료 제출 등을 요구한 경우"]] },
+                { type: "text", title: "자격·지정·공개", paragraphs: ["국내대리인은 국내 주소 또는 영업소를 둔 자연인이나 법인이어야 합니다. 한국 국적일 필요는 없으나 국내 이용자 고충을 처리하고 규제기관에 자료를 제출할 수 있도록 한국어 의사소통이 가능해야 한다고 교재가 설명합니다.", "하나 또는 복수의 대리인을 둘 수 있고 교재는 여러 국외 사업자를 한 국내대리인이 대리하거나 개인정보 보호책임자와 동일인이 맡는 경우를 소개합니다. 서면으로 지정하고 성명·주소·전화번호·전자우편주소 등을 개인정보 처리방침에 공개하는 흐름을 확인합니다.", "매출·이용자 문턱값은 교재 판본에 실린 기준입니다. 실제 의무 여부는 적용 시점의 법률·시행령과 규제기관 기준을 확인해야 합니다."] }
+              ],
+              memoryPoints: ["교재의 국외 사업자 문턱값은 매출 1조 원, 정보통신서비스 부문 100억 원, 일평균 이용자 100만 명 등으로 정리되어 있습니다.", "국내대리인은 한국 국적일 필요는 없지만 국내 주소·영업소와 원활한 한국어 소통 요건을 확인합니다."]
+            },
+            {
+              id: "electronic-finance-security-governance",
+              title: "전자금융감독규정과 정보보호위원회",
+              summary: "금융회사의 IT 안전성 규정 목적과 정보보호 중요사항을 심의·의결하는 위원회의 구성 기준을 이해합니다.",
+              sourcePdfPages: [1048, 1048],
+              keywords: ["전자금융감독규정", "금융회사", "전자금융업자", "정보보호위원회", "정보보호최고책임자", "CISO"],
+              questionKeywords: ["전자금융감독규정 정보보호위원회", "금융회사 정보보호위원회 구성", "정보보호위원회 위원장"],
+              blocks: [
+                { type: "text", title: "규정의 목적과 적용 맥락", paragraphs: ["교재는 전자금융감독규정을 전자금융거래법·시행령에서 금융위원회에 위임한 사항과 검사 대상 기관의 정보기술 부문 안전성 확보에 필요한 사항을 정하는 규정으로 설명합니다."] },
+                { type: "table", title: "정보보호위원회", columns: ["항목", "교재에 정리된 내용"], rows: [["설치 주체", "금융회사 또는 전자금융업자"], ["기능", "중요 정보보호 사항을 심의·의결"], ["위원장", "정보보호최고책임자(CISO)"], ["위원 구성", "정보보호, 전산 운영·개발, 준법 관련 부서의 장 등"]] },
+                { type: "text", title: "거버넌스 연결", paragraphs: ["금융 정보보호는 보안부서만의 기술 업무가 아니라 정보보호 책임자와 IT 운영·개발, 준법 부서가 참여하는 심의·의결 구조로 운영합니다. 구체적인 위원회 운영 요건과 금융회사별 의무는 교재의 해당 규정과 현행 감독규정에서 확인합니다."] }
+              ],
+              memoryPoints: ["교재에서 정보보호위원회는 금융회사·전자금융업자가 중요 보안 사항을 심의·의결하는 기구이며 CISO가 위원장입니다.", "IT 운영·개발과 준법 부서가 함께 참여하는 책임 구조를 기억합니다."]
+            }
+          ]
+        },
+        {
+          id: "management-cloud-computing-law",
+          chapter: "정보보호 윤리 및 법규",
+          status: "published",
+          title: "클라우드컴퓨팅법과 이용자 통지",
+          summary: "클라우드컴퓨팅·서비스·이용자 정보 정의, 전담기관 역할, 침해·유출·중단 사고의 통지 조건을 학습합니다.",
+          sourcePdfPages: [1088, 1090],
+          concepts: [
+            {
+              id: "cloud-law-definitions-and-agencies",
+              title: "클라우드컴퓨팅법의 용어와 전담기관",
+              summary: "수요에 맞춰 자원을 신축적으로 제공하는 클라우드 구조와 법정 용어·전담기관을 정리합니다.",
+              sourcePdfPages: [1088, 1089],
+              keywords: ["클라우드컴퓨팅법", "클라우드컴퓨팅", "클라우드컴퓨팅기술", "클라우드컴퓨팅서비스", "이용자 정보", "가상화", "분산처리", "NIA", "KLID", "KISA", "NIPA"],
+              questionKeywords: ["클라우드컴퓨팅법 목적", "클라우드컴퓨팅 용어", "이용자 정보 정의", "클라우드 전담기관"],
+              blocks: [
+                { type: "text", title: "법의 목적과 정의", paragraphs: ["클라우드컴퓨팅법은 클라우드컴퓨팅의 발전과 이용을 촉진하고 안전한 이용환경을 조성해 국민 생활과 국민경제 발전에 이바지하는 것을 목적으로 합니다.", "클라우드컴퓨팅은 집적·공유된 정보통신 자원을 수요 변화에 맞춰 망을 통해 신축적으로 이용하는 정보처리체계입니다. 가상화·분산처리 등이 관련 기술이며, 클라우드컴퓨팅서비스는 이를 활용해 상용으로 타인에게 자원을 제공하는 서비스입니다. 이용자 정보는 서비스 제공자의 자원에 저장되며 이용자가 소유·관리하는 정보입니다."] },
+                { type: "table", title: "교재에 제시된 전담기관", columns: ["기관", "교재에 정리된 역할·근거"], rows: [["한국지능정보사회진흥원 (NIA)", "클라우드컴퓨팅 산업·이용 촉진을 위한 연구·지원"], ["한국지역정보개발원 (KLID)", "전자정부·지역정보 관련 도입·이용 지원"], ["한국인터넷진흥원 (KISA)", "클라우드 이용자 보호·안전한 이용환경 지원"], ["정보통신산업진흥원 (NIPA)", "클라우드 산업 진흥·이용 촉진 사업 지원"]] },
+                { type: "text", title: "전담기관 지정", paragraphs: ["교재 수록 조문은 과학기술정보통신부장관이 산업 진흥과 이용 촉진에 필요하면 전담기관을 지정하고 사업 수행 경비를 전부 또는 일부 지원할 수 있도록 설명합니다. 지정·운영과 연도별 사업계획·실적 보고 흐름을 법 조문과 시행령에서 확인합니다."] }
+              ],
+              memoryPoints: ["클라우드컴퓨팅은 집적·공유 자원을 수요에 따라 정보통신망으로 신축적으로 이용하는 체계입니다.", "전담기관 약어는 NIA·KLID·KISA·NIPA로 교재에 정리되어 있습니다."]
+            },
+            {
+              id: "cloud-incident-notification",
+              title: "클라우드 사고·이용자 정보 유출·서비스 중단 통지",
+              summary: "이용자 통지와 정부 신고를 구분하고, 교재에 실린 예고 없는 서비스 중단 수치와 통지 항목을 확인합니다.",
+              sourcePdfPages: [1090, 1090],
+              keywords: ["클라우드 침해사고", "이용자 정보 유출", "서비스 중단", "10분", "24시간", "15분", "과학기술정보통신부"],
+              questionKeywords: ["클라우드 침해사고 통지", "클라우드 이용자 정보 유출", "클라우드 서비스 중단 10분 15분", "클라우드 사고 통지 항목"],
+              blocks: [
+                { type: "table", title: "교재에 수록된 이용자 통지 사유", columns: ["사유", "요건 요약"], rows: [["침해사고", "정보통신망법상 침해사고가 발생한 경우"], ["이용자 정보 유출", "클라우드 이용자 정보가 유출된 경우"], ["예고 없는 서비스 중단", "계약에 정한 기간 이상 중단; 기간을 정하지 않은 경우 연속 10분 이상 또는 24시간 이내 2회 이상 중단되고 누적 15분 이상"]] },
+                { type: "bullets", title: "통지와 대응", items: ["제공자는 해당 사유를 이용자에게 지체 없이 알립니다.", "이용자 정보 유출 시에는 교재 수록 조문에 따라 과학기술정보통신부장관에게 즉시 알립니다.", "통지에는 발생 내용·원인, 피해 확산 방지 조치 현황, 이용자의 피해 예방·확산 방지 방법, 담당부서·연락처를 포함합니다.", "원인이 즉시 확인되지 않으면 확인된 내용을 먼저 알리고, 원인을 확인한 후 지체 없이 추가 통지합니다."] },
+                { type: "text", title: "수치 읽기", paragraphs: ["10분·24시간·15분은 교재에서 계약상 기간을 따로 정하지 않은 서비스 중단 통지 기준으로 제시한 수치입니다. 법령·계약 개정 가능성이 있으므로 실제 운영에는 현행 조문과 계약상 SLA를 확인합니다."] }
+              ],
+              memoryPoints: ["교재상 이용자 통지 사유는 침해사고·이용자 정보 유출·정해진 조건 이상의 예고 없는 서비스 중단입니다.", "기간 미정 계약에서 교재 수치는 연속 10분 또는 24시간 내 2회 이상·누적 15분 이상입니다."]
+            }
+          ]
+        },
+        {
+          id: "management-cloud-security-certification",
+          chapter: "정보보호 윤리 및 법규",
+          status: "published",
+          title: "클라우드 보안인증제",
+          summary: "정책·인증·평가기관의 역할을 구분하고 교재 판본의 인증 대상·통제항목·유효기간을 비교합니다.",
+          sourcePdfPages: [1091, 1092],
+          concepts: [
+            {
+              id: "cloud-security-certification-framework",
+              title: "인증체계와 클라우드 보안인증 기준",
+              summary: "클라우드 제공자 신청부터 평가·인증 심의까지의 역할과 기존 유형별·등급별 인증 기준을 살펴봅니다.",
+              sourcePdfPages: [1091, 1092],
+              keywords: ["클라우드 보안인증제", "IaaS", "SaaS", "DaaS", "KISA", "NSR", "인증위원회", "통제항목", "하등급"],
+              questionKeywords: ["클라우드 보안인증 기관 역할", "클라우드 보안인증 등급", "IaaS SaaS DaaS 인증", "클라우드 인증 유효기간"],
+              blocks: [
+                { type: "text", title: "제도와 기관의 역할", paragraphs: ["클라우드 보안인증제는 관련 법률에 따라 서비스 제공자의 보안 수준을 인증기준으로 평가·인증하는 제도입니다. 교재의 역할표에서 과학기술정보통신부는 정책·제도, 한국인터넷진흥원(KISA)은 인증 신청·기준·인증서와 인증 서비스 관리, 국가보안기술연구소(NSR)는 공공부문 기술자문을 담당합니다.", "평가기관은 기준에 따른 평가를 수행하고, 인증위원회는 결과를 심의·의결하며 인증취소 타당성도 심의합니다. 인증신청인은 클라우드서비스 제공자로서 자체 보안활동을 수행합니다."] },
+                { type: "table", title: "교재 판본에 수록된 인증 유형", columns: ["유형", "통제항목", "유효기간", "점검기간(교재 표)"], rows: [["IaaS 보안인증", "116개", "5년", "총 10일: 본점검 5일 + 이행점검 5일"], ["SaaS 표준등급", "79개", "5년", "총 9일: 본점검 5일 + 이행점검 4일"], ["SaaS 간편등급", "31개", "3년", "총 7일: 본점검 4일 + 이행점검 3일"], ["DaaS", "110개", "5년", "총 10일: 본점검 5일 + 이행점검 5일"], ["등급제 하등급", "64개", "5년", "총 9일: 본점검 5일 + 이행점검 4일"], ["등급제 하등급 SaaS", "30개", "5년", "총 7일: 본점검 4일 + 이행점검 3일"]] },
+                { type: "text", title: "등급제 표기 주의", paragraphs: ["교재는 상·중·하 등급 체계를 소개하면서 수록 시점에는 하등급만 평가 가능하고 상·중 등급은 도입 예정이라고 설명합니다. 이는 교재 판본의 제도 설명이므로 현재 인증 대상·통제항목·유효기간으로 단정하지 말고 최신 공식 기준을 별도로 확인합니다."] }
+              ],
+              memoryPoints: ["정책기관은 과학기술정보통신부, 인증기관은 KISA, 공공부문 기술자문은 NSR로 교재에 제시됩니다.", "교재 표에는 기존 유형별 인증과 등급제 인증의 항목 수·점검일·유효기간이 따로 제시되므로 서로 섞지 않습니다.", "등급제의 상·중 도입 여부는 교재 발행 시점에 고정된 설명임을 표시합니다."]
             }
           ]
         }
