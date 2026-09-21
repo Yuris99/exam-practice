@@ -48,7 +48,12 @@ for (const filename of files) {
     try {
       const value = (name) => (row[column[name]] ?? "").trim();
       const question = createQuestion(value, filename, rowIndex + 2);
-      const duplicateKey = `${question.certificateId}:${question.examType}:${question.prompt.normalize("NFKC").replace(/\s+/g, " ").toLocaleLowerCase("ko-KR")}:${question.referenceText ?? ""}:${question.imageUrl ?? ""}`;
+      const duplicateBase = `${question.certificateId}:${question.examType}:${question.prompt.normalize("NFKC").replace(/\s+/g, " ").toLocaleLowerCase("ko-KR")}:${question.referenceText ?? ""}:${question.imageUrl ?? ""}`;
+      // Information-security questions can be intentionally repeated in different
+      // textbook sections/exam sources; keep those records distinct by provenance.
+      const duplicateKey = question.certificateId === "information-security-engineer" && question.source
+        ? `${duplicateBase}:${question.source}`
+        : duplicateBase;
       if (seen.has(duplicateKey)) throw new Error(`duplicate question (first seen at ${seen.get(duplicateKey)})`);
       seen.set(duplicateKey, `${filename}:${rowIndex + 2}`);
       const idOwner = seenIds.get(question.id);
