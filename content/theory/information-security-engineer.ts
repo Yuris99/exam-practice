@@ -153,7 +153,7 @@ export const informationSecurityTheoryCourse: TheoryCourse = {
               summary: "네트워크 공유와 숨김 공유, 레지스트리 자동 실행 위치, 로컬 보안 정책을 다룹니다.",
               sourcePdfPages: [47, 54, 55, 57, 58, 59, 60],
               keywords: ["net use", "net share", "IPC$", "ADMIN$", "Null Session", "RunOnce", "레지스트리", "secpol.msc"],
-              questionKeywords: ["IPC$", "ADMIN$", "C$", "Null Session", "net share", "net use", "RunOnce", "레지스트리 자동 실행", "secpol.msc"],
+              questionKeywords: ["IPC$", "ADMIN$", "C$", "Null Session", "net share", "net use", "RunOnce", "ShutdownWithoutLogon", "Winlogon", "레지스트리 자동 실행", "secpol.msc"],
               blocks: [
                 { type: "code", title: "공유 확인·해제", language: "text", code: "net share\nnet share C$ /delete\nnet use Z: \\\\서버주소\\공유이름 /user:계정" },
                 { type: "table", title: "관리 공유와 위험", columns: ["공유", "의미·주의점"], rows: [["C$, D$ 등", "각 드라이브의 루트에 대한 기본 관리 공유. 이름 끝의 $는 네트워크 탐색 목록에서 숨기는 용도이지 접근 통제가 아니다."], ["ADMIN$", "Windows 설치 디렉터리에 대한 관리 공유."], ["IPC$", "프로세스 간 통신 및 원격 관리에 쓰이는 특수 공유."], ["Null Session", "인증되지 않은 익명 세션을 통한 정보 노출 위험. 익명 열거와 불필요한 공유 접근을 제한한다."]] },
@@ -5659,7 +5659,7 @@ export const informationSecurityTheoryCourse: TheoryCourse = {
               summary: "개인을 알아볼 수 있는 정보, 다른 정보와 쉽게 결합해 식별되는 정보, 가명정보와 처리 행위를 구분합니다.",
               sourcePdfPages: [1019, 1022],
               keywords: ["개인정보 보호법", "개인정보", "가명정보", "익명정보", "개인정보처리자", "정보주체", "개인정보 처리 원칙"],
-              questionKeywords: ["개인정보 보호법 정의", "개인정보와 가명정보", "개인정보처리자", "개인정보 처리 원칙", "익명 가명 처리"],
+              questionKeywords: ["개인정보 보호법 정의", "개인정보 보호법 제35조", "개인정보와 가명정보", "개인정보처리자", "개인정보 처리 원칙", "익명 가명 처리"],
               blocks: [
                 { type: "table", title: "기본 용어", columns: ["용어", "핵심 의미"], rows: [["개인정보", "살아 있는 개인에 관한 정보로, 단독 또는 다른 정보와 쉽게 결합해 개인을 알아볼 수 있는 정보"], ["가명정보", "추가정보를 사용·결합하지 않으면 특정 개인을 알아볼 수 없게 처리한 개인정보"], ["처리", "수집·생성·연계·기록·저장·보유·가공·검색·이용·제공·공개·파기 등 개인정보에 하는 행위"], ["정보주체", "처리되는 정보로 알아볼 수 있는 사람으로 해당 정보의 주체"], ["개인정보처리자", "업무 목적으로 개인정보파일을 운용하며 개인정보를 처리하는 공공기관·법인·단체·개인"]] },
                 { type: "text", title: "개인정보 처리 원칙", paragraphs: ["교재가 정리한 원칙은 처리 목적을 명확히 하고 필요한 최소한만 적법·정당하게 수집하는 것, 목적에 맞게 처리하고 목적 외 이용을 제한하는 것, 정확성·완전성·최신성을 유지하는 것입니다.", "처리 위험을 고려해 안전하게 관리하고 처리 관련 사항을 공개하며 정보주체 권리를 보장합니다. 사생활 침해를 최소화하고 익명·가명 처리로 목적을 달성할 수 있으면 식별성을 낮추며, 법적 책임과 의무를 실천합니다."] },
