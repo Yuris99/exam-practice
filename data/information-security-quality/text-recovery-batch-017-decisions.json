@@ -1,0 +1,445 @@
+{
+  "format": "information-security-text-recovery-decisions",
+  "version": 1,
+  "batchNumber": 17,
+  "selectionCount": 36,
+  "items": [
+    {
+      "pdfPage": 769,
+      "questionNumber": 57,
+      "sourceAnswer": 4,
+      "status": "held",
+      "errorTypes": ["answer_conflict", "hangul_spacing", "ocr_glyph"],
+      "holdReason": "answer_conflict: 원본 정답표는 ④, 등록 정답은 ①이다. 답안 충돌의 별도 검토가 필요하므로 문항 전체를 변경하지 않는다."
+    },
+    {
+      "pdfPage": 772,
+      "questionNumber": 1,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "line_break_split", "table_flattening"],
+      "after": {
+        "prompt": "다음 중 암호화 알고리즘에 대한 설명으로 올바르지 못한 것은?",
+        "choice1": "평문을 암호학적 방법으로 변환한 것을 암호문(Ciphertext)이라고 한다.",
+        "choice2": "암호학을 이용하여 보호해야 할 메시지를 평문(Plaintext)이라고 한다.",
+        "choice3": "암호화 알고리즘은 외부에 공개하는 것보다 비공개로 유지해야 한다.",
+        "choice4": "암호문을 다시 평문으로 변환하는 과정을 복호화(Decryption)라고 한다.",
+        "explanation": "암호문(Ciphertext)\n- 평문을 암호화하여 얻은 암호화된 데이터\n- 송신자와 수신자 사이에 주고받고자 하는 데이터를 제3자가 이해할 수 없는 형태로 변형한 데이터\n평문(Plaintext)\n- 암호화되지 않은 원본 데이터\n- 암호학을 이용하여 보호해야 할 데이터\n복호화(Decryption)\n- 암호문을 원래의 평문으로 복원하는 알고리즘\n암호화 알고리즘은 공개되어 있어야 다양한 전문가들에게 검증받을 수 있으며, 알고리즘의 안전성과 신뢰성을 보장할 수 있다."
+      }
+    },
+    {
+      "pdfPage": 797,
+      "questionNumber": 12,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "line_break_split"],
+      "after": {
+        "prompt": "메시지 인증 코드(Message Authentication Code: MAC)에서 재전송 공격(Replay Attack)을 방지하는 방법으로 틀린 것은?",
+        "choice1": "순서 번호(Sequence Number)",
+        "choice2": "타임스탬프(Time Stamp)",
+        "choice3": "비표(Nonce)",
+        "choice4": "부인 방지",
+        "explanation": "메시지 인증 코드(MAC)의 재전송 공격을 방지하는 방법은 다음과 같다.\n순서 번호(Sequence Number): 송신 메시지에 매회 1씩 증가하는 순서 번호를 추가한다.\n타임스탬프(Time Stamp): 송신 메시지에 현재 시각을 추가한다.\n비표(Nonce): 수신자는 메시지를 수신하기에 앞서 송신자에게 일회용의 랜덤한 값(비표)을 전달한다.\n암호화만으로는 재전송 공격을 막을 수 없으며, Nonce, 시퀀스 번호, 타임스탬프 등과 같은 추가적인 요소가 필요하다."
+      }
+    },
+    {
+      "pdfPage": 799,
+      "questionNumber": 16,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "line_break_split"],
+      "after": {
+        "prompt": "해시 함수의 특징으로 올바르지 못한 것은?",
+        "choice1": "MAC와 달리 키를 사용하지 않는다.",
+        "choice2": "무결성 검증을 통해 데이터가 변조되었는지 확인할 수 있다.",
+        "choice3": "해시 함수 자체는 공개되어 있다.",
+        "choice4": "입력값의 일부를 바꾸면 해시값의 일부만 변경된다.",
+        "explanation": "해시 함수는 쇄도 효과(Avalanche Effect: 산사태 효과)로 인해 해시 함수의 입력값에 미세한 변화를 줄 경우 출력값에 상당한 변화가 일어난다. 24년 2회"
+      }
+    },
+    {
+      "pdfPage": 805,
+      "questionNumber": 15,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing"],
+      "after": {
+        "prompt": "다음 중 비밀번호를 해시 처리하는 일방향 해시 함수의 추가 입력으로 사용되는 랜덤 데이터를 의미하는 용어는?",
+        "explanation": "솔트(Salt) 키는 난수를 비밀번호와 같이 해시값에 포함시키는 방식이다."
+      }
+    },
+    {
+      "pdfPage": 856,
+      "questionNumber": 18,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing"],
+      "after": {
+        "prompt": "다음 상황과 가장 관련성이 높은 접근 통제 기술은 무엇인가? 최근 입사하여 소속 부서의 프린터 관리를 담당하게 된 홍길동은 이전 담당자의 자원 접근 권한을 그대로 인계받아 업무를 수행하게 되었다.",
+        "choice1": "강제적 접근 통제(MAC)",
+        "choice2": "임의적 접근 통제(DAC)",
+        "choice3": "역할 기반 접근 통제(RBAC)",
+        "choice4": "다단계 보안 정책(MLS)",
+        "explanation": "부서의 프린터 관리라는 역할을 기반으로 자원에 대한 접근을 제한하는 방법은 역할 기반 접근 통제(RBAC) 기술이다. 25년 1회"
+      }
+    },
+    {
+      "pdfPage": 889,
+      "questionNumber": 8,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "line_break_split"],
+      "after": {
+        "prompt": "다음 문장에서 설명하는 전자 서명 기법은? 전자화폐의 일종인 e-Cash는 익명성을 제공하기 위해 서명자가 문서의 내용을 보지 않은 상태에서 전자 서명을 생성하는 기법을 사용한다.",
+        "choice1": "다중 서명",
+        "choice2": "그룹 서명",
+        "choice3": "은닉 서명",
+        "choice4": "검증자 지정 서명",
+        "explanation": "전자화폐 시스템 중 네트워크형 화폐인 E-Cash는 은닉 서명 기술을 사용하여 온라인상에서 완전한 익명성을 제공한다. 22년 2회"
+      }
+    },
+    {
+      "pdfPage": 895,
+      "questionNumber": 30,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing"],
+      "after": {
+        "prompt": "인증서 상태를 관리하고 있는 서버가 유효성 여부에 관해 검증 결과를 실시간으로 보내주는 프로토콜은?",
+        "explanation": "CRL은 인증서에 대한 폐지 목록을 정기적으로 검증하는 데 반해 OCSP는 실시간으로 인증서의 유효성을 검증하는 프로토콜이다."
+      }
+    },
+    {
+      "pdfPage": 944,
+      "questionNumber": 20,
+      "sourceAnswer": 3,
+      "status": "held",
+      "errorTypes": ["answer_conflict", "hangul_spacing"],
+      "holdReason": "answer_conflict: 원본 정답표는 ③, 등록 정답은 ②이다. 답안 충돌의 별도 검토가 필요하므로 문항 전체를 변경하지 않는다."
+    },
+    {
+      "pdfPage": 1010,
+      "questionNumber": 1,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing"],
+      "after": {
+        "prompt": "다음 중 사이버 윤리의 개념과 내용으로 옳지 않은 것은?",
+        "choice1": "사이버 공간에서 인간의 도덕적 관계에 관심을 갖는다.",
+        "choice2": "사이버 세계 속에 거주하는 모든 인간의 책임과 의무를 규정해 주는 것을 의미한다.",
+        "choice3": "사이버 윤리는 기존의 컴퓨터 윤리의 개념을 포함하지는 않는다.",
+        "choice4": "사이버상의 일탈 상황에 따른 구체적인 행동 요령을 알아보는 실증적인 내용으로 연구되고 있다.",
+        "explanation": "사이버 윤리는 컴퓨터 윤리의 개념을 포함한다. 컴퓨터 윤리는 컴퓨터 기술과 관련된 도덕적인 문제를 다루는 개념이며, 사이버 윤리는 그 확장된 개념이다."
+      }
+    },
+    {
+      "pdfPage": 1050,
+      "questionNumber": 2,
+      "sourceAnswer": 4,
+      "status": "held",
+      "errorTypes": ["answer_conflict", "hangul_spacing", "line_break_split"],
+      "holdReason": "answer_conflict: 원본 정답표는 ④, 등록 정답은 ①이다. 법률상 정답 충돌의 별도 검토가 필요하므로 문항 전체를 변경하지 않는다."
+    },
+    {
+      "pdfPage": 1051,
+      "questionNumber": 3,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "table_flattening"],
+      "after": {
+        "prompt": "다음 중 개인정보처리자가 내부관리계획을 수립·시행할 때 반드시 포함되어야 하는 사항이 아닌 것은?",
+        "choice1": "개인정보 보호책임자 지정에 관한 사항",
+        "choice2": "개인정보 취급자 상/벌에 관한 사항",
+        "choice3": "개인정보 암호화 조치에 관한 사항",
+        "choice4": "개인정보처리시스템 접근 통제에 관한 사항",
+        "explanation": "개인정보의 안전성 확보조치 기준의 제4조 내부 관리계획의 수립·시행 1항은 다음과 같다.\n① 개인정보처리자는 개인정보의 분실·도난·유출·위조·변조 또는 훼손되지 아니하도록 내부 의사결정 절차를 통하여 다음 각 호의 사항을 포함하는 내부 관리계획을 수립·시행하여야 한다.\n2. 개인정보 보호책임자의 지정에 관한 사항\n6. 접근 통제에 관한 사항\n7. 개인정보의 암호화 조치에 관한 사항"
+      }
+    },
+    {
+      "pdfPage": 1052,
+      "questionNumber": 6,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "table_flattening"],
+      "after": {
+        "prompt": "다음 중 개인정보 보호 관련 법률과 그 소관 부처가 올바르게 짝지어진 것은?",
+        "choice1": "개인정보 보호법 - 법무부",
+        "choice2": "위치정보의 보호 및 이용 등에 관한 법률 - 국방부",
+        "choice3": "지방공기업법 - 국토교통부",
+        "choice4": "전자서명법 - 과학기술정보통신부",
+        "explanation": "개인정보 보호법: 개인정보보호위원회\n위치정보의 보호 및 이용 등에 관한 법률: 방송통신위원회\n지방공기업법: 행정안전부\n전자서명법: 과학기술정보통신부\n22년 1회, 4회, 24년 4회, 25년 4회"
+      }
+    },
+    {
+      "pdfPage": 1058,
+      "questionNumber": 20,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "table_flattening"],
+      "after": {
+        "prompt": "다음 중 빅데이터 비식별화 처리 기법 중 가명 처리 방법에 해당하는 것은?",
+        "explanation": "빅데이터 비식별화 처리 기법 중 가명 처리 방법은 암호화이다.\n총계 처리: 수집된 정보에 민감한 개인정보가 있을 경우 데이터 집합 또는 부분으로 집계(총합, 평균 등) 처리를 하여 민감성을 낮추는 기법\n랜덤 라운딩: 개인 식별 정보에 대한 수치 데이터를 임의의 수를 기준으로 올림(Round Up) 또는 절사(Round Down)하는 방법\n재배열: 기존 정보값은 유지하면서 개인정보와 연관이 되지 않도록 해당 데이터를 재배열하는 방법\n23년 1회, 25년 1회"
+      }
+    },
+    {
+      "pdfPage": 1061,
+      "questionNumber": 29,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "table_flattening"],
+      "after": {
+        "prompt": "다음 문장에서 설명하는 개인정보의 가명·익명 처리를 위한 기술은? 기존 하나의 데이터 셋(테이블)을 식별성이 있는 정보 집합물과 식별성이 없는 정보 집합물로 구성된 2개의 데이터 셋으로 분리하는 기술",
+        "explanation": "해부화: 기존 하나의 데이터 셋(테이블)을 식별성이 있는 정보 집합물과 식별성이 없는 정보 집합물로 구성된 2개의 데이터 셋으로 분리하는 기술\n재현 데이터: 원본과 최대한 유사한 통계적 성질을 보이는 가상의 데이터를 생성하기 위해 개인정보의 특성을 분석하여 새로운 데이터를 생성하는 기법\n표본 추출: 데이터 주체별로 전체 모집단이 아닌 표본에 대해 무작위 레코드 추출 등의 기법을 통해 모집단의 일부를 분석하여 전체에 대한 분석을 대신하는 기법\n동형 비밀 분산: 식별 정보 또는 기타 식별 가능 정보를 메시지 공유 알고리즘에 의해 생성된 두 개 이상의 쉐어(Share)로 대체하는 기법"
+      }
+    },
+    {
+      "pdfPage": 1064,
+      "questionNumber": 34,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "ocr_glyph"],
+      "after": {
+        "prompt": "다음에서 설명하는 가명·익명 처리를 위한 기술에 해당하는 것은? 원본과 최대한 유사한 통계적 성질을 보이는 가상의 데이터를 생성하기 위해 개인정보의 특성을 분석하여 새로운 데이터를 생성하는 기법",
+        "explanation": "원본과 최대한 유사한 통계적 성질을 보이는 가상의 데이터를 생성하기 위해 개인정보의 특성을 분석하여 새로운 데이터를 생성하는 기법은 재현 데이터(Synthetic Data)이다. 23년 4회, 25년 4회"
+      }
+    },
+    {
+      "pdfPage": 1108,
+      "questionNumber": 28,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "ocr_glyph"],
+      "after": {
+        "prompt": "다음이 설명하고 있는 공격 방식은?\n- ICMP 패킷의 크기를 정상적인 크기보다 크게 만들어 공격 대상 네트워크에 송신하고 네트워크를 통해 라우팅되어 공격 대상 네트워크에 도달하는 과정에서 작은 조각(Fragment)들로 분할된다.\n- 수신 측에서 단편화된 패킷을 재조합하는 과정에서 부하를 발생시키는 공격 기법이다.",
+        "explanation": "죽음의 핑(Ping of Death)은 ICMP 패킷(Ping)을 정상적인 크기보다 아주 크게 만들어 전송하여 수신 측에서 단편화된 패킷을 재조합하는 과정에서 부하를 발생시키는 공격 기법이다."
+      }
+    },
+    {
+      "pdfPage": 1150,
+      "questionNumber": 63,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "table_flattening"],
+      "after": {
+        "prompt": "다음 문장에서 설명하는 접근 통제 구성 요소는? 시스템 자원에 접근하는 사용자, 접근 모드 및 모든 접근 통제 조건 등을 정의",
+        "explanation": "정책: 시스템 자원에 접근하는 사용자, 접근 모드 및 모든 접근 통제 조건 등을 정의\n모델: 보안 정책을 논리적으로 표현하는 추상적 모델로, 정책을 기술적으로 구현하기 위한 이론적 구조\n메커니즘: 정책을 실제로 구현하는 도구나 절차로서, 요청을 규칙에 대응시켜 검사 및 제한\nOSI 보안 구조: OSI 모델에 기반한 네트워크 구조로 접근 통제와는 관련이 없다."
+      }
+    },
+    {
+      "pdfPage": 1169,
+      "questionNumber": 18,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "ocr_glyph"],
+      "after": {
+        "prompt": "다음 중 악성 프로그램에 대한 설명이 틀린 것은 무엇인가?",
+        "choice1": "웜은 네트워크를 통해 스스로 전파된다.",
+        "choice2": "트로이 목마는 유용한 프로그램처럼 위장하여 설치된다.",
+        "choice3": "DNS Cache를 변조시켜 타 사이트로 유도하여 감염시키는 방식을 랜섬웨어라고 한다.",
+        "choice4": "키보드의 입력을 갈취하여 기록하고 유출시키는 코드를 키로거라고 한다.",
+        "explanation": "랜섬웨어는 사용자의 중요 데이터를 암호화하거나 시스템의 사용을 불가능하게 만든 뒤, 복호화 키나 시스템의 복구를 명목으로 금전(비트코인)을 요구하는 악성 소프트웨어이다.\nDNS Cache를 변조시켜 타 사이트로 유도하여 감염시키는 방식은 DNS 스푸핑(DNS Spoofing)이다."
+      }
+    },
+    {
+      "pdfPage": 1180,
+      "questionNumber": 58,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing"],
+      "after": {
+        "prompt": "웹 쿠키(Cookies)에 대한 설명 중 올바른 것은?",
+        "choice1": "쿠키는 서버가 아닌 클라이언트에 저장된다.",
+        "choice2": "쿠키는 웹 서버에 저장되므로 클라이언트에서 제어할 수 없다.",
+        "choice3": "쿠키는 실행 가능한 파일로 바이러스로 동작할 수 있다.",
+        "choice4": "쿠키는 강력한 인증 기능을 제공한다.",
+        "explanation": "쿠키는 클라이언트가 방문한 웹 사이트와 관련해 로컬(클라이언트)에 저장되는 키와 값이 들어 있는 데이터 파일이다. 쿠키는 클라이언트에 저장되고 텍스트 파일이므로 바이러스로 동작하기 어렵고 인증 기능을 제공하지는 않는다."
+      }
+    },
+    {
+      "pdfPage": 1182,
+      "questionNumber": 64,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing"],
+      "after": {
+        "prompt": "비대칭 키 알고리즘으로 옳지 않은 것은?",
+        "explanation": "경량 환경 및 하드웨어 구현을 위해 최적화된 Involutional SPN 구조를 갖는 우리나라의 국가보안기술연구소에서 개발한 범용 블록 암호 알고리즘(SPN 구조 기반의 대칭 키 암호 방식)이다."
+      }
+    },
+    {
+      "pdfPage": 157,
+      "questionNumber": 1,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": ["joined_punctuation", "hangul_spacing", "ocr_glyph"],
+      "after": {
+        "prompt": "다음 중 로그의 성격이 다른 것은?",
+        "choice1": "데이터베이스 로그",
+        "choice2": "웹 서버 로그",
+        "choice3": "메일 서버 로그",
+        "choice4": "유닉스 계열의 syslog",
+        "explanation": "syslog는 유닉스, 리눅스에서 시스템 로그를 남기기 위한 체계이다. 로그 생성에 관해서는 백그라운드 프로세스로 운영되는 syslogd 데몬에 의해서 총괄 관리되고 있다. /etc/syslog.conf 파일에는 \"어디에서 로그가 생성되면 어디에 로그를 남겨라\"라고 설정되어 있어서 syslogd 데몬은 /etc/syslog.conf 파일에 설정된 대로 생성된 로그를 기록하게 된다. 22년 4회"
+      }
+    },
+    {
+      "pdfPage": 557,
+      "questionNumber": 1,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": ["joined_punctuation", "hangul_spacing", "ocr_glyph"],
+      "after": {
+        "prompt": "다음 중 메일 서비스와 가장 관련 없는 프로토콜은?",
+        "explanation": "메일 시스템은 MUA(Mail User Agent), MTA(Mail Transfer Agent), MDA(Mail Delivery Agent), MAA(Mail Access Agent)로 구성되어 있다. MDM(Mobile Device Management)은 모바일 기기를 보호, 관리, 감시, 지원하는 일련의 과정이다."
+      }
+    },
+    {
+      "pdfPage": 680,
+      "questionNumber": 1,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": ["joined_punctuation", "hangul_spacing", "table_flattening"],
+      "after": {
+        "prompt": "ebXML의 구성 요소가 아닌 것은?",
+        "choice1": "비즈니스 프로세스",
+        "choice2": "EDI 문서",
+        "choice3": "핵심 컴포넌트",
+        "choice4": "전송, 교환 및 패키징",
+        "explanation": "ebXML 구성 요소\n비핵등거전: 비즈니스 프로세스 / 핵심 컴포넌트 / 등록저장소 / 거래당사자 / 전송, 교환 및 패키징\n22년 2회, 25년 1회"
+      }
+    },
+    {
+      "pdfPage": 1177,
+      "questionNumber": 46,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": ["joined_punctuation", "hangul_spacing", "ocr_glyph"],
+      "after": {
+        "prompt": "다음 중 PHP에서 magic_quotes_gpc 설정을 On으로 설정하여 차단할 수 있는 공격은 무엇인가?",
+        "choice2": "Cross-Site Scripting (XSS)",
+        "explanation": "magic_quotes_gpc 설정의 경우, PHP 5.3 이전 버전에서 사용된 보안 기능으로 GET, POST, COOKIE 입력값에서 특수 문자: ', \", \\, NULL)를 자동으로 이스케이프(escape) 처리하여 SQL Injection을 예방하는 기능이다."
+      }
+    },
+    {
+      "pdfPage": 127,
+      "questionNumber": 7,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "ocr_glyph", "table_flattening"],
+      "after": {
+        "prompt": "다음 중 리눅스 i-node 블록에 포함되지 않는 것은?",
+        "choice1": "파일 유형",
+        "choice2": "파일 이름",
+        "choice3": "파일 수정 시간",
+        "choice4": "파일 link 수",
+        "explanation": "i-node 블록 정보에는 i-node 번호, 파일 형식, 접근 권한, 링크 수, 사용자 번호, 그룹 번호, mtime, atime, ctime, 파일 크기 등이 포함된다."
+      }
+    },
+    {
+      "pdfPage": 298,
+      "questionNumber": 9,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "ocr_glyph"],
+      "after": {
+        "prompt": "HTTP 요청 메시지를 구성하는 순서로 옳은 것은?",
+        "choice1": "Request Line → Header → Blank Line → Body",
+        "choice2": "Request Line → Blank Line → Header → Body",
+        "choice3": "Request Line → Header → Body → Blank Line",
+        "choice4": "Request Line → Body → Blank Line → Header",
+        "explanation": "HTTP 요청(Request)은 시작 라인(Start Line), 헤더(Header), 본문(Body)으로 구성된다. 헤더와 본문 사이에는 빈 줄(Blank Line)이 들어간다."
+      }
+    },
+    {
+      "pdfPage": 310,
+      "questionNumber": 26,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing"],
+      "after": {
+        "prompt": "HTTP에 기본으로 정의된 요청 메서드가 아닌 것은?"
+      }
+    },
+    {
+      "pdfPage": 382,
+      "questionNumber": 13,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "ocr_glyph"],
+      "after": {
+        "prompt": "다음 문장에서 설명하는 공격 방법은? HTTP 프록시 서버 체인의 HTTP 서버 구현 간에 데이터 길이를 의미하는 헤더(Content-Length, Transfer-Encoding 등) 해석 간의 불일치를 사용하는 HTTP 프로토콜에 대한 보안 취약점",
+        "explanation": "Content-Length와 Payload 부분을 변조하여 분리된 Request로 인식하게 만드는 공격은 HTTP Smuggling이다."
+      }
+    },
+    {
+      "pdfPage": 632,
+      "questionNumber": 8,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing"],
+      "after": {
+        "prompt": "DNS의 동작 상태를 확인하기 위해 사용할 수 있는 명령어가 아닌 것은?",
+        "explanation": "whoami는 현재 로그인한 사용자 계정 이름을 출력하는 명령어로서 DNS 동작 상태 확인과는 관련이 없다."
+      }
+    },
+    {
+      "pdfPage": 752,
+      "questionNumber": 7,
+      "sourceAnswer": 4,
+      "status": "held",
+      "errorTypes": ["answer_conflict", "hangul_spacing"],
+      "holdReason": "answer_conflict: 원본 정답표는 ④, 등록 정답은 ①이다. 답안 충돌의 별도 검토가 필요하므로 문항 전체를 변경하지 않는다."
+    },
+    {
+      "pdfPage": 766,
+      "questionNumber": 46,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "ocr_glyph", "table_flattening"],
+      "after": {
+        "prompt": "다음 암호 방식 중 수학적 원리가 다른 것은?",
+        "explanation": "소인수분해의 어려움을 이용한 방식: RSA, Rabin\n이산 로그의 어려움을 이용한 방식: Diffie-Hellman, ElGamal, ECC, ECDH"
+      }
+    },
+    {
+      "pdfPage": 783,
+      "questionNumber": 42,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing"],
+      "after": {
+        "prompt": "다음 중 키 분배 센터(KDC) 구축에 이용하기에 가장 적합한 보안 프로토콜은?",
+        "explanation": "KDC를 구축하기 위해 Kerberos가 사용되기도 한다."
+      }
+    },
+    {
+      "pdfPage": 826,
+      "questionNumber": 21,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "ocr_glyph", "table_flattening"],
+      "after": {
+        "prompt": "생체 인식 기술의 고유 특성에 해당하지 않는 것은?",
+        "explanation": "생체 인식 기술의 고유 특성\n보편성 / 유일성(구별성) / 영구성(불변성) / 획득성 / 정확성 / 수용성 / 기만 용이도"
+      }
+    },
+    {
+      "pdfPage": 975,
+      "questionNumber": 14,
+      "sourceAnswer": 4,
+      "status": "held",
+      "errorTypes": ["answer_conflict", "hangul_spacing"],
+      "holdReason": "answer_conflict: 원본 정답표는 ④, 등록 정답은 ①이다. 답안 충돌의 별도 검토가 필요하므로 문항 전체를 변경하지 않는다."
+    },
+    {
+      "pdfPage": 1174,
+      "questionNumber": 37,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": ["hangul_spacing", "ocr_glyph"],
+      "after": {
+        "prompt": "다음 문장에서 설명하는 보안 시스템은? UTM, DLP, SSL Inspection, SSL VPN, Anti APT 등 다양한 기능을 통합해 지원하며 Layer 7까지 제어하고 암호화 트래픽 제어가 가능한 보안 시스템",
+        "explanation": "UTM, DLP, SSL Inspection, SSL VPN, Anti APT 등 다양한 기능을 통합해 지원하며, Layer 7까지 제어하고 암호화 트래픽 제어가 가능한 보안 시스템은 NGFw(Next Generation Firewall)이다."
+      }
+    }
+  ]
+}

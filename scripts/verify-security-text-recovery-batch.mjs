@@ -8,16 +8,35 @@ import { diagnoseTheoryConceptMatch } from "../lib/theoryMatching.ts";
 const startedAt = Date.now();
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dataDir = path.join(root, "data", "information-security-quality");
-const resultPath = path.join(dataDir, "text-recovery-batch-002-result.json");
-const outputPath = path.join(dataDir, "text-recovery-batch-002-verification.json");
+const batchNumber = Number(process.argv.find((arg) => arg.startsWith("--batch="))?.slice(8) ?? 2);
+const batchLabel = String(batchNumber).padStart(3, "0");
+const resultPath = path.join(dataDir, `text-recovery-batch-${batchLabel}-result.json`);
+const outputPath = path.join(dataDir, `text-recovery-batch-${batchLabel}-verification.json`);
 const result = JSON.parse(await fs.readFile(resultPath, "utf8"));
-if (!result.applied || result.selectionCount !== 50) throw new Error("Batch 2 has not been applied.");
+if (!result.applied || result.batchNumber !== batchNumber || result.selectionCount !== result.items?.length) throw new Error("Requested recovery batch has not been applied completely.");
 const active = generatedQuestions.filter((question) => question.certificateId === "information-security-engineer");
 if (active.length !== 826) throw new Error("Expected 826 active questions; found " + active.length);
 
-const sourceCorrectedRelinks = new Map([
+const sourceCorrectedRelinks = new Map(batchNumber === 2 ? [
   ["435:3", { before: "s-http-web-protocol", after: "ssl-tls-protocol" }]
-]);
+] : batchNumber === 6 ? [
+  ["589:19", { before: "mitb", after: "directory-indexing-path-traversal" }]
+] : batchNumber === 8 ? [
+  ["479:44", { before: "ips-utm-nac", after: "suricata-snort-rules" }],
+  ["598:45", { before: "reverse-shell-netcat", after: "unsafe-upload-webshell" }],
+  ["338:11", { before: "network-media-wifi", after: "arp-address-resolution" }]
+] : batchNumber === 11 ? [
+  ["646:5", { before: "db-and-rdbms-model", after: "db-security-requirements" }]
+] : batchNumber === 13 ? [
+  ["774:7", { before: "hybrid-cryptosystem", after: "classical-substitution-transposition" }]
+] : batchNumber === 15 ? [
+  ["416:3", { before: "network-arp-ip-spoofing", after: "firewall-filtering-types" }],
+  ["1181:61", { before: "rsa-key-generation", after: "rsa-encryption-decryption" }]
+] : batchNumber === 16 ? [
+  ["433:12", { before: "s-http-web-protocol", after: "ssl-tls-protocol" }]
+] : batchNumber === 17 ? [
+  ["1182:64", { before: "hybrid-cryptosystem", after: "aria-cipher" }]
+] : []);
 const theoryLinks = [];
 for (const item of result.items) {
   const current = active.find((question) => question.id === item.questionId);
@@ -41,11 +60,13 @@ for (const item of result.items) {
     ...(item.before.reference_text ? { referenceText: item.before.reference_text } : {}),
     ...(item.before.code_snippet ? { codeSnippet: item.before.code_snippet } : {})
   };
-  const beforeMatch = diagnoseTheoryConceptMatch([informationSecurityTheoryCourse], beforeQuestion).match?.concept.id ?? null;
-  const afterMatch = diagnoseTheoryConceptMatch([informationSecurityTheoryCourse], current).match?.concept.id ?? null;
   const selector = item.pdfPage + ":" + item.questionNumber;
-  if (beforeMatch && !afterMatch) throw new Error("Existing theory concept link was lost: " + item.source);
   const relink = sourceCorrectedRelinks.get(selector);
+  // For explicitly reviewed source-correction relinks, use the recorded pre-batch
+  // concept: the added exact-source matcher keyword may also match the old OCR text.
+  const beforeMatch = relink?.before ?? diagnoseTheoryConceptMatch([informationSecurityTheoryCourse], beforeQuestion).match?.concept.id ?? null;
+  const afterMatch = diagnoseTheoryConceptMatch([informationSecurityTheoryCourse], current).match?.concept.id ?? null;
+  if (beforeMatch && !afterMatch) throw new Error("Existing theory concept link was lost: " + item.source);
   if (beforeMatch && afterMatch !== beforeMatch &&
       (!relink || relink.before !== beforeMatch || relink.after !== afterMatch)) {
     throw new Error("Unexpected theory concept change: " + item.source + " (" + beforeMatch + " -> " + afterMatch + ")");
@@ -75,8 +96,8 @@ const linkSummary = {
 };
 const verification = {
   generatedAt: new Date().toISOString(),
-  batchNumber: 2,
-  selected: 50,
+  batchNumber,
+  selected: result.selectionCount,
   corrected: result.statusCounts.corrected,
   noChange: result.statusCounts.noChange,
   held: result.statusCounts.held,

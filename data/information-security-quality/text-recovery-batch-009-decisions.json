@@ -1,0 +1,786 @@
+{
+  "format": "information-security-text-recovery-decisions",
+  "version": 1,
+  "batchNumber": 9,
+  "selectionCount": 50,
+  "items": [
+    {
+      "pdfPage": 593,
+      "questionNumber": 30,
+      "sourceAnswer": 3,
+      "status": "held",
+      "errorTypes": [
+        "code_or_symbol"
+      ],
+      "holdReason": "source_symbol_ambiguous_original_glyphs_not_safely_readable"
+    },
+    {
+      "pdfPage": 593,
+      "questionNumber": 31,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 설명에 해당하는 보안 약점으로 가장 적절한 것은? XQuery, XPath 질의문을 생성할 때 검증되지 않은 외부 입력값을 허용하여 악의적인 질의문이 실행될 수 있는 보안 취약점",
+        "choice1": "SQL 삽입",
+        "choice2": "XML 삽입",
+        "choice3": "CSRF (Cross-Site Request Forgery)",
+        "choice4": "XSS (Cross Site Scripting)",
+        "explanation": "SQL 삽입: 데이터베이스에 사용하는 SQL 쿼리를 조작하는 공격\nCSRF: 사용자의 인증 정보를 도용해 서버에 악의적인 요청을 보내는 공격\nXSS: 사용자 입력을 웹 페이지에 삽입하여 악성 스크립트가 실행되도록 하는 공격 (2024년 2회)"
+      }
+    },
+    {
+      "pdfPage": 593,
+      "questionNumber": 32,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph"
+      ],
+      "after": {
+        "prompt": "다음 중 웹페이지에서 발생하는 공격이 아닌 것은 무엇인가?",
+        "choice2": "XSS (Cross-Site Scripting)",
+        "explanation": "버퍼 오버플로우의 경우 시스템 소프트웨어나 Native 애플리케이션의 입력값 검증 부족으로 발생하는 경우가 다수로, 시스템 대상 공격이다."
+      }
+    },
+    {
+      "pdfPage": 631,
+      "questionNumber": 4,
+      "sourceAnswer": 3,
+      "status": "held",
+      "errorTypes": [
+        "hangul_spacing",
+        "table_flattening",
+        "ambiguous_extraction_match"
+      ],
+      "holdReason": "ocr_extraction_has_two_rows_for_same_source_one_is_false_positive_following_question"
+    },
+    {
+      "pdfPage": 631,
+      "questionNumber": 5,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "DNS 레코드 설명으로 틀린 것은?",
+        "explanation": "A (Address Record): 도메인 이름을 IPv4 주소로 매핑하는 레코드\nCNAME (Canonical Name): 별칭 도메인 이름을 공식적인 도메인 이름으로 매핑하는 레코드\nMX (Mail eXchanger): 메일 서버 별칭을 도메인 이름으로 매핑하는 레코드\nNS (Name Server): 도메인 이름을 책임지는 네임 서버의 도메인 이름으로 매핑하는 레코드이며, DNS 위임에 사용된다."
+      }
+    },
+    {
+      "pdfPage": 631,
+      "questionNumber": 7,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph"
+      ],
+      "after": {
+        "prompt": "다음 중 DNS 증폭 공격(DNS Amplification Attack)에 대한 설명으로 틀린 것은?",
+        "choice1": "DNS 응답 패킷을 위조하여 공격을 수행한다.",
+        "choice2": "DNS 반사 공격이라고도 불린다.",
+        "choice3": "DNS의 질의 패킷보다 응답 패킷의 사이즈가 큰 점을 이용한다.",
+        "choice4": "DNS의 기본 특성을 공격에 이용한다.",
+        "explanation": "DNS 응답 패킷을 변조하는 공격 기법은 DNS Cache Poisoning이다."
+      }
+    },
+    {
+      "pdfPage": 773,
+      "questionNumber": 3,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "line_break_split"
+      ],
+      "after": {
+        "prompt": "PFS(Perfect Forward Secrecy)에 대한 설명으로 옳은 것은?",
+        "choice1": "PFS를 활성화하면 Bot으로부터의 공격을 완화해 준다.",
+        "choice2": "웹 방화벽(WAF)의 기능 중 하나로 자동화된 Blind SQL Injection 공격을 방어하는 데 효과가 있다.",
+        "choice3": "SSL/TLS 통신 과정에서 비밀키가 노출되었을 경우에도 과거에 사용된 비밀키로 해독할 수 없도록 해준다.",
+        "choice4": "카드번호나 주민등록번호 등 민감한 정보에 대해 자동으로 마스킹을 해주는 기능이다.",
+        "explanation": "PFS는 비밀키가 노출되더라도 그 전의 키 분배 과정에서 얻는 새로운 세션키 정보가 수학적으로 예전의 키 정보와 관련이 없기 때문에 예전 키의 안전성에는 영향을 미치지 않는다는 암호학적 성질이다.\nPFS는 SSL/TLS 통신 과정에서 비밀키가 노출되었을 경우에도 과거에 사용된 비밀키로 해독할 수 없도록 해준다."
+      }
+    },
+    {
+      "pdfPage": 773,
+      "questionNumber": 4,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음의 블록 암호 알고리즘 운영 방식 중에서 가장 단순하면서 사용을 권장하지 않는 블록 암호화 운영 모드는 무엇인가?",
+        "explanation": "ECB의 특징은 다음과 같다.\n병렬 처리: 블록은 독립적으로 암호화되기 때문에 병렬 처리가 가능하다.\n보안 취약: 모든 블록이 같은 암호화 키를 사용하기 때문에 보안에 취약하다. 평문 블록 두 개가 동일하면 암호화 결과도 동일하므로 권장하지 않는다."
+      }
+    },
+    {
+      "pdfPage": 773,
+      "questionNumber": 6,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph"
+      ],
+      "after": {
+        "prompt": "블록 암호화 운영 모드에서 암호화 알고리즘에 의해 데이터를 블록 단위로 처리할 때 첫 번째 블록을 암호화하기 위해 필요한 값은 무엇인가?",
+        "explanation": "암호화 알고리즘에 의해 데이터를 블록 단위로 처리할 때 첫 번째 블록을 암호화하기 위해 필요한 값은 초기 벡터(IV; Initialization Vector)이다."
+      }
+    },
+    {
+      "pdfPage": 949,
+      "questionNumber": 16,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "line_break_split"
+      ],
+      "after": {
+        "prompt": "다음 중 정량적 위험 분석과 정성적 위험 분석에 대한 다음의 설명으로 올바르지 않은 것은?",
+        "choice2": "정량적 분석은 위험 관리 성능 평가가 쉽다.",
+        "choice3": "정성적 분석은 계산에 대한 노력이 적게 소요된다.",
+        "choice4": "정성적 분석은 비용과 이익에 대한 평가가 필수적으로 요구된다.",
+        "explanation": "정성적 분석은 비용과 이익을 평가할 필요가 없다."
+      }
+    },
+    {
+      "pdfPage": 949,
+      "questionNumber": 15,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음에서 설명하는 것처럼 위험을 경감 또는 완화하는 위험 처리 유형은 무엇인가? 도출된 위험이 해당 사업에 심각한 영향을 주는 관계로 보험에 가입하였다.",
+        "explanation": "위험 수용: 현재의 위험을 받아들이고 잠재적 손실 비용을 감수하는 방식\n위험 완화(위험 감소): 위험을 감소시킬 수 있는 대책을 채택하여 구현하는 방식으로, 위험 결과를 낮추는 대책과 위험 발생 가능성을 낮추는 대책으로 나뉜다.\n위험 전가: 보험이나 외주 등으로 잠재적 비용을 제3자에게 이전하거나 할당하는 방식\n위험 회피: 위험이 존재하는 프로세스나 사업을 수행하지 않고 포기하는 방식"
+      }
+    },
+    {
+      "pdfPage": 949,
+      "questionNumber": 17,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph"
+      ],
+      "after": {
+        "prompt": "다음은 위험 분석 방법과 이에 대한 설명이다. 잘못 설명된 것은 무엇인가?",
+        "choice1": "과거 자료 분석법은 과거 자료를 통해 위험 발생 가능성을 예측하는 방법이다.",
+        "choice2": "확률 분포법은 미지의 사건을 추정하는 데 사용되는 방법이다.",
+        "choice3": "시나리오법은 여러 가정과 조건(시나리오)을 설정하고 각 조건에서 발생 가능한 결과와 영향을 추정하는 방법이다.",
+        "choice4": "순위 결정법은 전문적인 지식을 가진 전문가 집단을 구성하여 다양한 위험과 취약성 토론을 통해 분석하는 기법이다.",
+        "explanation": "전문적인 지식을 가진 전문가 집단을 구성하여 다양한 위험과 취약성 토론을 통해 분석하는 기법은 델파이법이다."
+      }
+    },
+    {
+      "pdfPage": 1170,
+      "questionNumber": 23,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "line_break_split"
+      ],
+      "after": {
+        "prompt": "네트워크 도청을 예방하기 위한 대책으로 틀린 것은?",
+        "choice1": "업무용 무선 AP와 방문자용 AP를 같이 사용한다.",
+        "choice2": "무선 AP의 비밀번호는 쉽게 예측하지 못하는 안전한 비밀번호로 설정한다.",
+        "choice3": "업무용 단말기는 방문자용 AP에 접속하지 않도록 조치한다.",
+        "choice4": "중요 정보는 암호화 통신을 이용하여 전송한다.",
+        "explanation": "업무용 임직원 무선 AP와 방문자용 AP를 분리하여 방문자가 업무용 무선 AP에 접근하지 못하도록 통제하여야 한다."
+      }
+    },
+    {
+      "pdfPage": 1170,
+      "questionNumber": 21,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "OSPF 프로토콜의 최단 경로 탐색에 사용하는 기본 알고리즘은?",
+        "choice2": "Dijkstra 알고리즘",
+        "choice3": "거리 벡터 라우팅 알고리즘",
+        "choice4": "Floyd-Warshall 알고리즘",
+        "explanation": "OSPF 프로토콜에 사용되는 알고리즘은 다익스트라 알고리즘이다.\n벨만-포드 알고리즘: RIP\n다익스트라 알고리즘: OSPF"
+      }
+    },
+    {
+      "pdfPage": 1170,
+      "questionNumber": 22,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "침입 탐지 시스템(Intrusion Detection System)의 이상 탐지(Anomaly Detection) 방법 중 다음 문장에서 설명하는 방법은 무엇인가?\n- 과거의 경험적인 자료를 토대로 처리한다.\n- 행위를 관찰하고 각각의 행위에 대한 프로파일을 생성한다.\n- 프로파일들을 주기적으로 관찰하여 이상을 측정한다.",
+        "choice1": "예측 가능한 패턴 생성(Predictive Pattern Generation)",
+        "choice2": "통계적 접근법(Statistical Approaches)",
+        "choice3": "비정상적인 행위 측정 방법들(Anomaly Measures)의 결합",
+        "choice4": "특징 추출(Feature Selection)",
+        "explanation": "통계적 접근법: 정상 행위로 판단되는 통계적 프로파일을 생성하고 주기적으로 확인한 후 이상을 판단한다.\n예측 패턴 생성: 일정 기간의 일정한 패턴을 기준으로 사건 간의 상호 관계가 달라진 경우 이상을 판단한다.\n신경망 모델: 인공지능 학습을 이용해 사용자의 행위를 학습하여 만들어진 모델을 통해 차이를 탐지한다."
+      }
+    },
+    {
+      "pdfPage": 625,
+      "questionNumber": 10,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 중 DNS 서버가 아닌 것은?",
+        "choice1": "주 DNS 서버",
+        "choice2": "부 DNS 서버",
+        "choice3": "캐시 DNS 서버",
+        "choice4": "프록시 DNS 서버",
+        "explanation": "DNS 서버에는 주 DNS 서버, 부 DNS 서버, 캐시 DNS 서버가 있다.\n주 DNS 서버(Primary DNS Server): 해당 도메인의 주요 관리 서버\n부 DNS 서버(Secondary DNS Server): 주 DNS 서버의 데이터를 주기적으로 동기화하는 등의 백업 역할을 수행하는 서버\n캐시 DNS 서버(Cache DNS Server): DNS 조회 결과를 일시적으로 저장하는 역할을 하는 DNS 서버"
+      }
+    },
+    {
+      "pdfPage": 625,
+      "questionNumber": 12,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 설명에 해당하는 것은 무엇인가?\n- DNS 정보를 관리하고 제공하는 서버\n- 도메인 이름 공간에 대한 정보를 저장하며, 계층적으로 구성됨",
+        "choice1": "도메인 네임 스페이스(Domain Name Space)",
+        "choice2": "네임 서버(Name Server)",
+        "choice3": "리졸버(Resolver)",
+        "choice4": "DHCP 서버(Dynamic Host Configuration Protocol Server)",
+        "explanation": "도메인 네임 스페이스: DNS가 저장·관리하는 계층적 구조\n네임 서버: DNS 정보를 관리하고 제공하는 서버. 도메인 이름 공간에 대한 정보를 저장하며, 계층적으로 구성된다.\n리졸버: 네트워크를 통하여 DNS 질의를 전송하는 소프트웨어\nDHCP 서버: IP 주소 및 네트워크 설정 정보를 동적으로 할당하는 서버"
+      }
+    },
+    {
+      "pdfPage": 625,
+      "questionNumber": 9,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "봇넷(Botnet) 또는 C&C(Command & Control)에 많이 사용되는 프로토콜로 IRC(Internet Relay Chat) 프로토콜이 있다. 다음 중 IRC의 기능이 아닌 것은?",
+        "choice1": "다수의 사용자들과 텍스트 메시지를 공유",
+        "choice2": "사용자들 간의 파일 전송",
+        "choice3": "한 클라이언트의 사용자가 다른 클라이언트 상에서 실행 가능한 메시지 전송",
+        "choice4": "바이러스 프로그램의 제작",
+        "explanation": "IRC는 다수 사용자 간의 텍스트 메시지 공유나 파일 전송을 하는 프로토콜로, 바이러스와 같은 악성 프로그램을 제작하는 기능은 존재하지 않는다.\n텍스트 메시지 공유: 채널을 통해 여러 사용자가 동시에 텍스트 기반의 대화를 할 수 있다.\n사용자 간의 파일 전송: 파일을 IRC 서버를 거치지 않고 사용자 간 직접 전송할 수 있다.\n실행 가능한 메시지 전송: 명령어를 통해 다른 클라이언트에 특정 명령을 전달하고 실행할 수 있다. (2023년 2회)"
+      }
+    },
+    {
+      "pdfPage": 625,
+      "questionNumber": 11,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph"
+      ],
+      "after": {
+        "prompt": "다음 중 우리나라 국가 최상위 도메인 관리 기관은?",
+        "explanation": "우리나라의 국가 최상위 도메인(kr)은 한국 인터넷 진흥원(KISA: Korea Internet & Security Agency)이 관리한다. (2023년 2회)"
+      }
+    },
+    {
+      "pdfPage": 249,
+      "questionNumber": 6,
+      "sourceAnswer": 1,
+      "status": "held",
+      "errorTypes": [
+        "answer_conflict"
+      ],
+      "holdReason": "answer_conflict_registered_3_source_1"
+    },
+    {
+      "pdfPage": 249,
+      "questionNumber": 9,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "디지털 서명에 대한 공격을 예방하기 위해 공개키를 취급하는 소프트웨어는 공개키의 해시값을 표시하는 수단을 준비해 놓고 있다. 이러한 해시값을 무엇이라 하는가?",
+        "choice2": "핑거프린트",
+        "explanation": "핑거프린트는 텍스트, 오디오, 비디오 및 멀티미디어 콘텐츠에 저작권 정보와 구매한 사용자 정보를 삽입해 콘텐츠 불법 배포자를 추적하기 위한 기술이다.\n디지털 서명에 대한 공격을 예방하기 위해 공개키를 취급하는 소프트웨어에서 공개키의 해시값을 표시하는 수단을 준비해 놓는데, 이러한 해시값을 핑거프린트라 한다."
+      }
+    },
+    {
+      "pdfPage": 249,
+      "questionNumber": 7,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph"
+      ],
+      "after": {
+        "prompt": "다음은 DRM(Digital Rights Management)의 구성 요소 중 무엇에 대한 설명인가? 지식재산권으로 보호되어야 할 정보의 단위로, 일반적으로 패키징을 통해 패키징되기 이전의 원본을 의미한다.",
+        "choice4": "권한(Permission)",
+        "explanation": "DRM의 구성 요소 중 지식재산권으로 보호받아야 할 데이터를 콘텐츠라고 한다."
+      }
+    },
+    {
+      "pdfPage": 375,
+      "questionNumber": 23,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph"
+      ],
+      "after": {
+        "prompt": "다음 중 서버의 백로그 큐(Backlog Queue)를 가득 채워 더 이상 신규 세션을 연결할 수 없게 하는 공격은 무엇인가?",
+        "choice2": "TCP SYN Flooding 공격이며, 짧은 시간에 대량의 SYN 패킷을 전송하는 접속을 차단한다.",
+        "choice3": "80 포트를 사용하는 웹 서버에 대한 HTTP Cache-Control 공격이며, 전송하는 패킷의 Cache-Control 옵션을 확인하여 공격 패킷을 차단한다.",
+        "choice4": "80 포트를 사용하는 웹 서버에 대한 GET Flooding 공격이며, 지정 시간 내 임계치를 초과하여 동일한 웹 페이지에 접속하는 패킷을 차단한다.",
+        "explanation": "네트워크 패킷은 과도한 SYN 패킷, 짧은 시간 간격, 다양한 Source Port 사용 등의 특징을 통해 TCP SYN Flooding 공격을 식별할 수 있다.\nTCP SYN Flooding 공격은 TCP 3-Way Handshake의 첫 번째 단계인 SYN 패킷을 대량으로 전송하여 서버의 연결 대기 큐를 가득 채움으로써 정상 사용자의 접속을 방해하는 서비스 거부 공격이다.\nTCP SYN Flooding 공격은 접근 제어 목록(ACL)을 통해 비정상적인 소스 IP 또는 포트를 차단하거나 SYN Cookies 활성화, 방화벽/IPS 설정을 통해 대응할 수 있다."
+      }
+    },
+    {
+      "pdfPage": 375,
+      "questionNumber": 25,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "joined_punctuation"
+      ],
+      "after": {
+        "prompt": "다음 중 DDoS 공격에 대한 설명으로 올바르지 않은 것은?",
+        "choice1": "C&C 서버에 공격 명령을 전달하여 타깃 시스템을 공격한다.",
+        "choice2": "공격 대상 변경 발생 시 좀비 PC에 접속해서 직접 공격 대상을 변경한다.",
+        "choice3": "공격자는 취약한 서버를 공격하여 악성 코드를 배포하고, 경유지 서버에서 악성 코드를 내려받은 기기들을 이용하여 봇넷을 구축한다.",
+        "choice4": "악성 코드 등에 의해 감염된 PC, IoT 기기, 서버들로 구성된 봇넷은 DDoS 공격을 위한 공격 도구로 사용된다.",
+        "explanation": "공격 대상 변경 발생 시 좀비 PC에 접속해서 직접 공격 대상을 변경하지 않고, 중앙에서 C&C 서버를 이용하여 변경된 공격 명령을 전달한다."
+      }
+    },
+    {
+      "pdfPage": 377,
+      "questionNumber": 29,
+      "sourceAnswer": 2,
+      "status": "held",
+      "errorTypes": [
+        "code_or_symbol"
+      ],
+      "holdReason": "packet_capture_numeric_and_header_glyphs_not_reliably_transcribed"
+    },
+    {
+      "pdfPage": 377,
+      "questionNumber": 30,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "line_break_split"
+      ],
+      "after": {
+        "prompt": "다음에서 설명하는 보안 공격은 무엇인가?\n- 공격자는 출발지 IP를 공격 대상 IP로 위조하여 다수의 반사 서버로 요청 정보를 전송하고, 공격 대상자는 반사 서버로부터 다량의 응답을 받아 서비스 거부가 되는 공격이다.\n- 봇넷 기기들이 직접 공격을 수행하는 것이 아니라 증폭 공격에 활용되는 서비스를 제공하는 서버 역할을 할 수 있는 단말 장비(네트워크 장비, 공유기 등)까지 공격 기기로 이용한다.",
+        "choice1": "DRDoS",
+        "explanation": "출발지 IP를 공격 대상 IP로 위조하여 다수의 반사 서버로 요청 정보를 전송하고, 반사 서버로부터 다량의 응답을 받아 서비스 거부가 되는 공격은 DRDoS 공격이다. (2025년 2회)"
+      }
+    },
+    {
+      "pdfPage": 467,
+      "questionNumber": 2,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph"
+      ],
+      "after": {
+        "prompt": "다음 스크린드 서브넷 구조에 대한 설명으로 가장 옳지 않은 것은?",
+        "choice1": "외부 인터넷 환경에서 접속이 되어야 한다.",
+        "choice2": "스크리닝 라우터 사이에 듀얼 홈드 게이트웨이가 위치하는 구조이다.",
+        "choice3": "다른 방화벽에 비해 설치 및 관리가 쉽다.",
+        "choice4": "서비스 속도가 낮다.",
+        "explanation": "스크린드 서브넷 구조 방화벽은 스크리닝 라우터 사이에 듀얼 홈드 게이트웨이가 위치하는 구조로, 완충 지역 역할을 하는 서브넷을 운영하는 방식이다. 3중 방어 체계로서 타 방화벽 구조에 비해 서비스 속도가 낮다."
+      }
+    },
+    {
+      "pdfPage": 467,
+      "questionNumber": 4,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph"
+      ],
+      "after": {
+        "prompt": "다음 문장에서 설명하고 있는 것은 무엇인가? 의심스러운 트래픽을 탐지할 뿐만 아니라 위협이 되는 트래픽을 발견하게 되면 어떻게 대응할지를 미리 정의해 놓고 해당 패킷을 제거한다.",
+        "choice1": "Intrusion Prevention System",
+        "choice2": "Screened Subnet",
+        "choice3": "Knowledge-Based IDS",
+        "choice4": "Signature-Based IDS",
+        "explanation": "Screened Subnet은 방화벽의 유형이고, Knowledge-Based/Signature-Based IDS는 미리 정의한 패턴에 따라 차단 없이 탐지만 하는 솔루션 유형이다. 의심스러운 트래픽을 탐지할 뿐만 아니라 위협이 되는 트래픽을 발견하면 어떻게 대응할지를 미리 정의해 놓고 해당 패킷을 제거하는 기능을 가진 솔루션은 IPS이다."
+      }
+    },
+    {
+      "pdfPage": 486,
+      "questionNumber": 14,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "line_break_split"
+      ],
+      "after": {
+        "prompt": "다음 중 VPN에 대한 설명으로 틀린 것은?",
+        "choice1": "SSL VPN은 웹 애플리케이션 기반으로 구성된다.",
+        "choice2": "SSL VPN 이용 시 설치가 더 용이하다.",
+        "choice3": "IPSec VPN은 시간과 장소에 제약이 없다.",
+        "choice4": "IPSec VPN은 규정된 사용자, 제한된 사용자만 수용한다.",
+        "explanation": "위치 특정이 가능한 기업 간에는 IPSec VPN과 같이 별도의 장비를 활용하여 Intranet & Extranet을 연결하며, 사용자의 위치 특정이 불가능한 원격 근무의 경우 SSL VPN과 같은 프로그램을 활용하여 Remote Access를 지원한다."
+      }
+    },
+    {
+      "pdfPage": 486,
+      "questionNumber": 13,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "line_break_split"
+      ],
+      "after": {
+        "prompt": "다음 중 베스천 호스트(Bastion Host)에 대한 설명으로 올바른 것은?",
+        "choice1": "두 개의 스크린 호스트를 이용한다.",
+        "choice2": "라우터 기능 외에 패킷 통과 여부를 결정할 수 있는 스크린 기능이 존재한다.",
+        "choice3": "두 개의 랜카드를 가진 호스트이다.",
+        "choice4": "보호된 네트워크에 유일하게 외부에 노출되는 내·외부 네트워크 연결점으로 사용되는 호스트이다.",
+        "explanation": "베스천 호스트는 방화벽 시스템을 탑재한 호스트로, 내·외부 네트워크를 연결하는 방식에서 보호된 네트워크 사이의 유일한 연결점으로 이용된다."
+      }
+    },
+    {
+      "pdfPage": 519,
+      "questionNumber": 1,
+      "sourceAnswer": 3,
+      "status": "held",
+      "errorTypes": [
+        "answer_conflict"
+      ],
+      "holdReason": "answer_conflict_registered_1_source_3"
+    },
+    {
+      "pdfPage": 519,
+      "questionNumber": 2,
+      "sourceAnswer": 3,
+      "status": "held",
+      "errorTypes": [
+        "answer_conflict"
+      ],
+      "holdReason": "answer_conflict_registered_2_source_3"
+    },
+    {
+      "pdfPage": 684,
+      "questionNumber": 1,
+      "sourceAnswer": 2,
+      "status": "held",
+      "errorTypes": [
+        "answer_conflict"
+      ],
+      "holdReason": "answer_conflict_registered_3_source_2"
+    },
+    {
+      "pdfPage": 684,
+      "questionNumber": 4,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph"
+      ],
+      "after": {
+        "prompt": "다음 중 VISA와 Master Card 사에 의해 개발된 신용카드 기반 전자 지불 프로토콜을 무엇이라 하는가?",
+        "choice2": "SET",
+        "explanation": "SET은 VISA와 Master Card 사가 신용카드를 기반으로 인터넷상의 전자 결제를 안전하게 이용할 수 있도록 마련한 전자 결제 과정 표준안이자 프로토콜이다."
+      }
+    },
+    {
+      "pdfPage": 684,
+      "questionNumber": 2,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 중 네트워크 화폐형 전자화폐가 아닌 것은?",
+        "explanation": "전자화폐 시스템 종류는 다음과 같다.\nIC 카드형: 몬덱스(Mondex), 비자캐시(Visa Cash), PC Pay\n네트워크형: E-Cash, NetCash, Payme, Millicent"
+      }
+    },
+    {
+      "pdfPage": 922,
+      "questionNumber": 1,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing"
+      ],
+      "after": {
+        "prompt": "다음 정보보호 대책 구현에 관한 설명으로 올바르지 않은 것은?",
+        "choice1": "효율적인 대책 선정을 위해서는 위험 분석 결과를 고려하여야 한다.",
+        "choice2": "대책 선정에 있어 고려해야 할 중요한 요소 중 하나는 비용이다.",
+        "choice3": "대부분의 대책들이 복합적인 기능, 즉 감지, 억제, 방어, 제한, 교정 등을 수행할 수 있기 때문에 복수의 기능을 만족시키는 대책을 선택하는 것이 비용 측면에서 효율적이다.",
+        "choice4": "대책이 사용될 수 있는 영역은 물리적·기술적 환경에 한정하여야 하며, 관리적 분야 즉 인적·행정 분야 등에는 적용하지 않는다.",
+        "explanation": "정보보호 대책은 관리적·물리적·기술적 환경을 모두 고려하여 적용해야 한다. (2022년 1회)"
+      }
+    },
+    {
+      "pdfPage": 922,
+      "questionNumber": 3,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing"
+      ],
+      "after": {
+        "prompt": "정보보호의 예방 대책을 관리적 예방 대책과 기술적 예방 대책으로 나누어 볼 때 관리적 예방 대책에 속하는 것은?",
+        "choice1": "안전한 패스워드를 강제로 사용",
+        "choice2": "침입 차단 시스템을 이용하여 접속을 통제",
+        "choice3": "가상 사설망을 이용하여 안전한 통신 환경 구현",
+        "choice4": "문서 처리 순서의 표준화",
+        "explanation": "안전한 패스워드를 강제로 사용, 침입 차단 시스템을 이용하여 접속을 통제, 가상 사설망을 이용하여 안전한 통신 환경 구현은 기술적 예방 대책이다. (2022년 2회)"
+      }
+    },
+    {
+      "pdfPage": 922,
+      "questionNumber": 4,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing"
+      ],
+      "after": {
+        "prompt": "다음 문장의 정보보호 대책 선정 시 영향을 주는 제약 사항으로 옳은 것은? 많은 기술적 대책들이 직원의 능동적인 지원에 의존하기 때문에 이러한 제약 사항을 고려하여야 한다. 만약 직원이 대책에 대한 필요성을 이해하지 못하고 문화적으로 수용할 만하다는 것을 알지 못한다면 대책은 시간이 지날수록 비효율적인 것이 된다.",
+        "choice1": "환경적 제약",
+        "choice2": "법적 제약",
+        "choice3": "시간적 제약",
+        "choice4": "사회적 제약",
+        "explanation": "사회적 제약은 사용자 또는 조직 구성원의 문화적·행동적 요인으로 인해 보안 구현이 어려운 경우의 제약이다.\n직원이 대책에 대한 필요성을 이해하지 못하고 문화적으로 수용할 만하다는 것을 알지 못한다면 대책은 시간이 지날수록 비효율적이 된다."
+      }
+    },
+    {
+      "pdfPage": 1113,
+      "questionNumber": 44,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph"
+      ],
+      "after": {
+        "prompt": "다음 중 산업용 장비의 제어에 사용되는 PLC(Programmable Logic Controller) 시스템을 공격 대상으로 한 악성 코드는?",
+        "choice1": "스턱스넷(Stuxnet)",
+        "explanation": "스턱스넷은 독일 지멘스사의 SCADA(산업용 감시·관리) 및 PLC(산업용 장비 제어) 시스템을 목표로 제작된 악성 코드로, 원자력·전기·철강·반도체·화학 등 주요 산업 기반 시설의 제어 시스템에 침투해 오작동을 일으키는 악성 코드이다."
+      }
+    },
+    {
+      "pdfPage": 1113,
+      "questionNumber": 47,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph"
+      ],
+      "after": {
+        "prompt": "다음 중 SMTP 명령어에 대한 설명으로 옳지 않은 것은?",
+        "choice1": "MAIL: 송신자의 이메일 주소를 지정하기 위한 명령어로, 실제 메시지 송신인을 설정하는 역할을 한다.",
+        "choice2": "EHLO: SMTP 수신자에게 지원하는 SMTP 확장의 목록을 보내 달라고 요청하는 명령어이다.",
+        "choice3": "DATA: 수신자 주소가 모두 지정된 후, 본문 메시지를 송신하기 위해 사용하는 명령어이다.",
+        "choice4": "QUIT: 메일 전송 후 SMTP 연결을 정상적으로 종료하기 위해 사용하는 명령어이다.",
+        "explanation": "MAIL은 SMTP 송신자가 메일 전송을 시작하기 위해 수신자로 보내는 명령어이다."
+      }
+    },
+    {
+      "pdfPage": 1113,
+      "questionNumber": 45,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph"
+      ],
+      "after": {
+        "prompt": "FTP(File Transfer Protocol) 사용 시 사용자들이 서버에 자신을 식별시키지 않고도 파일에 접근할 수 있도록 하는 보안 취약점 또는 공격 방식은 무엇인가?",
+        "choice1": "FTP Bounce Attack",
+        "choice2": "Anonymous FTP",
+        "choice3": "Packet Sniffing",
+        "choice4": "Directory Traversal",
+        "explanation": "익명 FTP(Anonymous FTP)는 FTP 사용 시 사용자들이 서버에 자신을 식별시키지 않고서도 파일에 접근하는 방법을 제공하는 방식이다.\n아이디를 anonymous로 입력하고 임의의 비밀번호를 이용해도 접속이 가능하다."
+      }
+    },
+    {
+      "pdfPage": 1156,
+      "questionNumber": 84,
+      "sourceAnswer": 3,
+      "status": "held",
+      "errorTypes": [
+        "answer_conflict"
+      ],
+      "holdReason": "answer_conflict_registered_2_source_3"
+    },
+    {
+      "pdfPage": 1156,
+      "questionNumber": 85,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "line_break_split"
+      ],
+      "after": {
+        "prompt": "다음 중 위험 관리의 구성 요소에 대한 설명으로 올바르지 않은 것은?",
+        "choice1": "자산은 하드웨어, 소프트웨어, 정보 시설 등 조직의 물리적 자원에 한정되며, 인적 자원이나 기업 평판 등 무형 자산은 제외된다.",
+        "choice2": "위협은 자산에 손실을 초래할 수 있는 잠재적 원인이나 행위자로서, 자연재해와 같은 환경적 요인뿐만 아니라 인간에 의한 의도적·비의도적 행위도 포함한다.",
+        "choice3": "취약성은 자산이 보유한 위협에 노출될 수 있는 약점이며, 위협과 자산 간의 상호작용을 유발할 수 있는 매개 요소로 작용할 수 있다.",
+        "choice4": "정보보호 대책은 위험을 줄이기 위한 관리적·물리적·기술적 통제를 포함하며, 선택 시에는 조직의 환경과 문화뿐만 아니라 초기 구축 비용과 지속적인 운영 비용까지도 고려해야 한다."
+      }
+    },
+    {
+      "pdfPage": 1156,
+      "questionNumber": 86,
+      "sourceAnswer": 3,
+      "status": "held",
+      "errorTypes": [
+        "answer_conflict"
+      ],
+      "holdReason": "answer_conflict_registered_2_source_3"
+    },
+    {
+      "pdfPage": 41,
+      "questionNumber": 2,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "line_break_split"
+      ],
+      "after": {
+        "prompt": "다음 중 운영체제 발전 흐름에 대한 설명으로 옳지 않은 것은?",
+        "choice1": "시분할 시스템은 여러 명의 사용자가 사용하는 시스템에서 컴퓨터가 사용자들의 프로그램을 번갈아가며 처리하는 시스템이다.",
+        "choice2": "다중 프로그래밍은 하나의 주기억장치에 여러 개의 프로그램을 상주한 후에 하나의 CPU와 대화식으로 동시에 처리하는 시스템이다.",
+        "choice3": "다중 처리 시스템은 여러 대의 컴퓨터에 여러 개의 CPU를 이용하여 여러 개의 프로그램을 처리하는 시스템이다.",
+        "choice4": "분산 처리 시스템은 서로 다른 장소에 위치한 컴퓨터 시스템에 기능과 자원을 분산시켜 상호 협력할 수 있는 시스템이다.",
+        "explanation": "다중 처리 시스템은 컴퓨터 시스템 한 대에 둘 이상의 CPU를 이용하여 병렬로 처리하는 시스템이다."
+      }
+    },
+    {
+      "pdfPage": 41,
+      "questionNumber": 3,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "line_break_split",
+        "ocr_glyph"
+      ],
+      "after": {
+        "prompt": "유닉스 계열 시스템의 핵심 부분인 커널(Kernel)에 대한 설명으로 옳지 않은 것은?",
+        "choice1": "유닉스 시스템의 구성은 커널(Kernel), 셀(Shell), 파일 시스템(File System)으로 구성되며, 커널은 프로세스 관리, 메모리 관리, 입출력 관리를 수행한다.",
+        "choice2": "커널(Kernel)은 데몬(Daemon) 프로세스를 실행하고 관리한다.",
+        "choice3": "유닉스 계열 시스템이 부팅될 때 가장 먼저 읽히는 핵심 부분으로 보조기억장치에 상주한다.",
+        "choice4": "커널(Kernel)은 셀(Shell)과 상호 연관되며 작업을 수행한다.",
+        "explanation": "커널은 컴퓨터가 부팅될 때 주기억장치에 적재된 후 상주하면서 실행하며, 프로그램과 하드웨어 간의 인터페이스 역할을 수행한다."
+      }
+    },
+    {
+      "pdfPage": 77,
+      "questionNumber": 1,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "line_break_split"
+      ],
+      "after": {
+        "prompt": "윈도우 NTFS 구조에서 시스템 안에 포함된 파일과 디렉터리에 대한 정보를 포함하고 있는 것은?",
+        "explanation": "MFT(Master File Table)는 볼륨/파일 시스템에 존재하는 모든 파일과 디렉터리에 대한 정보를 포함하고 있는 테이블이다.\n엔트리 집합으로 구성하며, 각 엔트리는 하나의 파일 또는 디렉터리에 대한 파일 위치, 시간 정보, 크기, 파일 이름 등의 정보를 가지고 있는 자료구조이다."
+      }
+    },
+    {
+      "pdfPage": 77,
+      "questionNumber": 2,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "line_break_split",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "FAT와 NTFS 파일 시스템에 대한 설명 중 옳지 않은 것은?",
+        "choice1": "FAT 뒤의 숫자는 표현할 수 있는 최대 클러스터 개수와 관련되어 있다.",
+        "choice2": "NTFS 파일 시스템은 대용량 볼륨, 보안 및 암호화를 지원한다.",
+        "choice3": "NTFS 파일 시스템은 타 운영체제 호환이 용이하다.",
+        "choice4": "저용량 볼륨에서는 FAT가 NTFS보다 속도가 빠르다.",
+        "explanation": "파일 시스템 비교\n항목 | FAT16 | FAT32 | NTFS\n비트 크기 | 16bit | 32bit | 64bit\n최대 볼륨 크기 | 2GB | 2TB | 8PB (Win 10 1709~)\n클러스터 크기 | ~32KB (NT 계열 ~64KB) | ~64KB | ~64KB (Win 10 1703 Ver), 2MB (Win 10 1709~)\n지원 OS | Win95, NT, Win3.1, DoS | Win2000, WinXP, WinVista | WinNT 4.0 이후부터 이용 가능\n장점 | 호환성이 우수, 단순, 저용량 | 호환성이 우수, 단순, 저용량 | 보안 기능, 대용량"
+      }
+    },
+    {
+      "pdfPage": 209,
+      "questionNumber": 7,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "line_break_split"
+      ],
+      "after": {
+        "prompt": "다음 문장의 괄호 안에 알맞은 용어는? 과거 ( ) 공격은 불특정 다수를 대상으로 데이터를 암호화하고 이에 대한 몸값을 요구하는 방식이 대부분이었다. 그러나 최근에는 높은 금액을 지불할 수 있는 대규모 엔터프라이즈 환경이 주로 공격 대상이 되고 있고, 암호화뿐만 아니라 데이터 유출 후 인터넷 공개를 미끼로 협박하는 형태의 공격 방식으로 진화되고 있다. 컴퓨터 시스템을 감염시켜 접근을 제한하고 일종의 몸값을 요구하는 악성 소프트웨어의 한 종류이다."
+      }
+    },
+    {
+      "pdfPage": 209,
+      "questionNumber": 9,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "line_break_split",
+        "ocr_glyph"
+      ],
+      "after": {
+        "prompt": "Visual Basic 스크립트를 이용한 악성 코드에 대한 설명으로 옳은 것은?",
+        "choice1": "웹 브라우저에서 실행될 경우 스크립트가 브라우저에 내장되므로 파일의 내용을 확인하기 어렵다.",
+        "choice2": "독립형으로 개발할 경우 파일 생성에 제한을 받아 악성 코드를 만들지 못한다.",
+        "choice3": "확장자는 VBA이다.",
+        "choice4": "러브버그라고 불리는 이메일에 첨부되어 전파된 바이러스가 Visual Basic 스크립트로 개발되었다.",
+        "explanation": "Visual Basic 스크립트(VBScript)는 마이크로소프트에서 개발한 경량화된 스크립트 언어로, Visual Basic을 기반으로 한 간단한 프로그래밍 언어이다.\n.vbs 확장자로 사용되며, 독립형이나 의존형과 같은 다양한 형태의 악성 코드의 제작이 가능하다.\n2000년에 러브버그(LoveBug)라고 불리는 이메일에 첨부되어 전파된 바이러스가 Visual Basic 스크립트로 개발되어 데이터 손상 및 이메일 자동 전파를 일으켰다."
+      }
+    }
+  ]
+}

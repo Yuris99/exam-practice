@@ -1,0 +1,399 @@
+{
+  "format": "information-security-text-recovery-decisions",
+  "version": 1,
+  "batchNumber": 6,
+  "selectionCount": 50,
+  "items": [
+    { "pdfPage": 907, "questionNumber": 19, "sourceAnswer": 3, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "table_flattening"], "after": {
+      "prompt": "다음 중 전자서명의 조건에 대한 설명으로 틀린 것은?",
+      "choice1": "위조 불가 조건 - 합법적인 서명자만이 전자문서에 대한 전자서명을 만들 수 있어야 한다.",
+      "choice2": "서명자 인증 조건 - 전자서명의 서명자를 누구든지 검증할 수 있어야 한다.",
+      "choice3": "변경 불가 조건 - 전자서명은 변경될 수 없어야 한다.",
+      "choice4": "재사용 불가 조건 - 전자문서의 서명은 다른 전자문서의 서명으로 사용될 수 없어야 한다.",
+      "explanation": "위조 불가: 서명자가 아닌 다른 사람이 생성할 수 없음\n서명자 인증: 전자서명의 서명자를 누구든지 검증할 수 있음\n변경 불가: 생성키를 소유하지 않은 자는 서명한 문서의 내용을 변경할 수 없음\n재사용 불가: 이미 사용된 서명을 다른 전자문서에 재사용할 수 없음"
+    }},
+    { "pdfPage": 907, "questionNumber": 17, "sourceAnswer": 3, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "joined_punctuation", "table_flattening"], "after": {
+      "prompt": "다음 중 RSA 전자서명에 대한 설명으로 옳은 것은?",
+      "choice1": "이산대수 문제를 이용한 전자서명이다.",
+      "choice2": "암호화 키 교환과 암호화는 지원하지 않고, 오직 전자서명만 지원한다.",
+      "choice3": "암호화 알고리즘을 사용해서 메시지에 대해 전자서명을 한다.",
+      "choice4": "서명의 크기를 줄이기 위해 제안된 방식이다.",
+      "explanation": "RSA 전자서명은 이산대수 문제가 아니라 소인수분해의 어려움을 기반으로 안전도를 결정한 전자서명이다.\nRSA는 암호화와 전자서명을 모두 지원한다. 큰 서명 크기를 줄이기 위한 방식은 Schnorr 전자서명이다.\nRSA 전자서명은 암호화 알고리즘을 사용해서 메시지에 대해 전자서명을 한다.\nRSA 전자서명: 공개키 기반인 RSA 방식을 이용한 전자서명. RSA 암호의 안전도와 동일한 안전도를 가지며, 소수 p, q의 크기에 따른 소인수분해의 어려움을 기반으로 안전도를 결정한 메시지 복원형 방식의 전자서명.\nSchnorr 전자서명: Elgamal에서 발생하는 큰 서명 크기를 줄이기 위한 방식이며, 메시지의 종속적인 계산을 최소화하는 방식의 전자서명."
+    }},
+    { "pdfPage": 907, "questionNumber": 16, "sourceAnswer": 4, "status": "held", "errorTypes": ["answer_conflict"], "holdReason": "answer_conflict_registered_1_source_4: 원본 PDF 정답표는 ④, 등록 답안은 ①이다. 답과 텍스트를 수정하지 않고 별도 검토 대상으로 유지한다." },
+    { "pdfPage": 907, "questionNumber": 18, "sourceAnswer": 2, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "ocr_glyph"], "after": {
+      "prompt": "다음 중 RSA 방식을 이용한 전자서명에 대한 설명으로 틀린 것은?",
+      "choice1": "메시지 복원형 전자서명이다.",
+      "choice2": "대칭형 암호 기법을 사용한다.",
+      "choice3": "공개키 기반의 암호 방식이다.",
+      "choice4": "큰 소수의 소인수분해 문제에 기반한 기법이다.",
+      "explanation": "공개키 기반인 RSA 방식을 이용한 전자서명으로, RSA 암호의 안전도와 동일한 안전도를 가지는 소수 p, q의 크기에 따른 소인수분해의 어려움을 기반으로 안전도를 결정한 메시지 복원형 방식의 전자서명이다. RSA 방식을 이용한 전자서명은 비대칭형 암호 기법을 사용한다."
+    }},
+    { "pdfPage": 1079, "questionNumber": 6, "sourceAnswer": 3, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "line_break_split"], "after": {
+      "prompt": "다음과 같은 개인정보 보호에 대한 시책 마련은 어느 법률에서 규정하고 있는가?\n이 법은 정보통신망의 이용을 촉진하고 정보통신서비스를 이용하는 자를 보호함과 아울러 정보통신망을 건전하고 안전하게 이용할 수 있는 환경을 조성하여 국민 생활의 향상과 공공복리의 증진에 이바지함을 목적으로 한다.",
+      "choice1": "개인정보 보호법",
+      "choice2": "전자서명법",
+      "choice3": "정보통신망 이용촉진 및 정보보호 등에 관한 법률",
+      "choice4": "정보통신기반 보호법",
+      "explanation": "정보통신망 이용촉진 및 정보보호 등에 관한 법률의 제1조 목적은 다음과 같다. 이 법은 정보통신망의 이용을 촉진하고 정보통신서비스를 이용하는 자를 보호함과 아울러 정보통신망을 건전하고 안전하게 이용할 수 있는 환경을 조성하여 국민 생활의 향상과 공공복리의 증진에 이바지함을 목적으로 한다."
+    }},
+    { "pdfPage": 1079, "questionNumber": 7, "sourceAnswer": 1, "status": "verified_corrected", "errorTypes": ["hangul_spacing"], "after": {
+      "prompt": "정보통신망 이용촉진 및 정보보호 등에 관한 법률에서 규정하고 있는 내용이 아닌 것은?",
+      "choice1": "주요정보통신기반시설의 보호체계",
+      "choice2": "정보통신망의 이용촉진",
+      "choice3": "정보통신망에서의 이용자 보호 등",
+      "choice4": "정보통신망의 안정성 확보 등",
+      "explanation": "정보통신망 이용촉진 및 정보보호 등에 관한 법률은 다음과 같이 구성되어 있다.\n제2장 정보통신망의 이용촉진\n제5장 정보통신망에서의 이용자 보호 등\n제6장 정보통신망의 안정성 확보 등"
+    }},
+    { "pdfPage": 1079, "questionNumber": 9, "sourceAnswer": 3, "status": "verified_corrected", "errorTypes": ["ocr_glyph", "hangul_spacing"], "after": {
+      "prompt": "다음 중 개인정보 유출 시 신고해야 하는 기관과 가장 관련이 깊은 곳은?",
+      "choice1": "한국산업기술진흥원",
+      "choice2": "한국콘텐츠진흥원",
+      "choice3": "한국인터넷진흥원",
+      "choice4": "한국정보통신진흥원",
+      "explanation": "정보통신망 이용촉진 및 정보보호 등에 관한 법률 제48조의3(침해사고의 신고 등) 제1항에 명시되어 있다. 정보통신서비스 제공자는 침해사고가 발생하면 즉시 그 사실을 과학기술정보통신부장관이나 한국인터넷진흥원에 신고하여야 한다. 이 경우 정보통신서비스 제공자가 이미 다른 법률에 따른 침해사고 통지 또는 신고를 했으면 전단에 따른 신고를 한 것으로 본다."
+    }},
+    { "pdfPage": 1178, "questionNumber": 51, "sourceAnswer": 2, "status": "verified_corrected", "errorTypes": ["ocr_glyph", "hangul_spacing"], "after": {
+      "prompt": "다음 중 SPAM RELAY를 방지하기 위한 방법으로 적절하지 않은 것은?",
+      "choice1": "메일 서버에서 SMTP 인증을 활성화한다.",
+      "choice2": "오픈 릴레이(Open Relay)를 허용하여 모든 IP에서 메일을 발송할 수 있도록 설정한다.",
+      "choice3": "RBL(Real-time Blackhole List) 서비스를 활용하여 스팸 발송 서버를 차단한다.",
+      "choice4": "메일 서버의 릴레이 정책을 적절하게 설정하여 내부 사용자만 메일을 발송할 수 있도록 제한한다.",
+      "explanation": "SPAM RELAY는 메일 서버가 악용되어 스팸 메일을 대량으로 발송하는 것을 의미한다. 이를 방지하기 위해서는 SMTP 인증 활성화, RBL 서비스 활용, 릴레이 정책 설정 등의 조치가 필요하다. 오픈 릴레이를 허용하는 설정은 메일 서버를 누구나 사용할 수 있도록 만들어 보안 취약점을 초래하여 스팸에 악용될 가능성이 높아진다."
+    }},
+    { "pdfPage": 1178, "questionNumber": 52, "sourceAnswer": 2, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "ocr_glyph"], "after": {
+      "prompt": "다음 중 웹사이트 관리자가 아닌 이가 웹페이지에 클라이언트 사이드 스크립트를 삽입하여 다른 사용자가 이를 실행하도록 하는 공격은 무엇인가?",
+      "choice1": "SQL Injection",
+      "choice2": "Cross-Site Scripting (XSS)",
+      "choice3": "SSRF",
+      "choice4": "Command Injection",
+      "explanation": "사용자 브라우저에 검증되지 않은 외부 입력값을 허용하여 악의적인 스크립트를 실행할 수 있는 취약점은 XSS이다."
+    }},
+    { "pdfPage": 1178, "questionNumber": 50, "sourceAnswer": 2, "status": "verified_corrected", "errorTypes": ["hangul_spacing"], "after": {
+      "prompt": "다음 중 DNS 대상의 데이터 위조·변조 공격을 방지하기 위한 인터넷 표준 기술은?",
+      "choice1": "AES",
+      "choice2": "DNSSEC",
+      "choice3": "HTTPS",
+      "choice4": "TLS/SSL",
+      "explanation": "DNSSEC은 IP 네트워크를 통해 전송되는 데이터의 보안을 위해 DNS 레코드에 추가되는 암호화 서명이다. 전자서명을 통해 모든 데이터를 인증(Authentication)하고, 데이터 위조·변조 공격 방지를 통한 무결성(Integrity)을 제공한다."
+    }},
+    { "pdfPage": 213, "questionNumber": 19, "sourceAnswer": 3, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "ocr_glyph"], "after": {
+      "prompt": "다음 중 문서에서 동작하는 악성 코드의 유형으로 가장 적합한 것은 무엇인가?",
+      "choice1": "웜(Worm)",
+      "choice2": "트로이 목마(Trojan Horse)",
+      "choice3": "매크로 바이러스(Macro Virus)",
+      "choice4": "랜섬웨어(Ransomware)",
+      "explanation": "매크로 바이러스는 주로 문서 파일(Microsoft Word, Excel 등) 내에 포함된 매크로 스크립트를 통해 전파된다. 이 바이러스는 문서가 열릴 때 자동으로 실행되며, 감염된 매크로를 통해 문서 파일을 악성 코드로 변환시킨다. 문서 내에서 동작하는 특징이 있기 때문에 문서에 포함된 악성 코드로 가장 적합한 유형은 매크로 바이러스이다."
+    }},
+    { "pdfPage": 213, "questionNumber": 21, "sourceAnswer": 4, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "ocr_glyph", "table_flattening"], "after": {
+      "prompt": "다음이 설명하는 바이러스는 무엇인가?\n- 운영체제(OS)와 관계없이 동작하는 응용 프로그램 내부에서 동작하는 바이러스\n- 매크로 기능이 있는 MS사 오피스 제품군(워드, 엑셀, 파워포인트), 비지오(Visio), 오토캐드(AutoCAD) 등 VBS(Visual Basic Script)를 지원하는 다양한 프로그램에서 활동",
+      "choice1": "암호화 바이러스",
+      "choice2": "은폐형 바이러스",
+      "choice3": "갑옷형 바이러스",
+      "choice4": "매크로 바이러스",
+      "explanation": "암호화 바이러스(Encryption Virus): 백신 프로그램이 진단할 수 없도록 바이러스 프로그램의 일부 또는 대부분을 암호화시켜 저장하는 바이러스.\n은폐형 바이러스(Stealth Virus): 자신을 은폐하고 사용자나 백신 프로그램에 거짓 정보를 제공하는 바이러스.\n갑옷형 바이러스(Armour Virus): 백신 프로그램으로부터 숨기보다는 여러 단계의 암호화와 다양한 기법을 동원하여 바이러스 분석을 어렵게 하고 백신 프로그램 개발을 지연시키는 바이러스.\n매크로 바이러스(Macro virus): 운영체제(OS)와 관계없이 동작하는 응용 프로그램 내부에서 동작하는 바이러스."
+    }},
+    { "pdfPage": 213, "questionNumber": 20, "sourceAnswer": 1, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "ocr_glyph", "line_break_split"], "after": {
+      "prompt": "다음에서 설명하는 공격 기법은 무엇인가? 해커가 피해자의 컴퓨터, 서버, 모바일 기기, IoT 장비 등 다양한 디바이스에 몰래 악성 코드를 설치하여 암호화폐를 채굴(Mining)하는 사이버 공격 방법으로, 피해자는 자신의 기기가 감염됐는지 알아채지 못한 채 해커를 위해 전기 및 컴퓨팅 자원을 소모하게 된다.",
+      "choice1": "Cryptojacking",
+      "choice2": "Cryptolocker",
+      "choice3": "Hijacking",
+      "choice4": "Miner",
+      "explanation": "해커가 피해자의 컴퓨터, 서버, 모바일 기기, IoT 장비 등 다양한 디바이스에 몰래 악성 코드를 설치하여 암호화폐를 채굴(Mining)하는 사이버 공격 방법은 크립토재킹(Cryptojacking)이다."
+    }},
+    { "pdfPage": 215, "questionNumber": 2, "sourceAnswer": 3, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "line_break_split"], "after": {
+      "prompt": "악성 코드를 백신으로 탐지하고 치료할 수 있지만 패턴 등이 없어 탐지가 불가능한 경우도 있다. 수작업으로 악성 코드를 탐지하고 제거하는 방법이 아닌 것은?",
+      "choice1": "네트워크 상태 점검하기",
+      "choice2": "정상적인 프로세스와 비교하기",
+      "choice3": "디스크 운영 상태 점검하기",
+      "choice4": "백도어의 파일 검사하기"
+    }},
+    { "pdfPage": 215, "questionNumber": 1, "sourceAnswer": 4, "status": "verified_corrected", "errorTypes": ["ocr_glyph", "hangul_spacing"], "after": {
+      "prompt": "다음 중 안티 루트킷의 주요 기능이 아닌 것은 무엇인가?",
+      "choice1": "숨김 파일 찾기",
+      "choice2": "수정된 레지스트리 찾기",
+      "choice3": "프로세스 보호 해제",
+      "choice4": "로그 파일 흔적 제거",
+      "explanation": "로그 파일 흔적 제거는 공격자가 흔적을 지우기 위해 수행하는 행위로서, 안티 루트킷의 기능이 아니다. 오히려 안티 루트킷은 이런 흔적을 발견하는 기능이 있다. 안티 루트킷은 커널 수준에서 동작하는 루트킷을 탐지하는 기술이다. 숨김 파일 찾기, 수정된 레지스트리 찾기, 프로세스 보호 해제를 수행한다."
+    }},
+    { "pdfPage": 215, "questionNumber": 3, "sourceAnswer": 4, "status": "verified_corrected", "errorTypes": ["hangul_spacing"], "after": {
+      "prompt": "트로이 목마의 기능이 아닌 것은?",
+      "choice1": "원격 조정",
+      "choice2": "패스워드 가로채기",
+      "choice3": "시스템 파일 파괴",
+      "choice4": "자가 복제",
+      "explanation": "트로이 목마는 자가 복제가 되지 않는 악성 코드로서 별도의 호스트 프로그램이 필요한 의존형 악성 프로그램이다. 원격 조정을 통해 정상 사용자 권한을 이용하여 파일 권한 변경, 파일 삭제, 계정 생성 등의 행위를 사용자가 인식하지 못하게 수행한다."
+    }},
+    { "pdfPage": 668, "questionNumber": 5, "sourceAnswer": 2, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "ocr_glyph"], "after": {
+      "prompt": "다음 중 한국인터넷진흥원의 홈페이지 취약점 진단·제거 가이드, 행정안전부의 소프트웨어 개발 보안 가이드, 행정안전부의 주요 정보통신기반시설 기술적 취약점 분석·평가 방법 상세 가이드 등에서 공통으로 언급하고 있는 웹 애플리케이션 취약점과 가장 관계가 없는 항목은?",
+      "choice1": "XSS(Cross-Site Scripting)",
+      "choice2": "GET Flooding",
+      "choice3": "CSRF(Cross-Site Request Forgery)",
+      "choice4": "SQL Injection",
+      "explanation": "SQL 삽입, XSS, CSRF 공격은 웹 애플리케이션의 취약점을 이용한 공격이고, GET Flooding은 DDoS 공격 기법이다."
+    }},
+    { "pdfPage": 668, "questionNumber": 3, "sourceAnswer": 4, "status": "verified_corrected", "errorTypes": ["ocr_glyph", "hangul_spacing"], "after": {
+      "prompt": "다음 중 불충분한 세션 관리로 인해 발생 가능한 취약점을 방지하기 위해 설계 시 고려할 사항으로 틀린 것은?",
+      "choice1": "세션 간 데이터가 공유되지 않도록 설계해야 한다.",
+      "choice2": "웹 브라우저 종료로 인한 세션 종료는 서버 측에서 인지할 수 없으므로 일정 시간 동안 사용되지 않는 세션 정보를 강제적으로 삭제되도록 설계한다.",
+      "choice3": "세션 ID가 포함된 쿠키에 대해 HttpOnly 속성을 설정하여 자바스크립트로 조회할 수 없도록 만들어 XSS 공격에 대응하도록 설계한다.",
+      "choice4": "세션 ID 중복으로 인한 오류를 예방하기 위해 세션 ID는 클라이언트가 생성/수정할 수 있도록 설계한다.",
+      "explanation": "세션 ID를 클라이언트가 생성하거나 수정할 수 있도록 설계할 경우, 세션 하이재킹 등 사용자에 의한 오용이 발생할 수 있다."
+    }},
+    { "pdfPage": 668, "questionNumber": 6, "sourceAnswer": 4, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "joined_punctuation"], "after": {
+      "prompt": "다음 중 웹 애플리케이션 보안 중 입력값 검증 취약점으로 나타날 수 있는 공격으로 올바르지 않은 것은?",
+      "choice1": "XSS",
+      "choice2": "SQL Injection",
+      "choice3": "CSRF",
+      "choice4": "오류 메시지를 통한 정보 노출",
+      "explanation": "입력값 검증 취약점으로 발생할 수 있는 공격에는 XSS, CSRF, SQL Injection, OS Command Injection 등이 있다."
+    }},
+    { "pdfPage": 862, "questionNumber": 16, "sourceAnswer": 3, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "ocr_glyph"], "after": {
+      "prompt": "접근 통제 정책의 특징으로서 옳지 않은 것은?",
+      "choice1": "권한 부여의 과정에서 어떤 정책은 기관의 부서별로 모든 결정이 제어된다.",
+      "choice2": "사용자 및 타겟들이 공통의 처리를 위하여 함께 그룹을 형성한다.",
+      "choice4": "어떤 정책이 시스템적 요소에 의하여 강제적으로 시행된다.",
+      "explanation": "역할 기반 접근 통제(RBAC)에서는 부서에 따라 권한이 부여되고, 사용자/타겟들의 공통 처리를 위하여 그룹을 형성한다. 주요 업무 프로세스 식별, 우선순위화 등 각 사업 단위가 받게 될 재정적 손실의 영향도를 파악하는 것은 비즈니스 영향 분석(BIA: Business Impact Analysis)에서 수행한다. 강제적 접근 통제(MAC)에 의해 사용자가 변경할 수 없는 시스템 정책에 의해 통제가 강제된다."
+    }},
+    { "pdfPage": 862, "questionNumber": 17, "sourceAnswer": 4, "status": "verified_corrected", "errorTypes": ["hangul_spacing"], "after": {
+      "prompt": "다음 중 임의적 접근 통제(DAC) 방식에 대한 설명으로 옳지 않은 것은?",
+      "choice1": "개별 주체와 객체 단위로 접근 권한 설정이 가능하다.",
+      "choice2": "객체의 소유주가 주체와 객체 간의 접근 통제 관계를 정의한다.",
+      "choice3": "ACL을 통해 구현된다.",
+      "choice4": "중앙 집중적으로 통제하는 환경에 적합하다.",
+      "explanation": "중앙 집중적으로 통제하는 환경에 적합한 접근 통제 방식은 강제적 접근 통제(MAC; Mandatory Access Control) 방식이다. 임의적 접근 통제(DAC; Discretionary Access Control)는 주체나 그룹의 신분(신원, 아이디(ID))에 근거하여 객체에 대한 접근을 제한하는 방법이다."
+    }},
+    { "pdfPage": 862, "questionNumber": 19, "sourceAnswer": 1, "status": "verified_corrected", "errorTypes": ["ocr_glyph", "hangul_spacing"], "after": {
+      "prompt": "접근 통제 모델 중 정보의 소유자가 정보의 보안 수준을 결정하고 이에 대한 정보의 접근 통제까지 설정하는 모델은 무엇인가?",
+      "choice1": "DAC",
+      "choice2": "MAC",
+      "choice3": "RBAC",
+      "choice4": "HAC",
+      "explanation": "정보의 소유자가 정보의 보안 수준을 결정하고 이에 대한 정보의 접근 통제까지 설정하는 모델은 임의적 접근 통제(DAC; Discretionary Access Control)이다."
+    }},
+    { "pdfPage": 163, "questionNumber": 9, "sourceAnswer": 3, "status": "verified_corrected", "errorTypes": ["ocr_glyph", "hangul_spacing"], "after": {
+      "prompt": "윈도우 이벤트 로그(Event Log)에 대한 설명이다. 틀린 것을 고르시오.",
+      "choice1": "로그를 보기 위한 이벤트 뷰어(eventvwr.msc)가 제공된다.",
+      "choice2": "기본 로그로 응용 프로그램 로그, 보안 로그, 시스템 로그 등이 있다.",
+      "choice3": "메모장으로 직접 열람 및 수정이 가능하다.",
+      "choice4": "이벤트 뷰어를 이용해 CSV로 내보내기할 수 있다.",
+      "explanation": "윈도우 이벤트 로그(Event Log)는 바이너리 형식이기 때문에 이벤트 뷰어를 통해 열어야 하고, 이벤트 로그는 CSV로 내보내기가 가능하다. 윈도우 시스템 이벤트 로그의 종류에는 응용 프로그램 로그, 보안 로그, 시스템 로그, 디렉터리 서비스 로그, 파일 복제 서비스 로그, DNS 서버 로그가 있다."
+    }},
+    { "pdfPage": 163, "questionNumber": 12, "sourceAnswer": 3, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "line_break_split"], "after": {
+      "prompt": "리눅스 환경에서 의심스러운 접근 기록이 확인되어 로그인 실패 기록을 살펴보려고 할 때 어떤 로그 파일을 참조하는 것이 가장 적절한가?",
+      "choice1": "pacct",
+      "choice2": "wtmp",
+      "choice3": "btmp",
+      "choice4": "utmp",
+      "explanation": "로그인 실패 기록을 살펴보려고 할 때는 btmp 로그 파일을 점검해 봐야 한다. btmp는 실패한 모든 로그인 시도에 대한 기록을 저장하고 있는 로그 파일이다."
+    }},
+    { "pdfPage": 196, "questionNumber": 12, "sourceAnswer": 3, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "ocr_glyph", "table_flattening"], "after": {
+      "prompt": "사용자가 정확한 웹사이트 주소를 입력해도 DNS 조작이나 도메인 탈취 등을 통해 가짜 웹페이지로 유도하여 주요 정보를 탈취하는 공격 방식은?",
+      "choice1": "피싱(Phishing) 공격",
+      "choice2": "스피어 피싱(Spear Phishing) 공격",
+      "choice3": "파밍(Pharming) 공격",
+      "choice4": "워터링 홀(Watering Hole) 공격",
+      "explanation": "사용자가 정확한 웹사이트 주소를 입력해도 DNS 조작이나 도메인 탈취 등을 통해 가짜 웹페이지로 유도하여 주요 정보를 탈취하는 공격 방식은 파밍(Pharming) 공격이다.\n피싱: 전자우편 또는 메신저를 사용해서 신뢰할 수 있는 사람 또는 기업이 보낸 메시지인 것처럼 가장하여 비밀번호 및 신용카드 정보와 같은 정보를 얻으려는 공격.\n스피어 피싱: 특정 대상에게 피싱 메일을 보내 불법 사이트로 안내하는 공격.\n워터링 홀: 공격 대상이 방문할 가능성이 있는 합법적 웹사이트를 미리 감염시킨 뒤 잠복하면서 피해자의 컴퓨터에 악성 프로그램을 추가로 설치하는 공격."
+    }},
+    { "pdfPage": 196, "questionNumber": 13, "sourceAnswer": 1, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "table_flattening"], "after": {
+      "prompt": "공격자가 정상적인 이메일 메시지와 유사하게 만들어 피해자가 정상적인 메시지라고 생각하도록 속이는 공격 기법은?",
+      "choice1": "클론 피싱(Clone Phishing)",
+      "choice2": "웨일링(Whaling)",
+      "choice3": "BEC(Business Email Compromise)",
+      "choice4": "비싱(Vishing)",
+      "explanation": "웨일링(Whaling): 기업 고위급 임원을 표적으로 사기성 이메일 문자 메시지 또는 전화 통화를 하는 행위.\n비즈니스 스캠(Business Email Compromise; BEC): 기업의 최고경영자(CEO), 최고재무책임자(CFO) 또는 고위 임원 등을 사칭하여 기업 내부 실무자를 대상으로 송금, 실무 자료 등을 요청하는 메일을 보내는 형태의 공격.\n비싱(Vishing; Voice Phishing; 보이스 피싱): 음성 통화 및 소셜 엔지니어링 기술을 사용하는 공격."
+    }},
+    { "pdfPage": 247, "questionNumber": 3, "sourceAnswer": 4, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "ocr_glyph"], "after": {
+      "prompt": "클라우드 시스템 및 서비스와 관련한 보안 측면의 설명으로 틀린 것은?",
+      "choice1": "클라우드 서비스를 구동하기 위해 필수적인 가상화 시스템 내 하이퍼바이저가 취약할 경우 이를 활용하는 여러 개의 가상 머신(VM)이 동시에 피해를 볼 가능성을 고려해야 한다.",
+      "choice2": "기존 네트워크 보안 기술(방화벽, IPS/IDS)로는 가상화 내부 영역에 대한 침입 탐지가 어렵다.",
+      "choice3": "사용자의 가상 머신들이 상호 연결되어 내부의 가상 머신에서 다른 가상 머신으로의 패킷 스니핑, 해킹, DDoS 공격, 악성 코드 전파 등의 공격 경로가 존재한다.",
+      "choice4": "가상화 기술 중 스토리지 가상화와 네트워크 가상화에 보안 위협이 존재하나 메모리 가상화에는 보안 위협이 존재하지 않는다.",
+      "explanation": "가상화 기술 중 메모리 가상화는 악성 VM이 다른 VM의 메모리 공간을 침해하거나 엿볼 수 있는 위험이 있다."
+    }},
+    { "pdfPage": 247, "questionNumber": 1, "sourceAnswer": 3, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "joined_punctuation"], "after": {
+      "prompt": "다음 클라우드 컴퓨팅 보안에 대한 설명으로 가장 옳지 않은 것은?",
+      "choice1": "가상화 시스템의 취약점을 상속한다.",
+      "choice2": "정보 위탁에 따른 정보 유출의 가능성이 있다.",
+      "choice3": "집중화로 보안 적용이 용이하다.",
+      "choice4": "자원 공유 및 집중화에 따른 서비스 장애가 발생할 수 있다.",
+      "explanation": "클라우드 컴퓨팅 보안의 경우 기존 On-Premise에 비해 자원이 분산되어 보안을 적용하기에 용이하지 않다."
+    }},
+    { "pdfPage": 429, "questionNumber": 1, "sourceAnswer": 4, "status": "verified_corrected", "errorTypes": ["hangul_spacing"], "after": {
+      "prompt": "클라이언트(웹 브라우저)와 서버(웹 서버) 간에 개인정보, 금융정보, 패스워드 등의 중요 정보를 안전하게 전송하기 위해 사용되는 암호 채널은?",
+      "choice1": "S/MIME",
+      "choice2": "PGP",
+      "choice3": "SSH",
+      "choice4": "SSL",
+      "explanation": "SSL은 전송 계층(4계층)과 응용 계층(7계층) 사이에서 브라우저와 웹 서버 간의 웹 데이터 암호화(기밀성), 상호 인증 및 전송 시 데이터 무결성을 보장하는 보안 프로토콜이다. SSL은 브라우저와 웹 서버 간 전송되는 모든 전송 구간에 안전한 통로를 제공한다."
+    }},
+    { "pdfPage": 429, "questionNumber": 3, "sourceAnswer": 2, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "table_flattening"], "after": {
+      "prompt": "IPSec을 구축하기 위해 SA를 사용한다. SA 매개변수에 포함되는 내용으로 틀린 것은?",
+      "choice1": "AH Information",
+      "choice2": "Routing Protocol",
+      "choice3": "IPSec Protocol Mode",
+      "choice4": "Sequence Number Counter",
+      "explanation": "라우팅 프로토콜은 IPSec의 SA 매개변수에 포함되지 않는다.\n순서번호 카운터(Sequence Number Counter): 패킷의 순서를 추적하기 위한 번호.\nAH 정보(AH Information): 데이터 무결성과 출처 인증을 제공하는 데 필요한 설정 및 정보.\nIPSec 프로토콜 모드(IPSec Protocol Mode): 전송 모드(Transport Mode)와 터널 모드(Tunnel Mode)를 설정."
+    }},
+    { "pdfPage": 584, "questionNumber": 3, "sourceAnswer": 4, "status": "verified_corrected", "errorTypes": ["ocr_glyph", "hangul_spacing"], "after": {
+      "prompt": "SQL 인젝션(Injection) 공격에 대한 설명으로 가장 적절하지 않은 것은?",
+      "choice1": "클라이언트의 입력값을 조작하여 사용자 인증 절차를 우회하는 등의 SQL 문을 생성하여 서버의 DB를 공격하는 기법이다.",
+      "choice2": "준비된 명령문(Prepared Statement) 등을 이용하는 안전한 코딩 기법을 활용하여 SQL 인젝션 공격을 감소시킬 수 있다.",
+      "choice3": "SQL 인젝션 공격에 대응하는 방법으로는 클라이언트부터 전달된 입력값을 점검 없이 SQL 문으로 변환하지 않고 DBMS에서 처리될 수 있는 특수문자가 포함되어 있는지 검사하는 방법이 있다.",
+      "choice4": "SQL 인젝션 공격에 대응하는 방법으로 허용되지 않는 입력값에 대해 블랙리스트 방식으로 차단하는 방법을 사용하는 것이 화이트리스트 방식보다 높은 보안성을 제공한다.",
+      "explanation": "SQL 인젝션 공격에 대응할 때는 허용된 값 이외의 모두를 차단하는 화이트리스트 방식을 권장하며, 적용이 어려운 경우 허용되지 않는 입력값에 대해 블랙리스트를 적용하도록 한다."
+    }},
+    { "pdfPage": 584, "questionNumber": 2, "sourceAnswer": 1, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "line_break_split"], "after": {
+      "prompt": "다음 문장에서 설명하는 것은?\n결제자의 다양한 정보를 수집해 패턴을 만든 후 패턴과 다른 이상 결제를 잡아내고 결제 경로를 차단하는 보안 방식으로, 보안 솔루션에 의존하던 기존 보안과 달리 빅데이터를 바탕으로 적극적인 보안 개입을 하는 것이 특징이다.",
+      "choice1": "이상 행위 탐지 시스템(FDS)",
+      "choice2": "침입 탐지 시스템(IDS)",
+      "choice3": "블록체인(Blockchain)",
+      "choice4": "SET(Secure Electronic Transaction)",
+      "explanation": "침입 탐지 시스템은 네트워크에 대한 공격을 탐지하기 위한 장비이고, 블록체인은 거래 내역을 참여자들에게 복제 저장하는 분산 원장 저장 기술이며, SET은 인터넷에서 신용카드 지불을 위한 프로토콜이다."
+    }},
+    { "pdfPage": 589, "questionNumber": 17, "sourceAnswer": 4, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "ocr_glyph"], "after": {
+      "prompt": "XSS(Cross-Site Scripting)에 대한 설명으로 틀린 것은?",
+      "choice1": "XSS 공격은 다른 사용자의 정보를 추출하기 위해 사용되는 공격 기법을 말한다.",
+      "choice2": "사용자가 전달하는 입력값 부분에 스크립트 태그를 필터링하지 못하였을 때 XSS 취약점이 발생한다.",
+      "choice3": "Stored XSS는 게시판 또는 자료실과 같이 사용자가 글을 저장할 수 있는 부분에 정상적인 평문이 아닌 스크립트 코드를 입력하는 기법을 말한다.",
+      "choice4": "Reflected XSS는 웹 애플리케이션 상에 스크립트를 저장해 놓는 것이다.",
+      "explanation": "XSS 공격은 권한이 없는 사용자가 다른 사용자의 정보를 추출하기 위해 웹사이트에 스크립트를 삽입하는 공격 기법이다. 저장형 XSS(Stored XSS)는 악성 스크립트를 웹 애플리케이션의 데이터베이스에 저장해 사용자의 정보를 탈취하거나 리다이렉션하는 공격 기법이다. 반사형 XSS(Reflected XSS)는 악성 스크립트를 웹 애플리케이션 상에 저장하지 않고, 악성 스크립트를 포함하고 있는 URL을 사용자에게 직접 전달한다."
+    }},
+    { "pdfPage": 589, "questionNumber": 19, "sourceAnswer": 4, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "table_flattening"], "after": {
+      "prompt": "다음 문장에서 설명하는 공격 위협은?\n해당 취약점이 존재할 경우 브라우저를 통해 특정 디렉터리 내 파일 리스트를 노출하여 응용 시스템의 구조를 외부에 허용할 수 있고, 민감한 정보가 포함된 설정 파일 등이 노출될 경우 보안상 심각한 위험을 초래할 수 있다.",
+      "choice1": "정보 누출",
+      "choice2": "악성 콘텐츠",
+      "choice3": "크로스 사이트 스크립팅",
+      "choice4": "디렉터리 인덱싱",
+      "explanation": "CSRF: 사용자가 자신의 의지와는 무관하게 해커가 의도한 행위를 특정 웹사이트에 요청하게 만드는 공격.\n디렉터리 인덱싱: 웹 서버에 인덱싱 기능이 활성화되어 있을 경우 공격자가 강제 브라우징을 통해 서버 내의 모든 디렉터리 및 파일에 구조를 파악할 수 있는 취약점."
+    }},
+    { "pdfPage": 645, "questionNumber": 1, "sourceAnswer": 4, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "line_break_split"], "after": {
+      "prompt": "다음 문장에서 설명하는 데이터베이스 보안 솔루션 종류는?\n- 조직의 보안 정책 구성에 따라 사용 허가 및 로깅 여부를 결정한다.\n- 독립된 서버로 구축되기 때문에 이중화 구성을 필요로 한다.\n- 네트워크를 우회하여 접근하는 경우 보안 취약점이 발생한다.\n- 독립된 서버로 다중 인스턴스에 대한 통제가 가능하다.",
+      "choice1": "데이터베이스 백업 솔루션",
+      "choice2": "데이터베이스 감사 솔루션",
+      "choice3": "데이터베이스 암호화 솔루션",
+      "choice4": "데이터베이스 접근 제어 솔루션",
+      "explanation": "데이터베이스 접근 제어 솔루션은 보안 정책에 따라 다중 인스턴스에 대한 접근 제어를 통해 사용 허가를 수행하고 로깅 여부를 결정한다. In-Line 구성의 경우 우회로 발생 시 취약점이 발생하며, 이중화가 필요하다."
+    }},
+    { "pdfPage": 645, "questionNumber": 3, "sourceAnswer": 2, "status": "verified_corrected", "errorTypes": ["hangul_spacing"], "after": {
+      "prompt": "데이터베이스 보안 방법으로 틀린 것은?",
+      "choice1": "데이터베이스 서버를 백업하며 관리한다.",
+      "choice2": "Guest 계정을 사용하여 관리한다.",
+      "choice3": "데이터베이스 쿼리만 웹 서버와 데이터베이스 서버 사이에 통과할 수 있도록 방화벽을 설치한다.",
+      "choice4": "데이터베이스 관리자만 로그인 권한을 부여한다.",
+      "explanation": "Guest 계정을 사용하거나 Default 계정의 비밀번호를 변경하지 않고 사용하는 방식은 안전하지 않은 사용 방법이다."
+    }},
+    { "pdfPage": 650, "questionNumber": 6, "sourceAnswer": 2, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "table_flattening"], "after": {
+      "prompt": "데이터베이스 내의 자료값을 잘못된 갱신이나 불법 조작으로부터 보호함으로써 정확성을 유지하고자 하는 것은 아래의 데이터베이스 보안 목표 중 어느 것인가?",
+      "choice1": "데이터 가용성",
+      "choice2": "데이터 무결성",
+      "choice3": "데이터 기밀성",
+      "choice4": "데이터 접근 제어",
+      "explanation": "데이터베이스의 보안 목표는 다음과 같다.\n기밀성: 선별적인 접근 체계를 만들어 인가되지 않은 개인이나 시스템에 의한 접근에 따른 데이터 공개/노출을 차단.\n무결성: 정당한 방법에 의하지 않고 데이터가 변경될 수 없으며, 데이터의 정확성 및 완전성과 고의/악의로 변경되거나 파괴되지 않음을 보장.\n가용성: 정당한 권한을 가진 사용자나 애플리케이션에 원하는 데이터에 대한 원활한 접근을 제공하는 서비스를 지속할 수 있도록 보장."
+    }},
+    { "pdfPage": 650, "questionNumber": 7, "sourceAnswer": 3, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "ocr_glyph"], "after": {
+      "prompt": "데이터베이스 암호화 방식 중 Plug-in 방식의 특징으로 옳지 않은 것은?",
+      "choice1": "과도하게 트랜잭션 증가 시 데이터베이스 성능에 영향을 줄 수 있다.",
+      "choice2": "데이터베이스에서 암호화 컬럼에 대한 제어가 가능하다.",
+      "choice3": "파일 단위로 암호화하므로 보안 강도가 높다.",
+      "choice4": "애플리케이션 소스 코드 수정이 API 방식에 비해 상대적으로 적다.",
+      "explanation": "Plug-in 방식의 경우 컬럼 단위로 암호화하므로 보안 강도가 높다."
+    }},
+    { "pdfPage": 836, "questionNumber": 16, "sourceAnswer": 1, "status": "verified_corrected", "errorTypes": ["hangul_spacing"], "after": {
+      "prompt": "다음 중 커버로스(Kerberos)에 대한 설명으로 틀린 것은?",
+      "choice1": "개인 대 개인 인증용으로 사용할 수 있다.",
+      "choice2": "커버로스는 FTP처럼 사용자가 클라이언트 프로세스를 이용하여 서버 프로세스에 접근하는 클라이언트-서버 프로그램용으로 설계되었다.",
+      "choice3": "커버로스는 인증 프로토콜이며, 동시에 KDC의 핵심 구성 요소이다.",
+      "choice4": "실질 데이터 서버는 사용자에게 서비스를 제공한다.",
+      "explanation": "커버로스는 개인 대 개인 인증용이 아니라 주로 클라이언트-서버 환경에서 사용자를 인증하고 서비스를 안전하게 이용할 수 있도록 설계된 인증 프로토콜이다."
+    }},
+    { "pdfPage": 836, "questionNumber": 18, "sourceAnswer": 2, "status": "verified_corrected", "errorTypes": ["hangul_spacing"], "after": {
+      "prompt": "다음 중 VPN 접속 시 지정된 단말기만 접속을 허용하고자 할 경우 적합한 디바이스 인증 기술은?",
+      "choice1": "아이디 패스워드 인증",
+      "choice2": "MAC 주소값 인증",
+      "choice3": "암호 프로토콜을 활용한 인증",
+      "choice4": "시도/응답 인증",
+      "explanation": "MAC 주소값 인증은 지정된 단말기만 접속을 허용하고자 할 경우 적합한 디바이스 인증 방식이다."
+    }},
+    { "pdfPage": 947, "questionNumber": 9, "sourceAnswer": 3, "status": "verified_corrected", "errorTypes": ["hangul_spacing"], "after": {
+      "prompt": "위험분석 방법론에 대한 설명으로 올바르지 못한 것은?",
+      "choice1": "과거 자료 분석법: 과거 자료를 통하여 위험 발생 가능성을 예측",
+      "choice2": "수학 공식 접근법: 위험 발생 빈도를 계산하는 식을 이용하여 계량화",
+      "choice3": "순위 결정법: 전문가 집단을 이용한 설문조사를 통한 조사 방법",
+      "choice4": "시나리오법: 특정 시나리오를 통해 발생할 수 있는 위협에 대해 결과를 도출해 내는 방법",
+      "explanation": "정성적 위험분석의 유형 중 순위 결정법은 위험 요소들을 중요도, 발생 가능성, 영향력 등의 기준에 따라 순위를 매겨 상대적 위험 수준을 평가하는 방법으로, 각각의 위협을 상호 비교하여 최종 위험 요인의 우선순위를 도출하는 방법이다."
+    }},
+    { "pdfPage": 947, "questionNumber": 10, "sourceAnswer": 4, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "formula_spacing"], "after": {
+      "prompt": "다음 중 위험도 산정 시 고려할 구성 요소가 아닌 것은 무엇인가?",
+      "choice1": "자산(Asset)",
+      "choice2": "위협(Threat)",
+      "choice3": "취약성(Vulnerability)",
+      "choice4": "직원(Employee)",
+      "explanation": "잔여 위험 공식(위험의 구성 요소): 자취위대\n(자산) × (취약점) × (위협) - (정보보호 대책)"
+    }},
+    { "pdfPage": 1053, "questionNumber": 8, "sourceAnswer": 4, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "table_flattening"], "after": {
+      "prompt": "다음 중 개인정보처리자가 내부관리계획을 수립·시행할 때 반드시 포함되어야 하는 사항이 아닌 것은?",
+      "choice1": "개인정보 보호책임자의 지정에 관한 사항",
+      "choice2": "악성 프로그램 등 방지에 관한 사항",
+      "choice3": "개인정보의 암호화 조치에 관한 사항",
+      "choice4": "개인정보 취급자 상/벌에 관한 사항",
+      "explanation": "개인정보의 안전성 확보조치 기준의 내부 관리계획의 수립·시행(제4조)은 다음과 같다.\n개인정보처리자는 개인정보의 분실·도난·유출·위조·변조 또는 훼손되지 아니하도록 내부 의사결정 절차를 통하여 다음 각 호의 사항을 포함하는 내부 관리계획을 수립·시행하여야 한다.\n7. 개인정보의 암호화 조치에 관한 사항\n9. 악성 프로그램 등 방지에 관한 사항\n11. 물리적 안전조치에 관한 사항\n개인정보의 암호화(제7조) 제6항은 다음과 같다. 10만 명 이상의 정보주체에 관하여 개인정보를 처리하는 대기업·중견기업·공공기관 또는 100만 명 이상의 정보주체에 관하여 개인정보를 처리하는 중소기업·단체에 해당하는 개인정보처리자는 암호화된 개인정보를 안전하게 보관하기 위하여 안전한 암호 키 생성, 이용, 보관, 배포 및 파기 등에 관한 절차를 수립·시행하여야 한다.\n개인정보의 암호화(제7조) 제6항은 100만 명 이상의 정보주체에 관하여 개인정보를 처리하는 중소기업은 해당하지만, 100만 명 미만의 중소기업은 해당하지 않는다."
+    }},
+    { "pdfPage": 1053, "questionNumber": 9, "sourceAnswer": 2, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "ocr_glyph", "table_flattening"], "after": {
+      "prompt": "개인정보 보호법령에 따른 영상정보처리기기의 설치·운영과 관련하여 정보주체가 쉽게 인식할 수 있도록 설치하는 안내판의 기재 항목이 아닌 것은?",
+      "choice1": "설치 목적",
+      "choice2": "영상정보 보관 기간",
+      "choice3": "설치 장소",
+      "choice4": "촬영 범위",
+      "explanation": "고정형 영상정보처리기기의 설치·운영 제한(제25조)에서 안내판의 기재 항목에 대해 명시되어 있다.\n안내판의 기재 항목: 설치 목적 및 장소 / 촬영 범위 및 시간 / 관리책임자의 연락처."
+    }},
+    { "pdfPage": 1124, "questionNumber": 82, "sourceAnswer": 1, "status": "verified_corrected", "errorTypes": ["hangul_spacing"], "after": {
+      "prompt": "다음 중 정보보호 관련 용어에 대한 설명으로 가장 적절하지 않은 것은?",
+      "choice1": "정보보호 정책은 조직의 보안 활동을 통제하기 위한 기술적 조치들을 구체적으로 규정하고 있으며 이를 기반으로 실무자가 즉시 적용할 수 있는 지침과 기준을 제공한다.",
+      "choice2": "정보보호 표준은 정책의 목적을 기술적으로 뒷받침하기 위해 필요한 보안 요구사항 및 기술적 기준을 명확히 정의하며, 모든 구성원이 반드시 준수해야 하는 성격을 가진다.",
+      "choice3": "정보보호 지침은 실무자들에게 특정 상황에서 선택적으로 참고할 수 있는 권고 사항이며 법적 구속력보다는 가이드라인의 성격을 가진다.",
+      "choice4": "정보보호 기준은 시스템이나 업무 환경에서 반드시 만족해야 할 최소 수준의 보안 기준을 정의하며, 이를 통해 조직은 일관된 보안 수준을 유지할 수 있다.",
+      "explanation": "정보보호 정책(Policy)은 기술적 조치를 구체적으로 규정하지 않는다. 정책은 최상위 수준의 보안 방향성과 원칙을 제공하는 문서로, 세부 기술 요소나 즉시 적용할 수 있는 지침은 표준, 절차, 지침, 기준선에 포함된다."
+    }},
+    { "pdfPage": 1124, "questionNumber": 81, "sourceAnswer": 3, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "ocr_glyph", "table_flattening"], "after": {
+      "prompt": "다음 중 정보통신기반 보호법에서 정의하는 주요정보통신기반시설의 취약점에 대해 분석·평가를 수행할 수 있는 기관이 아닌 것은?",
+      "choice1": "대통령령이 정한 기준을 충족한 정보공유·분석센터",
+      "choice2": "한국인터넷진흥원",
+      "choice3": "과학기술정보통신부 산하 공공데이터진흥센터",
+      "choice4": "정보보호 전문서비스 기업",
+      "explanation": "정보통신기반 보호법 제9조(취약점의 분석·평가) 제4항에 분석·평가를 수행할 수 있는 기관이 명시되어 있다. 취약점을 분석·평가하고자 하는 경우에는 다음 각 호의 어느 하나에 해당하는 기관으로 하여금 소관 주요정보통신기반시설의 취약점을 분석·평가하게 할 수 있다. 다만, 이 경우 제3항에 따른 전담반을 구성하지 아니할 수 있다.\n1. 한국인터넷진흥원(이하 \"인터넷진흥원\"이라 한다)\n2. 정보공유·분석센터(대통령령이 정하는 기준을 충족하는 정보공유·분석센터에 한한다)\n3. 정보보호 전문서비스 기업\n4. 한국전자통신연구원"
+    }},
+    { "pdfPage": 1127, "questionNumber": 89, "sourceAnswer": 4, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "ocr_glyph", "table_flattening"], "after": {
+      "prompt": "다음 중 업무연속성 관리의 주요 용어에 대한 설명으로 올바른 것은?",
+      "choice1": "업무연속성계획(BCP)은 정보기술 서비스에 국한된 복원 절차를 정의하며, 기술적 재해복구를 위한 계획인 DRP를 포함하지 않는다.",
+      "choice2": "복구 목표 시점(RPO)은 장애 발생 시 서비스를 재개해야 하는 최대 허용 시간으로, 주로 업무 중단이 고객에게 미치는 영향의 정도에 따라 결정된다.",
+      "choice3": "업무영향분석(BIA)은 위협 발생 가능성 및 취약성 수준을 바탕으로 위험의 정량적 값을 산출하는 과정으로, 위험분석의 한 유형이다.",
+      "choice4": "복구 목표 시간(RTO)은 비즈니스가 중단된 이후 허용할 수 있는 최대 중단 시간 이내에 서비스를 복원하기 위한 목표치로, BIA의 결과를 토대로 도출된다.",
+      "explanation": "업무연속성계획(BCP): 정보기술 부문뿐 아니라 인력·설비·자금 등 제반 자원을 대상으로 장애 및 재해를 포괄하여 조직의 생존을 보장하기 위한 예방 및 복구 활동 등을 포함하는 계획.\n복구 목표 시점(RPO): 재해로 인하여 중단된 서비스를 복구하였을 때 유실을 감내할 수 있는 데이터의 손실 허용 시점.\n업무 영향 분석(BIA): 비즈니스 업무 중단이 발생하였을 때 조직에 미치는 시간에 따른 파급 영향과 허용 한계를 분석하기 위한 활동."
+    }},
+    { "pdfPage": 1127, "questionNumber": 90, "sourceAnswer": 3, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "table_flattening"], "after": {
+      "prompt": "다음 중 고정형 영상정보처리기기를 설치·운영할 수 있는 경우가 아닌 것은?",
+      "choice1": "범죄의 예방 및 수사를 위하여 필요한 경우",
+      "choice2": "시설의 안전 및 화재 예방을 위하여 정당한 권한을 가진 자가 설치·운영하는 경우",
+      "choice3": "쇼핑몰 고객의 이동 경로 수집·분석 및 제공을 위하여 필요한 경우",
+      "choice4": "교통단속을 위하여 필요한 경우",
+      "explanation": "개인정보 보호법 제25조(고정형 영상정보처리기기의 설치·운영 제한)에서 영상정보처리기기를 설치·운영할 수 있는 경우를 명시하고 있다.\n법령에서 구체적으로 허용하는 경우 / 범죄의 예방 및 수사 / 시설의 안전 및 관리, 화재 예방 / 교통단속 / 교통정보의 수집·분석 및 제공 / 촬영된 영상 정보를 저장하지 아니하는 경우."
+    }},
+    { "pdfPage": 1142, "questionNumber": 38, "sourceAnswer": 2, "status": "verified_corrected", "errorTypes": ["ocr_glyph", "hangul_spacing"], "after": {
+      "prompt": "다음 중 시스코 시스템에서 개발한 터널링 프로토콜인 GRE(Generic Routing Encapsulation)에 대한 설명으로 틀린 것은?",
+      "choice1": "라우터 간에 생성된 가상의 링크로 통신되는 다양한 네트워크 계층 프로토콜을 캡슐화할 수 있다.",
+      "choice2": "기본적으로 송수신되는 데이터를 암호화하여 보안을 강화하였다.",
+      "choice3": "GRE는 IP 헤더와 GRE 헤더 그리고 Payload로 구성되어 있다.",
+      "choice4": "Payload 내에 실제 전송되는 데이터의 IP 헤더와 프로토콜 정보가 암호화되지 않은 상태로 캡슐화된다.",
+      "explanation": "터널링 프로토콜인 GRE는 라우터 간에 생성된 가상의 링크로 통신되는 다양한 네트워크 계층 프로토콜을 캡슐화할 수 있으며, IP 헤더와 GRE 헤더 그리고 Payload로 구성되어 있다. Payload 내에 실제 전송되는 데이터의 IP 헤더와 프로토콜 정보가 암호화되지 않은 상태로 캡슐화된다."
+    }},
+    { "pdfPage": 1142, "questionNumber": 37, "sourceAnswer": 2, "status": "verified_corrected", "errorTypes": ["hangul_spacing", "line_break_split"], "after": {
+      "prompt": "다음 중 ICMP(Internet Control Message Protocol)의 특징으로 옳지 않은 것은 무엇인가?",
+      "choice1": "네트워크 진단을 위해 주로 사용된다.",
+      "choice2": "TCP와 함께 동작하여 오류 메시지를 전달한다.",
+      "choice3": "패킷 전달 과정에서 발생한 오류를 알리는 데 사용된다.",
+      "choice4": "핑(ping) 명령어와 같은 도구에서 사용된다.",
+      "explanation": "ICMP는 TCP가 아닌 IP 프로토콜과 함께 동작하여 네트워크 오류 메시지를 전달한다. ICMP는 주로 네트워크 진단과 패킷 전달 과정에서 발생하는 오류를 알리는 데 사용되며, 핑(ping) 명령어와 같은 네트워크 진단 도구에서 이용된다."
+    }}
+  ]
+}

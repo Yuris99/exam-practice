@@ -1,0 +1,424 @@
+{
+  "generatedAt": "2026-09-21T17:09:02.757Z",
+  "batchNumber": 14,
+  "selected": 50,
+  "corrected": 47,
+  "noChange": 0,
+  "held": 3,
+  "activeSecurityQuestionCount": 826,
+  "registeredAnswersChanged": 0,
+  "questionIdsAndStudyIdentifiersPreserved": true,
+  "choiceCountAndOrderPreserved": true,
+  "nonTargetAndOtherCertificateDataPreserved": true,
+  "theoryLinks": {
+    "existingLinksBefore": 43,
+    "preserved": 43,
+    "sourceTextCorrectedMatch": 0,
+    "newMatches": 1,
+    "unmatchedAfter": 6,
+    "regressed": 0
+  },
+  "items": [
+    {
+      "selector": "1146:49",
+      "questionId": "csv-a631e4b5af27d797",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1146쪽 (인쇄 6-48) · 49번",
+      "beforeConceptId": "unsafe-upload-webshell",
+      "afterConceptId": "unsafe-upload-webshell",
+      "status": "preserved"
+    },
+    {
+      "selector": "1146:50",
+      "questionId": "csv-67cf18554a6fb33f",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1146쪽 (인쇄 6-48) · 50번",
+      "beforeConceptId": "admin-page-exposure",
+      "afterConceptId": "admin-page-exposure",
+      "status": "preserved"
+    },
+    {
+      "selector": "1176:45",
+      "questionId": "csv-6f2d8c7b2c6fa511",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1176쪽 (인쇄 6-78) · 45번",
+      "beforeConceptId": "db-and-rdbms-model",
+      "afterConceptId": "db-and-rdbms-model",
+      "status": "preserved"
+    },
+    {
+      "selector": "1176:44",
+      "questionId": "csv-890f8864d635b3ee",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1176쪽 (인쇄 6-78) · 44번",
+      "beforeConceptId": "dns-spoofing",
+      "afterConceptId": "dns-spoofing",
+      "status": "preserved"
+    },
+    {
+      "selector": "44:14",
+      "questionId": "csv-a2c45623fab7d207",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 44쪽 (인쇄 1-25) · 14번",
+      "beforeConceptId": "memory-management",
+      "afterConceptId": "memory-management",
+      "status": "preserved"
+    },
+    {
+      "selector": "253:22",
+      "questionId": "csv-639da73c04ceaca6",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 253쪽 · 22번",
+      "beforeConceptId": "reverse-engineering-debugging",
+      "afterConceptId": "reverse-engineering-debugging",
+      "status": "preserved"
+    },
+    {
+      "selector": "334:15",
+      "questionId": "csv-93e1f9ff88adc892",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 334쪽 (인쇄 2-77) · 15번",
+      "beforeConceptId": null,
+      "afterConceptId": null,
+      "status": "preserved"
+    },
+    {
+      "selector": "373:16",
+      "questionId": "csv-b9aa80e41f01d8c0",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 373쪽 · 16번",
+      "beforeConceptId": "ddos-bandwidth-floods",
+      "afterConceptId": "ddos-bandwidth-floods",
+      "status": "preserved"
+    },
+    {
+      "selector": "472:18",
+      "questionId": "csv-41f78a8672e2c37c",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 472쪽 · 18번",
+      "beforeConceptId": "ip-traceback-methods",
+      "afterConceptId": "ip-traceback-methods",
+      "status": "preserved"
+    },
+    {
+      "selector": "753:8",
+      "questionId": "csv-1a118f85d3443c8c",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 753쪽 · 8번",
+      "beforeConceptId": "public-private-key-roles",
+      "afterConceptId": "public-private-key-roles",
+      "status": "preserved"
+    },
+    {
+      "selector": "798:13",
+      "questionId": "csv-83ae29b3da474aa0",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 798쪽 · 13번",
+      "beforeConceptId": "hash-function-properties",
+      "afterConceptId": "hash-function-properties",
+      "status": "preserved"
+    },
+    {
+      "selector": "822:8",
+      "questionId": "csv-e90e6bafbfe46be4",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 822쪽 · 8번",
+      "beforeConceptId": "sso-fim-eam-iam",
+      "afterConceptId": "sso-fim-eam-iam",
+      "status": "preserved"
+    },
+    {
+      "selector": "864:23",
+      "questionId": "csv-3add98f7d9108afd",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 864쪽 · 23번",
+      "beforeConceptId": "mac-dac-rbac-policy-models",
+      "afterConceptId": "mac-dac-rbac-policy-models",
+      "status": "preserved"
+    },
+    {
+      "selector": "891:17",
+      "questionId": "csv-ee7be55e67f567d7",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 891쪽 · 17번",
+      "beforeConceptId": "set-dual-signature-and-special-signatures",
+      "afterConceptId": "set-dual-signature-and-special-signatures",
+      "status": "preserved"
+    },
+    {
+      "selector": "893:23",
+      "questionId": "csv-e2b8373b05a48e0f",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 893쪽 · 23번",
+      "beforeConceptId": "electronic-tender-voting-signature",
+      "afterConceptId": "electronic-tender-voting-signature",
+      "status": "preserved"
+    },
+    {
+      "selector": "899:41",
+      "questionId": "csv-8ccc82a77e7e40f7",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 899쪽 · 41번",
+      "beforeConceptId": "xml-signature-and-blind-signature",
+      "afterConceptId": "xml-signature-and-blind-signature",
+      "status": "preserved"
+    },
+    {
+      "selector": "1059:23",
+      "questionId": "csv-b1028f387de820f7",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 1059쪽 · 23번",
+      "beforeConceptId": "electronic-finance-security-governance",
+      "afterConceptId": "electronic-finance-security-governance",
+      "status": "preserved"
+    },
+    {
+      "selector": "1066:39",
+      "questionId": "csv-9f2088af9d3c4c0a",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 1066쪽 · 39번",
+      "beforeConceptId": "electronic-finance-security-governance",
+      "afterConceptId": "electronic-finance-security-governance",
+      "status": "preserved"
+    },
+    {
+      "selector": "1075:61",
+      "questionId": "csv-b70185dc9bfc5af1",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 1075쪽 · 61번",
+      "beforeConceptId": "personal-information-and-processing-principles",
+      "afterConceptId": "personal-information-and-processing-principles",
+      "status": "preserved"
+    },
+    {
+      "selector": "1114:49",
+      "questionId": "csv-d2a2123079e1a477",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1114쪽 (인쇄 6-16) · 49번",
+      "beforeConceptId": "sql-injection-types",
+      "afterConceptId": "sql-injection-types",
+      "status": "preserved"
+    },
+    {
+      "selector": "1140:29",
+      "questionId": "csv-e66a86e249fd532b",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1140쪽 (인쇄 6-42) · 29번",
+      "beforeConceptId": "dos-ping-of-death",
+      "afterConceptId": "dos-ping-of-death",
+      "status": "preserved"
+    },
+    {
+      "selector": "1147:53",
+      "questionId": "csv-9d8b05648a1a8a1a",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1147쪽 (인쇄 6-49) · 53번",
+      "beforeConceptId": null,
+      "afterConceptId": "dns-sinkhole-irc",
+      "status": "new_match"
+    },
+    {
+      "selector": "1153:78",
+      "questionId": "csv-cf0a0b43b7c6bcc3",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1153쪽 (인쇄 6-55) · 78번",
+      "beforeConceptId": null,
+      "afterConceptId": null,
+      "status": "preserved"
+    },
+    {
+      "selector": "1194:97",
+      "questionId": "csv-ec2513fda29c5896",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1194쪽 (인쇄 6-96) · 97번",
+      "beforeConceptId": "personal-information-and-processing-principles",
+      "afterConceptId": "personal-information-and-processing-principles",
+      "status": "preserved"
+    },
+    {
+      "selector": "118:16",
+      "questionId": "csv-398c9e98f413b570",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 118쪽 (인쇄 1-99) · 16번",
+      "beforeConceptId": "unix-linux-foundations",
+      "afterConceptId": "unix-linux-foundations",
+      "status": "preserved"
+    },
+    {
+      "selector": "42:5",
+      "questionId": "csv-020fc8c9b6b17da3",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 42쪽 (인쇄 1-23) · 5번",
+      "beforeConceptId": "shell-kernel-layers",
+      "afterConceptId": "shell-kernel-layers",
+      "status": "preserved"
+    },
+    {
+      "selector": "42:7",
+      "questionId": "csv-d5c76a35c2725a84",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 42쪽 (인쇄 1-23) · 7번",
+      "beforeConceptId": "process-lifecycle-scheduling",
+      "afterConceptId": "process-lifecycle-scheduling",
+      "status": "preserved"
+    },
+    {
+      "selector": "314:41",
+      "questionId": "csv-ffd9188cf1189a82",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 314쪽 (인쇄 2-57) · 41번",
+      "beforeConceptId": "ip-types-nat",
+      "afterConceptId": "ip-types-nat",
+      "status": "preserved"
+    },
+    {
+      "selector": "314:42",
+      "questionId": "csv-e82f9563aa15340b",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 314쪽 (인쇄 2-57) · 42번",
+      "beforeConceptId": "ip-types-nat",
+      "afterConceptId": "ip-types-nat",
+      "status": "preserved"
+    },
+    {
+      "selector": "380:5",
+      "questionId": "csv-42046bba5e9fcb9f",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 380쪽 · 5번",
+      "beforeConceptId": "dos-land-smurf",
+      "afterConceptId": "dos-land-smurf",
+      "status": "preserved"
+    },
+    {
+      "selector": "380:6",
+      "questionId": "csv-3b3435c55d3b969f",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 380쪽 · 6번",
+      "beforeConceptId": "dos-ping-of-death",
+      "afterConceptId": "dos-ping-of-death",
+      "status": "preserved"
+    },
+    {
+      "selector": "501:1",
+      "questionId": "csv-2eeeb620708cd7e1",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 501쪽 · 1번",
+      "beforeConceptId": null,
+      "afterConceptId": null,
+      "status": "preserved"
+    },
+    {
+      "selector": "501:3",
+      "questionId": "csv-ce4326f1ccd6b486",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 501쪽 · 3번",
+      "beforeConceptId": null,
+      "afterConceptId": null,
+      "status": "preserved"
+    },
+    {
+      "selector": "528:13",
+      "questionId": "csv-bfa95a29c51b51c7",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 528쪽 (인쇄 3-25) · 13번",
+      "beforeConceptId": "ftp-architecture-modes",
+      "afterConceptId": "ftp-architecture-modes",
+      "status": "preserved"
+    },
+    {
+      "selector": "528:15",
+      "questionId": "csv-152e4fc81d0261a4",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 528쪽 (인쇄 3-25) · 15번",
+      "beforeConceptId": "ftp-tftp-attack-types",
+      "afterConceptId": "ftp-tftp-attack-types",
+      "status": "preserved"
+    },
+    {
+      "selector": "560:13",
+      "questionId": "csv-0e8a2733a603aecd",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 560쪽 (인쇄 3-57) · 13번",
+      "beforeConceptId": "email-architecture-smtp",
+      "afterConceptId": "email-architecture-smtp",
+      "status": "preserved"
+    },
+    {
+      "selector": "560:16",
+      "questionId": "csv-447a3ac45d443c58",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 560쪽 (인쇄 3-57) · 16번",
+      "beforeConceptId": "email-pgp-smime",
+      "afterConceptId": "email-pgp-smime",
+      "status": "preserved"
+    },
+    {
+      "selector": "802:2",
+      "questionId": "csv-52bbf725c079dfbe",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 802쪽 · 2번",
+      "beforeConceptId": "hash-function-properties",
+      "afterConceptId": "hash-function-properties",
+      "status": "preserved"
+    },
+    {
+      "selector": "802:3",
+      "questionId": "csv-6e987e68716c0c86",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 802쪽 · 3번",
+      "beforeConceptId": "hash-function-properties",
+      "afterConceptId": "hash-function-properties",
+      "status": "preserved"
+    },
+    {
+      "selector": "854:13",
+      "questionId": "csv-504420a285738c70",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 854쪽 · 13번",
+      "beforeConceptId": "information-flow-and-covert-channels",
+      "afterConceptId": "information-flow-and-covert-channels",
+      "status": "preserved"
+    },
+    {
+      "selector": "854:14",
+      "questionId": "csv-b920a0852647bba3",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 854쪽 · 14번",
+      "beforeConceptId": "authentication-factors-and-otp",
+      "afterConceptId": "authentication-factors-and-otp",
+      "status": "preserved"
+    },
+    {
+      "selector": "888:4",
+      "questionId": "csv-ee6d3cb25ec5e337",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 888쪽 · 4번",
+      "beforeConceptId": "digital-signature-properties-and-process",
+      "afterConceptId": "digital-signature-properties-and-process",
+      "status": "preserved"
+    },
+    {
+      "selector": "888:6",
+      "questionId": "csv-2b2c17dd69f8cac8",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 888쪽 · 6번",
+      "beforeConceptId": "digital-signature-scheme-types",
+      "afterConceptId": "digital-signature-scheme-types",
+      "status": "preserved"
+    },
+    {
+      "selector": "1055:13",
+      "questionId": "csv-add0f76e160b9f67",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 1055쪽 · 13번",
+      "beforeConceptId": "electronic-signature-law-terms",
+      "afterConceptId": "electronic-signature-law-terms",
+      "status": "preserved"
+    },
+    {
+      "selector": "1055:15",
+      "questionId": "csv-fd77598ec70798d7",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 1055쪽 · 15번",
+      "beforeConceptId": "personal-information-and-processing-principles",
+      "afterConceptId": "personal-information-and-processing-principles",
+      "status": "preserved"
+    },
+    {
+      "selector": "1149:58",
+      "questionId": "csv-98f143893157b05b",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1149쪽 (인쇄 6-51) · 58번",
+      "beforeConceptId": "email-attacks-and-relay",
+      "afterConceptId": "email-attacks-and-relay",
+      "status": "preserved"
+    },
+    {
+      "selector": "1149:61",
+      "questionId": "csv-a43ae605793c80c1",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1149쪽 (인쇄 6-51) · 61번",
+      "beforeConceptId": null,
+      "afterConceptId": null,
+      "status": "preserved"
+    },
+    {
+      "selector": "1173:31",
+      "questionId": "csv-d938531ab5453710",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1173쪽 (인쇄 6-75) · 31번",
+      "beforeConceptId": "network-sniffing-switch-attacks",
+      "afterConceptId": "network-sniffing-switch-attacks",
+      "status": "preserved"
+    },
+    {
+      "selector": "1173:34",
+      "questionId": "csv-c7601afc2e27bf10",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1173쪽 (인쇄 6-75) · 34번",
+      "beforeConceptId": "network-sniffing-switch-attacks",
+      "afterConceptId": "network-sniffing-switch-attacks",
+      "status": "preserved"
+    },
+    {
+      "selector": "1180:57",
+      "questionId": "csv-5b1913ef41dfdd94",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1180쪽 (인쇄 6-82) · 57번",
+      "beforeConceptId": null,
+      "afterConceptId": null,
+      "status": "preserved"
+    }
+  ],
+  "durationMs": 264
+}

@@ -1,0 +1,729 @@
+{
+  "format": "information-security-text-recovery-decisions",
+  "version": 1,
+  "batchNumber": 16,
+  "selectionCount": 50,
+  "items": [
+    {
+      "pdfPage": 307,
+      "questionNumber": 14,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 중 서버에서 여러 클라이언트의 접속 요청을 기다리는 함수는?",
+        "choice4": "accept()",
+        "explanation": "bind(): 소켓에 IP 주소와 포트를 할당\nconnect(): 클라이언트에서 서버에 연결을 요청하는 함수\nlisten(): 서버에서 여러 클라이언트의 접속 요청을 기다리는 함수\naccept(): 서버에서 클라이언트의 연결 요청을 확인하는 함수"
+      }
+    },
+    {
+      "pdfPage": 307,
+      "questionNumber": 12,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 중 TCP 헤더 Flag의 종류가 아닌 것은 무엇인가?",
+        "explanation": "TCP 헤더 플래그: URG / ACK / PSH / RST / SYN / FIN"
+      }
+    },
+    {
+      "pdfPage": 308,
+      "questionNumber": 16,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 중 인터넷 환경에서 오류에 관한 처리를 지원하는 용도로 사용하는 프로토콜은 어느 것인가?",
+        "explanation": "SMTP: 이메일을 보내기 위해 이용되는 프로토콜\nSSH: Telnet보다 강력한 보안을 제공하는 원격 접속 프로토콜\nICMP: 인터넷 환경에서 오류에 관한 처리를 지원하는 용도로 사용하는 프로토콜\nIGMP: 멀티캐스트 그룹 멤버십을 구성하는 데 사용하는 통신 프로토콜"
+      }
+    },
+    {
+      "pdfPage": 308,
+      "questionNumber": 17,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "ICMP 메시지 종류 중에서 Type 5인 메시지는 무엇인가?",
+        "explanation": "Type 0: 에코 응답(Echo Reply)\nType 5: 재지정(Redirect)\nType 8: 에코 요청(Echo Request)\nType 11: 시간 초과(Time to Live Exceeded)"
+      }
+    },
+    {
+      "pdfPage": 502,
+      "questionNumber": 6,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 중 업무용 무선랜 보안 대책 수립으로 틀린 것은?",
+        "explanation": "업무용 AP는 외부인이 쉽게 접근하거나 공개된 장소에 설치하지 않는다."
+      }
+    },
+    {
+      "pdfPage": 502,
+      "questionNumber": 7,
+      "sourceAnswer": 1,
+      "status": "held",
+      "errorTypes": [
+        "answer_conflict",
+        "hangul_spacing"
+      ],
+      "holdReason": "answer_conflict: PDF 정답표는 1번, 등록 정답은 4번이다. 정답과 본문을 수정하지 않았다."
+    },
+    {
+      "pdfPage": 820,
+      "questionNumber": 3,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 중 인증의 방법이 아닌 것은?",
+        "explanation": "지식 기반 인증: 당신이 알고 있는 것 (Something You Know)\n소유 기반 인증: 당신이 가지고 있는 것 (Something You Have)\n생체 기반 인증: 당신의 일부인 것 (Something You Are)\n행위 기반 인증: 당신이 하는 것 (Something You Do)"
+      }
+    },
+    {
+      "pdfPage": 820,
+      "questionNumber": 1,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 중 '커버로스(Kerberos)의 세 가지 요소에 속하지 않는 것은?",
+        "choice3": "SSO (Single Sign On)"
+      }
+    },
+    {
+      "pdfPage": 830,
+      "questionNumber": 30,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "사용자 인증 방식 중 인증 유형이 다른 것은?",
+        "explanation": "USB, OTP, 스마트카드의 경우 소유 기반 인증이고, 비밀번호와 PIN은 지식 기반 인증이다. 25년 2회"
+      }
+    },
+    {
+      "pdfPage": 830,
+      "questionNumber": 29,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "생체 인식 기술에서 요구하는 사항에 포함되지 않는 것은?",
+        "explanation": "생체 인식 기술의 고유 특성: 보편성 / 유일성(구별성) / 영구성(불변성) / 획득성 / 정확성 / 수용성 / 기만 용이도"
+      }
+    },
+    {
+      "pdfPage": 853,
+      "questionNumber": 8,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "사용자의 역할에 기반을 두고 접근을 통제하는 RBAC(역할 기반 접근 통제) 모델에 대한 설명으로 틀린 것은?",
+        "explanation": "자원 관리자 혹은 보안 관리자가 자원 접근 권한을 다른 사용자에게 부여하는 접근 통제 모델은 MAC(강제적 접근 통제)이다. 23년 1회"
+      }
+    },
+    {
+      "pdfPage": 853,
+      "questionNumber": 10,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 중 접근 통제 정책이 아닌 것은?",
+        "explanation": "접근 통제 정책: MAC / DAC / RBAC. 23년 1회, 25년 2회"
+      }
+    },
+    {
+      "pdfPage": 897,
+      "questionNumber": 35,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing"
+      ],
+      "after": {
+        "prompt": "RBAC에 대한 설명으로 옳지 않은 것은?",
+        "choice1": "역할에 할당된 사용자들에 의해 수행되는 작업들이 단지 설정된 것에 의해 허가된 것만 가능하도록 최소화한다.",
+        "choice2": "재정 관리와 같은 민감한 작업을 수행하기 위해 상호 배타적인 역할을 보장했을 때 가능하도록 분리한다.",
+        "choice3": "운영체제에서 제공되는 읽고 쓰기 권한이라기보다 계정에 대한 Credit와 Debit 같은 추상화 허가의 방법에 의해 제공한다.",
+        "choice4": "서로 다른 분류 수준에 있는 데이터를 보호할 수 있는 다중 수준 보안 정책을 기반으로 한다.",
+        "explanation": "강제적 접근 통제(MAC)는 서로 다른 분류 수준에 있는 데이터를 보호할 수 있는 다중 수준 보안(MLS; Multilevel Security) 정책을 기반으로 한다. 24년 2회"
+      }
+    },
+    {
+      "pdfPage": 897,
+      "questionNumber": 36,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음과 같은 속성을 가지는 접근 통제 모델은? - No Read Up - No Write Down",
+        "explanation": "No Read Up, No Write Down의 속성을 가진 접근 통제 모델은 벨-라파둘라 모델(BLP: Bell-LaPadula Policy)이다."
+      }
+    },
+    {
+      "pdfPage": 939,
+      "questionNumber": 5,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing"
+      ],
+      "after": {
+        "prompt": "다음 문장에서 설명하는 위험 평가 방법은? 모든 시스템에 기본적인 보호 수준을 정하고 이를 달성하기 위한 보호 대책을 선택하여 적용할 수 있다. 시간과 비용을 많이 들이지 않고 기본적인 보호 대책을 선택하여 적용할 수 있다. 과보호 또는 부족한 보호 대책이 적용될 가능성이 존재한다."
+      }
+    },
+    {
+      "pdfPage": 939,
+      "questionNumber": 6,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing"
+      ],
+      "after": {
+        "prompt": "위험 분석의 구성 요소가 아닌 것은?"
+      }
+    },
+    {
+      "pdfPage": 1139,
+      "questionNumber": 24,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "Dynamic NAT(Network Address Translation)에 대한 설명으로 틀린 것은?",
+        "choice1": "하나의 NAT 시스템에서 사용하는 공인 IP는 항상 고정된 값을 사용한다.",
+        "choice2": "사설 IP 주소를 공인 IP 주소로 매핑하여 변환하는 프로토콜이다.",
+        "choice3": "내부 네트워크에서는 사설 IP 주소만 사용한다.",
+        "choice4": "NAT를 이용하면 사설 IP 주소 대역이 노출되지 않아 보안성이 높다.",
+        "explanation": "Dynamic NAT는 여러 공인 IP 주소 중에서 사용할 수 있는 주소를 할당한다. 사용자가 외부로 나갈 때마다 다른 공인 IP 주소가 할당될 수 있다."
+      }
+    },
+    {
+      "pdfPage": 1139,
+      "questionNumber": 26,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 중 Reactive IP Traceback 기술로 묶인 것은?",
+        "explanation": "대응적 방식(Reactive IP Traceback)은 Hash based IP Traceback, SPIE(Source Path Isolation Engine)가 있다."
+      }
+    },
+    {
+      "pdfPage": 40,
+      "questionNumber": 12,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음의 알고리즘은 무엇인가? 페이징 및 캐시 관리에서 사용되는 페이지 교체 알고리즘 중 하나로 가장 오랫동안 사용되지 않은 페이지를 우선적으로 교체하는 방식이다.",
+        "explanation": "LRU (Least Recently Used): 가장 오랫동안 사용되지 않은 페이지를 우선적으로 교체\nOptimal (OPT): 미래에 사용되지 않을 페이지를 교체하는 알고리즘\nFIFO (First-In First-Out): 가장 먼저 들어온 페이지를 먼저 교체하는 방식\nLFU (Least Frequently Used): 사용 빈도가 가장 적은 페이지를 교체"
+      }
+    },
+    {
+      "pdfPage": 134,
+      "questionNumber": 29,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "유닉스 시스템의 read id와 effective id에 대한 설명으로 틀린 것은?",
+        "choice3": "파일의 setuid 비트는 실행하는 프로세스의 effective UID를 변경한다.",
+        "explanation": "유닉스 시스템에서는 파일 접근 권한 판단 시 effective UID를 사용한다. Effective ID에는 EUID(Effective User ID)와 EGID(Effective Group ID)가 있다."
+      }
+    },
+    {
+      "pdfPage": 183,
+      "questionNumber": 4,
+      "sourceAnswer": 1,
+      "status": "held",
+      "errorTypes": [
+        "answer_conflict",
+        "hangul_spacing"
+      ],
+      "holdReason": "answer_conflict: PDF 정답표는 1번, 등록 정답은 4번이다. 정답과 본문을 수정하지 않았다."
+    },
+    {
+      "pdfPage": 184,
+      "questionNumber": 6,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing"
+      ],
+      "after": {
+        "prompt": "버퍼 오버플로우에 대한 보안 대책이 아닌 것은?"
+      }
+    },
+    {
+      "pdfPage": 186,
+      "questionNumber": 13,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "버퍼 오버플로우 공격을 막기 위해 사용을 권장하는 프로그램 함수는?",
+        "explanation": "버퍼 오버플로우 공격을 막기 위해 경계를 검사하는 함수를 사용한다.\nstrncat(): 2개의 문자열을 연결하는 함수\nstrncpy(): 문자열을 복사하는 안전한 함수\nfgets(): 문자열 입력 함수\nfscanf(): 문자열 입력 함수"
+      }
+    },
+    {
+      "pdfPage": 188,
+      "questionNumber": 20,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "리눅스 바이너리 섹션(.ctors, .dtros, .dynamic, .got)의 메모리 변조를 막기 위해 사용되는 메모리 보호 기법은?",
+        "explanation": "중요한 바이너리 섹션을 읽기 전용으로 설정해 메모리 변조를 방지한다.\nRELRO (Read-Only Relocation): ELF 바이너리/프로세스의 RELRO 데이터 섹션 보안을 강화하는 기술\nPIE (Position Independent Executable): 프로그램이 실행될 때마다 메모리 주소가 달라지도록 하는 기법\nASLR (Address Space Layout Randomization): 시스템 메모리 주소를 무작위로 배치해 보안을 강화하는 기법. 실행 시 메모리 영역의 시작 주소를 무작위로 설정한다."
+      }
+    },
+    {
+      "pdfPage": 214,
+      "questionNumber": 23,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 중 악성 프로그램에 대한 설명이 틀린 것은 무엇인가?",
+        "explanation": "랜섬웨어는 사용자의 중요 데이터를 암호화하거나 시스템의 사용을 불가능하게 만든 뒤, 복호화 키나 시스템 복구를 명목으로 금전을 요구하는 악성 소프트웨어이다. DNS Cache를 변조시켜 타 사이트로 유도하여 감염시키는 방식은 DNS 스푸핑(DNS Spoofing)이다."
+      }
+    },
+    {
+      "pdfPage": 252,
+      "questionNumber": 19,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 중 리눅스 환경에서 특정 프로세스의 Core Dump 파일 분석에 대한 설명으로 틀린 것은?",
+        "explanation": "ulimit -c 명령어: 코어 덤프 파일 크기 제한을 설정할 수 있다.\nCore Dump 파일에는 프로그램이 비정상 종료될 당시의 메모리 정보와 Call Stack 정보가 포함된다.\n네트워크 패킷 정보: 원격지와 주고받은 네트워크 패킷 정보는 확인할 수 없다.\n현재 실행 중인 프로그램: 현재 실행 중인 프로그램의 Core Dump는 생성 가능하다."
+      }
+    },
+    {
+      "pdfPage": 311,
+      "questionNumber": 31,
+      "sourceAnswer": 2,
+      "status": "held",
+      "errorTypes": [
+        "answer_conflict",
+        "hangul_spacing"
+      ],
+      "holdReason": "answer_conflict: PDF 정답표는 2번, 등록 정답은 4번이다. 정답과 본문을 수정하지 않았다."
+    },
+    {
+      "pdfPage": 335,
+      "questionNumber": 1,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 나열된 장비 중 네트워크 계층에서 이용하는 장비는 무엇인가?",
+        "explanation": "1계층(물리 계층): 허브(Hub), 리피터(Repeater)\n2계층(데이터 링크 계층): NIC(Network Interface Card), 브리지(Bridge), 스위치(Switch)\n3계층(네트워크 계층): 라우터(Router)"
+      }
+    },
+    {
+      "pdfPage": 376,
+      "questionNumber": 26,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음이 설명하고 있는 공격 방식은? - ICMP 패킷의 크기를 정상적인 크기보다 크게 만들어 공격 대상 네트워크에 송신하고, 네트워크를 통해 라우팅되어 공격 대상 네트워크에 도달하는 과정에서 작은 조각(Fragment)들로 분할된다. - 수신 측에서 단편화된 패킷을 재조립하는 과정에서 부하를 발생시키는 공격 기법이다.",
+        "explanation": "죽음의 핑(Ping of Death)은 ICMP 패킷(Ping)을 정상적인 크기보다 아주 크게 만들어 전송하여 수신 측에서 단편화된 패킷을 재조립하는 과정에서 부하를 발생시키는 공격 기법이다. 25년 1회"
+      }
+    },
+    {
+      "pdfPage": 413,
+      "questionNumber": 7,
+      "sourceAnswer": 1,
+      "status": "held",
+      "errorTypes": [
+        "answer_conflict",
+        "hangul_spacing"
+      ],
+      "holdReason": "answer_conflict: PDF 정답표는 1번, 등록 정답은 4번이다. 정답과 본문을 수정하지 않았다."
+    },
+    {
+      "pdfPage": 415,
+      "questionNumber": 13,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음에서 설명하는 공격 기법은 무엇인가? - MAC 주소 테이블을 오버플로우시키기 위해 고의적으로 다량의 프레임을 스위치에 전송하여 스위치가 더미 허브처럼 동작하게 만드는 공격",
+        "explanation": "MAC 주소 테이블을 오버플로우시키기 위해 고의적으로 다량의 프레임을 스위치에 전송하여 스위치가 더미 허브처럼 동작하게 만드는 공격은 스위치 재밍이다. 25년 1회"
+      }
+    },
+    {
+      "pdfPage": 433,
+      "questionNumber": 12,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "SSL을 이용한 통신 시 서버의 인증서를 전송하는 절차는 무엇인가?",
+        "explanation": "Client Hello: 클라이언트가 서버에게 Random하게 Session ID와 Cipher Suite를 전달\nServer Hello: 서버가 클라이언트에게 TLS 버전과 양측이 공통으로 지원할 수 있는 최적의 Cipher Suite, 압축 방식 등을 전달\nServer Certificate: 서버의 인증서를 전송\nClient Key Exchange: 키 교환에 필요한 정보를 제공"
+      }
+    },
+    {
+      "pdfPage": 473,
+      "questionNumber": 20,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "IDS(Intrusion Detection System)에 대한 설명으로 틀린 것은?",
+        "choice1": "감사와 로깅을 할 때 네트워크 자원이 손실되거나 데이터가 변조되지 않는다.",
+        "choice4": "설치 위치와 목적에 따라 HIDS와 NIDS로 나눌 수 있다.",
+        "explanation": "IDS는 IPS와는 다르게 탐지만을 수행하며, IPS는 실시간 차단도 수행한다. 23년 1회, 4회, 24년 1회"
+      }
+    },
+    {
+      "pdfPage": 497,
+      "questionNumber": 6,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "무선랜 환경에서 무선 디바이스를 명확하게 식별할 수 있는 무선 디바이스 고유 정보는?",
+        "choice1": "MAC(Media Access Control) 주소",
+        "choice3": "AP(Access Point) 주소"
+      }
+    },
+    {
+      "pdfPage": 521,
+      "questionNumber": 7,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 문장에서 설명하는 FTP에 대한 공격 유형은? ( )은 보안 절차를 거치지 않은 익명의 사용자에게 FTP 서버로의 접근을 허용하고, 익명의 사용자가 서버에 쓰기 권한이 있을 때 악성코드의 생성이 가능하다.",
+        "explanation": "Anonymous FTP는 사용 시 사용자들이 서버에 자신을 식별시키지 않고서도 파일에 접근할 수 있는 방법을 제공한다. 아이디로 anonymous를 입력하고 임의의 비밀번호를 이용해도 접속이 가능하다. 23년 2회"
+      }
+    },
+    {
+      "pdfPage": 523,
+      "questionNumber": 17,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "FTP(File Transfer Protocol) 사용 시, 사용자들이 서버에 자신을 식별시키지 않고도 파일에 접근할 수 있도록 하는 보안 취약점 또는 공격 방식은 무엇인가?",
+        "choice2": "Anonymous FTP",
+        "explanation": "익명 FTP(Anonymous FTP)는 FTP 사용 시 사용자들이 서버에 자신을 식별시키지 않고서도 파일에 접근하는 방법을 제공한다. 아이디를 anonymous로 입력하고 임의의 비밀번호를 이용해도 접속이 가능하다. 25년 2회"
+      }
+    },
+    {
+      "pdfPage": 554,
+      "questionNumber": 20,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "웹 서버의 보안 설정과 관련이 없는 것은?",
+        "explanation": "S/MIME은 인터넷 전자우편 형식 표준인 MIME의 보안 기능을 강화하기 위해 공개키 암호 기술을 적용한 인터넷 표준으로, 웹 서버 보안 설정과 관련이 없다."
+      }
+    },
+    {
+      "pdfPage": 556,
+      "questionNumber": 28,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 중 SPAM RELAY를 방지하기 위한 방법으로 적절하지 않은 것은?",
+        "choice1": "메일 서버에서 SMTP 인증을 활성화한다.",
+        "explanation": "SPAM RELAY는 메일 서버가 악용되어 스팸 메일을 대량으로 발송하는 것을 의미한다. 이를 방지하기 위해서는 SMTP 인증 활성화, RBL 서비스 활용, 릴레이 정책 설정 등의 조치가 필요하다. 오픈 릴레이를 허용하는 설정은 메일 서버를 누구나 사용할 수 있게 하여 스패머가 악용할 가능성이 높아진다."
+      }
+    },
+    {
+      "pdfPage": 585,
+      "questionNumber": 6,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing"
+      ],
+      "after": {
+        "prompt": "웹 애플리케이션 취약성 조치 방안에 대한 설명으로 틀린 것은?"
+      }
+    },
+    {
+      "pdfPage": 587,
+      "questionNumber": 11,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음은 무엇에 대한 설명인가? 웹은 URL 기반으로 요청을 처리하는 구조이다. 해당 요청이 특정 사용자의 정상적인 요청인지 구분하기 위해 사용자가 작업 페이지를 요청할 때마다 hidden 값으로 클라이언트에게 토큰을 전달한 뒤, 해당 클라이언트의 데이터 처리 요청 시 전달되는 값과 세션에 저장되는 값을 비교하여 유효성을 검사한다.",
+        "explanation": "사용자가 자신과 무관하게 행위를 하는 CSRF 공격에 대응하기 위해 hidden 값으로 클라이언트에게 토큰을 전달하고, 해당 클라이언트의 데이터 처리 요청 시 전달되는 값과 세션에 저장되는 값을 비교하여 유효성을 검사하는 도구를 CSRF 토큰이라고 한다. 22년 4회"
+      }
+    },
+    {
+      "pdfPage": 588,
+      "questionNumber": 15,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 중 SQL Injection의 공격 유형이 아닌 것은?",
+        "explanation": "인증 우회: SQL 쿼리문의 True/False 논리 연산 오류를 이용하여 로그인 인증 쿼리문이 무조건 True의 결과값이 나오게 해 인증을 무력화한다.\n데이터 노출: 에러를 발생시켜 에러 정보를 바탕으로 DB명, Table명, Column명을 획득하여 노출한다.\n원격 명령 실행: 확장 저장 프로시저를 호출하여 원격으로 시스템 명령어를 수행하거나, 시스템 명령어 실행을 통해 데이터를 수정한다.\n서비스 거부(DoS)는 주로 시스템 과부하를 유도하여 서비스 가용성을 저하시키며, SQL Injection의 주요 목표와는 다른 공격 유형이다. 23년 1회"
+      }
+    },
+    {
+      "pdfPage": 599,
+      "questionNumber": 50,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 중 웹사이트 관리자가 아닌 이가 웹페이지에 클라이언트 사이드 스크립트를 삽입하여 다른 사용자가 이를 실행하도록 하는 공격은 무엇인가?",
+        "choice2": "Cross-Site Scripting (XSS)",
+        "explanation": "사용자 브라우저에서 검증되지 않은 외부 입력값을 허용하여 악의적인 스크립트를 실행할 수 있는 취약점은 XSS이다."
+      }
+    },
+    {
+      "pdfPage": 623,
+      "questionNumber": 4,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "DNS 캐시 포이즈닝으로 분류되는 공격은?",
+        "explanation": "DNS 캐시 포이즈닝은 사용자 또는 네임 서버에 잘못된 도메인 정보를 주입하여 위장된 웹 사이트로 접속하게 만든다. 공격자가 DNS 서버를 이용하여 대량의 재귀적인 쿼리를 발생시켜 서비스를 방해하는 공격은 DNS 서비스 거부(DDoS) 공격이다. 22년 4회"
+      }
+    },
+    {
+      "pdfPage": 628,
+      "questionNumber": 23,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing"
+      ],
+      "after": {
+        "prompt": "다음 중 DNS Cache Poisoning 공격에 대한 대응 방안으로 적절하지 않은 것은?"
+      }
+    },
+    {
+      "pdfPage": 647,
+      "questionNumber": 9,
+      "sourceAnswer": 3,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing"
+      ],
+      "after": {
+        "prompt": "DBMS(Database Management System) 기본 계정 디폴트 패스워드 및 권한 정책을 변경하지 않을 경우, 비인가자가 인터넷을 통해 DBMS 기본 계정의 디폴트 패스워드를 획득하여 디폴트 패스워드를 그대로 사용하고 있는 DB에 접근하여 DB 정보를 유출할 수 있는 위험이 존재한다. 다음 중 Oracle 설치 시 생성되는 디폴트 계정과 디폴트 패스워드의 연결이 틀린 것은?"
+      }
+    },
+    {
+      "pdfPage": 661,
+      "questionNumber": 2,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "CVE 넘버링이 붙은 알려진 취약점 공격을 사용할 수 있도록 제공되는 도구는?",
+        "explanation": "CVE의 알려진 취약점 공격에 대한 익스플로잇 모듈을 제공하는 침투 테스트 PoC(Proof of Concept)를 수행할 수 있도록 제공되는 도구는 Metasploit이다. XSSer는 XSS 취약점을 탐지하고 확인하는 도구이고, Ghidra는 소프트웨어 역공학을 위한 디컴파일러 도구이며, Subfinder는 서브도메인 정보를 수집하는 도구이다."
+      }
+    },
+    {
+      "pdfPage": 754,
+      "questionNumber": 11,
+      "sourceAnswer": 4,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing"
+      ],
+      "after": {
+        "prompt": "송신자 A와 수신자 B가 RSA를 이용하여 키를 공유하는 방법에 대한 설명으로 틀린 것은?"
+      }
+    },
+    {
+      "pdfPage": 755,
+      "questionNumber": 14,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing"
+      ],
+      "after": {
+        "prompt": "Kerberos 키 분배 프로토콜의 기반 기술에 해당하는 것은?"
+      }
+    },
+    {
+      "pdfPage": 758,
+      "questionNumber": 22,
+      "sourceAnswer": 1,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing"
+      ],
+      "after": {
+        "prompt": "다음 문장에서 설명하는 사전 키 분배 방식은? 키 분배 센터(KDC: Key Distribution Center)에서 두 노드에게 임의의 함수값을 전송하면 두 노드는 전송받은 정보로부터 두 노드 사이의 통신에 필요한 세션 키를 생성한다."
+      }
+    },
+    {
+      "pdfPage": 763,
+      "questionNumber": 38,
+      "sourceAnswer": 2,
+      "status": "verified_corrected",
+      "errorTypes": [
+        "hangul_spacing",
+        "ocr_glyph",
+        "table_flattening"
+      ],
+      "after": {
+        "prompt": "다음 중 스트림 암호 기술에 포함되지 않는 것은?",
+        "explanation": "OTP(One Time Pad): 암호화를 수행할 때마다 랜덤하게 선택된 키 스트림을 사용하여 일회용 패드 암호화하는 방식\nLFSR: 특정 비트들을 선형으로 연산하는 피드백(Feedback) 연산을 반복하여 스트림 암호를 생성하는 방식\nNLFSR: 특정 비트들을 비선형으로 연산하는 피드백(Feedback) 연산을 반복하여 스트림 암호를 생성하는 방식\nFeistel은 블록 암호와 관련 있다."
+      }
+    }
+  ]
+}

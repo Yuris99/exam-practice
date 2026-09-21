@@ -1,0 +1,400 @@
+{
+  "format": "information-security-text-recovery-progress",
+  "version": 1,
+  "startedAt": "2026-09-21T11:49:20Z",
+  "updatedAt": "2026-09-21T18:37:05.204Z",
+  "activeQuestionCount": 826,
+  "sourceTraceableCount": 806,
+  "untraceableSampleQuestionsExcluded": 20,
+  "completedBeforeThisRun": {
+    "pilotReviewed": 20,
+    "batch2Reviewed": 50,
+    "reviewed": 70,
+    "corrected": 63,
+    "held": 7
+  },
+  "completedThisRun": [
+    {
+      "batchNumber": 3,
+      "reviewed": 50,
+      "corrected": 46,
+      "noChange": 0,
+      "held": 4,
+      "answerConflictsNew": 4,
+      "sourcePages": [43, 82, 159, 185, 194, 223, 476, 586, 649, 681, 777, 834, 906, 1004, 1006, 1122]
+    },
+    {
+      "batchNumber": 4,
+      "reviewed": 50,
+      "corrected": 45,
+      "noChange": 0,
+      "held": 5,
+      "answerConflictsNew": 4,
+      "otherReviewHolds": 1,
+      "sourcePages": [126, 161, 187, 482, 526, 603, 669, 778, 859, 909, 978, 979, 1110, 1135, 1175, 1183, 1185]
+    },
+    {
+      "batchNumber": 5,
+      "reviewed": 50,
+      "corrected": 47,
+      "noChange": 0,
+      "held": 3,
+      "answerConflictsNew": 1,
+      "otherReviewHolds": 2,
+      "sourcePages": [68, 84, 208, 210, 212, 221, 384, 417, 436, 480, 485, 529, 555, 595, 800, 832, 904, 943, 984, 1077, 1081, 1094, 1136, 1190]
+    },
+    {
+      "batchNumber": 6,
+      "reviewed": 50,
+      "corrected": 49,
+      "noChange": 0,
+      "held": 1,
+      "answerConflictsNew": 1,
+      "otherReviewHolds": 0,
+      "sourcePages": [907, 1079, 1178, 213, 215, 668, 862, 163, 196, 247, 429, 584, 589, 645, 650, 836, 947, 1053, 1124, 1127, 1142],
+      "theoryLinkVerification": {
+        "previouslyMatched": 41,
+        "preserved": 40,
+        "sourceTextCorrectedMatch": 1,
+        "newMatches": 3,
+        "unmatchedAfter": 6,
+        "regressed": 0
+      },
+      "wallClockFromSelectionToVerificationMs": 1240573,
+      "timingNote": "Per-stage timers were not emitted by the existing pipeline; selection-to-verification wall-clock time is recorded."
+    },
+    {
+      "batchNumber": 7,
+      "reviewed": 50,
+      "corrected": 49,
+      "noChange": 0,
+      "held": 1,
+      "answerConflictsNew": 1,
+      "otherReviewHolds": 0,
+      "sourcePages": [83, 254, 337, 379, 381, 481, 524, 590, 667, 685, 784, 1076, 1082, 1111, 1115, 1119, 1148, 1164, 1167, 1171, 1195],
+      "errorTypeFindings": {
+        "hangul_spacing": 50,
+        "ocr_glyph": 18,
+        "table_flattening": 10,
+        "joined_punctuation": 14,
+        "code_or_symbol": 7,
+        "answer_conflict": 1
+      },
+      "theoryLinkVerification": {
+        "previouslyMatched": 41,
+        "preserved": 41,
+        "sourceTextCorrectedMatch": 0,
+        "newMatches": 2,
+        "unmatchedAfter": 7,
+        "regressed": 0
+      },
+      "wallClockFromSelectionToVerificationMs": 1296332,
+      "timingNote": "Selection-to-verification wall-clock time; the existing pipeline does not emit stage-by-stage review timers."
+    },
+    {
+      "batchNumber": 8,
+      "reviewed": 50,
+      "corrected": 48,
+      "noChange": 0,
+      "held": 2,
+      "answerConflictsNew": 2,
+      "otherReviewHolds": 0,
+      "sourcePages": [70, 162, 211, 338, 478, 479, 483, 554, 558, 598, 682, 852, 863, 887, 901, 908, 946, 948, 973, 1107, 1165, 1184, 1192],
+      "errorTypeFindings": {
+        "hangul_spacing": 50,
+        "ocr_glyph": 15,
+        "table_flattening": 18,
+        "joined_punctuation": 8,
+        "code_or_symbol": 4,
+        "answer_conflict": 2
+      },
+      "theoryLinkVerification": {
+        "previouslyMatched": 42,
+        "preserved": 39,
+        "sourceTextCorrectedMatch": 3,
+        "newMatches": 1,
+        "unmatchedAfter": 7,
+        "regressed": 0
+      },
+      "wallClockFromSelectionToVerificationMs": 1158782,
+      "timingNote": "Selection-to-verification wall-clock time; the existing pipeline does not emit stage-by-stage review timers."
+    },
+    {
+      "batchNumber": 9,
+      "reviewed": 50,
+      "corrected": 41,
+      "noChange": 0,
+      "held": 9,
+      "answerConflictsNew": 6,
+      "otherReviewHolds": 3,
+      "sourcePages": [41, 77, 209, 249, 375, 377, 467, 486, 519, 593, 625, 631, 684, 773, 922, 949, 1113, 1156, 1170],
+      "errorTypeFindings": {
+        "hangul_spacing": 42,
+        "ocr_glyph": 18,
+        "table_flattening": 13,
+        "joined_punctuation": 1,
+        "code_or_symbol": 2,
+        "line_break_split": 13,
+        "answer_conflict": 6,
+        "ambiguous_extraction_match": 1
+      },
+      "theoryLinkVerification": {
+        "previouslyMatched": 43,
+        "preserved": 43,
+        "sourceTextCorrectedMatch": 0,
+        "newMatches": 0,
+        "unmatchedAfter": 7,
+        "regressed": 0
+      },
+      "wallClockFromSelectionToVerificationMs": 2432545,
+      "timingNote": "Selection-to-verification wall-clock time; includes page-batched original-image review, correction decisions, apply, and verification."
+    },
+    {
+      "batchNumber": 10,
+      "reviewed": 50,
+      "corrected": 44,
+      "noChange": 0,
+      "held": 6,
+      "answerConflictsNew": 2,
+      "otherReviewHolds": 4,
+      "sourcePages": [216, 484, 527, 549, 597, 599, 630, 687, 770, 801, 898, 923, 924, 971, 1125, 1126, 1133, 1134, 1145, 1151, 1154, 1185, 1191],
+      "errorTypeFindings": {
+        "hangul_spacing": 48,
+        "ocr_glyph": 22,
+        "table_flattening": 12,
+        "joined_punctuation": 8,
+        "line_break_split": 18,
+        "answer_conflict": 2
+      },
+      "theoryLinkVerification": {
+        "previouslyMatched": 39,
+        "preserved": 39,
+        "sourceTextCorrectedMatch": 0,
+        "newMatches": 2,
+        "unmatchedAfter": 9,
+        "regressed": 0
+      },
+      "wallClockFromSelectionToVerificationMs": 1489529,
+      "timingNote": "Measured from plan generation to completed verifier; includes page-batched image review, correction decisions, apply, and verification."
+    },
+    {
+      "batchNumber": 11,
+      "reviewed": 50,
+      "corrected": 45,
+      "noChange": 0,
+      "held": 5,
+      "answerConflictsNew": 3,
+      "otherReviewHolds": 2,
+      "sourcePages": [116, 251, 312, 331, 333, 369, 374, 383, 398, 434, 551, 553, 646, 686, 794, 800, 804, 860, 865, 890, 1080, 1085, 1086],
+      "errorTypeFindings": {
+        "hangul_spacing": 47,
+        "line_break_split": 20,
+        "joined_punctuation": 6,
+        "table_flattening": 12,
+        "answer_conflict": 3,
+        "source_answer_key_conflict": 3,
+        "ocr_glyph": 22,
+        "explanation_alignment": 1
+      },
+      "theoryLinkVerification": {
+        "previouslyMatched": 43,
+        "preserved": 42,
+        "sourceTextCorrectedMatch": 1,
+        "newMatches": 0,
+        "unmatchedAfter": 7,
+        "regressed": 0
+      },
+      "wallClockFromSelectionToVerificationMs": 1616458,
+      "timingNote": "Measured from plan generation to completed verifier; includes page-batched image review, source-key checks, correction decisions, apply, and verification."
+    },
+    {
+      "batchNumber": 12,
+      "reviewed": 50,
+      "corrected": 50,
+      "noChange": 0,
+      "held": 0,
+      "answerConflictsNew": 0,
+      "otherReviewHolds": 0,
+      "sourcePages": [158, 160, 255, 329, 372, 378, 418, 438, 683, 757, 765, 783, 796, 824, 851, 857, 858, 894, 925, 940, 942, 972, 983, 985, 988, 1005, 1060, 1063, 1067, 1068, 1069, 1096, 1116, 1121, 1131, 1141, 1155, 1158, 1161, 1179, 1186, 1188, 1189, 1193],
+      "errorTypeFindings": {
+        "hangul_spacing": 50,
+        "ocr_glyph": 20,
+        "joined_punctuation": 3,
+        "table_flattening": 18,
+        "line_break_split": 44,
+        "explanation_alignment": 1
+      },
+      "theoryLinkVerification": {
+        "previouslyMatched": 40,
+        "preserved": 40,
+        "sourceTextCorrectedMatch": 0,
+        "newMatches": 2,
+        "unmatchedAfter": 8,
+        "regressed": 0
+      },
+      "wallClockFromSelectionToVerificationMs": 1537090,
+      "timingNote": "Measured from plan generation to completed verifier; includes page-batched original-image review, correction decisions, apply, and verification."
+    },
+    {
+      "batchNumber": 13,
+      "reviewed": 50,
+      "corrected": 47,
+      "noChange": 0,
+      "held": 3,
+      "answerConflictsNew": 3,
+      "otherReviewHolds": 0,
+      "sourcePages": [191, 195, 248, 309, 336, 397, 474, 594, 601, 627, 688, 762, 768, 774, 779, 821, 835, 861, 905, 938, 941, 944, 1144],
+      "errorTypeFindings": {
+        "hangul_spacing": 50,
+        "line_break_split": 8,
+        "table_flattening": 18,
+        "ocr_glyph": 19,
+        "code_or_symbol": 1,
+        "answer_conflict": 3,
+        "joined_punctuation": 1
+      },
+      "theoryLinkVerification": {
+        "previouslyMatched": 39,
+        "preserved": 38,
+        "sourceTextCorrectedMatch": 1,
+        "newMatches": 1,
+        "unmatchedAfter": 10,
+        "regressed": 0
+      },
+      "wallClockFromSelectionToVerificationMs": 1043135,
+      "timingNote": "Measured from plan generation to completed verifier; includes page-batched original-image review, correction decisions, answer-conflict holds, apply, and verification."
+    },
+    {
+      "batchNumber": 14,
+      "reviewed": 50,
+      "corrected": 47,
+      "noChange": 0,
+      "held": 3,
+      "answerConflictsNew": 3,
+      "otherReviewHolds": 0,
+      "sourcePages": [42, 44, 118, 253, 314, 334, 373, 380, 472, 501, 528, 560, 753, 798, 802, 822, 854, 864, 888, 891, 893, 899, 1055, 1059, 1066, 1075, 1114, 1140, 1146, 1147, 1149, 1153, 1173, 1176, 1180, 1194],
+      "errorTypeFindings": {
+        "hangul_spacing": 47,
+        "ocr_glyph": 16,
+        "table_flattening": 19,
+        "code_or_symbol": 5,
+        "line_break_split": 26,
+        "answer_conflict": 3
+      },
+      "theoryLinkVerification": {
+        "previouslyMatched": 43,
+        "preserved": 43,
+        "sourceTextCorrectedMatch": 0,
+        "newMatches": 1,
+        "unmatchedAfter": 6,
+        "regressed": 0
+      },
+      "wallClockFromSelectionToVerificationMs": 1879224,
+      "timingNote": "Measured from plan generation to completed verifier; includes page-batched original-image review, correction decisions, answer-conflict holds, apply, and verification."
+    },
+    {
+      "batchNumber": 15,
+      "reviewed": 50,
+      "corrected": 45,
+      "noChange": 0,
+      "held": 5,
+      "answerConflictsNew": 5,
+      "otherReviewHolds": 0,
+      "sourcePages": [113, 120, 128, 132, 192, 222, 298, 301, 371, 399, 416, 432, 477, 520, 552, 559, 624, 626, 629, 648, 685, 759, 760, 761, 771, 776, 782, 827, 828, 831, 892, 896, 900, 926, 980, 1008, 1056, 1065, 1072, 1095, 1112, 1137, 1138, 1181],
+      "errorTypeFindings": {
+        "hangul_spacing": 45,
+        "ocr_glyph": 22,
+        "table_flattening": 19,
+        "code_or_symbol": 9,
+        "line_break_split": 8,
+        "answer_conflict": 5
+      },
+      "theoryLinkVerification": {
+        "previouslyMatched": 37,
+        "preserved": 35,
+        "sourceTextCorrectedMatch": 2,
+        "newMatches": 2,
+        "unmatchedAfter": 11,
+        "regressed": 0
+      },
+      "wallClockFromSelectionToVerificationMs": 2050962,
+      "timingNote": "Measured from plan generation at 2026-09-21T17:13:06.566Z to completed verifier at 2026-09-21T17:47:17.528Z; includes page-batched source review, decision recording, apply, and verification."
+    },
+    {
+      "batchNumber": 16,
+      "reviewed": 50,
+      "corrected": 46,
+      "noChange": 0,
+      "held": 4,
+      "answerConflictsNew": 4,
+      "otherReviewHolds": 0,
+      "sourcePages": [40, 134, 183, 184, 186, 188, 214, 252, 307, 308, 311, 335, 376, 413, 415, 433, 473, 497, 502, 521, 523, 554, 556, 585, 587, 588, 599, 623, 628, 647, 661, 754, 755, 758, 763, 820, 830, 853, 897, 939, 1139],
+      "errorTypeFindings": {
+        "hangul_spacing": 50,
+        "ocr_glyph": 36,
+        "table_flattening": 36,
+        "answer_conflict": 4
+      },
+      "theoryLinkVerification": {
+        "previouslyMatched": 42,
+        "preserved": 41,
+        "sourceTextCorrectedMatch": 1,
+        "newMatches": 0,
+        "unmatchedAfter": 8,
+        "regressed": 0
+      },
+      "wallClockFromSelectionToVerificationMs": 1277527,
+      "timingNote": "Measured from plan generation at 2026-09-21T17:49:46.259Z to completed verifier at 2026-09-21T18:11:03.786Z; includes page-batched original-image review, correction decisions, apply, and verification."
+    },
+    {
+      "batchNumber": 17,
+      "reviewed": 36,
+      "corrected": 31,
+      "noChange": 0,
+      "held": 5,
+      "answerConflictsNew": 5,
+      "otherReviewHolds": 0,
+      "sourcePages": [127, 157, 298, 310, 382, 557, 632, 680, 752, 766, 769, 772, 783, 797, 799, 805, 826, 856, 889, 895, 944, 975, 1010, 1050, 1051, 1052, 1058, 1061, 1064, 1108, 1150, 1169, 1174, 1177, 1180, 1182],
+      "errorTypeFindings": {
+        "answer_conflict": 5,
+        "hangul_spacing": 36,
+        "ocr_glyph": 13,
+        "line_break_split": 5,
+        "table_flattening": 10,
+        "joined_punctuation": 4
+      },
+      "theoryLinkVerification": {
+        "previouslyMatched": 26,
+        "preserved": 25,
+        "sourceTextCorrectedMatch": 1,
+        "newMatches": 1,
+        "unmatchedAfter": 9,
+        "regressed": 0
+      },
+      "wallClockFromSelectionToVerificationMs": 1538538,
+      "timingNote": "Measured from plan generation at 2026-09-21T18:11:26.666Z to final completed verifier at 2026-09-21T18:37:05.204Z; includes page-batched original-image review, answer-key checks, correction decisions, apply, and verification."
+    }
+  ],
+  "cumulative": {
+    "reviewed": 806,
+    "corrected": 743,
+    "noChange": 0,
+    "held": 63,
+    "remainingTraceableUnreviewed": 0,
+    "knownAnswerConflicts": 51
+  },
+  "completion": {
+    "status": "complete",
+    "sourceTraceableQuestionsReviewed": 806,
+    "corrected": 743,
+    "noChange": 0,
+    "held": 63,
+    "newAnswerConflictsThisRun": 9,
+    "untraceableSampleQuestionsExcluded": 20,
+    "measuredBatchPlanToVerificationMs": 26642462,
+    "checkpointWallClockMs": 24465204,
+    "completedAt": "2026-09-21T18:37:05.204Z"
+  },
+  "nextBatchNumber": null,
+  "nextStep": "Complete: all source-traceable existing questions have been reviewed. Keep the 20 untraceable samples and 63 held questions unchanged; do not start the new-question review queue."
+}
