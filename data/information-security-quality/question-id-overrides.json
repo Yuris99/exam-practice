@@ -1,0 +1,25 @@
+{
+  "format": "question-id-overrides",
+  "version": 1,
+  "overrides": {
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 37쪽 (인쇄 1-18) · 2번": "csv-08013b0497e7d07b",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 37쪽 (인쇄 1-18) · 3번": "csv-1d3653e0a76f52c4",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 38쪽 (인쇄 1-19) · 5번": "csv-04e4693b6bac8431",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 38쪽 (인쇄 1-19) · 6번": "csv-6cea2b6cc45ac825",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 38쪽 (인쇄 1-19) · 7번": "csv-acba7abe60e45e84",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 39쪽 · 8번": "csv-48c433f8923e87d9",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 41쪽 (인쇄 1-22) · 1번": "csv-c14c661d926c6d4f",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 41쪽 (인쇄 1-22) · 4번": "csv-283216cd25557089",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 45쪽 (인쇄 1-26) · 16번": "csv-f474be2525dc6663",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 72쪽 (인쇄 1-53) · 26번": "csv-b0f88486847b94dc",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 73쪽 (인쇄 1-54) · 29번": "csv-34b0fddd3f634e8c",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 115쪽 (인쇄 1-96) · 6번": "csv-005ba08d43452070",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 115쪽 (인쇄 1-96) · 7번": "csv-241ab983de5e779b",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 142쪽 · 1번": "csv-6e26bb43fa114b37",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 143쪽 · 4번": "csv-d8ae459cabe5228d",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 145쪽 · 2번": "csv-bae8621d58663b92",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 145쪽 · 3번": "csv-cdb0fd881fe14a02",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 250쪽 · 11번": "csv-0f96a570c826dfb1",
+    "information-security-engineer|2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 330쪽 (인쇄 2-73) · 4번": "csv-7ac9ea3e2b790576"
+  }
+}

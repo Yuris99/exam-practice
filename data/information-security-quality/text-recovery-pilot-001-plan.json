@@ -1,0 +1,253 @@
+{
+  "format": "information-security-text-recovery-plan",
+  "version": 1,
+  "sourcePdfSha256": "332f9ce3f1aaaebe2b4d728796c9cfb6415126a2d95257fccc90bace02647623",
+  "selectionLimit": 20,
+  "sourceReviewStartedAt": "2026-09-21T15:52:00+09:00",
+  "sourceReviewCompletedAt": "2026-09-21T16:13:48+09:00",
+  "sourceReviewElapsedSeconds": 1308,
+  "items": [
+    {
+      "pdfPage": 37,
+      "questionNumber": 2,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss", "line_break_split", "flattened_table"],
+      "after": {
+        "prompt": "다음 문장에서 설명하는 기억장치의 메모리 반입 정책은? 입력된 프로그램을 수용할 수 있는 공간 중 가장 큰 공간을 할당한다.",
+        "explanation": "최초 적합(First Fit): 프로세스가 적재될 수 있는 가용 공간 중에서 첫 번째 분할에 할당하는 방식 · 최상 적합(Best Fit): 가용 공간 중에서 가장 크기가 비슷한 공간을 선택하여 프로세스를 적재하는 방식 · 최악 적합(Worst Fit): 프로세스의 가용 공간 중에서 가장 큰 공간에 할당하는 방식"
+      }
+    },
+    {
+      "pdfPage": 37,
+      "questionNumber": 3,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss", "line_break_split", "glyph_misrecognition"],
+      "after": {
+        "prompt": "다음 중 파일 디스크립터(File Descriptor)에 대한 설명으로 틀린 것은?",
+        "choice1": "사용자가 직접 관리하므로 사용자가 참조할 수 있다.",
+        "choice2": "파일을 관리하기 위해 시스템이 필요로 하는 정보를 보관한다.",
+        "choice3": "일반적으로 보조기억장치에 저장되어 있다가 파일을 오픈(Open)할 때 주기억장치로 옮겨진다.",
+        "choice4": "파일 제어 블록(File Control Block)이라고도 한다.",
+        "explanation": "파일 디스크립터는 운영체제가 필요로 하는 파일에 대한 정보를 갖고 있는 제어 블록으로 파일 시스템에서 관리하므로 사용자가 직접 참조할 수 없다."
+      }
+    },
+    {
+      "pdfPage": 38,
+      "questionNumber": 5,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss", "line_break_split", "flattened_table"],
+      "after": {
+        "prompt": "사용자가 입력한 명령어를 읽어서 해석하는 프로그램이며, 프로그램 언어로도 사용할 수 있는 것은?",
+        "explanation": "커널(Kernel): 운영체제의 핵심이 되는 기능들이 모여 있는 소프트웨어 · 시스템 콜(System Call): 프로그램이 운영체제의 커널에게 서비스를 요청하는 프로그래밍 방식 · 쉘(Shell): 사용자가 입력한 명령어를 읽어서 해석하는 프로그램 · 파일 시스템(File System): 파일의 저장, 관리, 접근 방식을 정의하는 체계"
+      }
+    },
+    {
+      "pdfPage": 38,
+      "questionNumber": 6,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss"],
+      "after": {
+        "prompt": "iOS의 샌드박스 제한을 풀어 타 회사에서 사용하는 서명되지 않은 코드를 실행할 수 있게 하는 행위는?",
+        "explanation": "탈옥은 iOS의 샌드박스 제한을 풀어 타 회사에서 사용하는 서명되지 않은 코드를 실행할 수 있게 하는 행위이며, 안드로이드의 루트 제한을 푸는 방법은 루팅이다."
+      }
+    },
+    {
+      "pdfPage": 38,
+      "questionNumber": 7,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss", "glyph_misrecognition", "flattened_table"],
+      "after": {
+        "prompt": "다음이 설명하는 디스크 스케줄링은 무엇인가? 바깥쪽에서 안쪽으로 이동하는 방식의 스케줄링 방식으로 한쪽의 끝에 도달하면 기아 현상을 방지하고 효율적으로 활용하기 위해 처음부터 같은 방향으로 이동하면서 처리하는 디스크 스케줄링",
+        "explanation": "SSTF: 현재 위치에서 가장 가까운 요청을 우선 처리 · SCAN: 엘리베이터 알고리즘과 유사하게 양쪽 끝을 왕복하며 요청을 처리 · C-SCAN: 디스크 헤드가 한쪽 끝에서 다른 쪽 끝으로 이동하며 요청을 처리하고, 끝에 도달하면 반대쪽 끝으로 돌아가 처음부터 같은 방향으로 이동하면서 요청을 처리하는 방식 · FCFS: 도착한 순서대로 요청"
+      }
+    },
+    {
+      "pdfPage": 39,
+      "questionNumber": 8,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss", "line_break_split", "flattened_table"],
+      "after": {
+        "prompt": "다음 중 ‘운영체제의 접근제어’에 대한 설명으로 틀린 것은?",
+        "choice1": "터미널 서비스는 운영체제의 버전에 따라 다른 수준의 암호화를 수행하므로 이를 고려하여 운영환경에 적용해야 한다.",
+        "choice2": "운영체제에 대한 접근 목적의 인터페이스를 결정한 다음에는 접근제어 정책을 적용해야 한다.",
+        "choice3": "시스템에 대한 접근제어 정책은 기본적으로 IP를 기준으로 제어한다.",
+        "choice4": "유닉스에서 많이 쓰이는 텔넷은 암호화된 세션을 사용하여 스니핑과 세션 하이재킹 공격에 강하다.",
+        "explanation": "터미널 서비스 암호화: 터미널 서비스는 운영체제의 버전에 따라 다른 수준의 암호화를 수행하므로 이를 고려하여 운영환경에 적용 · 목적별 접근제어: 접근 목적에 따른 인터페이스를 결정한 다음에는 접근제어 정책을 적용 · IP 통제: 시스템 접근제어 정책은 기본적으로 IP를 기준으로 제어 · 암호화 터미널 서비스: 암호화가 되지 않는 텔넷을 사용하지 않고 암호화 통신을 수행하는 SSH(Secure Shell)를 활용"
+      }
+    },
+    {
+      "pdfPage": 39,
+      "questionNumber": 10,
+      "status": "held",
+      "errorTypes": ["spacing_loss", "line_break_split", "glyph_misrecognition", "answer_conflict"],
+      "holdReason": "원본 하단 정답표는 ④이나 현재 등록 정답은 ①이다. 텍스트 복구 범위에서 정답을 암묵적으로 변경하지 않기 위해 문항 전체를 보류한다."
+    },
+    {
+      "pdfPage": 41,
+      "questionNumber": 1,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss", "glyph_misrecognition"],
+      "after": {
+        "prompt": "운영체제의 주요 기능에 대한 설명으로 옳지 않은 것은?",
+        "choice1": "사용자와 하드웨어 간의 인터페이스를 정의한다.",
+        "choice2": "고급 언어로 작성된 프로그램을 기계어로 번역한다.",
+        "choice3": "오류 검사 및 복구 기능을 수행한다.",
+        "choice4": "사용자 간의 자원을 스케줄링하고 할당하는 기능을 수행한다.",
+        "explanation": "운영체제는 사용자가 컴퓨터의 하드웨어를 쉽게 사용할 수 있도록 인터페이스를 제공해 주는 소프트웨어이다. 고급 언어로 작성된 프로그램을 기계어로 번역하는 프로그램은 컴파일러(Compiler)이다."
+      }
+    },
+    {
+      "pdfPage": 41,
+      "questionNumber": 4,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss", "line_break_split", "glyph_misrecognition"],
+      "after": {
+        "prompt": "다음 중 커널에 대한 설명으로 올바르지 못한 것은?",
+        "choice1": "커널에는 커널 모드와 사용자 모드가 있다.",
+        "choice2": "운영체제의 핵심을 커널이라 부른다.",
+        "choice3": "응용 프로그램에 커널 서비스를 제공하는 인터페이스를 '시스템 콜 인터페이스'라 한다.",
+        "choice4": "하드웨어 장치를 사용할 경우 사용자 모드에서 사용된다.",
+        "explanation": "모든 하드웨어 장치(드라이버, 메모리, CPU 등)에 접근할 수 있는 모드는 커널 모드(Kernel Mode)이다."
+      }
+    },
+    {
+      "pdfPage": 45,
+      "questionNumber": 16,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss", "glyph_misrecognition", "flattened_table"],
+      "after": {
+        "prompt": "운영체제의 주요 자원 관리 기능에 대한 설명으로 옳지 않은 것은?",
+        "choice1": "프로세스 스케줄링 및 동기화 관리 담당",
+        "choice2": "프로세스에 메모리 할당 및 회수 관리 담당",
+        "choice3": "입출력장치 스케줄링 및 전반적인 관리 담당",
+        "choice4": "사용자와 시스템 간의 인터페이스를 차단 관리 담당",
+        "explanation": "운영체제의 주요 자원 관리 기능 중 사용자와 시스템 간의 인터페이스 차단 관리 기능은 없다. 운영체제의 주요 자원 관리 기능은 다음과 같다. 프로세서 관리: 동기화 및 프로세서 스케줄링 · 메모리 관리: 프로세스에게 기억 공간을 할당하고 회수 · 프로세스 관리: 프로세스의 자원 할당 및 회수, 프로세스와 스레드 스케줄링 및 동기화 관리 · 주변 장치 관리: 입출력 스케줄링, 버퍼링(Buffering) 및 스풀링(Spooling), 장치 접근 제어 및 보안 관리 · 파일 관리: 파일 생성, 삭제, 변경, 유지 등의 관리"
+      }
+    },
+    {
+      "pdfPage": 72,
+      "questionNumber": 26,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss", "glyph_misrecognition", "flattened_table"],
+      "after": {
+        "prompt": "다음 문장에서 설명하는 것은? - 파일로부터 실행하지만 원본 파일을 제거하여 파일 기반으로 탐지하는 백신이 탐지하기 어렵게 하는 방식이다. - 원래의 파일과 같은 새로운 파일을 만들지만 트랜잭션 롤백 기능을 사용하여 파일 생성이 반영되지 않게 하여 파일이 남지 않는다.",
+        "choice1": "PE 재배치",
+        "choice2": "프로세스 도플갱잉",
+        "choice3": "스레드 인젝션",
+        "choice4": "코드 인젝션",
+        "explanation": "PE 재배치: PE(Portable Executable) 파일 구조 안에서 주소 재배치하는 것 · 프로세스 도플갱잉: NTFS의 TxF(Transaction File System) 기능을 이용해, 악성코드를 메모리에 올리되, 디스크에는 실제 파일을 남기지 않는 기술 · 스레드 인젝션: 다른 프로세스에 악성 스레드를 삽입하는 기술 · 코드 인젝션: DLL 등 코드(명령어)를 다른 프로세스에 넣는 기술"
+      }
+    },
+    {
+      "pdfPage": 73,
+      "questionNumber": 29,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss", "line_break_split", "glyph_misrecognition", "broken_symbol"],
+      "after": {
+        "prompt": "다음 문장은 시스템 계정에 대한 설명이다. 괄호 안에 들어갈 내용은? 여러 사용자가 사용하는 컴퓨터에서 모든 기능을 관리할 수 있는 총괄 권한을 가진 유일한 특별 계정이다. 유닉스 시스템의 (㉠)은(는) 시스템 관리자인 운용 관리자(Super User)로서 윈도우의 (㉡)보다 높은 System 계정에 해당하며, 사용자 계정을 생성하거나 소프트웨어를 설치하고 환경 및 설정을 변경하거나 시스템의 동작을 감시 및 제어할 수 있다.",
+        "choice1": "㉠: root, ㉡: admin",
+        "choice2": "㉠: sysadmin, ㉡: administrator",
+        "choice3": "㉠: sysadmin, ㉡: admin",
+        "choice4": "㉠: root, ㉡: administrator",
+        "explanation": "유닉스/리눅스의 총괄 관리자(모든 액세스 권한 소유) 계정은 root 계정을 사용하며, 윈도우의 총괄 관리자는 Administrator 계정을 이용한다."
+      }
+    },
+    {
+      "pdfPage": 115,
+      "questionNumber": 6,
+      "status": "verified_corrected",
+      "errorTypes": ["glyph_misrecognition", "flattened_table", "previously_recovered"],
+      "after": {
+        "explanation": "passwd 파일 항목 · 계패사그 / 설홈쉘: 계정명 / 패스워드 / 사용자 ID / 그룹 ID / 설명 / 홈 디렉터리 / 로그인 셸"
+      }
+    },
+    {
+      "pdfPage": 115,
+      "questionNumber": 7,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss", "line_break_split", "glyph_misrecognition", "code_or_command", "flattened_table"],
+      "after": {
+        "prompt": "리눅스 Capabilities에서 실행 바이너리에 커널 모듈을 올리거나 내릴 수 있는 권한을 할당할 수 있는 Capability는 무엇인가?",
+        "choice1": "CAP_CHOWN",
+        "choice2": "CAP_AUDIT_CONTROL",
+        "choice3": "CAP_SYS_MODULE",
+        "choice4": "CAP_MAC_ADMIN",
+        "explanation": "CAP_CHOWN: 파일의 UID와 GID를 임의로 변경할 수 있는 권한 · CAP_AUDIT_CONTROL: 커널 감시를 위한 필터 규칙을 변경할 수 있는 권한 · CAP_SYS_MODULE: 커널 모듈을 올리거나 내릴 수 있는 권한 · CAP_MAC_ADMIN: 강제적 접근통제(MAC) 구성이나 상태의 변경을 허용하는 권한"
+      }
+    },
+    {
+      "pdfPage": 142,
+      "questionNumber": 1,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss", "line_break_split", "glyph_misrecognition", "flattened_table"],
+      "after": {
+        "prompt": "다음 문장의 괄호 안에 해당하는 것은 무엇인가? 안드로이드는 리눅스 커널을 기반으로 개발되어, 일반 사용자 계정과 루트 계정의 두 가지 유형의 사용자 계정으로 나뉜다. 운영체제 변경이나 특정 명령 실행, 도구 설치 등을 하기 위해서는 루트 권한이 필요하다. ( )은/는 루트 액세스 권한을 얻어 장치를 완전히 제어하는 것을 말한다. 특히 기기의 생산자나 판매자가 걸어놓은 제약을 풀기 위해 사용한다.",
+        "choice1": "버퍼 오버플로우",
+        "choice2": "루팅",
+        "choice3": "인젝션",
+        "choice4": "접근 제어",
+        "explanation": "버퍼 오버플로우: 정해진 메모리의 범위를 넘치게 해서 원래의 리턴 주소를 변경시켜 임의의 프로그램이나 함수를 실행시키는 시스템 해킹 기법 · 루팅: 모바일 기기에서 구동되는 안드로이드 운영체제상에서 최상위 권한(루트 권한)을 얻음으로 해당 기기의 생산자 또는 판매자 측에서 걸어 놓은 제약을 해제하는 행위 · 인젝션: 공격자가 신뢰할 수 없는 입력을 프로그램에 주입하도록 하는 공격 · 접근 제어: 불법적인 데이터의 접근으로부터 데이터베이스를 보호하는 기법"
+      }
+    },
+    {
+      "pdfPage": 143,
+      "questionNumber": 4,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss", "line_break_split", "missing_choice_text", "flattened_table"],
+      "after": {
+        "prompt": "다음 중 안드로이드 시스템 권한에 대한 설명으로 틀린 것은?",
+        "choice1": "ACCESS_CHECKIN_PROPERTIES: 체크인 데이터베이스의 속성 테이블 액세스 권한",
+        "choice2": "LOADER_USAGE_STATS: 액세스 로그 읽기 권한",
+        "choice3": "SET_PROCESS_LIMIT: 제한처리 지정 권한",
+        "choice4": "CHANGE_COMPONENT_ENABLED_STATE: 환경 설정 변경 권한",
+        "explanation": "ACCESS_CHECKIN_PROPERTIES: 체크인 데이터베이스의 속성 테이블 액세스 권한 · LOADER_USAGE_STATS: 액세스 로그 읽기 권한 · SET_PROCESS_LIMIT: 제한처리 지정 권한 · CHANGE_COMPONENT_ENABLED_STATE: 애플리케이션 컴포넌트가 활성화 또는 비활성화 여부를 변경하는 것을 허용하는 권한"
+      }
+    },
+    {
+      "pdfPage": 145,
+      "questionNumber": 2,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss", "glyph_misrecognition", "broken_symbol", "code_or_command", "flattened_table"],
+      "after": {
+        "prompt": "다음은 안드로이드 앱 개발 시 사용되는 Log 클래스로 메서드별 해당되는 로그 항목은? Log.d(String, String) (㉠) Log.w(String, String) (㉡)",
+        "choice1": "㉠: 디버그, ㉡: 정보",
+        "choice2": "㉠: 오류, ㉡: 상세",
+        "choice3": "㉠: 디버그, ㉡: 경고",
+        "choice4": "㉠: 경고, ㉡: 상세",
+        "explanation": "디버그(Debug): Log.d(String, String) · 경고(Warn): Log.w(String, String)"
+      }
+    },
+    {
+      "pdfPage": 145,
+      "questionNumber": 3,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss", "glyph_misrecognition", "code_or_command", "flattened_table"],
+      "after": {
+        "prompt": "apktool을 이용해 apk 파일 디컴파일을 수행하기 위한 명령어로 옳은 것은?",
+        "choice1": "apktool d 분석대상앱.apk",
+        "choice2": "apktool o 분석대상앱.apk",
+        "choice3": "apktool b 분석대상앱.apk",
+        "choice4": "apktool c 분석대상앱.apk",
+        "explanation": "apktool 명령어는 다음과 같다. 디컴파일(Decompile): apktool d 분석대상앱.apk · 리빌드(Rebuild): apktool b 소스폴더경로"
+      }
+    },
+    {
+      "pdfPage": 250,
+      "questionNumber": 11,
+      "status": "verified_corrected",
+      "errorTypes": ["missing_explanation", "previously_recovered"],
+      "after": {
+        "explanation": "소프트웨어 라이선스가 비영리적 목적으로만 사용을 허용한 경우, 개인은 비영리적 목적으로 사용할 수 있지만, 대부분 기업은 영리 목적의 활동을 수행하므로, 이 조건에서는 사용할 수 없다."
+      }
+    },
+    {
+      "pdfPage": 330,
+      "questionNumber": 4,
+      "status": "verified_corrected",
+      "errorTypes": ["spacing_loss", "glyph_misrecognition", "special_symbol", "previously_recovered"],
+      "after": {
+        "explanation": "장비를 지날 때마다 TTL이 감소하고, 목적지인 b.b.b.b가 TTL을 받으면 TTL이 0이 되어 ICMP Port Unreachable 메시지를 출발지로 보내게 된다. TTL이 0이 되어 폐기되면서 ICMP Port Unreachable을 보내 장비의 정보를 제공해 주는 도구는 TRACEROUTE이다."
+      }
+    }
+  ]
+}

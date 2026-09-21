@@ -6,6 +6,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const sourceDirectory = path.join(root, "content", "questions");
 const outputFile = path.join(root, "lib", "generatedQuestions.ts");
+const stableIdFile = path.join(root, "data", "information-security-quality", "question-id-overrides.json");
 const expectedHeaders = [
   "exam_type", "category", "prompt", "choice1", "choice2", "choice3", "choice4",
   "correct_answer", "model_answer", "key_points", "explanation", "difficulty",
@@ -22,6 +23,12 @@ const questions = [];
 const seen = new Map();
 const seenIds = new Map();
 const errors = [];
+let stableIds = {};
+try {
+  stableIds = JSON.parse(await fs.readFile(stableIdFile, "utf8")).overrides ?? {};
+} catch (error) {
+  if (error.code !== "ENOENT") throw error;
+}
 
 for (const filename of files) {
   const source = (await fs.readFile(path.join(sourceDirectory, filename), "utf8"))
@@ -87,8 +94,11 @@ function createQuestion(value, filename, rowNumber) {
   if (allImages.length > 6) throw new Error("at most 6 images are allowed");
   // Keep IDs stable when rows are reordered so saved answers and statistics survive rebuilds.
   const identity = `${filename}:${examType}:${value("prompt").normalize("NFKC")}`;
+  const stableIdKey = `${value("certificate_id") || "information-processing-engineer"}|${value("source")}`;
+  const stableId = stableIds[stableIdKey];
+  if (stableId && !/^csv-[a-f0-9]{16}$/u.test(stableId)) throw new Error(`invalid stable question id override for ${stableIdKey}`);
   const base = {
-    id: `csv-${createHash("sha256").update(identity).digest("hex").slice(0, 16)}`,
+    id: stableId ?? `csv-${createHash("sha256").update(identity).digest("hex").slice(0, 16)}`,
     certificateId: value("certificate_id") || "information-processing-engineer",
     category: value("category"), examType, prompt: value("prompt"),
     explanation: value("explanation"), difficulty, version: 1, publicationStatus: "published",
