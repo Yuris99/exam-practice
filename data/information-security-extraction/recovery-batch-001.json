@@ -1,0 +1,1431 @@
+{
+  "batch": 1,
+  "selected_count": 100,
+  "recovered_count": 59,
+  "already_registered_duplicate_count": 4,
+  "pending_count": 37,
+  "active_information_security_before": 767,
+  "active_information_security_after": 826,
+  "manual_review_before": 1099,
+  "manual_review_after": 1036,
+  "source_candidate_count": 1846,
+  "by_subject": {
+    "네트워크 보안": 16,
+    "시스템 보안": 12,
+    "어플리케이션 보안": 6,
+    "정보보안 관리 및 법규": 12,
+    "정보보안 일반": 13
+  },
+  "by_source_section": {
+    "백전백승 기출문제": 8,
+    "지피지기 기출문제": 37,
+    "천기누설 예상문제": 14
+  },
+  "by_year_session": {
+    "원본 태그에서 출제연도·회차 미확인": 27,
+    "2022-1회": 1,
+    "2022-2회": 3,
+    "2022-4회": 1,
+    "2023-1회": 2,
+    "2023-2회": 5,
+    "2024-1회": 2,
+    "2024-2회": 2,
+    "2024-4회": 1,
+    "2025-1회": 3,
+    "2025-2회": 7,
+    "2025-4회": 5
+  },
+  "pending_reason_counts": {
+    "duplicate_or_version_conflict": 3,
+    "question_region_or_ocr_fragment_unrecoverable": 27,
+    "visual_sequence_or_exact_symbols_unrecoverable": 6,
+    "answer_not_verified": 1
+  },
+  "asset": "/questions/information-security-engineer/review-batch-001/pdf-0593-q30-stem.png",
+  "recovered": [
+    {
+      "batch_index": 1,
+      "source_key": "지피지기 기출문제-115-6",
+      "source_page_pdf": 115,
+      "subject": "시스템 보안",
+      "year": 2022,
+      "session": 2,
+      "question_number": 6,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 115쪽 (인쇄 1-96) · 6번"
+    },
+    {
+      "batch_index": 2,
+      "source_key": "지피지기 기출문제-250-11",
+      "source_page_pdf": 250,
+      "subject": "시스템 보안",
+      "year": 2022,
+      "session": 4,
+      "question_number": 11,
+      "answer": 4,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 250쪽 · 11번"
+    },
+    {
+      "batch_index": 3,
+      "source_key": "지피지기 기출문제-330-4",
+      "source_page_pdf": 330,
+      "subject": "네트워크 보안",
+      "year": 2022,
+      "session": 2,
+      "question_number": 4,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 330쪽 (인쇄 2-73) · 4번"
+    },
+    {
+      "batch_index": 4,
+      "source_key": "천기누설 예상문제-435-1",
+      "source_page_pdf": 435,
+      "subject": "네트워크 보안",
+      "year": null,
+      "session": null,
+      "question_number": 1,
+      "answer": 1,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 435쪽 · 1번"
+    },
+    {
+      "batch_index": 7,
+      "source_key": "지피지기 기출문제-798-13",
+      "source_page_pdf": 798,
+      "subject": "정보보안 일반",
+      "year": 2023,
+      "session": 2,
+      "question_number": 13,
+      "answer": 3,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 798쪽 · 13번"
+    },
+    {
+      "batch_index": 8,
+      "source_key": "지피지기 기출문제-925-14",
+      "source_page_pdf": 925,
+      "subject": "정보보안 관리 및 법규",
+      "year": 2024,
+      "session": 1,
+      "question_number": 14,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 925쪽 · 14번"
+    },
+    {
+      "batch_index": 10,
+      "source_key": "지피지기 기출문제-1006-13",
+      "source_page_pdf": 1006,
+      "subject": "정보보안 관리 및 법규",
+      "year": null,
+      "session": null,
+      "question_number": 13,
+      "answer": 4,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 1006쪽 (인쇄 5-94) · 13번"
+    },
+    {
+      "batch_index": 15,
+      "source_key": "천기누설 예상문제-1081-13",
+      "source_page_pdf": 1081,
+      "subject": "정보보안 관리 및 법규",
+      "year": null,
+      "session": null,
+      "question_number": 13,
+      "answer": 3,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 1081쪽 · 13번"
+    },
+    {
+      "batch_index": 16,
+      "source_key": "2025-1-82",
+      "source_page_pdf": 1124,
+      "subject": "정보보안 관리 및 법규",
+      "year": 2025,
+      "session": 1,
+      "question_number": 82,
+      "answer": 1,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1124쪽 (인쇄 6-26) · 82번"
+    },
+    {
+      "batch_index": 17,
+      "source_key": "2025-2-34",
+      "source_page_pdf": 1141,
+      "subject": "네트워크 보안",
+      "year": 2025,
+      "session": 2,
+      "question_number": 34,
+      "answer": 4,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1141쪽 (인쇄 6-43) · 34번"
+    },
+    {
+      "batch_index": 18,
+      "source_key": "2025-2-91",
+      "source_page_pdf": 1159,
+      "subject": "정보보안 관리 및 법규",
+      "year": 2025,
+      "session": 2,
+      "question_number": 91,
+      "answer": 4,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1159쪽 (인쇄 6-61) · 91번"
+    },
+    {
+      "batch_index": 25,
+      "source_key": "지피지기 기출문제-301-20",
+      "source_page_pdf": 301,
+      "subject": "네트워크 보안",
+      "year": 2024,
+      "session": 4,
+      "question_number": 20,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 301쪽 (인쇄 2-44) · 20번"
+    },
+    {
+      "batch_index": 26,
+      "source_key": "천기누설 예상문제-311-31",
+      "source_page_pdf": 311,
+      "subject": "네트워크 보안",
+      "year": null,
+      "session": null,
+      "question_number": 31,
+      "answer": 4,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 311쪽 (인쇄 2-54) · 31번"
+    },
+    {
+      "batch_index": 35,
+      "source_key": "지피지기 기출문제-771-63",
+      "source_page_pdf": 771,
+      "subject": "정보보안 일반",
+      "year": 2025,
+      "session": 4,
+      "question_number": 63,
+      "answer": 3,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 771쪽 · 63번"
+    },
+    {
+      "batch_index": 37,
+      "source_key": "지피지기 기출문제-899-41",
+      "source_page_pdf": 899,
+      "subject": "정보보안 일반",
+      "year": null,
+      "session": null,
+      "question_number": 41,
+      "answer": 1,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 899쪽 · 41번"
+    },
+    {
+      "batch_index": 40,
+      "source_key": "지피지기 기출문제-1072-54",
+      "source_page_pdf": 1072,
+      "subject": "정보보안 관리 및 법규",
+      "year": 2025,
+      "session": 2,
+      "question_number": 54,
+      "answer": 3,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 1072쪽 · 54번"
+    },
+    {
+      "batch_index": 44,
+      "source_key": "지피지기 기출문제-208-3",
+      "source_page_pdf": 208,
+      "subject": "시스템 보안",
+      "year": 2022,
+      "session": 1,
+      "question_number": 3,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 208쪽 · 3번"
+    },
+    {
+      "batch_index": 46,
+      "source_key": "천기누설 예상문제-338-13",
+      "source_page_pdf": 338,
+      "subject": "네트워크 보안",
+      "year": null,
+      "session": null,
+      "question_number": 13,
+      "answer": 3,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 338쪽 (인쇄 2-81) · 13번"
+    },
+    {
+      "batch_index": 49,
+      "source_key": "지피지기 기출문제-520-6",
+      "source_page_pdf": 520,
+      "subject": "어플리케이션 보안",
+      "year": 2023,
+      "session": 1,
+      "question_number": 6,
+      "answer": 1,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 520쪽 (인쇄 3-17) · 6번"
+    },
+    {
+      "batch_index": 54,
+      "source_key": "지피지기 기출문제-825-16",
+      "source_page_pdf": 825,
+      "subject": "정보보안 일반",
+      "year": 2023,
+      "session": 1,
+      "question_number": 16,
+      "answer": 4,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 825쪽 · 16번"
+    },
+    {
+      "batch_index": 55,
+      "source_key": "지피지기 기출문제-897-36",
+      "source_page_pdf": 897,
+      "subject": "정보보안 일반",
+      "year": 2024,
+      "session": 2,
+      "question_number": 36,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 897쪽 · 36번"
+    },
+    {
+      "batch_index": 57,
+      "source_key": "지피지기 기출문제-1052-6",
+      "source_page_pdf": 1052,
+      "subject": "정보보안 관리 및 법규",
+      "year": null,
+      "session": null,
+      "question_number": 6,
+      "answer": 4,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 1052쪽 · 6번"
+    },
+    {
+      "batch_index": 58,
+      "source_key": "2025-1-39",
+      "source_page_pdf": 1111,
+      "subject": "네트워크 보안",
+      "year": 2025,
+      "session": 1,
+      "question_number": 39,
+      "answer": 1,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1111쪽 (인쇄 6-13) · 39번"
+    },
+    {
+      "batch_index": 60,
+      "source_key": "2025-4-41",
+      "source_page_pdf": 1175,
+      "subject": "어플리케이션 보안",
+      "year": 2025,
+      "session": 4,
+      "question_number": 41,
+      "answer": 4,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1175쪽 (인쇄 6-77) · 41번"
+    },
+    {
+      "batch_index": 61,
+      "source_key": "천기누설 예상문제-77-2",
+      "source_page_pdf": 77,
+      "subject": "시스템 보안",
+      "year": null,
+      "session": null,
+      "question_number": 2,
+      "answer": 3,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 77쪽 (인쇄 1-58) · 2번"
+    },
+    {
+      "batch_index": 62,
+      "source_key": "천기누설 예상문제-132-22",
+      "source_page_pdf": 132,
+      "subject": "시스템 보안",
+      "year": null,
+      "session": null,
+      "question_number": 22,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 132쪽 · 22번"
+    },
+    {
+      "batch_index": 63,
+      "source_key": "지피지기 기출문제-191-29",
+      "source_page_pdf": 191,
+      "subject": "시스템 보안",
+      "year": 2025,
+      "session": 2,
+      "question_number": 29,
+      "answer": 3,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 191쪽 · 29번"
+    },
+    {
+      "batch_index": 64,
+      "source_key": "지피지기 기출문제-298-11",
+      "source_page_pdf": 298,
+      "subject": "네트워크 보안",
+      "year": 2023,
+      "session": 2,
+      "question_number": 11,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 298쪽 (인쇄 2-41) · 11번"
+    },
+    {
+      "batch_index": 65,
+      "source_key": "지피지기 기출문제-377-29",
+      "source_page_pdf": 377,
+      "subject": "네트워크 보안",
+      "year": 2025,
+      "session": 2,
+      "question_number": 29,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 377쪽 · 29번"
+    },
+    {
+      "batch_index": 67,
+      "source_key": "지피지기 기출문제-593-30",
+      "source_page_pdf": 593,
+      "subject": "어플리케이션 보안",
+      "year": null,
+      "session": null,
+      "question_number": 30,
+      "answer": 3,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 593쪽 · 30번",
+      "image": "/questions/information-security-engineer/review-batch-001/pdf-0593-q30-stem.png"
+    },
+    {
+      "batch_index": 69,
+      "source_key": "지피지기 기출문제-765-42",
+      "source_page_pdf": 765,
+      "subject": "정보보안 일반",
+      "year": 2024,
+      "session": 2,
+      "question_number": 42,
+      "answer": 3,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 765쪽 (인쇄 4-71) · 42번"
+    },
+    {
+      "batch_index": 70,
+      "source_key": "지피지기 기출문제-821-5",
+      "source_page_pdf": 821,
+      "subject": "정보보안 일반",
+      "year": 2022,
+      "session": 2,
+      "question_number": 5,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 821쪽 · 5번"
+    },
+    {
+      "batch_index": 71,
+      "source_key": "천기누설 예상문제-865-26",
+      "source_page_pdf": 865,
+      "subject": "정보보안 일반",
+      "year": null,
+      "session": null,
+      "question_number": 26,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 865쪽 · 26번"
+    },
+    {
+      "batch_index": 72,
+      "source_key": "천기누설 예상문제-945-4",
+      "source_page_pdf": 945,
+      "subject": "정보보안 관리 및 법규",
+      "year": null,
+      "session": null,
+      "question_number": 4,
+      "answer": 4,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 945쪽 (인쇄 5-33) · 4번"
+    },
+    {
+      "batch_index": 73,
+      "source_key": "지피지기 기출문제-1061-29",
+      "source_page_pdf": 1061,
+      "subject": "정보보안 관리 및 법규",
+      "year": 2023,
+      "session": 2,
+      "question_number": 29,
+      "answer": 1,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 1061쪽 · 29번"
+    },
+    {
+      "batch_index": 74,
+      "source_key": "2025-2-9",
+      "source_page_pdf": 1134,
+      "subject": "시스템 보안",
+      "year": 2025,
+      "session": 2,
+      "question_number": 9,
+      "answer": 1,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1134쪽 (인쇄 6-36) · 9번"
+    },
+    {
+      "batch_index": 76,
+      "source_key": "지피지기 기출문제-186-13",
+      "source_page_pdf": 186,
+      "subject": "시스템 보안",
+      "year": null,
+      "session": null,
+      "question_number": 13,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 186쪽 · 13번"
+    },
+    {
+      "batch_index": 77,
+      "source_key": "지피지기 기출문제-331-6",
+      "source_page_pdf": 331,
+      "subject": "네트워크 보안",
+      "year": null,
+      "session": null,
+      "question_number": 6,
+      "answer": 1,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 331쪽 (인쇄 2-74) · 6번"
+    },
+    {
+      "batch_index": 78,
+      "source_key": "지피지기 기출문제-413-7",
+      "source_page_pdf": 413,
+      "subject": "네트워크 보안",
+      "year": null,
+      "session": null,
+      "question_number": 7,
+      "answer": 4,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 413쪽 · 7번"
+    },
+    {
+      "batch_index": 79,
+      "source_key": "지피지기 기출문제-472-18",
+      "source_page_pdf": 472,
+      "subject": "네트워크 보안",
+      "year": null,
+      "session": null,
+      "question_number": 18,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 472쪽 · 18번"
+    },
+    {
+      "batch_index": 80,
+      "source_key": "지피지기 기출문제-586-8",
+      "source_page_pdf": 586,
+      "subject": "어플리케이션 보안",
+      "year": null,
+      "session": null,
+      "question_number": 8,
+      "answer": 1,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 586쪽 (인쇄 3-83) · 8번"
+    },
+    {
+      "batch_index": 81,
+      "source_key": "지피지기 기출문제-754-11",
+      "source_page_pdf": 754,
+      "subject": "정보보안 일반",
+      "year": null,
+      "session": null,
+      "question_number": 11,
+      "answer": 4,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 754쪽 · 11번"
+    },
+    {
+      "batch_index": 82,
+      "source_key": "지피지기 기출문제-887-1",
+      "source_page_pdf": 887,
+      "subject": "정보보안 일반",
+      "year": null,
+      "session": null,
+      "question_number": 1,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 887쪽 · 1번"
+    },
+    {
+      "batch_index": 83,
+      "source_key": "지피지기 기출문제-971-2",
+      "source_page_pdf": 971,
+      "subject": "정보보안 관리 및 법규",
+      "year": null,
+      "session": null,
+      "question_number": 2,
+      "answer": 1,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 971쪽 (인쇄 5-59) · 2번"
+    },
+    {
+      "batch_index": 85,
+      "source_key": "지피지기 기출문제-1067-40",
+      "source_page_pdf": 1067,
+      "subject": "정보보안 관리 및 법규",
+      "year": null,
+      "session": null,
+      "question_number": 40,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 1067쪽 · 40번"
+    },
+    {
+      "batch_index": 86,
+      "source_key": "천기누설 예상문제-78-6",
+      "source_page_pdf": 78,
+      "subject": "시스템 보안",
+      "year": null,
+      "session": null,
+      "question_number": 6,
+      "answer": 4,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 78쪽 (인쇄 1-59) · 6번"
+    },
+    {
+      "batch_index": 87,
+      "source_key": "천기누설 예상문제-128-10",
+      "source_page_pdf": 128,
+      "subject": "시스템 보안",
+      "year": null,
+      "session": null,
+      "question_number": 10,
+      "answer": 4,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 128쪽 · 10번"
+    },
+    {
+      "batch_index": 88,
+      "source_key": "지피지기 기출문제-192-32",
+      "source_page_pdf": 192,
+      "subject": "시스템 보안",
+      "year": 2025,
+      "session": 4,
+      "question_number": 32,
+      "answer": 1,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 192쪽 · 32번"
+    },
+    {
+      "batch_index": 89,
+      "source_key": "천기누설 예상문제-308-17",
+      "source_page_pdf": 308,
+      "subject": "네트워크 보안",
+      "year": null,
+      "session": null,
+      "question_number": 17,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 308쪽 (인쇄 2-51) · 17번"
+    },
+    {
+      "batch_index": 90,
+      "source_key": "천기누설 예상문제-384-20",
+      "source_page_pdf": 384,
+      "subject": "네트워크 보안",
+      "year": null,
+      "session": null,
+      "question_number": 20,
+      "answer": 3,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 384쪽 · 20번"
+    },
+    {
+      "batch_index": 91,
+      "source_key": "천기누설 예상문제-485-10",
+      "source_page_pdf": 485,
+      "subject": "네트워크 보안",
+      "year": null,
+      "session": null,
+      "question_number": 10,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 485쪽 · 10번"
+    },
+    {
+      "batch_index": 92,
+      "source_key": "지피지기 기출문제-552-12",
+      "source_page_pdf": 552,
+      "subject": "어플리케이션 보안",
+      "year": 2024,
+      "session": 1,
+      "question_number": 12,
+      "answer": 3,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 552쪽 (인쇄 3-49) · 12번"
+    },
+    {
+      "batch_index": 93,
+      "source_key": "지피지기 기출문제-628-23",
+      "source_page_pdf": 628,
+      "subject": "어플리케이션 보안",
+      "year": 2025,
+      "session": 4,
+      "question_number": 23,
+      "answer": 3,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 628쪽 · 23번"
+    },
+    {
+      "batch_index": 94,
+      "source_key": "지피지기 기출문제-759-25",
+      "source_page_pdf": 759,
+      "subject": "정보보안 일반",
+      "year": 2023,
+      "session": 2,
+      "question_number": 25,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 759쪽 · 25번"
+    },
+    {
+      "batch_index": 95,
+      "source_key": "지피지기 기출문제-800-23",
+      "source_page_pdf": 800,
+      "subject": "정보보안 일반",
+      "year": 2025,
+      "session": 1,
+      "question_number": 23,
+      "answer": 3,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 800쪽 · 23번"
+    },
+    {
+      "batch_index": 96,
+      "source_key": "천기누설 예상문제-908-21",
+      "source_page_pdf": 908,
+      "subject": "정보보안 일반",
+      "year": null,
+      "session": null,
+      "question_number": 21,
+      "answer": 4,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 천기누설 예상문제 · PDF 908쪽 · 21번"
+    },
+    {
+      "batch_index": 98,
+      "source_key": "지피지기 기출문제-1096-5",
+      "source_page_pdf": 1096,
+      "subject": "정보보안 관리 및 법규",
+      "year": 2023,
+      "session": 2,
+      "question_number": 5,
+      "answer": 2,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 1096쪽 · 5번"
+    },
+    {
+      "batch_index": 99,
+      "source_key": "2025-2-14",
+      "source_page_pdf": 1135,
+      "subject": "시스템 보안",
+      "year": 2025,
+      "session": 2,
+      "question_number": 14,
+      "answer": 1,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1135쪽 (인쇄 6-37) · 14번"
+    },
+    {
+      "batch_index": 100,
+      "source_key": "2025-4-37",
+      "source_page_pdf": 1174,
+      "subject": "네트워크 보안",
+      "year": 2025,
+      "session": 4,
+      "question_number": 37,
+      "answer": 1,
+      "answer_basis": "original PDF answer key or question page",
+      "source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1174쪽 (인쇄 6-76) · 37번"
+    }
+  ],
+  "duplicate_skipped": [
+    {
+      "batch_index": 29,
+      "source_key": "지피지기 기출문제-475-29",
+      "source_page_pdf": 475,
+      "existing_source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1139쪽 (인쇄 6-41) · 26번"
+    },
+    {
+      "batch_index": 14,
+      "source_key": "지피지기 기출문제-985-40",
+      "source_page_pdf": 985,
+      "subject": "정보보안 관리 및 법규",
+      "status": "already_registered_duplicate",
+      "existing_source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1159쪽 (인쇄 6-61) · 91번",
+      "answer": 4,
+      "duplicate_of_batch_index": 18
+    },
+    {
+      "batch_index": 19,
+      "source_key": "2025-4-15",
+      "source_page_pdf": 1168,
+      "subject": "시스템 보안",
+      "status": "already_registered_duplicate",
+      "existing_source": "2026 수제비 정보보안기사 필기 기본서 · 지피지기 기출문제 · PDF 254쪽 · 26번",
+      "answer": 4
+    },
+    {
+      "batch_index": 20,
+      "source_key": "2025-4-62",
+      "source_page_pdf": 1181,
+      "subject": "정보보안 일반",
+      "status": "already_registered_duplicate",
+      "existing_source": "2026 수제비 정보보안기사 필기 기본서 · 백전백승 기출문제 · PDF 1122쪽 (인쇄 6-24) · 78번",
+      "answer": 4
+    }
+  ],
+  "pending": [
+    {
+      "index": 11,
+      "source_key": "지피지기 기출문제-123-36",
+      "source_page_pdf": 123,
+      "subject": "시스템 보안",
+      "year": 2025,
+      "session": 2,
+      "question_number": 36,
+      "primary_reason": "duplicate_or_version_conflict",
+      "review_reasons": [
+        "numeric_code_or_special_visual_review",
+        "duplicate_prompt_content_conflict"
+      ]
+    },
+    {
+      "index": 12,
+      "source_key": "지피지기 기출문제-376-28",
+      "source_page_pdf": 376,
+      "subject": "네트워크 보안",
+      "year": 2025,
+      "session": 1,
+      "question_number": 28,
+      "primary_reason": "duplicate_or_version_conflict",
+      "review_reasons": [
+        "duplicate_prompt_content_conflict"
+      ]
+    },
+    {
+      "index": 13,
+      "source_key": "천기누설 예상문제-836-17",
+      "source_page_pdf": 836,
+      "subject": "정보보안 일반",
+      "year": null,
+      "session": null,
+      "question_number": 17,
+      "primary_reason": "duplicate_or_version_conflict",
+      "review_reasons": [
+        "duplicate_prompt_content_conflict"
+      ]
+    },
+    {
+      "index": 21,
+      "source_key": "천기누설 예상문제-63-23",
+      "source_page_pdf": 63,
+      "subject": "시스템 보안",
+      "year": 2022,
+      "session": 2,
+      "question_number": 23,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "question_text_short",
+        "choice_count_0",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review"
+      ]
+    },
+    {
+      "index": 22,
+      "source_key": "천기누설 예상문제-92-2",
+      "source_page_pdf": 92,
+      "subject": "시스템 보안",
+      "year": null,
+      "session": null,
+      "question_number": 2,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_1",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review",
+        "low_confidence_question_region"
+      ]
+    },
+    {
+      "index": 23,
+      "source_key": "천기누설 예상문제-153-22",
+      "source_page_pdf": 153,
+      "subject": "시스템 보안",
+      "year": null,
+      "session": null,
+      "question_number": 22,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_0",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review"
+      ]
+    },
+    {
+      "index": 24,
+      "source_key": "천기누설 예상문제-279-100",
+      "source_page_pdf": 279,
+      "subject": "네트워크 보안",
+      "year": null,
+      "session": null,
+      "question_number": 100,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_0",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review",
+        "low_confidence_question_region"
+      ]
+    },
+    {
+      "index": 27,
+      "source_key": "지피지기 기출문제-377-4",
+      "source_page_pdf": 377,
+      "subject": "네트워크 보안",
+      "year": 2025,
+      "session": 2,
+      "question_number": 4,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_0",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review",
+        "low_confidence_question_region"
+      ]
+    },
+    {
+      "index": 28,
+      "source_key": "지피지기 기출문제-415-3",
+      "source_page_pdf": 415,
+      "subject": "네트워크 보안",
+      "year": 2025,
+      "session": 1,
+      "question_number": 3,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_1",
+        "choice_number_sequence",
+        "answer_key_not_recognized",
+        "low_confidence_question_region"
+      ]
+    },
+    {
+      "index": 30,
+      "source_key": "천기누설 예상문제-508-1",
+      "source_page_pdf": 508,
+      "subject": "어플리케이션 보안",
+      "year": null,
+      "session": null,
+      "question_number": 1,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "question_text_missing",
+        "question_text_short",
+        "choice_count_1",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review",
+        "low_confidence_question_region"
+      ]
+    },
+    {
+      "index": 31,
+      "source_key": "천기누설 예상문제-547-3",
+      "source_page_pdf": 547,
+      "subject": "어플리케이션 보안",
+      "year": null,
+      "session": null,
+      "question_number": 3,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_1",
+        "choice_number_sequence",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review"
+      ]
+    },
+    {
+      "index": 32,
+      "source_key": "천기누설 예상문제-620-6",
+      "source_page_pdf": 620,
+      "subject": "어플리케이션 보안",
+      "year": null,
+      "session": null,
+      "question_number": 6,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_3",
+        "choice_number_sequence",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review"
+      ]
+    },
+    {
+      "index": 33,
+      "source_key": "천기누설 예상문제-692-1",
+      "source_page_pdf": 692,
+      "subject": "정보보안 일반",
+      "year": null,
+      "session": null,
+      "question_number": 1,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_0",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review"
+      ]
+    },
+    {
+      "index": 34,
+      "source_key": "천기누설 예상문제-716-16",
+      "source_page_pdf": 716,
+      "subject": "정보보안 일반",
+      "year": null,
+      "session": null,
+      "question_number": 16,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_1",
+        "choice_number_sequence",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review"
+      ]
+    },
+    {
+      "index": 36,
+      "source_key": "천기누설 예상문제-817-3",
+      "source_page_pdf": 817,
+      "subject": "정보보안 일반",
+      "year": null,
+      "session": null,
+      "question_number": 3,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_0",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review"
+      ]
+    },
+    {
+      "index": 38,
+      "source_key": "천기누설 예상문제-959-3",
+      "source_page_pdf": 959,
+      "subject": "정보보안 관리 및 법규",
+      "year": null,
+      "session": null,
+      "question_number": 3,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_2",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review",
+        "low_confidence_question_region"
+      ]
+    },
+    {
+      "index": 39,
+      "source_key": "지피지기 기출문제-1016-31",
+      "source_page_pdf": 1016,
+      "subject": "정보보안 관리 및 법규",
+      "year": null,
+      "session": null,
+      "question_number": 31,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_2",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review",
+        "low_confidence_question_region",
+        "past_exam_year_not_recognized"
+      ]
+    },
+    {
+      "index": 41,
+      "source_key": "천기누설 예상문제-63-25",
+      "source_page_pdf": 63,
+      "subject": "시스템 보안",
+      "year": 2022,
+      "session": 2,
+      "question_number": 25,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_0",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review"
+      ]
+    },
+    {
+      "index": 42,
+      "source_key": "천기누설 예상문제-91-100",
+      "source_page_pdf": 91,
+      "subject": "시스템 보안",
+      "year": 2025,
+      "session": 1,
+      "question_number": 100,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_0",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review",
+        "low_confidence_question_region"
+      ]
+    },
+    {
+      "index": 43,
+      "source_key": "천기누설 예상문제-146-1",
+      "source_page_pdf": 146,
+      "subject": "시스템 보안",
+      "year": null,
+      "session": null,
+      "question_number": 1,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_0",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review"
+      ]
+    },
+    {
+      "index": 45,
+      "source_key": "천기누설 예상문제-291-1",
+      "source_page_pdf": 291,
+      "subject": "네트워크 보안",
+      "year": null,
+      "session": null,
+      "question_number": 1,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_1",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review",
+        "low_confidence_question_region"
+      ]
+    },
+    {
+      "index": 47,
+      "source_key": "천기누설 예상문제-404-2",
+      "source_page_pdf": 404,
+      "subject": "어플리케이션 보안",
+      "year": null,
+      "session": null,
+      "question_number": 2,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_0",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review"
+      ]
+    },
+    {
+      "index": 50,
+      "source_key": "지피지기 기출문제-595-38",
+      "source_page_pdf": 595,
+      "subject": "어플리케이션 보안",
+      "year": 2024,
+      "session": 4,
+      "question_number": 38,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "question_text_missing",
+        "question_text_short",
+        "choice_count_0"
+      ]
+    },
+    {
+      "index": 51,
+      "source_key": "천기누설 예상문제-636-3",
+      "source_page_pdf": 636,
+      "subject": "어플리케이션 보안",
+      "year": null,
+      "session": null,
+      "question_number": 3,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_0",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review"
+      ]
+    },
+    {
+      "index": 52,
+      "source_key": "천기누설 예상문제-692-2",
+      "source_page_pdf": 692,
+      "subject": "정보보안 일반",
+      "year": null,
+      "session": null,
+      "question_number": 2,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_0",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review"
+      ]
+    },
+    {
+      "index": 53,
+      "source_key": "천기누설 예상문제-734-3",
+      "source_page_pdf": 734,
+      "subject": "정보보안 일반",
+      "year": null,
+      "session": null,
+      "question_number": 3,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_0",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review",
+        "low_confidence_question_region"
+      ]
+    },
+    {
+      "index": 59,
+      "source_key": "2025-2-4",
+      "source_page_pdf": 1140,
+      "subject": "시스템 보안",
+      "year": 2025,
+      "session": 2,
+      "question_number": 4,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_0"
+      ]
+    },
+    {
+      "index": 68,
+      "source_key": "천기누설 예상문제-722-2",
+      "source_page_pdf": 722,
+      "subject": "정보보안 일반",
+      "year": null,
+      "session": null,
+      "question_number": 2,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_2",
+        "choice_number_sequence",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review",
+        "low_confidence_question_region"
+      ]
+    },
+    {
+      "index": 84,
+      "source_key": "지피지기 기출문제-1018-31",
+      "source_page_pdf": 1018,
+      "subject": "정보보안 관리 및 법규",
+      "year": null,
+      "session": null,
+      "question_number": 31,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "choice_count_0",
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review",
+        "low_confidence_question_region",
+        "past_exam_year_not_recognized"
+      ]
+    },
+    {
+      "index": 97,
+      "source_key": "지피지기 기출문제-1047-6",
+      "source_page_pdf": 1047,
+      "subject": "정보보안 관리 및 법규",
+      "year": null,
+      "session": null,
+      "question_number": 6,
+      "primary_reason": "question_region_or_ocr_fragment_unrecoverable",
+      "review_reasons": [
+        "answer_key_not_recognized",
+        "numeric_code_or_special_visual_review",
+        "past_exam_year_not_recognized"
+      ]
+    },
+    {
+      "index": 5,
+      "source_key": "천기누설 예상문제-652-12",
+      "source_page_pdf": 652,
+      "subject": "어플리케이션 보안",
+      "year": null,
+      "session": null,
+      "question_number": 12,
+      "primary_reason": "visual_sequence_or_exact_symbols_unrecoverable",
+      "review_reasons": [
+        "choice_count_10",
+        "choice_number_sequence",
+        "duplicate_choices",
+        "visual_or_table_review",
+        "low_confidence_question_region"
+      ]
+    },
+    {
+      "index": 6,
+      "source_key": "지피지기 기출문제-760-28",
+      "source_page_pdf": 760,
+      "subject": "정보보안 일반",
+      "year": 2023,
+      "session": 2,
+      "question_number": 28,
+      "primary_reason": "visual_sequence_or_exact_symbols_unrecoverable",
+      "review_reasons": [
+        "choice_count_6",
+        "choice_number_sequence",
+        "duplicate_choices",
+        "visual_or_table_review",
+        "low_confidence_question_region"
+      ]
+    },
+    {
+      "index": 9,
+      "source_key": "지피지기 기출문제-977-18",
+      "source_page_pdf": 977,
+      "subject": "정보보안 관리 및 법규",
+      "year": null,
+      "session": null,
+      "question_number": 18,
+      "primary_reason": "visual_sequence_or_exact_symbols_unrecoverable",
+      "review_reasons": [
+        "choice_number_sequence",
+        "choice_text_missing",
+        "visual_or_table_review",
+        "low_confidence_question_region",
+        "past_exam_year_not_recognized"
+      ]
+    },
+    {
+      "index": 48,
+      "source_key": "천기누설 예상문제-483-2",
+      "source_page_pdf": 483,
+      "subject": "네트워크 보안",
+      "year": null,
+      "session": null,
+      "question_number": 2,
+      "primary_reason": "visual_sequence_or_exact_symbols_unrecoverable",
+      "review_reasons": [
+        "choice_number_sequence",
+        "choice_text_missing",
+        "numeric_code_or_special_visual_review",
+        "low_confidence_question_region"
+      ]
+    },
+    {
+      "index": 56,
+      "source_key": "지피지기 기출문제-978-23",
+      "source_page_pdf": 978,
+      "subject": "정보보안 관리 및 법규",
+      "year": 2023,
+      "session": 2,
+      "question_number": 23,
+      "primary_reason": "visual_sequence_or_exact_symbols_unrecoverable",
+      "review_reasons": [
+        "choice_count_7",
+        "choice_number_sequence",
+        "choice_text_missing",
+        "duplicate_choices",
+        "numeric_code_or_special_visual_review",
+        "low_confidence_question_region"
+      ]
+    },
+    {
+      "index": 75,
+      "source_key": "2025-2-93",
+      "source_page_pdf": 1160,
+      "subject": "정보보안 관리 및 법규",
+      "year": 2025,
+      "session": 2,
+      "question_number": 93,
+      "primary_reason": "visual_sequence_or_exact_symbols_unrecoverable",
+      "review_reasons": [
+        "choice_count_9",
+        "choice_number_sequence",
+        "choice_text_missing",
+        "duplicate_choices",
+        "low_confidence_question_region"
+      ]
+    },
+    {
+      "index": 66,
+      "source_key": "지피지기 기출문제-472-19",
+      "source_page_pdf": 472,
+      "subject": "네트워크 보안",
+      "year": 2023,
+      "session": 1,
+      "question_number": 19,
+      "primary_reason": "answer_not_verified",
+      "review_reasons": [
+        "answer_key_not_recognized",
+        "low_confidence_question_region"
+      ]
+    }
+  ],
+  "theory_links": {
+    "total": 59,
+    "linked": 51,
+    "unlinked": 8,
+    "linked_concepts": 46,
+    "uncertain": 3,
+    "by_subject": [
+      {
+        "subject": "네트워크 보안",
+        "total": 16,
+        "linked": 15,
+        "unlinked": 1,
+        "linkedConcepts": 14,
+        "uncertain": 1
+      },
+      {
+        "subject": "시스템 보안",
+        "total": 12,
+        "linked": 12,
+        "unlinked": 0,
+        "linkedConcepts": 11,
+        "uncertain": 0
+      },
+      {
+        "subject": "어플리케이션 보안",
+        "total": 6,
+        "linked": 6,
+        "unlinked": 0,
+        "linkedConcepts": 5,
+        "uncertain": 0
+      },
+      {
+        "subject": "정보보안 관리 및 법규",
+        "total": 12,
+        "linked": 7,
+        "unlinked": 5,
+        "linkedConcepts": 7,
+        "uncertain": 1
+      },
+      {
+        "subject": "정보보안 일반",
+        "total": 13,
+        "linked": 11,
+        "unlinked": 2,
+        "linkedConcepts": 9,
+        "uncertain": 1
+      }
+    ]
+  },
+  "additional_assets": [
+    {
+      "source_key": "지피지기 기출문제-593-30",
+      "source_page_pdf": 593,
+      "path": "/questions/information-security-engineer/review-batch-001/pdf-0593-q30-stem.png",
+      "purpose": "원문 특수문자 포함 문항 지문을 그대로 보존"
+    }
+  ]
+}
