@@ -4,3 +4,13 @@ out
 *.tsbuildinfo
 .env*
 !.env.example
+
+# Local OCR extraction intermediates and rendered review artifacts
+backups/
+data/information-security-extraction/all-candidates.json
+data/information-security-extraction/answer-review-sheets/
+data/information-security-extraction/pages.jsonl
+data/information-security-extraction/questions.jsonl
+data/information-security-extraction/ready-questions.csv
+data/information-security-extraction/ready-questions.json
+data/information-security-extraction/registration-manifest.json
