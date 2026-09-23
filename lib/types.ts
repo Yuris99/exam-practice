@@ -72,6 +72,7 @@ export interface PracticeSession {
   startedAt: string;
   drafts?: Record<string, AnswerValue>;
   submittedQuestionIds?: string[];
+  returnPath?: string;
 }
 
 export interface ActivityRecord {

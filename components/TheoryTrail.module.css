@@ -68,6 +68,7 @@
 .sideCard p { margin:0; color:var(--muted); font-size:11px; line-height:1.6; }
 .sideCard ol { display:grid; gap:5px; margin:0; padding:0; list-style:none; }
 .sideCard li a { display:block; padding:7px 8px; border-radius:8px; color:var(--muted); text-decoration:none; font-size:11px; }
+.sideCard li a.seen { color:#9fcfb1; }
 .sideCard li a.current { color:var(--text); background:#24372d; }
 .completeButton { width:100%; min-height:44px; border:0; border-radius:12px; color:#fff; background:var(--deep); cursor:pointer; font-weight:800; }
 .completeButton.done { color:#d6eadc; background:#24372d; }
@@ -86,6 +87,8 @@
 .pager a { padding:15px; border:1px solid var(--line); border-radius:14px; color:var(--muted); background:var(--surface); text-decoration:none; }
 .pager a:last-child { text-align:right; }
 .pager strong { display:block; margin-top:3px; color:var(--text); }
+.pager a.pagerNext { border-color:#476653; color:#bce0c9; background:#17241d; }
+.pagerHint { margin:8px 0 0; color:var(--muted); font-size:10px; text-align:right; }
 .reviewLink { display:flex; margin:12px 0; padding:12px 13px; border:1px solid #476653; border-radius:12px; align-items:center; justify-content:space-between; gap:12px; color:var(--text); background:#17241d; text-decoration:none; }
 .reviewLink span { color:var(--muted); font-size:10px; }
 .reviewLink strong { color:#bce0c9; font-size:11px; }

@@ -173,7 +173,7 @@ function isTestSession(value: unknown): value is StudyState["activeTest"] & Reco
 }
 
 function isPracticeSession(value: unknown): value is StudyState["activePractice"] & Record<string, unknown> {
-  return isRecord(value) && isExamType(value.examType) && Array.isArray(value.questionIds) && value.questionIds.every((id) => typeof id === "string") && typeof value.currentIndex === "number" && typeof value.submitted === "boolean" && hasString(value, "startedAt");
+  return isRecord(value) && isExamType(value.examType) && Array.isArray(value.questionIds) && value.questionIds.every((id) => typeof id === "string") && typeof value.currentIndex === "number" && typeof value.submitted === "boolean" && hasString(value, "startedAt") && (value.returnPath === undefined || typeof value.returnPath === "string");
 }
 
 function isActivityRecord(value: unknown): value is ActivityRecord {

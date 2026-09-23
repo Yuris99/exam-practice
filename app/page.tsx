@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { TestMode } from "@/components/TestMode";
 import { QuestionManager } from "@/components/QuestionManager";
 import { AdminDashboard } from "@/components/AdminDashboard";
@@ -34,6 +35,7 @@ const navItems: Array<{ view: View; icon: string; label: string }> = [
 ];
 
 export default function HomePage() {
+  const router = useRouter();
   const [view, setView] = useState<View>("home");
   const [examType, setExamType] = useState<ExamType>("WRITTEN_CBT");
   const [questionIndex, setQuestionIndex] = useState(0);
@@ -253,11 +255,12 @@ export default function HomePage() {
     setQuestionIndex(0);
     setDraftAnswer(null);
     setSubmitted(false);
-    setStudy((current) => ({ ...current, activePractice: { examType: first.examType, questionIds: compatible.map((item) => item.id), currentIndex: 0, draftAnswer: null, submitted: false, startedAt: new Date().toISOString(), drafts: {}, submittedQuestionIds: [] } }));
+    setStudy((current) => ({ ...current, activePractice: { examType: first.examType, questionIds: compatible.map((item) => item.id), currentIndex: 0, draftAnswer: null, submitted: false, startedAt: new Date().toISOString(), drafts: {}, submittedQuestionIds: [], returnPath: getTheoryReturnPath(url.searchParams.get("returnTo")) } }));
     setView("question");
     url.searchParams.delete("practiceQuestions");
+    url.searchParams.delete("returnTo");
     window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
-  }, [allQuestionBank, ready]);
+  }, [allQuestionBank, ready, router]);
 
   function selectCertificate(certificateId: string) {
     if (certificateId === selectedCertificateId) return;
@@ -359,9 +362,14 @@ export default function HomePage() {
 
   function nextQuestion() {
     if (questionIndex >= activeQuestions.length - 1) {
+      const returnPath = study.activePractice?.returnPath;
       setStudy((current) => ({ ...current, activePractice: null }));
       setDraftAnswer(null);
       setSubmitted(false);
+      if (returnPath && getTheoryReturnPath(returnPath)) {
+        router.replace(returnPath);
+        return;
+      }
       setView("home");
       return;
     }
@@ -519,6 +527,11 @@ function readableError(error: unknown, fallback: string) {
     return `${fallback} (${error.message})`;
   }
   return fallback;
+}
+
+function getTheoryReturnPath(value: string | null): string | undefined {
+  if (!value || !value.startsWith("/learn/") || value.startsWith("//") || value.includes("\\")) return undefined;
+  return value;
 }
 
 function StorageStatus({ status, error, onRetry }: { status: "saved" | "saving" | "error"; error: string; onRetry: () => void }) {
