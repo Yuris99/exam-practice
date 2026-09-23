@@ -249,13 +249,14 @@ export default function HomePage() {
     if (!first) return;
     const compatible = linkedQuestions.filter((item) => item.certificateId === first.certificateId && item.examType === first.examType);
     practiceDeepLink.current = rawIds;
+    const returnPath = getTheoryReturnPath(url.searchParams.get("returnTo"));
     setSelectedCertificateId(first.certificateId);
     window.localStorage.setItem(CERTIFICATE_STORAGE_KEY, first.certificateId);
     setExamType(first.examType);
     setQuestionIndex(0);
     setDraftAnswer(null);
     setSubmitted(false);
-    setStudy((current) => ({ ...current, activePractice: { examType: first.examType, questionIds: compatible.map((item) => item.id), currentIndex: 0, draftAnswer: null, submitted: false, startedAt: new Date().toISOString(), drafts: {}, submittedQuestionIds: [], returnPath: getTheoryReturnPath(url.searchParams.get("returnTo")) } }));
+    setStudy((current) => ({ ...current, activePractice: { examType: first.examType, questionIds: compatible.map((item) => item.id), currentIndex: 0, draftAnswer: null, submitted: false, startedAt: new Date().toISOString(), drafts: {}, submittedQuestionIds: [], returnPath } }));
     setView("question");
     url.searchParams.delete("practiceQuestions");
     url.searchParams.delete("returnTo");
