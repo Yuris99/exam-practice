@@ -1,0 +1,2473 @@
+{
+  "sourceUrl": "https://drive.google.com/file/d/1kZHXTRlUGbcdxwjO5uqI4Oeuqe-7yoh_/view",
+  "actualPrintedYears": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "pagesRead": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "items": [
+    {
+      "year": 2015,
+      "question": 1,
+      "pageRange": [
+        1,
+        1
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-cd80e41d3394fecb"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2015,
+      "question": 2,
+      "pageRange": [
+        1,
+        1
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-3dacbf85b352442c"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2015,
+      "question": 3,
+      "pageRange": [
+        1,
+        1
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-b7e483c745257868"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2015,
+      "question": 4,
+      "pageRange": [
+        1,
+        1
+      ],
+      "status": "review_required",
+      "generatedIds": [],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2015,
+      "question": 5,
+      "pageRange": [
+        1,
+        1
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-6d44a5989ecf784f"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2015,
+      "question": 6,
+      "pageRange": [
+        1,
+        1
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-69a7b078f0a24c79"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2015,
+      "question": 7,
+      "pageRange": [
+        1,
+        1
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-1aadc06df632c678"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2015,
+      "question": 8,
+      "pageRange": [
+        1,
+        1
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-ddc33c9306571075"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2015,
+      "question": 9,
+      "pageRange": [
+        1,
+        1
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-0f7620d677234078"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2015,
+      "question": 10,
+      "pageRange": [
+        1,
+        1
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-ec0b9b339a9075bb"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2015,
+      "question": 11,
+      "pageRange": [
+        1,
+        1
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-e827ed6de8e2da75"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2015,
+      "question": 12,
+      "pageRange": [
+        1,
+        1
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-60f72348a430a921"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2016,
+      "question": 1,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-1d02119e9e55da5c"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2016,
+      "question": 2,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-e7aa3dc62bd124d3"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2016,
+      "question": 3,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-db7c5a5acc2b1f82"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2016,
+      "question": 4,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-4fa6fafab47ea6ae"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2016,
+      "question": 5,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-152515449c8d6a39"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2016,
+      "question": 6,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-5b06317e7e6ffc4e",
+        "csv-c31da080c0e0911b"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2016,
+      "question": 7,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-547e9359c807b295"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2016,
+      "question": 8,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2016,
+      "question": 9,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2016,
+      "question": 10,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-0d041a4580b91287"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2016,
+      "question": 11,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2016,
+      "question": 12,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-64f9dc63629a2c19"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2016,
+      "question": 13,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-d9b7ea4bd629352c",
+        "csv-407033dc56c376ac"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2016,
+      "question": 14,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-396c2e4953dc2466"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2016,
+      "question": 15,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-2029cd7f8b27e893"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2016,
+      "question": 16,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "review_required",
+      "generatedIds": [],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2016,
+      "question": 17,
+      "pageRange": [
+        2,
+        3
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-b2b8ea7c7de35f0a"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2017,
+      "question": 1,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-dbb23270e88ae147"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2017,
+      "question": 2,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-310a443f354f0afa"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2017,
+      "question": 3,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2017,
+      "question": 4,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2017,
+      "question": 5,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2017,
+      "question": 6,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-6d657c7aa9ede453"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2017,
+      "question": 7,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-602a42f013198bb9"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2017,
+      "question": 8,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2017,
+      "question": 9,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-387513c02a345e3b"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2017,
+      "question": 10,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-d8e9ec7b57c64b8b"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2017,
+      "question": 11,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-918ed7362d2ecbff"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2017,
+      "question": 12,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-1a7a3333af66a172"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2017,
+      "question": 13,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-0761c6c3c6647184"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2017,
+      "question": 14,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-a9d1c048d5f33068"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2017,
+      "question": 15,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-cb058e7f8aa87bf6"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2017,
+      "question": 16,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2017,
+      "question": 17,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-f58107222a2e2e56",
+        "csv-f86e9f6c0a4ea182"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2017,
+      "question": 18,
+      "pageRange": [
+        4,
+        4
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-1919a2355256f62e"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2018,
+      "question": 1,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2018,
+      "question": 2,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-d05b8dc28d1a174f"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2018,
+      "question": 3,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "review_required",
+      "generatedIds": [
+        "csv-9f0f3c3c575aa4f7"
+      ],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2018,
+      "question": 4,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "review_required",
+      "generatedIds": [
+        "csv-f7dd321e27c4b9ca"
+      ],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2018,
+      "question": 5,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "review_required",
+      "generatedIds": [],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2018,
+      "question": 6,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-b132e8249fcfe9fa"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2018,
+      "question": 7,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-c0bfe162b5a3c460"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2018,
+      "question": 8,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2018,
+      "question": 9,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2018,
+      "question": 10,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-3138a3cf3eb4f09c",
+        "csv-f7d5a0349607d871"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2018,
+      "question": 11,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-7c57d560e4badd97"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2018,
+      "question": 12,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "review_required",
+      "generatedIds": [
+        "csv-9f99bf5a274ef6b4"
+      ],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2018,
+      "question": 13,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-66547e37c4e7465d"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2018,
+      "question": 14,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-6c549d71ea7caaf7"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2018,
+      "question": 15,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-dd2f09bb730353bd"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2018,
+      "question": 16,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "review_required",
+      "generatedIds": [],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2018,
+      "question": 17,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-c3d6ad2dd5d3b9c1",
+        "csv-d2ee3789559f8a5f"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2018,
+      "question": 18,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-4de346323f8abeff"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2018,
+      "question": 19,
+      "pageRange": [
+        5,
+        6
+      ],
+      "status": "review_required",
+      "generatedIds": [
+        "csv-69311479e7f3d35f"
+      ],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2019,
+      "question": 1,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2019,
+      "question": 2,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-a07d90fa8e92ad3d"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2019,
+      "question": 3,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-193069e77f7eca0d"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2019,
+      "question": 4,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-5d1fc2236eb20deb"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2019,
+      "question": 5,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "review_required",
+      "generatedIds": [
+        "csv-4bd4982aa2840b48"
+      ],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2019,
+      "question": 6,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-1c3af20e9e2d1e6f"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2019,
+      "question": 7,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-da990493199010c0"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2019,
+      "question": 8,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-70ae545844e64086"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2019,
+      "question": 9,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2019,
+      "question": 10,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-6c468eb50319a0ce"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2019,
+      "question": 11,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-948d522c997a7687"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2019,
+      "question": 12,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-5ec71be97282635b"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2019,
+      "question": 13,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2019,
+      "question": 14,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-38aebaf6efdb95d0"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2019,
+      "question": 15,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-d75fec0395672d65"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2019,
+      "question": 16,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-fa59631d38145643"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2019,
+      "question": 17,
+      "pageRange": [
+        7,
+        8
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-92d267aedab1a827"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2020,
+      "question": 1,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2020,
+      "question": 2,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "review_required",
+      "generatedIds": [
+        "csv-c2a1a1f7b16c5b3f"
+      ],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2020,
+      "question": 3,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2020,
+      "question": 4,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2020,
+      "question": 5,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-b2eaea093be8ccfd"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2020,
+      "question": 6,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-afd51b778cdab948"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2020,
+      "question": 7,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-387d7691dd13d43c"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2020,
+      "question": 8,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2020,
+      "question": 9,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-94f85a1a04a015fe"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2020,
+      "question": 10,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "review_required",
+      "generatedIds": [],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2020,
+      "question": 11,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "review_required",
+      "generatedIds": [],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2020,
+      "question": 12,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-63d8e4c893341850"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2020,
+      "question": 13,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2020,
+      "question": 14,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2020,
+      "question": 15,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-7bb6678eeef1fb0c"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2020,
+      "question": 16,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "review_required",
+      "generatedIds": [],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2020,
+      "question": 17,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "review_required",
+      "generatedIds": [
+        "csv-d431fd38338c2665"
+      ],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2020,
+      "question": 18,
+      "pageRange": [
+        9,
+        10
+      ],
+      "status": "review_required",
+      "generatedIds": [],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2021,
+      "question": 1,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2021,
+      "question": 2,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-c0e5723e65495b60"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2021,
+      "question": 3,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2021,
+      "question": 4,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-e931801b4994b04d"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2021,
+      "question": 5,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2021,
+      "question": 6,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2021,
+      "question": 7,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2021,
+      "question": 8,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2021,
+      "question": 9,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2021,
+      "question": 10,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2021,
+      "question": 11,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2021,
+      "question": 12,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2021,
+      "question": 13,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-f1438cbd6d2c2479"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2021,
+      "question": 14,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-8a2f26ff25e3a696"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2021,
+      "question": 15,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-db6a8806e8ea66ff"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2021,
+      "question": 16,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-a6947ab11dddc646"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2021,
+      "question": 17,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-4af88b463f0910f9"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2021,
+      "question": 18,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-b8438a3dcb90eaab"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2021,
+      "question": 19,
+      "pageRange": [
+        11,
+        13
+      ],
+      "status": "review_required",
+      "generatedIds": [],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2022,
+      "question": 1,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2022,
+      "question": 2,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2022,
+      "question": 3,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "review_required",
+      "generatedIds": [],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2022,
+      "question": 4,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2022,
+      "question": 5,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2022,
+      "question": 6,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2022,
+      "question": 7,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2022,
+      "question": 8,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2022,
+      "question": 9,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "review_required",
+      "generatedIds": [
+        "csv-08b0160b57fe76c4"
+      ],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2022,
+      "question": 10,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-68eb85861884d3b1"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2022,
+      "question": 11,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-c79ea6b211df3784"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2022,
+      "question": 12,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-c928aa42bcda34df"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2022,
+      "question": 13,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2022,
+      "question": 14,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "review_required",
+      "generatedIds": [
+        "csv-f1139dacbc09e28f"
+      ],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2022,
+      "question": 15,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "review_required",
+      "generatedIds": [],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2022,
+      "question": 16,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2022,
+      "question": 17,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-f1bc7ddf81575286"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2022,
+      "question": 18,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-338f37474548a1dd",
+        "csv-73f8310e6c70cdbf"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2022,
+      "question": 19,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-56c52d4fe9485fc1"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2022,
+      "question": 20,
+      "pageRange": [
+        14,
+        15
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-e28bbbf1763053a3"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2023,
+      "question": 1,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2023,
+      "question": 2,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2023,
+      "question": 3,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "review_required",
+      "generatedIds": [
+        "csv-e8d3b0dec1b4005a"
+      ],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2023,
+      "question": 4,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-167a2f0e4a948668"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2023,
+      "question": 5,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2023,
+      "question": 6,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2023,
+      "question": 7,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2023,
+      "question": 8,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2023,
+      "question": 9,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2023,
+      "question": 10,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2023,
+      "question": 11,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2023,
+      "question": 12,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-290c26170192fa7c"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2023,
+      "question": 13,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2023,
+      "question": 14,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-d421b4f52889247a"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2023,
+      "question": 15,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-308aabe9b0330d33"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2023,
+      "question": 16,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "review_required",
+      "generatedIds": [],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2023,
+      "question": 17,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2023,
+      "question": 18,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-73248de6adf6b440"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2023,
+      "question": 19,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-1fe5f229bdf81105"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2023,
+      "question": 20,
+      "pageRange": [
+        16,
+        17
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-0241d1bc1e25745d"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2024,
+      "question": 1,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2024,
+      "question": 2,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2024,
+      "question": 3,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2024,
+      "question": 4,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2024,
+      "question": 5,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "review_required",
+      "generatedIds": [
+        "csv-608ebfbee6d32a8d"
+      ],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2024,
+      "question": 6,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-4daf56a176eb9573"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2024,
+      "question": 7,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2024,
+      "question": 8,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-26b0da24cfc61a79"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2024,
+      "question": 9,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2024,
+      "question": 10,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2024,
+      "question": 11,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2024,
+      "question": 12,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2024,
+      "question": 13,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2024,
+      "question": 14,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2024,
+      "question": 15,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2024,
+      "question": 16,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2024,
+      "question": 17,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2024,
+      "question": 18,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2024,
+      "question": 19,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2024,
+      "question": 20,
+      "pageRange": [
+        18,
+        19
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-89903c9b84ff79a5"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2025,
+      "question": 1,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2025,
+      "question": 2,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "review_required",
+      "generatedIds": [],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2025,
+      "question": 3,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2025,
+      "question": 4,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2025,
+      "question": 5,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2025,
+      "question": 6,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2025,
+      "question": 7,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2025,
+      "question": 8,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2025,
+      "question": 9,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-d1eb0a18f9c8a43a"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2025,
+      "question": 10,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "review_required",
+      "generatedIds": [
+        "csv-ab4bf16ba05235df"
+      ],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2025,
+      "question": 11,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2025,
+      "question": 12,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-7735fe76b8457b72"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2025,
+      "question": 13,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "review_required",
+      "generatedIds": [
+        "csv-8bc47e59596b9761"
+      ],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2025,
+      "question": 14,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "reference",
+      "generatedIds": [
+        "csv-50127b69f8456a94"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2025,
+      "question": 15,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-62c4485ef8962249"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2025,
+      "question": 16,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "review_required",
+      "generatedIds": [
+        "csv-c7c11f6d0708dda6"
+      ],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2025,
+      "question": 17,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "not_selected",
+      "generatedIds": [],
+      "note": "이번 배치 미선정. 반복 개념을 연도만 바꿔 복제하지 않음. 미선정은 원문 오류 판정을 뜻하지 않음."
+    },
+    {
+      "year": 2025,
+      "question": 18,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-e570b32f1a3d0726"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    },
+    {
+      "year": 2025,
+      "question": 19,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "review_required",
+      "generatedIds": [
+        "csv-973cd43a9c0adb02"
+      ],
+      "note": "원문 기술 검토 사항은 작업 문서의 표 참조. 파생 문항이 있어도 원문 정답 승인 아님."
+    },
+    {
+      "year": 2025,
+      "question": 20,
+      "pageRange": [
+        20,
+        22
+      ],
+      "status": "adapted",
+      "generatedIds": [
+        "csv-b6cc69899bf1ed68",
+        "csv-3aedb62bccb25c9b"
+      ],
+      "note": "관련 개념을 학습용으로 재구성. generatedIds에서 출처 구분 확인."
+    }
+  ]
+}
