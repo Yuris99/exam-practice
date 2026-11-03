@@ -1,0 +1,2 @@
+# Keep multiline practical content and its preservation check consistent on Windows.
+content/questions/embedded-engineer-practical*.csv text eol=lf
