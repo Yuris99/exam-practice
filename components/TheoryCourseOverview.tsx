@@ -27,5 +27,5 @@ export function TheoryCourseOverview({ course }: { course: TheoryCourse }) {
 }
 
 export function TheoryShell({ title, children }: { title: string; children: React.ReactNode }) {
-  return <div className={styles.shell}><header className={styles.topbar}><Link className={styles.brand} href="/"><i>✓</i><span>{title}</span></Link><Link className={styles.back} href="/">문제은행으로</Link></header>{children}</div>;
+  return <div className={styles.shell}><header className={styles.topbar}><Link className={styles.brand} href="/"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12.5l5 5L20 6.5" /></svg></i><span>{title}</span></Link><Link className={styles.back} href="/">문제은행으로</Link></header>{children}</div>;
 }
