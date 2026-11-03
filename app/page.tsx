@@ -26,12 +26,13 @@ type View = "home" | "practice" | "question" | "test" | "history" | "bookmarks" 
 type PracticeFilter = "all" | "unsolved" | "incorrect" | "bookmarked";
 type DifficultyFilter = "all" | Question["difficulty"];
 const CERTIFICATE_STORAGE_KEY = "certificate-practice:selected-certificate";
-const navItems: Array<{ view: View; icon: string; label: string }> = [
-  { view: "home", icon: "⌂", label: "홈" },
-  { view: "practice", icon: "✎", label: "연습" },
-  { view: "test", icon: "▣", label: "시험" },
-  { view: "history", icon: "▥", label: "통계" },
-  { view: "bookmarks", icon: "♡", label: "북마크" }
+const navIcon = (path: React.ReactNode) => <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{path}</svg>;
+const navItems: Array<{ view: View; icon: React.ReactNode; label: string }> = [
+  { view: "home", icon: navIcon(<><path d="M4 10.5 12 4l8 6.5" /><path d="M6 9.5V20h12V9.5" /><path d="M10 20v-5h4v5" /></>), label: "홈" },
+  { view: "practice", icon: navIcon(<><path d="M14.5 5.5l4 4" /><path d="M5 19l1-4.5L16 4.5l3.5 3.5-10 10L5 19z" /></>), label: "연습" },
+  { view: "test", icon: navIcon(<><rect x="5" y="4" width="14" height="17" rx="2" /><path d="M9 4.5V3h6v1.5" /><path d="M9 11h6M9 15h4" /></>), label: "시험" },
+  { view: "history", icon: navIcon(<><path d="M5 20V10M12 20V4M19 20v-7" /></>), label: "통계" },
+  { view: "bookmarks", icon: navIcon(<><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" /></>), label: "북마크" }
 ];
 
 export default function HomePage() {
