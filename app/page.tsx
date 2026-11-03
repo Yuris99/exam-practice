@@ -26,12 +26,13 @@ type View = "home" | "practice" | "question" | "test" | "history" | "bookmarks" 
 type PracticeFilter = "all" | "unsolved" | "incorrect" | "bookmarked";
 type DifficultyFilter = "all" | Question["difficulty"];
 const CERTIFICATE_STORAGE_KEY = "certificate-practice:selected-certificate";
-const navItems: Array<{ view: View; icon: string; label: string }> = [
-  { view: "home", icon: "⌂", label: "홈" },
-  { view: "practice", icon: "✎", label: "연습" },
-  { view: "test", icon: "▣", label: "시험" },
-  { view: "history", icon: "▥", label: "통계" },
-  { view: "bookmarks", icon: "♡", label: "북마크" }
+const navIcon = (path: React.ReactNode) => <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{path}</svg>;
+const navItems: Array<{ view: View; icon: React.ReactNode; label: string }> = [
+  { view: "home", icon: navIcon(<><path d="M4 10.5 12 4l8 6.5" /><path d="M6 9.5V20h12V9.5" /><path d="M10 20v-5h4v5" /></>), label: "홈" },
+  { view: "practice", icon: navIcon(<><path d="M14.5 5.5l4 4" /><path d="M5 19l1-4.5L16 4.5l3.5 3.5-10 10L5 19z" /></>), label: "연습" },
+  { view: "test", icon: navIcon(<><rect x="5" y="4" width="14" height="17" rx="2" /><path d="M9 4.5V3h6v1.5" /><path d="M9 11h6M9 15h4" /></>), label: "시험" },
+  { view: "history", icon: navIcon(<><path d="M5 20V10M12 20V4M19 20v-7" /></>), label: "통계" },
+  { view: "bookmarks", icon: navIcon(<><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" /></>), label: "북마크" }
 ];
 
 export default function HomePage() {
@@ -450,7 +451,7 @@ export default function HomePage() {
   }
 
   return (
-    <div className="appShell">
+    <div className="appShell" data-view={view}>
       <header className="topbar">
         <div className="brandControls"><button className="logo" onClick={() => setView("home")} aria-label="홈">✓</button><label className="certificatePicker"><span className="srOnly">자격증 선택</span><select value={selectedCertificateId} onChange={(event) => selectCertificate(event.target.value)}>{certificateOptions.map((option) => <option value={option.id} key={option.id}>{option.label}</option>)}</select></label></div>
         <div className="topbarActions">
@@ -615,7 +616,7 @@ function BookmarksView({ study, questionBank, onRemove, onPractice }: {
     {visibleQuestions.length === 0 ? <div className="panel emptyManager">{bookmarkedQuestions.length ? "검색 조건에 맞는 북마크가 없습니다." : "아직 저장한 문제가 없습니다."}</div> : <div className="bookmarkList">{visibleQuestions.map((question) => {
       const answer = study.answers[question.id];
       const archived = (question.publicationStatus ?? "published") !== "published";
-      return <article className="panel" key={question.id}><button className="bookmarkOpen" disabled={archived} onClick={() => onPractice(question.examType, [question.id])}><small>{examTypeLabel(question.certificateId, question.examType)} · {question.category}{archived ? " · 출제 제외" : ""}</small><strong>{question.prompt}</strong><span>{!answer ? "아직 풀지 않음" : answer.knowledgeStatus === "unknown" ? "최근 답안 · 아직 모름" : answer.isCorrect === true ? "최근 답안 정답" : answer.isCorrect === false ? "최근 답안 오답" : answer.selfAssessment === "partial" ? "최근 답안 부분 정답" : "답안 저장됨"}</span></button><button onClick={() => onRemove(question.id)} aria-label="북마크 해제">♥</button></article>;
+      return <article className="panel" key={question.id}><button className="bookmarkOpen" disabled={archived} onClick={() => onPractice(question.examType, [question.id])}><small>{examTypeLabel(question.certificateId, question.examType)} · {question.category}{archived ? " · 출제 제외" : ""}</small><strong>{question.prompt}</strong><span>{!answer ? "아직 풀지 않음" : answer.knowledgeStatus === "unknown" ? "최근 답안 · 아직 모름" : answer.isCorrect === true ? "최근 답안 정답" : answer.isCorrect === false ? "최근 답안 오답" : answer.selfAssessment === "partial" ? "최근 답안 부분 정답" : "답안 저장됨"}</span></button><button onClick={() => onRemove(question.id)} aria-label="북마크 해제"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" /></svg></button></article>;
     })}</div>}
     {pageCount > 1 && <div className="pagination"><button disabled={currentPage === 1} onClick={() => setPage(currentPage - 1)}>이전</button><span>{currentPage} / {pageCount}</span><button disabled={currentPage === pageCount} onClick={() => setPage(currentPage + 1)}>다음</button></div>}
   </section>;
@@ -723,7 +724,7 @@ function QuestionView({ question, index, total, draftAnswer, setDraftAnswer, sub
         {savedAnswer && <AiExplanation question={question} learnerAnswer={savedAnswer.value} cachedExplanation={cachedAiExplanation} onSave={onSaveAiExplanation} reportStatus={aiReport?.status} onReport={onReportAiExplanation} />}
       </div>}
     </article>
-    <div className="questionActions"><button className="bookmark" onClick={onBookmark}>{bookmarked ? "♥" : "♡"}</button><button className="previous" disabled={!canGoPrevious} onClick={onPrevious}>이전</button><button className="submit" disabled={submitted && question.examType === "PRACTICAL_WRITTEN_RESPONSE" && !savedAnswer?.selfAssessment} onClick={submitted ? onNext : onSubmit}>{submitted ? (question.examType === "PRACTICAL_WRITTEN_RESPONSE" && !savedAnswer?.selfAssessment ? "답안을 평가해 주세요" : isLast ? "연습 완료" : "다음 문제") : "답안 제출"}</button></div>
+    <div className="questionActions"><button className="bookmark" onClick={onBookmark} aria-pressed={bookmarked} aria-label={bookmarked ? "북마크 해제" : "북마크"}>{bookmarked ? <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" /></svg> : <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" /></svg>}</button><button className="previous" disabled={!canGoPrevious} onClick={onPrevious}>이전</button><button className="submit" disabled={submitted && question.examType === "PRACTICAL_WRITTEN_RESPONSE" && !savedAnswer?.selfAssessment} onClick={submitted ? onNext : onSubmit}>{submitted ? (question.examType === "PRACTICAL_WRITTEN_RESPONSE" && !savedAnswer?.selfAssessment ? "답안을 평가해 주세요" : isLast ? "연습 완료" : "다음 문제") : "답안 제출"}</button></div>
   </section>;
 }
 
