@@ -10,6 +10,7 @@ import { AiExplanation, createExplanationCacheKey } from "@/components/AiExplana
 import { PwaStatus } from "@/components/PwaStatus";
 import { QuestionTools } from "@/components/QuestionTools";
 import { QuestionContent } from "@/components/QuestionContent";
+import { PracticalAnswerInput, PracticalAnswerReview } from "@/components/PracticalResponse";
 import { QuestionMetadata } from "@/components/QuestionMetadata";
 import { TheoryReviewLink } from "@/components/TheoryReviewLink";
 import { questions } from "@/lib/questions";
@@ -710,7 +711,7 @@ function QuestionView({ question, index, total, draftAnswer, setDraftAnswer, sub
           const wrong = submitted && selected && !correct;
           return <button key={choice} disabled={submitted} className={`${selected ? "selected" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}`} onClick={() => setDraftAnswer(choiceIndex)}><span>{choiceIndex + 1}</span>{choice}</button>;
         })}
-      </div> : <textarea disabled={submitted} value={typeof draftAnswer === "string" ? draftAnswer : ""} onChange={(event) => setDraftAnswer(event.target.value)} placeholder="답안을 입력하세요" />}
+      </div> : <PracticalAnswerInput disabled={submitted} value={typeof draftAnswer === "string" ? draftAnswer : ""} onChange={setDraftAnswer} />}
       {!submitted && <button className={`dontKnow ${draftAnswer === -1 || draftAnswer === "모르겠어요" ? "selected" : ""}`} onClick={() => setDraftAnswer(question.examType === "WRITTEN_CBT" ? -1 : "모르겠어요")}>모르겠어요</button>}
 
       <QuestionTools note={note} onNoteChange={onNoteChange} onReport={onReport} />
@@ -718,8 +719,8 @@ function QuestionView({ question, index, total, draftAnswer, setDraftAnswer, sub
       {submitted && <div className="feedback">
         <strong>{question.examType === "WRITTEN_CBT" ? (savedAnswer?.isCorrect ? "정답입니다" : "정답을 확인하세요") : "모범답안과 비교해 보세요"}</strong>
         {question.examType === "WRITTEN_CBT" && savedAnswer?.isCorrect && <div className="knowledgeCheck"><span>이 문제를 알고 풀었나요?</span><button className={savedAnswer.knowledgeStatus !== "unknown" ? "active" : ""} onClick={() => onKnowledgeChange("known")}>알고 풀었어요</button><button className={savedAnswer.knowledgeStatus === "unknown" ? "unknown active" : "unknown"} onClick={() => onKnowledgeChange("unknown")}>찍어서 맞음 · 아직 모름</button></div>}
-        {question.examType === "PRACTICAL_WRITTEN_RESPONSE" && <><p>모범답안: {question.modelAnswer}</p><div className="selfAssessment"><span>내 답안은 어땠나요?</span>{(["correct", "partial", "incorrect"] as const).map((value) => <button key={value} className={savedAnswer?.selfAssessment === value ? "active" : ""} onClick={() => onSelfAssess(value)}>{value === "correct" ? "정답" : value === "partial" ? "부분 정답" : "오답"}</button>)}</div></>}
-        <p>{question.explanation}</p>
+        {question.examType === "PRACTICAL_WRITTEN_RESPONSE" && <><PracticalAnswerReview question={question} /><div className="selfAssessment"><span>내 답안은 어땠나요?</span>{(["correct", "partial", "incorrect"] as const).map((value) => <button key={value} className={savedAnswer?.selfAssessment === value ? "active" : ""} onClick={() => onSelfAssess(value)}>{value === "correct" ? "정답" : value === "partial" ? "부분 정답" : "오답"}</button>)}</div></>}
+        <p style={question.examType === "PRACTICAL_WRITTEN_RESPONSE" ? { whiteSpace: "pre-wrap" } : undefined}>{question.explanation}</p>
         {savedAnswer && <AiExplanation question={question} learnerAnswer={savedAnswer.value} cachedExplanation={cachedAiExplanation} onSave={onSaveAiExplanation} reportStatus={aiReport?.status} onReport={onReportAiExplanation} />}
       </div>}
     </article>

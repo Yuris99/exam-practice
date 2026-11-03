@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { AiExplanation, createExplanationCacheKey } from "@/components/AiExplanation";
 import { QuestionContent } from "@/components/QuestionContent";
+import { PracticalAnswerInput, PracticalAnswerReview } from "@/components/PracticalResponse";
 import { QuestionMetadata } from "@/components/QuestionMetadata";
 import { TheoryReviewLink } from "@/components/TheoryReviewLink";
 import { createExamTemplates } from "@/lib/examTemplates";
@@ -166,8 +167,8 @@ export function TestMode({ study, setStudy, questionBank, onPracticeQuestions, r
             <button className="reviewToggle" onClick={() => setExpandedReviewIds((current) => current.includes(question.id) ? current.filter((id) => id !== question.id) : [...current, question.id])}>{expanded ? "해설 접기" : "답과 해설 보기"}</button>
             {expanded && <div className="reviewDetails">
             <QuestionContent question={question} />
-            {question.examType === "WRITTEN_CBT" ? <div className="answerComparison"><p>내 답: {typeof answer === "number" ? `${answer + 1}번 ${question.choices[answer]}` : "미답변"}</p><p>정답: {question.correctChoiceIndex + 1}번 {question.choices[question.correctChoiceIndex]}</p></div> : <div className="answerComparison"><p>내 답: {typeof answer === "string" && answer ? answer : "미답변"}</p><p>모범답안: {question.modelAnswer}</p></div>}
-            <p className="officialReview"><strong>공식 해설</strong><br />{question.explanation || "등록된 공식 해설이 없습니다."}</p>
+            {question.examType === "WRITTEN_CBT" ? <div className="answerComparison"><p>내 답: {typeof answer === "number" ? `${answer + 1}번 ${question.choices[answer]}` : "미답변"}</p><p>정답: {question.correctChoiceIndex + 1}번 {question.choices[question.correctChoiceIndex]}</p></div> : <PracticalAnswerReview question={question} answer={typeof answer === "string" ? answer : ""} />}
+            <p className="officialReview" style={question.examType === "PRACTICAL_WRITTEN_RESPONSE" ? { whiteSpace: "pre-wrap" } : undefined}><strong>{question.examType === "WRITTEN_CBT" ? "공식 해설" : "학습 해설"}</strong><br />{question.explanation || "등록된 해설이 없습니다."}</p>
             <TheoryReviewLink question={question} incorrect={answered && !correct} />
             {question.examType === "PRACTICAL_WRITTEN_RESPONSE" && answered && <div className="selfAssessment"><span>내 답안 평가</span>{(["correct", "partial", "incorrect"] as const).map((value) => <button key={value} className={(latestResult.selfAssessments ?? {})[question.id] === value ? "active" : ""} onClick={() => saveSelfAssessment(latestResult, question.id, value, setStudy, setLatestResult)}>{value === "correct" ? "정답" : value === "partial" ? "부분 정답" : "오답"}</button>)}</div>}
             {answered && <AiExplanation question={question} learnerAnswer={answer} cachedExplanation={study.aiExplanations[cacheKey]} onSave={(key, explanation) => setStudy((current) => ({ ...current, aiExplanations: { ...current.aiExplanations, [key]: explanation } }))} reportStatus={aiReport?.status} onReport={(key, explanation, reason, details) => setStudy((current) => ({ ...current, aiExplanationReports: [{ id: crypto.randomUUID(), cacheKey: key, questionId: question.id, questionVersion: question.version, explanationSnapshot: explanation, reason, details, createdAt: new Date().toISOString(), status: "open" }, ...current.aiExplanationReports] }))} />}
@@ -257,7 +258,7 @@ export function TestMode({ study, setStudy, questionBank, onPracticeQuestions, r
       <TheoryReviewLink question={question} />
       {question.examType === "WRITTEN_CBT" ? <div className="choiceList">
         {question.choices.map((choice, index) => <button key={choice} className={answer === index ? "selected" : ""} onClick={() => saveTestAnswer(question.id, index, setStudy)}><span>{index + 1}</span>{choice}</button>)}
-      </div> : <textarea value={typeof answer === "string" ? answer : ""} onChange={(event) => saveTestAnswer(question.id, event.target.value, setStudy)} placeholder="답안을 입력하세요" />}
+      </div> : <PracticalAnswerInput value={typeof answer === "string" ? answer : ""} onChange={(value) => saveTestAnswer(question.id, value, setStudy)} />}
     </article>
 
     <div className="testActions">
