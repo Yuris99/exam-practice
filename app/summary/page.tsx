@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { useMemo, useState } from "react";
 
 type SubjectKey = "computer" | "embedded";
@@ -221,7 +222,7 @@ export default function SummaryPage() {
   return (
     <div className="summaryPage">
       <header className="summaryHeader">
-        <Link href="/" className="summaryBack">← 홈</Link>
+        <div className="themeControls"><Link href="/" className="summaryBack">← 홈</Link><ThemeToggle /></div>
         <div>
           <p>노션식 개념 정리</p>
           <h1>컴시기 · 임베기</h1>

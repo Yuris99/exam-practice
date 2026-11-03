@@ -10,7 +10,7 @@
 html { scroll-padding-top:72px; }
 @media(max-width:899px){ html { scroll-padding-bottom:168px; } }
 body { color:var(--text); background:var(--bg); }
-::selection { color:#fff; background:var(--accent); }
+::selection { color:var(--cta-ink); background:var(--cta); }
 button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible,summary:focus-visible,pre:focus-visible { outline:3px solid var(--focus); outline-offset:2px; }
 input::placeholder,textarea::placeholder { color:var(--muted); opacity:1; }
 button:disabled { cursor:not-allowed; }
@@ -65,7 +65,7 @@ button:disabled { cursor:not-allowed; }
 .primaryCard { display:grid; gap:4px; padding:22px 24px; border:1px solid var(--accent-line); border-radius:var(--radius-lg); color:var(--text); background:var(--accent-faint); }
 .primaryCard small { color:var(--accent-text); font-size:var(--fs-sm); font-weight:600; }
 .primaryCard h2 { margin:2px 0 16px; color:var(--text); font-size:var(--fs-lg); line-height:1.45; }
-.primaryCard button { justify-self:start; min-height:48px; padding:0 24px; border-radius:999px; color:#fff; background:var(--accent); font-size:var(--fs-base); font-weight:700; transition:background-color .15s ease, transform .15s var(--ease-out); }
+.primaryCard button { justify-self:start; min-height:48px; padding:0 24px; border-radius:999px; color:var(--cta-ink); background:var(--cta); font-size:var(--fs-base); font-weight:700; transition:background-color .15s ease, transform .15s var(--ease-out); }
 .primaryCard button:hover { background:var(--accent-hover); }
 .primaryCard button:active { transform:scale(.98); }
 .testResumeCard { border-color:var(--warn-line); background:var(--warn-soft); }
@@ -111,7 +111,7 @@ button:disabled { cursor:not-allowed; }
 .chips button { min-height:44px; padding:0 16px; border:1px solid var(--line-strong); color:var(--text-2); background:var(--surface); font-size:var(--fs-sm); cursor:pointer; transition:background-color .15s ease, color .15s ease, border-color .15s ease; }
 .chips button:hover { color:var(--text); border-color:var(--muted); }
 .chips button.active { border-color:var(--accent); color:var(--accent-text); background:var(--accent-soft); font-weight:700; }
-.fullButton,.submit,.questionActions .submit,.testActions .submit,.managerActions .submit,.importActions .submit,.bookmarkPracticeActions button,.reportEditor button,.aiReportForm button { border-radius:999px; color:#fff; background:var(--accent); font-weight:700; }
+.fullButton,.submit,.questionActions .submit,.testActions .submit,.managerActions .submit,.importActions .submit,.bookmarkPracticeActions button,.reportEditor button,.aiReportForm button { border-radius:999px; color:var(--cta-ink); background:var(--cta); font-weight:700; }
 .fullButton { min-height:50px; font-size:var(--fs-base); }
 .fullButton:not(:disabled):hover,.submit:not(:disabled):hover,.bookmarkPracticeActions button:hover { background:var(--accent-hover); }
 .fullButton:disabled,.questionActions .submit:disabled { color:var(--muted); background:var(--surface3); opacity:1; }
@@ -150,15 +150,15 @@ textarea:focus,.editor input:focus,.editor select:focus { border-color:var(--acc
 .choiceList button:not(:disabled):hover { border-color:var(--accent-line); background:var(--accent-faint); }
 .choiceList button span { width:30px; height:30px; border:1px solid var(--line-strong); color:var(--text-2); background:var(--surface); font-size:var(--fs-sm); font-weight:700; font-variant-numeric:tabular-nums; }
 .choiceList button.selected { padding:12px 15px; border:2px solid var(--accent); background:var(--accent-faint); }
-.choiceList button.selected span { border-color:var(--accent); color:#fff; background:var(--accent); }
+.choiceList button.selected span { border-color:var(--accent); color:var(--cta-ink); background:var(--cta); }
 .choiceList button:disabled { cursor:default; opacity:1; }
 .choiceList button:disabled:not(.correct):not(.wrong) { color:var(--text-2); }
 .choiceList button.correct { padding:12px 15px; border:2px solid var(--accent); background:var(--accent-soft); }
-.choiceList button.correct span { border-color:var(--accent); color:#fff; background:var(--accent); }
+.choiceList button.correct span { border-color:var(--accent); color:var(--cta-ink); background:var(--cta); }
 .choiceList button.wrong { padding:12px 15px; border:2px solid var(--danger); background:var(--danger-soft); }
 .choiceList button.wrong span { border-color:var(--danger); color:#fff; background:var(--danger); }
 .choiceList button.correct::after,.choiceList button.wrong::after { margin-left:auto; padding:3px 10px; flex:0 0 auto; border-radius:999px; color:#fff; font-size:var(--fs-xs); font-weight:700; white-space:nowrap; }
-.choiceList button.correct::after { content:"정답"; background:var(--accent); }
+.choiceList button.correct::after { content:"정답"; background:var(--cta); }
 .choiceList button.selected.correct::after { content:"내 답 · 정답"; }
 .choiceList button.wrong::after { content:"내 답 · 오답"; background:var(--danger); }
 .dontKnow { min-height:46px; margin-top:10px; border:1px dashed var(--line-strong); border-radius:var(--radius); color:var(--text-2); font-size:var(--fs-sm); }
@@ -182,7 +182,7 @@ textarea:focus,.editor input:focus,.editor select:focus { border-color:var(--acc
 .knowledgeCheck { padding:12px; border:1px solid var(--line); background:var(--surface); }
 .knowledgeCheck span,.selfAssessment span { color:var(--text-2); font-size:var(--fs-sm); }
 .knowledgeCheck button,.selfAssessment button { min-height:42px; padding:0 14px; border:1px solid var(--line-strong); border-radius:999px; color:var(--text-2); background:var(--surface); font-size:var(--fs-sm); }
-.knowledgeCheck button.active,.selfAssessment button.active { border-color:var(--accent); color:#fff; background:var(--accent); }
+.knowledgeCheck button.active,.selfAssessment button.active { border-color:var(--accent); color:var(--cta-ink); background:var(--cta); }
 .knowledgeCheck button.unknown.active { border-color:var(--warn-line); color:var(--warn-text); background:var(--warn-soft); }
 .aiSection { border-top-color:var(--line); }
 .aiExplainButton { min-height:46px; border:1px solid var(--accent-line); border-radius:999px; color:var(--accent-text); background:var(--surface); font-size:var(--fs-sm); }
@@ -216,11 +216,11 @@ textarea:focus,.editor input:focus,.editor select:focus { border-color:var(--acc
 
 /* ---------- Test, stats, bookmarks, manager: same system ---------- */
 .testHeader button,.managerActions button,.importActions button,.pagination button,.dataActions button,.managedActions button,.bulkToolbar button,.reportList button,.reviewToggle { min-height:40px; border-color:var(--line-strong); border-radius:999px; color:var(--text-2); background:var(--surface); }
-.managerActions .submit,.importActions .submit { color:#fff; background:var(--accent); }
+.managerActions .submit,.importActions .submit { color:var(--cta-ink); background:var(--cta); }
 .testHeader button.testExit,.managedActions button.delete,.bulkToolbar button.delete,.dataActions button.danger,.imageEditorActions button { border-color:var(--danger-line); color:var(--danger-text); background:var(--surface); }
 .testHeader b { color:var(--warn-text); background:var(--warn-soft); }
 .testNavigator button { border-color:var(--line-strong); color:var(--text-2); background:var(--surface); font-variant-numeric:tabular-nums; }
-.testNavigator button.answered { border-color:var(--accent); color:#fff; background:var(--accent); }
+.testNavigator button.answered { border-color:var(--accent); color:var(--cta-ink); background:var(--cta); }
 .testNavigator button.current { outline:2px solid var(--text); outline-offset:2px; }
 .testNavigator button.flagged { color:var(--warn-text); border-color:var(--warn-line); background:var(--warn-soft); }
 .flag { min-height:40px; border-color:var(--line-strong); border-radius:999px; color:var(--text-2); font-size:var(--fs-sm); }

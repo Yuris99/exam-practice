@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
+import { themeInitializationScript } from "@/lib/theme";
 import "./globals.css";
 import "./design-refresh.css";
+import "./themes.css";
 import "katex/dist/katex.min.css";
 
 export const metadata: Metadata = {
@@ -27,7 +29,8 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ko">
+    <html lang="ko" suppressHydrationWarning>
+      <head><script dangerouslySetInnerHTML={{ __html: themeInitializationScript }} /></head>
       <body>{children}</body>
     </html>
   );

@@ -8,6 +8,7 @@ import { QuestionManager } from "@/components/QuestionManager";
 import { AdminDashboard } from "@/components/AdminDashboard";
 import { AiExplanation, createExplanationCacheKey } from "@/components/AiExplanation";
 import { PwaStatus } from "@/components/PwaStatus";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { QuestionTools } from "@/components/QuestionTools";
 import { QuestionContent } from "@/components/QuestionContent";
 import { PracticalAnswerInput, PracticalAnswerReview } from "@/components/PracticalResponse";
@@ -456,6 +457,7 @@ export default function HomePage() {
       <header className="topbar">
         <div className="brandControls"><button className="logo" onClick={() => setView("home")} aria-label="홈">✓</button><label className="certificatePicker"><span className="srOnly">자격증 선택</span><select value={selectedCertificateId} onChange={(event) => selectCertificate(event.target.value)}>{certificateOptions.map((option) => <option value={option.id} key={option.id}>{option.label}</option>)}</select></label></div>
         <div className="topbarActions">
+          <ThemeToggle />
           <button className={view === "manage" ? "manageLink active" : "manageLink"} onClick={() => setView("manage")}>내 문제 관리</button>
           {account ? (
             <details className="accountMenu">
