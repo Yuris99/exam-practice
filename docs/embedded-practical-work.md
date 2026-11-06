@@ -169,3 +169,59 @@
 - 최종 브랜치 `Yuris99/embedded-practical`, HEAD `1b7b7c05f85d4cafe28e21a4cc99e01911a08db2`. 미커밋 검토 상태, push·배포 없음. 원자료에 대한 남은 기술 검토와 실제 화면 검수는 메인의 통합 검토 항목이며 완료 후 새 작업을 시작하지 않는다.
 
 후속 변경 파일: `content/questions/embedded-engineer-practical-reference.csv`, `data/embedded-practical/reference-manifest.json`, `data/embedded-practical/source-review.json`, `lib/generatedQuestions.ts`, `components/PracticalResponse.tsx`, `app/page.tsx`, `components/TestMode.tsx`, `tests/embedded-practical-reference.test.mjs`, `tests/questionIntegrity.test.mjs`, 본 문서. 기존 첫 CSV는 그대로 보존했다.
+
+## 실기 요약집 추가 — 2026-11-06
+
+사용자가 실기 요약집을 요청한 뒤 다음 두 로컬 PDF를 참고자료로 추가 제공했다. 등록된 worker와 배정 브랜치가 일치함을 다시 확인했다. 작업 기준 HEAD는 `5412b12f879674c9f72bd753d8e110fe8bca2b95`, 브랜치는 `Yuris99/embedded-practical`이다. 이번 변경은 미커밋이며 병합·push·배포하지 않았다.
+
+### 자료와 검토 범위
+
+두 파일은 `C:/Users/mose1/Documents/카카오톡 받은 파일/`에서 읽었다. 원본 파일을 수정하거나 저장소에 복사하지 않았다. 추출문·렌더는 무시 경로 `.next/summary-sources` 안에만 생성했다.
+
+| 자료 | 크기·분량 | SHA-256 | 확인 방식 |
+|---|---|---|---|
+| 임베디드기사_ARM어셈블리_정리.pdf | 1,977,424바이트, 9쪽 | `f5f4bb77327fee0a6f859eec9c9113b6876dbfa2c15dff0b8a3fbfc9d22689d9` | 텍스트 없는 이미지 PDF. 9쪽 전체를 렌더로 열어 명령·주소 지정·플래그·스택·반복 코드와 설명 확인 |
+| 임베디드기사_실기_완성교재.pdf | 2,158,823바이트, 36쪽 | `43746fddd457e0007c44ca6eebf6a44e1b9955b3c6df302af3333a17939eef1e` | 전체 텍스트 추출 후 목차·기술 본문·정정표·예상문제 부분 확인. 회로 표가 있는 2쪽과 커널 할당 설명의 27쪽은 렌더도 대조 |
+
+완성 교재 24~32쪽은 자료 자체에서 **AI 예측·실제 기출 아님**으로 명시한다. 빈도·출제 이력·적용기간·공식 정답이라는 주장은 별도 확인 없이 요약집에 옮기지 않았다. 33~35쪽의 번호·정정표는 이전 복원집과 번호가 다를 수 있어 기존 문제은행 provenance를 덮어쓰지 않았다.
+
+### 앱 구성
+
+기존 `/summary`의 선택 목록에 **임베디드기사 실기**를 추가했다. 홈의 기존 개념 정리 링크에서 진입해 선택할 수 있다. 기존 컴시기·임베기 내용과 검색·목차·암기 체크를 재사용했다.
+
+- 핵심 주제 20개: 답안 작성, C 포인터·수명, ARM 레지스터·플래그·주소·스택·루프, 비트/레지스터, 논리회로, 메모리 계산·가상메모리, 부팅, 빌드, 드라이버, OS, 동기화, TCP, 주변장치, 타이머, UML/테스트, 장애 대응.
+- 풀이 예제 12개(코드 블록 7개), 비교 10개, 회상 문제 12개, 상세 노트 8개, 시험 전 체크 6개, 암기 항목 24개.
+- 각 관련 개념에서 기존에 게시된 실기 문제 ID로 연결한다. 기존 `practiceQuestions` 딥링크를 사용하며 새 저장 스키마나 시험 유형을 만들지 않았다.
+- 예제 코드는 기존 `codeBlock` 스타일로 줄바꿈과 가로 스크롤을 보존한다. 코드 내용도 검색한다. 출처·검토 기준을 별도 목차에 표시한다.
+- 암기 체크는 기존과 같이 페이지의 메모리 상태이며 새로고침·재진입 시 영구 복원하지 않는다. 화면에서 이를 안내한다.
+
+### 기술 보완과 출처
+
+| 참고자료의 단순화·주의점 | 요약집 처리 |
+|---|---|
+| ARM의 FP·PC·호출 시 저장 레지스터를 고정 규칙처럼 서술 | A32/AAPCS32와 실행 상태·명령·호출 규약 전제를 명시 |
+| S 접미사가 있는 명령만 CPSR 갱신하는 듯한 설명 | CMP·CMN·TST·TEQ도 플래그를 갱신함을 명시 |
+| `[r0,#0x2000]`를 실제 A32 word STR에 사용 | 일반 즉시 오프셋 ±4095 한계를 알리고 완전한 주소를 별도 준비하는 새 예제 사용 |
+| MVN 결과를 8비트 값으로만 해석 | 32비트 전체 반전과 데이터 마스크·예약 비트를 구별. 본문 뒤 카운터 감소 방식의 끝값은 0xFE까지라고 설명 |
+| GCC -o를 링크 옵션으로 설명 | -c는 링크 생략, -o는 출력 이름이라고 구분 |
+| GFP_KERNEL이 항상 ZONE_NORMAL이며 가장 빠르다는 설명 | 수면 가능한 문맥·아키텍처·존 제약과 할당 정책을 구별 |
+| 스핀락에 문맥 교환이 절대 없다는 설명 | PREEMPT_RT·구현에 따른 차이를 안내 |
+| 특정 스타트업 7단계를 모든 보드에 일반화 | 베어메탈과 Linux 부트 흐름의 예로 구분, 보드 전제 우선 |
+| struct/union 크기를 합/최댓값으로만 확정 | 정렬·패딩을 함께 확인하도록 보완 |
+| TCP 서버와 클라이언트 호출을 단일 순서로 나열 | 서버와 클라이언트를 분리하고 accept/connect 상호작용 설명 |
+
+공식 기술 대조 자료는 요약집의 참고자료에도 연결했다: [Arm AAPCS32](https://github.com/ARM-software/abi-aa/blob/main/aapcs32/aapcs32.rst), [Arm LDR immediate offset](https://support.arm.com/documentation/dui0473/m/arm-and-thumb-instructions/ldr--immediate-offset-), [Arm 조건 실행](https://support.arm.com/documentation/den0013/0400/ARM-Thumb-Unified-Assembly-Language-Instructions/Instruction-set-basics/Conditional-execution), [WG14 N1570](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf), [GCC Options](https://gcc.gnu.org/onlinedocs/gcc/Overall-Options.html), [Linux Driver Basics](https://docs.kernel.org/driver-api/basics.html), [Memory Allocation](https://docs.kernel.org/core-api/memory-allocation.html), [Lock Types](https://docs.kernel.org/locking/locktypes.html), [Completions](https://docs.kernel.org/scheduler/completion.html), [NXP I²C](https://www.nxp.com/docs/en/user-guide/UM10204.pdf).
+
+특히 기존 R099의 큰 즉시 오프셋 표기는 주소 산술 학습과 실제 인코딩 가능성을 구별해 검토할 여지가 있다. 이번에는 요약집에 정확한 인코딩 전제와 대체 예제를 제공했으며 승인된 기존 문제은행 자체를 다시 작성하지 않았다. 실물 MCU·타깃 어셈블러로 전체 코드를 실행 검증한 것은 아니다.
+
+### 검증과 변경 파일
+
+- `npm.cmd test`: **60/60 통과**. 새 테스트는 관련 링크가 게시된 임베디드 실기로 연결되는지, 요약 데이터·출처가 완전한지 검증한다.
+- `npm.cmd run lint`: **통과**. 설치된 Next.js 16.3.0의 로컬 Server/Client Components·TypeScript 가이드 확인 후 편집했다.
+- `npm.cmd run dev -- --hostname 127.0.0.1 --port 3217` 후 설치된 Playwright Test runner로 **PC 1440×1000, 모바일 390×844 2/2 통과**.
+- 브라우저 검증: 기존 필기 선택 → 실기 선택 → 코드 검색(STMFD)·검색 없음 → 암기 체크·선택 전환 후 유지 → 관련 문제 열기 → 여러 줄 답안 작성 → 제출 → 모범답안 확인 → 부분 정답 자기평가 → 다음 문제 활성화. 문서 가로 넘침과 브라우저 pageerror 없음도 확인했다.
+- `.next/summary-browser`의 PC·모바일 소개/코드/풀이 캡처를 직접 열어 확인했다. 첫 브라우저 실행은 테스트가 기존 버튼 이름을 짧게 오기해 실패했으며 실제 접근성 이름에 맞춰 수정 후 두 환경 모두 통과했다. 테스트 설정·캡처·실패 trace는 임시 검증 산출물로 Git에 포함하지 않았다.
+- 기존 두 실기 CSV와 `lib/generatedQuestions.ts`를 HEAD와 비교하여 **내용 변경 없음** 확인. 문항 수는 기존 임베디드 실기 139개, 전체 6,490개 그대로다.
+- 실물 기기·전체 ARM 어셈블·프로덕션 빌드·배포 검증은 수행하지 않았다. 메인 dev의 최신 디자인 변경과의 통합은 이 작업에 포함하지 않았다.
+
+변경 파일은 `app/summary/page.tsx`, `content/summaries/embedded-practical.ts`, `lib/summaryTypes.ts`, `tests/embedded-practical-summary.test.mjs`, 본 문서다. 공통 CSS·홈·문제 데이터·저장 스키마는 변경하지 않았다. 메인의 summary 페이지에 ThemeToggle 등 후속 변경이 있으므로 **해당 파일 전체를 덮어쓰지 말고 새 subject/extraNotes 등록·관련 링크·예제 코드·출처 렌더 부분을 통합**해야 한다.

@@ -573,7 +573,7 @@ function HomeView({ study, onStart, onNavigate, onResume, questionBank, certific
     <div className="sectionTitle"><h2>학습 방식</h2></div>
     <div className="modeGrid">
       <button onClick={() => onStart("WRITTEN_CBT")}><i>CBT</i><strong>{examTypeLabel(certificateId, "WRITTEN_CBT")}</strong><span>4지선다 문제를 바로 채점해요</span></button>
-      <button onClick={() => onStart("PRACTICAL_WRITTEN_RESPONSE")}><i>答</i><strong>{examTypeLabel(certificateId, "PRACTICAL_WRITTEN_RESPONSE")}</strong><span>답안을 직접 작성해요</span></button>
+      <button onClick={() => onStart("PRACTICAL_WRITTEN_RESPONSE")}><i aria-hidden="true">✎</i><strong>{examTypeLabel(certificateId, "PRACTICAL_WRITTEN_RESPONSE")}</strong><span>답안을 직접 작성해요</span></button>
       <button onClick={() => onNavigate("test")}><i>TEST</i><strong>시험 모드</strong><span>모의시험 또는 랜덤 시험을 풀어요</span></button>
       {certificateId === "information-security-engineer" && <Link href={`/learn/${certificateId}`}><i>TRAIL</i><strong>이론 학습</strong><span>개념을 익히고 관련 기출을 풀어요</span></Link>}
       <Link href="/summary"><i>NOTE</i><strong>개념 정리</strong><span>컴시기와 임베기를 따로 훑어요</span></Link>
@@ -778,7 +778,7 @@ function HistoryView({ study, questionBank, onOpenQuestion, onOpenTestResult }: 
 
     <div className="statsGrid">
       <article className="panel chartCard"><div className="sectionTitle"><h2>최근 7일</h2><span>{dayCounts.reduce((sum, count) => sum + count, 0)}문제</span></div><div className="activityChart">{days.map((day, index) => <div key={day.key}><span><i style={{ height: `${Math.max(5, dayCounts[index] / maxDayCount * 100)}%` }} /></span><b>{dayCounts[index]}</b><small>{day.label}</small></div>)}</div></article>
-      <article className="panel typeStats"><h2>시험 유형별</h2><div><i>CBT</i><span><strong>필기시험</strong><small>{written.length}문제 풀이</small></span><b>{writtenAccuracy}%</b></div><div><i>答</i><span><strong>실기시험</strong><small>{practical.length}문제 풀이</small></span><b>{assessedPractical.length ? `${practicalSuccess}%` : `${practical.length}개`}</b></div></article>
+      <article className="panel typeStats"><h2>시험 유형별</h2><div><i>CBT</i><span><strong>필기시험</strong><small>{written.length}문제 풀이</small></span><b>{writtenAccuracy}%</b></div><div><i aria-hidden="true">✎</i><span><strong>실기시험</strong><small>{practical.length}문제 풀이</small></span><b>{assessedPractical.length ? `${practicalSuccess}%` : `${practical.length}개`}</b></div></article>
     </div>
 
     <div className="sectionTitle"><h2>과목별 성과</h2><span>필기 정답률</span></div>
