@@ -2,6 +2,17 @@
 
 > 이 문서는 3차 배치(아래 첫 절), 2차 배치(기준 커밋 `93665be`)와 1차 배치 기록(그 아래 "1차 배치" 절, 기준 커밋 `840b509`)으로 이루어집니다. 1차의 다크 녹색 방향은 사용자 피드백("현재 색이 마음에 들지 않음")으로 철회했습니다. 1차 절의 색·토큰 설명은 이제 기록으로만 남습니다.
 
+## 3차-b: 글꼴 가독성 (Pretendard 자체 제공)
+
+- 요청: "폰트도 좀 가독성 좋게"
+- **Pretendard Variable**(SIL OFL 1.1, v1.3.9)를 `public/fonts/pretendard/`에 넣고 `app/pretendard.css`의 `@font-face`로 직접 제공합니다. 외부 CDN 호출은 없고, 글자 범위별 92개 조각(총 3.1MB) 중 화면에 필요한 조각만 받습니다(홈 기준 13개). 라이선스: `public/fonts/pretendard/LICENSE.txt`
+  - 이전에는 Pretendard가 설치된 기기에서만 적용되고, 대부분의 Windows에서는 맑은 고딕으로 대체되었습니다.
+- 문제 지문과 보기 지문 상자는 다시 **고딕(Pretendard)**으로 바꿨습니다. 명조의 가는 가로획과, Noto Serif KR이 없는 Windows에서의 바탕체 대체가 화면에서 읽기 어렵기 때문입니다. 명조는 큰 제목(홈 자격증명, 이론 제목)에만 남겼습니다.
+- 지문 20px(모바일 18px)/600/행간 1.7, 해설 행간 1.78
+- 작은 글자 최소 13px: `--fs-xs` 12→13, 이론 화면의 12~13px 글자(경로, 개념 설명, 표, 사이드바, 캡션)는 13~15px로 올렸습니다.
+- 변경: `app/globals.css`(첫 줄 `@import`), `app/design-refresh.css`·`components/TheoryTrail.module.css`(끝에 덧붙임), `app/pretendard.css`, `public/fonts/pretendard/`
+- 검증: lint, 테스트 52/52, 빌드 통과. 5개 폭 캡처에서 가로 넘침과 JS 오류가 없었고, 흐름도 정상이었습니다. `document.fonts.check`로 Pretendard 적용을 확인했습니다. 스크린샷: `docs/design-refresh/screenshots/batch3b/`
+
 ## 3차 배치: "OMR 답안지" (TASTE + UI UX Pro Max + frontend-design)
 
 - 기준: `93665be`(2차 결과, dev에 이미 병합됨 `dba99b8`). 같은 브랜치에서 이어서 작업. 병합·rebase 없음

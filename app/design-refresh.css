@@ -411,3 +411,18 @@ textarea,.certificatePicker select,.randomFilters select,.adminExamFilters selec
 .choiceList button.selected:not(:disabled):hover { border-color:var(--text); background:var(--surface); }
 /* Form fields: neutral boundary at 3:1+ on white (WCAG 1.4.11) */
 :root { --control-edge:#7b828c; }
+
+/* ===== Batch 3b: readability — Pretendard served from /fonts (no external service).
+   Question stems and passages go back to the sans: Myeongjo's hairline strokes and the
+   Batang fallback on Windows read worse on screen. The serif stays only at display size
+   (certificate name, theory titles). Small print is raised to 13px minimum. */
+:root { --fs-xs:13px; --sans:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",system-ui,sans-serif; }
+body { font-family:var(--sans); letter-spacing:-.003em; }
+button,input,select,textarea { font-family:inherit; letter-spacing:inherit; }
+h1,h2,h3 { letter-spacing:-.018em; }
+.questionCard h1 { font-family:var(--sans); font-size:20px; font-weight:600; line-height:1.7; letter-spacing:-.012em; }
+.referenceBox > div { font-family:var(--sans); line-height:1.75; }
+.choiceList button { line-height:1.62; }
+.feedback p,.aiMarkdown { line-height:1.78; }
+.navigation button { font-weight:600; letter-spacing:0; }
+@media(max-width:899px){ .questionCard h1 { font-size:18px; line-height:1.7; } }

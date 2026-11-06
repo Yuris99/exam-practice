@@ -221,3 +221,12 @@
 .reviewLink { border-color:var(--line); background:var(--surface); }
 .reviewLink:hover { background:var(--surface2); }
 .pager a.pagerNext { border:2px solid var(--text); color:var(--text); background:var(--surface); }
+
+/* Batch 3b readability: no theory text below 13px, body copy in full ink */
+.back,.crumbs,.subjectHeader p,.caption,.sideCard p,.pagerHint,.reviewLink span { font-size:14px; }
+.unitCard span,.conceptCard span { font-size:14px; line-height:1.6; }
+.unitCard small,.conceptCard small,.unitCard em,.keywords span,.question small { font-size:13px; }
+.table th { font-size:14px; }
+.table td { font-size:15px; line-height:1.65; }
+.reviewLink strong,.conceptCard b { font-size:14px; }
+.memory ul { line-height:1.8; }
