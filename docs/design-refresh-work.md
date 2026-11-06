@@ -1,6 +1,86 @@
 # 디자인 개편 작업 기록 (Yuris99/design-refresh)
 
-> 이 문서는 2차 배치(아래 첫 절)와 1차 배치 기록(그 아래 "1차 배치" 절, 기준 커밋 `840b509`)으로 이루어집니다. 1차의 다크 녹색 방향은 사용자 피드백("현재 색이 마음에 들지 않음")으로 철회했습니다. 1차 절의 색·토큰 설명은 이제 기록으로만 남습니다.
+## 메인 통합 (2026-11-06)
+
+- `dev`의 `3d36e7a` 위에 디자인 브랜치 `8cfcee5`를 병합했다. 이론 헤더 말줄임과 새 스타일이 같은 파일 끝에 추가된 충돌은 양쪽 규칙을 유지해 해결했다.
+- 기존 실기 요약집·문항·연필 아이콘과 화이트/다크 전환을 유지한다. 다크 모드에서 새 메뉴·정답 배경 토큰을 보완하고, 선택 상태 글자 대비와 홈의 실기 연필 표시를 보존했다. 라이트 브라우저 테마 색도 새 바탕색에 맞췄다.
+- 인적성·보안 복원 등 기존 미커밋 변경은 별도 백업 후 보존했다. 커밋 대상만 추출한 코드로 검증하며, 작업 공간 전체를 배포 대상으로 포함하지 않는다.
+- 통합본 검증: 테스트 67/67, 타입 검사, 프로덕션 빌드 통과. PC 1440px·태블릿 768px·모바일 390px의 브라우저 검증 6/6을 통과했고 최종 화면 8장을 직접 확인했다. Pretendard 로딩, 테마 저장·전환과 다크 글자 대비, 필기 채점·이론 복귀, 실기 요약집·여러 줄 답안·자기평가·다음 문제, 연필 아이콘을 확인했다. 이번 요청은 로컬 `dev` 통합이며 푸시·배포는 수행하지 않는다.
+
+> 이 문서는 3차 배치(아래 첫 절), 2차 배치(기준 커밋 `93665be`)와 1차 배치 기록(그 아래 "1차 배치" 절, 기준 커밋 `840b509`)으로 이루어집니다. 1차의 다크 녹색 방향은 사용자 피드백("현재 색이 마음에 들지 않음")으로 철회했습니다. 1차 절의 색·토큰 설명은 이제 기록으로만 남습니다.
+
+## 3차-b: 글꼴 가독성 (Pretendard 자체 제공)
+
+- 요청: "폰트도 좀 가독성 좋게"
+- **Pretendard Variable**(SIL OFL 1.1, v1.3.9)를 `public/fonts/pretendard/`에 넣고 `app/pretendard.css`의 `@font-face`로 직접 제공합니다. 외부 CDN 호출은 없고, 글자 범위별 92개 조각(총 3.1MB) 중 화면에 필요한 조각만 받습니다(홈 기준 13개). 라이선스: `public/fonts/pretendard/LICENSE.txt`
+  - 이전에는 Pretendard가 설치된 기기에서만 적용되고, 대부분의 Windows에서는 맑은 고딕으로 대체되었습니다.
+- 문제 지문과 보기 지문 상자는 다시 **고딕(Pretendard)**으로 바꿨습니다. 명조의 가는 가로획과, Noto Serif KR이 없는 Windows에서의 바탕체 대체가 화면에서 읽기 어렵기 때문입니다. 명조는 큰 제목(홈 자격증명, 이론 제목)에만 남겼습니다.
+- 지문 20px(모바일 18px)/600/행간 1.7, 해설 행간 1.78
+- 작은 글자 최소 13px: `--fs-xs` 12→13, 이론 화면의 12~13px 글자(경로, 개념 설명, 표, 사이드바, 캡션)는 13~15px로 올렸습니다.
+- 변경: `app/globals.css`(첫 줄 `@import`), `app/design-refresh.css`·`components/TheoryTrail.module.css`(끝에 덧붙임), `app/pretendard.css`, `public/fonts/pretendard/`
+- 검증: lint, 테스트 52/52, 빌드 통과. 5개 폭 캡처에서 가로 넘침과 JS 오류가 없었고, 흐름도 정상이었습니다. `document.fonts.check`로 Pretendard 적용을 확인했습니다. 스크린샷: `docs/design-refresh/screenshots/batch3b/`
+
+## 3차 배치: "OMR 답안지" (TASTE + UI UX Pro Max + frontend-design)
+
+- 기준: `93665be`(2차 결과, dev에 이미 병합됨 `dba99b8`). 같은 브랜치에서 이어서 작업. 병합·rebase 없음
+- 사용자 피드백: "디자인 아직 구린 것 같다" → 2차의 연한 teal·둥근 알약·같은 모양 카드 반복을 템플릿 느낌의 원인으로 보고 방향을 교체
+- 상태: 기술 검증과 브라우저 확인을 마침. **사용자 디자인 승인: 미정**
+- 문제·채점·저장 로직, 문제 데이터, TSX는 수정하지 않음. 이번 배치는 CSS 3개 파일만 변경
+
+### 스킬 사용 기록
+
+| 스킬 | 한 일 | 결과 |
+| --- | --- | --- |
+| frontend-design | 소재에서 시각 언어를 찾고 계획 → 기본값 점검 → 구현 → 스크린샷 비평 | 소재: 한국 자격시험의 **OMR 답안지·시험지**. 계획 점검에서 빼낸 기본값: 테라코타/크림, 알약 버튼, 브랜드색 채운 버튼, 좌측 색 띠(초안의 primaryCard 좌측 파란 띠는 "side stripe"라 제거) |
+| taste-skill | `draw.mjs --app --kind workspace --theme light --options 3` → `achromatic-ledger` 선택(seed 1277877551). 시트: `docs/design-refresh/taste-direction-batch3.json` | 선택 이유: 매일 오래 푸는 개인 학습 도구라 크롬에 색이 없고, 주 데이터 하나에만 색을 쓰는 규칙이 시험지 성격과 맞음. Face: 블루그레이 바탕(#f1f3f6)과 주 데이터 색 #1d5fbf(=OMR 인쇄 파랑). Geist 웹폰트는 외부 서비스 금지 때문에 쓰지 않음 |
+| ui-ux-pro-max | `exam quiz practice education --domain product`, `selected state radio choice --domain ux`, `primary button hierarchy --domain ux`, `serif reading long text korean --domain typography` | 학습/퀴즈 제품은 "정답 초록 + 오답 빨강 + 진행 파랑" → 색 역할과 일치. 추천 스타일(Claymorphism)은 TASTE 규칙(그림자·장식 금지)과 충돌해 기각. 현재 위치 표시, 44px, 4.5:1 기준은 유지 |
+
+### 방향
+
+- 바탕은 블루그레이 책상(#f1f3f6), 면은 흰 답안지, 글자와 **유일한 주 버튼은 컴퓨터용 사인펜 검정**(#15171a, `--cta`)
+- **OMR 인쇄 파랑**(#1d5fbf)은 현재 위치·진행에만 씀: 메뉴 아이콘, 문항 번호 "1 / 826", 진도 막대, 통계 막대, 보기 동그라미 테두리
+- 채점 색은 답에만: 초록 #1b7a3d(정답), 빨강 #c4242a(오답). 형광펜 노랑(#fff3b0)은 암기 블록 제목과 플래그에만
+- **보기 = OMR 마킹 칸**: 세로 타원(24×34) 테두리는 파랑, 고르면 검정으로 칠해짐, 채점 후 초록/빨강. "정답 / 내 답 · 정답 / 내 답 · 오답" 글자 표시는 유지
+- **문제 지문과 이론 제목은 명조체**(Noto Serif KR → 나눔명조 → AppleMyungjo → 바탕): 인쇄된 시험지처럼 보이게 함. 해설·본문은 산세리프 유지(긴 화면 읽기)
+- 홈의 시작 카드는 **수험표**처럼 구성: 자격증명을 명조 24~30px로 크게, 오른쪽에 검정 시작 버튼(PC). 학습 방식 목록의 CBT/TEST/TRAIL 코드 배지는 숨김
+- 모서리는 8/6px 한 쌍, 알약(999px) 없음. 데스크톱 메뉴 활성은 무채색 단(`--nav-active`), 모바일 탭은 검정 상단 막대
+- 해설 판정 줄("정답입니다/정답을 확인하세요")은 보기 상태에 따라 초록/빨강 점과 글자색 (`:has()`)
+
+### 검증
+
+| 항목 | 결과 |
+| --- | --- |
+| `npm run lint` (tsc) | 통과 |
+| `npm test` | 52/52 통과 |
+| `next build` | 통과 (`next-env.d.ts` 원복) |
+| 5개 폭 캡처 (1440/1366/768/390/360, `capture-batch2.mjs`) | 홈→CBT→선택→제출 정상, 포커스 링 3px #1d5fbf, 문제 풀이 중 "연습" 굵게, 해설 끝이 하단 바에 가리지 않음, 이론 관련 연습 "연습 완료" → 원래 /learn URL 복귀, 가로 넘침 없음, JS 오류 없음 |
+| TASTE `inspect.mjs --app` | 이론 개념·과정: 0 FAIL. 홈: 1 FAIL(로고 버튼 DOM의 ✓ 글자 — 이전과 같음, 메인 수정 줄이라 보류). WARN: 웹폰트 미로드(의도: 외부 폰트 서비스 금지), 긴 학습 본문 below-fold |
+| TASTE `lint.mjs --app` | 0 FAIL, 11 WARN(떠 있는 하단 바·메뉴의 그림자 등 허용 범위) |
+| 초기 비평에서 고친 것 | 선택한 보기의 동그라미가 비어 보임(2차의 hover 규칙이 우선) → `:not(.selected)`와 덮어쓰기 규칙. 명조 지문 700이 무거움 → 600/20px/행간 1.8. 이론 다음 글 링크 inset 그림자(button-fx FAIL) → 2px 테두리 |
+
+대비(WCAG, 토큰 쌍): 본문 16.16, 흐린 글자 5.32~6.36, 검정 버튼 흰 글자 17.96, 파랑 테두리/흰 6.10, accent-text 8.59, 정답 글자 7.31, 오답 글자 7.87, 형광펜 위 글자 7.18, 입력칸 테두리 `--control-edge` #7b828c 3.5 이상, 포커스 5.49.
+
+스크린샷: `docs/design-refresh/screenshots/batch3/after-{1440,1366,768,390,360}-*.png` (60장). 비교 기준은 `screenshots/batch2/`(2차), `screenshots/after-*`(1차), `screenshots/before-*`(원본).
+
+### dev 통합 주의 (중요)
+
+- dev는 2차를 병합한 뒤 **화이트/다크 테마**(`app/themes.css`, `ThemeToggle`, `lib/theme.ts`)와 임베디드 실기 기능을 추가했습니다. 이 브랜치는 rebase 금지라 dev 위에 올리지 않았고, 대신 **충돌을 피하는 형태**로 바꿨습니다.
+  - `design-refresh.css`, `TheoryTrail.module.css`는 기존 줄을 고치지 않고 **파일 끝에 덧붙이기만** 했습니다(알약 radius도 끝에서 덮어씀).
+  - 주 버튼은 dev가 도입한 `--cta` / `--cta-ink` 토큰을 씁니다. 라이트 값은 globals `:root`에서 `--cta:var(--ink)`입니다.
+- 3-way 시뮬레이션(base `93665be`, CRLF→LF 정규화):
+  - `globals.css`, `design-refresh.css`, `page.tsx`, `layout.tsx`: dev와 메인 작업본 모두 충돌 0건
+  - `TheoryTrail.module.css`: 1건. dev와 이 브랜치가 모두 파일 끝에 덧붙인 부분이라 **양쪽 다 유지**하면 됩니다(dev의 `.brand` 말줄임 3줄 + 이 브랜치의 3차 블록)
+- **다크 모드**: dev `themes.css`의 다크 값은 아직 2차 teal 계열이라, 병합하면 다크에서는 teal 강조가 남습니다. OMR 방향에 맞춘 다크 제안 값(themes.css `:root[data-theme="dark"]`에서 교체, 미검증):
+  `--bg:#121416; --surface:#1b1e22; --surface2:#22262b; --surface3:#2c3137; --line:#33383f; --line-soft:#2a2e34; --line-strong:#4f5660; --text:#eceef1; --text-2:#cfd3d9; --muted:#a3aab4; --accent:#7fa8ec; --accent-text:#a9c4f4; --accent-soft:#1f2c42; --accent-faint:#1a2333; --accent-line:#3d5a8a; --cta:#eceef1; --cta-ink:#121416; --cta-hover:#ffffff; --nav-active:#2c3137; --ok:#4fb873; --ok-soft:#1b2e22; --ok-line:#2f6b45; --ok-text:#9fdcb4; --warn-soft:#3a3215; --focus:#8bb8ff;`
+- 메인 작업본의 `AptitudePractice.module.css` 하드코딩 색 패치(2차 절 참고)는 여전히 필요합니다. `--green/--deep`은 이제 파랑(#1d5fbf)을 가리킵니다.
+- 로고 ✓ 글자 → SVG 교체, 문제 풀이 중 연습 탭 `aria-current`도 통합 후 할 일로 남아 있습니다.
+
+### 남은 일
+
+- 다크 테마를 OMR 값으로 맞추고 실제 다크 화면 검수(위 제안 값)
+- 통계 "시험 유형별"의 CBT/答 코드 배지 정리, 0문제인 날의 막대 표시(JSX)
+- 시험 진행·결과 복습, 이미지·수식 문제, 실기 자기평가 화면 개별 검수, 실제 기기 확인
+- 명조 지문이 Windows의 바탕체로 대체될 때의 렌더링 확인(이 PC에는 Noto Serif KR 설치됨)
 
 ## 2차 배치: 새 팔레트와 PC·모바일 사용성 (TASTE + UI UX Pro Max)
 

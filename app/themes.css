@@ -24,6 +24,11 @@
   --accent-line:#437c6c;
   --accent-text:#a1e5ce;
   --cta:var(--accent-strong);
+  --cta-hover:var(--accent-hover);
+  --nav-active:var(--surface3);
+  --ok-soft:#1b2e22;
+  --ok-line:#2f6b45;
+  --ok-text:#9fdcb4;
   --warn-text:#f0cf8c;
   --warn-soft:#342b1d;
   --warn-line:#8e743f;

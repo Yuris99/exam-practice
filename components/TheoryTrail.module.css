@@ -206,3 +206,31 @@
 .brand { min-width:0; }
 .brand i { flex-shrink:0; }
 .brand span { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+.unitCard em,.conceptCard.done::after,.keywords span,.back,.sideCard li a,.completeButton,.practiceAll { border-radius:var(--radius-sm); }
+/* ===== Batch 3 "OMR 답안지": ink actions, print-blue progress, highlighter memory, booklet serif titles ===== */
+.brand i { border-radius:var(--radius); background:var(--text); }
+.hero h1,.lessonHeader h1 { font-family:var(--serif); font-weight:700; letter-spacing:-.01em; }
+.hero,.lessonHeader,.block { border-radius:var(--radius); }
+.progressTrack i,.progressTrack span { background:var(--accent); }
+.completeButton,.practiceAll { color:var(--cta-ink); background:var(--cta); }
+.completeButton:hover,.practiceAll:hover { background:var(--cta-hover, var(--accent-hover)); }
+.completeButton.done { border-color:var(--ok-line); color:var(--ok-text); background:var(--ok-soft); }
+.sideCard li a.current { color:var(--text); background:var(--nav-active); }
+.sideCard li a.seen { color:var(--ok-text); }
+.conceptCard.done::after { color:var(--ok-text); background:var(--ok-soft); }
+.memory { border-color:var(--warn-line); background:var(--surface); }
+.memory h2 { display:inline; padding:0 4px; color:var(--text); border-radius:2px; background:var(--warn-soft); }
+.question:hover,.unitCard:not(.planned):hover,.conceptCard:hover { border-color:var(--text-2); background:var(--surface); }
+.reviewLink { border-color:var(--line); background:var(--surface); }
+.reviewLink:hover { background:var(--surface2); }
+.pager a.pagerNext { border:2px solid var(--text); color:var(--text); background:var(--surface); }
+
+/* Batch 3b readability: no theory text below 13px, body copy in full ink */
+.back,.crumbs,.subjectHeader p,.caption,.sideCard p,.pagerHint,.reviewLink span { font-size:14px; }
+.unitCard span,.conceptCard span { font-size:14px; line-height:1.6; }
+.unitCard small,.conceptCard small,.unitCard em,.keywords span,.question small { font-size:13px; }
+.table th { font-size:14px; }
+.table td { font-size:15px; line-height:1.65; }
+.reviewLink strong,.conceptCard b { font-size:14px; }
+.memory ul { line-height:1.8; }

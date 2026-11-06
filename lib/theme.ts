@@ -1,6 +1,6 @@
 export type Theme = "light" | "dark";
 export const THEME_STORAGE_KEY = "certificate-practice:theme";
-export const themeColors = { light: "#eef2f0", dark: "#101615" };
+export const themeColors = { light: "#f1f3f6", dark: "#101615" };
 
 // Runs before paint; a blocked storage API must not prevent the system fallback.
 export const themeInitializationScript = `(() => {
