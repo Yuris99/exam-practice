@@ -3,28 +3,13 @@
 import Link from "next/link";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { useMemo, useState } from "react";
+import { embeddedPracticalNotes, embeddedPracticalSummary } from "@/content/summaries/embedded-practical";
+import type { ExtraNote, SummarySubject } from "@/lib/summaryTypes";
 
-type SubjectKey = "computer" | "embedded";
-
-type SummarySubject = {
-  label: string;
-  title: string;
-  description: string;
-  concepts: Array<{ title: string; body: string; points: string[] }>;
-  frequent: Array<{ title: string; body: string; answer: string }>;
-  comparisons: Array<{ left: string; right: string; point: string }>;
-  questions: Array<{ question: string; keywords: string }>;
-  finalPrep: Array<{ title: string; body: string; points: string[] }>;
-  memorize: string[];
-};
-
-type ExtraNote = {
-  title: string;
-  lead: string;
-  bullets: string[];
-};
+type SubjectKey = "computer" | "embedded" | "embedded-practical";
 
 const subjects: Record<SubjectKey, SummarySubject> = {
+  "embedded-practical": embeddedPracticalSummary,
   computer: {
     label: "컴퓨터 시스템",
     title: "컴시기",
@@ -182,6 +167,7 @@ const subjects: Record<SubjectKey, SummarySubject> = {
 };
 
 const extraNotes: Record<SubjectKey, ExtraNote[]> = {
+  "embedded-practical": embeddedPracticalNotes,
   computer: [
     { title: "컴퓨터 구조 큰 그림", lead: "입력장치가 데이터를 넣고, CPU가 명령어를 실행하며, 메모리와 저장장치가 데이터를 보관하고, 출력장치가 결과를 보여준다.", bullets: ["CPU는 계산 자체보다 명령어 흐름 제어가 중요하다.", "RAM은 실행 중인 프로그램과 데이터를 올려두는 공간이다.", "저장장치는 전원이 꺼져도 데이터가 남는 공간이다.", "입출력장치는 CPU 입장에서 속도가 느리기 때문에 인터럽트와 버퍼가 자주 함께 나온다."] },
     { title: "버스", lead: "버스는 컴퓨터 내부 장치들이 데이터를 주고받는 통로다.", bullets: ["주소 버스: 접근할 메모리나 장치의 위치를 전달한다.", "데이터 버스: 실제 데이터를 주고받는다.", "제어 버스: 읽기/쓰기, 인터럽트, 클럭 같은 제어 신호를 전달한다.", "버스 폭이 넓을수록 한 번에 옮길 수 있는 데이터가 많다."] },
@@ -215,7 +201,7 @@ export default function SummaryPage() {
   const subject = subjects[subjectKey];
   const normalizedQuery = query.trim().toLocaleLowerCase("ko-KR");
   const checkedCount = Object.values(checked).filter(Boolean).length;
-  const totalMemoryItems = subjects.computer.memorize.length + subjects.embedded.memorize.length;
+  const totalMemoryItems = Object.values(subjects).reduce((total, item) => total + item.memorize.length, 0);
   const filtered = useMemo(() => filterSubject(subject, normalizedQuery), [normalizedQuery, subject]);
   const filteredExtraNotes = useMemo(() => filterExtraNotes(extraNotes[subjectKey], normalizedQuery), [normalizedQuery, subjectKey]);
 
@@ -225,8 +211,8 @@ export default function SummaryPage() {
         <div className="themeControls"><Link href="/" className="summaryBack">← 홈</Link><ThemeToggle /></div>
         <div>
           <p>노션식 개념 정리</p>
-          <h1>컴시기 · 임베기</h1>
-          <span>과목을 고른 뒤 아래로 쭉 내리면서 개념, 빈출, 비교, 예상문제, 암기를 한 번에 보세요.</span>
+          <h1>컴시기 · 임베기 요약집</h1>
+          <span>필기 또는 실기 요약집을 골라 개념, 풀이 예제, 비교, 회상 문제를 확인하세요.</span>
         </div>
       </header>
 
@@ -234,7 +220,7 @@ export default function SummaryPage() {
         <aside className="summarySide">
           <div className="summarySubjectButtons">
             {Object.entries(subjects).map(([key, value]) => (
-              <button key={key} className={subjectKey === key ? "active" : ""} onClick={() => setSubjectKey(key as SubjectKey)}>
+              <button key={key} aria-pressed={subjectKey === key} className={subjectKey === key ? "active" : ""} onClick={() => setSubjectKey(key as SubjectKey)}>
                 <strong>{value.title}</strong>
                 <span>{value.label}</span>
               </button>
@@ -244,11 +230,12 @@ export default function SummaryPage() {
             <strong>목차</strong>
             <a href="#concepts">개념</a>
             <a href="#deep">상세</a>
-            <a href="#frequent">빈출</a>
+            <a href="#frequent">{subjectKey === "embedded-practical" ? "풀이 예제" : "빈출"}</a>
             <a href="#comparisons">비교</a>
-            <a href="#questions">예상문제</a>
+            <a href="#questions">{subjectKey === "embedded-practical" ? "회상 문제" : "예상문제"}</a>
             <a href="#final-prep">시험전</a>
             <a href="#memorize">암기</a>
+            {subject.sources && <a href="#sources">참고자료</a>}
           </nav>
           <div className="summaryProgress">
             <span>암기 체크</span>
@@ -272,13 +259,13 @@ export default function SummaryPage() {
           <SummaryBlock id="deep" title="단원별 상세 정리">
             <ExtraNoteList rows={filteredExtraNotes} />
           </SummaryBlock>
-          <SummaryBlock id="frequent" title="빈출 답안">
+          <SummaryBlock id="frequent" title={subjectKey === "embedded-practical" ? "손으로 푸는 예제·모범답안" : "빈출 답안"}>
             <FrequentList rows={filtered.frequent} />
           </SummaryBlock>
           <SummaryBlock id="comparisons" title="헷갈리는 비교">
             <ComparisonTable rows={filtered.comparisons} />
           </SummaryBlock>
-          <SummaryBlock id="questions" title="예상 문제">
+          <SummaryBlock id="questions" title={subjectKey === "embedded-practical" ? "회상 연습" : "예상 문제"}>
             <QuestionList rows={filtered.questions} />
           </SummaryBlock>
           <SummaryBlock id="final-prep" title="시험 전 정리">
@@ -287,6 +274,13 @@ export default function SummaryPage() {
           <SummaryBlock id="memorize" title="빠른 암기">
             <MemoryList subjectKey={subjectKey} rows={filtered.memorize} checked={checked} setChecked={setChecked} />
           </SummaryBlock>
+          {subject.sources && <SummaryBlock id="sources" title="참고자료·검토 기준">
+            <ul>{subject.sources.map((source) => <li key={source.title}>
+              {source.url ? <a href={source.url}>{source.title}</a> : <strong>{source.title}</strong>}
+              {source.pages && <span> · {source.pages}</span>}
+              <p>{source.note}</p>
+            </li>)}</ul>
+          </SummaryBlock>}
         </section>
       </main>
     </div>
@@ -298,7 +292,7 @@ function filterSubject(subject: SummarySubject, query: string) {
   return {
     ...subject,
     concepts: subject.concepts.filter((item) => `${item.title} ${item.body} ${item.points.join(" ")}`.toLocaleLowerCase("ko-KR").includes(query)),
-    frequent: subject.frequent.filter((item) => `${item.title} ${item.body} ${item.answer}`.toLocaleLowerCase("ko-KR").includes(query)),
+    frequent: subject.frequent.filter((item) => `${item.title} ${item.body} ${item.answer} ${item.codeSnippet ?? ""}`.toLocaleLowerCase("ko-KR").includes(query)),
     comparisons: subject.comparisons.filter((item) => `${item.left} ${item.right} ${item.point}`.toLocaleLowerCase("ko-KR").includes(query)),
     questions: subject.questions.filter((item) => `${item.question} ${item.keywords}`.toLocaleLowerCase("ko-KR").includes(query)),
     finalPrep: subject.finalPrep.filter((item) => `${item.title} ${item.body} ${item.points.join(" ")}`.toLocaleLowerCase("ko-KR").includes(query)),
@@ -329,6 +323,7 @@ function ConceptList({ rows }: { rows: SummarySubject["concepts"] }) {
       <summary>{item.title}</summary>
       <p>{item.body}</p>
       <ul>{item.points.map((point) => <li key={point}>{point}</li>)}</ul>
+      {item.practiceQuestionIds?.length ? <Link href={`/?practiceQuestions=${item.practiceQuestionIds.join(",")}`}>관련 실기 {item.practiceQuestionIds.length}문제 풀기 →</Link> : null}
     </details>
   ))}</div>;
 }
@@ -339,6 +334,7 @@ function FrequentList({ rows }: { rows: SummarySubject["frequent"] }) {
     <section key={item.title} className="summaryDocItem important">
       <h4>{item.title}</h4>
       <p>{item.body}</p>
+      {item.codeSnippet && <div className="codeBlock"><header><strong>예제 코드</strong><span>{item.codeLanguage}</span></header><pre tabIndex={0} aria-label={`${item.title} 코드`}><code>{item.codeSnippet}</code></pre></div>}
       <div className="answerBox">{item.answer}</div>
     </section>
   ))}</div>;
